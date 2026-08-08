@@ -1,99 +1,49 @@
 {
-  "description": "Outlook email context matching for NHT/Cesanek tickets (non-blocking enrichment)",
+  "description": "Outlook email context for NHT/Cesanek UFN tickets — customer-level enrichment (non-blocking)",
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-08-08T09:01:14Z",
-  "lastRefreshed": "2026-08-08T09:01:14Z",
-  "threadsMatched": 8,
-  "threadsUniquePostDedup": 7,
-  "dedupNote": "OUT-4410 (T-2839) represents same conversation as OUT-4412 (T-2841); dedup keeps T-2841 as primary",
+  "generatedAt": "2026-08-08T09:05:55Z",
+  "lastRefreshed": "2026-08-08T09:05:55Z",
+  "threadsMatched": 3,
+  "threadsUniquePostDedup": 3,
+  "coverage": {
+    "eligibleTicketsWithOutlook": 3,
+    "eligibleTicketsWithoutOutlook": 0,
+    "coveragePct": "100%"
+  },
   "threads": [
     {
-      "outlookThreadId": "OUT-4412",
-      "ticketId": "T-2841",
-      "customer": "Acme Logistics",
-      "subject": "Shipment delay at Cesanek dock — trailer AR-4721 overdue",
-      "lastEmailDate": "2026-08-08T06:45:00Z",
-      "participants": ["acme.dispatch@example.com", "cesanek.ops@unisco.com"],
-      "emailCount": 3,
-      "primaryThread": true
+      "outlookThreadId": "OUT-UFN-088",
+      "ticketId": "T-UFN-2026-088",
+      "customer": "Dupray",
+      "subject": "UFN: Temperature-controlled storage capacity shortfall — Dupray dedicated bay reallocation pending",
+      "lastEmailDate": "2026-08-08T04:15:00Z",
+      "participants": ["dupray.logistics@example.com", "cesanek.cold@unisco.com", "yang-lhing.bague@unisco.com"],
+      "emailCount": 6,
+      "primaryThread": true,
+      "contextSummary": "Dupray supply chain team flagged capacity constraints in dedicated cold storage bay; awaiting facility reallocation decision from Cesanek ops."
     },
     {
-      "outlookThreadId": "OUT-4410",
-      "ticketId": "T-2839",
-      "customer": "Acme Logistics",
-      "subject": "RE: Shipment delay at Cesanek dock — trailer AR-4721 overdue",
-      "lastEmailDate": "2026-08-07T16:00:00Z",
-      "participants": ["acme.dispatch@example.com", "cesanek.ops@unisco.com"],
-      "emailCount": 5,
-      "primaryThread": false,
-      "duplicateOf": "OUT-4412",
-      "dedupNote": "Thread merges into T-2841 per dedup rules"
+      "outlookThreadId": "OUT-UFN-091",
+      "ticketId": "T-UFN-2026-091",
+      "customer": "Diageo/Ritual",
+      "subject": "UFN: Import clearance delay — Diageo/Ritual spirits shipment held at Port of NY/NJ pending FDA release",
+      "lastEmailDate": "2026-08-07T15:30:00Z",
+      "participants": ["diageo.imports@example.com", "cesanek.compliance@unisco.com", "yang-lhing.bague@unisco.com", "customs.broker@example.com"],
+      "emailCount": 11,
+      "primaryThread": true,
+      "contextSummary": "Diageo/Ritual spirits container held at Port of NY/NJ. FDA prior notice submitted; customs broker awaiting release. Escalated to Yang-Lhing for UFN tracking."
     },
     {
-      "outlookThreadId": "OUT-4411",
-      "ticketId": "T-2840",
-      "customer": "Beta Supply Chain",
-      "subject": "UFN: Inventory discrepancy in Bay 7 — 3 pallets unaccounted",
-      "lastEmailDate": "2026-08-08T08:15:00Z",
-      "participants": ["beta.sc@example.com", "cesanek.inventory@unisco.com"],
-      "emailCount": 2,
-      "primaryThread": true
-    },
-    {
-      "outlookThreadId": "OUT-4407",
-      "ticketId": "T-2835",
-      "customer": "Beta Supply Chain",
-      "subject": "Temperature excursion on reefer unit R-992",
-      "lastEmailDate": "2026-08-06T10:00:00Z",
-      "participants": ["beta.qa@example.com", "cesanek.cold@unisco.com"],
-      "emailCount": 7,
-      "primaryThread": true
-    },
-    {
-      "outlookThreadId": "OUT-4409",
-      "ticketId": "T-2837",
-      "customer": "Gamma Distribution",
-      "subject": "Awaiting customs clearance docs for container MSC-8821",
-      "lastEmailDate": "2026-08-07T09:00:00Z",
-      "participants": ["gamma.customs@example.com", "cesanek.compliance@unisco.com"],
+      "outlookThreadId": "OUT-UFN-093",
+      "ticketId": "T-UFN-2026-093",
+      "customer": "Colavita",
+      "subject": "UFN: Pallet rotation compliance gap — Colavita olive oil SKU batch FIFO deviation in Bay 4",
+      "lastEmailDate": "2026-08-06T18:00:00Z",
+      "participants": ["colavita.quality@example.com", "cesanek.inventory@unisco.com", "yang-lhing.bague@unisco.com"],
       "emailCount": 4,
-      "primaryThread": true
-    },
-    {
-      "outlookThreadId": "OUT-4399",
-      "ticketId": "T-2830",
-      "customer": "Delta Freight",
-      "subject": "UFN: Repeated late pickups from Carrier X",
-      "lastEmailDate": "2026-08-05T14:00:00Z",
-      "participants": ["delta.logistics@example.com", "cesanek.carriers@unisco.com"],
-      "emailCount": 12,
-      "primaryThread": true
-    },
-    {
-      "outlookThreadId": "OUT-4396",
-      "ticketId": "T-2833",
-      "customer": "Epsilon Warehousing",
-      "subject": "WMS system outage affecting pick/pack operations",
-      "lastEmailDate": "2026-08-05T18:00:00Z",
-      "participants": ["epsilon.it@example.com", "cesanek.wms@unisco.com"],
-      "emailCount": 9,
-      "primaryThread": true
-    },
-    {
-      "outlookThreadId": "OUT-4393",
-      "ticketId": "T-2825",
-      "customer": "Eta Logistics",
-      "subject": "UFN: Hazardous material spill containment — Section D",
-      "lastEmailDate": "2026-08-03T11:00:00Z",
-      "participants": ["eta.safety@example.com", "cesanek.hazmat@unisco.com"],
-      "emailCount": 15,
-      "primaryThread": true
+      "primaryThread": true,
+      "contextSummary": "Colavita quality team identified FIFO rotation gap on olive oil SKU batch in Bay 4. Inventory team investigating root cause. Yang-Lhing tagged for UFN compliance tracking."
     }
-  ],
-  "coverage": {
-    "eligibleTicketsWithOutlook": 6,
-    "eligibleTicketsWithoutOutlook": 9,
-    "coveragePct": "40%"
-  }
+  ]
 }
