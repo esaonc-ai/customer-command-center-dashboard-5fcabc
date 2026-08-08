@@ -2,14 +2,14 @@
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "tenant": "LT",
-  "generatedAt": "2026-08-08T09:35:31Z",
-  "lastRefreshed": "2026-08-08T09:35:31Z",
-  "dataSource": "TicketOps (authoritative – live API query 2026-08-08; dashboard refresh 09:35 UTC)",
+  "generatedAt": "2026-08-08T09:39:46Z",
+  "lastRefreshed": "2026-08-08T09:39:46Z",
+  "dataSource": "TicketOps (authoritative – live API query 2026-08-08; dashboard refresh 05:39 EDT)",
   "totalRaw": 459,
   "pipelineSummary": {
     "totalRaw": 459,
-    "statusExcluded": 456,
-    "invoiceItemExcluded": 0,
+    "statusExcluded": 455,
+    "invoiceItemExcluded": 1,
     "deduplicated": 0,
     "totalEligible": 3,
     "byStatus": { "New": 0, "Open": 0, "Pending": 3 },
@@ -17,12 +17,12 @@
     "scanWindow": "2026-07-25 to 2026-08-08",
     "departmentFilter": "Northampton",
     "systemStatusFilter": "closeFlag=false, displayStatusSystemStatus=10",
-    "refreshSource": "Ticket Ops live query – 459 UFN- tickets scanned, 3 active eligible (refreshed 2026-08-08 05:35 EDT)"
+    "refreshSource": "Ticket Ops live query – 459 UFN- tickets scanned, 3 active eligible, 1 excluded (handling)"
   },
   "tickets": [
     {
       "ticketId": "UFN-64221",
-      "customer": "Dupray USA LLC",
+      "customer": "DUPRAY USA LLC",
       "opsStatus": "Pending",
       "status": "Pending",
       "subject": "Rework at Greensboro, GA",
@@ -37,43 +37,58 @@
       "responseHours": null,
       "slaBreached": true,
       "slaDueDate": "2026-08-03",
+      "slaStatus": "Breached",
       "ageDays": 10
     },
     {
-      "ticketId": "UFN-65513",
-      "customer": "RITUAL BEVERAGE (DIAGEO)",
+      "ticketId": "UFN-64870",
+      "customer": "SPLENDOR WATER LLC",
       "opsStatus": "Pending",
       "status": "Pending",
-      "subject": "PO 62802 DIAGEO",
+      "subject": "Inventory discrepancy – PO 45192",
       "priority": "Medium",
-      "createdAt": "2026-08-07",
+      "createdAt": "2026-08-03",
       "lastActivity": "2026-08-07",
-      "assignedTo": "Yang-Lhing Bague",
+      "assignedTo": "Kent Claud Caballero",
       "invoiceItemType": "",
-      "tags": ["DIAGEO", "PO-62802"],
+      "tags": ["inventory", "PO-45192"],
       "ufn": true,
-      "ufnTag": "UFN-65513",
+      "ufnTag": "UFN-64870",
       "responseHours": null,
       "slaBreached": false,
-      "ageDays": 1
+      "slaDueDate": "2026-08-10",
+      "slaStatus": "At-Risk",
+      "ageDays": 5
     },
     {
-      "ticketId": "UFN-65559",
-      "customer": "COLAVITA USA LLC",
+      "ticketId": "UFN-65304",
+      "customer": "MAIZLY INC.",
       "opsStatus": "Pending",
       "status": "Pending",
-      "subject": "2623IL752526",
+      "subject": "Carrier scheduling – RN-19872",
       "priority": "Medium",
-      "createdAt": "2026-08-07",
+      "createdAt": "2026-08-06",
       "lastActivity": "2026-08-07",
       "assignedTo": "Yang-Lhing Bague",
       "invoiceItemType": "",
-      "tags": ["reference-2623IL752526"],
+      "tags": ["carrier", "RN-19872"],
       "ufn": true,
-      "ufnTag": "UFN-65559",
+      "ufnTag": "UFN-65304",
       "responseHours": null,
       "slaBreached": false,
-      "ageDays": 1
+      "slaDueDate": "2026-08-13",
+      "slaStatus": "On-Track",
+      "ageDays": 2
+    }
+  ],
+  "excludedTickets": [
+    {
+      "ticketId": "UFN-33719",
+      "customer": "Water Plus",
+      "opsStatus": "Pending",
+      "status": "Pending",
+      "reason": "Invoice item type 'handling' excluded per filter rules",
+      "invoiceItemType": "handling"
     }
   ]
 }
