@@ -2,61 +2,55 @@
   "description": "Outlook email context matching for NHT/Cesanek tickets (non-blocking enrichment)",
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-08-08T10:08:46Z",
-  "lastRefreshed": "2026-08-08T10:08:46Z",
-  "dataSource": "Outlook agent — live search (Jul 25 – Aug 8, 2026; refreshed 06:08 EDT)",
+  "generatedAt": "2026-08-08T10:10:00Z",
+  "lastRefreshed": "2026-08-08T10:10:00Z",
+  "dataSource": "Outlook agent — live search (Jul 25 – Aug 8, 2026; refreshed 06:10 EDT)",
   "threadsMatched": 0,
   "threadsUniquePostDedup": 0,
-  "dedupNote": "No direct email threads matched specific UFN ticket numbers or exact subjects. Operational email context is available for all three customer accounts (see customerContext).",
+  "dedupNote": "No direct email threads matched specific UFN ticket numbers or exact subjects. Operational email context is available for both active customer accounts (see customerContext). UFN-64221, UFN-64870, UFN-65304 resolved/closed — their Outlook context archived.",
   "coverage": {
     "eligibleTicketsWithOutlookDirect": 0,
-    "eligibleTicketsWithCustomerActivity": 3,
-    "coveragePct": "100% (customer-level operational context)",
+    "eligibleTicketsWithCustomerActivity": 2,
+    "coveragePct": "100% (customer-level operational context for 2 active accounts)",
     "directMatchPct": "0% (no exact UFN thread matches)"
   },
   "customerContext": [
     {
-      "ticketId": "UFN-64221",
+      "ticketId": "UFN-65578",
       "customer": "DUPRAY USA LLC",
-      "emailVolume": "50+ emails (14-day window)",
+      "emailVolume": "52+ emails (14-day window)",
       "directThreadMatch": false,
       "operationalHighlights": [
-        "Missed appointment DN-2065656 — requesting reschedule (Aug 7, Erin Cambra, Yang-Lhing tagged)",
-        "Short order DN-2082686 flagged on Teams (Aug 5, Yang-Lhing tagged)",
-        "Relabel project — 1,228 units XTR651GNA (Aug 4, Angel Mae Aviles, Yang-Lhing assigned)",
-        "Inbound RN-19363 IMPORTED (Aug 6-7, Tweenie Lamoste)"
+        "BOL amendment DN-2083744 — Greensboro reroute request; Dupray flagged incorrect destination on original BOL (Aug 7-8, Erin Cambra, Yang-Lhing tagged)",
+        "Missed appointment DN-2065656 follow-up — rescheduled for Aug 11 (Aug 7, Yang-Lhing confirmed)",
+        "Short order DN-2082686 status — carrier assigned, ETA Aug 9 (Aug 6, Transportation Team)",
+        "Relabel project XTR651GNA — 1,228 units completed (Aug 4-5, Angel Mae Aviles)",
+        "Inbound RN-19363 IMPORTED — received Aug 7, putaway pending (Aug 7, Tweenie Lamoste)"
       ],
-      "accountManager": "Yang-Lhing Bague (confirmed via Aug 6 Early Departure list)"
+      "accountManager": "Yang-Lhing Bague (confirmed via Aug 8 Early Departure list & ticket assignment)"
     },
     {
-      "ticketId": "UFN-64870",
-      "customer": "SPLENDOR WATER LLC",
-      "emailVolume": "34+ emails (14-day window)",
-      "directThreadMatch": false,
-      "operationalHighlights": [
-        "PO 45192 inventory reconciliation thread — discrepancy flagged by Splendor ops (Aug 7, Kent Claud cc'd)",
-        "Cycle count results for Splendor Water SKUs — Northampton DC (Aug 5-6, Inventory Team)",
-        "Splendor Q3 forecast update — demand planning thread (Aug 4, Nicole Weber)",
-        "Carrier performance review — Splendor lane (Aug 3, Transportation Team)"
-      ],
-      "accountManager": "Kent Claud Caballero (assigned ticket owner)"
-    },
-    {
-      "ticketId": "UFN-65304",
+      "ticketId": "UFN-65592",
       "customer": "MAIZLY INC.",
-      "emailVolume": "28+ emails (14-day window)",
+      "emailVolume": "31+ emails (14-day window)",
       "directThreadMatch": false,
       "operationalHighlights": [
-        "RN-19872 carrier scheduling — Maizly requesting dock time confirmation (Aug 7, Yang-Lhing cc'd)",
-        "Maizly PO pipeline update — open order status (Aug 6, Customer Service)",
-        "BOL corrections for Maizly shipments — week of Aug 3 (Aug 4-5, Shipping Team)",
-        "Maizly account onboarding — new SKU setup request (Aug 2, Sales Ops)"
+        "Short-ship flagged — PO 46301, RN-20115; Maizly reports 12 cases missing vs. ASN (Aug 8, Customer Service escalated, Yang-Lhing assigned)",
+        "RN-19872 carrier scheduling — dock confirmed for Aug 11, Maizly notified (Aug 7, Yang-Lhing closed loop)",
+        "Maizly PO pipeline update — open order status review (Aug 6-7, Customer Service)",
+        "BOL corrections for Maizly shipments — week of Aug 3 resolved (Aug 5, Shipping Team)",
+        "Maizly account onboarding — new SKU setup completed (Aug 4, Sales Ops)"
       ],
-      "accountManager": "Yang-Lhing Bague (confirmed via ticket assignment)"
+      "accountManager": "Yang-Lhing Bague (confirmed via ticket assignment & Aug 8 thread activity)"
     }
   ],
   "excludedThreads": [
     "Water Plus handling 7/25-8/7 — UFN-33719 (excluded per handling invoice item filter)"
   ],
-  "duplicationNote": "No overlapping ticket/email threads detected across the three eligible UFN tickets. Each customer has distinct conversation IDs. UFN-33719 (Water Plus, handling) excluded per invoice item filter."
+  "archivedContexts": [
+    { "ticketId": "UFN-64221", "customer": "DUPRAY USA LLC", "note": "Rework at Greensboro completed; context archived upon ticket closure (Aug 8)" },
+    { "ticketId": "UFN-64870", "customer": "SPLENDOR WATER LLC", "note": "PO 45192 inventory reconciled; context archived upon ticket resolution (Aug 8)" },
+    { "ticketId": "UFN-65304", "customer": "MAIZLY INC.", "note": "RN-19872 carrier scheduled; context archived upon ticket closure (Aug 8)" }
+  ],
+  "duplicationNote": "No overlapping ticket/email threads detected across the two eligible UFN tickets. Each customer has distinct conversation IDs. UFN-33719 (Water Plus, handling) excluded per invoice item filter. Three previously active tickets resolved/closed this refresh — no dedup impact."
 }
