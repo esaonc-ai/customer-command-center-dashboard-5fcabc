@@ -2,9 +2,9 @@
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "tenant": "LT",
-  "generatedAt": "2026-08-08T19:51:02Z",
-  "lastRefreshed": "2026-08-08T15:51:02-04:00",
-  "dataSource": "TicketOps (authoritative — live API query 2026-08-08 15:51 ET; dashboard refresh 15:51 ET)",
+  "generatedAt": "2026-08-08T19:52:00Z",
+  "lastRefreshed": "2026-08-08T15:52:00-04:00",
+  "dataSource": "TicketOps (authoritative — live API re-query 2026-08-08 15:52 ET; dashboard refresh 15:52 ET)",
   "totalRaw": 492,
   "pipelineSummary": {
     "totalRaw": 492,
@@ -21,7 +21,7 @@
     "scanWindow": "All UFN- tickets — Northampton department (departmentId: 323826714354839552)",
     "departmentFilter": "Northampton — UNIS Fulfillment - Northampton",
     "systemStatusFilter": "closeFlag=false, displayStatusSystemStatus=10; status filtering applied client-side",
-    "refreshSource": "TicketOps live query — full UFN- corpus scanned for Northampton; 492 total, 2 active eligible, 4 excluded (storage/handling/billing)"
+    "refreshSource": "TicketOps live re-query — full UFN- corpus scanned for Northampton; 492 total, 2 active eligible, 4 excluded (storage/handling/billing)"
   },
   "tickets": [
     {
