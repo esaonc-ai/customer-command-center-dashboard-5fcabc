@@ -2,9 +2,9 @@
   "description": "Outlook email context matching for NHT/Cesanek tickets (non-blocking enrichment)",
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-08-08T17:21:58Z",
-  "lastRefreshed": "2026-08-08T13:21:58-04:00",
-  "dataSource": "Outlook agent — live search (Aug 1–8, 2026; refreshed 13:21 ET)",
+  "generatedAt": "2026-08-08T19:51:02Z",
+  "lastRefreshed": "2026-08-08T15:51:02-04:00",
+  "dataSource": "Outlook agent — live search (Aug 1–8, 2026; refreshed 15:51 ET)",
   "threadsMatched": 2,
   "threadsUniquePostDedup": 2,
   "dedupNote": "No overlapping ticket/email threads detected. Each UFN ticket has its own distinct conversation ID.",
@@ -92,7 +92,7 @@
       "keyThreads": [
         "CC'd/reply-to on all Tweety's inbound/outbound reports",
         "Container/drayage coordination — Drayage Support NJ daily INBOUND UNIS NORTHAMPTON CONTAINERS",
-        "KDNutra/Iceland Direct/Human Ingenuity order fulfillment (Silvia Placido, David Morales)",
+        "KDnutra/Iceland Direct/Human Ingenuity order fulfillment (Silvia Placido, David Morales)",
         "EOD reports from Shailene Baez, Erin Cambra, Nicole Weber",
         "Nourison drop appointment coordination"
       ]
