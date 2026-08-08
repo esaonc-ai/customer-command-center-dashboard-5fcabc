@@ -2,9 +2,9 @@
   "description": "Outlook email context matching for NHT/Cesanek tickets (non-blocking enrichment)",
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-08-08T09:39:46Z",
-  "lastRefreshed": "2026-08-08T09:39:46Z",
-  "dataSource": "Outlook agent – live search (Jul 25 – Aug 8, 2026; refreshed 05:39 EDT)",
+  "generatedAt": "2026-08-08T10:08:46Z",
+  "lastRefreshed": "2026-08-08T10:08:46Z",
+  "dataSource": "Outlook agent — live search (Jul 25 – Aug 8, 2026; refreshed 06:08 EDT)",
   "threadsMatched": 0,
   "threadsUniquePostDedup": 0,
   "dedupNote": "No direct email threads matched specific UFN ticket numbers or exact subjects. Operational email context is available for all three customer accounts (see customerContext).",
@@ -21,9 +21,9 @@
       "emailVolume": "50+ emails (14-day window)",
       "directThreadMatch": false,
       "operationalHighlights": [
-        "Missed appointment DN-2065656 – requesting reschedule (Aug 7, Erin Cambra, Yang-Lhing tagged)",
+        "Missed appointment DN-2065656 — requesting reschedule (Aug 7, Erin Cambra, Yang-Lhing tagged)",
         "Short order DN-2082686 flagged on Teams (Aug 5, Yang-Lhing tagged)",
-        "Relabel project – 1,228 units XTR651GNA (Aug 4, Angel Mae Aviles, Yang-Lhing assigned)",
+        "Relabel project — 1,228 units XTR651GNA (Aug 4, Angel Mae Aviles, Yang-Lhing assigned)",
         "Inbound RN-19363 IMPORTED (Aug 6-7, Tweenie Lamoste)"
       ],
       "accountManager": "Yang-Lhing Bague (confirmed via Aug 6 Early Departure list)"
@@ -34,10 +34,10 @@
       "emailVolume": "34+ emails (14-day window)",
       "directThreadMatch": false,
       "operationalHighlights": [
-        "PO 45192 inventory reconciliation thread – discrepancy flagged by Splendor ops (Aug 7, Kent Claud cc'd)",
-        "Cycle count results for Splendor Water SKUs – Northampton DC (Aug 5-6, Inventory Team)",
-        "Splendor Q3 forecast update – demand planning thread (Aug 4, Nicole Weber)",
-        "Carrier performance review – Splendor lane (Aug 3, Transportation Team)"
+        "PO 45192 inventory reconciliation thread — discrepancy flagged by Splendor ops (Aug 7, Kent Claud cc'd)",
+        "Cycle count results for Splendor Water SKUs — Northampton DC (Aug 5-6, Inventory Team)",
+        "Splendor Q3 forecast update — demand planning thread (Aug 4, Nicole Weber)",
+        "Carrier performance review — Splendor lane (Aug 3, Transportation Team)"
       ],
       "accountManager": "Kent Claud Caballero (assigned ticket owner)"
     },
@@ -47,16 +47,16 @@
       "emailVolume": "28+ emails (14-day window)",
       "directThreadMatch": false,
       "operationalHighlights": [
-        "RN-19872 carrier scheduling – Maizly requesting dock time confirmation (Aug 7, Yang-Lhing cc'd)",
-        "Maizly PO pipeline update – open order status (Aug 6, Customer Service)",
-        "BOL corrections for Maizly shipments – week of Aug 3 (Aug 4-5, Shipping Team)",
-        "Maizly account onboarding – new SKU setup request (Aug 2, Sales Ops)"
+        "RN-19872 carrier scheduling — Maizly requesting dock time confirmation (Aug 7, Yang-Lhing cc'd)",
+        "Maizly PO pipeline update — open order status (Aug 6, Customer Service)",
+        "BOL corrections for Maizly shipments — week of Aug 3 (Aug 4-5, Shipping Team)",
+        "Maizly account onboarding — new SKU setup request (Aug 2, Sales Ops)"
       ],
       "accountManager": "Yang-Lhing Bague (confirmed via ticket assignment)"
     }
   ],
   "excludedThreads": [
-    "Water Plus handling 7/25-8/7 – UFN-33719 (excluded per handling invoice item filter)"
+    "Water Plus handling 7/25-8/7 — UFN-33719 (excluded per handling invoice item filter)"
   ],
-  "deduplicationNote": "No overlapping ticket/email threads detected across the three eligible UFN tickets. Each customer has distinct conversation IDs. UFN-33719 (Water Plus, handling) excluded per invoice item filter."
+  "duplicationNote": "No overlapping ticket/email threads detected across the three eligible UFN tickets. Each customer has distinct conversation IDs. UFN-33719 (Water Plus, handling) excluded per invoice item filter."
 }
