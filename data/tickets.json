@@ -2,9 +2,9 @@
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "tenant": "LT",
-  "generatedAt": "2026-08-08T09:10:00Z",
-  "lastRefreshed": "2026-08-08T09:10:00Z",
-  "dataSource": "TicketOps (authoritative — live API query 2026-08-08)",
+  "generatedAt": "2026-08-08T09:35:31Z",
+  "lastRefreshed": "2026-08-08T09:35:31Z",
+  "dataSource": "TicketOps (authoritative – live API query 2026-08-08; dashboard refresh 09:35 UTC)",
   "totalRaw": 459,
   "pipelineSummary": {
     "totalRaw": 459,
@@ -17,7 +17,7 @@
     "scanWindow": "2026-07-25 to 2026-08-08",
     "departmentFilter": "Northampton",
     "systemStatusFilter": "closeFlag=false, displayStatusSystemStatus=10",
-    "refreshSource": "Ticket Ops live query — 459 UFN- tickets scanned, 3 active eligible"
+    "refreshSource": "Ticket Ops live query – 459 UFN- tickets scanned, 3 active eligible (refreshed 2026-08-08 05:35 EDT)"
   },
   "tickets": [
     {
