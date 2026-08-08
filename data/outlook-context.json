@@ -2,8 +2,11 @@
   "description": "Outlook email context matching for NHT/Cesanek tickets (non-blocking enrichment)",
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-08-08T07:30:00Z",
+  "generatedAt": "2026-08-08T09:01:14Z",
+  "lastRefreshed": "2026-08-08T09:01:14Z",
   "threadsMatched": 8,
+  "threadsUniquePostDedup": 7,
+  "dedupNote": "OUT-4410 (T-2839) represents same conversation as OUT-4412 (T-2841); dedup keeps T-2841 as primary",
   "threads": [
     {
       "outlookThreadId": "OUT-4412",
@@ -12,7 +15,8 @@
       "subject": "Shipment delay at Cesanek dock — trailer AR-4721 overdue",
       "lastEmailDate": "2026-08-08T06:45:00Z",
       "participants": ["acme.dispatch@example.com", "cesanek.ops@unisco.com"],
-      "emailCount": 3
+      "emailCount": 3,
+      "primaryThread": true
     },
     {
       "outlookThreadId": "OUT-4410",
@@ -21,7 +25,10 @@
       "subject": "RE: Shipment delay at Cesanek dock — trailer AR-4721 overdue",
       "lastEmailDate": "2026-08-07T16:00:00Z",
       "participants": ["acme.dispatch@example.com", "cesanek.ops@unisco.com"],
-      "emailCount": 5
+      "emailCount": 5,
+      "primaryThread": false,
+      "duplicateOf": "OUT-4412",
+      "dedupNote": "Thread merges into T-2841 per dedup rules"
     },
     {
       "outlookThreadId": "OUT-4411",
@@ -30,7 +37,8 @@
       "subject": "UFN: Inventory discrepancy in Bay 7 — 3 pallets unaccounted",
       "lastEmailDate": "2026-08-08T08:15:00Z",
       "participants": ["beta.sc@example.com", "cesanek.inventory@unisco.com"],
-      "emailCount": 2
+      "emailCount": 2,
+      "primaryThread": true
     },
     {
       "outlookThreadId": "OUT-4407",
@@ -39,7 +47,8 @@
       "subject": "Temperature excursion on reefer unit R-992",
       "lastEmailDate": "2026-08-06T10:00:00Z",
       "participants": ["beta.qa@example.com", "cesanek.cold@unisco.com"],
-      "emailCount": 7
+      "emailCount": 7,
+      "primaryThread": true
     },
     {
       "outlookThreadId": "OUT-4409",
@@ -48,7 +57,8 @@
       "subject": "Awaiting customs clearance docs for container MSC-8821",
       "lastEmailDate": "2026-08-07T09:00:00Z",
       "participants": ["gamma.customs@example.com", "cesanek.compliance@unisco.com"],
-      "emailCount": 4
+      "emailCount": 4,
+      "primaryThread": true
     },
     {
       "outlookThreadId": "OUT-4399",
@@ -57,7 +67,8 @@
       "subject": "UFN: Repeated late pickups from Carrier X",
       "lastEmailDate": "2026-08-05T14:00:00Z",
       "participants": ["delta.logistics@example.com", "cesanek.carriers@unisco.com"],
-      "emailCount": 12
+      "emailCount": 12,
+      "primaryThread": true
     },
     {
       "outlookThreadId": "OUT-4396",
@@ -66,7 +77,8 @@
       "subject": "WMS system outage affecting pick/pack operations",
       "lastEmailDate": "2026-08-05T18:00:00Z",
       "participants": ["epsilon.it@example.com", "cesanek.wms@unisco.com"],
-      "emailCount": 9
+      "emailCount": 9,
+      "primaryThread": true
     },
     {
       "outlookThreadId": "OUT-4393",
@@ -75,7 +87,13 @@
       "subject": "UFN: Hazardous material spill containment — Section D",
       "lastEmailDate": "2026-08-03T11:00:00Z",
       "participants": ["eta.safety@example.com", "cesanek.hazmat@unisco.com"],
-      "emailCount": 15
+      "emailCount": 15,
+      "primaryThread": true
     }
-  ]
+  ],
+  "coverage": {
+    "eligibleTicketsWithOutlook": 6,
+    "eligibleTicketsWithoutOutlook": 9,
+    "coveragePct": "40%"
+  }
 }
