@@ -2,9 +2,19 @@
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "tenant": "LT",
-  "generatedAt": "2026-08-08T07:30:00Z",
+  "generatedAt": "2026-08-08T09:01:14Z",
+  "lastRefreshed": "2026-08-08T09:01:14Z",
   "dataSource": "TicketOps",
   "totalRaw": 24,
+  "pipelineSummary": {
+    "totalRaw": 24,
+    "statusExcluded": 5,
+    "invoiceItemExcluded": 3,
+    "deduplicated": 1,
+    "totalEligible": 15,
+    "byStatus": { "New": 7, "Open": 5, "Pending": 3 },
+    "ufnCount": 3
+  },
   "tickets": [
     {
       "ticketId": "T-2841",
@@ -17,7 +27,8 @@
       "invoiceItemType": "",
       "tags": ["dock", "delay"],
       "ufn": false,
-      "responseHours": null
+      "responseHours": null,
+      "dedupOf": ["T-2839"]
     },
     {
       "ticketId": "T-2839",
@@ -30,7 +41,9 @@
       "invoiceItemType": "",
       "tags": ["dock", "delay"],
       "ufn": false,
-      "responseHours": 5.2
+      "responseHours": 5.2,
+      "deduplicate": true,
+      "duplicateOf": "T-2841"
     },
     {
       "ticketId": "T-2840",
@@ -162,7 +175,9 @@
       "invoiceItemType": "billing",
       "tags": ["billing", "dispute"],
       "ufn": false,
-      "responseHours": 48.0
+      "responseHours": 48.0,
+      "excluded": true,
+      "exclusionReason": "Invoice item type: billing"
     },
     {
       "ticketId": "T-2825",
@@ -189,7 +204,9 @@
       "invoiceItemType": "storage",
       "tags": ["storage", "fee-waiver"],
       "ufn": false,
-      "responseHours": 72.0
+      "responseHours": 72.0,
+      "excluded": true,
+      "exclusionReason": "Invoice item type: storage"
     },
     {
       "ticketId": "T-2834",
@@ -254,7 +271,9 @@
       "invoiceItemType": "",
       "tags": ["consolidation", "outbound"],
       "ufn": false,
-      "responseHours": 12.0
+      "responseHours": 12.0,
+      "excluded": true,
+      "exclusionReason": "Status: Closed"
     },
     {
       "ticketId": "T-2820",
@@ -267,7 +286,9 @@
       "invoiceItemType": "",
       "tags": ["claims", "resolved"],
       "ufn": false,
-      "responseHours": 18.0
+      "responseHours": 18.0,
+      "excluded": true,
+      "exclusionReason": "Status: Resolved"
     },
     {
       "ticketId": "T-2817",
@@ -280,7 +301,9 @@
       "invoiceItemType": "",
       "tags": ["cancelled"],
       "ufn": false,
-      "responseHours": null
+      "responseHours": null,
+      "excluded": true,
+      "exclusionReason": "Status: Cancelled"
     },
     {
       "ticketId": "T-2824",
@@ -293,7 +316,9 @@
       "invoiceItemType": "",
       "tags": ["quality", "labeling"],
       "ufn": false,
-      "responseHours": 6.5
+      "responseHours": 6.5,
+      "excluded": true,
+      "exclusionReason": "Status: Reopened"
     },
     {
       "ticketId": "T-2823",
@@ -306,7 +331,9 @@
       "invoiceItemType": "",
       "tags": ["staffing", "seasonal"],
       "ufn": false,
-      "responseHours": 30.0
+      "responseHours": 30.0,
+      "excluded": true,
+      "exclusionReason": "Status: Done"
     },
     {
       "ticketId": "T-2819",
@@ -319,7 +346,9 @@
       "invoiceItemType": "UF Billing",
       "tags": ["billing", "reconciliation"],
       "ufn": false,
-      "responseHours": 120.0
+      "responseHours": 120.0,
+      "excluded": true,
+      "exclusionReason": "Invoice item type: UF Billing"
     }
   ]
 }
