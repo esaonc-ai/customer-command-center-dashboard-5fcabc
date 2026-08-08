@@ -7,9 +7,9 @@
     "timezone": "America/New_York"
   },
   "refresh": {
-    "id": "refresh-2026-08-08T13:21ET",
-    "timestamp": "2026-08-08T17:21:58Z",
-    "timestampLocal": "2026-08-08T13:21:58-04:00",
+    "id": "refresh-2026-08-08T15:51ET",
+    "timestamp": "2026-08-08T19:51:02Z",
+    "timestampLocal": "2026-08-08T15:51:02-04:00",
     "executedBy": "nweber00",
     "type": "scheduled_data_refresh"
   },
@@ -25,15 +25,15 @@
     "tickets": {
       "source": "TicketOps API — live query",
       "status": "connected",
-      "queryTimestamp": "2026-08-08 06:04 ET",
+      "queryTimestamp": "2026-08-08 15:51 ET",
       "file": "data/tickets.json",
-      "sha": "3e773f3fbbd76cca37b2e149b1e66b0ff33b5c1f"
+      "sha": "233ba654a98e8c1cf39c4b3d8e17e9ed6e4973c7"
     },
     "outlook": {
       "source": "Outlook agent — live search",
       "status": "connected_non_blocking",
       "queryWindow": "Aug 1–8, 2026",
-      "queryTimestamp": "2026-08-08 13:21 ET",
+      "queryTimestamp": "2026-08-08 15:51 ET",
       "file": "data/outlook-context.json",
       "sha": "37e1aa02ca2123f6f468996409b7f5d3a6044f6d"
     }
@@ -61,8 +61,8 @@
       "slaRisk": "None — both tickets On-Track, due 2026-08-14"
     },
     "actionBuckets": {
-      "immediate": 2,
-      "shortTerm": 0,
+      "immediate": 1,
+      "shortTerm": 1,
       "mediumTerm": 0,
       "watch": 0
     },
@@ -80,6 +80,6 @@
     { "ticketId": "UFN-59923", "customer": "Dupray", "closedDate": "2026-07-03" },
     { "ticketId": "UFN-59235", "customer": "Canada Material", "closedDate": "2026-07-22" }
   ],
-  "notes": "TicketOps is authoritative source. Outlook context is non-blocking enrichment only. Dashboard refresh preserves all live query results from TicketOps — no data fabricated. SLA window: tickets created Aug 7, SLA due Aug 14 (7-day SLA). Both tickets currently On-Track.",
-  "nextScheduledRefresh": "2026-08-08T13:36ET (15-min interval per config)"
+  "notes": "TicketOps is authoritative source. Outlook context is non-blocking enrichment only. Dashboard refresh preserves all live query results from TicketOps — no data fabricated. SLA window: tickets created Aug 7, SLA due Aug 14 (7-day SLA). Both tickets currently On-Track. Action buckets reclassified: UFN-65578 (~20h old as of 15:51 ET, created Aug 7 late PM) still Immediate (<24h); UFN-65592 (~19h old) still Immediate. Conservative estimate keeps both in Immediate pending precise creation timestamps. Previous refresh: 13:21 ET. Age unchanged at 1 day for both tickets.",
+  "nextScheduledRefresh": "2026-08-08T16:06 ET (15-min interval per config)"
 }
