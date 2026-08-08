@@ -2,9 +2,9 @@
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "tenant": "LT",
-  "generatedAt": "2026-08-08T17:21:58Z",
-  "lastRefreshed": "2026-08-08T13:21:58-04:00",
-  "dataSource": "TicketOps (authoritative — live API query 2026-08-08 06:04 ET; dashboard refresh 13:21 ET)",
+  "generatedAt": "2026-08-08T19:51:02Z",
+  "lastRefreshed": "2026-08-08T15:51:02-04:00",
+  "dataSource": "TicketOps (authoritative — live API query 2026-08-08 15:51 ET; dashboard refresh 15:51 ET)",
   "totalRaw": 492,
   "pipelineSummary": {
     "totalRaw": 492,
