@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Command Center — NHT/Cesanek</title>
+  <link rel="stylesheet" href="/css/dashboard.css">
+  <script src="/js/dashboard.js" defer></script>
+  <script src="/js/data-loader.js" defer></script>
+  <script src="/js/charts.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-brand">
+      <h1>Customer Command Center</h1>
+      <span class="facility-badge">NHT/Cesanek — LT_F21</span>
+    </div>
+    <div class="header-meta">
+      <span class="last-refresh" id="lastRefresh">Loading…</span>
+      <span class="timezone">America/New_York</span>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <!-- Section 1: Ticket Counts -->
+    <section id="ticketCounts" class="card-grid">
+      <div class="card count-card count-total">
+        <div class="card-label">Total Eligible</div>
+        <div class="card-value" id="countTotal">—</div>
+      </div>
+      <div class="card count-card count-new">
+        <div class="card-label">New</div>
+        <div class="card-value" id="countNew">—</div>
+      </div>
+      <div class="card count-card count-open">
+        <div class="card-label">Open</div>
+        <div class="card-value" id="countOpen">—</div>
+      </div>
+      <div class="card count-card count-pending">
+        <div class="card-label">Pending</div>
+        <div class="card-value" id="countPending">—</div>
+      </div>
+      <div class="card count-card count-ufn">
+        <div class="card-label">UFN-Tagged</div>
+        <div class="card-value" id="countUFN">—</div>
+      </div>
+      <div class="card count-card count-excluded">
+        <div class="card-label">Excluded</div>
+        <div class="card-value" id="countExcluded">—</div>
+      </div>
+    </section>
+
+    <!-- Section 2: Priority Queue -->
+    <section class="panel" id="priorityQueue">
+      <h2>Priority Queue</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Ticket ID</th>
+              <th>Customer</th>
+              <th>Status</th>
+              <th>Priority</th>
+              <th>Age (days)</th>
+              <th>Subject</th>
+              <th>UFN</th>
+            </tr>
+          </thead>
+          <tbody id="priorityQueueBody">
+            <tr><td colspan="7" class="loading">Loading priority queue…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Section 3: Action Buckets -->
+    <section class="panel" id="actionBuckets">
+      <h2>Action Buckets</h2>
+      <div class="buckets-grid" id="actionBucketsGrid">
+        <div class="bucket" id="bucket-immediate">
+          <h3>🚨 Immediate (&lt;24h)</h3>
+          <ul id="bucketImmediateList"></ul>
+        </div>
+        <div class="bucket" id="bucket-short">
+          <h3>⚡ Short-Term (1–3d)</h3>
+          <ul id="bucketShortList"></ul>
+        </div>
+        <div class="bucket" id="bucket-medium">
+          <h3>📋 Medium-Term (3–7d)</h3>
+          <ul id="bucketMediumList"></ul>
+        </div>
+        <div class="bucket" id="bucket-watch">
+          <h3>👀 Watch (&gt;7d)</h3>
+          <ul id="bucketWatchList"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Customer Health -->
+    <section class="panel" id="customerHealth">
+      <h2>Customer Health</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Customer</th>
+              <th>Active Tickets</th>
+              <th>Open &gt;7d</th>
+              <th>UFN Count</th>
+              <th>Health</th>
+              <th>Trend</th>
+            </tr>
+          </thead>
+          <tbody id="customerHealthBody">
+            <tr><td colspan="6" class="loading">Loading customer health…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Section 5: Evidence Metrics -->
+    <section class="panel" id="evidenceMetrics">
+      <h2>Evidence &amp; Metrics</h2>
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <h3>Outlook Threads Matched</h3>
+          <div class="metric-value" id="metricOutlookMatched">—</div>
+        </div>
+        <div class="metric-card">
+          <h3>Duplicates Removed</h3>
+          <div class="metric-value" id="metricDupesRemoved">—</div>
+        </div>
+        <div class="metric-card">
+          <h3>Invoice Items Excluded</h3>
+          <div class="metric-value" id="metricInvoiceExcluded">—</div>
+        </div>
+        <div class="metric-card">
+          <h3>Avg Response Time (h)</h3>
+          <div class="metric-value" id="metricAvgResponse">—</div>
+        </div>
+        <div class="metric-card">
+          <h3>SLA Breach Risk</h3>
+          <div class="metric-value" id="metricSLARisk">—</div>
+        </div>
+        <div class="metric-card">
+          <h3>Data Freshness</h3>
+          <div class="metric-value" id="metricFreshness">—</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Customer Command Center Dashboard — NHT/Cesanek (LT_F21) | Tenant: LT | v1.0.0</p>
+  </footer>
+</body>
+</html>
