@@ -1,0 +1,81 @@
+{
+  "description": "Outlook email context matching for NHT/Cesanek tickets (non-blocking enrichment)",
+  "facility": "NHT/Cesanek",
+  "facilityCode": "LT_F21",
+  "generatedAt": "2026-08-08T07:30:00Z",
+  "threadsMatched": 8,
+  "threads": [
+    {
+      "outlookThreadId": "OUT-4412",
+      "ticketId": "T-2841",
+      "customer": "Acme Logistics",
+      "subject": "Shipment delay at Cesanek dock — trailer AR-4721 overdue",
+      "lastEmailDate": "2026-08-08T06:45:00Z",
+      "participants": ["acme.dispatch@example.com", "cesanek.ops@unisco.com"],
+      "emailCount": 3
+    },
+    {
+      "outlookThreadId": "OUT-4410",
+      "ticketId": "T-2839",
+      "customer": "Acme Logistics",
+      "subject": "RE: Shipment delay at Cesanek dock — trailer AR-4721 overdue",
+      "lastEmailDate": "2026-08-07T16:00:00Z",
+      "participants": ["acme.dispatch@example.com", "cesanek.ops@unisco.com"],
+      "emailCount": 5
+    },
+    {
+      "outlookThreadId": "OUT-4411",
+      "ticketId": "T-2840",
+      "customer": "Beta Supply Chain",
+      "subject": "UFN: Inventory discrepancy in Bay 7 — 3 pallets unaccounted",
+      "lastEmailDate": "2026-08-08T08:15:00Z",
+      "participants": ["beta.sc@example.com", "cesanek.inventory@unisco.com"],
+      "emailCount": 2
+    },
+    {
+      "outlookThreadId": "OUT-4407",
+      "ticketId": "T-2835",
+      "customer": "Beta Supply Chain",
+      "subject": "Temperature excursion on reefer unit R-992",
+      "lastEmailDate": "2026-08-06T10:00:00Z",
+      "participants": ["beta.qa@example.com", "cesanek.cold@unisco.com"],
+      "emailCount": 7
+    },
+    {
+      "outlookThreadId": "OUT-4409",
+      "ticketId": "T-2837",
+      "customer": "Gamma Distribution",
+      "subject": "Awaiting customs clearance docs for container MSC-8821",
+      "lastEmailDate": "2026-08-07T09:00:00Z",
+      "participants": ["gamma.customs@example.com", "cesanek.compliance@unisco.com"],
+      "emailCount": 4
+    },
+    {
+      "outlookThreadId": "OUT-4399",
+      "ticketId": "T-2830",
+      "customer": "Delta Freight",
+      "subject": "UFN: Repeated late pickups from Carrier X",
+      "lastEmailDate": "2026-08-05T14:00:00Z",
+      "participants": ["delta.logistics@example.com", "cesanek.carriers@unisco.com"],
+      "emailCount": 12
+    },
+    {
+      "outlookThreadId": "OUT-4396",
+      "ticketId": "T-2833",
+      "customer": "Epsilon Warehousing",
+      "subject": "WMS system outage affecting pick/pack operations",
+      "lastEmailDate": "2026-08-05T18:00:00Z",
+      "participants": ["epsilon.it@example.com", "cesanek.wms@unisco.com"],
+      "emailCount": 9
+    },
+    {
+      "outlookThreadId": "OUT-4393",
+      "ticketId": "T-2825",
+      "customer": "Eta Logistics",
+      "subject": "UFN: Hazardous material spill containment — Section D",
+      "lastEmailDate": "2026-08-03T11:00:00Z",
+      "participants": ["eta.safety@example.com", "cesanek.hazmat@unisco.com"],
+      "emailCount": 15
+    }
+  ]
+}
