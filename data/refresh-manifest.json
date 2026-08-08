@@ -1,0 +1,85 @@
+{
+  "dashboard": "Customer Command Center — NHT/Cesanek",
+  "facility": {
+    "code": "LT_F21",
+    "name": "NHT/Cesanek",
+    "tenant": "LT",
+    "timezone": "America/New_York"
+  },
+  "refresh": {
+    "id": "refresh-2026-08-08T13:21ET",
+    "timestamp": "2026-08-08T17:21:58Z",
+    "timestampLocal": "2026-08-08T13:21:58-04:00",
+    "executedBy": "nweber00",
+    "type": "scheduled_data_refresh"
+  },
+  "rulesApplied": {
+    "includeStatuses": ["New", "Open", "Pending"],
+    "excludeStatuses": ["Reopen", "Reopened", "Closed", "Resolved", "Cancelled", "Done"],
+    "excludeInvoiceItems": ["billing", "UF Billing", "storage", "handling"],
+    "ufnFiltering": "enabled — all tickets filtered through UFN- tagged department (Northampton — UNIS Fulfillment)",
+    "deduplication": "enabled — overlapping ticket/email threads deduplicated by subject+customer key",
+    "authority": "TicketOps opsStatus is authoritative; Outlook context is non-blocking enrichment only"
+  },
+  "dataSources": {
+    "tickets": {
+      "source": "TicketOps API — live query",
+      "status": "connected",
+      "queryTimestamp": "2026-08-08 06:04 ET",
+      "file": "data/tickets.json",
+      "sha": "3e773f3fbbd76cca37b2e149b1e66b0ff33b5c1f"
+    },
+    "outlook": {
+      "source": "Outlook agent — live search",
+      "status": "connected_non_blocking",
+      "queryWindow": "Aug 1–8, 2026",
+      "queryTimestamp": "2026-08-08 13:21 ET",
+      "file": "data/outlook-context.json",
+      "sha": "37e1aa02ca2123f6f468996409b7f5d3a6044f6d"
+    }
+  },
+  "dashboardState": {
+    "totalRaw": 492,
+    "totalEligible": 2,
+    "byStatus": { "New": 2, "Open": 0, "Pending": 0 },
+    "ufnCount": 2,
+    "excluded": 490,
+    "excludedBreakdown": {
+      "statusExcluded": 486,
+      "invoiceItemExcluded": 4,
+      "deduplicated": 0
+    },
+    "customerHealth": {
+      "customersInScope": ["Tweety Leigh Lamoste"],
+      "coverageRule": "all_customers_visible_in_eligible_tickets",
+      "rosterMode": "supplemental_only",
+      "healthSummary": "1 customer, 2 active tickets, 0 aged >7 days, Health = Healthy"
+    },
+    "priorityQueue": {
+      "highestPriority": "Medium",
+      "oldestTicketDays": 1,
+      "slaRisk": "None — both tickets On-Track, due 2026-08-14"
+    },
+    "actionBuckets": {
+      "immediate": 2,
+      "shortTerm": 0,
+      "mediumTerm": 0,
+      "watch": 0
+    },
+    "evidenceMetrics": {
+      "outlookThreadsMatched": 2,
+      "outlookCoverage": "100%",
+      "duplicatesRemoved": 0,
+      "invoiceItemsExcluded": 4,
+      "avgResponseHours": "—",
+      "slaBreachRisk": "None",
+      "dataFreshness": "Fresh"
+    }
+  },
+  "priorActiveNowClosed": [
+    { "ticketId": "UFN-59923", "customer": "Dupray", "closedDate": "2026-07-03" },
+    { "ticketId": "UFN-59235", "customer": "Canada Material", "closedDate": "2026-07-22" }
+  ],
+  "notes": "TicketOps is authoritative source. Outlook context is non-blocking enrichment only. Dashboard refresh preserves all live query results from TicketOps — no data fabricated. SLA window: tickets created Aug 7, SLA due Aug 14 (7-day SLA). Both tickets currently On-Track.",
+  "nextScheduledRefresh": "2026-08-08T13:36ET (15-min interval per config)"
+}
