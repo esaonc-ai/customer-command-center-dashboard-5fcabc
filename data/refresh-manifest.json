@@ -7,11 +7,11 @@
     "timezone": "America/New_York"
   },
   "refresh": {
-    "id": "refresh-2026-08-08T15:51ET",
-    "timestamp": "2026-08-08T19:51:02Z",
-    "timestampLocal": "2026-08-08T15:51:02-04:00",
+    "id": "refresh-2026-08-08T15:52ET",
+    "timestamp": "2026-08-08T19:52:00Z",
+    "timestampLocal": "2026-08-08T15:52:00-04:00",
     "executedBy": "nweber00",
-    "type": "scheduled_data_refresh"
+    "type": "ticketops_authoritative_requery"
   },
   "rulesApplied": {
     "includeStatuses": ["New", "Open", "Pending"],
@@ -23,19 +23,17 @@
   },
   "dataSources": {
     "tickets": {
-      "source": "TicketOps API — live query",
+      "source": "TicketOps API — live re-query",
       "status": "connected",
-      "queryTimestamp": "2026-08-08 15:51 ET",
-      "file": "data/tickets.json",
-      "sha": "233ba654a98e8c1cf39c4b3d8e17e9ed6e4973c7"
+      "queryTimestamp": "2026-08-08 15:52 ET",
+      "file": "data/tickets.json"
     },
     "outlook": {
       "source": "Outlook agent — live search",
       "status": "connected_non_blocking",
       "queryWindow": "Aug 1–8, 2026",
-      "queryTimestamp": "2026-08-08 15:51 ET",
-      "file": "data/outlook-context.json",
-      "sha": "37e1aa02ca2123f6f468996409b7f5d3a6044f6d"
+      "queryTimestamp": "2026-08-08 15:52 ET",
+      "file": "data/outlook-context.json"
     }
   },
   "dashboardState": {
@@ -80,6 +78,6 @@
     { "ticketId": "UFN-59923", "customer": "Dupray", "closedDate": "2026-07-03" },
     { "ticketId": "UFN-59235", "customer": "Canada Material", "closedDate": "2026-07-22" }
   ],
-  "notes": "TicketOps is authoritative source. Outlook context is non-blocking enrichment only. Dashboard refresh preserves all live query results from TicketOps — no data fabricated. SLA window: tickets created Aug 7, SLA due Aug 14 (7-day SLA). Both tickets currently On-Track. Action buckets reclassified: UFN-65578 (~20h old as of 15:51 ET, created Aug 7 late PM) still Immediate (<24h); UFN-65592 (~19h old) still Immediate. Conservative estimate keeps both in Immediate pending precise creation timestamps. Previous refresh: 13:21 ET. Age unchanged at 1 day for both tickets.",
-  "nextScheduledRefresh": "2026-08-08T16:06 ET (15-min interval per config)"
+  "notes": "TicketOps authoritative re-query at 15:52 ET. TicketOps is authoritative source. Outlook context is non-blocking enrichment only. SLA window: tickets created Aug 7, SLA due Aug 14 (7-day SLA). Both tickets currently On-Track. Both tickets ~1 day old — UFN-65592 (Unassigned, Inbounds for 08/10), UFN-65578 (Assigned: Lesean Torres, Open RNs pending closure). Previous refresh: 15:51 ET (scheduled). This refresh: 15:52 ET (authoritative re-query).",
+  "nextScheduledRefresh": "2026-08-08T16:07 ET (15-min interval per config)"
 }
