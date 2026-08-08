@@ -43,8 +43,8 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 | Customers | Tweety Leigh Lamoste |
 | SLA Risk | None — both On-Track |
 | Outlook Coverage | 100% (2/2 direct thread matches) |
-| Last Refresh | 2026-08-08 15:51 ET |
-| Next Refresh | ~16:06 ET |
+| Last Refresh | 2026-08-08 15:52 ET (TicketOps authoritative re-query) |
+| Next Refresh | ~16:07 ET |
 
 ## Data Files
 
