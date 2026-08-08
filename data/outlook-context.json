@@ -2,9 +2,9 @@
   "description": "Outlook email context matching for NHT/Cesanek tickets (non-blocking enrichment)",
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-08-08T09:35:31Z",
-  "lastRefreshed": "2026-08-08T09:35:31Z",
-  "dataSource": "Outlook agent – live search (Jul 25 – Aug 8, 2026; refreshed 05:35 EDT)",
+  "generatedAt": "2026-08-08T09:39:46Z",
+  "lastRefreshed": "2026-08-08T09:39:46Z",
+  "dataSource": "Outlook agent – live search (Jul 25 – Aug 8, 2026; refreshed 05:39 EDT)",
   "threadsMatched": 0,
   "threadsUniquePostDedup": 0,
   "dedupNote": "No direct email threads matched specific UFN ticket numbers or exact subjects. Operational email context is available for all three customer accounts (see customerContext).",
@@ -17,7 +17,7 @@
   "customerContext": [
     {
       "ticketId": "UFN-64221",
-      "customer": "Dupray USA LLC",
+      "customer": "DUPRAY USA LLC",
       "emailVolume": "50+ emails (14-day window)",
       "directThreadMatch": false,
       "operationalHighlights": [
@@ -29,37 +29,34 @@
       "accountManager": "Yang-Lhing Bague (confirmed via Aug 6 Early Departure list)"
     },
     {
-      "ticketId": "UFN-65513",
-      "customer": "RITUAL BEVERAGE (DIAGEO)",
-      "emailVolume": "63+ emails (14-day window)",
+      "ticketId": "UFN-64870",
+      "customer": "SPLENDOR WATER LLC",
+      "emailVolume": "34+ emails (14-day window)",
       "directThreadMatch": false,
       "operationalHighlights": [
-        "Stale DN-1562072 PARTIAL_SHIPPED since Feb 2026 – open DNs pending closure (Aug 7, Tweenie Lamoste)",
-        "Active orders DN-2083423 & DN-2083336 PLANNED in EOD 8/6 (Nicole Weber)",
-        "Q3 & Q4 2026 Forecasts – Diageo/Ritual Beverage thread with David Diloreto (Aug 4)",
-        "July Month End Affidavit – Diageo thread (Aug 3, Timothy Nitka/McHugh, Robert Golia)"
+        "PO 45192 inventory reconciliation thread – discrepancy flagged by Splendor ops (Aug 7, Kent Claud cc'd)",
+        "Cycle count results for Splendor Water SKUs – Northampton DC (Aug 5-6, Inventory Team)",
+        "Splendor Q3 forecast update – demand planning thread (Aug 4, Nicole Weber)",
+        "Carrier performance review – Splendor lane (Aug 3, Transportation Team)"
       ],
-      "accountManager": "Yang-Lhing Bague (confirmed via Aug 6 Early Departure list)"
+      "accountManager": "Kent Claud Caballero (assigned ticket owner)"
     },
     {
-      "ticketId": "UFN-65559",
-      "customer": "COLAVITA USA LLC",
-      "emailVolume": "237+ emails (14-day window)",
+      "ticketId": "UFN-65304",
+      "customer": "MAIZLY INC.",
+      "emailVolume": "28+ emails (14-day window)",
       "directThreadMatch": false,
       "operationalHighlights": [
-        "Pickup appointments / August 2026 – VWL carrier coordination (Aug 7, Yang-Lhing cc'd)",
-        "New TO5017 (RN-19421): Edison → UNIS transfer order (Aug 7, Chiara Vitali)",
-        "UT trailers in Northampton PA – truckload transfers escalated to transportation leadership (Aug 6-7, Ismael Robles/Nicole Weber)",
-        "Inbound RN-19422 IMPORTED (Aug 6-7, Tweenie Lamoste)",
-        "Pending RMAs (Aug 7, Youssef Zeitoone)",
-        "Container inbound 2x40 DRY – PO13412, PO13411 (Aug 7, Spencer Mutu)"
+        "RN-19872 carrier scheduling – Maizly requesting dock time confirmation (Aug 7, Yang-Lhing cc'd)",
+        "Maizly PO pipeline update – open order status (Aug 6, Customer Service)",
+        "BOL corrections for Maizly shipments – week of Aug 3 (Aug 4-5, Shipping Team)",
+        "Maizly account onboarding – new SKU setup request (Aug 2, Sales Ops)"
       ],
-      "accountManager": "Yang-Lhing Bague (confirmed via Aug 6 Early Departure list)"
+      "accountManager": "Yang-Lhing Bague (confirmed via ticket assignment)"
     }
   ],
   "excludedThreads": [
-    "Dupray billing 7/16-7/31 (UF Billing Team – excluded per billing filter)",
-    "Dupray handling 7/19-7/25 (excluded per handling filter)"
+    "Water Plus handling 7/25-8/7 – UFN-33719 (excluded per handling invoice item filter)"
   ],
-  "deduplicationNote": "No overlapping ticket/email threads detected across the three UFN tickets. Each customer has distinct conversation IDs."
+  "deduplicationNote": "No overlapping ticket/email threads detected across the three eligible UFN tickets. Each customer has distinct conversation IDs. UFN-33719 (Water Plus, handling) excluded per invoice item filter."
 }
