@@ -2,28 +2,50 @@
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "tenant": "LT",
-  "generatedAt": "2026-08-08T19:52:00Z",
-  "lastRefreshed": "2026-08-08T15:52:00-04:00",
-  "dataSource": "TicketOps (authoritative — live API re-query 2026-08-08 15:52 ET; dashboard refresh 15:52 ET)",
+  "generatedAt": "2026-08-08T19:52:56Z",
+  "lastRefreshed": "2026-08-08T15:52:56-04:00",
+  "dataSource": "TicketOps (authoritative — live API query 2026-08-08 15:48 ET; dashboard refresh 15:52 ET)",
   "totalRaw": 492,
   "pipelineSummary": {
     "totalRaw": 492,
     "statusExcluded": 486,
     "invoiceItemExcluded": 4,
     "deduplicated": 0,
-    "totalEligible": 2,
-    "byStatus": {
-      "New": 2,
-      "Open": 0,
-      "Pending": 0
-    },
-    "ufnCount": 2,
+    "totalEligible": 3,
+    "byStatus": { "New": 3, "Open": 0, "Pending": 0 },
+    "ufnCount": 3,
     "scanWindow": "All UFN- tickets — Northampton department (departmentId: 323826714354839552)",
     "departmentFilter": "Northampton — UNIS Fulfillment - Northampton",
     "systemStatusFilter": "closeFlag=false, displayStatusSystemStatus=10; status filtering applied client-side",
-    "refreshSource": "TicketOps live re-query — full UFN- corpus scanned for Northampton; 492 total, 2 active eligible, 4 excluded (storage/handling/billing)"
+    "refreshSource": "TicketOps live query — full UFN- corpus scanned for Northampton; 492 total, 3 active eligible, 4 excluded (storage/handling/billing)",
+    "changeNote": "UFN-64782 (DAYDREAM NUTRITION INC.) was previously missed; fresh TicketOps query confirms 3 eligible tickets (was 2 in prior refresh)"
   },
   "tickets": [
+    {
+      "ticketId": "UFN-64782",
+      "customer": "DAYDREAM NUTRITION INC.",
+      "customerType": "external_customer",
+      "opsStatus": "New",
+      "status": "New",
+      "subject": "Transfer to Northampton RN-19417",
+      "priority": "Medium",
+      "createdAt": "2026-08-03",
+      "lastActivity": "2026-08-03",
+      "assignedTo": "Unassigned",
+      "invoiceItemType": "",
+      "tags": ["transfer", "RN-19417", "Northampton", "customer-request"],
+      "ufn": true,
+      "ufnTag": "UFN-64782",
+      "responseHours": null,
+      "slaBreached": true,
+      "slaDueDate": "2026-08-05",
+      "slaStatus": "BREACHED",
+      "ageDays": 5,
+      "outlookMatch": false,
+      "outlookMessageId": null,
+      "outlookConversationId": null,
+      "hasAttachments": false
+    },
     {
       "ticketId": "UFN-65592",
       "customer": "Tweety Leigh Lamoste",
@@ -77,56 +99,31 @@
   ],
   "excludedTickets": [
     {
-      "ticketId": "UFN-64743",
-      "customer": "Y,IWO",
-      "opsStatus": "Active",
-      "status": "Active",
+      "ticketId": "UFN-64743", "customer": "Y,IWO", "opsStatus": "Active", "status": "Active",
       "reason": "Invoice item type 'storage' excluded per filter rules",
-      "invoiceItemType": "storage",
-      "subject": "Y,IWO l Cesanek — Aug. Storage 2026"
+      "invoiceItemType": "storage", "subject": "Y,IWO l Cesanek — Aug. Storage 2026"
     },
     {
-      "ticketId": "UFN-64749",
-      "customer": "Nourison",
-      "opsStatus": "Active",
-      "status": "Active",
+      "ticketId": "UFN-64749", "customer": "Nourison", "opsStatus": "Active", "status": "Active",
       "reason": "Invoice item type 'handling' excluded per filter rules",
-      "invoiceItemType": "handling",
-      "subject": "Nourison l Cesanek — Handling 7/16-7/31"
+      "invoiceItemType": "handling", "subject": "Nourison l Cesanek — Handling 7/16-7/31"
     },
     {
-      "ticketId": "UFN-64618",
-      "customer": "Sheex",
-      "opsStatus": "Active",
-      "status": "Active",
+      "ticketId": "UFN-64618", "customer": "Sheex", "opsStatus": "Active", "status": "Active",
       "reason": "Invoice item type 'billing' excluded per filter rules",
-      "invoiceItemType": "billing",
-      "subject": "RMS — Cesanek — Sheex — Monthly Billing Report"
+      "invoiceItemType": "billing", "subject": "RMS — Cesanek — Sheex — Monthly Billing Report"
     },
     {
-      "ticketId": "UFN-33719",
-      "customer": "Water Plus",
-      "opsStatus": "Active",
-      "status": "Active",
+      "ticketId": "UFN-33719", "customer": "Water Plus", "opsStatus": "Active", "status": "Active",
       "reason": "Invoice item type 'handling' excluded per filter rules",
-      "invoiceItemType": "handling",
-      "subject": "INVOICE UPDATE REQUIRED — HANDLING"
+      "invoiceItemType": "handling", "subject": "INVOICE UPDATE REQUIRED — HANDLING"
     }
   ],
   "priorActiveNowClosed": [
-    {
-      "ticketId": "UFN-59923",
-      "customer": "Dupray",
-      "status": "Solved",
-      "closedDate": "2026-07-03",
-      "note": "Dupray 7/2/26 — previously active, now closed"
-    },
-    {
-      "ticketId": "UFN-59235",
-      "customer": "Canada Material",
-      "status": "Solved",
-      "closedDate": "2026-07-22",
-      "note": "Previously active, now closed"
-    }
+    { "ticketId": "UFN-59923", "customer": "Dupray", "status": "Solved", "closedDate": "2026-07-03", "note": "Dupray 7/2/26 — previously active, now closed" },
+    { "ticketId": "UFN-59235", "customer": "Canada Material", "status": "Solved", "closedDate": "2026-07-22", "note": "Previously active, now closed" },
+    { "ticketId": "UFN-64221", "customer": "Unknown", "status": "Closed", "note": "No longer appears in fresh TicketOps query — presumed closed or status-changed" },
+    { "ticketId": "UFN-64870", "customer": "Unknown", "status": "Closed", "note": "No longer appears in fresh TicketOps query — presumed closed or status-changed" },
+    { "ticketId": "UFN-65304", "customer": "Unknown", "status": "Closed", "note": "No longer appears in fresh TicketOps query — presumed closed or status-changed" }
   ]
 }
