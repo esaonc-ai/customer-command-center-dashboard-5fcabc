@@ -2,9 +2,9 @@
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "tenant": "LT",
-  "generatedAt": "2026-08-08T09:39:46Z",
-  "lastRefreshed": "2026-08-08T09:39:46Z",
-  "dataSource": "TicketOps (authoritative – live API query 2026-08-08; dashboard refresh 05:39 EDT)",
+  "generatedAt": "2026-08-08T10:08:46Z",
+  "lastRefreshed": "2026-08-08T10:08:46Z",
+  "dataSource": "TicketOps (authoritative — live API query 2026-08-08; dashboard refresh 06:08 EDT)",
   "totalRaw": 459,
   "pipelineSummary": {
     "totalRaw": 459,
@@ -17,7 +17,7 @@
     "scanWindow": "2026-07-25 to 2026-08-08",
     "departmentFilter": "Northampton",
     "systemStatusFilter": "closeFlag=false, displayStatusSystemStatus=10",
-    "refreshSource": "Ticket Ops live query – 459 UFN- tickets scanned, 3 active eligible, 1 excluded (handling)"
+    "refreshSource": "TicketOps live query — 459 UFN- tickets scanned, 3 active eligible, 1 excluded (handling)"
   },
   "tickets": [
     {
@@ -45,7 +45,7 @@
       "customer": "SPLENDOR WATER LLC",
       "opsStatus": "Pending",
       "status": "Pending",
-      "subject": "Inventory discrepancy – PO 45192",
+      "subject": "Inventory discrepancy — PO 45192",
       "priority": "Medium",
       "createdAt": "2026-08-03",
       "lastActivity": "2026-08-07",
@@ -65,7 +65,7 @@
       "customer": "MAIZLY INC.",
       "opsStatus": "Pending",
       "status": "Pending",
-      "subject": "Carrier scheduling – RN-19872",
+      "subject": "Carrier scheduling — RN-19872",
       "priority": "Medium",
       "createdAt": "2026-08-06",
       "lastActivity": "2026-08-07",
