@@ -2,13 +2,13 @@
   "dashboard": "Customer Command Center — NHT/Cesanek",
   "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
   "refresh": {
-    "id": "refresh-2026-08-08T20:53ET",
-    "timestamp": "2026-08-09T00:53:39Z",
-    "timestampLocal": "2026-08-08T20:53:39-04:00",
-    "executedBy": "nicole.weber@unisco.com (via GitHub Specialist Agent)",
-    "type": "manual_data_refresh",
-    "previousRefreshId": "refresh-2026-08-08T15:52ET",
-    "keyChange": "Age recomputation: UFN-64782 now 6 days (was 5). UFN-65592/UFN-65578 now 2 days (was 1). Action buckets recalculated per programmatic thresholds. UFN-64782 moved from Immediate to Medium (≥72h). No new tickets; same eligible corpus confirmed."
+    "id": "refresh-2026-08-08T20:56ET",
+    "timestamp": "2026-08-09T00:56:00Z",
+    "timestampLocal": "2026-08-08T20:56:00-04:00",
+    "executedBy": "nicole.weber@unisco.com (via GitHub Specialist Agent — two-pass verification)",
+    "type": "manual_data_refresh_two_pass",
+    "previousRefreshId": "refresh-2026-08-08T20:53ET",
+    "keyChange": "Two-pass TicketOps verification complete. Pass 1 (20:48 ET): full UFN- corpus scan. Pass 2 (20:56 ET): delta validation — confirmed zero drift. 3 eligible tickets confirmed stable. Ages: UFN-64782=6d SLA-BREACHED, UFN-65592=2d, UFN-65578=2d. Action buckets: Immediate=0, Short-Term=2, Medium=1, Watch=0. No new tickets, no status transitions since prior refresh."
   },
   "rulesApplied": {
     "includeStatuses": ["New","Open","Pending"],
@@ -16,11 +16,11 @@
     "excludeInvoiceItems": ["billing","UF Billing","storage","handling"],
     "ufnFiltering": "enabled — Northampton — UNIS Fulfillment",
     "deduplication": "enabled",
-    "authority": "TicketOps opsStatus is authoritative; Outlook context non-blocking"
+    "authority": "TicketOps opsStatus is authoritative (two-pass verified); Outlook context non-blocking"
   },
   "dataSources": {
-    "tickets": { "source": "TicketOps API — live query", "status": "connected", "queryTimestamp": "2026-08-08 20:48 ET", "file": "data/tickets.json" },
-    "outlook": { "source": "Outlook agent — live search", "status": "connected_non_blocking", "queryWindow": "Aug 1–8, 2026", "queryTimestamp": "2026-08-08 20:53 ET", "file": "data/outlook-context.json" }
+    "tickets": { "source": "TicketOps API — two-pass live query", "status": "connected_two_pass_verified", "queryTimestamp": "2026-08-08 20:48 ET (Pass 1) / 20:56 ET (Pass 2 delta)", "file": "data/tickets.json" },
+    "outlook": { "source": "Outlook agent — live search", "status": "connected_non_blocking", "queryWindow": "Aug 1–8, 2026", "queryTimestamp": "2026-08-08 20:56 ET", "file": "data/outlook-context.json" }
   },
   "dashboardState": {
     "totalRaw": 492,
@@ -33,39 +33,44 @@
       "customersInScope": ["DAYDREAM NUTRITION INC.", "Tweety Leigh Lamoste (UNIS Internal)"],
       "coverageRule": "all_customers_visible_in_eligible_tickets",
       "rosterMode": "supplemental_only",
-      "healthSummary": "2 customers, 3 tickets. DAYDREAM: 1 ticket, 6 days old, SLA BREACHED (due Aug 5, now 3 days past). UNIS Internal: 2 tickets, 2 days old, On-Track.",
+      "healthSummary": "2 customers, 3 tickets. DAYDREAM: 1 ticket, 6 days old, SLA BREACHED (due Aug 5, now 3 days past). UNIS Internal: 2 tickets, 2 days old, On-Track. Two-pass verification confirms no changes since Pass 1.",
       "customerDetails": [
-        { "customer": "DAYDREAM NUTRITION INC.", "activeTickets": 1, "oldestDays": 6, "slaStatus": "BREACHED", "health": "🔴 At Risk" },
+        { "customer": "DAYDREAM NUTRITION INC.", "activeTickets": 1, "oldestDays": 6, "slaStatus": "BREACHED (3d past due)", "health": "🔴 At Risk" },
         { "customer": "Tweety Leigh Lamoste (UNIS Internal)", "activeTickets": 2, "oldestDays": 2, "slaStatus": "On-Track", "health": "✅ Healthy" }
       ]
     },
     "priorityQueue": {
-      "topPriority": "UFN-64782 — DAYDREAM NUTRITION INC. — Transfer to Northampton RN-19417",
+      "topPriority": "UFN-64782 — DAYDREAM NUTRITION INC. — Transfer to Northampton RN-19417 (SLA-breached, unassigned, 6d old)",
       "slaBreached": 1, "slaAtRisk": 0, "oldestTicketDays": 6,
-      "prioritySummary": "1 SLA-breached (due Aug 5, now 3d past), 2 On-Track (due Aug 12-14)"
+      "prioritySummary": "1 SLA-breached (UFN-64782: due Aug 5, 3d past, unassigned, external customer). 2 On-Track (UFN-65578 due Aug 14, UFN-65592 due Aug 14)."
     },
     "actionBuckets": {
       "immediate": 0,
       "immediateDetail": ["— None —"],
       "shortTerm": 2,
-      "shortTermDetail": ["UFN-65578: ~48h, open RNs, assigned Lesean Torres","UFN-65592: ~48h, Inbounds 08/10, operational report"],
+      "shortTermDetail": ["UFN-65578: ~48h, open RNs pending closure, assigned Lesean Torres","UFN-65592: ~48h, Inbounds for 08/10, operational report, unassigned"],
       "mediumTerm": 1,
-      "mediumTermDetail": ["UFN-64782: 6 days, SLA-breached, unassigned, external customer DAYDREAM NUTRITION INC. — Transfer RN-19417"],
+      "mediumTermDetail": ["UFN-64782: 6 days (~144h), SLA-breached 3d past, unassigned, external customer DAYDREAM NUTRITION INC. — Transfer RN-19417 to Northampton"],
       "watch": 0
     },
     "evidenceMetrics": {
       "outlookThreadsMatched": 2, "outlookCoverage": "66.7% (2/3)", "duplicatesRemoved": 0,
       "invoiceItemsExcluded": 4, "avgResponseHours": "—", "slaBreachCount": 1,
-      "slaBreachRisk": "Active — UFN-64782 breached since Aug 5 (3 days past due)", "dataFreshness": "Fresh"
+      "slaBreachRisk": "Active — UFN-64782 breached since Aug 5 (3 days past due; two-pass verified, no resolution)", "dataFreshness": "Fresh (two-pass verified)"
     }
   },
   "priorActiveNowClosed": [
     { "ticketId": "UFN-59923", "customer": "Dupray", "closedDate": "2026-07-03" },
     { "ticketId": "UFN-59235", "customer": "Canada Material", "closedDate": "2026-07-22" },
-    { "ticketId": "UFN-64221", "customer": "Unknown", "note": "Presumed closed" },
-    { "ticketId": "UFN-64870", "customer": "Unknown", "note": "Presumed closed" },
-    { "ticketId": "UFN-65304", "customer": "Unknown", "note": "Presumed closed" }
+    { "ticketId": "UFN-64221", "customer": "Unknown", "note": "Presumed closed — confirmed absent in both passes" },
+    { "ticketId": "UFN-64870", "customer": "Unknown", "note": "Presumed closed — confirmed absent in both passes" },
+    { "ticketId": "UFN-65304", "customer": "Unknown", "note": "Presumed closed — confirmed absent in both passes" }
   ],
-  "notes": "Full TicketOps re-query 20:48 ET + Outlook 20:53 ET. No new tickets since prior refresh at 15:52 ET. Ages recalculated: UFN-64782 now 6d (bucket: Medium), UFN-65592/65578 now 2d (bucket: Short-Term). SLA UFN-64782 now 3 days past due date (Aug 5). Customer health unchanged: 2 customers, DAYDREAM at risk, UNIS Internal healthy. All filter rules preserved.",
-  "nextScheduledRefresh": "2026-08-08T21:08 ET"
+  "twoPassVerification": {
+    "pass1": { "timestamp": "2026-08-08T20:48:00-04:00", "description": "Full UFN- corpus scan — Northampton department. 492 total tickets, 3 eligible.", "result": "3 eligible tickets identified" },
+    "pass2": { "timestamp": "2026-08-08T20:56:00-04:00", "description": "Delta validation — re-queried same scope. Confirmed zero drift from Pass 1.", "result": "No delta. Corpus confirmed stable. No new tickets, no status changes, no closed tickets reopened." },
+    "conclusion": "Two-pass verification passed. TicketOps data is consistent and authoritative. Dashboard state is confirmed accurate as of 20:56 ET."
+  },
+  "notes": "Two-pass TicketOps verification at 20:48 ET (Pass 1) and 20:56 ET (Pass 2). Pass 2 delta check confirmed zero drift. 3 eligible tickets: UFN-64782 (DAYDREAM, SLA-breached 3d past, Medium bucket), UFN-65592 & UFN-65578 (UNIS Internal, Short-Term bucket). Outlook coverage 66.7% (UFN-64782 has no Outlook context — DAYDREAM only appears as different RN-19218). All filter rules preserved. Customer health: DAYDREAM 🔴 At Risk (6d, SLA-breached), UNIS Internal ✅ Healthy (2d).",
+  "nextScheduledRefresh": "2026-08-08T21:11 ET"
 }
