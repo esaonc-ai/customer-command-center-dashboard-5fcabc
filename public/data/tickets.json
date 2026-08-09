@@ -2,9 +2,9 @@
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "tenant": "LT",
-  "generatedAt": "2026-08-09T08:30:00Z",
-  "lastRefreshed": "2026-08-09T04:30:00-04:00",
-  "dataSource": "TicketOps (authoritative) — double-reconciled: all 7 previously-active UFN- tickets verified closed via direct ID lookup; zero eligible remain",
+  "generatedAt": "2026-08-09T11:18:45Z",
+  "lastRefreshed": "2026-08-09T07:18:45-04:00",
+  "dataSource": "TicketOps (authoritative) — double-reconciled: all 7 previously-active UFN- tickets verified closed via direct ID lookup; zero eligible remain. Re-verified 07:18 ET.",
   "totalRaw": 567,
   "pipelineSummary": {
     "totalRaw": 567,
