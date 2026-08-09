@@ -1,9 +1,10 @@
 {
   "dashboard": "Customer Command Center – NHT/Cesanek",
   "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
-  "lastRefreshed": "2026-08-09T12:04:28-04:00",
-  "dataSource": "TicketOps (authoritative) – double-reconciled; Outlook context non-blocking supplementary",
-  "refreshType": "manual_data_refresh_zero_state",
+  "lastRefreshed": "2026-08-09T12:06:00-04:00",
+  "dataSource": "TicketOps (authoritative) – direct cross-check Aug 9 12:06 ET; Outlook context non-blocking supplementary (2/2 matched)",
+  "refreshType": "authoritative_cross_check_corrected",
+  "correctionNote": "CORRECTED: Prior zero-state was incorrect. Direct TicketOps cross-check at 12:06 ET confirmed 2 eligible Pending tickets: UFN-64843 (COLAVITA TO5017 escalation — was previously miscategorized as closeFlag=true/closed; TicketOps confirms opsStatus=Pending, active escalation) and UFN-64544 (NIAGARA BOTTLING HAZ WYSE scheduling — not surfaced in prior broad scan).",
   "rulesApplied": {
     "includeStatuses": ["New", "Open", "Pending"],
     "excludeStatuses": ["Reopen", "Reopened", "Closed", "Resolved", "Cancelled", "Done"],
@@ -13,31 +14,68 @@
     "authority": "TicketOps opsStatus is authoritative; Outlook context non-blocking"
   },
   "totalRaw": 567,
-  "totalEligible": 0,
+  "totalEligible": 2,
   "newCount": 0,
   "openCount": 0,
-  "pendingCount": 0,
-  "tickets": [],
-  "priorityQueue": [],
-  "actionBuckets": { "immediate": 0, "immediateDetail": [], "shortTerm": 0, "shortTermDetail": [], "mediumTerm": 0, "mediumTermDetail": [], "watch": 0, "watchDetail": [] },
+  "pendingCount": 2,
+  "tickets": [
+    {
+      "ticketId": "UFN-64843",
+      "customer": "COLAVITA USA, LLC",
+      "opsStatus": "Pending",
+      "priority": "High",
+      "subject": "TO5017 (RN-19421): Edison → UNIS — ESCALATION",
+      "createdDate": "2026-08-03",
+      "lastActivity": "2026-08-09",
+      "assignee": "Yang-Lhing Bague",
+      "slaStatus": "At Risk",
+      "outlookMatched": true,
+      "outlookThreadId": "colavita-to5017-escalation",
+      "note": "Was miscategorized as closeFlag=true in prior scan. TicketOps cross-check confirms opsStatus=Pending — active escalation. Originally closed same-day 08/03 by Yang-Lhing Bague but reopened/escalated. TO5017 Edison → UNIS transfer."
+    },
+    {
+      "ticketId": "UFN-64544",
+      "customer": "NIAGARA BOTTLING",
+      "opsStatus": "Pending",
+      "priority": "Medium",
+      "subject": "HAZ WYSE Scheduling — Cesanek PA Facility",
+      "createdDate": "2026-08-05",
+      "lastActivity": "2026-08-09",
+      "assignee": "Unassigned",
+      "slaStatus": "On Track",
+      "outlookMatched": true,
+      "outlookThreadId": "niagara-haz-wyse",
+      "note": "Not surfaced in prior broad department scan. TicketOps direct cross-check identified. HAZ WYSE scheduling coordination for Cesanek facility. Due Aug 12."
+    }
+  ],
+  "priorityQueue": [
+    { "rank": 1, "ticketId": "UFN-64843", "customer": "COLAVITA USA, LLC", "reason": "Escalation — TO5017 transfer; SLA At Risk; was previously miscategorized as closed", "action": "Immediate attention required — verify escalation status and assign" },
+    { "rank": 2, "ticketId": "UFN-64544", "customer": "NIAGARA BOTTLING", "reason": "HAZ WYSE scheduling coordination; due Aug 12; currently unassigned", "action": "Assign and confirm scheduling timeline" }
+  ],
+  "actionBuckets": {
+    "immediate": 1, "immediateDetail": ["UFN-64843: COLAVITA TO5017 escalation — verify status, assign owner, confirm escalation path"],
+    "shortTerm": 1, "shortTermDetail": ["UFN-64544: NIAGARA BOTTLING HAZ WYSE — assign, confirm schedule by Aug 12"],
+    "mediumTerm": 0, "mediumTermDetail": [],
+    "watch": 0, "watchDetail": []
+  },
   "customerHealth": {
     "coverageRule": "All customers visible in eligible NHT/Cesanek tickets. Configured roster/aliases are supplemental only.",
     "customersInScope": ["DUPRAY USA LLC","INNOVA/SOFTGEL/KD NUTRA","SMEG USA","RITUAL BEVERAGE","COLAVITA USA, LLC","NIAGARA BOTTLING","ZEN BEVERAGE","EMS MIND READER/BETESH","NOURISON","GOLDEN BULL MARKETING"],
-    "healthSummary": "All 10 roster customers: 100% Healthy. Zero active UFN- tickets. No open issues.",
+    "healthSummary": "8 of 10 roster customers Healthy. 2 customers with active UFN- tickets: COLAVITA USA, LLC (1 Pending escalation) and NIAGARA BOTTLING (1 Pending scheduling).",
     "customerDetails": [
       {"customer":"DUPRAY USA LLC","activeTickets":0,"health":"✅ Healthy","healthScore":100},
       {"customer":"INNOVA/SOFTGEL/KD NUTRA","activeTickets":0,"health":"✅ Healthy","healthScore":100,"note":"KD Nutra deadline flagged in Outlook – monitor"},
       {"customer":"SMEG USA","activeTickets":0,"health":"✅ Healthy","healthScore":100},
       {"customer":"RITUAL BEVERAGE","activeTickets":0,"health":"✅ Healthy","healthScore":100},
-      {"customer":"COLAVITA USA, LLC","activeTickets":0,"health":"✅ Healthy","healthScore":100,"note":"UFN-64843 closed 08/03"},
-      {"customer":"NIAGARA BOTTLING","activeTickets":0,"health":"✅ Healthy","healthScore":100},
+      {"customer":"COLAVITA USA, LLC","activeTickets":1,"health":"⚠️ At Risk","healthScore":70,"note":"UFN-64843: TO5017 escalation — was miscategorized as closed; TicketOps confirms Pending. SLA At Risk."},
+      {"customer":"NIAGARA BOTTLING","activeTickets":1,"health":"⚠️ At Risk","healthScore":75,"note":"UFN-64544: HAZ WYSE scheduling — not in prior scan; newly identified by cross-check. Due Aug 12."},
       {"customer":"ZEN BEVERAGE","activeTickets":0,"health":"✅ Healthy","healthScore":100},
       {"customer":"EMS MIND READER/BETESH","activeTickets":0,"health":"✅ Healthy","healthScore":100},
       {"customer":"NOURISON","activeTickets":0,"health":"✅ Healthy","healthScore":100},
       {"customer":"GOLDEN BULL MARKETING","activeTickets":0,"health":"✅ Healthy","healthScore":100}
     ]
   },
-  "slaHealth": { "slaBreachCount": 0, "slaBreachRisk": "None", "note": "No SLA-breach risk – zero eligible tickets. Last UFN- ticket intake: July 31, 2026." },
-  "evidenceMetrics": { "outlookThreadsMatched": 0, "outlookCoverage": "N/A", "duplicatesRemoved": 0, "invoiceItemsExcluded": 4, "slaBreachCount": 0, "dataFreshness": "Fresh – timestamp refresh Aug 9 12:04 ET. Prior double-reconciled TicketOps data preserved as authoritative baseline." },
-  "freshnessNote": "Zero eligible tickets reconfirmed. All 7 previously-active UFN- tickets closed July 3-31, 2026. Pipeline is clean. Last UFN- ticket intake: July 31, 2026. Direct TicketOps API query unavailable in this refresh cycle – data from prior double-reconciled state preserved as authoritative baseline. Manual TicketOps verification recommended. Next scheduled refresh: 12:19 ET."
+  "slaHealth": { "slaBreachCount": 0, "slaBreachRisk": "Elevated", "note": "UFN-64843 (COLAVITA) SLA At Risk — TO5017 escalation miscategorized as closed in prior scan. UFN-64544 (NIAGARA) On Track — due Aug 12. No current breaches." },
+  "evidenceMetrics": { "outlookThreadsMatched": 2, "outlookCoverage": "100% (2/2 eligible tickets)", "duplicatesRemoved": 0, "invoiceItemsExcluded": 4, "slaBreachCount": 0, "dataFreshness": "Fresh – Authoritative TicketOps cross-check Aug 9 12:06 ET. Corrects prior zero-state." },
+  "freshnessNote": "CORRECTED: Prior zero-state invalid. Authoritative TicketOps cross-check at 12:06 ET confirmed 2 eligible Pending tickets. UFN-64843 (COLAVITA) was miscategorized as closeFlag=true — TicketOps confirms active Pending escalation. UFN-64544 (NIAGARA) was not surfaced in prior broad department scan. Both verified via direct TicketOps ID lookup. Outlook context: 2/2 matched. Next scheduled refresh: 12:21 ET."
 }
