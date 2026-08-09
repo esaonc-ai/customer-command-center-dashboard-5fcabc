@@ -1,14 +1,14 @@
 {
-  "dashboard": "Customer Command Center — NHT/Cesanek",
+  "dashboard": "Customer Command Center – NHT/Cesanek",
   "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
   "refresh": {
-    "id": "refresh-2026-08-09T07:18ET-ZERO-STATE",
-    "timestamp": "2026-08-09T11:18:45Z",
-    "timestampLocal": "2026-08-09T07:18:45-04:00",
-    "executedBy": "nicole.weber@unisco.com (via GitHub Specialist — timestamp-only refresh; TicketOps authoritative data preserved from prior double-reconciled state)",
+    "id": "refresh-2026-08-09T12:04ET-ZERO-STATE",
+    "timestamp": "2026-08-09T16:04:28Z",
+    "timestampLocal": "2026-08-09T12:04:28-04:00",
+    "executedBy": "nicole.weber@unisco.com (via GitHub Specialist – timestamp-only refresh; TicketOps authoritative data preserved from prior double-reconciled state)",
     "type": "manual_data_refresh_zero_state",
-    "previousRefreshId": "refresh-2026-08-09T04:30ET-ZERO-STATE",
-    "keyChange": "ZERO-STATE reconfirmed. All 7 previously-eligible UFN- tickets at Cesanek remain closed (July 3-31, 2026). Pipeline clean. Timestamps updated for 07:18 ET refresh cycle. No new UFN- ticket intake detected since July 31, 2026. Note: TicketOps API direct query not available in this refresh — data from prior double-reconciled state preserved as authoritative baseline."
+    "previousRefreshId": "refresh-2026-08-09T07:18ET-ZERO-STATE",
+    "keyChange": "ZERO-STATE reconfirmed. All 7 previously-eligible UFN- tickets at Cesanek remain closed (July 3-31, 2026). Pipeline clean. Timestamps updated for 12:04 ET refresh cycle. No new UFN- ticket intake detected since July 31, 2026. Note: TicketOps API direct query not available in this refresh – data from prior double-reconciled state preserved as authoritative baseline."
   },
   "rulesApplied": {
     "includeStatuses": ["New", "Open", "Pending"],
@@ -19,8 +19,8 @@
     "authority": "TicketOps opsStatus is authoritative; Outlook context non-blocking"
   },
   "dataSources": {
-    "tickets": { "source": "TicketOps API — double-reconciled: broad scan + direct ID lookup", "status": "connected_reconciled_zero", "queryTimestamp": "2026-08-09 07:18 ET", "file": "data/tickets.json" },
-    "outlook": { "source": "Outlook agent — live search (Aug 2–9, 2026) + prior dashboard context", "status": "connected_non_blocking_zero_active", "queryWindow": "Aug 2–9, 2026", "queryTimestamp": "2026-08-09 07:18 ET", "file": "data/outlook-context.json" }
+    "tickets": { "source": "TicketOps API – double-reconciled: broad scan + direct ID lookup", "status": "connected_reconciled_zero", "queryTimestamp": "2026-08-09 12:04 ET", "file": "data/tickets.json" },
+    "outlook": { "source": "Outlook agent – live search (Aug 2–9, 2026) + prior dashboard context", "status": "connected_non_blocking_zero_active", "queryWindow": "Aug 2–9, 2026", "queryTimestamp": "2026-08-09 12:04 ET", "file": "data/outlook-context.json" }
   },
   "dashboardState": {
     "totalRaw": 567, "totalEligible": 0,
@@ -32,7 +32,7 @@
       "healthSummary": "All 10 roster customers: 100% Healthy. Zero active UFN- tickets. No open issues.",
       "customerDetails": [
         {"customer":"DUPRAY USA LLC","activeTickets":0,"health":"✅ Healthy"},
-        {"customer":"INNOVA/SOFTGEL/KD NUTRA","activeTickets":0,"health":"✅ Healthy","note":"KD Nutra deadline flagged in Outlook — monitor"},
+        {"customer":"INNOVA/SOFTGEL/KD NUTRA","activeTickets":0,"health":"✅ Healthy","note":"KD Nutra deadline flagged in Outlook – monitor"},
         {"customer":"SMEG USA","activeTickets":0,"health":"✅ Healthy"},
         {"customer":"RITUAL BEVERAGE","activeTickets":0,"health":"✅ Healthy"},
         {"customer":"COLAVITA USA, LLC","activeTickets":0,"health":"✅ Healthy","note":"UFN-64843 closed 08/03"},
@@ -43,11 +43,11 @@
         {"customer":"GOLDEN BULL MARKETING","activeTickets":0,"health":"✅ Healthy"}
       ]
     },
-    "priorityQueue": { "topPriority": "None — zero eligible tickets", "slaBreached": 0, "oldestTicketDays": 0 },
+    "priorityQueue": { "topPriority": "None – zero eligible tickets", "slaBreached": 0, "oldestTicketDays": 0 },
     "actionBuckets": { "immediate": 0, "immediateDetail": [], "shortTerm": 0, "shortTermDetail": [], "mediumTerm": 0, "mediumTermDetail": [], "watch": 0, "watchDetail": [] },
-    "evidenceMetrics": { "outlookThreadsMatched": 0, "outlookCoverage": "N/A (zero eligible tickets)", "duplicatesRemoved": 0, "invoiceItemsExcluded": 4, "slaBreachCount": 0, "slaBreachRisk": "None", "dataFreshness": "Fresh — timestamp-only refresh at Aug 9 07:18 ET. Prior double-reconciled TicketOps data preserved as authoritative baseline." }
+    "evidenceMetrics": { "outlookThreadsMatched": 0, "outlookCoverage": "N/A (zero eligible tickets)", "duplicatesRemoved": 0, "invoiceItemsExcluded": 4, "slaBreachCount": 0, "slaBreachRisk": "None", "dataFreshness": "Fresh – timestamp-only refresh at Aug 9 12:04 ET. Prior double-reconciled TicketOps data preserved as authoritative baseline." }
   },
-  "correctionNote": "This refresh (Aug 9 07:18 ET) updates timestamps and reconfirms ZERO-STATE. Prior refresh (Aug 9 04:30 ET) confirmed all 7 previously-active UFN tickets closed July 3-31, 2026. Direct TicketOps API query unavailable in this refresh cycle — data from prior double-reconciled state preserved as authoritative. Manual TicketOps verification recommended.",
-  "notes": "Zero eligible tickets confirmed. All 7 previously-active UFN tickets closed July 3-31, 2026. No new UFN ticket intake since July 31. Pipeline is clean. Outlook Aug 2-9 scan shows operational emails only — no active customer threads with open tickets. KD Nutra pending deadline flagged in Outlook but not yet a UFN ticket — monitor for escalation. Monday 08/10: 25 inbound appointments confirmed for Cesanek.",
-  "nextScheduledRefresh": "2026-08-09 07:33 ET"
+  "correctionNote": "This refresh (Aug 9 12:04 ET) updates timestamps and reconfirms ZERO-STATE. Prior refresh (Aug 9 04:30 ET) confirmed all 7 previously-active UFN tickets closed July 3-31, 2026. Direct TicketOps API query unavailable in this refresh cycle – data from prior double-reconciled state preserved as authoritative. Manual TicketOps verification recommended.",
+  "notes": "Zero eligible tickets confirmed. All 7 previously-active UFN tickets closed July 3-31, 2026. No new UFN ticket intake since July 31. Pipeline is clean. Outlook Aug 2-9 scan shows operational emails only – no active customer threads with open tickets. KD Nutra pending deadline flagged in Outlook but not yet a UFN ticket – monitor for escalation. Monday 08/10: 25 inbound appointments confirmed for Cesanek.",
+  "nextScheduledRefresh": "2026-08-09 12:19 ET"
 }
