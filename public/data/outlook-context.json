@@ -1,0 +1,44 @@
+{
+  "description": "Outlook email context matching for NHT/Cesanek tickets (non-blocking enrichment — reconciled Aug 9 04:30 ET). No active customer threads with open tickets — all previously-referenced UFN tickets closed per TicketOps (authoritative).",
+  "facility": "NHT/Cesanek",
+  "facilityCode": "LT_F21",
+  "generatedAt": "2026-08-09T08:30:00Z",
+  "lastRefreshed": "2026-08-09T04:30:00-04:00",
+  "dataSource": "Outlook agent — live search (Aug 2–9, 2026) + reconciliation pass",
+  "note": "No active customer threads with open tickets. All previously-matched Outlook threads correspond to UFN tickets now confirmed closed per TicketOps (authoritative).",
+  "threadsMatched": 0,
+  "threadsUniquePostDedup": 0,
+  "coverage": {
+    "eligibleTicketsTotal": 0,
+    "eligibleTicketsWithOutlookDirect": 0,
+    "eligibleTicketsWithEmailContext": 0,
+    "coveragePct": "N/A (zero eligible tickets)",
+    "directMatchPct": "N/A"
+  },
+  "ticketThreads": [],
+  "excludedThreads": [
+    "Water Plus handling — UFN-33719 (invoice item excluded)",
+    "Y,IWO storage — UFN-64743 (invoice item excluded)",
+    "Nourison handling — UFN-64749 (invoice item excluded)",
+    "Sheex billing — UFN-64618 (invoice item excluded)",
+    "COLAVITA TO5017 — UFN-64843 (closeFlag=true, closed 08/03, surfaced by Outlook but excluded per TicketOps authority)"
+  ],
+  "aug2to9InboxContext": {
+    "scanWindow": "Aug 2–9, 2026",
+    "kdNutra": { "status": "deadline_pending", "summary": "KD Nutra deadline flagged in Erin Cambra EOD Aug 5 — pending resolution, not yet a UFN ticket. Monitor for escalation." },
+    "mondayAug10Loads": { "status": "confirmed", "summary": "25 inbound appointments confirmed across NIAGARA BOTTLING (~16), UPTIME ENERGY, NOURISON (4 exceptions), HINT, ROAR BEVERAGES. Cesanek facility." },
+    "billingApprovals": { "status": "pending", "summary": "Multiple UF Billing threads in scan window — all excluded per filter rules." },
+    "resolvedItems": [
+      "Colavita TO5017 (RN-19421) — surfaced in Outlook but confirmed closed 08/03 by TicketOps",
+      "Lemate early pickup (UFN-64071) — noted, ticket closed, no follow-up required",
+      "All 7 previously-active UFN tickets — all closed Jul 3-31, 2026 per TicketOps"
+    ],
+    "loadSequence": "Monday 08/10 Cesanek inbound: 25 appointments, NIAGARA BOTTLING dominant carrier.",
+    "announcements": [
+      "Erin Cambra EOD daily reports (Aug 2–7)",
+      "Maria Aponte leave coverage: Shailene Baez handling Splendor Water",
+      "No overlapping threads — dedup clean"
+    ]
+  },
+  "deduplicationNote": "No overlapping threads. All 7 previously-eligible UFN tickets verified distinct. UFN-64843 (COLAVITA) surfaced by Outlook but excluded per TicketOps: closeFlag=true, closed 08/03/2026. KD Nutra pending deadline unrelated — monitor for potential new ticket."
+}
