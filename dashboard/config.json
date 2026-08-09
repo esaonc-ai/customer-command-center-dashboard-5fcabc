@@ -1,0 +1,30 @@
+{
+  "facility": {
+    "code": "LT_F21",
+    "name": "NHT/Cesanek",
+    "tenant": "LT",
+    "timezone": "America/New_York"
+  },
+  "ticketFilters": {
+    "includeStatuses": ["New", "Open", "Pending"],
+    "excludeStatuses": ["Reopen", "Reopened", "Closed", "Resolved", "Cancelled", "Done"],
+    "excludeInvoiceItems": ["billing", "UF Billing", "storage", "handling"],
+    "ufnFilterEnabled": true
+  },
+  "customerHealth": {
+    "coverageRule": "all_customers_visible_in_eligible_tickets",
+    "rosterMode": "supplemental_only"
+  },
+  "outlook": {
+    "integration": "non_blocking",
+    "useWhenAvailable": true
+  },
+  "deduplication": {
+    "enabled": true,
+    "scope": "overlapping_ticket_email_threads"
+  },
+  "dashboard": {
+    "sections": ["counts", "priorityQueue", "actionBuckets", "customerHealth", "evidenceMetrics"],
+    "refreshIntervalMinutes": 15
+  }
+}
