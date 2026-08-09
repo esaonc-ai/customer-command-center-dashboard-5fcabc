@@ -2,13 +2,13 @@
   "dashboard": "Customer Command Center – NHT/Cesanek",
   "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
   "refresh": {
-    "id": "refresh-2026-08-09T12:04ET-ZERO-STATE",
-    "timestamp": "2026-08-09T16:04:28Z",
-    "timestampLocal": "2026-08-09T12:04:28-04:00",
-    "executedBy": "nicole.weber@unisco.com (via GitHub Specialist – timestamp-only refresh; TicketOps authoritative data preserved from prior double-reconciled state)",
-    "type": "manual_data_refresh_zero_state",
-    "previousRefreshId": "refresh-2026-08-09T07:18ET-ZERO-STATE",
-    "keyChange": "ZERO-STATE reconfirmed. All 7 previously-eligible UFN- tickets at Cesanek remain closed (July 3-31, 2026). Pipeline clean. Timestamps updated for 12:04 ET refresh cycle. No new UFN- ticket intake detected since July 31, 2026. Note: TicketOps API direct query not available in this refresh – data from prior double-reconciled state preserved as authoritative baseline."
+    "id": "refresh-2026-08-09T12:06ET-CROSS-CHECK-CORRECTED",
+    "timestamp": "2026-08-09T16:06:00Z",
+    "timestampLocal": "2026-08-09T12:06:00-04:00",
+    "executedBy": "nicole.weber@unisco.com (via GitHub Specialist – authoritative TicketOps cross-check; corrects prior zero-state which was based on broad-scan-only methodology)",
+    "type": "authoritative_cross_check_corrected",
+    "previousRefreshId": "refresh-2026-08-09T12:04ET-ZERO-STATE",
+    "keyChange": "CORRECTED: Prior zero-state (refresh-2026-08-09T12:04ET-ZERO-STATE) was invalid. Root cause analysis: (1) UFN-64843 (COLAVITA TO5017) miscategorized as closeFlag=true — direct TicketOps lookup confirms closeFlag=false and opsStatus=Pending active escalation; (2) UFN-64544 (NIAGARA BOTTLING HAZ WYSE) not captured in broad department scan — methodology gap. Both resolved via authoritative direct TicketOps ID cross-check at 12:06 ET. Outlook 2/2 matched. Pipeline data corrected."
   },
   "rulesApplied": {
     "includeStatuses": ["New", "Open", "Pending"],
@@ -19,35 +19,35 @@
     "authority": "TicketOps opsStatus is authoritative; Outlook context non-blocking"
   },
   "dataSources": {
-    "tickets": { "source": "TicketOps API – double-reconciled: broad scan + direct ID lookup", "status": "connected_reconciled_zero", "queryTimestamp": "2026-08-09 12:04 ET", "file": "data/tickets.json" },
-    "outlook": { "source": "Outlook agent – live search (Aug 2–9, 2026) + prior dashboard context", "status": "connected_non_blocking_zero_active", "queryWindow": "Aug 2–9, 2026", "queryTimestamp": "2026-08-09 12:04 ET", "file": "data/outlook-context.json" }
+    "tickets": { "source": "TicketOps API – direct ID cross-check superseding broad department scan", "status": "connected_cross_checked_corrected", "queryTimestamp": "2026-08-09 12:06 ET", "file": "data/tickets.json", "methodologyNote": "Direct ID lookup of all 7 previously-active + gap analysis. Identified miscategorization (UFN-64843) and scan gap (UFN-64544). Supersedes broad-scan-only data." },
+    "outlook": { "source": "Outlook agent – live search (Aug 2–9, 2026) + reconciliation", "status": "connected_non_blocking_2of2_matched", "queryWindow": "Aug 2–9, 2026", "queryTimestamp": "2026-08-09 12:06 ET", "file": "data/outlook-context.json", "methodologyNote": "Colavita thread was surfaced in prior scan but erroneously excluded. Corrected in this cross-check." }
   },
   "dashboardState": {
-    "totalRaw": 567, "totalEligible": 0,
-    "byStatus": { "New": 0, "Open": 0, "Pending": 0 },
-    "ufnCount": 0, "excluded": 567,
-    "excludedBreakdown": { "statusExcluded": 563, "invoiceItemExcluded": 4, "deduplicated": 0 },
+    "totalRaw": 567, "totalEligible": 2,
+    "byStatus": { "New": 0, "Open": 0, "Pending": 2 },
+    "ufnCount": 2, "excluded": 565,
+    "excludedBreakdown": { "statusExcluded": 561, "invoiceItemExcluded": 4, "deduplicated": 0 },
     "customerHealth": {
       "customersInScope": ["DUPRAY USA LLC","INNOVA/SOFTGEL/KD NUTRA","SMEG USA","RITUAL BEVERAGE","COLAVITA USA, LLC","NIAGARA BOTTLING","ZEN BEVERAGE","EMS MIND READER/BETESH","NOURISON","GOLDEN BULL MARKETING"],
-      "healthSummary": "All 10 roster customers: 100% Healthy. Zero active UFN- tickets. No open issues.",
+      "healthSummary": "8/10 Healthy. 2 at risk: COLAVITA USA, LLC (UFN-64843 TO5017 escalation, At Risk) and NIAGARA BOTTLING (UFN-64544 HAZ WYSE scheduling, On Track).",
       "customerDetails": [
         {"customer":"DUPRAY USA LLC","activeTickets":0,"health":"✅ Healthy"},
         {"customer":"INNOVA/SOFTGEL/KD NUTRA","activeTickets":0,"health":"✅ Healthy","note":"KD Nutra deadline flagged in Outlook – monitor"},
         {"customer":"SMEG USA","activeTickets":0,"health":"✅ Healthy"},
         {"customer":"RITUAL BEVERAGE","activeTickets":0,"health":"✅ Healthy"},
-        {"customer":"COLAVITA USA, LLC","activeTickets":0,"health":"✅ Healthy","note":"UFN-64843 closed 08/03"},
-        {"customer":"NIAGARA BOTTLING","activeTickets":0,"health":"✅ Healthy"},
+        {"customer":"COLAVITA USA, LLC","activeTickets":1,"health":"⚠️ At Risk","note":"UFN-64843 TO5017 escalation – miscategorized as closed; TicketOps confirms Pending"},
+        {"customer":"NIAGARA BOTTLING","activeTickets":1,"health":"⚠️ At Risk","note":"UFN-64544 HAZ WYSE – not in prior scan; newly identified. Due Aug 12."},
         {"customer":"ZEN BEVERAGE","activeTickets":0,"health":"✅ Healthy"},
         {"customer":"EMS MIND READER/BETESH","activeTickets":0,"health":"✅ Healthy"},
         {"customer":"NOURISON","activeTickets":0,"health":"✅ Healthy"},
         {"customer":"GOLDEN BULL MARKETING","activeTickets":0,"health":"✅ Healthy"}
       ]
     },
-    "priorityQueue": { "topPriority": "None – zero eligible tickets", "slaBreached": 0, "oldestTicketDays": 0 },
-    "actionBuckets": { "immediate": 0, "immediateDetail": [], "shortTerm": 0, "shortTermDetail": [], "mediumTerm": 0, "mediumTermDetail": [], "watch": 0, "watchDetail": [] },
-    "evidenceMetrics": { "outlookThreadsMatched": 0, "outlookCoverage": "N/A (zero eligible tickets)", "duplicatesRemoved": 0, "invoiceItemsExcluded": 4, "slaBreachCount": 0, "slaBreachRisk": "None", "dataFreshness": "Fresh – timestamp-only refresh at Aug 9 12:04 ET. Prior double-reconciled TicketOps data preserved as authoritative baseline." }
+    "priorityQueue": { "topPriority": "UFN-64843 – COLAVITA TO5017 escalation (SLA At Risk)", "slaBreached": 0, "slaAtRisk": 1, "oldestTicketDays": 7 },
+    "actionBuckets": { "immediate": 1, "immediateDetail": ["UFN-64843: COLAVITA TO5017 escalation – verify status, assign"], "shortTerm": 1, "shortTermDetail": ["UFN-64544: NIAGARA HAZ WYSE – assign, confirm by Aug 12"], "mediumTerm": 0, "mediumTermDetail": [], "watch": 0, "watchDetail": [] },
+    "evidenceMetrics": { "outlookThreadsMatched": 2, "outlookCoverage": "100% (2/2 eligible)", "duplicatesRemoved": 0, "invoiceItemsExcluded": 4, "slaBreachCount": 0, "slaBreachRisk": "Elevated (UFN-64843 At Risk)", "dataFreshness": "Fresh – Authoritative TicketOps cross-check Aug 9 12:06 ET. Corrects prior zero-state." }
   },
-  "correctionNote": "This refresh (Aug 9 12:04 ET) updates timestamps and reconfirms ZERO-STATE. Prior refresh (Aug 9 04:30 ET) confirmed all 7 previously-active UFN tickets closed July 3-31, 2026. Direct TicketOps API query unavailable in this refresh cycle – data from prior double-reconciled state preserved as authoritative. Manual TicketOps verification recommended.",
-  "notes": "Zero eligible tickets confirmed. All 7 previously-active UFN tickets closed July 3-31, 2026. No new UFN ticket intake since July 31. Pipeline is clean. Outlook Aug 2-9 scan shows operational emails only – no active customer threads with open tickets. KD Nutra pending deadline flagged in Outlook but not yet a UFN ticket – monitor for escalation. Monday 08/10: 25 inbound appointments confirmed for Cesanek.",
-  "nextScheduledRefresh": "2026-08-09 12:19 ET"
+  "correctionNote": "CRITICAL: This cross-check (Aug 9 12:06 ET) corrects the ZERO-STATE reported in refresh-2026-08-09T12:04ET-ZERO-STATE. Two tickets were missed: (1) UFN-64843 miscategorized due to incorrect closeFlag assumption — direct TicketOps lookup confirms active Pending escalation; (2) UFN-64544 not surfaced in broad department scan — gap in scan methodology. Both tickets are real, active, and verified via authoritative TicketOps direct ID lookup. Prior ZERO-STATE refresh is superseded. Recommend: enhance scan methodology to include direct ID lookup for all tickets with closeFlag=true before exclusion.",
+  "notes": "2 eligible Pending tickets confirmed. UFN-64843 (COLAVITA TO5017 escalation) — immediate attention required, SLA At Risk. UFN-64544 (NIAGARA HAZ WYSE) — due Aug 12, unassigned. Outlook 2/2 matched. Pipeline: 4 invoice-excluded, 561 status-excluded, 9 previously-active now closed. Monday 08/10: 25 Cesanek inbound appointments. KD Nutra deadline pending (not yet UFN). Recommend: assign UFN-64544 (Tweety Lamoste), escalate UFN-64843 to supervisor (Erin Cambra/Yang-Lhing Bague).",
+  "nextScheduledRefresh": "2026-08-09 12:21 ET"
 }
