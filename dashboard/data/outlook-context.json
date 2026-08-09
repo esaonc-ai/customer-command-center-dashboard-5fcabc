@@ -1,9 +1,9 @@
 {
-  "description": "Outlook email context matching for NHT/Cesanek tickets (non-blocking enrichment — reconciled at Aug 9 04:20 ET). Note: No active customer threads with open tickets — all previously-referenced UFN tickets closed per TicketOps (authoritative).",
+  "description": "Outlook email context matching for NHT/Cesanek tickets (non-blocking enrichment — reconciled at Aug 9 07:18 ET). Note: No active customer threads with open tickets — all previously-referenced UFN tickets closed per TicketOps (authoritative).",
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-08-09T08:20:00Z",
-  "lastRefreshed": "2026-08-09T04:20:00-04:00",
+  "generatedAt": "2026-08-09T11:18:45Z",
+  "lastRefreshed": "2026-08-09T07:18:45-04:00",
   "dataSource": "Outlook agent — live search (Aug 2–9, 2026) + prior dashboard context + reconciliation pass",
   "note": "No active customer threads with open tickets. All previously-matched Outlook threads correspond to UFN tickets now confirmed closed per TicketOps (authoritative). Outlook context preserved here as historical/non-blocking supplementary record.",
   "threadsMatched": 0,
@@ -26,7 +26,7 @@
   "aug2to9InboxContext": {
     "scanWindow": "Aug 2–9, 2026",
     "kdNutra": { "status": "deadline_pending", "summary": "KD Nutra deadline flagged in Erin Cambra EOD Aug 5 — pending resolution, not yet a UFN ticket. Monitor for escalation." },
-    "mondayAug10Loads": { "status": "confirmed", "summary": "25 inbound appointments confirmed across NIAGARA BOTTLING (~16), UPTIME ENERGY, NOURISON (4 exceptions), HINT, ROAR BEVERAGES. Nicole Weber on distribution. Cesanek facility." },
+    "mondayAug10Loads": { "status": "confirmed", "summary": "25 inbound appointments confirmed across NIAGARA BOTTLING (~16), UPTIME ENERGY, NOURISON (4 exceptions), HINT, ROAR BEVERAGES. Cesanek facility. Nicole Weber on distribution." },
     "billingApprovals": { "status": "pending", "summary": "Multiple UF Billing threads in scan window (Sheex, Dupray, Nourison) — all excluded per filter rules (billing/handling invoice item types)." },
     "resolvedItems": [
       "Colavita TO5017 (RN-19421) — surfaced in Outlook but confirmed closed 08/03 by TicketOps (closeFlag=true, Yang-Lhing Bague)",
