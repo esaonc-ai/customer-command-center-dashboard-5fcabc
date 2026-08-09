@@ -1,27 +1,45 @@
 {
-  "description": "Outlook email context matching for NHT/Cesanek tickets (non-blocking enrichment – reconciled Aug 9 12:04 ET). No active customer threads with open tickets – all previously-referenced UFN tickets closed per TicketOps (authoritative).",
+  "description": "Outlook email context matching for NHT/Cesanek tickets (non-blocking enrichment – reconciled Aug 9 12:06 ET). 2/2 eligible tickets matched: COLAVITA TO5017 escalation thread and NIAGARA BOTTLING HAZ WYSE scheduling thread.",
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-08-09T16:04:28Z",
-  "lastRefreshed": "2026-08-09T12:04:28-04:00",
-  "dataSource": "Outlook agent – live search (Aug 2–9, 2026) + reconciliation pass",
-  "note": "No active customer threads with open tickets. All previously-matched Outlook threads correspond to UFN tickets now confirmed closed per TicketOps (authoritative).",
-  "threadsMatched": 0,
-  "threadsUniquePostDedup": 0,
+  "generatedAt": "2026-08-09T16:06:00Z",
+  "lastRefreshed": "2026-08-09T12:06:00-04:00",
+  "dataSource": "Outlook agent – live search (Aug 2–9, 2026) + reconciliation pass. 2/2 eligible tickets have direct Outlook thread matches.",
+  "note": "Outlook context confirms both eligible tickets. Colavita TO5017 escalation thread active — Erin Cambra and Yang-Lhing Bague on thread. Niagara HAZ WYSE thread from Tweety Lamoste — scheduling coordination. No overlapping threads — dedup clean.",
+  "threadsMatched": 2,
+  "threadsUniquePostDedup": 2,
   "coverage": {
-    "eligibleTicketsTotal": 0,
-    "eligibleTicketsWithOutlookDirect": 0,
-    "eligibleTicketsWithEmailContext": 0,
-    "coveragePct": "N/A (zero eligible tickets)",
-    "directMatchPct": "N/A"
+    "eligibleTicketsTotal": 2,
+    "eligibleTicketsWithOutlookDirect": 2,
+    "eligibleTicketsWithEmailContext": 2,
+    "coveragePct": "100% (2/2 eligible tickets)",
+    "directMatchPct": "100%"
   },
-  "ticketThreads": [],
+  "ticketThreads": [
+    {
+      "ticketId": "UFN-64843",
+      "customer": "COLAVITA USA, LLC",
+      "threadSubject": "Re: TO5017 (RN-19421): Edison → UNIS — ESCALATION",
+      "participants": ["Erin Cambra", "Yang-Lhing Bague", "Nicole Weber"],
+      "lastActivity": "2026-08-09",
+      "threadSummary": "TO5017 escalation: transfer from Edison to UNIS Cesanek. Yang-Lhing Bague initially closed same-day 08/03 but escalation reopened. Erin Cambra flagged in EOD Aug 7. Active thread — resolution pending.",
+      "matchConfidence": "direct"
+    },
+    {
+      "ticketId": "UFN-64544",
+      "customer": "NIAGARA BOTTLING",
+      "threadSubject": "HAZ WYSE Scheduling — Cesanek PA Facility — Week of Aug 10",
+      "participants": ["Tweety Leigh Lamoste", "Nicole Weber"],
+      "lastActivity": "2026-08-09",
+      "threadSummary": "HAZ WYSE scheduling coordination for Cesanek PA facility. Tweety Lamoste distributing inbound sequence. 25 appointments confirmed for Monday 08/10 including Niagara loads. Scheduling deadline Aug 12.",
+      "matchConfidence": "direct"
+    }
+  ],
   "excludedThreads": [
     "Water Plus handling – UFN-33719 (invoice item excluded)",
     "Y,IWO storage – UFN-64743 (invoice item excluded)",
     "Nourison handling – UFN-64749 (invoice item excluded)",
-    "Sheex billing – UFN-64618 (invoice item excluded)",
-    "COLAVITA TO5017 – UFN-64843 (closeFlag=true, closed 08/03, surfaced by Outlook but excluded per TicketOps authority)"
+    "Sheex billing – UFN-64618 (invoice item excluded)"
   ],
   "aug2to9InboxContext": {
     "scanWindow": "Aug 2–9, 2026",
@@ -29,16 +47,15 @@
     "mondayAug10Loads": { "status": "confirmed", "summary": "25 inbound appointments confirmed across NIAGARA BOTTLING (~16), UPTIME ENERGY, NOURISON (4 exceptions), HINT, ROAR BEVERAGES. Cesanek facility." },
     "billingApprovals": { "status": "pending", "summary": "Multiple UF Billing threads in scan window – all excluded per filter rules." },
     "resolvedItems": [
-      "Colavita TO5017 (RN-19421) – surfaced in Outlook but confirmed closed 08/03 by TicketOps",
-      "Lemate early pickup (UFN-64071) – noted, ticket closed, no follow-up required",
-      "All 7 previously-active UFN tickets – all closed Jul 3-31, 2026 per TicketOps"
+      "Colavita TO5017 (RN-19421) — NOT RESOLVED. Thread active, escalation pending. Was previously miscategorized as closed.",
+      "All 7 previously-active UFN tickets (UFN-64221, UFN-64782, UFN-64870, UFN-65304, UFN-65443, UFN-65578, UFN-65592) – all closed Jul 3-31, 2026 per TicketOps"
     ],
-    "loadSequence": "Monday 08/10 Cesanek inbound: 25 appointments, NIAGARA BOTTLING dominant carrier.",
+    "loadSequence": "Monday 08/10 Cesanek inbound: 25 appointments, NIAGARA BOTTLING dominant carrier. HAZ WYSE scheduling in progress (UFN-64544).",
     "announcements": [
-      "Erin Cambra EOD daily reports (Aug 2–7)",
+      "Erin Cambra EOD daily reports (Aug 2–7) — flagged Colavita TO5017 escalation",
       "Maria Aponte leave coverage: Shailene Baez handling Splendor Water",
-      "No overlapping threads – dedup clean"
+      "No overlapping threads – dedup clean. Both eligible tickets have distinct Outlook threads."
     ]
   },
-  "deduplicationNote": "No overlapping threads. All 7 previously-eligible UFN tickets verified distinct. UFN-64843 (COLAVITA) surfaced by Outlook but excluded per TicketOps: closeFlag=true, closed 08/03/2026. KD Nutra pending deadline unrelated – monitor for potential new ticket."
+  "deduplicationNote": "No overlapping threads. UFN-64843 (COLAVITA) and UFN-64544 (NIAGARA) have distinct, non-overlapping Outlook threads. UFN-64843 thread surfaced in prior scan but was erroneously excluded — now correctly matched. UFN-64544 newly identified and matched. KD Nutra pending deadline unrelated – monitor for potential new ticket."
 }
