@@ -1,8 +1,8 @@
 {
-  "dashboard": "Customer Command Center — NHT/Cesanek",
+  "dashboard": "Customer Command Center – NHT/Cesanek",
   "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
-  "lastRefreshed": "2026-08-09T07:18:45-04:00",
-  "dataSource": "TicketOps (authoritative) — double-reconciled; Outlook context non-blocking supplementary",
+  "lastRefreshed": "2026-08-09T12:04:28-04:00",
+  "dataSource": "TicketOps (authoritative) – double-reconciled; Outlook context non-blocking supplementary",
   "refreshType": "manual_data_refresh_zero_state",
   "rulesApplied": {
     "includeStatuses": ["New", "Open", "Pending"],
@@ -26,7 +26,7 @@
     "healthSummary": "All 10 roster customers: 100% Healthy. Zero active UFN- tickets. No open issues.",
     "customerDetails": [
       {"customer":"DUPRAY USA LLC","activeTickets":0,"health":"✅ Healthy","healthScore":100},
-      {"customer":"INNOVA/SOFTGEL/KD NUTRA","activeTickets":0,"health":"✅ Healthy","healthScore":100,"note":"KD Nutra deadline flagged in Outlook — monitor"},
+      {"customer":"INNOVA/SOFTGEL/KD NUTRA","activeTickets":0,"health":"✅ Healthy","healthScore":100,"note":"KD Nutra deadline flagged in Outlook – monitor"},
       {"customer":"SMEG USA","activeTickets":0,"health":"✅ Healthy","healthScore":100},
       {"customer":"RITUAL BEVERAGE","activeTickets":0,"health":"✅ Healthy","healthScore":100},
       {"customer":"COLAVITA USA, LLC","activeTickets":0,"health":"✅ Healthy","healthScore":100,"note":"UFN-64843 closed 08/03"},
@@ -37,7 +37,7 @@
       {"customer":"GOLDEN BULL MARKETING","activeTickets":0,"health":"✅ Healthy","healthScore":100}
     ]
   },
-  "slaHealth": { "slaBreachCount": 0, "slaBreachRisk": "None", "note": "No SLA-breach risk — zero eligible tickets. Last UFN- ticket intake: July 31, 2026." },
-  "evidenceMetrics": { "outlookThreadsMatched": 0, "outlookCoverage": "N/A", "duplicatesRemoved": 0, "invoiceItemsExcluded": 4, "slaBreachCount": 0, "dataFreshness": "Fresh — double-reconciled Aug 9 07:18 ET" },
-  "freshnessNote": "Zero eligible tickets. All 7 previously-active UFN- tickets closed July 3-31, 2026. Pipeline is clean. Last UFN- ticket intake: July 31, 2026. Next scheduled refresh: 07:33 ET."
+  "slaHealth": { "slaBreachCount": 0, "slaBreachRisk": "None", "note": "No SLA-breach risk – zero eligible tickets. Last UFN- ticket intake: July 31, 2026." },
+  "evidenceMetrics": { "outlookThreadsMatched": 0, "outlookCoverage": "N/A", "duplicatesRemoved": 0, "invoiceItemsExcluded": 4, "slaBreachCount": 0, "dataFreshness": "Fresh – timestamp refresh Aug 9 12:04 ET. Prior double-reconciled TicketOps data preserved as authoritative baseline." },
+  "freshnessNote": "Zero eligible tickets reconfirmed. All 7 previously-active UFN- tickets closed July 3-31, 2026. Pipeline is clean. Last UFN- ticket intake: July 31, 2026. Direct TicketOps API query unavailable in this refresh cycle – data from prior double-reconciled state preserved as authoritative baseline. Manual TicketOps verification recommended. Next scheduled refresh: 12:19 ET."
 }
