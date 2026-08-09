@@ -40,27 +40,27 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 | Eligible | **3** (3 New, 0 Open, 0 Pending) |
 | UFN-Count | 3 |
 | Excluded | 489 (485 status, 4 invoice items) |
-| Customers | **2** — DAYDREAM NUTRITION INC. ⚠️, Tweety Leigh Lamoste (UNIS Internal) ✅ |
-| SLA Risk | **Active** — UFN-64782 breached since Aug 5 |
+| Customers | **2** — DAYDREAM NUTRITION INC. 🔴, Tweety Leigh Lamoste (UNIS Internal) ✅ |
+| SLA Risk | **Active** — UFN-64782 breached since Aug 5 (3 days past due) |
 | Outlook Coverage | 66.7% (2/3 — UFN-64782 has no Outlook context) |
-| Last Refresh | 2026-08-08 15:52 ET (TicketOps authoritative re-query) |
-| Next Refresh | ~16:07 ET |
+| Last Refresh | 2026-08-08 20:53 ET (TicketOps authoritative re-query) |
+| Next Refresh | ~21:08 ET |
 
 ### Action Buckets
 
 | Bucket | Count | Details |
 |--------|-------|---------|
-| **Immediate** | 2 | UFN-64782 (DAYDREAM, SLA-breached, unassigned) + UFN-65578 (open RNs) |
-| **Short-Term** | 1 | UFN-65592 (inbounds for 08/10) |
-| **Medium** | 0 | — |
+| **Immediate** | 0 | — |
+| **Short-Term** | 2 | UFN-65578 (open RNs, assigned Lesean Torres) + UFN-65592 (inbounds for 08/10) |
+| **Medium** | 1 | UFN-64782 (DAYDREAM, SLA-breached 3d past, unassigned, Transfer RN-19417) |
 | **Watch** | 0 | — |
 
 ### Customer Health Detail
 
 | Customer | Tickets | Oldest | SLA | Health |
 |----------|---------|--------|-----|--------|
-| DAYDREAM NUTRITION INC. | 1 | 5 days | BREACHED | ⚠️ At Risk |
-| Tweety Leigh Lamoste (UNIS Internal) | 2 | 1 day | On-Track | ✅ Healthy |
+| DAYDREAM NUTRITION INC. | 1 | 6 days | BREACHED (3d past) | 🔴 At Risk |
+| Tweety Leigh Lamoste (UNIS Internal) | 2 | 2 days | On-Track | ✅ Healthy |
 
 ## Data Files
 
