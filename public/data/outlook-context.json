@@ -1,9 +1,9 @@
 {
-  "description": "Outlook email context matching for NHT/Cesanek tickets (non-blocking enrichment — reconciled Aug 9 04:30 ET). No active customer threads with open tickets — all previously-referenced UFN tickets closed per TicketOps (authoritative).",
+  "description": "Outlook email context matching for NHT/Cesanek tickets (non-blocking enrichment — reconciled Aug 9 07:18 ET). No active customer threads with open tickets — all previously-referenced UFN tickets closed per TicketOps (authoritative).",
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-08-09T08:30:00Z",
-  "lastRefreshed": "2026-08-09T04:30:00-04:00",
+  "generatedAt": "2026-08-09T11:18:45Z",
+  "lastRefreshed": "2026-08-09T07:18:45-04:00",
   "dataSource": "Outlook agent — live search (Aug 2–9, 2026) + reconciliation pass",
   "note": "No active customer threads with open tickets. All previously-matched Outlook threads correspond to UFN tickets now confirmed closed per TicketOps (authoritative).",
   "threadsMatched": 0,
