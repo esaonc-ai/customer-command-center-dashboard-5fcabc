@@ -2,9 +2,9 @@
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "tenant": "LT",
-  "generatedAt": "2026-08-08T19:52:56Z",
-  "lastRefreshed": "2026-08-08T15:52:56-04:00",
-  "dataSource": "TicketOps (authoritative — live API query 2026-08-08 15:48 ET; dashboard refresh 15:52 ET)",
+  "generatedAt": "2026-08-09T00:53:39Z",
+  "lastRefreshed": "2026-08-08T20:53:39-04:00",
+  "dataSource": "TicketOps (authoritative — live API re-query 2026-08-08 20:48 ET; dashboard refresh 20:53 ET)",
   "totalRaw": 492,
   "pipelineSummary": {
     "totalRaw": 492,
@@ -18,7 +18,7 @@
     "departmentFilter": "Northampton — UNIS Fulfillment - Northampton",
     "systemStatusFilter": "closeFlag=false, displayStatusSystemStatus=10; status filtering applied client-side",
     "refreshSource": "TicketOps live query — full UFN- corpus scanned for Northampton; 492 total, 3 active eligible, 4 excluded (storage/handling/billing)",
-    "changeNote": "UFN-64782 (DAYDREAM NUTRITION INC.) was previously missed; fresh TicketOps query confirms 3 eligible tickets (was 2 in prior refresh)"
+    "changeNote": "Age recalculated at 20:53 ET. UFN-64782 now 6 days old (was 5). UFN-65592/UFN-65578 now 2 days old (was 1). No new tickets since prior refresh."
   },
   "tickets": [
     {
@@ -40,7 +40,7 @@
       "slaBreached": true,
       "slaDueDate": "2026-08-05",
       "slaStatus": "BREACHED",
-      "ageDays": 5,
+      "ageDays": 6,
       "outlookMatch": false,
       "outlookMessageId": null,
       "outlookConversationId": null,
@@ -65,7 +65,7 @@
       "slaBreached": false,
       "slaDueDate": "2026-08-14",
       "slaStatus": "On-Track",
-      "ageDays": 1,
+      "ageDays": 2,
       "outlookMatch": true,
       "outlookMessageId": "AAMkADBmYmUxYzA0...7_DoNAAA=",
       "outlookConversationId": "AAQkADBmYmUxYzA0...JoDUs=",
@@ -90,7 +90,7 @@
       "slaBreached": false,
       "slaDueDate": "2026-08-14",
       "slaStatus": "On-Track",
-      "ageDays": 1,
+      "ageDays": 2,
       "outlookMatch": true,
       "outlookMessageId": "AAMkADBmYmUxYzA0...7_DoDAAA=",
       "outlookConversationId": "AAQkADBmYmUxYzA0...JVk4zk=",
