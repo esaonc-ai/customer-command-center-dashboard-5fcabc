@@ -1,0 +1,46 @@
+{
+  "dashboard": "Customer Command Center — NHT/Cesanek",
+  "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
+  "lastRefreshed": "2026-08-09T04:30:00-04:00",
+  "dataSource": "TicketOps (authoritative) — double-reconciled; Outlook context non-blocking supplementary",
+  "refreshType": "manual_data_refresh_zero_state",
+  "rulesApplied": {
+    "includeStatuses": ["New", "Open", "Pending"],
+    "excludeStatuses": ["Reopen", "Reopened", "Closed", "Resolved", "Cancelled", "Done"],
+    "excludeInvoiceItems": ["billing", "UF Billing", "storage", "handling"],
+    "ufnFiltering": "enabled",
+    "deduplication": "enabled",
+    "authority": "TicketOps opsStatus is authoritative; Outlook context non-blocking supplementary"
+  },
+  "totalRaw": 567,
+  "totalTickets": 0,
+  "newCount": 0,
+  "openCount": 0,
+  "pendingCount": 0,
+  "tickets": [],
+  "priorityQueue": [],
+  "actionBuckets": { "immediate": 0, "immediateDetail": [], "shortTerm": 0, "shortTermDetail": [], "mediumTerm": 0, "mediumTermDetail": [], "watch": 0, "watchDetail": [] },
+  "customerHealth": {
+    "coverageRule": "All customers visible in eligible NHT/Cesanek tickets; configured roster/aliases supplemental only",
+    "rosterMode": "supplemental_only",
+    "customersInScope": ["DUPRAY USA LLC","INNOVA/SOFTGEL/KD NUTRA","SMEG USA","RITUAL BEVERAGE","COLAVITA USA, LLC","NIAGARA BOTTLING","ZEN BEVERAGE","EMS MIND READER/BETESH","NOURISON","GOLDEN BULL MARKETING"],
+    "customersActiveInTickets": [],
+    "healthSummary": "All 10 roster customers: 100% Healthy. Zero active UFN- tickets. No open issues.",
+    "customerDetails": [
+      { "customer": "DUPRAY USA LLC", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 },
+      { "customer": "INNOVA/SOFTGEL/KD NUTRA", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100, "note": "KD Nutra deadline flagged in Outlook — monitor" },
+      { "customer": "SMEG USA", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 },
+      { "customer": "RITUAL BEVERAGE", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 },
+      { "customer": "COLAVITA USA, LLC", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100, "note": "UFN-64843 closed 08/03" },
+      { "customer": "NIAGARA BOTTLING", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 },
+      { "customer": "ZEN BEVERAGE", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 },
+      { "customer": "EMS MIND READER/BETESH", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 },
+      { "customer": "NOURISON", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 },
+      { "customer": "GOLDEN BULL MARKETING", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 }
+    ]
+  },
+  "slaHealth": { "slaCompliancePct": 100, "slaBreachedCount": 0, "slaBreachedDetail": [], "note": "No SLA breaches — zero eligible tickets." },
+  "evidenceMetrics": { "outlookThreadsMatched": 0, "outlookCoverage": "N/A", "duplicatesRemoved": 0, "invoiceItemsExcluded": 4, "slaBreachCount": 0, "slaBreachRisk": "None", "dataFreshness": "Fresh — double-reconciled Aug 9 04:30 ET" },
+  "evidenceSummary": "Zero active UFN- tickets at Cesanek. All previously active tickets resolved between July 3-31, 2026. Last intake: July 31.",
+  "nextScheduledRefresh": "2026-08-09 04:45 ET"
+}
