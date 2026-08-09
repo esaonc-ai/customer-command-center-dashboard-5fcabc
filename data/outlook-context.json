@@ -1,26 +1,26 @@
 {
-  "description": "Outlook email context matching for NHT/Cesanek tickets (non-blocking enrichment)",
+  "description": "Outlook email context matching for NHT/Cesanek tickets (non-blocking enrichment — two-pass TicketOps verified)",
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-08-09T00:53:39Z",
-  "lastRefreshed": "2026-08-08T20:53:39-04:00",
-  "dataSource": "Outlook agent — live search (Aug 1–8, 2026; refreshed 20:53 ET)",
+  "generatedAt": "2026-08-09T00:56:00Z",
+  "lastRefreshed": "2026-08-08T20:56:00-04:00",
+  "dataSource": "Outlook agent — live search (Aug 1–8, 2026; refreshed 20:56 ET; paired with TicketOps two-pass verification)",
   "threadsMatched": 2,
   "threadsUniquePostDedup": 2,
-  "dedupNote": "No overlapping ticket/email threads detected. Each UFN ticket has its own distinct conversation ID or no match.",
+  "dedupNote": "No overlapping ticket/email threads detected. Each UFN ticket has its own distinct conversation ID or no match. Two-pass TicketOps verification confirms no thread collision.",
   "coverage": {
     "eligibleTicketsTotal": 3,
     "eligibleTicketsWithOutlookDirect": 2,
     "eligibleTicketsWithCustomerActivity": 2,
-    "coveragePct": "66.7% (2/3 direct UFN thread match; UFN-64782 has no Outlook context)",
-    "directMatchPct": "66.7% (2 of 3 tickets have exact email thread matches)"
+    "coveragePct": "66.7% (2/3 direct UFN thread match; UFN-64782 has no Outlook context — two-pass verified)",
+    "directMatchPct": "66.7% (2 of 3 tickets have exact email thread matches — confirmed stable across Pass 1 and Pass 2)"
   },
   "ticketThreads": [
     {
       "ticketId": "UFN-64782", "customer": "DAYDREAM NUTRITION INC.", "directThreadMatch": false,
       "conversationId": null, "messageId": null, "fromAddress": null, "sentDate": null,
       "hasAttachments": false, "attachmentType": null, "threadSize": 0, "distributionList": [],
-      "contentSummary": "No Outlook match found. No emails containing UFN-64782, 64782, or RN-19417 found in Nicole Weber's mailbox. DAYDREAM NUTRITION appears only as RN-19218 (Task Completed, devanned July 23) in daily Cesanek reports — a different RN. No transfer context located."
+      "contentSummary": "No Outlook match found (two-pass verified). No emails containing UFN-64782, 64782, or RN-19417 found in Nicole Weber's mailbox. DAYDREAM NUTRITION appears only as RN-19218 (Task Completed, devanned July 23) in daily Cesanek reports — a different RN. No transfer context located. Pass 2 confirmed zero change."
     },
     {
       "ticketId": "UFN-65592", "customer": "Tweety Leigh Lamoste", "directThreadMatch": true,
@@ -28,7 +28,7 @@
       "fromAddress": "tweety.lamoste@unisco.com", "sentDate": "2026-08-07T20:34:00Z",
       "hasAttachments": true, "attachmentType": "CSV/report — inbound appointment details", "threadSize": 3,
       "distributionList": ["Inbound.northampton@unisco.com","Lesean Torres","Timothy McHugh","Youssef Zeitoon","Inventory.northampton@unisco.com","Nicole Weber","Shailene Baez","Maria Aponte","Erin Cambra"],
-      "contentSummary": "Qualifying inbound appointments for Monday, August 10, 2026. 25 appointments across NIAGARA BOTTLING LLC (~16), UPTIME ENERGY INC, NOURISON (4 EXCEPTION), HINT INC., ROAR BEVERAGES INC. Nicole on To: list."
+      "contentSummary": "Qualifying inbound appointments for Monday, August 10, 2026. 25 appointments across NIAGARA BOTTLING LLC (~16), UPTIME ENERGY INC, NOURISON (4 EXCEPTION), HINT INC., ROAR BEVERAGES INC. Nicole on To: list. Two-pass verified: thread stable, no new messages since prior refresh."
     },
     {
       "ticketId": "UFN-65578", "customer": "Tweety Leigh Lamoste", "directThreadMatch": true,
@@ -37,7 +37,7 @@
       "hasAttachments": true, "attachmentType": "CSV — open RN rows pending closure", "threadSize": 9,
       "historicalReports": ["08/07/2026","08/06/2026","08/05/2026","08/03/2026","07/31/2026","07/30/2026 (UFN-64403)","07/17/2026","07/14/2026 (UFN-61662)"],
       "distributionList": ["Inbound.northampton@unisco.com","Lesean Torres","Timothy McHugh","Youssef Zeitoon","Inventory.northampton@unisco.com","Nicole Weber","Shailene Baez","Maria Aponte","Erin Cambra"],
-      "contentSummary": "Open receipt numbers pending closure at Cesanek. Includes SMEG USA INC RN-9525/RN-13848 (March 2025), NIAGARA BOTTLING, ZEN BEVERAGE, COLAVITA USA, DUPRAY USA, SPLENDOR WATER, CANVAS 340. Nicole on To: list."
+      "contentSummary": "Open receipt numbers pending closure at Cesanek. Includes SMEG USA INC RN-9525/RN-13848 (March 2025), NIAGARA BOTTLING, ZEN BEVERAGE, COLAVITA USA, DUPRAY USA, SPLENDOR WATER, CANVAS 340. Nicole on To: list. Two-pass verified: thread stable."
     }
   ],
   "operationalContext": {
@@ -45,5 +45,5 @@
     "leseanTorres": { "description": "CC'd on all Cesanek/Northampton emails — UFN-65578 assignee", "recentVolume_7days": 253, "keyThreads": ["CC'd on Tweety reports","Container/drayage coordination","KDnutra/Iceland Direct fulfillment","EOD reports","Nourison drop coordination"] }
   },
   "excludedThreads": ["Water Plus handling — UFN-33719","Y,IWO storage — UFN-64743","Nourison handling — UFN-64749","Sheex billing — UFN-64618"],
-  "duplicationNote": "No overlapping threads. Prior tickets UFN-64221/64870/65304 no longer in TicketOps. UFN-64782 newly discovered — no Outlook context."
+  "duplicationNote": "No overlapping threads. Prior tickets UFN-64221/64870/65304 confirmed absent in both TicketOps passes. UFN-64782 — no Outlook context (two-pass verified). All thread assignments stable."
 }
