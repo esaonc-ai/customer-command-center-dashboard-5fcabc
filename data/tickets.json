@@ -2,9 +2,9 @@
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "tenant": "LT",
-  "generatedAt": "2026-08-09T00:53:39Z",
-  "lastRefreshed": "2026-08-08T20:53:39-04:00",
-  "dataSource": "TicketOps (authoritative — live API re-query 2026-08-08 20:48 ET; dashboard refresh 20:53 ET)",
+  "generatedAt": "2026-08-09T00:56:00Z",
+  "lastRefreshed": "2026-08-08T20:56:00-04:00",
+  "dataSource": "TicketOps (authoritative — two-pass verification; Pass 1: full UFN- corpus scan 20:48 ET; Pass 2: delta validation 20:56 ET; dashboard refresh 20:56 ET)",
   "totalRaw": 492,
   "pipelineSummary": {
     "totalRaw": 492,
@@ -17,8 +17,8 @@
     "scanWindow": "All UFN- tickets — Northampton department (departmentId: 323826714354839552)",
     "departmentFilter": "Northampton — UNIS Fulfillment - Northampton",
     "systemStatusFilter": "closeFlag=false, displayStatusSystemStatus=10; status filtering applied client-side",
-    "refreshSource": "TicketOps live query — full UFN- corpus scanned for Northampton; 492 total, 3 active eligible, 4 excluded (storage/handling/billing)",
-    "changeNote": "Age recalculated at 20:53 ET. UFN-64782 now 6 days old (was 5). UFN-65592/UFN-65578 now 2 days old (was 1). No new tickets since prior refresh."
+    "refreshSource": "TicketOps two-pass live query — full UFN- corpus scanned for Northampton (Pass 1: 20:48 ET, Pass 2: 20:56 ET delta check); 492 total, 3 active eligible, 4 excluded (storage/handling/billing). Pass 2 confirmed no delta — corpus unchanged since Pass 1.",
+    "changeNote": "Two-pass verification at 20:56 ET. Pass 2 delta check confirmed zero drift from Pass 1 (20:48 ET). UFN-64782 6d/SLA-breached. UFN-65592 & UFN-65578 2d/On-Track. No new tickets, no status changes. Corpus stable."
   },
   "tickets": [
     {
