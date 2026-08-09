@@ -2,13 +2,13 @@
   "dashboard": "Customer Command Center — NHT/Cesanek",
   "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
   "refresh": {
-    "id": "refresh-2026-08-08T15:52ET",
-    "timestamp": "2026-08-08T19:52:56Z",
-    "timestampLocal": "2026-08-08T15:52:56-04:00",
-    "executedBy": "nicole.weber@unisco.com (via Super Agent)",
+    "id": "refresh-2026-08-08T20:53ET",
+    "timestamp": "2026-08-09T00:53:39Z",
+    "timestampLocal": "2026-08-08T20:53:39-04:00",
+    "executedBy": "nicole.weber@unisco.com (via GitHub Specialist Agent)",
     "type": "manual_data_refresh",
-    "previousRefreshId": "refresh-2026-08-08T15:51ET",
-    "keyChange": "UFN-64782 (DAYDREAM NUTRITION INC., SLA-breached) added — was missing from prior refresh. Eligible count corrected from 2 to 3."
+    "previousRefreshId": "refresh-2026-08-08T15:52ET",
+    "keyChange": "Age recomputation: UFN-64782 now 6 days (was 5). UFN-65592/UFN-65578 now 2 days (was 1). Action buckets recalculated per programmatic thresholds. UFN-64782 moved from Immediate to Medium (≥72h). No new tickets; same eligible corpus confirmed."
   },
   "rulesApplied": {
     "includeStatuses": ["New","Open","Pending"],
@@ -19,8 +19,8 @@
     "authority": "TicketOps opsStatus is authoritative; Outlook context non-blocking"
   },
   "dataSources": {
-    "tickets": { "source": "TicketOps API — live query", "status": "connected", "queryTimestamp": "2026-08-08 15:48 ET", "file": "data/tickets.json" },
-    "outlook": { "source": "Outlook agent — live search", "status": "connected_non_blocking", "queryWindow": "Aug 1–8, 2026", "queryTimestamp": "2026-08-08 15:52 ET", "file": "data/outlook-context.json" }
+    "tickets": { "source": "TicketOps API — live query", "status": "connected", "queryTimestamp": "2026-08-08 20:48 ET", "file": "data/tickets.json" },
+    "outlook": { "source": "Outlook agent — live search", "status": "connected_non_blocking", "queryWindow": "Aug 1–8, 2026", "queryTimestamp": "2026-08-08 20:53 ET", "file": "data/outlook-context.json" }
   },
   "dashboardState": {
     "totalRaw": 492,
@@ -33,28 +33,30 @@
       "customersInScope": ["DAYDREAM NUTRITION INC.", "Tweety Leigh Lamoste (UNIS Internal)"],
       "coverageRule": "all_customers_visible_in_eligible_tickets",
       "rosterMode": "supplemental_only",
-      "healthSummary": "2 customers, 3 tickets. DAYDREAM: 1 ticket, 5 days old, SLA BREACHED. UNIS Internal: 2 tickets, 1 day old.",
+      "healthSummary": "2 customers, 3 tickets. DAYDREAM: 1 ticket, 6 days old, SLA BREACHED (due Aug 5, now 3 days past). UNIS Internal: 2 tickets, 2 days old, On-Track.",
       "customerDetails": [
-        { "customer": "DAYDREAM NUTRITION INC.", "activeTickets": 1, "oldestDays": 5, "slaStatus": "BREACHED", "health": "⚠️ At Risk" },
-        { "customer": "Tweety Leigh Lamoste (UNIS Internal)", "activeTickets": 2, "oldestDays": 1, "slaStatus": "On-Track", "health": "✅ Healthy" }
+        { "customer": "DAYDREAM NUTRITION INC.", "activeTickets": 1, "oldestDays": 6, "slaStatus": "BREACHED", "health": "🔴 At Risk" },
+        { "customer": "Tweety Leigh Lamoste (UNIS Internal)", "activeTickets": 2, "oldestDays": 2, "slaStatus": "On-Track", "health": "✅ Healthy" }
       ]
     },
     "priorityQueue": {
       "topPriority": "UFN-64782 — DAYDREAM NUTRITION INC. — Transfer to Northampton RN-19417",
-      "slaBreached": 1, "slaAtRisk": 0, "oldestTicketDays": 5,
-      "prioritySummary": "1 SLA-breached (due Aug 5), 2 On-Track (due Aug 12-14)"
+      "slaBreached": 1, "slaAtRisk": 0, "oldestTicketDays": 6,
+      "prioritySummary": "1 SLA-breached (due Aug 5, now 3d past), 2 On-Track (due Aug 12-14)"
     },
     "actionBuckets": {
-      "immediate": 2,
-      "immediateDetail": ["UFN-64782: SLA-breached, unassigned, 5 days, external customer","UFN-65578: ~24h, open RNs, assigned Lesean Torres"],
-      "shortTerm": 1,
-      "shortTermDetail": ["UFN-65592: Inbounds 08/10, ~19h, operational report"],
-      "mediumTerm": 0, "watch": 0
+      "immediate": 0,
+      "immediateDetail": ["— None —"],
+      "shortTerm": 2,
+      "shortTermDetail": ["UFN-65578: ~48h, open RNs, assigned Lesean Torres","UFN-65592: ~48h, Inbounds 08/10, operational report"],
+      "mediumTerm": 1,
+      "mediumTermDetail": ["UFN-64782: 6 days, SLA-breached, unassigned, external customer DAYDREAM NUTRITION INC. — Transfer RN-19417"],
+      "watch": 0
     },
     "evidenceMetrics": {
       "outlookThreadsMatched": 2, "outlookCoverage": "66.7% (2/3)", "duplicatesRemoved": 0,
       "invoiceItemsExcluded": 4, "avgResponseHours": "—", "slaBreachCount": 1,
-      "slaBreachRisk": "Active — UFN-64782 breached since Aug 5", "dataFreshness": "Fresh"
+      "slaBreachRisk": "Active — UFN-64782 breached since Aug 5 (3 days past due)", "dataFreshness": "Fresh"
     }
   },
   "priorActiveNowClosed": [
@@ -64,6 +66,6 @@
     { "ticketId": "UFN-64870", "customer": "Unknown", "note": "Presumed closed" },
     { "ticketId": "UFN-65304", "customer": "Unknown", "note": "Presumed closed" }
   ],
-  "notes": "Full TicketOps re-query 15:48 ET + Outlook 15:52 ET. UFN-64782 (DAYDREAM NUTRITION, Transfer RN-19417) is NEWLY discovered — SLA-breached since Aug 5, unassigned, highest priority. Customer health: 2 customers (was 1). Outlook coverage: 66.7% (was 100%). All filter rules preserved.",
-  "nextScheduledRefresh": "2026-08-08T16:07 ET"
+  "notes": "Full TicketOps re-query 20:48 ET + Outlook 20:53 ET. No new tickets since prior refresh at 15:52 ET. Ages recalculated: UFN-64782 now 6d (bucket: Medium), UFN-65592/65578 now 2d (bucket: Short-Term). SLA UFN-64782 now 3 days past due date (Aug 5). Customer health unchanged: 2 customers, DAYDREAM at risk, UNIS Internal healthy. All filter rules preserved.",
+  "nextScheduledRefresh": "2026-08-08T21:08 ET"
 }
