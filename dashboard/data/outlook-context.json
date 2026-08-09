@@ -1,10 +1,10 @@
 {
-  "description": "Outlook email context matching for NHT/Cesanek tickets (non-blocking enrichment — reconciled at Aug 9 07:18 ET). Note: No active customer threads with open tickets — all previously-referenced UFN tickets closed per TicketOps (authoritative).",
+  "description": "Outlook email context matching for NHT/Cesanek tickets (non-blocking enrichment – reconciled at Aug 9 12:04 ET). Note: No active customer threads with open tickets – all previously-referenced UFN tickets closed per TicketOps (authoritative).",
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-08-09T11:18:45Z",
-  "lastRefreshed": "2026-08-09T07:18:45-04:00",
-  "dataSource": "Outlook agent — live search (Aug 2–9, 2026) + prior dashboard context + reconciliation pass",
+  "generatedAt": "2026-08-09T16:04:28Z",
+  "lastRefreshed": "2026-08-09T12:04:28-04:00",
+  "dataSource": "Outlook agent – live search (Aug 2–9, 2026) + prior dashboard context + reconciliation pass",
   "note": "No active customer threads with open tickets. All previously-matched Outlook threads correspond to UFN tickets now confirmed closed per TicketOps (authoritative). Outlook context preserved here as historical/non-blocking supplementary record.",
   "threadsMatched": 0,
   "threadsUniquePostDedup": 0,
@@ -17,28 +17,28 @@
   },
   "ticketThreads": [],
   "excludedThreads": [
-    "Water Plus handling — UFN-33719 (invoice item excluded)",
-    "Y,IWO storage — UFN-64743 (invoice item excluded)",
-    "Nourison handling — UFN-64749 (invoice item excluded)",
-    "Sheex billing — UFN-64618 (invoice item excluded)",
-    "COLAVITA TO5017 — UFN-64843 (closeFlag=true, closed 08/03, surfaced by Outlook but excluded per TicketOps authority)"
+    "Water Plus handling – UFN-33719 (invoice item excluded)",
+    "Y,IWO storage – UFN-64743 (invoice item excluded)",
+    "Nourison handling – UFN-64749 (invoice item excluded)",
+    "Sheex billing – UFN-64618 (invoice item excluded)",
+    "COLAVITA TO5017 – UFN-64843 (closeFlag=true, closed 08/03, surfaced by Outlook but excluded per TicketOps authority)"
   ],
   "aug2to9InboxContext": {
     "scanWindow": "Aug 2–9, 2026",
-    "kdNutra": { "status": "deadline_pending", "summary": "KD Nutra deadline flagged in Erin Cambra EOD Aug 5 — pending resolution, not yet a UFN ticket. Monitor for escalation." },
+    "kdNutra": { "status": "deadline_pending", "summary": "KD Nutra deadline flagged in Erin Cambra EOD Aug 5 – pending resolution, not yet a UFN ticket. Monitor for escalation." },
     "mondayAug10Loads": { "status": "confirmed", "summary": "25 inbound appointments confirmed across NIAGARA BOTTLING (~16), UPTIME ENERGY, NOURISON (4 exceptions), HINT, ROAR BEVERAGES. Cesanek facility. Nicole Weber on distribution." },
-    "billingApprovals": { "status": "pending", "summary": "Multiple UF Billing threads in scan window (Sheex, Dupray, Nourison) — all excluded per filter rules (billing/handling invoice item types)." },
+    "billingApprovals": { "status": "pending", "summary": "Multiple UF Billing threads in scan window (Sheex, Dupray, Nourison) – all excluded per filter rules (billing/handling invoice item types)." },
     "resolvedItems": [
-      "Colavita TO5017 (RN-19421) — surfaced in Outlook but confirmed closed 08/03 by TicketOps (closeFlag=true, Yang-Lhing Bague)",
-      "Lemate early pickup (UFN-64071) — noted in Outlook, ticket closed, no follow-up required",
-      "All 7 previously-active UFN tickets (UFN-64221, UFN-64782, UFN-64870, UFN-65304, UFN-65443, UFN-65578, UFN-65592) — all closed Jul 3-31, 2026 per TicketOps"
+      "Colavita TO5017 (RN-19421) – surfaced in Outlook but confirmed closed 08/03 by TicketOps (closeFlag=true, Yang-Lhing Bague)",
+      "Lemate early pickup (UFN-64071) – noted in Outlook, ticket closed, no follow-up required",
+      "All 7 previously-active UFN tickets (UFN-64221, UFN-64782, UFN-64870, UFN-65304, UFN-65443, UFN-65578, UFN-65592) – all closed Jul 3-31, 2026 per TicketOps"
     ],
-    "loadSequence": "Monday 08/10 Cesanek inbound sequence distributed by Tweety Lamoste — 25 appointments, NIAGARA BOTTLING dominant carrier.",
+    "loadSequence": "Monday 08/10 Cesanek inbound sequence distributed by Tweety Lamoste – 25 appointments, NIAGARA BOTTLING dominant carrier.",
     "announcements": [
       "Erin Cambra EOD daily reports provide consistent operational visibility (Aug 2–7)",
       "Maria Aponte leave coverage: Shailene Baez handling Splendor Water account",
-      "No overlapping threads detected between tickets — dedup clean"
+      "No overlapping threads detected between tickets – dedup clean"
     ]
   },
-  "deduplicationNote": "No overlapping threads. All 7 previously-eligible UFN tickets verified distinct. UFN-64843 (COLAVITA) surfaced by Outlook Aug 2-9 scan but excluded per TicketOps: closeFlag=true, closed 08/03/2026 same-day by Yang-Lhing Bague. KD Nutra pending deadline unrelated to current eligible set — monitor for potential new ticket."
+  "deduplicationNote": "No overlapping threads. All 7 previously-eligible UFN tickets verified distinct. UFN-64843 (COLAVITA) surfaced by Outlook Aug 2-9 scan but excluded per TicketOps: closeFlag=true, closed 08/03/2026 same-day by Yang-Lhing Bague. KD Nutra pending deadline unrelated to current eligible set – monitor for potential new ticket."
 }
