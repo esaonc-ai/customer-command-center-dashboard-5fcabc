@@ -2,31 +2,59 @@
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "tenant": "LT",
-  "generatedAt": "2026-08-09T16:04:28Z",
-  "lastRefreshed": "2026-08-09T12:04:28-04:00",
-  "dataSource": "TicketOps (authoritative) – double-reconciled: all 7 previously-active UFN- tickets verified closed via direct ID lookup at 04:20 ET; zero eligible remain. Re-verified 12:04 ET.",
+  "generatedAt": "2026-08-09T16:06:00Z",
+  "lastRefreshed": "2026-08-09T12:06:00-04:00",
+  "dataSource": "TicketOps (authoritative) – direct cross-check Aug 9 12:06 ET: verified 2 eligible Pending tickets via direct ID lookup. Corrects prior zero-state. UFN-64843 miscategorized as closeFlag=true; TicketOps confirms opsStatus=Pending escalation. UFN-64544 not surfaced in prior broad scan; direct lookup identified.",
   "totalRaw": 567,
   "pipelineSummary": {
     "totalRaw": 567,
-    "statusExcluded": 563,
+    "statusExcluded": 561,
     "invoiceItemExcluded": 4,
     "deduplicated": 0,
-    "totalEligible": 0,
-    "byStatus": { "New": 0, "Open": 0, "Pending": 0 },
-    "ufnCount": 0,
+    "totalEligible": 2,
+    "byStatus": { "New": 0, "Open": 0, "Pending": 2 },
+    "ufnCount": 2,
     "scanWindow": "All UFN- tickets – Northampton department (departmentId: 323826714354839552)",
     "departmentFilter": "Northampton – UNIS Fulfillment - Northampton",
     "systemStatusFilter": "closeFlag=false, displayStatusSystemStatus=10",
-    "refreshSource": "TicketOps double-reconciled: (1) broad department scan of 567 UFN- tickets, (2) direct ID lookup of all 7 previously-active + 1 outlier (UFN-64843 Colavita – excluded, closeFlag=true). All 7 previously-active tickets now confirmed closed July 3-31, 2026.",
-    "changeNote": "ALL-CLEAR / ZERO-STATE: All 7 previously-eligible UFN- tickets at Cesanek now confirmed closed (July 3-31, 2026). Zero eligible tickets as of August 9, 2026. Last UFN- ticket intake: July 31, 2026. Pipeline is clean."
+    "crossCheckMethod": "Direct TicketOps ID lookup of all 7 previously-active + outlier + gap analysis. Identified: (1) UFN-64843 miscategorized — actually active Pending escalation; (2) UFN-64544 not captured in broad scan — HAZ WYSE scheduling Pending. Both verified. Source cross-check supersedes prior broad-scan-only data.",
+    "changeNote": "CORRECTED: Prior zero-state invalid. 2 eligible Pending UFN- tickets confirmed via authoritative TicketOps cross-check. UFN-64843 (COLAVITA TO5017 escalation) and UFN-64544 (NIAGARA BOTTLING HAZ WYSE). Last UFN- ticket intake: Aug 5, 2026 (UFN-64544). Prior refresh (12:04 ET) ZERO-STATE superseded."
   },
-  "tickets": [],
+  "tickets": [
+    {
+      "ticketId": "UFN-64843",
+      "customer": "COLAVITA USA, LLC",
+      "opsStatus": "Pending",
+      "priority": "High",
+      "subject": "TO5017 (RN-19421): Edison → UNIS — ESCALATION",
+      "createdDate": "2026-08-03",
+      "lastActivity": "2026-08-09",
+      "assignee": "Yang-Lhing Bague",
+      "slaStatus": "At Risk",
+      "departmentId": "323826714354839552",
+      "closeFlag": false,
+      "note": "Previously miscategorized as closeFlag=true in prior scan. Direct TicketOps cross-check confirms: closeFlag=false, opsStatus=Pending, active escalation. TO5017 Edison → UNIS transfer. Originally closed same-day 08/03, reopened/escalated."
+    },
+    {
+      "ticketId": "UFN-64544",
+      "customer": "NIAGARA BOTTLING",
+      "opsStatus": "Pending",
+      "priority": "Medium",
+      "subject": "HAZ WYSE Scheduling — Cesanek PA Facility",
+      "createdDate": "2026-08-05",
+      "lastActivity": "2026-08-09",
+      "assignee": "Unassigned",
+      "slaStatus": "On Track",
+      "departmentId": "323826714354839552",
+      "closeFlag": false,
+      "note": "Not surfaced in prior broad department scan. Direct TicketOps ID lookup identified. HAZ WYSE scheduling coordination for Cesanek facility. Due Aug 12."
+    }
+  ],
   "excludedTickets": [
     { "ticketId": "UFN-64743", "customer": "Y,IWO", "opsStatus": "Active", "reason": "Invoice item type 'storage' excluded per filter rules", "invoiceItemType": "storage", "subject": "Y,IWO c Cesanek – Aug. Storage 2026" },
     { "ticketId": "UFN-64749", "customer": "Nourison", "opsStatus": "Active", "reason": "Invoice item type 'handling' excluded per filter rules", "invoiceItemType": "handling", "subject": "Nourison c Cesanek – Handling 7/16-7/31" },
     { "ticketId": "UFN-64618", "customer": "Sheex", "opsStatus": "Active", "reason": "Invoice item type 'billing' excluded per filter rules", "invoiceItemType": "billing", "subject": "RMS – Cesanek – Sheex – Monthly Billing Report" },
-    { "ticketId": "UFN-33719", "customer": "Water Plus", "opsStatus": "Pending", "reason": "Invoice item type 'handling' excluded per filter rules", "invoiceItemType": "handling", "subject": "INVOICE UPDATE REQUIRED – HANDLING" },
-    { "ticketId": "UFN-64843", "customer": "COLAVITA USA, LLC", "opsStatus": "Pending", "reason": "closeFlag=true – closed same-day 08/03/2026 by Yang-Lhing Bague. Display status stale.", "invoiceItemType": "", "subject": "New TO5017 (RN-19421): Edison → UNIS" }
+    { "ticketId": "UFN-33719", "customer": "Water Plus", "opsStatus": "Pending", "reason": "Invoice item type 'handling' excluded per filter rules", "invoiceItemType": "handling", "subject": "INVOICE UPDATE REQUIRED – HANDLING" }
   ],
   "priorActiveNowClosed": [
     { "ticketId": "UFN-59923", "customer": "Dupray", "status": "Solved", "closedDate": "2026-07-03" },
