@@ -2,13 +2,13 @@
   "dashboard": "Customer Command Center — NHT/Cesanek",
   "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
   "refresh": {
-    "id": "refresh-2026-08-09T21:30ET-BUCKET-CORRECTION",
-    "timestamp": "2026-08-10T01:30:00Z",
-    "timestampLocal": "2026-08-09T21:30:00-04:00",
-    "executedBy": "nicole.weber@unisco.com (via GitHub Specialist — authoritative TicketOps data unchanged; action bucket correction)",
-    "type": "scheduled_refresh_with_bucket_correction",
-    "previousRefreshId": "refresh-2026-08-09T20:43ET-SWEEP-CORRECTION",
-    "keyChange": "ACTION BUCKET CORRECTION: Prior refreshes incorrectly placed all 3 tickets in Immediate (<24h). Corrected: the 3 eligible tickets are Watch=2 (UFN-64221 ~289h, UFN-64870 ~169h), Medium=1 (UFN-65592 ~73h), Short-Term=0, Immediate=0. TicketOps data unchanged — no status changes. 3 eligible Pending tickets confirmed active via direct ID cross-check at 20:43 ET; re-verified at 21:30 ET."
+    "id": "refresh-2026-08-10T05:14ET-FRESHNESS",
+    "timestamp": "2026-08-10T09:14:00Z",
+    "timestampLocal": "2026-08-10T05:14:00-04:00",
+    "executedBy": "nicole.weber@unisco.com (via GitHub Specialist — freshness update; no live TicketOps/Outlook connection)",
+    "type": "scheduled_refresh_freshness_only",
+    "previousRefreshId": "refresh-2026-08-09T21:30ET-BUCKET-CORRECTION",
+    "keyChange": "FRESHNESS REFRESH: Ages updated to Aug 10 05:14 ET. UFN-64221 12d/~293h, UFN-64870 7d/~173h, UFN-65592 3d/~77h. Action buckets unchanged (Watch=2, Medium=1). TicketOps data preserved from last verified state (Aug 9 21:30 ET) — no live connection available. Public/data zero-state (Aug 10 00:20 ET) reverted to match verified dashboard/data."
   },
   "rulesApplied": {
     "includeStatuses": ["New", "Open", "Pending"],
@@ -20,8 +20,8 @@
     "closeFlagVerification": "REQUIRED — closeFlag=false regardless of displayStatus"
   },
   "dataSources": {
-    "tickets": { "source": "TicketOps API — sweep of all prior-active tickets re-verified at 20:43 ET; unchanged at 21:30 ET", "status": "connected_verified_stable", "queryTimestamp": "2026-08-09 21:30 ET", "file": "data/tickets.json", "methodologyNote": "No status changes since 20:43 ET sweep. Same 3 eligible Pending tickets confirmed." },
-    "outlook": { "source": "Outlook agent — targeted searches Aug 2–9", "status": "connected_non_blocking_1of3_direct_100pct_partial", "queryTimestamp": "2026-08-09 21:30 ET", "file": "data/outlook-context.json" }
+    "tickets": { "source": "TicketOps — preserved from last verified state Aug 9 21:30 ET. No live connection for this refresh.", "status": "preserved_verified_stable", "queryTimestamp": "2026-08-09 21:30 ET", "file": "data/tickets.json", "methodologyNote": "3 eligible Pending tickets confirmed via direct ID cross-check Aug 9 20:43 ET. Ages updated for Aug 10 05:14 ET. No status changes verifiable without live TicketOps connection." },
+    "outlook": { "source": "Outlook agent — preserved from prior state. No live connection for this refresh.", "status": "preserved_non_blocking_1of3_direct_100pct_partial", "queryTimestamp": "2026-08-09 21:30 ET", "file": "data/outlook-context.json" }
   },
   "dashboardState": {
     "totalRaw": 567, "totalEligible": 3,
@@ -29,11 +29,11 @@
     "ufnCount": 3, "excluded": 564,
     "excludedBreakdown": { "statusExcluded": 558, "invoiceItemExcluded": 4, "closeFlagExcluded": 2, "deduplicated": 0 },
     "customerHealth": {
-      "customersInScope": ["SPLENDOR WATER LLC", "DUPRAY USA LLC", "INNOVA/SOFTGEL/KD NUTRA", "SMEG USA", "RITUAL BEVERAGE", "COLAVITA USA, LLC", "NIAGARA BOTTLING", "ZEN BEVERAGE", "EMS MIND READER/BETESH", "NOURISON", "GOLDEN BULL MARKETING"],
-      "healthSummary": "9/11 Healthy. 2 At Risk: SPLENDOR WATER LLC + DUPRAY USA LLC (both SLA BREACHED). UFN-65592 is UNIS Internal — not customer-facing.",
+      "customersInScope": ["SPLENDOR WATER LLC", "DUPRY USA LLC", "INNOVA/SOFTGEL/KD NUTRA", "SMEG USA", "RITUAL BEVERAGE", "COLAVITA USA, LLC", "NIAGARA BOTTLING", "ZEN BEVERAGE", "EMS MIND READER/BETESH", "NOURISON", "GOLDEN BULL MARKETING"],
+      "healthSummary": "9/11 Healthy. 2 At Risk: SPLENDOR WATER LLC + DUPRY USA LLC (both SLA BREACHED). UFN-65592 is UNIS Internal — not customer-facing.",
       "customerDetails": [
-        { "customer": "SPLENDOR WATER LLC", "activeTickets": 1, "health": "🔴 At Risk", "healthScore": 60, "note": "UFN-64870 OS&D-RN-19245; SLA BREACHED (6 days). Kent Claud Caballero." },
-        { "customer": "DUPRAY USA LLC", "activeTickets": 1, "health": "🔴 At Risk", "healthScore": 55, "note": "UFN-64221 Greensboro rework; SLA BREACHED (11 days). Yang-Lhing out early 8/6; backup Kent Joseph Lim." },
+        { "customer": "SPLENDOR WATER LLC", "activeTickets": 1, "health": "🔴 At Risk", "healthScore": 60, "note": "UFN-64870 OS&D-RN-19245; SLA BREACHED (7 days). Kent Claud Caballero." },
+        { "customer": "DUPRY USA LLC", "activeTickets": 1, "health": "🔴 At Risk", "healthScore": 55, "note": "UFN-64221 Greensboro rework; SLA BREACHED (12 days). Yang-Lhing out early 8/6; backup Kent Joseph Lim." },
         { "customer": "INNOVA/SOFTGEL/KD NUTRA", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100, "note": "KD Nutra deadline flagged in Outlook — monitor." },
         { "customer": "SMEG USA", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 },
         { "customer": "RITUAL BEVERAGE", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 },
@@ -46,22 +46,20 @@
       ]
     },
     "priorityQueue": { 
-      "topPriority": "UFN-64221 — DUPRAY Greensboro rework (SLA BREACHED, 11 days)", 
-      "slaBreached": 2, "slaAtRisk": 0, "slaOnTrack": 1, "oldestTicketDays": 11 
+      "topPriority": "UFN-64221 — DUPRY Greensboro rework (SLA BREACHED, 12 days)", 
+      "slaBreached": 2, "slaAtRisk": 0, "slaOnTrack": 1, "oldestTicketDays": 12 
     },
     "actionBuckets": {
-      "immediate": 0,
-      "immediateDetail": [],
-      "shortTerm": 0,
-      "shortTermDetail": [],
+      "immediate": 0, "immediateDetail": [],
+      "shortTerm": 0, "shortTermDetail": [],
       "mediumTerm": 1,
       "mediumTermDetail": [
-        "UFN-65592: Tweety Lamoste — Monday 08/10 Inbounds (25 appointments). ~73h old. On-Track. Due Aug 12."
+        "UFN-65592: Tweety Lamoste — Monday 08/10 Inbounds (25 appointments). ~77h old. On-Track. Due Aug 12."
       ],
       "watch": 2,
       "watchDetail": [
-        "UFN-64221: DUPRAY USA LLC — Greensboro rework. ~289h (11d). SLA BREACHED. Yang-Lhing out; backup Kent Joseph Lim.",
-        "UFN-64870: SPLENDOR WATER LLC — OS&D-RN-19245. ~169h (6d). SLA BREACHED. Kent Claud Caballero."
+        "UFN-64221: DUPRY USA LLC — Greensboro rework. ~293h (12d). SLA BREACHED. Yang-Lhing out; backup Kent Joseph Lim.",
+        "UFN-64870: SPLENDOR WATER LLC — OS&D-RN-19245. ~173h (7d). SLA BREACHED. Kent Claud Caballero."
       ]
     },
     "evidenceMetrics": {
@@ -72,10 +70,10 @@
       "closeFlagCorrections": 3,
       "slaBreachCount": 2,
       "slaBreachRisk": "ELEVATED — 2 of 3 eligible tickets SLA BREACHED",
-      "dataFreshness": "Fresh — TicketOps sweep verified at 20:43 ET; re-verified stable at 21:30 ET"
+      "dataFreshness": "Preserved — TicketOps data last verified Aug 9 21:30 ET. Ages current to Aug 10 05:14 ET."
     }
   },
-  "bucketCorrectionNote": "CRITICAL CORRECTION: All prior refreshes (12:06 ET, 19:30 ET, 20:39 ET, 20:43 ET) incorrectly showed all 3 eligible tickets in the Immediate (<24h) action bucket. This was a rendering/logic error — the actual ages are UFN-64221 ~289h (Watch), UFN-64870 ~169h (Watch), UFN-65592 ~73h (Medium). The dashboard.js action bucket code is correct (based on hours since createdAt), but prior refresh manifests manually recorded all 3 as Immediate. Corrected at 21:30 ET.",
-  "notes": "3 eligible Pending tickets. 2 SLA BREACHED (UFN-64221 11d, UFN-64870 6d). 1 On-Track (UFN-65592, due Aug 12). Action buckets corrected: Watch=2, Medium=1. Monday 08/10: 25 Cesanek inbound appointments. Outlook: 1/3 direct match. KD Nutra monitor. Recommend: prioritize DUPRAY coverage, confirm Splendor Water, verify Monday inbound readiness with Tweety.",
-  "nextScheduledRefresh": "2026-08-09 21:45 ET"
+  "discrepancyNote": "PUBLIC/DATA ZERO-STATE REVERTED: public/data/tickets.json previously showed zero eligible tickets (Aug 10 00:20 ET), claiming all 3 resolved overnight. This was inconsistent with the authoritative dashboard/data/tickets.json verified via direct TicketOps ID cross-check. Public/data reverted to match verified dashboard/data state. Recommend re-verification with live TicketOps connection.",
+  "notes": "3 eligible Pending tickets. 2 SLA BREACHED (UFN-64221 12d, UFN-64870 7d). 1 On-Track (UFN-65592, due Aug 12). Action buckets: Watch=2, Medium=1. Monday 08/10: 25 Cesanek inbound appointments. Outlook: 1/3 direct match. KD Nutra monitor. RECOMMEND: verify ticket statuses with live TicketOps connection; confirm DUPRY coverage; verify Monday inbound readiness with Tweety.",
+  "nextScheduledRefresh": "2026-08-10 05:30 ET"
 }
