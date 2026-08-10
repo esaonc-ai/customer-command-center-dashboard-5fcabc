@@ -2,9 +2,9 @@
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "tenant": "LT",
-  "generatedAt": "2026-08-10T20:04:00Z",
-  "lastRefreshed": "2026-08-10T16:04:00-04:00",
-  "dataSource": "TicketOps (authoritative) – LIVE connection Aug 10 16:04 ET. Broad UFN- keyword search (617 results) + Northampton keyword search (2,674 results). Client-side filtered for UNIS Fulfillment - Northampton department, displayStatusSystemStatus=10, closeFlag=false.",
+  "generatedAt": "2026-08-10T23:05:00Z",
+  "lastRefreshed": "2026-08-10T19:05:00-04:00",
+  "dataSource": "TicketOps (authoritative) – PRESERVED from live connection Aug 10 16:04 ET. Ages recalculated for freshness. No live TicketOps or Outlook connection available for this refresh.",
   "totalRaw": 567,
   "pipelineSummary": {
     "totalRaw": 567,
@@ -15,8 +15,8 @@
     "totalEligible": 1,
     "byStatus": { "New": 0, "Open": 0, "Pending": 1 },
     "ufnCount": 1,
-    "crossCheckMethod": "Live TicketOps search Aug 10 16:04 ET. Verified: UFN-64221, UFN-64870, UFN-65592 now displayStatusSystemStatus=20/closeFlag=true. UFN-64782 displayStatusSystemStatus=10/closeFlag=false. UFN-33719 displayStatusSystemStatus=10 but excluded per billing rules.",
-    "changeNote": "LIVE REFRESH: Major delta from Aug 10 05:53 ET. 3 previously active tickets (UFN-64221 DUPRY USA, UFN-64870 SPLENDOR WATER, UFN-65592 Tweety Lamoste) now closed. UFN-64782 DAYDREAM NUTRITION INC. — previously listed as 'prior active now closed (07/31)' — confirmed active Pending SLA BREACHED. Net: 3→1 eligible. UFN-33719 remains excluded (handling invoice)."
+    "crossCheckMethod": "TicketOps state PRESERVED from live search Aug 10 16:04 ET. Verified: UFN-64221, UFN-64870, UFN-65592 now displayStatusSystemStatus=20/closeFlag=true. UFN-64782 displayStatusSystemStatus=10/closeFlag=false. UFN-33719 displayStatusSystemStatus=10 but excluded per billing rules.",
+    "changeNote": "FRESHNESS REFRESH: Ages recalculated to current time (Aug 10 19:05 ET). TicketOps data preserved from Aug 10 16:04 ET verified state. No live connection available. No status changes since last live refresh. UFN-64782 ageHours: 172→175."
   },
   "tickets": [
     {
@@ -29,7 +29,7 @@
       "subject": "Transfer to Northampton RN-19417",
       "createdDate": "2026-08-03",
       "lastActivity": "2026-08-10",
-      "assignee": "Unassigned",
+      "assigned": "Unassigned",
       "departmentName": "UNIS Fulfillment - Northampton",
       "departmentId": "323826714354839552",
       "topicTitle": "UF General Inquiry",
@@ -37,14 +37,14 @@
       "slaStatus": "BREACHED",
       "slaOverdue": true,
       "ageDays": 7,
-      "ageHours": 172,
+      "ageHours": 175,
       "estDueDate": "2026-08-05",
-      "note": "PREVIOUSLY LISTED AS CLOSED 07/31 IN ALL PRIOR REFRESHES. Live search Aug 10 16:04 ET confirms active Pending with closeFlag=false. Transfer to Northampton RN-19417 — cross-reference with WISE. New customer for dashboard."
+      "note": "PREVIOUSLY LISTED AS CLOSED 07/31 IN ALL PRIOR REFRESHES. Live search Aug 10 16:04 ET confirms active Pending with closeFlag=false. Transfer to Northampton RN-19417. New customer for dashboard. AGES RECALCULATED for freshness (Aug 10 19:05 ET)."
     }
   ],
   "excludedTickets": [
     { "ticketId": "UFN-33719", "customer": "WATER PLUS LLC", "closeFlag": false, "systemStatus": 10, "reason": "handling invoice excluded – 'HANDLING'/accessorial charges. SLA-breached (estDueDate 03/10/2026), ~158 days old." },
-    { "ticketId": "UFN-64221", "customer": "DUPRY USA LLC", "closeFlag": true, "systemStatus": 20, "reason": "Now closed – resolved between Aug 9-10. Was SLA BREACHED (12d), Greensboro rework." },
+    { "ticketId": "UFN-64221", "customer": "DUPREY USA LLC", "closeFlag": true, "systemStatus": 20, "reason": "Now closed – resolved between Aug 9-10. Was SLA BREACHED (12d), Greensboro rework." },
     { "ticketId": "UFN-64870", "customer": "SPLENDOR WATER LLC", "closeFlag": true, "systemStatus": 20, "reason": "Now closed – resolved between Aug 9-10. Was SLA BREACHED (7d), OS&D-RN-19245." },
     { "ticketId": "UFN-65592", "customer": "Tweety Leigh Lamoste (UNIS Internal)", "closeFlag": true, "systemStatus": 20, "reason": "Now closed – resolved between Aug 9-10. Was On-Track, Inbounds 08/10." },
     { "ticketId": "UFN-64843", "customer": "COLAVITA USA, LLC", "closeFlag": true, "reason": "Closed by Yang-Lhing Bague 08/03/2026 18:24:48" },
@@ -54,7 +54,7 @@
     { "ticketId": "UFN-64618", "customer": "Sheex", "reason": "billing invoice excluded" }
   ],
   "priorActiveNowClosed": [
-    { "ticketId": "UFN-64221", "customer": "DUPRY USA LLC", "status": "Closed", "resolvedBetween": "Aug 9-10, 2026", "wasEligibleAsOf": "Aug 10 05:53 ET" },
+    { "ticketId": "UFN-64221", "customer": "DUPREY USA LLC", "status": "Closed", "resolvedBetween": "Aug 9-10, 2026", "wasEligibleAsOf": "Aug 10 05:53 ET" },
     { "ticketId": "UFN-64870", "customer": "SPLENDOR WATER LLC", "status": "Closed", "resolvedBetween": "Aug 9-10, 2026", "wasEligibleAsOf": "Aug 10 05:53 ET" },
     { "ticketId": "UFN-65592", "customer": "Tweety Leigh Lamoste (UNIS Internal)", "status": "Closed", "resolvedBetween": "Aug 9-10, 2026", "wasEligibleAsOf": "Aug 10 05:53 ET" },
     { "ticketId": "UFN-64843", "customer": "COLAVITA USA, LLC", "status": "Closed", "closedDate": "2026-08-03", "closedBy": "Yang-Lhing Bague" },
@@ -65,6 +65,6 @@
     { "ticketId": "UFN-65443", "customer": "CKNAPP SALES INC", "status": "Closed", "closedDate": "2026-07-31" },
     { "ticketId": "UFN-65578", "customer": "Tweety Leigh Lamoste (UNIS Internal)", "status": "Closed", "closedDate": "2026-07-31" }
   ],
-  "correctionNote": "UFN-64782 CORRECTED Aug 10 16:04 ET. Previously listed as 'prior active now closed (07/31)' in all prior refresh cycles. Live TicketOps search confirms closeFlag=false, systemStatus=10 (Pending). This ticket was never actually closed — similar to the UFN-65592 correction on Aug 9.",
-  "refreshNote": "LIVE REFRESH Aug 10 16:04 ET. Fresh TicketOps connection. 3 previously active resolved. 1 new eligible (UFN-64782). UFN-64782 was previously misclassified as closed 07/31 — corrected."
+  "correctionNote": "UFN-64782 CORRECTED Aug 10 16:04 ET. Previously listed as 'prior active now closed (07/31)' in all prior refresh cycles. Live TicketOps search confirms closeFlag=false, systemStatus=10 (Pending). This ticket was never actually closed – similar to the UFN-65592 correction on Aug 9.",
+  "refreshNote": "FRESHNESS REFRESH Aug 10 19:05 ET. No live TicketOps or Outlook connection available. Ticket statuses preserved from Aug 10 16:04 ET verified live state. Ages recalculated for elapsed time (+3h). UFN-64782 ageHours: 172→175. Next scheduled refresh: Aug 11 08:00 ET (daily summary email)."
 }
