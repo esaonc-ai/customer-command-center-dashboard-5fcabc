@@ -2,8 +2,8 @@
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "tenant": "LT",
-  "generatedAt": "2026-08-10T09:14:00Z",
-  "lastRefreshed": "2026-08-10T05:14:00-04:00",
+  "generatedAt": "2026-08-10T09:53:37Z",
+  "lastRefreshed": "2026-08-10T05:53:37-04:00",
   "dataSource": "TicketOps (authoritative) — dashboard/data preserved from prior verified state. 3 eligible tickets confirmed active via direct ID cross-check Aug 9 20:43 ET; re-verified stable at Aug 9 21:30 ET. No live TicketOps connection available for this refresh; ages updated for time elapsed.",
   "totalRaw": 567,
   "pipelineSummary": {
@@ -15,9 +15,9 @@
     "totalEligible": 3,
     "byStatus": { "New": 0, "Open": 0, "Pending": 3 },
     "ufnCount": 3,
-    "crossCheckMethod": "Direct TicketOps ID lookup — sweep re-checked Aug 9 20:43 ET. UFN-65592 (Tweety Lamoste / Inbounds 08/10) re-verified: closeFlag=false, active Pending. UFN-64843 and UFN-64544 remain excluded (closeFlag=true). UFN-64870 and UFN-64221 confirmed active. Ages updated for Aug 10 05:14 ET.",
-    "changeNote": "FRESHNESS REFRESH: TicketOps data unchanged — no live connection available to verify status changes. Ages recomputed: UFN-64221 12d/~293h, UFN-64870 7d/~173h, UFN-65592 3d/~77h. Action buckets: Watch=2 (UFN-64221 ~293h, UFN-64870 ~173h), Medium=1 (UFN-65592 ~77h), Short-Term=0, Immediate=0. Public/data previously showed zero-state (Aug 10 00:20 ET) — REVERTED to match verified dashboard/data state.",
-    "actionBucketsNote": "UNCHANGED from 21:30 ET correction. UFN-64221 (293h → Watch), UFN-64870 (173h → Watch), UFN-65592 (77h → Medium)."
+    "crossCheckMethod": "Direct TicketOps ID lookup — sweep re-checked Aug 9 20:43 ET. UFN-65592 (Tweety Lamoste / Inbounds 08/10) re-verified: closeFlag=false, active Pending. UFN-64843 and UFN-64544 remain excluded (closeFlag=true). UFN-64870 and UFN-64221 confirmed active. Ages updated for Aug 10 05:53 ET.",
+    "changeNote": "FRESHNESS REFRESH: TicketOps data unchanged — no live connection available to verify status changes. Ages recomputed: UFN-64221 12d/~294h, UFN-64870 7d/~174h, UFN-65592 3d/~78h. Action buckets: Watch=2 (UFN-64221 ~294h, UFN-64870 ~174h), Medium=1 (UFN-65592 ~78h), Short-Term=0, Immediate=0. Public/data synced from verified dashboard/data state.",
+    "actionBucketsNote": "UNCHANGED from 21:30 ET correction. UFN-64221 (294h → Watch), UFN-64870 (174h → Watch), UFN-65592 (78h → Medium)."
   },
   "tickets": [
     {
@@ -40,7 +40,7 @@
       "slaStatus": "BREACHED",
       "slaOverdue": true,
       "ageDays": 12,
-      "ageHours": 293
+      "ageHours": 294
     },
     {
       "ticketId": "UFN-64870",
@@ -62,7 +62,7 @@
       "slaStatus": "BREACHED",
       "slaOverdue": true,
       "ageDays": 7,
-      "ageHours": 173
+      "ageHours": 174
     },
     {
       "ticketId": "UFN-65592",
@@ -82,7 +82,7 @@
       "slaStatus": "On-Track",
       "slaOverdue": false,
       "ageDays": 3,
-      "ageHours": 77,
+      "ageHours": 78,
       "dueDate": "2026-08-12",
       "note": "Previously listed as 'prior active now closed (07/31)' in all prior refreshes — incorrect. Direct TicketOps ID cross-check confirms closeFlag=false. Operationally critical: 25 inbound appointments scheduled for Monday 08/10 at Cesanek."
     }
@@ -106,5 +106,5 @@
     { "ticketId": "UFN-65578", "customer": "Tweety Leigh Lamoste (UNIS Internal)", "status": "Closed", "closedDate": "2026-07-31" }
   ],
   "sweepCorrectionNote": "UFN-65592 CORRECTED Aug 9 20:43 ET. Previously listed as 'prior active now closed (07/31)' alongside UFN-65578 in all prior refresh cycles. Direct TicketOps ID cross-check confirms closeFlag=false. This ticket was never actually closed. UFN-65578 remains closed (closeFlag=true, verified). Re-verified stable at 21:30 ET.",
-  "refreshNote": "Aug 10 05:14 ET FRESHNESS REFRESH. No live TicketOps connection — statuses preserved from last verified state. Ages updated. Public/data zero-state (Aug 10 00:20 ET) reverted to match verified dashboard/data."
+  "refreshNote": "Aug 10 05:53 ET FRESHNESS REFRESH. No live TicketOps connection — statuses preserved from last verified state. Ages updated. Public/data synced from verified dashboard/data."
 }
