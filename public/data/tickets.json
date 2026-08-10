@@ -2,8 +2,8 @@
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "tenant": "LT",
-  "generatedAt": "2026-08-10T09:14:00Z",
-  "lastRefreshed": "2026-08-10T05:14:00-04:00",
+  "generatedAt": "2026-08-10T09:53:37Z",
+  "lastRefreshed": "2026-08-10T05:53:37-04:00",
   "totalRaw": 567,
   "pipelineSummary": {
     "totalRaw": 567,
@@ -27,7 +27,7 @@
       "closeFlag": false,
       "slaStatus": "BREACHED",
       "ageDays": 12,
-      "ageHours": 293
+      "ageHours": 294
     },
     {
       "ticketId": "UFN-64870",
@@ -40,7 +40,7 @@
       "closeFlag": false,
       "slaStatus": "BREACHED",
       "ageDays": 7,
-      "ageHours": 173
+      "ageHours": 174
     },
     {
       "ticketId": "UFN-65592",
@@ -53,7 +53,7 @@
       "closeFlag": false,
       "slaStatus": "On-Track",
       "ageDays": 3,
-      "ageHours": 77,
+      "ageHours": 78,
       "dueDate": "2026-08-12"
     }
   ],
@@ -68,5 +68,5 @@
     { "ticketId": "UFN-59923", "customer": "N/A", "reason": "Solved 07/03/2026 — no longer eligible" }
   ],
   "previouslyEligibleNowResolved": [],
-  "refreshNote": "FRESHNESS REFRESH Aug 10 05:14 ET. Preserved from verified Aug 9 21:30 ET state. Ages updated. Public/data zero-state (Aug 10 00:20 ET) REVERTED."
+  "refreshNote": "FRESHNESS REFRESH Aug 10 05:53 ET. Preserved from verified Aug 9 21:30 ET state. Ages updated. Public/data synced from verified dashboard/data."
 }
