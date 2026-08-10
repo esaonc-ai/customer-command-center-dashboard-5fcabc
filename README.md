@@ -33,7 +33,7 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** — Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** — Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Aug 10 05:14 ET)
+## Current Dashboard State (Last Refresh: Aug 10 05:53 ET)
 
 | Metric | Value |
 |--------|-------|
@@ -44,8 +44,8 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 | Customers | **11** — 2 At Risk: SPLENDOR WATER LLC, DUPRY USA LLC; 9 Healthy |
 | SLA Risk | **ELEVATED** — 2 of 3 eligible tickets SLA BREACHED; 1 On-Track |
 | Outlook Coverage | 33% direct (1/3); 100% partial operational context |
-| Last Refresh | 2026-08-10 05:14 ET (freshness refresh; TicketOps data preserved from Aug 9 21:30 ET verified state) |
-| Next Refresh | ~05:30 ET |
+| Last Refresh | 2026-08-10 05:53 ET (freshness refresh; TicketOps data preserved from Aug 9 21:30 ET verified state) |
+| Next Refresh | ~06:08 ET |
 
 ### Action Buckets
 
@@ -53,10 +53,10 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 |--------|-------|---------|
 | **Immediate** | **0** | — |
 | **Short-Term** | **0** | — |
-| **Medium** | **1** | UFN-65592 (Tweety Lamoste — Monday 08/10 Inbounds, 25 appointments, ~77h, On-Track, due Aug 12) |
-| **Watch** | **2** | UFN-64221 (DUPRY Greensboro rework, SLA BREACHED 12d, ~293h, Yang-Lhing out — backup Kent Joseph Lim) + UFN-64870 (SPLENDOR WATER OS&D, SLA BREACHED 7d, ~173h, Kent Claud Caballero) |
+| **Medium** | **1** | UFN-65592 (Tweety Lamoste — Monday 08/10 Inbounds, 25 appointments, ~78h, On-Track, due Aug 12) |
+| **Watch** | **2** | UFN-64221 (DUPRY Greensboro rework, SLA BREACHED 12d, ~294h, Yang-Lhing out — backup Kent Joseph Lim) + UFN-64870 (SPLENDOR WATER OS&D, SLA BREACHED 7d, ~174h, Kent Claud Caballero) |
 
-> **NOTE**: Action bucket distribution unchanged from Aug 9 21:30 ET correction. Ages updated: UFN-64221 ~293h, UFN-64870 ~173h, UFN-65592 ~77h.
+> **NOTE**: Action bucket distribution unchanged from Aug 9 21:30 ET correction. Ages updated: UFN-64221 ~294h, UFN-64870 ~174h, UFN-65592 ~78h.
 
 ### Customer Health Detail
 
@@ -80,6 +80,7 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 
 | Refresh | Time (ET) | Key Change |
 |---------|-----------|------------|
+| refresh-2026-08-10T05:53ET | 05:53 | **FRESHNESS REFRESH** — Ages updated for time elapsed. TicketOps data preserved from Aug 9 21:30 ET verified state. No live connection available. Public/data synced from verified dashboard/data. |
 | refresh-2026-08-10T05:14ET | 05:14 | **FRESHNESS REFRESH** — Ages updated for time elapsed. TicketOps data preserved from Aug 9 21:30 ET verified state. No live connection available. Public/data zero-state (Aug 10 00:20 ET) REVERTED — was inconsistent with verified dashboard/data. |
 | refresh-2026-08-09T21:30ET | 21:30 | **ACTION BUCKET CORRECTION** — All 3 tickets were incorrectly shown as Immediate. Corrected: Watch=2, Medium=1, Short-Term=0, Immediate=0. TicketOps data stable, no status changes. |
 | refresh-2026-08-09T20:43ET | 20:43 | **SWEEP CORRECTION** — UFN-65592 re-verified (closeFlag=false). Had been incorrectly listed as closed in all prior refreshes. 3 eligible now. |
@@ -97,9 +98,9 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 
 ## ⚠️ Data Freshness Notice
 
-**This refresh (Aug 10 05:14 ET) is a freshness-only update.** The GitHub Specialist agent does not have direct access to TicketOps or Outlook APIs. Ticket statuses are preserved from the last verified TicketOps state (Aug 9 21:30 ET, confirmed via direct ID cross-check). Ages have been recalculated to current time. A live TicketOps connection is recommended for authoritative status verification.
+**This refresh (Aug 10 05:53 ET) is a freshness-only update.** The GitHub Specialist agent does not have direct access to TicketOps or Outlook APIs. Ticket statuses are preserved from the last verified TicketOps state (Aug 9 21:30 ET, confirmed via direct ID cross-check). Ages have been recalculated to current time. A live TicketOps connection is recommended for authoritative status verification.
 
-**Discrepancy resolved**: The `public/data/` directory previously showed a zero-state (0 eligible, Aug 10 00:20 ET) claiming all 3 tickets resolved overnight. This was inconsistent with the authoritative `dashboard/data/` state and has been reverted. Root cause of the zero-state discrepancy is unknown — may indicate an automated sweep that incorrectly treated the tickets as resolved.
+**Discrepancy resolved (05:14 ET)**: The `public/data/` directory previously showed a zero-state (0 eligible, Aug 10 00:20 ET) claiming all 3 tickets resolved overnight. This was inconsistent with the authoritative `dashboard/data/` state and has been reverted. Root cause of the zero-state discrepancy is unknown — may indicate an automated sweep that incorrectly treated the tickets as resolved. No recurrence observed in this 05:53 ET refresh.
 
 ## Data Files
 
