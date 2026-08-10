@@ -1,10 +1,10 @@
 {
   "dashboard": "Customer Command Center — NHT/Cesanek",
   "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
-  "lastRefreshed": "2026-08-10T05:14:00-04:00",
-  "dataSource": "TicketOps (authoritative) — preserved from last verified state Aug 9 21:30 ET. Ages updated to Aug 10 05:14 ET. Public/data previously showed zero-state (Aug 10 00:20 ET) — REVERTED.",
+  "lastRefreshed": "2026-08-10T05:53:37-04:00",
+  "dataSource": "TicketOps (authoritative) — preserved from last verified state Aug 9 21:30 ET. Ages updated to Aug 10 05:53 ET. Public/data synced from verified dashboard/data.",
   "refreshType": "freshness_refresh",
-  "refreshNote": "FRESHNESS REFRESH Aug 10 05:14 ET. No live TicketOps/Outlook connection available. Statuses preserved from last verified state. Ages updated. Public/data zero-state reverted.",
+  "refreshNote": "FRESHNESS REFRESH Aug 10 05:53 ET. No live TicketOps/Outlook connection available. Statuses preserved from last verified state. Ages updated. Public/data synced from verified dashboard/data.",
   "rulesApplied": {
     "includeStatuses": ["New", "Open", "Pending"],
     "excludeStatuses": ["Reopen", "Reopened", "Closed", "Resolved", "Cancelled", "Done"],
@@ -31,7 +31,7 @@
       "closeFlag": false,
       "slaStatus": "BREACHED",
       "ageDays": 12,
-      "ageHours": 293
+      "ageHours": 294
     },
     {
       "ticketId": "UFN-64870",
@@ -44,7 +44,7 @@
       "closeFlag": false,
       "slaStatus": "BREACHED",
       "ageDays": 7,
-      "ageHours": 173
+      "ageHours": 174
     },
     {
       "ticketId": "UFN-65592",
@@ -57,7 +57,7 @@
       "closeFlag": false,
       "slaStatus": "On-Track",
       "ageDays": 3,
-      "ageHours": 77,
+      "ageHours": 78,
       "dueDate": "2026-08-12"
     }
   ],
@@ -81,11 +81,11 @@
     "immediate": 0, "immediateDetail": [],
     "shortTerm": 0, "shortTermDetail": [],
     "mediumTerm": 1,
-    "mediumTermDetail": ["UFN-65592: Tweety Lamoste — Monday 08/10 Inbounds (25 appointments). ~77h. On-Track. Due Aug 12."],
+    "mediumTermDetail": ["UFN-65592: Tweety Lamoste — Monday 08/10 Inbounds (25 appointments). ~78h. On-Track. Due Aug 12."],
     "watch": 2,
     "watchDetail": [
-      "UFN-64221: DUPRY USA LLC — Greensboro rework. ~293h (12d). SLA BREACHED. Yang-Lhing out; backup Kent Joseph Lim.",
-      "UFN-64870: SPLENDOR WATER LLC — OS&D-RN-19245. ~173h (7d). SLA BREACHED. Kent Claud Caballero."
+      "UFN-64221: DUPRY USA LLC — Greensboro rework. ~294h (12d). SLA BREACHED. Yang-Lhing out; backup Kent Joseph Lim.",
+      "UFN-64870: SPLENDOR WATER LLC — OS&D-RN-19245. ~174h (7d). SLA BREACHED. Kent Claud Caballero."
     ]
   },
   "customerHealth": {
@@ -118,7 +118,7 @@
     "invoiceItemsExcluded": 4,
     "slaBreachCount": 2,
     "staleCloseFlagCorrections": 0,
-    "dataFreshness": "Preserved — TicketOps data last verified Aug 9 21:30 ET. Ages current to Aug 10 05:14 ET."
+    "dataFreshness": "Preserved — TicketOps data last verified Aug 9 21:30 ET. Ages current to Aug 10 05:53 ET."
   },
   "outlookContextSummary": {
     "status": "non-blocking supplement only",
@@ -131,5 +131,5 @@
     "inboundsAug10": ["Niagara RN-18745 (0800)", "Niagara RN-18782 (0800)", "Avirion RN-18735 (0900)"],
     "outboundsAug10": ["Niagara DN-5003850", "Niagara DN-5006015", "Niagara DN-5006772", "Avirion DN-5006217"]
   },
-  "freshnessNote": "FRESHNESS REFRESH Aug 10 05:14 ET. Preserved from last verified TicketOps state (Aug 9 21:30 ET). Ages updated. No live connection to verify status changes. Public/data zero-state reverted."
+  "freshnessNote": "FRESHNESS REFRESH Aug 10 05:53 ET. Preserved from last verified TicketOps state (Aug 9 21:30 ET). Ages updated. No live connection to verify status changes. Public/data synced from verified dashboard/data."
 }
