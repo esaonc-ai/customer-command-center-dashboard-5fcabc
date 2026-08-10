@@ -19,6 +19,7 @@ Real-time operational dashboard for monitoring ticket queues, customer health, a
 | **Deduplication** | Overlapping ticket/email threads merged |
 | **Outlook Context** | Non-blocking enrichment where available |
 | **Authority** | TicketOps status is authoritative |
+| **closeFlag Verification** ⚠️ | **REQUIRED** — closeFlag=false regardless of displayStatus (strengthened rule) |
 
 ## Customer Health
 
@@ -36,31 +37,56 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 
 | Metric | Value |
 |--------|-------|
-| Total Raw | 492 |
-| Eligible | **3** (3 New, 0 Open, 0 Pending) |
-| UFN-Count | 3 |
-| Excluded | 489 (485 status, 4 invoice items) |
-| Customers | **2** — DAYDREAM NUTRITION INC. 🔴, Tweety Leigh Lamoste (UNIS Internal) ✅ |
-| SLA Risk | **Active** — UFN-64782 breached since Aug 5 (3 days past due) |
-| Outlook Coverage | 66.7% (2/3 — UFN-64782 has no Outlook context) |
-| Last Refresh | 2026-08-08 20:53 ET (TicketOps authoritative re-query) |
-| Next Refresh | ~21:08 ET |
+| Total Raw | 567 |
+| Eligible | **2** (0 New, 0 Open, 2 Pending) |
+| UFN-Count | 2 |
+| Excluded | 565 (559 status, 4 invoice items, 2 closeFlag) |
+| Customers | **11** — 2 At Risk 🔄: SPLENDOR WATER LLC, DUPRAY USA LLC; 9 Healthy ✅ |
+| SLA Risk | **CRITICAL** — Both active tickets SLA BREACHED |
+| Outlook Coverage | 0% direct; 100% partial operational context (0/2 direct matches) |
+| Last Refresh | 2026-08-09 20:39 ET (TicketOps authoritative re-query; confirms 19:30 ET state stable) |
+| Next Refresh | ~20:54 ET |
 
 ### Action Buckets
 
 | Bucket | Count | Details |
 |--------|-------|---------|
-| **Immediate** | 0 | — |
-| **Short-Term** | 2 | UFN-65578 (open RNs, assigned Lesean Torres) + UFN-65592 (inbounds for 08/10) |
-| **Medium** | 1 | UFN-64782 (DAYDREAM, SLA-breached 3d past, unassigned, Transfer RN-19417) |
+| **Immediate** | 2 | UFN-64221 (DUPRAY Greensboro rework, SLA BREACHED 11d, Yang-Lhing out — backup Kent Joseph Lim) + UFN-64870 (SPLENDOR WATER OS&D, SLA BREACHED 6d, Kent Claud Caballero) |
+| **Short-Term** | 0 | — |
+| **Medium** | 0 | — |
 | **Watch** | 0 | — |
 
 ### Customer Health Detail
 
 | Customer | Tickets | Oldest | SLA | Health |
 |----------|---------|--------|-----|--------|
-| DAYDREAM NUTRITION INC. | 1 | 6 days | BREACHED (3d past) | 🔴 At Risk |
-| Tweety Leigh Lamoste (UNIS Internal) | 2 | 2 days | On-Track | ✅ Healthy |
+| DUPRAY USA LLC | 1 | 11 days | BREACHED | 🔄 At Risk |
+| SPLENDOR WATER LLC | 1 | 6 days | BREACHED | 🔄 At Risk |
+| INNOVA/SOFTGEL/KD NUTRA | 0 | — | — | ✅ Healthy |
+| SMEG USA | 0 | — | — | ✅ Healthy |
+| RITUAL BEVERAGE | 0 | — | — | ✅ Healthy |
+| COLAVITA USA, LLC | 0 | — | — | ✅ Healthy |
+| NIAGARA BOTTLING | 0 | — | — | ✅ Healthy |
+| ZEN BEVERAGE | 0 | — | — | ✅ Healthy |
+| EMS MIND READER/BETESH | 0 | — | — | ✅ Healthy |
+| NOURISON | 0 | — | — | ✅ Healthy |
+| GOLDEN BULL MARKETING | 0 | — | — | ✅ Healthy |
+
+### Key Correction History
+
+| Refresh | Time (ET) | Key Change |
+|---------|-----------|------------|
+| refresh-2026-08-09T20:39ET | 20:39 | **CONFIRMED STABLE** — No changes from 19:30 ET. State verified stable. |
+| refresh-2026-08-09T19:30ET | 19:30 | **CORRECTED** — UFN-64843/UFN-64544 excluded (closeFlag=true). Replaced with UFN-64870/UFN-64221. closeFlag rule strengthened. |
+| refresh-2026-08-09T12:06ET | 12:06 | **CORRECTED** — Prior ZERO-STATE superseded. 2 eligible Pending tickets found via direct ID cross-check. |
+| refresh-2026-08-09T12:04ET | 12:04 | ZERO-STATE (invalid — superseded) |
+
+### Priority Queue
+
+| Rank | Ticket | Customer | Reason | Action |
+|------|--------|----------|--------|--------|
+| 1 | UFN-64221 | DUPRAY USA LLC | Oldest active (11 days); SLA BREACHED; Greensboro rework; Yang-Lhing out early 8/6 | Verify Yang-Lhing coverage (backup: Kent Joseph Lim) |
+| 2 | UFN-64870 | SPLENDOR WATER LLC | OS&D-RN-19245; SLA BREACHED (6 days); created 08/03 | Check OS&D resolution with Kent Claud Caballero |
 
 ## Data Files
 
