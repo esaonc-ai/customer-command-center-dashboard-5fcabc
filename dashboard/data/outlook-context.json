@@ -1,1 +1,70 @@
-{"description":"Outlook email context for NHT/Cesanek tickets (non-blocking — reconciled Aug 9 21:30 ET). 1/3 direct thread matches. Partial operational context available for others.","facility":"NHT/Cesanek","facilityCode":"LT_F21","generatedAt":"2026-08-10T01:30:00Z","lastRefreshed":"2026-08-09T21:30:00-04:00","dataSource":"Outlook agent — targeted searches Aug 2–9, 2026 for UFN-64870, UFN-64221, UFN-65592","note":"UFN-65592 (Tweety Lamoste / Inbounds 08/10) has direct Outlook thread — inbound load sequence distributed by Tweety for Monday 08/10. UFN-64221 and UFN-64870 have operational context but no direct email threads. TicketOps remains authoritative.","threadsMatched":1,"threadsUniquePostDedup":3,"coverage":{"eligibleTicketsTotal":3,"eligibleTicketsWithOutlookDirect":1,"eligibleTicketsWithOperationalContext":3,"coveragePct":"33% direct (1/3); 100% partial operational"},"ticketThreads":[{"ticketId":"UFN-65592","customer":"Tweety Leigh Lamoste (UNIS Internal)","directMatch":true,"contextAvailable":true,"threadSubject":"Cesanek Inbound Sequence — Monday 08/10/2026","participants":["Tweety Leigh Lamoste","Nicole Weber"],"lastActivity":"2026-08-09","threadSummary":"Inbound load sequence for Cesanek Monday 08/10. 25 appointments confirmed. NIAGARA BOTTLING ~16 loads. UPTIME ENERGY, NOURISON (4 exceptions), HINT, ROAR BEVERAGES. Schedule coordination active. Due Aug 12.","matchConfidence":"direct"},{"ticketId":"UFN-64870","customer":"SPLENDOR WATER LLC","directMatch":false,"contextAvailable":true,"contextSummary":"No OS&D/RN-19245 email. RN-19446 & RN-19448 In Progress at Cesanek. Kent Claud Caballero CS. Maria Aponte coverage handled by Shailene Baez.","matchConfidence":"none"},{"ticketId":"UFN-64221","customer":"DUPRAY USA LLC","directMatch":false,"contextAvailable":true,"contextSummary":"No DN-2084729/Greensboro email. DN-2082686 missed pickup. Billing approved 8/5. Relabeling project. Yang-Lhing out early 8/6; backup Kent Joseph Lim. Erin Cambra EOD flagged.","matchConfidence":"none"}],"excludedThreads":[{"ticketId":"UFN-64843","customer":"COLAVITA USA","reason":"Ticket closed (closeFlag=true) 08/03."},{"ticketId":"UFN-64544","customer":"NIAGARA BOTTLING","reason":"Ticket closed (closeFlag=true) 08/03."},"Water Plus handling — UFN-33719 (invoice excluded)","Y,IWO storage — UFN-64743 (invoice excluded)","Nourison handling — UFN-64749 (invoice excluded)","Sheex billing — UFN-64618 (invoice excluded)"],"aug2to9InboxContext":{"scanWindow":"Aug 2–9, 2026","tweetyInbounds":{"status":"active_thread","summary":"Monday 08/10 Cesanek inbound sequence: 25 appointments, NIAGARA BOTTLING dominant. Tweety distributing. Due Aug 12."},"splendorWater":{"status":"operational","summary":"RN-19446/19448 In Progress. CS: Kent Claud Caballero."},"dupray":{"status":"operational","summary":"DN-2082686 missed pickup. Billing approved 8/5. Yang-Lhing out early 8/6; backup Kent Joseph Lim."},"mondayAug10Loads":{"status":"confirmed","summary":"25 inbound appointments. NIAGARA BOTTLING ~16 loads. Cesanek facility."},"kdNutra":{"status":"deadline_pending","summary":"KD Nutra deadline flagged in Erin Cambra EOD Aug 5 — pending resolution, not yet UFN. Monitor."},"announcements":["Erin Cambra EOD — Dupray DN-2082686 missed pickup","Maria Aponte coverage — Shailene Baez handling Splendor Water","Yang-Lhing Bague early departure 8/6 — backup Kent Joseph Lim","Tweety Lamoste inbound sequence distributed for Monday 08/10"],"loadSequence":"Monday 08/10 Cesanek inbound: 25 appointments (NIAGARA BOTTLING ~16, UPTIME ENERGY, NOURISON, HINT, ROAR BEVERAGES). Tweety Lamoste distributing."},"deduplicationNote":"No overlapping threads. All 3 eligible tickets have distinct, non-overlapping Outlook context. UFN-65592 thread directly matches Monday 08/10 inbound sequence. TicketOps remains authoritative."}
+{
+  "description": "Outlook email context for NHT/Cesanek tickets (non-blocking — reconciled Aug 10 05:14 ET). 1/3 direct thread matches. Partial operational context available for others. No new Outlook connection available for this refresh.",
+  "facility": "NHT/Cesanek",
+  "facilityCode": "LT_F21",
+  "generatedAt": "2026-08-10T09:14:00Z",
+  "lastRefreshed": "2026-08-10T05:14:00-04:00",
+  "dataSource": "Outlook agent — targeted searches Aug 2–9, 2026 for UFN-64870, UFN-64221, UFN-65592. No live Outlook connection available for this refresh; context preserved from prior state.",
+  "note": "UFN-65592 (Tweety Lamoste / Inbounds 08/10) has direct Outlook thread — inbound load sequence distributed by Tweety for Monday 08/10. UFN-64221 and UFN-64870 have operational context but no direct email threads. TicketOps remains authoritative.",
+  "threadsMatched": 1,
+  "threadsUniquePostDedup": 3,
+  "coverage": {
+    "eligibleTicketsTotal": 3,
+    "eligibleTicketsWithOutlookDirect": 1,
+    "eligibleTicketsWithOperationalContext": 3,
+    "coveragePct": "33% direct (1/3); 100% partial operational"
+  },
+  "ticketThreads": [
+    {
+      "ticketId": "UFN-65592",
+      "customer": "Tweety Leigh Lamoste (UNIS Internal)",
+      "directMatch": true,
+      "contextAvailable": true,
+      "threadSubject": "Cesanek Inbound Sequence — Monday 08/10/2026",
+      "participants": ["Tweety Leigh Lamoste", "Nicole Weber"],
+      "lastActivity": "2026-08-09",
+      "threadSummary": "Inbound load sequence for Cesanek Monday 08/10. 25 appointments confirmed. NIAGARA BOTTLING ~16 loads. UPTIME ENERGY, NOURISON (4 exceptions), HINT, ROAR BEVERAGES. Schedule coordination active. Due Aug 12.",
+      "matchConfidence": "direct"
+    },
+    {
+      "ticketId": "UFN-64870",
+      "customer": "SPLENDOR WATER LLC",
+      "directMatch": false,
+      "contextAvailable": true,
+      "contextSummary": "No OS&D/RN-19245 email. RN-19446 & RN-19448 In Progress at Cesanek. Kent Claud Caballero CS. Maria Aponte coverage handled by Shailene Baez.",
+      "matchConfidence": "none"
+    },
+    {
+      "ticketId": "UFN-64221",
+      "customer": "DUPRY USA LLC",
+      "directMatch": false,
+      "contextAvailable": true,
+      "contextSummary": "No DN-2084729/Greensboro email. DN-2082686 missed pickup. Billing approved 8/5. Relabeling project. Yang-Lhing out early 8/6; backup Kent Joseph Lim. Erin Cambra EOD flagged.",
+      "matchConfidence": "none"
+    }
+  ],
+  "excludedThreads": [
+    { "ticketId": "UFN-64843", "customer": "COLAVITA USA", "reason": "Ticket closed (closeFlag=true) 08/03." },
+    { "ticketId": "UFN-64544", "customer": "NIAGARA BOTTLING", "reason": "Ticket closed (closeFlag=true) 08/03." },
+    "Water Plus handling — UFN-33719 (invoice excluded)",
+    "Y,IWO storage — UFN-64743 (invoice excluded)",
+    "Nourison handling — UFN-64749 (invoice excluded)",
+    "Sheex billing — UFN-64618 (invoice excluded)"
+  ],
+  "aug2to9InboxContext": {
+    "scanWindow": "Aug 2–9, 2026",
+    "tweetyInbounds": { "status": "active_thread", "summary": "Monday 08/10 Cesanek inbound sequence: 25 appointments, NIAGARA BOTTLING dominant. Tweety distributing. Due Aug 12." },
+    "splendorWater": { "status": "operational", "summary": "RN-19446/19448 In Progress. CS: Kent Claud Caballero." },
+    "dupray": { "status": "operational", "summary": "DN-2082686 missed pickup. Billing approved 8/5. Yang-Lhing out early 8/6; backup Kent Joseph Lim." },
+    "mondayAug10Loads": { "status": "confirmed", "summary": "25 inbound appointments. NIAGARA BOTTLING ~16 loads. Cesanek facility." },
+    "kdNutra": { "status": "deadline_pending", "summary": "KD Nutra deadline flagged in Erin Cambra EOD Aug 5 — pending resolution, not yet UFN. Monitor." },
+    "announcements": [
+      "Erin Cambra EOD — Dupray DN-2082686 missed pickup",
+      "Maria Aponte coverage — Shailene Baez handling Splendor Water",
+      "Yang-Lhing Bague early departure 8/6 — backup Kent Joseph Lim",
+      "Tweety Lamoste inbound sequence distributed for Monday 08/10"
+    ],
+    "loadSequence": "Monday 08/10 Cesanek inbound: 25 appointments (NIAGARA BOTTLING ~16, UPTIME ENERGY, NOURISON, HINT, ROAR BEVERAGES). Tweety Lamoste distributing."
+  },
+  "deduplicationNote": "No overlapping threads. All 3 eligible tickets have distinct, non-overlapping Outlook context. UFN-65592 thread directly matches Monday 08/10 inbound sequence. TicketOps remains authoritative."
+}
