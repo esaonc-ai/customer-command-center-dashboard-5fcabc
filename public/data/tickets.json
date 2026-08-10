@@ -2,8 +2,8 @@
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "tenant": "LT",
-  "generatedAt": "2026-08-10T20:04:00Z",
-  "lastRefreshed": "2026-08-10T16:04:00-04:00",
+  "generatedAt": "2026-08-10T23:05:00Z",
+  "lastRefreshed": "2026-08-10T19:05:00-04:00",
   "totalRaw": 567,
   "pipelineSummary": {
     "totalRaw": 567,
@@ -23,17 +23,17 @@
       "priority": "Medium",
       "subject": "Transfer to Northampton RN-19417",
       "createdDate": "2026-08-03",
-      "assignee": "Unassigned",
+      "assigned": "Unassigned",
       "closeFlag": false,
       "slaStatus": "BREACHED",
       "ageDays": 7,
-      "ageHours": 172,
+      "ageHours": 175,
       "estDueDate": "2026-08-05"
     }
   ],
   "excludedTickets": [
     { "ticketId": "UFN-33719", "customer": "WATER PLUS LLC", "reason": "handling invoice excluded – 'HANDLING'/accessorial charges. SLA-breached (estDueDate 03/10/2026), ~158 days old, Pending but excluded per billing rules." },
-    { "ticketId": "UFN-64221", "customer": "DUPRY USA LLC", "reason": "Now closed – previously active, resolved between Aug 9-10. Was SLA BREACHED (12d), Greensboro rework." },
+    { "ticketId": "UFN-64221", "customer": "DUPREY USA LLC", "reason": "Now closed – previously active, resolved between Aug 9-10. Was SLA BREACHED (12d), Greensboro rework." },
     { "ticketId": "UFN-64870", "customer": "SPLENDOR WATER LLC", "reason": "Now closed – previously active, resolved between Aug 9-10. Was SLA BREACHED (7d), OS&D-RN-19245." },
     { "ticketId": "UFN-65592", "customer": "Tweety Leigh Lamoste (UNIS Internal)", "reason": "Now closed – previously active, resolved between Aug 9-10. Was On-Track, Inbounds 08/10." },
     { "ticketId": "UFN-64843", "customer": "COLAVITA USA, LLC", "reason": "closeFlag=true – closed by Yang-Lhing Bague 08/03/2026" },
@@ -43,9 +43,9 @@
     { "ticketId": "UFN-64618", "customer": "Sheex", "reason": "Invoice item 'billing' excluded" }
   ],
   "previouslyEligibleNowResolved": [
-    { "ticketId": "UFN-64221", "customer": "DUPRY USA LLC", "wasStatus": "Pending SLA BREACHED (12d)", "resolvedBetween": "Aug 9-10, 2026" },
+    { "ticketId": "UFN-64221", "customer": "DUPREY USA LLC", "wasStatus": "Pending SLA BREACHED (12d)", "resolvedBetween": "Aug 9-10, 2026" },
     { "ticketId": "UFN-64870", "customer": "SPLENDOR WATER LLC", "wasStatus": "Pending SLA BREACHED (7d)", "resolvedBetween": "Aug 9-10, 2026" },
     { "ticketId": "UFN-65592", "customer": "Tweety Leigh Lamoste (UNIS Internal)", "wasStatus": "Pending On-Track", "resolvedBetween": "Aug 9-10, 2026" }
   ],
-  "refreshNote": "LIVE REFRESH Aug 10 16:04 ET. Fresh TicketOps connection. 3 previously active tickets resolved. 1 new eligible ticket: UFN-64782 (DAYDREAM NUTRITION INC., previously listed as closed 07/31). NHT/Cesanek queue nearly clear."
+  "refreshNote": "FRESHNESS REFRESH Aug 10 19:05 ET. TicketOps data preserved from Aug 10 16:04 ET verified live state. Ages recalculated (+3h). UFN-64782 ageHours: 172→175. NHT/Cesanek queue nearly clear."
 }
