@@ -1,10 +1,10 @@
 {
   "dashboard": "Customer Command Center – NHT/Cesanek",
   "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
-  "lastRefreshed": "2026-08-10T16:04:00-04:00",
-  "dataSource": "TicketOps (authoritative) – live connection Aug 10 16:04 ET. Outlook context live Aug 10 16:07 ET (non-blocking).",
-  "refreshType": "live_full_refresh",
-  "refreshNote": "LIVE REFRESH Aug 10 16:04 ET. Fresh TicketOps and Outlook connections. 3 previously active tickets (UFN-64221, UFN-64870, UFN-65592) now resolved. 1 new eligible: UFN-64782 (DAYDREAM NUTRITION INC.). Queue nearly clear.",
+  "lastRefreshed": "2026-08-10T19:05:00-04:00",
+  "dataSource": "TicketOps (authoritative) – PRESERVED from live connection Aug 10 16:04 ET. Ages recalculated for freshness Aug 10 19:05 ET. Outlook context preserved from Aug 10 16:07 ET (non-blocking).",
+  "refreshType": "freshness_only",
+  "refreshNote": "FRESHNESS REFRESH Aug 10 19:05 ET. TicketOps data preserved from Aug 10 16:04 ET verified live state. No live connection available. Ages recalculated (+3h). UFN-64782 ageHours: 172→175. Queue nearly clear – strongest state to date.",
   "rulesApplied": {
     "includeStatuses": ["New", "Open", "Pending"],
     "excludeStatuses": ["Reopen", "Reopened", "Closed", "Resolved", "Cancelled", "Done"],
@@ -31,13 +31,13 @@
       "closeFlag": false,
       "slaStatus": "BREACHED",
       "ageDays": 7,
-      "ageHours": 172,
+      "ageHours": 175,
       "estDueDate": "2026-08-05"
     }
   ],
   "excludedTickets": [
     { "ticketId": "UFN-33719", "customer": "WATER PLUS LLC", "displayStatus": "Pending", "reason": "Invoice item 'handling' excluded – 'HANDLING'/accessorial charges. SLA-breached, ~158 days old." },
-    { "ticketId": "UFN-64221", "customer": "DUPRY USA LLC", "reason": "Now closed – resolved between Aug 9-10. Was SLA BREACHED (12d)." },
+    { "ticketId": "UFN-64221", "customer": "DUPREY USA LLC", "reason": "Now closed – resolved between Aug 9-10. Was SLA BREACHED (12d)." },
     { "ticketId": "UFN-64870", "customer": "SPLENDOR WATER LLC", "reason": "Now closed – resolved between Aug 9-10. Was SLA BREACHED (7d)." },
     { "ticketId": "UFN-65592", "customer": "Tweety Leigh Lamoste (UNIS Internal)", "reason": "Now closed – resolved between Aug 9-10. Was On-Track." },
     { "ticketId": "UFN-64843", "customer": "COLAVITA USA, LLC", "reason": "closeFlag=true – closed by Yang-Lhing Bague 08/03/2026" },
@@ -55,7 +55,7 @@
       "action": "Assign immediately; verify transfer status with WISE RN-19417; contact DAYDREAM NUTRITION INC."
     }
   ],
-  "priorityQueueNote": "1 eligible Pending ticket. SLA BREACHED and Unassigned. Queue is nearly clear — significant improvement from 3 active (2 breached) at prior refresh.",
+  "priorityQueueNote": "1 eligible Pending ticket. SLA BREACHED and Unassigned. Queue is nearly clear – significant improvement from 3 active (2 breached) at prior refresh.",
   "actionBuckets": {
     "immediate": 1,
     "immediateDetail": ["UFN-64782: DAYDREAM NUTRITION INC. – Transfer to Northampton RN-19417. SLA BREACHED (5 days past due). Unassigned. ACTION: Assign + verify transfer + customer contact."],
@@ -68,27 +68,27 @@
   },
   "customerHealth": {
     "coverageRule": "All customers visible in eligible NHT/Cesanek tickets. Configured roster/aliases are supplemental only.",
-    "customersInScope": ["DAYDREAM NUTRITION INC.", "SPLENDOR WATER LLC", "DUPRY USA LLC", "INNOVA/SOFTGEL/KD NUTRA", "SMEG USA", "RITUAL BEVERAGE", "COLAVITA USA, LLC", "NIAGARA BOTTLING", "ZEN BEVERAGE", "EMS MIND READER/BETESH", "NOURISON", "GOLDEN BULL MARKETING"],
-    "healthSummary": "10/12 Healthy. 1 At Risk: DAYDREAM NUTRITION INC. (SLA BREACHED, Unassigned). SPLENDOR WATER and DUPRY USA previously At Risk — now resolved. UFN-65592 (UNIS Internal) resolved.",
+    "customersInScope": ["DAYDREAM NUTRITION INC.", "SPLENDOR WATER LLC", "DUPREY USA LLC", "INNOVA/SOFTGEL/KD NUTRA", "SMEG USA", "RITUAL BEVERAGE", "COLAVITA USA, LLC", "NIAGARA BOTTLING", "ZEN BEVERAGE", "EMS MIND READER/BETESH", "NOURISON", "GOLDEN BULL MARKETING"],
+    "healthSummary": "10/12 Healthy. 1 At Risk: DAYDREAM NUTRITION INC. (SLA BREACHED, Unassigned). SPLENDOR WATER and DUPREY USA previously At Risk – now resolved. UFN-65592 (UNIS Internal) resolved.",
     "customerDetails": [
-      { "customer": "DAYDREAM NUTRITION INC.", "activeTickets": 1, "health": "🔴 At Risk", "healthScore": 50, "note": "UFN-64782 Transfer to Northampton RN-19417; SLA BREACHED (5 days past due); Unassigned. New customer for dashboard." },
-      { "customer": "SPLENDOR WATER LLC", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100, "note": "UFN-64870 OS&D resolved between Aug 9-10. Previously At Risk." },
-      { "customer": "DUPRY USA LLC", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100, "note": "UFN-64221 Greensboro rework resolved between Aug 9-10. Previously At Risk." },
-      { "customer": "INNOVA/SOFTGEL/KD NUTRA", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100, "note": "KD Nutra deadline previously flagged — monitor." },
-      { "customer": "SMEG USA", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 },
-      { "customer": "RITUAL BEVERAGE", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 },
-      { "customer": "COLAVITA USA, LLC", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100, "note": "Active Outlook thread Aug 10: TO Status inquiry from Kyle Wittenbauer." },
-      { "customer": "NIAGARA BOTTLING", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100, "note": "Weekly scheduling WK 8.10-8.16 active. ~16 loads." },
-      { "customer": "ZEN BEVERAGE", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 },
-      { "customer": "EMS MIND READER/BETESH", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 },
-      { "customer": "NOURISON", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 },
-      { "customer": "GOLDEN BULL MARKETING", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 }
+      { "customer": "DAYDREAM NUTRITION INC.", "activeTickets": 1, "health": "At Risk", "healthScore": 50, "note": "UFN-64782 Transfer to Northampton RN-19417; SLA BREACHED (5 days past due); Unassigned. New customer for dashboard." },
+      { "customer": "SPLENDOR WATER LLC", "activeTickets": 0, "health": "Healthy", "healthScore": 100, "note": "UFN-64870 OS&D resolved between Aug 9-10. Previously At Risk." },
+      { "customer": "DUPREY USA LLC", "activeTickets": 0, "health": "Healthy", "healthScore": 100, "note": "UFN-64221 Greensboro rework resolved between Aug 9-10. Previously At Risk." },
+      { "customer": "INNOVA/SOFTGEL/KD NUTRA", "activeTickets": 0, "health": "Healthy", "healthScore": 100, "note": "KD Nutra deadline previously flagged – monitor." },
+      { "customer": "SMEG USA", "activeTickets": 0, "health": "Healthy", "healthScore": 100 },
+      { "customer": "RITUAL BEVERAGE", "activeTickets": 0, "health": "Healthy", "healthScore": 100 },
+      { "customer": "COLAVITA USA, LLC", "activeTickets": 0, "health": "Healthy", "healthScore": 100, "note": "Active Outlook thread Aug 10: TO Status inquiry from Kyle Wittenbauer." },
+      { "customer": "NIAGARA BOTTLING", "activeTickets": 0, "health": "Healthy", "healthScore": 100, "note": "Weekly scheduling WK 8.10-8.16 active. ~16 loads." },
+      { "customer": "ZEN BEVERAGE", "activeTickets": 0, "health": "Healthy", "healthScore": 100 },
+      { "customer": "EMS MIND READER/BETESH", "activeTickets": 0, "health": "Healthy", "healthScore": 100 },
+      { "customer": "NOURISON", "activeTickets": 0, "health": "Healthy", "healthScore": 100 },
+      { "customer": "GOLDEN BULL MARKETING", "activeTickets": 0, "health": "Healthy", "healthScore": 100 }
     ]
   },
   "slaHealth": {
     "slaBreachCount": 1,
     "slaOnTrackCount": 0,
-    "slaBreachRisk": "MODERATE — 1 of 1 eligible ticket SLA BREACHED, but overall queue down from 3 to 1. Significant improvement."
+    "slaBreachRisk": "MODERATE – 1 of 1 eligible ticket SLA BREACHED, but overall queue down from 3 to 1. Significant improvement."
   },
   "evidenceMetrics": {
     "outlookThreadsMatched": 0,
@@ -97,7 +97,7 @@
     "invoiceItemsExcluded": 1,
     "slaBreachCount": 1,
     "staleCloseFlagCorrections": 0,
-    "dataFreshness": "LIVE – TicketOps data refreshed Aug 10 16:04 ET. Outlook Aug 10 16:07 ET.",
+    "dataFreshness": "PRESERVED – TicketOps data refreshed Aug 10 16:04 ET. Ages recalculated Aug 10 19:05 ET. Outlook Aug 10 16:07 ET (preserved).",
     "queueTrend": "↓ 67% (3 → 1 eligible tickets since 05:53 ET refresh)"
   },
   "outlookContextSummary": {
@@ -125,5 +125,5 @@
     "excludedBillingThreads": 5,
     "noDirectMatchForUfn64782": true
   },
-  "freshnessNote": "LIVE REFRESH Aug 10 16:04 ET with fresh TicketOps + Outlook connections. 3 previously active tickets resolved. 1 new eligible ticket (UFN-64782). NHT/Cesanek queue nearly clear — strongest dashboard state to date."
+  "freshnessNote": "FRESHNESS REFRESH Aug 10 19:05 ET. TicketOps data preserved from Aug 10 16:04 ET verified live state. Ages recalculated for elapsed time (+3h). UFN-64782 ageHours: 172→175. NHT/Cesanek queue nearly clear – strongest dashboard state to date."
 }
