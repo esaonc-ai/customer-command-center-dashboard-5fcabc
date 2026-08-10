@@ -1,11 +1,55 @@
 {
-  "dashboard": "Customer Command Center — NHT/Cesanek",
+  "dashboard": "Customer Command Center – NHT/Cesanek",
   "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
   "refresh": {
-    "id": "refresh-2026-08-10T05:53ET-FRESHNESS",
-    "timestamp": "2026-08-10T09:53:37Z",
-    "timestampLocal": "2026-08-10T05:53:37-04:00",
-    "type": "freshness_refresh",
-    "note": "Ages updated (~40 min from prior 05:14 ET refresh). UFN-64221 ~294h, UFN-64870 ~174h, UFN-65592 ~78h. TicketOps data preserved from last verified state (Aug 9 21:30 ET). No live connection. Public/data synced from verified dashboard/data."
-  }
+    "id": "refresh-2026-08-10T16:04ET-LIVE",
+    "timestamp": "2026-08-10T20:04:00Z",
+    "timestampLocal": "2026-08-10T16:04:00-04:00",
+    "executedBy": "nicole.weber@unisco.com (via Super Agent – live TicketOps + Outlook)",
+    "type": "live_full_refresh",
+    "previousRefreshId": "refresh-2026-08-10T05:53ET-FRESHNESS",
+    "keyChange": "LIVE REFRESH: Fresh TicketOps connection. 3 previously active tickets resolved (UFN-64221, UFN-64870, UFN-65592). 1 new eligible: UFN-64782 (DAYDREAM NUTRITION INC., previously listed as closed 07/31, now active). Queue: 3→1 (67% reduction). SLA: 2 breached→1 breached. Customer Health: 2 At Risk→1 At Risk. NHT/Cesanek queue nearly clear."
+  },
+  "rulesApplied": {
+    "includeStatuses": ["New", "Open", "Pending"],
+    "excludeStatuses": ["Reopen", "Reopened", "Closed", "Resolved", "Cancelled", "Done"],
+    "excludeInvoiceItems": ["billing", "UF Billing", "storage", "handling"],
+    "ufnFiltering": "enabled",
+    "deduplication": "enabled",
+    "authority": "TicketOps opsStatus + closeFlag authoritative; Outlook context non-blocking",
+    "closeFlagVerification": "REQUIRED – closeFlag=false regardless of displayStatus"
+  },
+  "dataSources": {
+    "tickets": { "source": "TicketOps – LIVE connection Aug 10 16:04 ET", "status": "live_fresh", "queryTimestamp": "2026-08-10 16:04 ET", "file": "data/tickets.json", "methodologyNote": "Broad UFN- keyword search (617 results) + Northampton keyword search (2,674 results). Client-side filtered for UNIS Fulfillment - Northampton department, displayStatusSystemStatus=10, closeFlag=false. 1 eligible ticket found." },
+    "outlook": { "source": "Outlook agent – LIVE scan Aug 3-10, 2026", "status": "live_fresh_non_blocking", "queryTimestamp": "2026-08-10 16:07 ET", "file": "data/outlook-context.json", "methodologyNote": "639 NHT/Cesanek messages analyzed. 14 key threads identified. 0/1 direct match for eligible ticket. Rich facility-level operational context." }
+  },
+  "dashboardState": {
+    "totalRaw": 567, "totalEligible": 1,
+    "byStatus": { "New": 0, "Open": 0, "Pending": 1 },
+    "ufnCount": 1, "excluded": 566,
+    "excludedBreakdown": { "statusExcluded": 560, "invoiceItemExcluded": 4, "closeFlagExcluded": 2, "deduplicated": 0 },
+    "customerHealth": {
+      "customersInScope": ["DAYDREAM NUTRITION INC.", "SPLENDOR WATER LLC", "DUPRY USA LLC", "INNOVA/SOFTGEL/KD NUTRA", "SMEG USA", "RITUAL BEVERAGE", "COLAVITA USA, LLC", "NIAGARA BOTTLING", "ZEN BEVERAGE", "EMS MIND READER/BETESH", "NOURISON", "GOLDEN BULL MARKETING"],
+      "healthSummary": "10/12 Healthy. 1 At Risk: DAYDREAM NUTRITION INC. (SLA BREACHED, Unassigned).",
+      "customerDetails": [
+        { "customer": "DAYDREAM NUTRITION INC.", "activeTickets": 1, "health": "🔴 At Risk", "healthScore": 50, "note": "UFN-64782 Transfer to Northampton RN-19417; SLA BREACHED (5 days past due); Unassigned." },
+        { "customer": "SPLENDOR WATER LLC", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100, "note": "Previously At Risk – UFN-64870 resolved." },
+        { "customer": "DUPRY USA LLC", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100, "note": "Previously At Risk – UFN-64221 resolved." }
+      ]
+    },
+    "priorityQueue": { "topPriority": "UFN-64782 – DAYDREAM NUTRITION INC. Transfer to Northampton RN-19417. SLA BREACHED. Unassigned.", "slaBreached": 1, "slaOnTrack": 0, "oldestTicketDays": 7 },
+    "actionBuckets": { "immediate": 1, "shortTerm": 0, "mediumTerm": 0, "watch": 0 },
+    "evidenceMetrics": {
+      "outlookThreadsMatched": 0,
+      "outlookCoverage": "0% direct (0/1); rich facility-level operational context",
+      "duplicatesRemoved": 0,
+      "invoiceItemsExcluded": 1,
+      "slaBreachCount": 1,
+      "slaBreachRisk": "MODERATE – 1 of 1 eligible ticket SLA BREACHED. Queue down 67% from prior refresh.",
+      "dataFreshness": "LIVE – TicketOps Aug 10 16:04 ET. Outlook Aug 10 16:07 ET.",
+      "queueTrend": "↓ 67% (3 → 1 eligible tickets)"
+    }
+  },
+  "notes": "1 eligible Pending ticket (UFN-64782). SLA BREACHED, Unassigned. DAYDREAM NUTRITION INC. is new to dashboard. 3 previously active tickets (UFN-64221, UFN-64870, UFN-65592) resolved between Aug 9-10 — significant improvement. UFN-64782 was previously listed as 'closed 07/31' — now confirmed active via live search. RECOMMEND: assign UFN-64782 immediately; verify RN-19417 transfer status; contact DAYDREAM NUTRITION INC. Monitor Outlook for Maizly claims + Colavita TO status threads.",
+  "nextScheduledRefresh": "2026-08-11 08:00 ET (daily summary email)"
 }
