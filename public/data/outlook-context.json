@@ -1,9 +1,9 @@
 {
-  "description": "Outlook email context for NHT/Cesanek tickets (non-blocking — reconciled Aug 10 05:14 ET). 1/3 direct thread matches. Preserved from prior state.",
+  "description": "Outlook email context for NHT/Cesanek tickets (non-blocking — reconciled Aug 10 05:53 ET). 1/3 direct thread matches. Preserved from prior state.",
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-08-10T09:14:00Z",
-  "lastRefreshed": "2026-08-10T05:14:00-04:00",
+  "generatedAt": "2026-08-10T09:53:37Z",
+  "lastRefreshed": "2026-08-10T05:53:37-04:00",
   "dataSource": "Outlook agent — preserved from prior state. No live Outlook connection available.",
   "threadsMatched": 1,
   "threadsUniquePostDedup": 3,
