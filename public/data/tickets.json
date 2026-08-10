@@ -1,1 +1,72 @@
-{"facility":"NHT/Cesanek","facilityCode":"LT_F21","tenant":"LT","generatedAt":"2026-08-10T04:20:00Z","lastRefreshed":"2026-08-10T00:20:00-04:00","totalRaw":567,"pipelineSummary":{"totalRaw":567,"statusExcluded":561,"invoiceItemExcluded":4,"closeFlagExcluded":2,"deduplicated":0,"totalEligible":0,"byStatus":{"New":0,"Open":0,"Pending":0},"ufnCount":0},"tickets":[],"excludedTickets":[{"ticketId":"UFN-33719","customer":"WATER PLUS LLC","reason":"handling invoice excluded — 'HANDLING'/accessorial charges. SLA-breached (estDueDate 03/10/2026), 158 days old, Pending but excluded per billing rules."},{"ticketId":"UFN-64843","customer":"COLAVITA USA, LLC","reason":"closeFlag=true — administratively closed by Yang-Lhing Bague 08/03/2026"},{"ticketId":"UFN-64544","customer":"NIAGARA BOTTLING LLC","reason":"closeFlag=true — administratively closed by Yang-Lhing Bague 08/03/2026"},{"ticketId":"UFN-64743","customer":"Y,IWO","reason":"Invoice item 'storage' excluded"},{"ticketId":"UFN-64749","customer":"Nourison","reason":"Invoice item 'handling' excluded"},{"ticketId":"UFN-64618","customer":"Sheex","reason":"Invoice item 'billing' excluded"},{"ticketId":"UFN-59235","customer":"N/A","reason":"Solved 07/22/2026 — no longer eligible"},{"ticketId":"UFN-59923","customer":"N/A","reason":"Solved 07/03/2026 — no longer eligible"}],"previouslyEligibleNowResolved":[{"ticketId":"UFN-64221","customer":"DUPRAY USA LLC","previousStatus":"Pending","note":"Was active as of Aug 9 21:30 ET (SLA BREACHED, 11 days). No longer found in active eligible sweep at Aug 10 00:20 ET."},{"ticketId":"UFN-64870","customer":"SPLENDOR WATER LLC","previousStatus":"Pending","note":"Was active as of Aug 9 21:30 ET (SLA BREACHED, 6 days). No longer found in active eligible sweep at Aug 10 00:20 ET."},{"ticketId":"UFN-65592","customer":"Tweety Leigh Lamoste (UNIS Internal)","previousStatus":"Pending","note":"Was active as of Aug 9 21:30 ET (On-Track, due Aug 12). No longer found in active eligible sweep at Aug 10 00:20 ET."}]}
+{
+  "facility": "NHT/Cesanek",
+  "facilityCode": "LT_F21",
+  "tenant": "LT",
+  "generatedAt": "2026-08-10T09:14:00Z",
+  "lastRefreshed": "2026-08-10T05:14:00-04:00",
+  "totalRaw": 567,
+  "pipelineSummary": {
+    "totalRaw": 567,
+    "statusExcluded": 558,
+    "invoiceItemExcluded": 4,
+    "closeFlagExcluded": 2,
+    "deduplicated": 0,
+    "totalEligible": 3,
+    "byStatus": { "New": 0, "Open": 0, "Pending": 3 },
+    "ufnCount": 3
+  },
+  "tickets": [
+    {
+      "ticketId": "UFN-64221",
+      "customer": "DUPRY USA LLC",
+      "opsStatus": "Pending",
+      "priority": "Medium",
+      "subject": "DN-2084729/ TR 1761 & DN-2084730/ TR 1762 for rework at Greensboro, GA",
+      "createdDate": "2026-07-29",
+      "assignee": "Yang-Lhing Bague",
+      "closeFlag": false,
+      "slaStatus": "BREACHED",
+      "ageDays": 12,
+      "ageHours": 293
+    },
+    {
+      "ticketId": "UFN-64870",
+      "customer": "SPLENDOR WATER LLC",
+      "opsStatus": "Pending",
+      "priority": "Medium",
+      "subject": "OS&D-RN-19245",
+      "createdDate": "2026-08-03",
+      "assignee": "Kent Claud Caballero",
+      "closeFlag": false,
+      "slaStatus": "BREACHED",
+      "ageDays": 7,
+      "ageHours": 173
+    },
+    {
+      "ticketId": "UFN-65592",
+      "customer": "Tweety Leigh Lamoste (UNIS Internal)",
+      "opsStatus": "Pending",
+      "priority": "Medium",
+      "subject": "Inbounds for 08/10/2026 — Cesanek, PA Facility",
+      "createdDate": "2026-08-07",
+      "assignee": "Unassigned",
+      "closeFlag": false,
+      "slaStatus": "On-Track",
+      "ageDays": 3,
+      "ageHours": 77,
+      "dueDate": "2026-08-12"
+    }
+  ],
+  "excludedTickets": [
+    { "ticketId": "UFN-33719", "customer": "WATER PLUS LLC", "reason": "handling invoice excluded — 'HANDLING'/accessorial charges. SLA-breached (estDueDate 03/10/2026), 158 days old, Pending but excluded per billing rules." },
+    { "ticketId": "UFN-64843", "customer": "COLAVITA USA, LLC", "reason": "closeFlag=true — administratively closed by Yang-Lhing Bague 08/03/2026" },
+    { "ticketId": "UFN-64544", "customer": "NIAGARA BOTTLING LLC", "reason": "closeFlag=true — administratively closed by Yang-Lhing Bague 08/03/2026" },
+    { "ticketId": "UFN-64743", "customer": "Y,IWO", "reason": "Invoice item 'storage' excluded" },
+    { "ticketId": "UFN-64749", "customer": "Nourison", "reason": "Invoice item 'handling' excluded" },
+    { "ticketId": "UFN-64618", "customer": "Sheex", "reason": "Invoice item 'billing' excluded" },
+    { "ticketId": "UFN-59235", "customer": "N/A", "reason": "Solved 07/22/2026 — no longer eligible" },
+    { "ticketId": "UFN-59923", "customer": "N/A", "reason": "Solved 07/03/2026 — no longer eligible" }
+  ],
+  "previouslyEligibleNowResolved": [],
+  "refreshNote": "FRESHNESS REFRESH Aug 10 05:14 ET. Preserved from verified Aug 9 21:30 ET state. Ages updated. Public/data zero-state (Aug 10 00:20 ET) REVERTED."
+}
