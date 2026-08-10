@@ -1,9 +1,9 @@
 {
-  "description": "Outlook email context for NHT/Cesanek tickets (non-blocking — reconciled Aug 10 05:14 ET). 1/3 direct thread matches. Partial operational context available for others. No new Outlook connection available for this refresh.",
+  "description": "Outlook email context for NHT/Cesanek tickets (non-blocking — reconciled Aug 10 05:53 ET). 1/3 direct thread matches. Partial operational context available for others. No new Outlook connection available for this refresh.",
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-08-10T09:14:00Z",
-  "lastRefreshed": "2026-08-10T05:14:00-04:00",
+  "generatedAt": "2026-08-10T09:53:37Z",
+  "lastRefreshed": "2026-08-10T05:53:37-04:00",
   "dataSource": "Outlook agent — targeted searches Aug 2–9, 2026 for UFN-64870, UFN-64221, UFN-65592. No live Outlook connection available for this refresh; context preserved from prior state.",
   "note": "UFN-65592 (Tweety Lamoste / Inbounds 08/10) has direct Outlook thread — inbound load sequence distributed by Tweety for Monday 08/10. UFN-64221 and UFN-64870 have operational context but no direct email threads. TicketOps remains authoritative.",
   "threadsMatched": 1,
