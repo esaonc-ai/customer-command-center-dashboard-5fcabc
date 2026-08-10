@@ -38,20 +38,20 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 | Metric | Value |
 |--------|-------|
 | Total Raw | 567 |
-| Eligible | **2** (0 New, 0 Open, 2 Pending) |
-| UFN-Count | 2 |
-| Excluded | 565 (559 status, 4 invoice items, 2 closeFlag) |
+| Eligible | **3** (0 New, 0 Open, 3 Pending) |
+| UFN-Count | 3 |
+| Excluded | 564 (558 status, 4 invoice items, 2 closeFlag) |
 | Customers | **11** — 2 At Risk 🔄: SPLENDOR WATER LLC, DUPRAY USA LLC; 9 Healthy ✅ |
-| SLA Risk | **CRITICAL** — Both active tickets SLA BREACHED |
-| Outlook Coverage | 0% direct; 100% partial operational context (0/2 direct matches) |
-| Last Refresh | 2026-08-09 20:39 ET (TicketOps authoritative re-query; confirms 19:30 ET state stable) |
-| Next Refresh | ~20:54 ET |
+| SLA Risk | **ELEVATED** — 2 of 3 eligible tickets SLA BREACHED; 1 On-Track |
+| Outlook Coverage | 33% direct (1/3); 100% partial operational context |
+| Last Refresh | 2026-08-09 20:43 ET (TicketOps sweep correction — UFN-65592 re-verified) |
+| Next Refresh | ~20:58 ET |
 
 ### Action Buckets
 
 | Bucket | Count | Details |
 |--------|-------|---------|
-| **Immediate** | 2 | UFN-64221 (DUPRAY Greensboro rework, SLA BREACHED 11d, Yang-Lhing out — backup Kent Joseph Lim) + UFN-64870 (SPLENDOR WATER OS&D, SLA BREACHED 6d, Kent Claud Caballero) |
+| **Immediate** | 3 | UFN-64221 (DUPRAY Greensboro rework, SLA BREACHED 11d, Yang-Lhing out — backup Kent Joseph Lim) + UFN-64870 (SPLENDOR WATER OS&D, SLA BREACHED 6d, Kent Claud Caballero) + UFN-65592 (Tweety Lamoste — Monday 08/10 Inbounds, 25 appointments, due Aug 12) |
 | **Short-Term** | 0 | — |
 | **Medium** | 0 | — |
 | **Watch** | 0 | — |
@@ -72,11 +72,14 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 | NOURISON | 0 | — | — | ✅ Healthy |
 | GOLDEN BULL MARKETING | 0 | — | — | ✅ Healthy |
 
+*Note: UFN-65592 is UNIS Internal (Tweety Leigh Lamoste) — not customer-facing.*
+
 ### Key Correction History
 
 | Refresh | Time (ET) | Key Change |
 |---------|-----------|------------|
-| refresh-2026-08-09T20:39ET | 20:39 | **CONFIRMED STABLE** — No changes from 19:30 ET. State verified stable. |
+| refresh-2026-08-09T20:43ET | 20:43 | **SWEEP CORRECTION** — UFN-65592 re-verified (closeFlag=false). Had been incorrectly listed as closed in all prior refreshes. 3 eligible now. |
+| refresh-2026-08-09T20:39ET | 20:39 | Confirmed stable — no changes from 19:30 ET. |
 | refresh-2026-08-09T19:30ET | 19:30 | **CORRECTED** — UFN-64843/UFN-64544 excluded (closeFlag=true). Replaced with UFN-64870/UFN-64221. closeFlag rule strengthened. |
 | refresh-2026-08-09T12:06ET | 12:06 | **CORRECTED** — Prior ZERO-STATE superseded. 2 eligible Pending tickets found via direct ID cross-check. |
 | refresh-2026-08-09T12:04ET | 12:04 | ZERO-STATE (invalid — superseded) |
@@ -85,8 +88,9 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 
 | Rank | Ticket | Customer | Reason | Action |
 |------|--------|----------|--------|--------|
-| 1 | UFN-64221 | DUPRAY USA LLC | Oldest active (11 days); SLA BREACHED; Greensboro rework; Yang-Lhing out early 8/6 | Verify Yang-Lhing coverage (backup: Kent Joseph Lim) |
-| 2 | UFN-64870 | SPLENDOR WATER LLC | OS&D-RN-19245; SLA BREACHED (6 days); created 08/03 | Check OS&D resolution with Kent Claud Caballero |
+| 1 | UFN-64221 | DUPRAY USA LLC | Oldest active (11 days); SLA BREACHED; Greensboro rework | Verify Yang-Lhing coverage (backup: Kent Joseph Lim) |
+| 2 | UFN-64870 | SPLENDOR WATER LLC | OS&D-RN-19245; SLA BREACHED (6 days) | Confirm resolution with Kent Claud Caballero |
+| 3 | UFN-65592 | Tweety Leigh Lamoste (UNIS Internal) | Monday 08/10 Inbounds (25 appts); On-Track; due Aug 12 | Verify Monday readiness; assign |
 
 ## Data Files
 
