@@ -1,57 +1,45 @@
 {
-  "description": "Outlook email context for NHT/Cesanek tickets (non-blocking — reconciled Aug 10 05:53 ET). 1/3 direct thread matches. Preserved from prior state.",
+  "description": "Outlook email context for NHT/Cesanek tickets (non-blocking – LIVE scan Aug 10 16:07 ET). 0/1 direct thread matches for UFN-64782. Rich operational context for facility.",
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-08-10T09:53:37Z",
-  "lastRefreshed": "2026-08-10T05:53:37-04:00",
-  "dataSource": "Outlook agent — preserved from prior state. No live Outlook connection available.",
-  "threadsMatched": 1,
-  "threadsUniquePostDedup": 3,
+  "generatedAt": "2026-08-10T20:07:00Z",
+  "lastRefreshed": "2026-08-10T16:07:00-04:00",
+  "dataSource": "Outlook agent – LIVE scan Aug 3-10, 2026. 639 NHT/Cesanek messages analyzed.",
+  "threadsMatched": 0,
+  "threadsUniquePostDedup": 14,
   "coverage": {
-    "eligibleTicketsTotal": 3,
-    "eligibleTicketsWithOutlookDirect": 1,
-    "eligibleTicketsWithOperationalContext": 3,
-    "coveragePct": "33% direct (1/3); 100% partial operational"
+    "eligibleTicketsTotal": 1,
+    "eligibleTicketsWithOutlookDirect": 0,
+    "eligibleTicketsWithOperationalContext": 0,
+    "coveragePct": "0% direct (0/1); rich facility-level operational context available"
   },
   "ticketThreads": [
     {
-      "ticketId": "UFN-65592",
-      "customer": "Tweety Leigh Lamoste (UNIS Internal)",
-      "directMatch": true,
-      "contextAvailable": true,
-      "threadSubject": "Cesanek Inbound Sequence — Monday 08/10/2026",
-      "participants": ["Tweety Leigh Lamoste", "Nicole Weber"],
-      "lastActivity": "2026-08-09",
-      "threadSummary": "Inbound load sequence for Cesanek Monday 08/10. 25 appointments confirmed. NIAGARA BOTTLING ~16 loads. Schedule coordination active. Due Aug 12.",
-      "matchConfidence": "direct"
-    },
-    {
-      "ticketId": "UFN-64870",
-      "customer": "SPLENDOR WATER LLC",
+      "ticketId": "UFN-64782",
+      "customer": "DAYDREAM NUTRITION INC.",
       "directMatch": false,
-      "contextAvailable": true,
-      "contextSummary": "No OS&D/RN-19245 email. RN-19446 & RN-19448 In Progress at Cesanek. Kent Claud Caballero CS.",
-      "matchConfidence": "none"
-    },
-    {
-      "ticketId": "UFN-64221",
-      "customer": "DUPRY USA LLC",
-      "directMatch": false,
-      "contextAvailable": true,
-      "contextSummary": "No DN-2084729/Greensboro email. DN-2082686 missed pickup. Yang-Lhing out early 8/6; backup Kent Joseph Lim.",
+      "contextAvailable": false,
+      "contextSummary": "No Outlook thread found for DAYDREAM NUTRITION INC. or Transfer RN-19417. RN-19415 referenced in COMOFF thread but different customer.",
       "matchConfidence": "none"
     }
   ],
   "excludedThreads": [
-    { "ticketId": "UFN-64843", "customer": "COLAVITA USA", "reason": "Ticket closed (closeFlag=true) 08/03." },
-    { "ticketId": "UFN-64544", "customer": "NIAGARA BOTTLING", "reason": "Ticket closed (closeFlag=true) 08/03." }
+    { "reason": "VITA COCO – DTC Cesanek HANDLING Invoice (billing excluded)" },
+    { "reason": "DUPRAY LLC – Cesanek Handling 8/2-8/8 (UF Billing excluded)" },
+    { "reason": "Undeliverable bounce messages (system-generated)" },
+    { "reason": "Daily Inventory Cycle Count Report (automated report)" },
+    { "reason": "Customer Command Center Dashboard Testing (system status)" }
   ],
-  "aug2to9InboxContext": {
-    "scanWindow": "Aug 2–9, 2026",
-    "tweetyInbounds": { "status": "active_thread", "summary": "Monday 08/10 Cesanek inbound sequence: 25 appointments." },
-    "splendorWater": { "status": "operational", "summary": "RN-19446/19448 In Progress." },
-    "dupray": { "status": "operational", "summary": "DN-2082686 missed pickup. Yang-Lhing out early 8/6; backup Kent Joseph Lim." },
-    "mondayAug10Loads": { "status": "confirmed", "summary": "25 inbound appointments. Cesanek facility." }
-  },
-  "deduplicationNote": "No overlapping threads. All 3 eligible tickets have distinct Outlook context. TicketOps remains authoritative."
+  "activeOperationalThreads": [
+    { "thread": "Maizly – Update on Denial of Claims", "participants": "Adam Meyer (Maizly) → Wayne Evans, UFClaim, Nicole Weber, nht.cs", "date": "Aug 10, 2:07 PM", "relevance": "Escalation – claims denial dispute; Nicole Weber CC'd" },
+    { "thread": "Colavita – TO Status", "participants": "Kyle Wittenbauer (Colavita) ↔ Mariah Mateo, Nicole Weber", "date": "Aug 10, 11:34 AM", "relevance": "Customer ops issue – Transfer Order status inquiry" },
+    { "thread": "COMOFF0001 4327304-0 ($218.91)", "participants": "Jeraldine Botohan → Maria Aponte, escalated to Nicole Weber", "date": "Aug 10, 12:57 PM", "relevance": "Escalation – PRO0005963/WISE RN-19415 close" },
+    { "thread": "ULINE0001 211441358 ($201.69)", "participants": "Jeraldine Botohan → Maria Aponte, Erin Cambra", "date": "Aug 10, 3:09 PM", "relevance": "PRO0005979/WISE RN-46603 close" },
+    { "thread": "Niagara / UNIS / Quantix Schedule WK 8.10–8.16", "participants": "Rakesh Somashekar, Niagara Bottling Transport, nht.cs, Nicole Weber", "relevance": "Weekly scheduling coordination" },
+    { "thread": "Colavita – Week of 8/10/26 Scheduling", "participants": "Beatriz Santana (Fusion Transport) ↔ nht.cs, Nicole Weber", "relevance": "1 truck 8/11 @ 1400" },
+    { "thread": "Hint Beverage – Northampton PA WK 8/10/26", "participants": "Beatriz Santana ↔ nht.cs, Nicole Weber", "relevance": "Pickup schedule coordination" },
+    { "thread": "Iceland Direct – PO 810307 & 810306", "participants": "nht.cs → silvia.placido@kdpharmagroup.com", "relevance": "Appointments rescheduled 8/11 @ 9:00 AM" }
+  ],
+  "nicoleWeberInvolvement": "CC'd on virtually all NHT/Cesanek threads — operations, scheduling, claims, billing, dashboards. 2,404 total messages referencing Nicole Weber in scan window.",
+  "deduplicationNote": "No overlapping threads with eligible ticket UFN-64782. TicketOps remains authoritative. Outlook provides rich facility-level operational awareness."
 }
