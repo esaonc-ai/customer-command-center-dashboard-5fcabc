@@ -1,14 +1,15 @@
 {
-  "dashboard": "Customer Command Center — NHT/Cesanek",
+  "dashboard": "Customer Command Center – NHT/Cesanek",
   "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
   "refresh": {
-    "id": "refresh-2026-08-10T05:53ET-FRESHNESS",
-    "timestamp": "2026-08-10T09:53:37Z",
-    "timestampLocal": "2026-08-10T05:53:37-04:00",
-    "executedBy": "nicole.weber@unisco.com (via GitHub Specialist — freshness update; no live TicketOps/Outlook connection)",
-    "type": "scheduled_refresh_freshness_only",
-    "previousRefreshId": "refresh-2026-08-10T05:14ET-FRESHNESS",
-    "keyChange": "FRESHNESS REFRESH: Ages updated to Aug 10 05:53 ET. UFN-64221 12d/~294h, UFN-64870 7d/~174h, UFN-65592 3d/~78h. Action buckets unchanged (Watch=2, Medium=1). TicketOps data preserved from last verified state (Aug 9 21:30 ET) — no live connection available. Public/data synced from verified dashboard/data."
+    "id": "refresh-2026-08-10T16:04ET-LIVE",
+    "timestamp": "2026-08-10T20:04:00Z",
+    "timestampLocal": "2026-08-10T16:04:00-04:00",
+    "executedBy": "nicole.weber@unisco.com (via Super Agent – live TicketOps + Outlook connections)",
+    "type": "live_full_refresh",
+    "previousRefreshId": "refresh-2026-08-10T05:53ET-FRESHNESS",
+    "previousType": "freshness_only",
+    "keyChange": "LIVE REFRESH: Fresh TicketOps + Outlook connections. 3 previously active tickets resolved (UFN-64221 DUPRY USA, UFN-64870 SPLENDOR WATER, UFN-65592 Tweety Lamoste). 1 new eligible: UFN-64782 DAYDREAM NUTRITION INC. (previously misclassified as closed 07/31). Queue: 3→1 (↓67%). SLA: 2 breached→1 breached. Customer Health: 2 At Risk→1 At Risk. NHT/Cesanek queue nearly clear — strongest state to date."
   },
   "rulesApplied": {
     "includeStatuses": ["New", "Open", "Pending"],
@@ -17,63 +18,82 @@
     "ufnFiltering": "enabled",
     "deduplication": "enabled",
     "authority": "TicketOps opsStatus + closeFlag authoritative; Outlook context non-blocking",
-    "closeFlagVerification": "REQUIRED — closeFlag=false regardless of displayStatus"
+    "closeFlagVerification": "REQUIRED – closeFlag=false regardless of displayStatus"
   },
   "dataSources": {
-    "tickets": { "source": "TicketOps — preserved from last verified state Aug 9 21:30 ET. No live connection for this refresh.", "status": "preserved_verified_stable", "queryTimestamp": "2026-08-09 21:30 ET", "file": "data/tickets.json", "methodologyNote": "3 eligible Pending tickets confirmed via direct ID cross-check Aug 9 20:43 ET. Ages updated for Aug 10 05:53 ET. No status changes verifiable without live TicketOps connection." },
-    "outlook": { "source": "Outlook agent — preserved from prior state. No live connection for this refresh.", "status": "preserved_non_blocking_1of3_direct_100pct_partial", "queryTimestamp": "2026-08-09 21:30 ET", "file": "data/outlook-context.json" }
+    "tickets": {
+      "source": "TicketOps – LIVE connection Aug 10 16:04 ET",
+      "status": "live_fresh",
+      "queryTimestamp": "2026-08-10 16:04 ET",
+      "file": "data/tickets.json",
+      "methodology": "Broad UFN- keyword search (617 results across all departments) + Northampton keyword search (2,674 results, date-filtered from June 2026) + Northampton PA search (363 results, from July 2026). Client-side filtered for UNIS Fulfillment - Northampton department, displayStatusSystemStatus=10, closeFlag=false. 1 eligible ticket found (UFN-64782). Cross-checked: UFN-64221/UFN-64870/UFN-65592 all now systemStatus=20/closeFlag=true.",
+      "searchStats": { "ufnKeywordTotalHits": 617, "northamptonKeywordTotalHits": 2674, "northamptonPaTotalHits": 363, "examinedEstimate": 450 }
+    },
+    "outlook": {
+      "source": "Outlook agent – LIVE scan Aug 3-10, 2026",
+      "status": "live_fresh_non_blocking",
+      "queryTimestamp": "2026-08-10 16:07 ET",
+      "file": "data/outlook-context.json",
+      "methodology": "Targeted searches for NHT/Cesanek (639 messages), Nicole Weber (2,404 messages), customer support tickets, and UFN references. 14 key threads identified. 0/1 direct match for UFN-64782. Rich facility-level operational context.",
+      "searchStats": { "nhtCesanekMessages": 639, "nicoleWeberMessages": 2404, "keyThreads": 14, "billingExcluded": 5 }
+    }
   },
   "dashboardState": {
-    "totalRaw": 567, "totalEligible": 3,
-    "byStatus": { "New": 0, "Open": 0, "Pending": 3 },
-    "ufnCount": 3, "excluded": 564,
-    "excludedBreakdown": { "statusExcluded": 558, "invoiceItemExcluded": 4, "closeFlagExcluded": 2, "deduplicated": 0 },
+    "totalRaw": 567,
+    "totalEligible": 1,
+    "byStatus": { "New": 0, "Open": 0, "Pending": 1 },
+    "ufnCount": 1,
+    "excluded": 566,
+    "excludedBreakdown": { "statusExcluded": 560, "invoiceItemExcluded": 4, "closeFlagExcluded": 2, "deduplicated": 0 },
     "customerHealth": {
-      "customersInScope": ["SPLENDOR WATER LLC", "DUPRY USA LLC", "INNOVA/SOFTGEL/KD NUTRA", "SMEG USA", "RITUAL BEVERAGE", "COLAVITA USA, LLC", "NIAGARA BOTTLING", "ZEN BEVERAGE", "EMS MIND READER/BETESH", "NOURISON", "GOLDEN BULL MARKETING"],
-      "healthSummary": "9/11 Healthy. 2 At Risk: SPLENDOR WATER LLC + DUPRY USA LLC (both SLA BREACHED). UFN-65592 is UNIS Internal — not customer-facing.",
+      "customersInScope": ["DAYDREAM NUTRITION INC.", "SPLENDOR WATER LLC", "DUPRY USA LLC", "INNOVA/SOFTGEL/KD NUTRA", "SMEG USA", "RITUAL BEVERAGE", "COLAVITA USA, LLC", "NIAGARA BOTTLING", "ZEN BEVERAGE", "EMS MIND READER/BETESH", "NOURISON", "GOLDEN BULL MARKETING"],
+      "healthSummary": "10/12 Healthy. 1 At Risk: DAYDREAM NUTRITION INC. (SLA BREACHED, Unassigned). 2 previously At Risk customers (SPLENDOR WATER, DUPRY USA) now Healthy. 1 UNIS Internal ticket resolved.",
       "customerDetails": [
-        { "customer": "SPLENDOR WATER LLC", "activeTickets": 1, "health": "🔴 At Risk", "healthScore": 60, "note": "UFN-64870 OS&D-RN-19245; SLA BREACHED (7 days). Kent Claud Caballero." },
-        { "customer": "DUPRY USA LLC", "activeTickets": 1, "health": "🔴 At Risk", "healthScore": 55, "note": "UFN-64221 Greensboro rework; SLA BREACHED (12 days). Yang-Lhing out early 8/6; backup Kent Joseph Lim." },
-        { "customer": "INNOVA/SOFTGEL/KD NUTRA", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100, "note": "KD Nutra deadline flagged in Outlook — monitor." },
+        { "customer": "DAYDREAM NUTRITION INC.", "activeTickets": 1, "health": "🔴 At Risk", "healthScore": 50, "note": "UFN-64782 Transfer to Northampton RN-19417; SLA BREACHED (5 days past due); Unassigned. New customer — not in prior dashboard refreshes." },
+        { "customer": "SPLENDOR WATER LLC", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100, "note": "UFN-64870 OS&D resolved between Aug 9-10. Previously 🔴 At Risk (SLA BREACHED 7d)." },
+        { "customer": "DUPRY USA LLC", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100, "note": "UFN-64221 Greensboro rework resolved between Aug 9-10. Previously 🔴 At Risk (SLA BREACHED 12d)." },
+        { "customer": "INNOVA/SOFTGEL/KD NUTRA", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100, "note": "KD Nutra deadline previously flagged in Outlook – continue monitoring." },
         { "customer": "SMEG USA", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 },
         { "customer": "RITUAL BEVERAGE", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 },
-        { "customer": "COLAVITA USA, LLC", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 },
-        { "customer": "NIAGARA BOTTLING", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100, "note": "~16 loads Mon 08/10." },
+        { "customer": "COLAVITA USA, LLC", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100, "note": "Active Outlook thread Aug 10: TO Status inquiry." },
+        { "customer": "NIAGARA BOTTLING", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100, "note": "Weekly scheduling WK 8.10-8.16 active. ~16 loads." },
         { "customer": "ZEN BEVERAGE", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 },
         { "customer": "EMS MIND READER/BETESH", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 },
         { "customer": "NOURISON", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 },
         { "customer": "GOLDEN BULL MARKETING", "activeTickets": 0, "health": "✅ Healthy", "healthScore": 100 }
       ]
     },
-    "priorityQueue": { 
-      "topPriority": "UFN-64221 — DUPRY Greensboro rework (SLA BREACHED, 12 days)", 
-      "slaBreached": 2, "slaAtRisk": 0, "slaOnTrack": 1, "oldestTicketDays": 12 
+    "priorityQueue": {
+      "topPriority": "UFN-64782 – DAYDREAM NUTRITION INC. Transfer to Northampton RN-19417. SLA BREACHED (5 days past due). Unassigned.",
+      "slaBreached": 1,
+      "slaAtRisk": 0,
+      "slaOnTrack": 0,
+      "oldestTicketDays": 7
     },
     "actionBuckets": {
-      "immediate": 0, "immediateDetail": [],
-      "shortTerm": 0, "shortTermDetail": [],
-      "mediumTerm": 1,
-      "mediumTermDetail": [
-        "UFN-65592: Tweety Lamoste — Monday 08/10 Inbounds (25 appointments). ~78h old. On-Track. Due Aug 12."
-      ],
-      "watch": 2,
-      "watchDetail": [
-        "UFN-64221: DUPRY USA LLC — Greensboro rework. ~294h (12d). SLA BREACHED. Yang-Lhing out; backup Kent Joseph Lim.",
-        "UFN-64870: SPLENDOR WATER LLC — OS&D-RN-19245. ~174h (7d). SLA BREACHED. Kent Claud Caballero."
-      ]
+      "immediate": 1,
+      "immediateDetail": ["UFN-64782: DAYDREAM NUTRITION INC. – Transfer to Northampton RN-19417. SLA BREACHED. Unassigned. 7 days old."],
+      "shortTerm": 0,
+      "shortTermDetail": [],
+      "mediumTerm": 0,
+      "mediumTermDetail": [],
+      "watch": 0,
+      "watchDetail": []
     },
     "evidenceMetrics": {
-      "outlookThreadsMatched": 1,
-      "outlookCoverage": "33% direct (1/3); 100% partial operational context",
+      "outlookThreadsMatched": 0,
+      "outlookCoverage": "0% direct (0/1); rich facility-level operational context available",
       "duplicatesRemoved": 0,
-      "invoiceItemsExcluded": 4,
-      "closeFlagCorrections": 3,
-      "slaBreachCount": 2,
-      "slaBreachRisk": "ELEVATED — 2 of 3 eligible tickets SLA BREACHED",
-      "dataFreshness": "Preserved — TicketOps data last verified Aug 9 21:30 ET. Ages current to Aug 10 05:53 ET."
+      "invoiceItemsExcluded": 1,
+      "closeFlagCorrections": 0,
+      "slaBreachCount": 1,
+      "slaBreachRisk": "MODERATE – 1 of 1 eligible ticket SLA BREACHED but queue down 67% from prior refresh",
+      "dataFreshness": "LIVE – TicketOps Aug 10 16:04 ET. Outlook Aug 10 16:07 ET.",
+      "queueTrend": "↓ 67% (3 → 1 eligible tickets since 05:53 ET refresh)",
+      "correctionsThisRefresh": ["UFN-64782 previously misclassified as 'closed 07/31' – corrected to active Pending (similar to UFN-65592 correction on Aug 9)"]
     }
   },
-  "discrepancyNote": "PUBLIC/DATA ZERO-STATE PREVIOUSLY REVERTED (05:14 ET refresh). No new zero-state observed for this refresh. Public/data remains synced to verified dashboard/data state.",
-  "notes": "3 eligible Pending tickets. 2 SLA BREACHED (UFN-64221 12d, UFN-64870 7d). 1 On-Track (UFN-65592, due Aug 12). Action buckets: Watch=2, Medium=1. Monday 08/10: 25 Cesanek inbound appointments. Outlook: 1/3 direct match. KD Nutra monitor. RECOMMEND: verify ticket statuses with live TicketOps connection; confirm DUPRY coverage; verify Monday inbound readiness with Tweety.",
-  "nextScheduledRefresh": "2026-08-10 06:08 ET"
+  "discrepancyNote": "UFN-64782 CORRECTION: Previously listed as 'prior active now closed (07/31)' alongside UFN-65578 in all prior refresh cycles. Live TicketOps search confirms closeFlag=false, systemStatus=10. This is the second such correction (UFN-65592 corrected Aug 9).",
+  "notes": "1 eligible Pending ticket (UFN-64782 DAYDREAM NUTRITION INC.). SLA BREACHED, Unassigned, new customer for dashboard. 3 previously active tickets resolved — significant improvement. UFN-64782 was previously misclassified as closed. RECOMMEND: Assign UFN-64782 immediately; verify RN-19417 transfer status; contact DAYDREAM NUTRITION INC. Monitor Outlook for Maizly claims escalation + Colavita TO status thread. Dashboard deployed effective Aug 10 per Cole Nagao. Daily summary email scheduled 8:00 AM weekdays.",
+  "nextScheduledRefresh": "2026-08-11 08:00 ET (daily summary email via scheduled task f8YlLWC3s-Bm_MM6xsvS6)"
 }
