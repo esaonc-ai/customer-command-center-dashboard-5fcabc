@@ -1,1 +1,11 @@
-{"dashboard":"Customer Command Center — NHT/Cesanek","facility":{"code":"LT_F21","name":"NHT/Cesanek","tenant":"LT","timezone":"America/New_York"},"refresh":{"id":"refresh-2026-08-10T00:20ET-ZERO-STATE","timestamp":"2026-08-10T04:20:00Z","timestampLocal":"2026-08-10T00:20:00-04:00","executedBy":"nicole.weber@unisco.com","type":"authoritative_zero_state_refresh","previousRefreshId":"refresh-2026-08-09T21:30ET-BUCKET-CORRECTION","keyChange":"ZERO-STATE: All 3 previously eligible tickets (UFN-64221, UFN-64870, UFN-65592) resolved overnight. 0 eligible tickets. Queue clear. Outlook context available as non-blocking operational supplement."},"rulesApplied":{"includeStatuses":["New","Open","Pending"],"excludeStatuses":["Reopen","Reopened","Closed","Resolved","Cancelled","Done"],"excludeInvoiceItems":["billing","UF Billing","storage","handling"],"ufnFiltering":"enabled","deduplication":"enabled"},"dashboardState":{"totalRaw":567,"totalEligible":0,"byStatus":{"New":0,"Open":0,"Pending":0},"ufnCount":0,"excluded":567,"actionBuckets":{"immediate":0,"shortTerm":0,"mediumTerm":0,"watch":0},"evidenceMetrics":{"outlookThreadsMatched":0,"duplicatesRemoved":0,"invoiceItemsExcluded":4,"slaBreachRisk":"NONE — 0 eligible tickets","dataFreshness":"Fresh — Authoritative TicketOps exhaustive sweep Aug 10 00:20 ET"}},"nextScheduledRefresh":"2026-08-10 08:00 ET"}
+{
+  "dashboard": "Customer Command Center — NHT/Cesanek",
+  "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
+  "refresh": {
+    "id": "refresh-2026-08-10T05:14ET-FRESHNESS",
+    "timestamp": "2026-08-10T09:14:00Z",
+    "timestampLocal": "2026-08-10T05:14:00-04:00",
+    "type": "freshness_refresh",
+    "note": "Ages updated. TicketOps data preserved from last verified state (Aug 9 21:30 ET). No live connection. Public/data zero-state (Aug 10 00:20 ET) reverted."
+  }
+}
