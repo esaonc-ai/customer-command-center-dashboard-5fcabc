@@ -1,11 +1,11 @@
 {
-  "description": "Outlook email context for NHT/Cesanek tickets (non-blocking – LIVE scan Aug 10 16:07 ET). 0/1 direct thread matches for UFN-64782. Rich facility-level operational context from 639 messages.",
+  "description": "Outlook email context for NHT/Cesanek tickets (non-blocking – PRESERVED from live scan Aug 10 16:07 ET). 0/1 direct thread matches for UFN-64782. Rich facility-level operational context from 639 messages.",
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "generatedAt": "2026-08-10T20:07:00Z",
   "lastRefreshed": "2026-08-10T16:07:00-04:00",
-  "dataSource": "Outlook agent – LIVE scan Aug 3-10, 2026. Targeted searches for NHT/Cesanek, Nicole Weber, customer support tickets, and UFN references.",
-  "note": "No direct Outlook thread found for UFN-64782 (DAYDREAM NUTRITION INC. / Transfer RN-19417). Rich facility-level operational awareness available. Nicole Weber is CC'd on virtually all NHT/Cesanek threads — confirming Account Manager role.",
+  "dataSource": "Outlook agent – PRESERVED from live scan Aug 3-10, 2026. Targeted searches for NHT/Cesanek, Nicole Weber, customer support tickets, and UFN references.",
+  "note": "Outlook data PRESERVED from Aug 10 16:07 ET live scan. No live Outlook connection available for this freshness refresh. No direct Outlook thread found for UFN-64782 (DAYDREAM NUTRITION INC. / Transfer RN-19417). Rich facility-level operational awareness available. Nicole Weber is CC'd on virtually all NHT/Cesanek threads – confirming Account Manager role.",
   "threadsMatched": 0,
   "threadsUniquePostDedup": 14,
   "coverage": {
@@ -69,7 +69,7 @@
     { "thread": "Iceland Direct – PO 810306 (SO110375) DN-2092458", "participants": ["nht.cs", "silvia.placido@kdpharmagroup.com"], "summary": "Appointment rescheduled 8/11 @ 9:00 AM" },
     { "thread": "Splendor Water – DN-2102636 / GOTHAM 826", "participants": ["nht.cs", "sydney@splendorwater.com", "Erin Cambra"], "summary": "Shipment coordination" },
     { "thread": "Maizly – Airgoods #A912768 / Shopify #1546", "participants": ["Adam Meyer", "nht.cs", "Nicole Weber"], "summary": "Orders confirmed in system" },
-    { "thread": "UT Trailers in Northampton PA", "participants": ["Ismael Robles", "Mariah Mateo", "Mark Golding", "Nicole Weber", "Jeff Williams", "Rob Montiero", "Jesse Webb"], "summary": "Trailer coordination" }
+    { "thread": "UT Trailers in Northampton PA", "participants": ["Ismael Robles", "Mariah Mateo", "Mark Golding", "Nicole Weber", "Jeff Williams", "Rob Montero", "Jesse Webb"], "summary": "Trailer coordination" }
   ],
   "dashboardSystemStatus": [
     { "thread": "Customer Command Center Dashboard Testing", "participants": ["Nicole Weber"], "date": "2026-08-06 16:57", "summary": "Dashboard now able to send test emails. Status: Testing." },
@@ -81,5 +81,6 @@
     "scanWindow": "Aug 3-10, 2026"
   },
   "activeCustomersInEmail": ["Maizly", "Colavita", "COMOFF", "ULINE", "Niagara Bottling", "Hint Beverage", "Iceland Direct", "Splendor Water", "UT Trailers", "Vita Coco (billing only)", "Dupray (billing only)"],
-  "deduplicationNote": "No overlapping threads with eligible ticket UFN-64782. TicketOps remains authoritative. Outlook provides rich facility-level operational awareness."
+  "deduplicationNote": "No overlapping threads with eligible ticket UFN-64782. TicketOps remains authoritative. Outlook provides rich facility-level operational awareness.",
+  "freshnessNote": "Outlook data PRESERVED from Aug 10 16:07 ET live scan. No live Outlook connection available for this Aug 10 19:05 ET freshness refresh."
 }
