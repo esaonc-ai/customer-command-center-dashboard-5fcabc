@@ -2,13 +2,13 @@
   "dashboard": "Customer Command Center — NHT/Cesanek",
   "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
   "refresh": {
-    "id": "refresh-2026-08-10T05:14ET-FRESHNESS",
-    "timestamp": "2026-08-10T09:14:00Z",
-    "timestampLocal": "2026-08-10T05:14:00-04:00",
+    "id": "refresh-2026-08-10T05:53ET-FRESHNESS",
+    "timestamp": "2026-08-10T09:53:37Z",
+    "timestampLocal": "2026-08-10T05:53:37-04:00",
     "executedBy": "nicole.weber@unisco.com (via GitHub Specialist — freshness update; no live TicketOps/Outlook connection)",
     "type": "scheduled_refresh_freshness_only",
-    "previousRefreshId": "refresh-2026-08-09T21:30ET-BUCKET-CORRECTION",
-    "keyChange": "FRESHNESS REFRESH: Ages updated to Aug 10 05:14 ET. UFN-64221 12d/~293h, UFN-64870 7d/~173h, UFN-65592 3d/~77h. Action buckets unchanged (Watch=2, Medium=1). TicketOps data preserved from last verified state (Aug 9 21:30 ET) — no live connection available. Public/data zero-state (Aug 10 00:20 ET) reverted to match verified dashboard/data."
+    "previousRefreshId": "refresh-2026-08-10T05:14ET-FRESHNESS",
+    "keyChange": "FRESHNESS REFRESH: Ages updated to Aug 10 05:53 ET. UFN-64221 12d/~294h, UFN-64870 7d/~174h, UFN-65592 3d/~78h. Action buckets unchanged (Watch=2, Medium=1). TicketOps data preserved from last verified state (Aug 9 21:30 ET) — no live connection available. Public/data synced from verified dashboard/data."
   },
   "rulesApplied": {
     "includeStatuses": ["New", "Open", "Pending"],
@@ -20,7 +20,7 @@
     "closeFlagVerification": "REQUIRED — closeFlag=false regardless of displayStatus"
   },
   "dataSources": {
-    "tickets": { "source": "TicketOps — preserved from last verified state Aug 9 21:30 ET. No live connection for this refresh.", "status": "preserved_verified_stable", "queryTimestamp": "2026-08-09 21:30 ET", "file": "data/tickets.json", "methodologyNote": "3 eligible Pending tickets confirmed via direct ID cross-check Aug 9 20:43 ET. Ages updated for Aug 10 05:14 ET. No status changes verifiable without live TicketOps connection." },
+    "tickets": { "source": "TicketOps — preserved from last verified state Aug 9 21:30 ET. No live connection for this refresh.", "status": "preserved_verified_stable", "queryTimestamp": "2026-08-09 21:30 ET", "file": "data/tickets.json", "methodologyNote": "3 eligible Pending tickets confirmed via direct ID cross-check Aug 9 20:43 ET. Ages updated for Aug 10 05:53 ET. No status changes verifiable without live TicketOps connection." },
     "outlook": { "source": "Outlook agent — preserved from prior state. No live connection for this refresh.", "status": "preserved_non_blocking_1of3_direct_100pct_partial", "queryTimestamp": "2026-08-09 21:30 ET", "file": "data/outlook-context.json" }
   },
   "dashboardState": {
@@ -54,12 +54,12 @@
       "shortTerm": 0, "shortTermDetail": [],
       "mediumTerm": 1,
       "mediumTermDetail": [
-        "UFN-65592: Tweety Lamoste — Monday 08/10 Inbounds (25 appointments). ~77h old. On-Track. Due Aug 12."
+        "UFN-65592: Tweety Lamoste — Monday 08/10 Inbounds (25 appointments). ~78h old. On-Track. Due Aug 12."
       ],
       "watch": 2,
       "watchDetail": [
-        "UFN-64221: DUPRY USA LLC — Greensboro rework. ~293h (12d). SLA BREACHED. Yang-Lhing out; backup Kent Joseph Lim.",
-        "UFN-64870: SPLENDOR WATER LLC — OS&D-RN-19245. ~173h (7d). SLA BREACHED. Kent Claud Caballero."
+        "UFN-64221: DUPRY USA LLC — Greensboro rework. ~294h (12d). SLA BREACHED. Yang-Lhing out; backup Kent Joseph Lim.",
+        "UFN-64870: SPLENDOR WATER LLC — OS&D-RN-19245. ~174h (7d). SLA BREACHED. Kent Claud Caballero."
       ]
     },
     "evidenceMetrics": {
@@ -70,10 +70,10 @@
       "closeFlagCorrections": 3,
       "slaBreachCount": 2,
       "slaBreachRisk": "ELEVATED — 2 of 3 eligible tickets SLA BREACHED",
-      "dataFreshness": "Preserved — TicketOps data last verified Aug 9 21:30 ET. Ages current to Aug 10 05:14 ET."
+      "dataFreshness": "Preserved — TicketOps data last verified Aug 9 21:30 ET. Ages current to Aug 10 05:53 ET."
     }
   },
-  "discrepancyNote": "PUBLIC/DATA ZERO-STATE REVERTED: public/data/tickets.json previously showed zero eligible tickets (Aug 10 00:20 ET), claiming all 3 resolved overnight. This was inconsistent with the authoritative dashboard/data/tickets.json verified via direct TicketOps ID cross-check. Public/data reverted to match verified dashboard/data state. Recommend re-verification with live TicketOps connection.",
+  "discrepancyNote": "PUBLIC/DATA ZERO-STATE PREVIOUSLY REVERTED (05:14 ET refresh). No new zero-state observed for this refresh. Public/data remains synced to verified dashboard/data state.",
   "notes": "3 eligible Pending tickets. 2 SLA BREACHED (UFN-64221 12d, UFN-64870 7d). 1 On-Track (UFN-65592, due Aug 12). Action buckets: Watch=2, Medium=1. Monday 08/10: 25 Cesanek inbound appointments. Outlook: 1/3 direct match. KD Nutra monitor. RECOMMEND: verify ticket statuses with live TicketOps connection; confirm DUPRY coverage; verify Monday inbound readiness with Tweety.",
-  "nextScheduledRefresh": "2026-08-10 05:30 ET"
+  "nextScheduledRefresh": "2026-08-10 06:08 ET"
 }
