@@ -1,1 +1,78 @@
-{"description":"Outlook email context for NHT/Cesanek tickets — LIVE scan Aug 10 23:13 ET. Non-blocking supplement to TicketOps.","facility":"NHT/Cesanek","facilityCode":"LT_F21","generatedAt":"2026-08-11T03:20:00Z","lastRefreshed":"2026-08-10T23:20:00-04:00","dataSource":"Outlook agent — LIVE scan Aug 10, 2026 (past 30 days from nicole.weber@unisco.com)","threadsMatched":5,"threadsUniquePostDedup":14,"coverage":{"eligibleTicketsTotal":48,"eligibleTicketsWithOutlookDirect":5,"coveragePct":"10% direct matches; 14 operational threads"},"ticketThreads":[{"ticketId":"UFN-65043","customer":"COLAVITA USA/O Olive Oil","directMatch":true,"contextSummary":"Paolo Colavita urgently following up TO5020/TO5022 Edison transfer. No delivery date.","threadDate":"2026-08-11"},{"ticketId":"UFN-65895","customer":"Nourison","directMatch":true,"contextSummary":"RN-19186 & RN-19185 devanned, ready for pickup.","threadDate":"2026-08-10"},{"ticketId":"UFN-65857","customer":"Ritual Beverage","directMatch":true,"contextSummary":"Nina Weiss (ABF) requesting CBOL. Yang-Lhing added Nicole.","threadDate":"2026-08-10"},{"ticketId":"UFN-65035","customer":"Niagara Bottling","directMatch":true,"contextSummary":"Missed pickup PIT-0811-DUYTAN + load cancellations.","threadDate":"2026-08-10"},{"ticketId":"UFN-65779","customer":"COLAVITA USA","directMatch":true,"contextSummary":"Kyle Wittenbauer asking TO Status.","threadDate":"2026-08-10"}],"operationalThreads":[{"thread":"EOD 8/10 — Nicole Weber","summary":"Colavita RN-19455/19445/19233, Innova/KD Nutra, Roar, Hint (multiple DNs), Ritual, Prime Time. FLAGGED: DN-1604739 (May order on dock)."},{"thread":"Erin EOD 8.10","summary":"Missed pickups PE/Niagara, Rise, Smeg. CKNAPP 3 DNs COMMIT FAILED. Aterian ~46 DNs night-shift prep."},{"thread":"Item Master Updates Needed (Prime Time)","summary":"Remeasure/weigh still pending since Jul 10."}],"activeEscalations":[{"thread":"Colavita TO5020/TO5022 Edison Transfer","riskLevel":"HIGH"},{"thread":"CKNAPP COMMIT FAILED — 3 DNs Blocked","riskLevel":"HIGH"},{"thread":"Niagara PIT-0811-DUYTAN Missed Pickup","riskLevel":"MEDIUM"},{"thread":"Aterian ~46 DNs Night-Shift Prep","riskLevel":"MEDIUM"}],"outlookCustomersActive":["Colavita USA","Nourison","Ritual Beverage","Niagara Bottling","Innova/KD Nutra","Roar Beverages","Hint Inc.","Prime Time Packaging","CKNAPP","Aterian","Maizly","Splendor Water","Smeg USA","Uptime Energy/Rise"]}
+{
+  "description": "Outlook email context for NHT/Cesanek tickets — FRESHNESS REFRESH Aug 11 00:11 ET. Non-blocking supplement to TicketOps. Outlook data preserved from LIVE scan Aug 10 23:13 ET.",
+  "facility": "NHT/Cesanek",
+  "facilityCode": "LT_F21",
+  "generatedAt": "2026-08-11T04:11:30Z",
+  "lastRefreshed": "2026-08-11T00:11:30-04:00",
+  "dataSource": "Outlook agent — LIVE scan Aug 10, 2026 (past 30 days from nicole.weber@unisco.com). Preserved for freshness refresh.",
+  "threadsMatched": 5,
+  "threadsUniquePostDedup": 14,
+  "coverage": {
+    "eligibleTicketsTotal": 48,
+    "eligibleTicketsWithOutlookDirect": 5,
+    "coveragePct": "10% direct matches; 14 operational threads"
+  },
+  "ticketThreads": [
+    {
+      "ticketId": "UFN-65043",
+      "customer": "COLAVITA USA/O Olive Oil",
+      "directMatch": true,
+      "contextSummary": "Paolo Colavita urgently following up TO5020/TO5022 Edison transfer. No delivery date.",
+      "threadDate": "2026-08-11"
+    },
+    {
+      "ticketId": "UFN-65895",
+      "customer": "Nourison",
+      "directMatch": true,
+      "contextSummary": "RN-19186 & RN-19185 devanned, ready for pickup.",
+      "threadDate": "2026-08-10"
+    },
+    {
+      "ticketId": "UFN-65857",
+      "customer": "Ritual Beverage",
+      "directMatch": true,
+      "contextSummary": "Nina Weiss (ABF) requesting CBOL. Yang-Lhing added Nicole.",
+      "threadDate": "2026-08-10"
+    },
+    {
+      "ticketId": "UFN-65035",
+      "customer": "Niagara Bottling",
+      "directMatch": true,
+      "contextSummary": "Missed pickup PIT-0811-DUYTAN + load cancellations.",
+      "threadDate": "2026-08-10"
+    },
+    {
+      "ticketId": "UFN-65779",
+      "customer": "COLAVITA USA",
+      "directMatch": true,
+      "contextSummary": "Kyle Wittenbauer asking TO Status.",
+      "threadDate": "2026-08-10"
+    }
+  ],
+  "operationalThreads": [
+    {
+      "thread": "EOD 8/10 — Nicole Weber",
+      "summary": "Colavita RN-19455/19445/19233, Innova/KD Nutra, Roar, Hint (multiple DNs), Ritual, Prime Time. FLAGGED: DN-1604739 (May order on dock)."
+    },
+    {
+      "thread": "Erin EOD 8.10",
+      "summary": "Missed pickups PE/Niagara, Rise, Smeg. CKNAPP 3 DNs COMMIT FAILED. Aterian ~46 DNs night-shift prep."
+    },
+    {
+      "thread": "Item Master Updates Needed (Prime Time)",
+      "summary": "Remeasure/weigh still pending since Jul 10."
+    }
+  ],
+  "activeEscalations": [
+    { "thread": "Colavita TO5020/TO5022 Edison Transfer", "riskLevel": "HIGH" },
+    { "thread": "CKNAPP COMMIT FAILED — 3 DNs Blocked", "riskLevel": "HIGH" },
+    { "thread": "Niagara PIT-0811-DUYTAN Missed Pickup", "riskLevel": "MEDIUM" },
+    { "thread": "Aterian ~46 DNs Night-Shift Prep", "riskLevel": "MEDIUM" }
+  ],
+  "outlookCustomersActive": [
+    "Colavita USA", "Nourison", "Ritual Beverage", "Niagara Bottling",
+    "Innova/KD Nutra", "Roar Beverages", "Hint Inc.", "Prime Time Packaging",
+    "CKNAPP", "Aterian", "Maizly", "Splendor Water", "Smeg USA", "Uptime Energy/Rise"
+  ],
+  "refreshNote": "FRESHNESS REFRESH — Outlook context preserved from Aug 10 23:13 ET LIVE scan. Non-blocking; TicketOps authoritative."
+}
