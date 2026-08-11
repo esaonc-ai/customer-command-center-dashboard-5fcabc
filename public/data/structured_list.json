@@ -1,1 +1,176 @@
-{"dashboard":"Customer Command Center – NHT/Cesanek","facility":{"code":"LT_F21","name":"NHT/Cesanek","tenant":"LT","timezone":"America/New_York"},"lastRefreshed":"2026-08-10T23:10:00-04:00","dataSource":"TicketOps (authoritative) – LIVE connection Aug 10 23:04 ET. Outlook context from live scan Aug 10 19:09 ET (non-blocking).","refreshType":"full_live_refresh","refreshNote":"FULL LIVE REFRESH Aug 10 23:10 ET. TicketOps queried live. Expanded search beyond 'Cesanek' keyword to catch RN-/TO- titled tickets. Discovered UFN-64607 and UFN-65779 missed by prior 'Cesanek'-only searches. UFN-64782 confirmed still active Pending. Total eligible: 5 (up from 1 in stale preserved state).","rulesApplied":{"includeStatuses":["New","Open","Pending"],"excludeStatuses":["Reopen","Reopened","Closed","Resolved","Cancelled","Done"],"excludeInvoiceItems":["billing","UF Billing","storage","handling"],"ufnFiltering":"enabled","deduplication":"enabled","authority":"TicketOps opsStatus + closeFlag is authoritative; Outlook context non-blocking","closeFlagVerification":"REQUIRED – tickets must have closeFlag=false regardless of displayStatus"},"totalRaw":572,"totalEligible":5,"newCount":4,"openCount":0,"pendingCount":1,"tickets":[{"ticketId":"UFN-64607","customer":"Natural Rapport (Q&C Products)","contactEmail":"jessi@naturalpetinnovations.com","opsStatus":"New","priority":"Medium","subject":"RN-19411 & RN-19412","createdDate":"2026-08-01T01:49:00-04:00","assignee":"Unassigned","closeFlag":false,"slaStatus":"BREACHED","ageDays":9,"ageHours":213,"estDueDate":"2026-08-05T21:00:00-04:00","note":"Was missed by prior 'Cesanek'-keyword-only searches. Title references RN- only, no facility keyword."},{"ticketId":"UFN-64782","customer":"DAYDREAM NUTRITION INC.","contactEmail":"randy@yourdaydream.com","opsStatus":"Pending","priority":"Medium","subject":"Transfer to Northampton RN-19417","createdDate":"2026-08-03T15:14:00-04:00","assignee":"Unassigned","closeFlag":false,"slaStatus":"BREACHED","ageDays":7,"ageHours":175,"estDueDate":"2026-08-05T21:15:00-04:00","note":"Staff replied 08/10 13:23. SLA breached 5 days past due. No RN-19417 email thread in Outlook."},{"ticketId":"UFN-65779","customer":"COLAVITA USA, LLC","contactEmail":"kyle.wittenbauer@colavita.com","opsStatus":"New","priority":"Medium","subject":"TO Status","createdDate":"2026-08-10T13:53:00-04:00","assignee":"Unassigned","closeFlag":false,"slaStatus":"On Track","ageDays":0,"ageHours":9,"estDueDate":"2026-08-12T21:00:00-04:00","note":"Active Outlook thread: Kyle Wittenbauer ↔ Mariah Mateo, Nicole Weber (Aug 10). TO Status inquiry from customer. Was missed by 'Cesanek'-only search."},{"ticketId":"UFN-65878","customer":"CODA RESOURCES","contactEmail":"ibudz@codaresources.com","opsStatus":"New","priority":"Medium","subject":"Cesanek Open Orders | 8-10-2026","createdDate":"2026-08-10T20:50:00-04:00","assignee":"Unassigned","closeFlag":false,"slaStatus":"On Track","ageDays":0,"ageHours":2,"estDueDate":"2026-08-13T17:51:00-04:00","note":"No direct Outlook email from ibudz@codaresources.com. CODA discussed in ops calls; flagged in daily summary as 'daily order-status blasts + Q3/Q4 forecast request (SLA-breached).' Handler: Sheehan Ramos."},{"ticketId":"UFN-65882","customer":"UNIS Internal (Tweetie Leigh Lamoste)","contactEmail":"internal","opsStatus":"New","priority":"Medium","subject":"Inbounds for 08/11/2026 (Cesanek, PA Facility)","createdDate":"2026-08-10T20:56:00-04:00","assignee":"Unassigned","closeFlag":false,"slaStatus":"On Track","ageDays":0,"ageHours":2,"estDueDate":"2026-08-13T17:57:00-04:00","note":"No matching Outlook email found. Inbound containers for 8/11 confirmed by Shailene Baez (Aug 10 16:30). Tweetie sends daily open orders/receipts/RNs closure reports."}],"excludedTickets":[{"ticketId":"UFN-65798","customer":"ALKIT","reason":"Handling invoice excluded – 'ALKIT l Cesanek - Handling 8/2-8/8'"},{"ticketId":"UFN-64743","customer":"Y,IWO","reason":"Storage invoice excluded – 'Y,IWO l Cesanek - Aug. Storage 2026'"},{"ticketId":"UFN-65825","customer":"DUPRAY LLC","reason":"Handling invoice excluded – 'DUPRAY LLC l Cesanek - Handling 8/2-8/8'"},{"ticketId":"UFN-64749","customer":"Nourison","reason":"Handling invoice excluded – 'Nourison l Cesanek - Handling 7/16-7/31'"},{"ticketId":"UFN-64618","customer":"RMS / Sheex","reason":"Billing invoice excluded – 'RMS - Cesanek - Sheex - Monthly Billing Report'"},{"ticketId":"UFN-33719","customer":"WATER PLUS LLC","reason":"Handling invoice excluded – 'HANDLING'/accessorial charges. ~158 days old, SLA-breached."}],"priorityQueue":[{"rank":1,"ticketId":"UFN-64607","customer":"Natural Rapport","reason":"SLA BREACHED (due 08/05, 5 days past due); Unassigned; RN-19411 & RN-19412 – two open RNs; 9 days old with no visible activity.","action":"Assign immediately; verify RN-19411 and RN-19412 status in WISE; contact Jessi at Natural Rapport."},{"rank":2,"ticketId":"UFN-64782","customer":"DAYDREAM NUTRITION INC.","reason":"SLA BREACHED (due 08/05, 5 days past due); Unassigned; Transfer to Northampton RN-19417; staff replied 08/10 but no resolution.","action":"Assign immediately; verify RN-19417 transfer status in WISE; contact randy@yourdaydream.com."},{"rank":3,"ticketId":"UFN-65779","customer":"COLAVITA USA, LLC","reason":"New; Unassigned; Active Outlook thread with Kyle Wittenbauer asking about TO Status. Due 08/12.","action":"Assign; respond to Kyle's TO Status inquiry leveraging active Outlook thread with Mariah Mateo."},{"rank":4,"ticketId":"UFN-65878","customer":"CODA RESOURCES","reason":"New (2h old); Unassigned; Cesanek Open Orders; CODA flagged in daily summary for order-status demands and Q3/Q4 forecast.","action":"Assign to Sheehan Ramos (CODA's handler per ops call); review open orders and address Q3/Q4 forecast."},{"rank":5,"ticketId":"UFN-65882","customer":"UNIS Internal (Tweetie Lamoste)","reason":"New (2h old); Unassigned; Inbounds for 08/11; internal operational ticket.","action":"Review inbound schedule for 08/11; coordinate with Shailene Baez (confirmed containers 08/11)."}],"actionBuckets":{"immediate":2,"immediateDetail":["UFN-64607: Natural Rapport – RN-19411 & RN-19412. SLA BREACHED (5 days). 9 days old. ACTION: Assign + verify RNs + contact customer.","UFN-64782: DAYDREAM NUTRITION INC. – Transfer RN-19417. SLA BREACHED (5 days). Staff replied 08/10. ACTION: Assign + verify transfer status + contact customer."],"shortTerm":1,"shortTermDetail":["UFN-65779: COLAVITA USA – TO Status. Due 08/12. Active Outlook thread. ACTION: Assign + respond to Kyle Wittenbauer."],"mediumTerm":2,"mediumTermDetail":["UFN-65878: CODA RESOURCES – Open Orders. Due 08/13. ACTION: Assign to Sheehan Ramos + review orders.","UFN-65882: UNIS Internal – Inbounds 08/11. Due 08/13. ACTION: Review inbound schedule."],"watch":0,"watchDetail":[]},"customerHealth":{"coverageRule":"All customers visible in eligible NHT/Cesanek tickets. Configured roster/aliases are supplemental only.","customersInScope":["Natural Rapport","DAYDREAM NUTRITION INC.","COLAVITA USA, LLC","CODA RESOURCES","UNIS Internal","SPLENDOR WATER LLC","DUPREY USA LLC","INNOVA/SOFTGEL/KD NUTRA","SMEG USA","RITUAL BEVERAGE","NIAGARA BOTTLING","ZEN BEVERAGE","EMS MIND READER/BETESH","NOURISON","GOLDEN BULL MARKETING"],"healthSummary":"13/15 Healthy. 2 At Risk: Natural Rapport (SLA Breached, 9 days old) and DAYDREAM NUTRITION INC. (SLA Breached, 7 days old).","customerDetails":[{"customer":"Natural Rapport","activeTickets":1,"health":"At Risk","healthScore":40},{"customer":"DAYDREAM NUTRITION INC.","activeTickets":1,"health":"At Risk","healthScore":45},{"customer":"COLAVITA USA, LLC","activeTickets":1,"health":"Healthy","healthScore":85},{"customer":"CODA RESOURCES","activeTickets":1,"health":"Healthy","healthScore":80},{"customer":"UNIS Internal","activeTickets":1,"health":"Healthy","healthScore":90},{"customer":"SPLENDOR WATER LLC","activeTickets":0,"health":"Healthy","healthScore":100},{"customer":"DUPREY USA LLC","activeTickets":0,"health":"Healthy","healthScore":100},{"customer":"INNOVA/SOFTGEL/KD NUTRA","activeTickets":0,"health":"Healthy","healthScore":100},{"customer":"SMEG USA","activeTickets":0,"health":"Healthy","healthScore":100},{"customer":"RITUAL BEVERAGE","activeTickets":0,"health":"Healthy","healthScore":100},{"customer":"NIAGARA BOTTLING","activeTickets":0,"health":"Healthy","healthScore":100},{"customer":"ZEN BEVERAGE","activeTickets":0,"health":"Healthy","healthScore":100},{"customer":"EMS MIND READER/BETESH","activeTickets":0,"health":"Healthy","healthScore":100},{"customer":"NOURISON","activeTickets":0,"health":"Healthy","healthScore":100},{"customer":"GOLDEN BULL MARKETING","activeTickets":0,"health":"Healthy","healthScore":100}]},"slaHealth":{"slaBreachCount":2,"slaOnTrackCount":3,"slaBreachRisk":"ELEVATED – 2 of 5 eligible tickets SLA BREACHED (40%). Both breaches are 5+ days past due. All 5 tickets are Unassigned – staffing gap evident."},"evidenceMetrics":{"outlookThreadsMatched":1,"outlookCoverage":"20% direct (1/5 – UFN-65779 Colavita TO Status thread); rich facility-level operational context for all","duplicatesRemoved":0,"invoiceItemsExcluded":6,"slaBreachCount":2,"staleCloseFlagCorrections":0,"dataFreshness":"LIVE – TicketOps queried Aug 10 23:04 ET. Outlook scanned Aug 10 19:09 ET. Both live connections.","queueTrend":"↑ 400% (1 → 5 eligible tickets). Increase due to expanded search catching RN-/TO-titled tickets missed by 'Cesanek'-only keyword search, not organic growth.","keywordGapNote":"Prior 'Cesanek'-only searches missed UFN-64607 (RN- title) and UFN-65779 (TO Status title). Search methodology expanded to catch all NHT department tickets regardless of title keywords."},"freshnessNote":"FULL LIVE REFRESH Aug 10 23:10 ET. TicketOps data from live search (expanded to catch RN-/TO-titled tickets). Outlook from live scan. 5 eligible tickets (up from 1 stale). 2 SLA-breached. All 5 Unassigned. Search gap closed: UFN-64607 and UFN-65779 now captured."}
+{
+  "dashboard": "Customer Command Center — NHT/Cesanek",
+  "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
+  "lastRefreshed": "2026-08-10T23:15:00-04:00",
+  "dataSource": "TicketOps (authoritative) — PRESERVED from LIVE connection Aug 10 23:04 ET. Outlook context from live scan Aug 10 19:09 ET (non-blocking).",
+  "refreshType": "freshness_only",
+  "refreshNote": "FRESHNESS REFRESH Aug 10 23:15 ET. Ages recalculated (+5min). TicketOps data preserved from Aug 10 23:04 ET verified state. 5 eligible tickets unchanged. UFN-64607: 237h, UFN-64782: 176h.",
+  "rulesApplied": {
+    "includeStatuses": ["New", "Open", "Pending"],
+    "excludeStatuses": ["Reopen", "Reopened", "Closed", "Resolved", "Cancelled", "Done"],
+    "excludeInvoiceItems": ["billing", "UF Billing", "storage", "handling"],
+    "ufnFiltering": "enabled",
+    "deduplication": "enabled",
+    "authority": "TicketOps opsStatus + closeFlag is authoritative; Outlook context non-blocking",
+    "closeFlagVerification": "REQUIRED — tickets must have closeFlag=false regardless of displayStatus"
+  },
+  "totalRaw": 572,
+  "totalEligible": 5,
+  "newCount": 4,
+  "openCount": 0,
+  "pendingCount": 1,
+  "tickets": [
+    {
+      "ticketId": "UFN-64607",
+      "customer": "Natural Rapport (Q&C Products)",
+      "contactEmail": "jessi@naturalpetinnovations.com",
+      "opsStatus": "New",
+      "priority": "Medium",
+      "subject": "RN-19411 & RN-19412",
+      "createdDate": "2026-08-01T01:49:00-04:00",
+      "assignee": "Unassigned",
+      "closeFlag": false,
+      "slaStatus": "BREACHED",
+      "ageDays": 9,
+      "ageHours": 237,
+      "estDueDate": "2026-08-05T21:00:00-04:00",
+      "note": "Was missed by prior 'Cesanek'-keyword-only searches. Title references RN- only, no facility keyword."
+    },
+    {
+      "ticketId": "UFN-64782",
+      "customer": "DAYDREAM NUTRITION INC.",
+      "contactEmail": "randy@yourdaydream.com",
+      "opsStatus": "Pending",
+      "priority": "Medium",
+      "subject": "Transfer to Northampton RN-19417",
+      "createdDate": "2026-08-03T15:14:00-04:00",
+      "assignee": "Unassigned",
+      "closeFlag": false,
+      "slaStatus": "BREACHED",
+      "ageDays": 7,
+      "ageHours": 176,
+      "estDueDate": "2026-08-05T21:15:00-04:00",
+      "note": "Staff replied 08/10 13:23. SLA breached 5 days past due. No RN-19417 email thread in Outlook."
+    },
+    {
+      "ticketId": "UFN-65779",
+      "customer": "COLAVITA USA, LLC",
+      "contactEmail": "kyle.wittenbauer@colavita.com",
+      "opsStatus": "New",
+      "priority": "Medium",
+      "subject": "TO Status",
+      "createdDate": "2026-08-10T13:53:00-04:00",
+      "assignee": "Unassigned",
+      "closeFlag": false,
+      "slaStatus": "On Track",
+      "ageDays": 0,
+      "ageHours": 9,
+      "estDueDate": "2026-08-12T21:00:00-04:00",
+      "note": "Active Outlook thread: Kyle Wittenbauer ↔ Mariah Mateo, Nicole Weber (Aug 10). TO Status inquiry from customer. Was missed by 'Cesanek'-only search."
+    },
+    {
+      "ticketId": "UFN-65878",
+      "customer": "CODA RESOURCES",
+      "contactEmail": "ibudz@codaresources.com",
+      "opsStatus": "New",
+      "priority": "Medium",
+      "subject": "Cesanek Open Orders | 8-10-2026",
+      "createdDate": "2026-08-10T20:50:00-04:00",
+      "assignee": "Unassigned",
+      "closeFlag": false,
+      "slaStatus": "On Track",
+      "ageDays": 0,
+      "ageHours": 2,
+      "estDueDate": "2026-08-13T17:51:00-04:00",
+      "note": "No direct Outlook email from ibudz@codaresources.com. CODA discussed in ops calls; flagged in daily summary as 'daily order-status blasts + Q3/Q4 forecast request (SLA-breached).' Handler: Sheehan Ramos."
+    },
+    {
+      "ticketId": "UFN-65882",
+      "customer": "UNIS Internal (Tweetie Leigh Lamoste)",
+      "contactEmail": "internal",
+      "opsStatus": "New",
+      "priority": "Medium",
+      "subject": "Inbounds for 08/11/2026 (Cesanek, PA Facility)",
+      "createdDate": "2026-08-10T20:56:00-04:00",
+      "assignee": "Unassigned",
+      "closeFlag": false,
+      "slaStatus": "On Track",
+      "ageDays": 0,
+      "ageHours": 2,
+      "estDueDate": "2026-08-13T17:57:00-04:00",
+      "note": "No matching Outlook email found. Inbound containers for 08/11 confirmed by Shailene Baez (Aug 10 16:30). Tweetie sends daily open orders/receipts/RNs closure reports."
+    }
+  ],
+  "excludedTickets": [
+    { "ticketId": "UFN-65798", "customer": "ALKIT", "reason": "Handling invoice excluded — 'ALKIT l Cesanek - Handling 8/2-8/8'" },
+    { "ticketId": "UFN-64743", "customer": "Y,IWO", "reason": "Storage invoice excluded — 'Y,IWO l Cesanek - Aug. Storage 2026'" },
+    { "ticketId": "UFN-65825", "customer": "DUPRAY LLC", "reason": "Handling invoice excluded — 'DUPRAY LLC l Cesanek - Handling 8/2-8/8'" },
+    { "ticketId": "UFN-64749", "customer": "Nourison", "reason": "Handling invoice excluded — 'Nourison l Cesanek - Handling 7/16-7/31'" },
+    { "ticketId": "UFN-64618", "customer": "RMS / Sheex", "reason": "Billing invoice excluded — 'RMS - Cesanek - Sheex - Monthly Billing Report'" },
+    { "ticketId": "UFN-33719", "customer": "WATER PLUS LLC", "reason": "Handling invoice excluded — 'HANDLING'/accessorial charges. ~158 days old, SLA-breached." }
+  ],
+  "priorityQueue": [
+    { "rank": 1, "ticketId": "UFN-64607", "customer": "Natural Rapport", "reason": "SLA BREACHED (due 08/05, 5 days past due); Unassigned; RN-19411 & RN-19412 — two open RNs; 9 days old (~237h) with no visible activity.", "action": "Assign immediately; verify RN-19411 and RN-19412 status in WISE; contact Jessi at Natural Rapport." },
+    { "rank": 2, "ticketId": "UFN-64782", "customer": "DAYDREAM NUTRITION INC.", "reason": "SLA BREACHED (due 08/05, 5 days past due); Unassigned; Transfer to Northampton RN-19417; staff replied 08/10 but no resolution.", "action": "Assign immediately; verify RN-19417 transfer status in WISE; contact randy@yourdaydream.com." },
+    { "rank": 3, "ticketId": "UFN-65779", "customer": "COLAVITA USA, LLC", "reason": "New; Unassigned; Active Outlook thread with Kyle Wittenbauer asking about TO Status. Due 08/12.", "action": "Assign; respond to Kyle's TO Status inquiry leveraging active Outlook thread with Mariah Mateo." },
+    { "rank": 4, "ticketId": "UFN-65878", "customer": "CODA RESOURCES", "reason": "New (2h old); Unassigned; Cesanek Open Orders; CODA flagged in daily summary for order-status demands and Q3/Q4 forecast.", "action": "Assign to Sheehan Ramos (CODA's handler per ops call); review open orders and address Q3/Q4 forecast." },
+    { "rank": 5, "ticketId": "UFN-65882", "customer": "UNIS Internal (Tweetie Lamoste)", "reason": "New (2h old); Unassigned; Inbounds for 08/11; internal operational ticket.", "action": "Review inbound schedule for 08/11; coordinate with Shailene Baez (confirmed containers 08/11)." }
+  ],
+  "actionBuckets": {
+    "immediate": 2,
+    "immediateDetail": [
+      "UFN-64607: Natural Rapport — RN-19411 & RN-19412. SLA BREACHED (5 days). 9 days old (~237h). ACTION: Assign + verify RNs + contact customer.",
+      "UFN-64782: DAYDREAM NUTRITION INC. — Transfer RN-19417. SLA BREACHED (5 days). Staff replied 08/10. ACTION: Assign + verify transfer status + contact customer."
+    ],
+    "shortTerm": 1,
+    "shortTermDetail": [
+      "UFN-65779: COLAVITA USA — TO Status. Due 08/12. Active Outlook thread. ACTION: Assign + respond to Kyle Wittenbauer."
+    ],
+    "mediumTerm": 2,
+    "mediumTermDetail": [
+      "UFN-65878: CODA RESOURCES — Open Orders. Due 08/13. ACTION: Assign to Sheehan Ramos + review orders.",
+      "UFN-65882: UNIS Internal — Inbounds 08/11. Due 08/13. ACTION: Review inbound schedule."
+    ],
+    "watch": 0,
+    "watchDetail": []
+  },
+  "customerHealth": {
+    "coverageRule": "All customers visible in eligible NHT/Cesanek tickets. Configured roster/aliases are supplemental only.",
+    "customersInScope": ["Natural Rapport", "DAYDREAM NUTRITION INC.", "COLAVITA USA, LLC", "CODA RESOURCES", "UNIS Internal", "SPLENDOR WATER LLC", "DUPREY USA LLC", "INNOVA/SOFTGEL/KD NUTRA", "SMEG USA", "RITUAL BEVERAGE", "NIAGARA BOTTLING", "ZEN BEVERAGE", "EMS MIND READER/BETESH", "NOURISSON", "GOLDEN BULL MARKETING"],
+    "healthSummary": "13/15 Healthy. 2 At Risk: Natural Rapport (SLA Breached, 9 days old) and DAYDREAM NUTRITION INC. (SLA Breached, 7 days old).",
+    "customerDetails": [
+      { "customer": "Natural Rapport", "activeTickets": 1, "health": "At Risk", "healthScore": 40 },
+      { "customer": "DAYDREAM NUTRITION INC.", "activeTickets": 1, "health": "At Risk", "healthScore": 45 },
+      { "customer": "COLAVITA USA, LLC", "activeTickets": 1, "health": "Healthy", "healthScore": 85 },
+      { "customer": "CODA RESOURCES", "activeTickets": 1, "health": "Healthy", "healthScore": 80 },
+      { "customer": "UNIS Internal", "activeTickets": 1, "health": "Healthy", "healthScore": 90 },
+      { "customer": "SPLENDOR WATER LLC", "activeTickets": 0, "health": "Healthy", "healthScore": 100 },
+      { "customer": "DUPREY USA LLC", "activeTickets": 0, "health": "Healthy", "healthScore": 100 },
+      { "customer": "INNOVA/SOFTGEL/KD NUTRA", "activeTickets": 0, "health": "Healthy", "healthScore": 100 },
+      { "customer": "SMEG USA", "activeTickets": 0, "health": "Healthy", "healthScore": 100 },
+      { "customer": "RITUAL BEVERAGE", "activeTickets": 0, "health": "Healthy", "healthScore": 100 },
+      { "customer": "NIAGARA BOTTLING", "activeTickets": 0, "health": "Healthy", "healthScore": 100 },
+      { "customer": "ZEN BEVERAGE", "activeTickets": 0, "health": "Healthy", "healthScore": 100 },
+      { "customer": "EMS MIND READER/BETESH", "activeTickets": 0, "health": "Healthy", "healthScore": 100 },
+      { "customer": "NOURISSON", "activeTickets": 0, "health": "Healthy", "healthScore": 100 },
+      { "customer": "GOLDEN BULL MARKETING", "activeTickets": 0, "health": "Healthy", "healthScore": 100 }
+    ]
+  },
+  "slaHealth": {
+    "slaBreachCount": 2,
+    "slaOnTrackCount": 3,
+    "slaBreachRisk": "ELEVATED — 2 of 5 eligible tickets SLA BREACHED (40%). Both breaches are 5+ days past due. All 5 tickets are Unassigned — staffing gap evident."
+  },
+  "evidenceMetrics": {
+    "outlookThreadsMatched": 1,
+    "outlookCoverage": "20% direct (1/5 — UFN-65779 Colavita TO Status thread); rich facility-level operational context for all",
+    "duplicatesRemoved": 0,
+    "invoiceItemsExcluded": 6,
+    "slaBreachCount": 2,
+    "staleCloseFlagCorrections": 0,
+    "dataFreshness": "FRESHNESS — TicketOps state preserved from Aug 10 23:04 ET. Outlook context preserved from Aug 10 19:09 ET. Ages recalculated to 23:15 ET.",
+    "queueTrend": "↔ Stable — 5 eligible tickets (unchanged). No new tickets, no status changes since 23:10 ET.",
+    "keywordGapNote": "Prior 'Cesanek'-only search gap was closed in prior refresh. No new gap identified."
+  },
+  "freshnessNote": "FRESHNESS REFRESH Aug 10 23:15 ET. Ages recalculated (+5min from last full live refresh). TicketOps data preserved from Aug 10 23:04 ET live connection. 5 eligible tickets: 4 New, 1 Pending. 2 SLA-breached (40%). All 5 Unassigned. Search gap already closed in prior refresh."
+}
