@@ -2,39 +2,40 @@
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "tenant": "LT",
-  "generatedAt": "2026-08-11T10:52:39Z",
-  "lastRefreshed": "2026-08-11T06:52:39-04:00",
+  "generatedAt": "2026-08-11T10:56:56Z",
+  "lastRefreshed": "2026-08-11T06:56:56-04:00",
   "totalRaw": 572,
   "pipelineSummary": {
     "totalRaw": 572,
     "statusExcluded": 479,
     "invoiceItemExcluded": 8,
-    "closeFlagExcluded": 0,
+    "closeFlagExcluded": 1,
+    "reopenExcluded": 1,
     "deduplicated": 0,
-    "totalEligible": 9,
-    "byStatus": { "New": 8, "Open": 0, "Pending": 1 },
-    "ufnCount": 9
+    "totalEligible": 7,
+    "byStatus": { "New": 5, "Open": 0, "Pending": 2 },
+    "ufnCount": 7
   },
   "tickets": [
-    { "ticketId": "UFN-64607", "customer": "Natural Rapport", "opsStatus": "New", "priority": "Medium", "subject": "RN-19411 & RN-19412", "createdDate": "2026-08-01T01:49:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "BREACHED", "ageDays": 10, "ageHours": 245 },
-    { "ticketId": "UFN-64782", "customer": "DAYDREAM NUTRITION INC.", "opsStatus": "Pending", "priority": "Medium", "subject": "Transfer to Northampton RN-19417", "createdDate": "2026-08-03T15:14:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "BREACHED", "ageDays": 7, "ageHours": 184 },
-    { "ticketId": "UFN-65035", "customer": "Niagara Bottling", "opsStatus": "New", "priority": "High", "subject": "NIAGARA/UNIS/QUANTIX SCHEDULE – Missed Pickup", "createdDate": "2026-08-10T10:00:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "On Track", "ageDays": 0, "ageHours": 21, "outlookMatch": "DIRECT" },
-    { "ticketId": "UFN-65043", "customer": "COLAVITA USA/O Olive Oil", "opsStatus": "New", "priority": "High", "subject": "TO5020 Edison Transfer – Urgent", "createdDate": "2026-08-10T11:00:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "On Track", "ageDays": 0, "ageHours": 20, "outlookMatch": "DIRECT" },
-    { "ticketId": "UFN-65779", "customer": "COLAVITA USA", "opsStatus": "New", "priority": "Medium", "subject": "TO Status", "createdDate": "2026-08-10T13:53:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "On Track", "ageDays": 0, "ageHours": 17, "outlookMatch": "DIRECT" },
-    { "ticketId": "UFN-65876", "customer": "Vita Coco DTC", "opsStatus": "New", "priority": "High", "subject": "URGENT DN-5002110", "createdDate": "2026-08-10T20:00:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "On Track", "ageDays": 0, "ageHours": 11 },
-    { "ticketId": "UFN-65877", "customer": "UNIS Internal (Erin Cambra)", "opsStatus": "New", "priority": "High", "subject": "Erin EOD – Missed Pickups", "createdDate": "2026-08-10T20:10:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "On Track", "ageDays": 0, "ageHours": 11 },
-    { "ticketId": "UFN-65895", "customer": "Nourison", "opsStatus": "New", "priority": "Medium", "subject": "Containers Devanned TRKU4487366", "createdDate": "2026-08-10T21:35:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "On Track", "ageDays": 0, "ageHours": 9, "outlookMatch": "DIRECT" },
-    { "ticketId": "UFN-65857", "customer": "Ritual Beverage", "opsStatus": "New", "priority": "Medium", "subject": "ABF BOL Request", "createdDate": "2026-08-10T19:30:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "On Track", "ageDays": 0, "ageHours": 11, "outlookMatch": "DIRECT" }
+    { "ticketId": "UFN-64607", "customer": "Natural Rapport (Q&C Products)", "customerEmail": "jessi@naturalpetinnovations.com", "opsStatus": "New", "priority": "Medium", "subject": "RN-19411 & RN-19412", "createdDate": "2026-08-01T01:49:00-04:00", "lastUpdated": "2026-08-01T01:49:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "BREACHED", "ageDays": 10, "ageHours": 245 },
+    { "ticketId": "UFN-64782", "customer": "Daydream Nutrition Inc.", "customerEmail": "randy@yourdaydream.com", "opsStatus": "Pending", "priority": "Medium", "subject": "Transfer to Northampton RN-19417", "createdDate": "2026-08-03T15:14:00-04:00", "lastUpdated": "2026-08-10T00:00:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "BREACHED", "ageDays": 8, "ageHours": 184 },
+    { "ticketId": "UFN-65779", "customer": "Colavita USA LLC", "customerEmail": "kyle.wittenbauer@colavita.com", "opsStatus": "New", "priority": "Medium", "subject": "TO Status", "createdDate": "2026-08-10T13:53:00-04:00", "lastUpdated": "2026-08-10T13:53:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "On Track", "ageDays": 0, "ageHours": 17, "outlookMatch": "DIRECT" },
+    { "ticketId": "UFN-65876", "customer": "Vita Coco DTC", "customerEmail": "ohrvhel@catalyze-x.com", "opsStatus": "New", "priority": "High", "subject": "URGENT DN-5002110", "createdDate": "2026-08-10T20:00:00-04:00", "lastUpdated": "2026-08-10T20:00:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "On Track", "ageDays": 0, "ageHours": 11 },
+    { "ticketId": "UFN-65877", "customer": "Internal – Erin Cambra (EOD Report)", "customerEmail": "erin.cambra@unisco.com", "opsStatus": "New", "priority": "Medium", "subject": "Erin EOD – Missed Pickups", "createdDate": "2026-08-10T20:10:00-04:00", "lastUpdated": "2026-08-10T20:10:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "On Track", "ageDays": 0, "ageHours": 11 },
+    { "ticketId": "UFN-65895", "customer": "Nht Cs (Internal System)", "customerEmail": null, "opsStatus": "New", "priority": "Medium", "subject": "Automated Empty Notification Report", "createdDate": "2026-08-10T21:35:00-04:00", "lastUpdated": "2026-08-10T21:35:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "On Track", "ageDays": 0, "ageHours": 9 },
+    { "ticketId": "UFN-65857", "customer": "Ritual Beverage Co.", "customerEmail": "nweiss@abf.com", "opsStatus": "Pending", "priority": "Medium", "subject": "ABF BOL Request – Pickup/Scheduling", "createdDate": "2026-08-10T19:30:00-04:00", "lastUpdated": "2026-08-10T19:30:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "On Track", "ageDays": 0, "ageHours": 11, "outlookMatch": "DIRECT" }
   ],
   "excludedTickets": [
-    { "ticketId": "UFN-65798", "customer": "ALKIT", "reason": "Handling invoice" },
-    { "ticketId": "UFN-65825", "customer": "DUPRAY LLC", "reason": "Handling invoice" },
-    { "ticketId": "UFN-64749", "customer": "Nourison", "reason": "Handling invoice" },
-    { "ticketId": "UFN-64618", "customer": "RMS/Sheex", "reason": "Billing invoice" },
-    { "ticketId": "UFN-33719", "customer": "WATER PLUS LLC", "reason": "Handling invoice" }
+    { "ticketId": "UFN-65035", "customer": "Niagara Bottling", "reason": "closeFlag=true – closed Aug 5 by Yang-Lhing Bague", "excludedBy": "closeFlag" },
+    { "ticketId": "UFN-65043", "customer": "COLAVITA USA/O Olive Oil", "reason": "Reopen status – explicitly excluded per dashboard rules", "excludedBy": "reopenStatus" },
+    { "ticketId": "UFN-65798", "customer": "ALKIT", "reason": "Handling invoice", "excludedBy": "invoiceItem" },
+    { "ticketId": "UFN-65825", "customer": "DUPRAY LLC", "reason": "Handling invoice", "excludedBy": "invoiceItem" },
+    { "ticketId": "UFN-64749", "customer": "Nourison", "reason": "Handling invoice", "excludedBy": "invoiceItem" },
+    { "ticketId": "UFN-64618", "customer": "RMS/Sheex", "reason": "Billing invoice", "excludedBy": "invoiceItem" },
+    { "ticketId": "UFN-33719", "customer": "WATER PLUS LLC", "reason": "Handling invoice – Pending since Mar 5, 2026", "excludedBy": "invoiceItem" }
   ],
-  "reopenExcluded": ["UFN-65862", "UFN-65813", "UFN-65808", "UFN-65768", "UFN-65747", "UFN-63750", "UFN-63665"],
-  "statusResolvedInRefresh": ["UFN-65881", "UFN-65882", "UFN-65878", "UFN-65883", "UFN-65884", "UFN-65885", "UFN-65886", "UFN-65887", "UFN-65888", "UFN-65889", "UFN-65890", "UFN-65891", "UFN-65892", "UFN-65893", "UFN-65894", "UFN-65896", "UFN-65897", "UFN-65898", "UFN-65899", "UFN-65900", "UFN-65901", "UFN-65902", "UFN-65903", "UFN-65904", "UFN-65905", "UFN-65906", "UFN-65907", "UFN-65908", "UFN-65909", "UFN-65910", "UFN-65911", "UFN-65912", "UFN-65913", "UFN-65914", "UFN-65915", "UFN-65916", "UFN-65917", "UFN-65918", "UFN-65919"],
-  "truncationNote": "Previously ~100+ eligible; authoritative TicketOps refresh reduced to 9 verified.",
-  "refreshNote": "FRESHNESS REFRESH Aug 11 06:52 ET. Ages recalculated (+1h45m since authoritative 05:07 ET baseline). TicketOps data preserved from AUTHORITATIVE refresh. 9 verified eligible: 8 New, 1 Pending. 2 SLA-breached: UFN-64607 (245h/10d), UFN-64782 (184h/7d). All 9 Unassigned. 5 direct Outlook matches (56%)."
+  "reopenExcluded": ["UFN-65043", "UFN-65862", "UFN-65813", "UFN-65808", "UFN-65768", "UFN-65747", "UFN-63750", "UFN-63665"],
+  "statusResolvedInRefresh": ["UFN-65035", "UFN-65881", "UFN-65882", "UFN-65878", "UFN-65883", "UFN-65884", "UFN-65885", "UFN-65886", "UFN-65887", "UFN-65888", "UFN-65889", "UFN-65890", "UFN-65891", "UFN-65892", "UFN-65893", "UFN-65894", "UFN-65896", "UFN-65897", "UFN-65898", "UFN-65899", "UFN-65900", "UFN-65901", "UFN-65902", "UFN-65903", "UFN-65904", "UFN-65905", "UFN-65906", "UFN-65907", "UFN-65908", "UFN-65909", "UFN-65910", "UFN-65911", "UFN-65912", "UFN-65913", "UFN-65914", "UFN-65915", "UFN-65916", "UFN-65917", "UFN-65918", "UFN-65919"],
+  "truncationNote": "AUTHORITATIVE LIVE TicketOps verification Aug 11 06:55 ET narrowed to 7: removed UFN-65035 (closeFlag=true) and UFN-65043 (Reopen status).",
+  "refreshNote": "AUTHORITATIVE REFRESH Aug 11 06:56 ET. LIVE TicketOps connection verified 7 eligible: 5 New, 2 Pending. 2 SLA-breached. All 7 Unassigned. 3/7 Outlook matches (43%)."
 }
