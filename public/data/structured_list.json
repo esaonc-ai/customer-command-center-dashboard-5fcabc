@@ -1,29 +1,29 @@
 {
   "dashboard": "Customer Command Center – NHT/Cesanek",
   "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
-  "lastRefreshed": "2026-08-11T03:15:30-04:00",
-  "dataSource": "TicketOps (authoritative) – PRESERVED from LIVE connection Aug 10 23:13 ET. Outlook context from LIVE scan Aug 10 23:13 ET (non-blocking).",
-  "refreshType": "freshness",
+  "lastRefreshed": "2026-08-11T03:20:30-04:00",
+  "dataSource": "TicketOps (authoritative) – LIVE connection Aug 11 03:20 ET. Outlook context from LIVE scan Aug 10 23:13 ET (non-blocking).",
+  "refreshType": "authoritative",
   "totalRaw": 572,
-  "totalEligible": 48,
-  "newCount": 33,
+  "totalEligible": 9,
+  "newCount": 8,
   "openCount": 0,
-  "pendingCount": 15,
-  "truncationNote": "API returned ~100+ eligible; ~48 named here.",
+  "pendingCount": 1,
+  "truncationNote": "Authoritative refresh: 48 stale → 9 verified. 39 resolved/closed during ~8h gap.",
   "slaHealth": {
     "slaBreachCount": 2,
-    "slaOnTrackCount": 46,
-    "slaBreachRisk": "ELEVATED – 2/48 SLA BREACHED (4%). UFN-64607 (241h, now 10d), UFN-64782 (180h). All 48 Unassigned."
+    "slaOnTrackCount": 7,
+    "slaBreachRisk": "ELEVATED – 2/9 SLA BREACHED (22%). UFN-64607 (242h/10d), UFN-64782 (180h/7d). All 9 Unassigned."
   },
   "evidenceMetrics": {
     "outlookThreadsMatched": 5,
-    "outlookCoverage": "10% direct (5/48); 14 operational threads, 4 escalations",
+    "outlookCoverage": "56% direct (5/9); 14 operational threads, 4 escalations",
     "outlookCustomers": 14,
     "invoiceItemsExcluded": 8,
     "reopenExcluded": 15,
     "slaBreachCount": 2,
-    "dataFreshness": "FRESHNESS – Aug 11 03:15 ET (TicketOps preserved from Aug 10 23:20 ET LIVE state, ages +3h4m)",
-    "queueTrend": "→ STABLE at 48 – ages recalculated, no new TicketOps connection",
-    "staffingGap": "CRITICAL – All 48 tickets Unassigned"
+    "dataFreshness": "AUTHORITATIVE – Aug 11 03:20 ET (fresh TicketOps LIVE connection)",
+    "queueTrend": "↓ SHRANK 48→9 – 81% reduction from stale state after verified TicketOps statuses",
+    "staffingGap": "CRITICAL – All 9 tickets Unassigned"
   }
 }
