@@ -2,8 +2,8 @@
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "tenant": "LT",
-  "generatedAt": "2026-08-11T03:15:00Z",
-  "lastRefreshed": "2026-08-10T23:15:00-04:00",
+  "generatedAt": "2026-08-11T03:24:00Z",
+  "lastRefreshed": "2026-08-10T23:24:00-04:00",
   "totalRaw": 572,
   "pipelineSummary": {
     "totalRaw": 572,
@@ -58,7 +58,7 @@
       "closeFlag": false,
       "slaStatus": "On Track",
       "ageDays": 0,
-      "ageHours": 9,
+      "ageHours": 10,
       "estDueDate": "2026-08-12T21:00:00-04:00"
     },
     {
@@ -73,7 +73,7 @@
       "closeFlag": false,
       "slaStatus": "On Track",
       "ageDays": 0,
-      "ageHours": 2,
+      "ageHours": 3,
       "estDueDate": "2026-08-13T17:51:00-04:00"
     },
     {
@@ -93,17 +93,17 @@
     }
   ],
   "excludedTickets": [
-    { "ticketId": "UFN-65798", "customer": "ALKIT", "reason": "Handling invoice excluded — 'ALKIT l Cesanek - Handling 8/2-8/8'" },
-    { "ticketId": "UFN-64743", "customer": "Y,IWO", "reason": "Storage invoice excluded — 'Y,IWO l Cesanek - Aug. Storage 2026'" },
-    { "ticketId": "UFN-65825", "customer": "DUPRAY LLC", "reason": "Handling invoice excluded — 'DUPRAY LLC l Cesanek - Handling 8/2-8/8'" },
-    { "ticketId": "UFN-64749", "customer": "Nourison", "reason": "Handling invoice excluded — 'Nourison l Cesanek - Handling 7/16-7/31'" },
-    { "ticketId": "UFN-64618", "customer": "RMS / Sheex", "reason": "Billing invoice excluded — 'RMS - Cesanek - Sheex - Monthly Billing Report'" },
-    { "ticketId": "UFN-33719", "customer": "WATER PLUS LLC", "reason": "Handling invoice excluded — 'HANDLING'/accessorial charges. ~158 days old, SLA-breached." }
+    { "ticketId": "UFN-65798", "customer": "ALKIT", "reason": "Handling invoice excluded" },
+    { "ticketId": "UFN-64743", "customer": "Y,IWO", "reason": "Storage invoice excluded" },
+    { "ticketId": "UFN-65825", "customer": "DUPRAY LLC", "reason": "Handling invoice excluded" },
+    { "ticketId": "UFN-64749", "customer": "Nourison", "reason": "Handling invoice excluded" },
+    { "ticketId": "UFN-64618", "customer": "RMS / Sheex", "reason": "Billing invoice excluded" },
+    { "ticketId": "UFN-33719", "customer": "WATER PLUS LLC", "reason": "Handling invoice excluded (~158d, SLA-breached)" }
   ],
   "previouslyEligibleNowResolved": [
     { "ticketId": "UFN-64221", "customer": "DUPREY USA LLC", "wasStatus": "Pending SLA BREACHED (12d)", "resolvedBetween": "Aug 9-10, 2026" },
     { "ticketId": "UFN-64870", "customer": "SPLENDOR WATER LLC", "wasStatus": "Pending SLA BREACHED (7d)", "resolvedBetween": "Aug 9-10, 2026" },
     { "ticketId": "UFN-65592", "customer": "Tweetie Leigh Lamoste (UNIS Internal)", "wasStatus": "Pending On-Track", "resolvedBetween": "Aug 9-10, 2026" }
   ],
-  "refreshNote": "FRESHNESS REFRESH Aug 10 23:15 ET. Ages recalculated. TicketOps state preserved from Aug 10 23:04 ET live connection. 5 eligible tickets: 4 New, 1 Pending. 2 SLA-breached. All 5 Unassigned."
+  "refreshNote": "FRESHNESS REFRESH Aug 10 23:24 ET. Ages recalculated. TicketOps state preserved from Aug 10 23:04 ET. 5 eligible: 4 New, 1 Pending. 2 SLA-breached. All 5 Unassigned."
 }
