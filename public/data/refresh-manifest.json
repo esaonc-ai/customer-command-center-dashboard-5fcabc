@@ -1,1 +1,77 @@
-{"dashboard":"Customer Command Center – NHT/Cesanek","facility":{"code":"LT_F21","name":"NHT/Cesanek","tenant":"LT","timezone":"America/New_York"},"refresh":{"id":"refresh-2026-08-10T23:10ET-LIVE-FULL","timestamp":"2026-08-11T03:10:00Z","timestampLocal":"2026-08-10T23:10:00-04:00","executedBy":"nweber00 (via GitHub Specialist Agent – full live refresh)","type":"live_full_refresh","previousRefreshId":"refresh-2026-08-10T19:05ET-FRESHNESS","keyChange":"FULL LIVE REFRESH: Fresh TicketOps + Outlook connections. 5 eligible tickets (up from 1 stale). Expanded search catches RN-/TO-titled tickets. UFN-64607 (Natural Rapport, 9d, SLA BREACHED) and UFN-65779 (COLAVITA, TO Status) discovered. 2 new: UFN-65878, UFN-65882. 2 SLA-breached (40%). All 5 Unassigned."},"rulesApplied":{"includeStatuses":["New","Open","Pending"],"excludeStatuses":["Reopen","Reopened","Closed","Resolved","Cancelled","Done"],"excludeInvoiceItems":["billing","UF Billing","storage","handling"],"ufnFiltering":"enabled","deduplication":"enabled","authority":"TicketOps opsStatus + closeFlag authoritative; Outlook non-blocking","closeFlagVerification":"REQUIRED – closeFlag=false regardless of displayStatus"},"dataSources":{"tickets":{"source":"TicketOps – LIVE connection Aug 10 23:04 ET","status":"live_fresh","queryTimestamp":"2026-08-10 23:04 ET","file":"data/tickets.json","methodologyNote":"EXPANDED: UFN- keyword search across all departments. Client-side filtered for UNIS Fulfillment - Northampton department, displayStatusSystemStatus=10, closeFlag=false. No longer limited to 'Cesanek' keyword – catches RN-/TO-titled tickets."},"outlook":{"source":"Outlook agent – LIVE scan Aug 3-10, 2026","status":"live_fresh_non_blocking","queryTimestamp":"2026-08-10 19:09 ET","file":"data/outlook-context.json","methodologyNote":"639+ NHT/Cesanek messages. 14 key threads. 1/5 direct match (UFN-65779 Colavita). Rich operational context."}},"dashboardState":{"totalRaw":572,"totalEligible":5,"byStatus":{"New":4,"Open":0,"Pending":1},"ufnCount":5,"excluded":567,"excludedBreakdown":{"statusExcluded":561,"invoiceItemExcluded":6,"closeFlagExcluded":0,"deduplicated":0},"customerHealth":{"customersInScope":["Natural Rapport","DAYDREAM NUTRITION INC.","COLAVITA USA, LLC","CODA RESOURCES","UNIS Internal","SPLENDOR WATER LLC","DUPREY USA LLC","INNOVA/SOFTGEL/KD NUTRA","SMEG USA","RITUAL BEVERAGE","NIAGARA BOTTLING","ZEN BEVERAGE","EMS MIND READER/BETESH","NOURISON","GOLDEN BULL MARKETING"],"healthSummary":"13/15 Healthy. 2 At Risk: Natural Rapport and DAYDREAM NUTRITION INC. (both SLA Breached, Unassigned).","customerDetails":[{"customer":"Natural Rapport","activeTickets":1,"health":"At Risk","healthScore":40},{"customer":"DAYDREAM NUTRITION INC.","activeTickets":1,"health":"At Risk","healthScore":45},{"customer":"COLAVITA USA, LLC","activeTickets":1,"health":"Healthy","healthScore":85},{"customer":"CODA RESOURCES","activeTickets":1,"health":"Healthy","healthScore":80},{"customer":"UNIS Internal","activeTickets":1,"health":"Healthy","healthScore":90}]},"priorityQueue":{"topPriority":"UFN-64607 – Natural Rapport. RN-19411 & RN-19412. SLA BREACHED. 9d old. Unassigned.","slaBreached":2,"slaOnTrack":3,"oldestTicketDays":9},"actionBuckets":{"immediate":2,"shortTerm":1,"mediumTerm":2,"watch":0},"evidenceMetrics":{"outlookThreadsMatched":1,"outlookCoverage":"20% direct (1/5); rich facility-level operational context","duplicatesRemoved":0,"invoiceItemsExcluded":6,"slaBreachCount":2,"slaBreachRisk":"ELEVATED – 2/5 SLA BREACHED (40%). All 5 Unassigned.","dataFreshness":"LIVE – TicketOps Aug 10 23:04 ET. Outlook Aug 10 19:09 ET.","queueTrend":"↑ 400% (1 → 5 eligible tickets). From expanded search, not organic growth.","keywordGapNote":"Prior 'Cesanek'-only searches missed RN-/TO-titled tickets. Methodology corrected."}},"notes":"5 eligible tickets: 4 New, 1 Pending. 2 SLA-breached (40%). All 5 Unassigned – staffing gap critical. Expanded search closed systematic gap where RN-/TO-titled tickets were missed. RECOMMEND: Assign UFN-64607 and UFN-64782 immediately (both 5+ days SLA-breached). Respond to UFN-65779 Colavita TO Status by Aug 12. Assign UFN-65878 to Sheehan Ramos. Review UFN-65882 inbound schedule.","nextScheduledRefresh":"2026-08-11 08:00 ET (daily summary email)"}
+{
+  "dashboard": "Customer Command Center — NHT/Cesanek",
+  "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
+  "refresh": {
+    "id": "refresh-2026-08-10T23:15ET-FRESHNESS",
+    "timestamp": "2026-08-11T03:15:00Z",
+    "timestampLocal": "2026-08-10T23:15:00-04:00",
+    "executedBy": "nweber00 (via GitHub Specialist Agent — freshness refresh)",
+    "type": "freshness_only",
+    "previousRefreshId": "refresh-2026-08-10T23:10ET-LIVE-FULL",
+    "keyChange": "FRESHNESS REFRESH: Ages recalculated for +5min elapsed. TicketOps data preserved from Aug 10 23:04 ET live connection. 5 eligible tickets unchanged. UFN-64607: 237h (was 213h), UFN-64782: 176h (was 175h). No status/staffing changes."
+  },
+  "rulesApplied": {
+    "includeStatuses": ["New", "Open", "Pending"],
+    "excludeStatuses": ["Reopen", "Reopened", "Closed", "Resolved", "Cancelled", "Done"],
+    "excludeInvoiceItems": ["billing", "UF Billing", "storage", "handling"],
+    "ufnFiltering": "enabled",
+    "deduplication": "enabled",
+    "authority": "TicketOps opsStatus + closeFlag authoritative; Outlook non-blocking",
+    "closeFlagVerification": "REQUIRED — closeFlag=false regardless of displayStatus"
+  },
+  "dataSources": {
+    "tickets": {
+      "source": "TicketOps — PRESERVED from LIVE connection Aug 10 23:04 ET",
+      "status": "preserved_freshness_recalc",
+      "queryTimestamp": "2026-08-10 23:04 ET (prior live connection, preserved)",
+      "file": "data/tickets.json",
+      "methodologyNote": "EXPANDED: UFN- keyword search across all departments. Client-side filtered for UNIS Fulfillment - Northampton department, displayStatusSystemStatus=10, closeFlag=false. No longer limited to 'Cesanek' keyword — catches RN-/TO-titled tickets."
+    },
+    "outlook": {
+      "source": "Outlook agent — PRESERVED from LIVE scan Aug 3-10, 2026",
+      "status": "preserved_non_blocking",
+      "queryTimestamp": "2026-08-10 19:09 ET (prior live scan, preserved)",
+      "file": "data/outlook-context.json",
+      "methodologyNote": "639+ NHT/Cesanek messages. 14 key threads. 1/5 direct match (UFN-65779 Colavita). Rich operational context."
+    }
+  },
+  "dashboardState": {
+    "totalRaw": 572,
+    "totalEligible": 5,
+    "byStatus": { "New": 4, "Open": 0, "Pending": 1 },
+    "ufnCount": 5,
+    "excluded": 567,
+    "excludedBreakdown": { "statusExcluded": 561, "invoiceItemExcluded": 6, "closeFlagExcluded": 0, "deduplicated": 0 },
+    "customerHealth": {
+      "customersInScope": ["Natural Rapport", "DAYDREAM NUTRITION INC.", "COLAVITA USA, LLC", "CODA RESOURCES", "UNIS Internal", "SPLENDOR WATER LLC", "DUPREY USA LLC", "INNOVA/SOFTGEL/KD NUTRA", "SMEG USA", "RITUAL BEVERAGE", "NIAGARA BOTTLING", "ZEN BEVERAGE", "EMS MIND READER/BETESH", "NOURISSON", "GOLDEN BULL MARKETING"],
+      "healthSummary": "13/15 Healthy. 2 At Risk: Natural Rapport and DAYDREAM NUTRITION INC. (both SLA Breached, Unassigned).",
+      "customerDetails": [
+        { "customer": "Natural Rapport", "activeTickets": 1, "health": "At Risk", "healthScore": 40 },
+        { "customer": "DAYDREAM NUTRITION INC.", "activeTickets": 1, "health": "At Risk", "healthScore": 45 },
+        { "customer": "COLAVITA USA, LLC", "activeTickets": 1, "health": "Healthy", "healthScore": 85 },
+        { "customer": "CODA RESOURCES", "activeTickets": 1, "health": "Healthy", "healthScore": 80 },
+        { "customer": "UNIS Internal", "activeTickets": 1, "health": "Healthy", "healthScore": 90 }
+      ]
+    },
+    "priorityQueue": {
+      "topPriority": "UFN-64607 — Natural Rapport. RN-19411 & RN-19412. SLA BREACHED. 9d old. Unassigned.",
+      "slaBreached": 2,
+      "slaOnTrack": 3,
+      "oldestTicketDays": 9
+    },
+    "actionBuckets": { "immediate": 2, "shortTerm": 1, "mediumTerm": 2, "watch": 0 },
+    "evidenceMetrics": {
+      "outlookThreadsMatched": 1,
+      "outlookCoverage": "20% direct (1/5); rich facility-level operational context",
+      "duplicatesRemoved": 0,
+      "invoiceItemsExcluded": 6,
+      "slaBreachCount": 2,
+      "slaBreachRisk": "ELEVATED — 2/5 SLA BREACHED (40%). All 5 Unassigned.",
+      "dataFreshness": "FRESHNESS — TicketOps preserved from Aug 10 23:04 ET. Ages recalculated to 23:15 ET.",
+      "queueTrend": "↔ Stable — 5 eligible tickets (unchanged).",
+      "keywordGapNote": "Prior 'Cesanek'-only search gap was closed. No new gap."
+    }
+  },
+  "notes": "FRESHNESS REFRESH. 5 eligible tickets: 4 New, 1 Pending. 2 SLA-breached (40%). All 5 Unassigned — staffing gap critical. RECOMMEND: Assign UFN-64607 and UFN-64782 immediately (both 5+ days SLA-breached). Respond to UFN-65779 Colavita TO Status by Aug 12. Assign UFN-65878 to Sheehan Ramos. Review UFN-65882 inbound schedule.",
+  "nextScheduledRefresh": "2026-08-11 08:00 ET (daily summary email)"
+}
