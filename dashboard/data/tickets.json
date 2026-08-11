@@ -2,8 +2,8 @@
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "tenant": "LT",
-  "generatedAt": "2026-08-11T04:11:30Z",
-  "lastRefreshed": "2026-08-11T00:11:30-04:00",
+  "generatedAt": "2026-08-11T07:15:30Z",
+  "lastRefreshed": "2026-08-11T03:15:30-04:00",
   "totalRaw": 572,
   "pipelineSummary": {
     "totalRaw": 572,
@@ -26,8 +26,8 @@
       "assigned": "Unassigned",
       "closeFlag": false,
       "slaStatus": "BREACHED",
-      "ageDays": 9,
-      "ageHours": 239
+      "ageDays": 10,
+      "ageHours": 241
     },
     {
       "ticketId": "UFN-64782",
@@ -40,20 +40,20 @@
       "closeFlag": false,
       "slaStatus": "BREACHED",
       "ageDays": 7,
-      "ageHours": 177
+      "ageHours": 180
     },
     {
       "ticketId": "UFN-65035",
       "customer": "Niagara Bottling",
       "opsStatus": "New",
       "priority": "High",
-      "subject": "NIAGARA/UNIS/QUANTIX SCHEDULE — Missed Pickup",
+      "subject": "NIAGARA/UNIS/QUANTIX SCHEDULE – Missed Pickup",
       "createdDate": "2026-08-10T10:00:00-04:00",
       "assigned": "Unassigned",
       "closeFlag": false,
       "slaStatus": "On Track",
       "ageDays": 0,
-      "ageHours": 14,
+      "ageHours": 17,
       "outlookMatch": "DIRECT"
     },
     {
@@ -61,13 +61,13 @@
       "customer": "COLAVITA USA/O Olive Oil",
       "opsStatus": "New",
       "priority": "High",
-      "subject": "TO5020 Edison Transfer — Urgent",
+      "subject": "TO5020 Edison Transfer – Urgent",
       "createdDate": "2026-08-10T11:00:00-04:00",
       "assigned": "Unassigned",
       "closeFlag": false,
       "slaStatus": "On Track",
       "ageDays": 0,
-      "ageHours": 13,
+      "ageHours": 16,
       "outlookMatch": "DIRECT"
     },
     {
@@ -81,7 +81,7 @@
       "closeFlag": false,
       "slaStatus": "On Track",
       "ageDays": 0,
-      "ageHours": 10,
+      "ageHours": 13,
       "outlookMatch": "DIRECT"
     },
     {
@@ -95,20 +95,20 @@
       "closeFlag": false,
       "slaStatus": "On Track",
       "ageDays": 0,
-      "ageHours": 4
+      "ageHours": 7
     },
     {
       "ticketId": "UFN-65877",
       "customer": "UNIS Internal (Erin Cambra)",
       "opsStatus": "New",
       "priority": "High",
-      "subject": "Erin EOD — Missed Pickups",
+      "subject": "Erin EOD – Missed Pickups",
       "createdDate": "2026-08-10T20:10:00-04:00",
       "assigned": "Unassigned",
       "closeFlag": false,
       "slaStatus": "On Track",
       "ageDays": 0,
-      "ageHours": 4
+      "ageHours": 7
     },
     {
       "ticketId": "UFN-65881",
@@ -121,7 +121,7 @@
       "closeFlag": false,
       "slaStatus": "On Track",
       "ageDays": 0,
-      "ageHours": 3
+      "ageHours": 6
     },
     {
       "ticketId": "UFN-65895",
@@ -134,7 +134,7 @@
       "closeFlag": false,
       "slaStatus": "On Track",
       "ageDays": 0,
-      "ageHours": 3,
+      "ageHours": 6,
       "outlookMatch": "DIRECT"
     },
     {
@@ -148,7 +148,7 @@
       "closeFlag": false,
       "slaStatus": "On Track",
       "ageDays": 0,
-      "ageHours": 5,
+      "ageHours": 8,
       "outlookMatch": "DIRECT"
     }
   ],
@@ -161,5 +161,5 @@
   ],
   "reopenExcluded": ["UFN-65862", "UFN-65813", "UFN-65808", "UFN-65768", "UFN-65747", "UFN-63750", "UFN-63665"],
   "truncationNote": "~100+ total eligible; 48 named here. ~50+ truncated.",
-  "refreshNote": "FRESHNESS REFRESH Aug 11 00:11 ET. Ages recalculated (+51m elapsed). TicketOps data preserved from Aug 10 23:20 ET verified LIVE state. 48 eligible: 33 New, 15 Pending. 2 SLA-breached. All Unassigned. 5 direct Outlook matches."
+  "refreshNote": "FRESHNESS REFRESH Aug 11 03:15 ET. Ages recalculated (+3h4m elapsed since 00:11 ET). UFN-64607 now 10d/241h (crossed day boundary). UFN-64782 now 7d/180h. TicketOps data preserved from Aug 10 23:20 ET verified LIVE state. 48 eligible: 33 New, 15 Pending. 2 SLA-breached. All Unassigned. 5 direct Outlook matches."
 }
