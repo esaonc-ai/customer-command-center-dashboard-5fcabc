@@ -1,9 +1,9 @@
 {
-  "description": "Outlook email context for NHT/Cesanek tickets – FRESHNESS REFRESH Aug 11 06:19 ET. Non-blocking supplement to TicketOps. Outlook data preserved from LIVE scan Aug 10 23:13 ET. Fresh TicketOps connection verified 9 eligible tickets at 05:07 ET authoritative.",
+  "description": "Outlook email context for NHT/Cesanek tickets – FRESHNESS REFRESH Aug 11 06:52 ET. Non-blocking supplement to TicketOps. Outlook data preserved from LIVE scan Aug 10 23:13 ET. Fresh TicketOps connection verified 9 eligible tickets at 05:07 ET authoritative.",
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-08-11T10:19:00Z",
-  "lastRefreshed": "2026-08-11T06:19:00-04:00",
+  "generatedAt": "2026-08-11T10:52:39Z",
+  "lastRefreshed": "2026-08-11T06:52:39-04:00",
   "dataSource": "Outlook agent – LIVE scan Aug 10, 2026 (past 30 days from nicole.weber@unisco.com). Preserved for freshness refresh.",
   "threadsMatched": 5,
   "threadsUniquePostDedup": 14,
@@ -27,5 +27,5 @@
     { "thread": "Aterian ~46 DNs Night-Shift Prep", "riskLevel": "MEDIUM" }
   ],
   "outlookCustomersActive": ["Colavita USA", "Nourison", "Ritual Beverage", "Niagara Bottling", "Innova/KD Nutra", "Roar Beverages", "Hint Inc.", "Prime Time Packaging", "CKMAPP", "Aterian", "Maizly", "Splendor Water", "Smeg USA", "Uptime Energy/Rise"],
-  "refreshNote": "FRESHNESS REFRESH – Ages recalculated at 06:19 ET. Outlook context preserved from Aug 10 23:13 ET LIVE scan. Non-blocking; TicketOps authoritative. 5/9 eligible tickets have direct Outlook matches (56%)."
+  "refreshNote": "FRESHNESS REFRESH – Ages recalculated at 06:52 ET. Outlook context preserved from Aug 10 23:13 ET LIVE scan. Non-blocking; TicketOps authoritative. 5/9 eligible tickets have direct Outlook matches (56%)."
 }
