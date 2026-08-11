@@ -1,19 +1,21 @@
 {
-  "description": "Outlook email context for NHT/Cesanek tickets – FRESHNESS REFRESH Aug 11 06:52 ET. Non-blocking supplement to TicketOps. Outlook data preserved from LIVE scan Aug 10 23:13 ET. Fresh TicketOps connection verified 9 eligible tickets at 05:07 ET authoritative.",
+  "description": "Outlook email context for NHT/Cesanek tickets – AUTHORITATIVE REFRESH Aug 11 06:56 ET. Non-blocking supplement to TicketOps. Outlook data preserved from LIVE scan Aug 10 23:13 ET. Authoritative TicketOps connection verified 7 eligible at 06:55 ET (corrected from 9).",
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-08-11T10:52:39Z",
-  "lastRefreshed": "2026-08-11T06:52:39-04:00",
-  "dataSource": "Outlook agent – LIVE scan Aug 10, 2026 (past 30 days from nicole.weber@unisco.com). Preserved for freshness refresh.",
-  "threadsMatched": 5,
+  "generatedAt": "2026-08-11T10:56:56Z",
+  "lastRefreshed": "2026-08-11T06:56:56-04:00",
+  "dataSource": "Outlook agent – LIVE scan Aug 10, 2026 (past 30 days from nicole.weber@unisco.com). Preserved for authoritative refresh.",
+  "threadsMatched": 3,
   "threadsUniquePostDedup": 14,
-  "coverage": { "eligibleTicketsTotal": 9, "eligibleTicketsWithOutlookDirect": 5, "coveragePct": "56% direct matches (5/9); 14 operational threads" },
+  "coverage": { "eligibleTicketsTotal": 7, "eligibleTicketsWithOutlookDirect": 3, "coveragePct": "43% direct matches (3/7); 14 operational threads" },
   "ticketThreads": [
-    { "ticketId": "UFN-65043", "customer": "COLAVITA USA/O Olive Oil", "directMatch": true, "contextSummary": "Paolo Colavita urgently following up TO5020/TO5022 Edison transfer. No delivery date.", "threadDate": "2026-08-11" },
-    { "ticketId": "UFN-65895", "customer": "Nourison", "directMatch": true, "contextSummary": "RN-19186 & RN-19185 devanned, ready for pickup.", "threadDate": "2026-08-10" },
-    { "ticketId": "UFN-65857", "customer": "Ritual Beverage", "directMatch": true, "contextSummary": "Nina Weiss (ABF) requesting CBOL. Yang-Lhing added Nicole.", "threadDate": "2026-08-10" },
-    { "ticketId": "UFN-65035", "customer": "Niagara Bottling", "directMatch": true, "contextSummary": "Missed pickup PIT-0811-DUYTAN + load cancellations.", "threadDate": "2026-08-10" },
-    { "ticketId": "UFN-65779", "customer": "COLAVITA USA", "directMatch": true, "contextSummary": "Kyle Wittenbauer asking TO Status.", "threadDate": "2026-08-10" }
+    { "ticketId": "UFN-65779", "customer": "Colavita USA LLC", "directMatch": true, "contextSummary": "Kyle Wittenbauer asking TO Status.", "threadDate": "2026-08-10" },
+    { "ticketId": "UFN-65895", "customer": "Nht Cs (Internal System)", "directMatch": false, "contextSummary": "Automated empty notification – internal system-generated ticket.", "threadDate": "2026-08-10" },
+    { "ticketId": "UFN-65857", "customer": "Ritual Beverage Co.", "directMatch": true, "contextSummary": "Nina Weiss (ABF) requesting CBOL. Yang-Lhing added Nicole.", "threadDate": "2026-08-10" }
+  ],
+  "excludedTicketsWithOutlookContext": [
+    { "ticketId": "UFN-65035", "customer": "Niagara Bottling", "excludedReason": "closeFlag=true – closed Aug 5 by Yang-Lhing Bague", "outlookContext": "Missed pickup PIT-0811-DUYTAN + load cancellations.", "threadDate": "2026-08-10" },
+    { "ticketId": "UFN-65043", "customer": "COLAVITA USA/O Olive Oil", "excludedReason": "Reopen status – explicitly excluded per dashboard rules", "outlookContext": "Paolo Colavita urgently following up TO5020/TO5022 Edison transfer.", "threadDate": "2026-08-11" }
   ],
   "operationalThreads": [
     { "thread": "EOD 8/10 – Nicole Weber", "summary": "Colavita RN-19455/19445/19233, Innova/KD Nutra, Roar, Hint (multiple DNs), Ritual, Prime Time. FLAGGED: DN-1604739 (May order on dock)." },
@@ -26,6 +28,6 @@
     { "thread": "Niagara PIT-0811-DUYTAN Missed Pickup", "riskLevel": "MEDIUM" },
     { "thread": "Aterian ~46 DNs Night-Shift Prep", "riskLevel": "MEDIUM" }
   ],
-  "outlookCustomersActive": ["Colavita USA", "Nourison", "Ritual Beverage", "Niagara Bottling", "Innova/KD Nutra", "Roar Beverages", "Hint Inc.", "Prime Time Packaging", "CKMAPP", "Aterian", "Maizly", "Splendor Water", "Smeg USA", "Uptime Energy/Rise"],
-  "refreshNote": "FRESHNESS REFRESH – Ages recalculated at 06:52 ET. Outlook context preserved from Aug 10 23:13 ET LIVE scan. Non-blocking; TicketOps authoritative. 5/9 eligible tickets have direct Outlook matches (56%)."
+  "outlookCustomersActive": ["Colavita USA LLC", "Ritual Beverage Co.", "Niagara Bottling", "Innova/KD Nutra", "Roar Beverages", "Hint Inc.", "Prime Time Packaging", "CKMAPP", "Aterian", "Maizly", "Splendor Water", "Smeg USA", "Uptime Energy/Rise"],
+  "refreshNote": "AUTHORITATIVE REFRESH – LIVE TicketOps connection verified 7 eligible (3/7 Outlook matches, 43%). UFN-65035 and UFN-65043 moved to excludedTicketsWithOutlookContext."
 }
