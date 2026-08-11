@@ -2,19 +2,10 @@
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "tenant": "LT",
-  "generatedAt": "2026-08-11T09:03:42Z",
-  "lastRefreshed": "2026-08-11T05:03:42-04:00",
+  "generatedAt": "2026-08-11T09:07:00Z",
+  "lastRefreshed": "2026-08-11T05:07:00-04:00",
   "totalRaw": 572,
-  "pipelineSummary": {
-    "totalRaw": 572,
-    "statusExcluded": 479,
-    "invoiceItemExcluded": 8,
-    "closeFlagExcluded": 0,
-    "deduplicated": 0,
-    "totalEligible": 9,
-    "byStatus": { "New": 8, "Open": 0, "Pending": 1 },
-    "ufnCount": 9
-  },
+  "pipelineSummary": { "totalRaw": 572, "statusExcluded": 479, "invoiceItemExcluded": 8, "closeFlagExcluded": 0, "deduplicated": 0, "totalEligible": 9, "byStatus": { "New": 8, "Open": 0, "Pending": 1 }, "ufnCount": 9 },
   "tickets": [
     { "ticketId": "UFN-64607", "customer": "Natural Rapport", "opsStatus": "New", "priority": "Medium", "subject": "RN-19411 & RN-19412", "createdDate": "2026-08-01T01:49:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "BREACHED", "ageDays": 10, "ageHours": 243 },
     { "ticketId": "UFN-64782", "customer": "DAYDREAM NUTRITION INC.", "opsStatus": "Pending", "priority": "Medium", "subject": "Transfer to Northampton RN-19417", "createdDate": "2026-08-03T15:14:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "BREACHED", "ageDays": 7, "ageHours": 182 },
@@ -23,7 +14,7 @@
     { "ticketId": "UFN-65779", "customer": "COLAVITA USA", "opsStatus": "New", "priority": "Medium", "subject": "TO Status", "createdDate": "2026-08-10T13:53:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "On Track", "ageDays": 0, "ageHours": 15, "outlookMatch": "DIRECT" },
     { "ticketId": "UFN-65876", "customer": "Vita Coco DTC", "opsStatus": "New", "priority": "High", "subject": "URGENT DN-5002110", "createdDate": "2026-08-10T20:00:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "On Track", "ageDays": 0, "ageHours": 9 },
     { "ticketId": "UFN-65877", "customer": "UNIS Internal (Erin Cambra)", "opsStatus": "New", "priority": "High", "subject": "Erin EOD – Missed Pickups", "createdDate": "2026-08-10T20:10:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "On Track", "ageDays": 0, "ageHours": 9 },
-    { "ticketId": "UFN-65895", "customer": "Nourison", "opsStatus": "New", "priority": "Medium", "subject": "Containers Devanned TRKU4487366", "createdDate": "2026-08-10T21:35:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "On Track", "ageDays": 0, "ageHours": 7, "outlookMatch": "DIRECT" },
+    { "ticketId": "UFN-65895", "customer": "Nourison", "opsStatus": "New", "priority": "Medium", "subject": "Containers Devanned TRKU4487366", "createdDate": "2026-08-10T21:35:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "On Track", "ageDays": 0, "ageHours": 8, "outlookMatch": "DIRECT" },
     { "ticketId": "UFN-65857", "customer": "Ritual Beverage", "opsStatus": "New", "priority": "Medium", "subject": "ABF BOL Request", "createdDate": "2026-08-10T19:30:00-04:00", "assigned": "Unassigned", "closeFlag": false, "slaStatus": "On Track", "ageDays": 0, "ageHours": 10, "outlookMatch": "DIRECT" }
   ],
   "excludedTickets": [
@@ -35,5 +26,5 @@
   ],
   "reopenExcluded": ["UFN-65862", "UFN-65813", "UFN-65808", "UFN-65768", "UFN-65747", "UFN-63750", "UFN-63665"],
   "truncationNote": "Authoritative refresh: 48 stale → 9 verified eligible via fresh TicketOps connection.",
-  "refreshNote": "FRESHNESS REFRESH Aug 11 05:03 ET. Ages recalculated (+1h43m). 9 verified: 8 New, 1 Pending. 2 SLA-breached: UFN-64607 (243h/10d), UFN-64782 (182h/7d). All Unassigned. 5 direct Outlook matches (56%)."
+  "refreshNote": "AUTHORITATIVE REFRESH Aug 11 05:07 ET. Fresh TicketOps LIVE connection. 9 verified: 8 New, 1 Pending. 2 SLA-breached: UFN-64607 (243h/10d), UFN-64782 (182h/7d). All Unassigned. 5 direct Outlook matches (56%)."
 }
