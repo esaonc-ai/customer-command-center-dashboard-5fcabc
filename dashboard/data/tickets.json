@@ -2,9 +2,9 @@
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "tenant": "LT",
-  "generatedAt": "2026-08-11T03:15:00Z",
-  "lastRefreshed": "2026-08-10T23:15:00-04:00",
-  "dataSource": "TicketOps (authoritative) — preserved from LIVE connection Aug 10 23:04 ET. Freshness refresh only — ages recalculated to 23:15 ET. No live TicketOps connection available this refresh. Outlook context preserved from live scan Aug 10 19:09 ET (non-blocking).",
+  "generatedAt": "2026-08-11T03:24:00Z",
+  "lastRefreshed": "2026-08-10T23:24:00-04:00",
+  "dataSource": "TicketOps (authoritative) — preserved from LIVE connection Aug 10 23:04 ET. Freshness refresh only — ages recalculated to 23:24 ET. No live TicketOps connection available this refresh. Outlook context preserved from live scan Aug 10 19:09 ET (non-blocking). NOTE: Local commit f007c6a (LIVE FULL REFRESH 23:20 ET) could not be pushed — this API-side refresh is the authoritative remote state.",
   "totalRaw": 572,
   "pipelineSummary": {
     "totalRaw": 572,
@@ -15,8 +15,8 @@
     "totalEligible": 5,
     "byStatus": { "New": 4, "Open": 0, "Pending": 1 },
     "ufnCount": 5,
-    "crossCheckMethod": "TicketOps state preserved from last live connection Aug 10 23:04 ET. This refresh (23:15 ET) is freshness-only — ages recalculated, no new TicketOps query.",
-    "changeNote": "FRESHNESS REFRESH: Ages recalculated for elapsed time (+5 min since last live refresh). TicketOps data preserved from Aug 10 23:04 ET verified state. 5 eligible tickets unchanged. UFN-64607: 237h (was 213h), UFN-64782: 176h (was 175h). No status/staffing changes. All 5 Unassigned — staffing gap persists."
+    "crossCheckMethod": "TicketOps state preserved from last live connection Aug 10 23:04 ET. This refresh (23:24 ET) is freshness-only — ages recalculated, no new TicketOps query.",
+    "changeNote": "FRESHNESS REFRESH: Ages recalculated for ~9min elapsed since last refresh. TicketOps data preserved from Aug 10 23:04 ET verified state. 5 eligible tickets unchanged. UFN-65779: 10h (was 9h), UFN-65878: 3h (was 2h). No status/staffing changes. All 5 Unassigned — staffing gap persists."
   },
   "tickets": [
     {
@@ -40,7 +40,7 @@
       "ageDays": 9,
       "ageHours": 237,
       "estDueDate": "2026-08-05T21:00:00-04:00",
-      "note": "Was missed by prior 'Cesanek'-keyword-only searches. Title references RN- only, no facility keyword. Two open RNs: RN-19411 and RN-19412. No visible activity since creation. SLA breached 5 days past due. Age updated from 213h to 237h this freshness refresh."
+      "note": "Missed by prior 'Cesanek'-keyword-only searches. Title references RN- only, no facility keyword. Two open RNs: RN-19411 and RN-19412. No visible activity since creation. SLA breached 5 days past due."
     },
     {
       "ticketId": "UFN-64782",
@@ -63,7 +63,7 @@
       "ageDays": 7,
       "ageHours": 176,
       "estDueDate": "2026-08-05T21:15:00-04:00",
-      "note": "Previously listed as 'closed 07/31' in prior refreshes — corrected Aug 10 16:04 ET. Staff replied 08/10 13:23. Transfer to Northampton RN-19417. SLA breached 5 days past due. No RN-19417 email thread in Outlook. Age updated from 175h to 176h."
+      "note": "Previously listed as 'closed 07/31' in prior refreshes — corrected Aug 10 16:04 ET. Staff replied 08/10 13:23. Transfer to Northampton RN-19417. SLA breached 5 days past due. No RN-19417 email thread in Outlook."
     },
     {
       "ticketId": "UFN-65779",
@@ -84,7 +84,7 @@
       "slaStatus": "On Track",
       "slaOverdue": false,
       "ageDays": 0,
-      "ageHours": 9,
+      "ageHours": 10,
       "estDueDate": "2026-08-12T21:00:00-04:00",
       "note": "Active Outlook thread: Kyle Wittenbauer (Colavita) ↔ Mariah Mateo, Nicole Weber (Aug 10). TO Status inquiry from customer. Was missed by 'Cesanek'-only search since title is 'TO Status' with no facility keyword. Outlook coverage: direct match."
     },
@@ -107,7 +107,7 @@
       "slaStatus": "On Track",
       "slaOverdue": false,
       "ageDays": 0,
-      "ageHours": 2,
+      "ageHours": 3,
       "estDueDate": "2026-08-13T17:51:00-04:00",
       "note": "No direct Outlook email from ibudz@codaresources.com. CODA discussed in ops calls; flagged in daily summary as 'daily order-status blasts + Q3/Q4 forecast request.' Handler: Sheehan Ramos. New customer to dashboard."
     },
@@ -156,5 +156,5 @@
     { "ticketId": "UFN-65578", "customer": "Tweetie Leigh Lamoste (UNIS Internal)", "status": "Closed", "closedDate": "2026-07-31" }
   ],
   "correctionNote": "No corrections needed this refresh. Freshness-only update — ages recalculated. TicketOps data preserved from Aug 10 23:04 ET live connection.",
-  "refreshNote": "FRESHNESS REFRESH Aug 10 23:15 ET. Ages recalculated for +5min elapsed since last full live refresh (23:10 ET). TicketOps data preserved from Aug 10 23:04 ET live connection. 5 eligible tickets unchanged: 4 New, 1 Pending. 2 SLA-breached (40%). All 5 Unassigned — staffing gap persists. No status changes. Search methodology gap (RN-/TO-titled tickets) was already closed in prior refresh."
+  "refreshNote": "FRESHNESS REFRESH Aug 10 23:24 ET. Ages recalculated for +9min elapsed since last refresh (23:15 ET). TicketOps data preserved from Aug 10 23:04 ET live connection. 5 eligible tickets unchanged: 4 New, 1 Pending. 2 SLA-breached (40%). All 5 Unassigned — staffing gap persists. No status changes. NOTE: Local commit f007c6a (23:20 ET LIVE FULL REFRESH) could not be pushed from API agent — this API-side commit is the authoritative remote state. If the local commit contains live TicketOps data, a subsequent push is needed."
 }
