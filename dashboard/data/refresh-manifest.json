@@ -2,13 +2,13 @@
   "dashboard": "Customer Command Center – NHT/Cesanek",
   "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
   "refresh": {
-    "id": "refresh-2026-08-11T06:19ET-FRESHNESS",
-    "timestamp": "2026-08-11T10:19:00Z",
-    "timestampLocal": "2026-08-11T06:19:00-04:00",
+    "id": "refresh-2026-08-11T06:52ET-FRESHNESS",
+    "timestamp": "2026-08-11T10:52:39Z",
+    "timestampLocal": "2026-08-11T06:52:39-04:00",
     "executedBy": "GitHub Specialist Agent (nweber00) – FRESHNESS refresh: ages recalculated from authoritative 05:07 ET baseline",
     "type": "freshness",
-    "previousRefreshId": "refresh-2026-08-11T05:07ET-AUTHORITATIVE",
-    "keyChange": "FRESHNESS REFRESH: Ages recalculated +1h12m since authoritative 05:07 ET baseline. TicketOps data preserved (no new LIVE connection). All 9 eligible ticket statuses remain as verified at 05:07 ET. 2 SLA-breached: UFN-64607 (244h/10d), UFN-64782 (183h/7d). All 9 Unassigned. 5 direct Outlook matches (56%). All public/data synced."
+    "previousRefreshId": "refresh-2026-08-11T06:19ET-FRESHNESS",
+    "keyChange": "FRESHNESS REFRESH: Ages recalculated +1h45m since authoritative 05:07 ET baseline. TicketOps data preserved (no new LIVE connection). All 9 eligible ticket statuses remain as verified at 05:07 ET. 2 SLA-breached: UFN-64607 (245h/10d), UFN-64782 (184h/7d). All 9 Unassigned. 5 direct Outlook matches (56%). All public/data synced. Action buckets recalculated: 7 Immediate, 1 Medium-Term, 1 Watch."
   },
   "rulesApplied": {
     "includeStatuses": ["New", "Open", "Pending"],
@@ -26,17 +26,17 @@
     "totalRaw": 572,
     "totalEligible": 9,
     "byStatus": { "New": 8, "Open": 0, "Pending": 1 },
-    "customerHealth": { "customersInScope": 9, "healthSummary": "7/9 Healthy. 2 At Risk: Natural Rapport (10d/244h) and DAYDREAM NUTRITION INC. (7d/183h)." },
+    "customerHealth": { "customersInScope": 9, "healthSummary": "7/9 Healthy. 2 At Risk: Natural Rapport (10d/245h) and DAYDREAM NUTRITION INC. (7d/184h)." },
     "priorityQueue": { "slaBreached": 2, "slaOnTrack": 7, "oldestTicketDays": 10 },
-    "actionBuckets": { "immediate": 2, "shortTerm": 4, "mediumTerm": 3, "watch": 0 },
+    "actionBuckets": { "immediate": 7, "shortTerm": 0, "mediumTerm": 1, "watch": 1 },
     "evidenceMetrics": {
       "outlookThreadsMatched": 5,
       "slaBreachCount": 2,
-      "dataFreshness": "FRESHNESS – Aug 11 06:19 ET (ages recalculated; TicketOps data preserved from 05:07 ET authoritative)",
-      "queueTrend": "↘ STABLE at 9 verified eligible (preserved from 05:07 ET authoritative). 2 SLA-breached.",
+      "dataFreshness": "FRESHNESS – Aug 11 06:52 ET (ages recalculated; TicketOps data preserved from 05:07 ET authoritative)",
+      "queueTrend": "→ STABLE at 9 verified eligible (preserved from 05:07 ET authoritative). 2 SLA-breached.",
       "staffingGap": "CRITICAL – All 9 Unassigned"
     }
   },
-  "notes": "FRESHNESS REFRESH Aug 11 06:19 ET. Ages recalculated +1h12m since authoritative 05:07 ET baseline. No new TicketOps LIVE connection — ticket statuses preserved from 05:07 ET authoritative refresh. 9 verified eligible: 8 New, 1 Pending. 2 SLA-breached: UFN-64607 (244h/10d), UFN-64782 (183h/7d). All 9 Unassigned. 5/9 direct Outlook matches (56%). All public/data synced. Next authoritative refresh recommended with fresh TicketOps connection.",
+  "notes": "FRESHNESS REFRESH Aug 11 06:52 ET. Ages recalculated +1h45m since authoritative 05:07 ET baseline. No new TicketOps LIVE connection – ticket statuses preserved from 05:07 ET authoritative refresh. 9 verified eligible: 8 New, 1 Pending. 2 SLA-breached: UFN-64607 (245h/10d), UFN-64782 (184h/7d). All 9 Unassigned. 5/9 direct Outlook matches (56%). All public/data synced. Next authoritative refresh recommended with fresh TicketOps connection.",
   "nextScheduledRefresh": "2026-08-11 08:00 ET (daily summary email)"
 }
