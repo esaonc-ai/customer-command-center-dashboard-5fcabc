@@ -2,13 +2,13 @@
   "dashboard": "Customer Command Center – NHT/Cesanek",
   "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
   "refresh": {
-    "id": "refresh-2026-08-11T03:20ET-AUTHORITATIVE",
-    "timestamp": "2026-08-11T07:20:30Z",
-    "timestampLocal": "2026-08-11T03:20:30-04:00",
-    "executedBy": "GitHub Specialist Agent (nweber00) – AUTHORITATIVE refresh with fresh TicketOps connection",
-    "type": "authoritative",
-    "previousRefreshId": "refresh-2026-08-11T03:15ET-FRESHNESS",
-    "keyChange": "AUTHORITATIVE REFRESH: Fresh TicketOps connection. 48 stale (preserved from Aug 10 23:20 ET) → 9 verified eligible. 39 tickets found moved to ineligible statuses (Closed/Resolved/Cancelled). 9 verified: 8 New, 1 Pending. 2 SLA-breached: UFN-64607 (242h/10d) and UFN-64782 (180h/7d). UFN-65881 (Hint Inc.) resolved in TicketOps. All 9 Unassigned. 5 direct Outlook matches preserved. All public/data synced."
+    "id": "refresh-2026-08-11T05:03ET-FRESHNESS",
+    "timestamp": "2026-08-11T09:03:42Z",
+    "timestampLocal": "2026-08-11T05:03:42-04:00",
+    "executedBy": "GitHub Specialist Agent (nweber00) – FRESHNESS refresh: ages recalculated, data preserved from authoritative baseline",
+    "type": "freshness",
+    "previousRefreshId": "refresh-2026-08-11T03:20ET-AUTHORITATIVE",
+    "keyChange": "FRESHNESS REFRESH: Ages recalculated (+1h43m elapsed since authoritative refresh at 03:20 ET). No live TicketOps connection — ticket statuses preserved from authoritative Aug 11 03:20 ET baseline. 9 verified eligible: 8 New, 1 Pending. 2 SLA-breached: UFN-64607 (243h/10d) and UFN-64782 (182h/7d). All 9 Unassigned. 5 direct Outlook matches (56%)."
   },
   "rulesApplied": {
     "includeStatuses": ["New", "Open", "Pending"],
@@ -19,24 +19,24 @@
     "authority": "TicketOps authoritative; Outlook non-blocking"
   },
   "dataSources": {
-    "tickets": { "source": "TicketOps – AUTHORITATIVE LIVE connection Aug 11 03:20 ET", "status": "live_verified", "file": "data/tickets.json" },
-    "outlook": { "source": "Outlook agent – PRESERVED from LIVE Aug 10 23:13 ET", "status": "preserved_live_non_blocking", "file": "data/outlook-context.json" }
+    "tickets": { "source": "TicketOps – PRESERVED from authoritative Aug 11 03:20 ET LIVE connection", "status": "preserved_authoritative", "file": "data/tickets.json" },
+    "outlook": { "source": "Outlook agent – PRESERVED from LIVE scan Aug 10 23:13 ET", "status": "preserved_live_non_blocking", "file": "data/outlook-context.json" }
   },
   "dashboardState": {
     "totalRaw": 572,
     "totalEligible": 9,
     "byStatus": { "New": 8, "Open": 0, "Pending": 1 },
-    "customerHealth": { "customersInScope": 9, "healthSummary": "7/9 Healthy. 2 At Risk: Natural Rapport (10d) and DAYDREAM NUTRITION INC. (7.5d)." },
+    "customerHealth": { "customersInScope": 9, "healthSummary": "7/9 Healthy. 2 At Risk: Natural Rapport (10d/243h) and DAYDREAM NUTRITION INC. (7d/182h)." },
     "priorityQueue": { "slaBreached": 2, "slaOnTrack": 7, "oldestTicketDays": 10 },
     "actionBuckets": { "immediate": 2, "shortTerm": 4, "mediumTerm": 3, "watch": 0 },
     "evidenceMetrics": {
       "outlookThreadsMatched": 5,
       "slaBreachCount": 2,
-      "dataFreshness": "AUTHORITATIVE – Aug 11 03:20 ET (fresh TicketOps LIVE connection)",
-      "queueTrend": "↓ SHRANK from 48 → 9 – 39 tickets verified resolved/closed in TicketOps",
+      "dataFreshness": "FRESHNESS – Aug 11 05:03 ET (ages recalculated; ticket statuses preserved from authoritative Aug 11 03:20 ET baseline)",
+      "queueTrend": "↔ STABLE at 9 eligible (no change from authoritative refresh at 03:20 ET). Ages incremented +1h43m.",
       "staffingGap": "CRITICAL – All 9 Unassigned"
     }
   },
-  "notes": "AUTHORITATIVE REFRESH with fresh TicketOps connection. 48 stale tickets (preserved from Aug 10 23:20 ET during ~8h gap) reduced to 9 verified eligible after live status verification. 39 tickets had moved to Closed/Resolved/Cancelled/Done in TicketOps. UFN-65881 (Hint Inc., 11 DNs Release) resolved. All ~38 truncated tickets verified non-eligible. 9 remaining: 8 New, 1 Pending. 2 SLA-breached. 5 direct Outlook matches (56% coverage). All Unassigned. Significant queue cleanup — 81% reduction from stale state.",
+  "notes": "FRESHNESS REFRESH Aug 11 05:03 ET. Ages recalculated against current time (+1h43m since 03:20 ET authoritative refresh). No live TicketOps connection available this cycle — ticket statuses and eligibility preserved from authoritative baseline. 9 verified: 8 New, 1 Pending. 2 SLA-breached: UFN-64607 (243h/10d) and UFN-64782 (182h/7d). UFN-64607 crossed 10-day threshold. All 9 Unassigned. 5/9 direct Outlook matches (56%). All public/data synced.",
   "nextScheduledRefresh": "2026-08-11 08:00 ET (daily summary email)"
 }
