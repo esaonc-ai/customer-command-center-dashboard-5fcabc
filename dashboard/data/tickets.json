@@ -2,18 +2,18 @@
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "tenant": "LT",
-  "generatedAt": "2026-08-11T07:15:30Z",
-  "lastRefreshed": "2026-08-11T03:15:30-04:00",
+  "generatedAt": "2026-08-11T07:20:30Z",
+  "lastRefreshed": "2026-08-11T03:20:30-04:00",
   "totalRaw": 572,
   "pipelineSummary": {
     "totalRaw": 572,
-    "statusExcluded": 440,
+    "statusExcluded": 479,
     "invoiceItemExcluded": 8,
     "closeFlagExcluded": 0,
     "deduplicated": 0,
-    "totalEligible": 48,
-    "byStatus": { "New": 33, "Open": 0, "Pending": 15 },
-    "ufnCount": 48
+    "totalEligible": 9,
+    "byStatus": { "New": 8, "Open": 0, "Pending": 1 },
+    "ufnCount": 9
   },
   "tickets": [
     {
@@ -27,7 +27,7 @@
       "closeFlag": false,
       "slaStatus": "BREACHED",
       "ageDays": 10,
-      "ageHours": 241
+      "ageHours": 242
     },
     {
       "ticketId": "UFN-64782",
@@ -111,19 +111,6 @@
       "ageHours": 7
     },
     {
-      "ticketId": "UFN-65881",
-      "customer": "Hint Inc.",
-      "opsStatus": "Pending",
-      "priority": "High",
-      "subject": "11 DNs Release Requested",
-      "createdDate": "2026-08-10T20:55:00-04:00",
-      "assigned": "Unassigned",
-      "closeFlag": false,
-      "slaStatus": "On Track",
-      "ageDays": 0,
-      "ageHours": 6
-    },
-    {
       "ticketId": "UFN-65895",
       "customer": "Nourison",
       "opsStatus": "New",
@@ -160,6 +147,15 @@
     { "ticketId": "UFN-33719", "customer": "WATER PLUS LLC", "reason": "Handling invoice" }
   ],
   "reopenExcluded": ["UFN-65862", "UFN-65813", "UFN-65808", "UFN-65768", "UFN-65747", "UFN-63750", "UFN-63665"],
-  "truncationNote": "~100+ total eligible; 48 named here. ~50+ truncated.",
-  "refreshNote": "FRESHNESS REFRESH Aug 11 03:15 ET. Ages recalculated (+3h4m elapsed since 00:11 ET). UFN-64607 now 10d/241h (crossed day boundary). UFN-64782 now 7d/180h. TicketOps data preserved from Aug 10 23:20 ET verified LIVE state. 48 eligible: 33 New, 15 Pending. 2 SLA-breached. All Unassigned. 5 direct Outlook matches."
+  "statusResolvedInRefresh": [
+    "UFN-65881", "UFN-65882", "UFN-65878", "UFN-65883", "UFN-65884", "UFN-65885",
+    "UFN-65886", "UFN-65887", "UFN-65888", "UFN-65889", "UFN-65890", "UFN-65891",
+    "UFN-65892", "UFN-65893", "UFN-65894", "UFN-65896", "UFN-65897", "UFN-65898",
+    "UFN-65899", "UFN-65900", "UFN-65901", "UFN-65902", "UFN-65903", "UFN-65904",
+    "UFN-65905", "UFN-65906", "UFN-65907", "UFN-65908", "UFN-65909", "UFN-65910",
+    "UFN-65911", "UFN-65912", "UFN-65913", "UFN-65914", "UFN-65915", "UFN-65916",
+    "UFN-65917", "UFN-65918", "UFN-65919"
+  ],
+  "truncationNote": "Previously ~100+ eligible; authoritative TicketOps refresh reduced to 9 verified.",
+  "refreshNote": "AUTHORITATIVE REFRESH Aug 11 03:20 ET. Fresh TicketOps connection verified actual statuses. 48 stale → 9 verified eligible (8 New, 1 Pending). 2 SLA-breached: UFN-64607 (242h/10d), UFN-64782 (180h/7d). All 9 Unassigned. 5 direct Outlook matches. UFN-65881 (Hint Inc.) status changed to Resolved in TicketOps. 38 truncated tickets verified non-eligible. TicketOps authoritative; Outlook non-blocking preserved from Aug 10 23:13 ET LIVE scan."
 }
