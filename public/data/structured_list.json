@@ -1,8 +1,8 @@
 {
-  "dashboard": "Customer Command Center — NHT/Cesanek",
+  "dashboard": "Customer Command Center – NHT/Cesanek",
   "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
-  "lastRefreshed": "2026-08-11T00:11:30-04:00",
-  "dataSource": "TicketOps (authoritative) — PRESERVED from LIVE connection Aug 10 23:13 ET. Outlook context from LIVE scan Aug 10 23:13 ET (non-blocking).",
+  "lastRefreshed": "2026-08-11T03:15:30-04:00",
+  "dataSource": "TicketOps (authoritative) – PRESERVED from LIVE connection Aug 10 23:13 ET. Outlook context from LIVE scan Aug 10 23:13 ET (non-blocking).",
   "refreshType": "freshness",
   "totalRaw": 572,
   "totalEligible": 48,
@@ -13,7 +13,7 @@
   "slaHealth": {
     "slaBreachCount": 2,
     "slaOnTrackCount": 46,
-    "slaBreachRisk": "ELEVATED — 2/48 SLA BREACHED (4%). UFN-64607 (239h), UFN-64782 (177h). All 48 Unassigned."
+    "slaBreachRisk": "ELEVATED – 2/48 SLA BREACHED (4%). UFN-64607 (241h, now 10d), UFN-64782 (180h). All 48 Unassigned."
   },
   "evidenceMetrics": {
     "outlookThreadsMatched": 5,
@@ -22,8 +22,8 @@
     "invoiceItemsExcluded": 8,
     "reopenExcluded": 15,
     "slaBreachCount": 2,
-    "dataFreshness": "FRESHNESS — Aug 11 00:11 ET (TicketOps preserved from Aug 10 23:20 ET LIVE state, ages +51m)",
-    "queueTrend": "↗ STABLE at 48 — ages recalculated, no new TicketOps connection",
-    "staffingGap": "CRITICAL — All 48 tickets Unassigned"
+    "dataFreshness": "FRESHNESS – Aug 11 03:15 ET (TicketOps preserved from Aug 10 23:20 ET LIVE state, ages +3h4m)",
+    "queueTrend": "→ STABLE at 48 – ages recalculated, no new TicketOps connection",
+    "staffingGap": "CRITICAL – All 48 tickets Unassigned"
   }
 }
