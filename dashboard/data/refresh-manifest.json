@@ -2,13 +2,13 @@
   "dashboard": "Customer Command Center – NHT/Cesanek",
   "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
   "refresh": {
-    "id": "refresh-2026-08-11T06:52ET-FRESHNESS",
-    "timestamp": "2026-08-11T10:52:39Z",
-    "timestampLocal": "2026-08-11T06:52:39-04:00",
-    "executedBy": "GitHub Specialist Agent (nweber00) – FRESHNESS refresh: ages recalculated from authoritative 05:07 ET baseline",
-    "type": "freshness",
-    "previousRefreshId": "refresh-2026-08-11T06:19ET-FRESHNESS",
-    "keyChange": "FRESHNESS REFRESH: Ages recalculated +1h45m since authoritative 05:07 ET baseline. TicketOps data preserved (no new LIVE connection). All 9 eligible ticket statuses remain as verified at 05:07 ET. 2 SLA-breached: UFN-64607 (245h/10d), UFN-64782 (184h/7d). All 9 Unassigned. 5 direct Outlook matches (56%). All public/data synced. Action buckets recalculated: 7 Immediate, 1 Medium-Term, 1 Watch."
+    "id": "refresh-2026-08-11T06:56ET-AUTHORITATIVE",
+    "timestamp": "2026-08-11T10:56:56Z",
+    "timestampLocal": "2026-08-11T06:56:56-04:00",
+    "executedBy": "Super Agent (Nicole Weber) – AUTHORITATIVE refresh: LIVE TicketOps connection verified 7 eligible",
+    "type": "authoritative",
+    "previousRefreshId": "refresh-2026-08-11T06:52ET-FRESHNESS",
+    "keyChange": "AUTHORITATIVE REFRESH: LIVE TicketOps connection corrected from 9 to 7 eligible. Removed UFN-65035 (closeFlag=true, closed Aug 5 by Yang-Lhing Bague) and UFN-65043 (Reopen status). Corrected UFN-65895 customer from Nourison to Nht Cs (Internal System). 7 verified: 5 New, 2 Pending. 2 SLA-breached: UFN-64607 (245h/10d), UFN-64782 (184h/8d). All 7 Unassigned. 3/7 Outlook matches (43%)."
   },
   "rulesApplied": {
     "includeStatuses": ["New", "Open", "Pending"],
@@ -19,24 +19,24 @@
     "authority": "TicketOps authoritative; Outlook non-blocking"
   },
   "dataSources": {
-    "tickets": { "source": "TicketOps – PRESERVED from AUTHORITATIVE LIVE connection Aug 11 05:07 ET", "status": "live_verified_preserved", "file": "data/tickets.json" },
+    "tickets": { "source": "TicketOps – AUTHORITATIVE LIVE connection Aug 11 06:55 ET", "status": "live_verified", "file": "data/tickets.json" },
     "outlook": { "source": "Outlook agent – PRESERVED from LIVE scan Aug 10 23:13 ET", "status": "preserved_live_non_blocking", "file": "data/outlook-context.json" }
   },
   "dashboardState": {
     "totalRaw": 572,
-    "totalEligible": 9,
-    "byStatus": { "New": 8, "Open": 0, "Pending": 1 },
-    "customerHealth": { "customersInScope": 9, "healthSummary": "7/9 Healthy. 2 At Risk: Natural Rapport (10d/245h) and DAYDREAM NUTRITION INC. (7d/184h)." },
-    "priorityQueue": { "slaBreached": 2, "slaOnTrack": 7, "oldestTicketDays": 10 },
-    "actionBuckets": { "immediate": 7, "shortTerm": 0, "mediumTerm": 1, "watch": 1 },
+    "totalEligible": 7,
+    "byStatus": { "New": 5, "Open": 0, "Pending": 2 },
+    "customerHealth": { "customersInScope": 7, "healthSummary": "5/7 Healthy. 2 At Risk: Natural Rapport (Q&C Products) (10d/245h) and Daydream Nutrition Inc. (8d/184h)." },
+    "priorityQueue": { "slaBreached": 2, "slaOnTrack": 5, "oldestTicketDays": 10 },
+    "actionBuckets": { "immediate": 5, "shortTerm": 0, "mediumTerm": 0, "watch": 2 },
     "evidenceMetrics": {
-      "outlookThreadsMatched": 5,
+      "outlookThreadsMatched": 3,
       "slaBreachCount": 2,
-      "dataFreshness": "FRESHNESS – Aug 11 06:52 ET (ages recalculated; TicketOps data preserved from 05:07 ET authoritative)",
-      "queueTrend": "→ STABLE at 9 verified eligible (preserved from 05:07 ET authoritative). 2 SLA-breached.",
-      "staffingGap": "CRITICAL – All 9 Unassigned"
+      "dataFreshness": "AUTHORITATIVE – Aug 11 06:56 ET (LIVE TicketOps connection; 7 verified eligible)",
+      "queueTrend": "↘ CORRECTED from 9 to 7 eligible. UFN-65035 (closeFlag=true), UFN-65043 (Reopen) removed.",
+      "staffingGap": "CRITICAL – All 7 Unassigned"
     }
   },
-  "notes": "FRESHNESS REFRESH Aug 11 06:52 ET. Ages recalculated +1h45m since authoritative 05:07 ET baseline. No new TicketOps LIVE connection – ticket statuses preserved from 05:07 ET authoritative refresh. 9 verified eligible: 8 New, 1 Pending. 2 SLA-breached: UFN-64607 (245h/10d), UFN-64782 (184h/7d). All 9 Unassigned. 5/9 direct Outlook matches (56%). All public/data synced. Next authoritative refresh recommended with fresh TicketOps connection.",
+  "notes": "AUTHORITATIVE REFRESH Aug 11 06:56 ET. LIVE TicketOps connection verified 7 eligible (corrected from 9). UFN-65035 Niagara Bottling removed (closeFlag=true, closed Aug 5 by Yang-Lhing Bague). UFN-65043 COLAVITA USA/O Olive Oil removed (Reopen status). UFN-65895 customer corrected to Nht Cs (Internal System). 2 SLA-breached: UFN-64607 (245h/10d), UFN-64782 (184h/8d). All 7 Unassigned. 3/7 Outlook matches (43%). All public/data synced.",
   "nextScheduledRefresh": "2026-08-11 08:00 ET (daily summary email)"
 }
