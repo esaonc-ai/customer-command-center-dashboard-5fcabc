@@ -11,7 +11,7 @@ Real-time operational dashboard for monitoring ticket queues, customer health, a
 ## Ticket Filtering Rules
 
 | Rule | Implementation |
-|------|----------------|
+|------|---------------|
 | **Include Statuses** | New, Open, Pending |
 | **Exclude Statuses** | Reopen, Reopened, Closed, Resolved, Cancelled, Done |
 | **Exclude Invoice Items** | billing, UF Billing, storage, handling |
@@ -33,55 +33,61 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** — Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** — Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Aug 10 05:53 ET)
+## Current Dashboard State (Last Refresh: Aug 10 23:15 ET)
 
 | Metric | Value |
 |--------|-------|
-| Total Raw | 567 |
-| Eligible | **3** (0 New, 0 Open, 3 Pending) |
-| UFN-Count | 3 |
-| Excluded | 564 (558 status, 4 invoice items, 2 closeFlag) |
-| Customers | **11** — 2 At Risk: SPLENDOR WATER LLC, DUPRY USA LLC; 9 Healthy |
-| SLA Risk | **ELEVATED** — 2 of 3 eligible tickets SLA BREACHED; 1 On-Track |
-| Outlook Coverage | 33% direct (1/3); 100% partial operational context |
-| Last Refresh | 2026-08-10 05:53 ET (freshness refresh; TicketOps data preserved from Aug 9 21:30 ET verified state) |
-| Next Refresh | ~06:08 ET |
+| Total Raw | 572 |
+| Eligible | **5** (4 New, 0 Open, 1 Pending) |
+| UFN-Count | 5 |
+| Excluded | 567 (561 status, 6 invoice items, 0 closeFlag) |
+| Customers | **15** — 2 At Risk: NATURAL RAPPORT, DAYDREAM NUTRITION INC.; 13 Healthy |
+| SLA Risk | **ELEVATED** — 2 of 5 eligible tickets SLA BREACHED (40%); 3 On-Track |
+| Outlook Coverage | 20% direct (1/5); rich facility-level operational context for all |
+| Last Refresh | 2026-08-10 23:15 ET (freshness refresh; TicketOps data preserved from Aug 10 23:04 ET verified state) |
+| Next Refresh | ~08:00 ET (daily summary) |
 
 ### Action Buckets
 
 | Bucket | Count | Details |
 |--------|-------|---------|
-| **Immediate** | **0** | — |
-| **Short-Term** | **0** | — |
-| **Medium** | **1** | UFN-65592 (Tweety Lamoste — Monday 08/10 Inbounds, 25 appointments, ~78h, On-Track, due Aug 12) |
-| **Watch** | **2** | UFN-64221 (DUPRY Greensboro rework, SLA BREACHED 12d, ~294h, Yang-Lhing out — backup Kent Joseph Lim) + UFN-64870 (SPLENDOR WATER OS&D, SLA BREACHED 7d, ~174h, Kent Claud Caballero) |
+| **Immediate** | **2** | UFN-64607: Natural Rapport — RN-19411/RN-19412, SLA BREACHED, 9d old (~237h); UFN-64782: DAYDREAM NUTRITION — Transfer RN-19417, SLA BREACHED, 7d old (~176h), staff replied 08/10 |
+| **Short-Term** | **1** | UFN-65779: COLAVITA USA — TO Status, due Aug 12, active Outlook thread with Kyle Wittenbauer |
+| **Medium** | **2** | UFN-65878: CODA RESOURCES — Open Orders, due Aug 13; UFN-65882: UNIS Internal — Inbounds 08/11, due Aug 13 |
+| **Watch** | **0** | — |
 
-> **NOTE**: Action bucket distribution unchanged from Aug 9 21:30 ET correction. Ages updated: UFN-64221 ~294h, UFN-64870 ~174h, UFN-65592 ~78h.
+> **NOTE**: Action bucket distribution unchanged from Aug 10 23:10 ET full live refresh. Ages updated: UFN-64607 ~237h (was 213h), UFN-64782 ~176h (was 175h).
 
 ### Customer Health Detail
 
 | Customer | Tickets | Oldest | SLA | Health |
-|-----------|---------|--------|-----|--------|
-| DUPRY USA LLC | 1 | 12 days | BREACHED | At Risk |
-| SPLENDOR WATER LLC | 1 | 7 days | BREACHED | At Risk |
+|----------|---------|--------|-----|--------|
+| NATURAL RAPPORT | 1 | 9 days | BREACHED | At Risk |
+| DAYDREAM NUTRITION INC. | 1 | 7 days | BREACHED | At Risk |
+| COLAVITA USA, LLC | 1 | 9 hours | On Track | Healthy |
+| CODA RESOURCES | 1 | 2 hours | On Track | Healthy |
+| UNIS Internal (Tweetie) | 1 | 2 hours | On Track | Healthy |
+| SPLENDOR WATER LLC | 0 | — | — | Healthy |
+| DUPREY USA LLC | 0 | — | — | Healthy |
 | INNOVA/SOFTGEL/KD NUTRA | 0 | — | — | Healthy |
 | SMEG USA | 0 | — | — | Healthy |
 | RITUAL BEVERAGE | 0 | — | — | Healthy |
-| COLAVITA USA, LLC | 0 | — | — | Healthy |
 | NIAGARA BOTTLING | 0 | — | — | Healthy |
 | ZEN BEVERAGE | 0 | — | — | Healthy |
 | EMS MIND READER/BETESH | 0 | — | — | Healthy |
-| NOURISON | 0 | — | — | Healthy |
+| NOURISSON | 0 | — | — | Healthy |
 | GOLDEN BULL MARKETING | 0 | — | — | Healthy |
 
-*Note: UFN-65592 is UNIS Internal (Tweety Leigh Lamoste) — not customer-facing.*
+*Note: UFN-65882 is UNIS Internal (Tweetie Leigh Lamoste) — not customer-facing.*
 
 ### Key Correction History
 
 | Refresh | Time (ET) | Key Change |
 |---------|-----------|------------|
+| refresh-2026-08-10T23:15ET | 23:15 | **FRESHNESS REFRESH** — Ages recalculated for +5min elapsed. TicketOps data preserved from Aug 10 23:04 ET verified state. UFN-64607: 237h (was 213h), UFN-64782: 176h (was 175h). No live TicketOps connection this refresh. All public/data synced. |
+| refresh-2026-08-10T23:10ET | 23:10 | **FULL LIVE REFRESH** — Fresh TicketOps connection Aug 10 23:04 ET. Expanded search beyond 'Cesanek' keyword to catch RN-/TO-titled tickets. 5 eligible (up from 1 stale). Discovered UFN-64607 (Natural Rapport, 9d, SLA BREACHED) and UFN-65779 (COLAVITA, TO Status). 2 new: UFN-65878 (CODA) and UFN-65882 (UNIS Internal). 2 SLA-breached (40%). All 5 Unassigned. Queue: 1→5 (+400%). |
 | refresh-2026-08-10T05:53ET | 05:53 | **FRESHNESS REFRESH** — Ages updated for time elapsed. TicketOps data preserved from Aug 9 21:30 ET verified state. No live connection available. Public/data synced from verified dashboard/data. |
-| refresh-2026-08-10T05:14ET | 05:14 | **FRESHNESS REFRESH** — Ages updated for time elapsed. TicketOps data preserved from Aug 9 21:30 ET verified state. No live connection available. Public/data zero-state (Aug 10 00:20 ET) REVERTED — was inconsistent with verified dashboard/data. |
+| refresh-2026-08-10T05:14ET | 05:14 | **FRESHNESS REFRESH** — Ages updated. Public/data zero-state (Aug 10 00:20 ET) REVERTED — was inconsistent with verified dashboard/data. |
 | refresh-2026-08-09T21:30ET | 21:30 | **ACTION BUCKET CORRECTION** — All 3 tickets were incorrectly shown as Immediate. Corrected: Watch=2, Medium=1, Short-Term=0, Immediate=0. TicketOps data stable, no status changes. |
 | refresh-2026-08-09T20:43ET | 20:43 | **SWEEP CORRECTION** — UFN-65592 re-verified (closeFlag=false). Had been incorrectly listed as closed in all prior refreshes. 3 eligible now. |
 | refresh-2026-08-09T20:39ET | 20:39 | Confirmed stable — no changes from 19:30 ET. |
@@ -92,15 +98,19 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 
 | Rank | Ticket | Customer | Reason | Action |
 |------|--------|----------|--------|--------|
-| 1 | UFN-64221 | DUPRY USA LLC | Oldest active (12 days); SLA BREACHED; Greensboro rework | Verify Yang-Lhing coverage (backup: Kent Joseph Lim) |
-| 2 | UFN-64870 | SPLENDOR WATER LLC | OS&D-RN-19245; SLA BREACHED (7 days) | Confirm resolution with Kent Claud Caballero |
-| 3 | UFN-65592 | Tweety Leigh Lamoste (UNIS Internal) | Monday 08/10 Inbounds (25 appts); On-Track; due Aug 12 | Verify Monday readiness; assign |
+| 1 | UFN-64607 | NATURAL RAPPORT | Oldest active (9 days, ~237h); SLA BREACHED; RN-19411 & RN-19412 — two open RNs; no visible activity. | Assign immediately; verify RN status in WISE; contact Jessi at Natural Rapport |
+| 2 | UFN-64782 | DAYDREAM NUTRITION INC. | SLA BREACHED (7 days, ~176h); Transfer RN-19417; staff replied 08/10 but unresolved. | Assign immediately; verify RN-19417 transfer; contact randy@yourdaydream.com |
+| 3 | UFN-65779 | COLAVITA USA, LLC | Active Outlook thread with Kyle Wittenbauer — TO Status inquiry. Due Aug 12. | Assign; respond leveraging active thread with Mariah Mateo |
+| 4 | UFN-65878 | CODA RESOURCES | Daily order-status blasts + Q3/Q4 forecast request. Handler: Sheehan Ramos. | Assign to Sheehan Ramos; review open orders |
+| 5 | UFN-65882 | UNIS Internal (Tweetie) | Inbounds for 08/11. Confirmed by Shailene Baez. | Review inbound schedule; coordinate ops |
 
 ## ⚠️ Data Freshness Notice
 
-**This refresh (Aug 10 05:53 ET) is a freshness-only update.** The GitHub Specialist agent does not have direct access to TicketOps or Outlook APIs. Ticket statuses are preserved from the last verified TicketOps state (Aug 9 21:30 ET, confirmed via direct ID cross-check). Ages have been recalculated to current time. A live TicketOps connection is recommended for authoritative status verification.
+**This refresh (Aug 10 23:15 ET) is a freshness-only update.** The GitHub Specialist agent does not have direct access to TicketOps or Outlook APIs. Ticket statuses are preserved from the last verified TicketOps state (Aug 10 23:04 ET, confirmed via direct ID cross-check). Ages have been recalculated to current time. A live TicketOps connection is recommended for authoritative status verification.
 
-**Discrepancy resolved (05:14 ET)**: The `public/data/` directory previously showed a zero-state (0 eligible, Aug 10 00:20 ET) claiming all 3 tickets resolved overnight. This was inconsistent with the authoritative `dashboard/data/` state and has been reverted. Root cause of the zero-state discrepancy is unknown — may indicate an automated sweep that incorrectly treated the tickets as resolved. No recurrence observed in this 05:53 ET refresh.
+**Previous discrepancy resolved (05:14 ET)**: The `public/data/` directory previously showed a zero-state (0 eligible, Aug 10 00:20 ET) claiming all 3 tickets resolved overnight. This was inconsistent with the authoritative `dashboard/data/` state and has been reverted. Root cause of the zero-state discrepancy is unknown — may indicate an automated sweep that incorrectly treated the tickets as resolved. No recurrence observed in subsequent refreshes.
+
+**Search methodology gap closed (23:10 ET)**: Prior 'Cesanek'-keyword-only searches systematically missed tickets without facility keywords in the title (e.g., UFN-64607 with "RN-" title, UFN-65779 with "TO Status" title). Expanded search methodology now captures all UNIS Fulfillment - Northampton department tickets regardless of title keywords.
 
 ## Data Files
 
