@@ -2,8 +2,8 @@
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
   "tenant": "LT",
-  "generatedAt": "2026-08-11T07:20:30Z",
-  "lastRefreshed": "2026-08-11T03:20:30-04:00",
+  "generatedAt": "2026-08-11T09:03:42Z",
+  "lastRefreshed": "2026-08-11T05:03:42-04:00",
   "totalRaw": 572,
   "pipelineSummary": {
     "totalRaw": 572,
@@ -27,7 +27,7 @@
       "closeFlag": false,
       "slaStatus": "BREACHED",
       "ageDays": 10,
-      "ageHours": 242
+      "ageHours": 243
     },
     {
       "ticketId": "UFN-64782",
@@ -40,7 +40,7 @@
       "closeFlag": false,
       "slaStatus": "BREACHED",
       "ageDays": 7,
-      "ageHours": 180
+      "ageHours": 182
     },
     {
       "ticketId": "UFN-65035",
@@ -53,7 +53,7 @@
       "closeFlag": false,
       "slaStatus": "On Track",
       "ageDays": 0,
-      "ageHours": 17,
+      "ageHours": 19,
       "outlookMatch": "DIRECT"
     },
     {
@@ -67,7 +67,7 @@
       "closeFlag": false,
       "slaStatus": "On Track",
       "ageDays": 0,
-      "ageHours": 16,
+      "ageHours": 18,
       "outlookMatch": "DIRECT"
     },
     {
@@ -81,7 +81,7 @@
       "closeFlag": false,
       "slaStatus": "On Track",
       "ageDays": 0,
-      "ageHours": 13,
+      "ageHours": 15,
       "outlookMatch": "DIRECT"
     },
     {
@@ -95,7 +95,7 @@
       "closeFlag": false,
       "slaStatus": "On Track",
       "ageDays": 0,
-      "ageHours": 7
+      "ageHours": 9
     },
     {
       "ticketId": "UFN-65877",
@@ -108,7 +108,7 @@
       "closeFlag": false,
       "slaStatus": "On Track",
       "ageDays": 0,
-      "ageHours": 7
+      "ageHours": 9
     },
     {
       "ticketId": "UFN-65895",
@@ -121,7 +121,7 @@
       "closeFlag": false,
       "slaStatus": "On Track",
       "ageDays": 0,
-      "ageHours": 6,
+      "ageHours": 7,
       "outlookMatch": "DIRECT"
     },
     {
@@ -135,7 +135,7 @@
       "closeFlag": false,
       "slaStatus": "On Track",
       "ageDays": 0,
-      "ageHours": 8,
+      "ageHours": 10,
       "outlookMatch": "DIRECT"
     }
   ],
@@ -157,5 +157,5 @@
     "UFN-65917", "UFN-65918", "UFN-65919"
   ],
   "truncationNote": "Previously ~100+ eligible; authoritative TicketOps refresh reduced to 9 verified.",
-  "refreshNote": "AUTHORITATIVE REFRESH Aug 11 03:20 ET. Fresh TicketOps connection verified actual statuses. 48 stale → 9 verified eligible (8 New, 1 Pending). 2 SLA-breached: UFN-64607 (242h/10d), UFN-64782 (180h/7d). All 9 Unassigned. 5 direct Outlook matches. UFN-65881 (Hint Inc.) status changed to Resolved in TicketOps. 38 truncated tickets verified non-eligible. TicketOps authoritative; Outlook non-blocking preserved from Aug 10 23:13 ET LIVE scan."
+  "refreshNote": "FRESHNESS REFRESH Aug 11 05:03 ET. Ages recalculated (+1h43m since authoritative refresh at 03:20 ET). 9 verified eligible: 8 New, 1 Pending. 2 SLA-breached: UFN-64607 (243h/10d), UFN-64782 (182h/7d). All 9 Unassigned. 5 direct Outlook matches (56%). TicketOps authoritative; no live connection this refresh — ticket statuses preserved from authoritative Aug 11 03:20 ET baseline."
 }
