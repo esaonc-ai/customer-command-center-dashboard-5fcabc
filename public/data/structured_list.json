@@ -1,9 +1,9 @@
 {
   "dashboard": "Customer Command Center – NHT/Cesanek",
   "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
-  "lastRefreshed": "2026-08-11T03:20:30-04:00",
-  "dataSource": "TicketOps (authoritative) – LIVE connection Aug 11 03:20 ET. Outlook context from LIVE scan Aug 10 23:13 ET (non-blocking).",
-  "refreshType": "authoritative",
+  "lastRefreshed": "2026-08-11T05:03:42-04:00",
+  "dataSource": "TicketOps (authoritative) – PRESERVED from LIVE connection Aug 11 03:20 ET. Outlook context from LIVE scan Aug 10 23:13 ET (non-blocking).",
+  "refreshType": "freshness",
   "totalRaw": 572,
   "totalEligible": 9,
   "newCount": 8,
@@ -13,7 +13,7 @@
   "slaHealth": {
     "slaBreachCount": 2,
     "slaOnTrackCount": 7,
-    "slaBreachRisk": "ELEVATED – 2/9 SLA BREACHED (22%). UFN-64607 (242h/10d), UFN-64782 (180h/7d). All 9 Unassigned."
+    "slaBreachRisk": "ELEVATED – 2/9 SLA BREACHED (22%). UFN-64607 (243h/10d), UFN-64782 (182h/7d). All 9 Unassigned."
   },
   "evidenceMetrics": {
     "outlookThreadsMatched": 5,
@@ -22,8 +22,8 @@
     "invoiceItemsExcluded": 8,
     "reopenExcluded": 15,
     "slaBreachCount": 2,
-    "dataFreshness": "AUTHORITATIVE – Aug 11 03:20 ET (fresh TicketOps LIVE connection)",
-    "queueTrend": "↓ SHRANK 48→9 – 81% reduction from stale state after verified TicketOps statuses",
+    "dataFreshness": "FRESHNESS – Aug 11 05:03 ET (ages recalculated; statuses preserved from Aug 11 03:20 ET authoritative baseline)",
+    "queueTrend": "↔ STABLE at 9 eligible (unchanged from 03:20 ET authoritative). Ages +1h43m.",
     "staffingGap": "CRITICAL – All 9 tickets Unassigned"
   }
 }
