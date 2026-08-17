@@ -1,29 +1,15 @@
 {
-  "dashboard": "Customer Command Center – NHT/Cesanek",
+  "dashboard": "Customer Command Center",
   "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
-  "lastRefreshed": "2026-08-11T06:19:00-04:00",
-  "dataSource": "TicketOps (authoritative) – PRESERVED from LIVE connection Aug 11 05:07 ET. Outlook context from LIVE scan Aug 10 23:13 ET (non-blocking).",
-  "refreshType": "freshness",
-  "totalRaw": 572,
-  "totalEligible": 9,
-  "newCount": 8,
+  "lastRefreshed": "2026-08-16T19:58:00-04:00",
+  "dataSource": "Ticket Ops (authoritative)",
+  "refreshType": "authoritative",
+  "totalRaw": 348,
+  "totalEligible": 254,
+  "newCount": 209,
   "openCount": 0,
-  "pendingCount": 1,
-  "truncationNote": "Authoritative refresh: 48 stale → 9 verified. 39 resolved/closed during ~8h gap. FRESHNESS refresh at 06:19 ET: ages recalculated.",
-  "slaHealth": {
-    "slaBreachCount": 2,
-    "slaOnTrackCount": 7,
-    "slaBreachRisk": "ELEVATED – 2/9 SLA BREACHED (22%). UFN-64607 (244h/10d), UFN-64782 (183h/7d). All 9 Unassigned."
-  },
-  "evidenceMetrics": {
-    "outlookThreadsMatched": 5,
-    "outlookCoverage": "56% direct (5/9); 14 operational threads, 4 escalations",
-    "outlookCustomers": 14,
-    "invoiceItemsExcluded": 8,
-    "reopenExcluded": 15,
-    "slaBreachCount": 2,
-    "dataFreshness": "FRESHNESS – Aug 11 06:19 ET (ages recalculated +1h12m since 05:07 ET authoritative)",
-    "queueTrend": "↘ STABLE at 9 verified eligible (preserved from 05:07 ET authoritative). 2 SLA-breached.",
-    "staffingGap": "CRITICAL – All 9 tickets Unassigned"
-  }
+  "pendingCount": 45,
+  "truncationNote": "No truncation (254 eligible < 500).",
+  "slaHealth": { "slaBreachCount": 171, "slaOnTrackCount": 83, "slaBreachRisk": "elevated - large stale New backlog (oldest ~164 days) plus recurring system reports" },
+  "evidenceMetrics": { "outlookThreadsMatched": 6, "outlookCoverage": "2.4%", "outlookCustomers": 5, "invoiceItemsExcluded": 28, "reopenExcluded": 41, "slaBreachCount": 171, "dataFreshness": "2026-08-16 19:58 ET", "queueTrend": "stable-high", "staffingGap": "1 HIGH WMS blocker (UFN-66497) pending engineering" }
 }
