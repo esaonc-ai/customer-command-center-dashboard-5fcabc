@@ -1,33 +1,29 @@
 {
-  "description": "Outlook email context for NHT/Cesanek tickets – AUTHORITATIVE REFRESH Aug 11 06:56 ET. Non-blocking supplement to TicketOps. Outlook data preserved from LIVE scan Aug 10 23:13 ET. Authoritative TicketOps connection verified 7 eligible at 06:55 ET (corrected from 9).",
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-08-11T10:56:56Z",
-  "lastRefreshed": "2026-08-11T06:56:56-04:00",
-  "dataSource": "Outlook agent – LIVE scan Aug 10, 2026 (past 30 days from nicole.weber@unisco.com). Preserved for authoritative refresh.",
-  "threadsMatched": 3,
-  "threadsUniquePostDedup": 14,
-  "coverage": { "eligibleTicketsTotal": 7, "eligibleTicketsWithOutlookDirect": 3, "coveragePct": "43% direct matches (3/7); 14 operational threads" },
+  "generatedAt": "2026-08-16T23:58:00Z",
+  "lastRefreshed": "2026-08-16T19:58:00-04:00",
+  "dataSource": "Outlook thread mappings + Ticket Ops first-message context",
+  "threadsMatched": 6,
+  "threadsUniquePostDedup": 6,
+  "coverage": { "eligibleTicketsTotal": 254, "eligibleTicketsWithOutlookDirect": 6, "coveragePct": "2.4%" },
   "ticketThreads": [
-    { "ticketId": "UFN-65779", "customer": "Colavita USA LLC", "directMatch": true, "contextSummary": "Kyle Wittenbauer asking TO Status.", "threadDate": "2026-08-10" },
-    { "ticketId": "UFN-65895", "customer": "Nht Cs (Internal System)", "directMatch": false, "contextSummary": "Automated empty notification – internal system-generated ticket.", "threadDate": "2026-08-10" },
-    { "ticketId": "UFN-65857", "customer": "Ritual Beverage Co.", "directMatch": true, "contextSummary": "Nina Weiss (ABF) requesting CBOL. Yang-Lhing added Nicole.", "threadDate": "2026-08-10" }
+    { "ticketId": "UFN-66380", "customer": "COLAVITA USA, LLC", "directMatch": true, "contextSummary": "COLAVITA - WEEK OF 8/10/26 -- DISCRIPANCY (Mariela Fernandez <-> Nicole Weber/Mariah Mateo)", "threadDate": "2026-08-16" },
+    { "ticketId": "UFN-66004", "customer": "CANVAS 340 LLC", "directMatch": true, "contextSummary": "Wynk Short Shipped Items - need to clone these DN's (Mark Golding <-> Shailene Baez)", "threadDate": "2026-08-12" },
+    { "ticketId": "UFN-65985", "customer": "ROAR BEVERAGES INC", "directMatch": true, "contextSummary": "Roar Pick up Friday July 10th (Sara Schraden) - DN-2025084 reschedule", "threadDate": "2026-07-10" },
+    { "ticketId": "UFN-65558", "customer": "ROAR BEVERAGES INC", "directMatch": true, "contextSummary": "ROAR KEHE Shipments Transition to CPU Carrier (Mike Chordas)", "threadDate": "2026-08-10" },
+    { "ticketId": "UFN-66581", "customer": "NOURISON", "directMatch": true, "contextSummary": "Nourison - Carpet Outbound Execution Plan + Nourison Site Visit", "threadDate": "2026-08-16" },
+    { "ticketId": "UFN-66574", "customer": "DUPRAY USA LLC", "directMatch": true, "contextSummary": "DUPRAY USA LLC Item Master Review (Lorraine Gascon)", "threadDate": "2026-08-10" }
   ],
   "excludedTicketsWithOutlookContext": [
-    { "ticketId": "UFN-65035", "customer": "Niagara Bottling", "excludedReason": "closeFlag=true – closed Aug 5 by Yang-Lhing Bague", "outlookContext": "Missed pickup PIT-0811-DUYTAN + load cancellations.", "threadDate": "2026-08-10" },
-    { "ticketId": "UFN-65043", "customer": "COLAVITA USA/O Olive Oil", "excludedReason": "Reopen status – explicitly excluded per dashboard rules", "outlookContext": "Paolo Colavita urgently following up TO5020/TO5022 Edison transfer.", "threadDate": "2026-08-11" }
+    { "ticketId": "UFN-66570", "customer": "RITUAL BEVERAGE COMPANY", "excludedReason": "billing-adjacent (CBOL / prepaid invoice)", "outlookContext": "182682998 RITUAL Need CBOL (Nina Weiss)", "threadDate": "2026-08-12" },
+    { "ticketId": "UFN-66231", "customer": "RITUAL BEVERAGE COMPANY", "excludedReason": "billing-adjacent (CBOL / prepaid invoice)", "outlookContext": "182682998 RITUAL Need CBOL (Nina Weiss)", "threadDate": "2026-08-12" }
   ],
   "operationalThreads": [
-    { "thread": "EOD 8/10 – Nicole Weber", "summary": "Colavita RN-19455/19445/19233, Innova/KD Nutra, Roar, Hint (multiple DNs), Ritual, Prime Time. FLAGGED: DN-1604739 (May order on dock)." },
-    { "thread": "Erin EOD 8.10", "summary": "Missed pickups PE/Niagara, Rise, Smeg. CKMAPP 3 DNs COMMIT FAILED. Aterian ~46 DNs night-shift prep." },
-    { "thread": "Item Master Updates Needed (Prime Time)", "summary": "Remeasure/weigh still pending since Jul 10." }
+    { "thread": "UFN-66498 - RN-19492/19493", "summary": "Internal 'Inbounds for 08/13/2026' schedule report; no external customer thread." },
+    { "thread": "VIVO/CKNAPP cancellations, Aviron FedEx, Daydream dropship, Sheex", "summary": "Internal EOD context only; no external mailbox threads found." }
   ],
-  "activeEscalations": [
-    { "thread": "Colavita TO5020/TO5022 Edison Transfer", "riskLevel": "HIGH" },
-    { "thread": "CKMAPP COMMIT FAILED – 3 DNs Blocked", "riskLevel": "HIGH" },
-    { "thread": "Niagara PIT-0811-DUYTAN Missed Pickup", "riskLevel": "MEDIUM" },
-    { "thread": "Aterian ~46 DNs Night-Shift Prep", "riskLevel": "MEDIUM" }
-  ],
-  "outlookCustomersActive": ["Colavita USA LLC", "Ritual Beverage Co.", "Niagara Bottling", "Innova/KD Nutra", "Roar Beverages", "Hint Inc.", "Prime Time Packaging", "CKMAPP", "Aterian", "Maizly", "Splendor Water", "Smeg USA", "Uptime Energy/Rise"],
-  "refreshNote": "AUTHORITATIVE REFRESH – LIVE TicketOps connection verified 7 eligible (3/7 Outlook matches, 43%). UFN-65035 and UFN-65043 moved to excludedTicketsWithOutlookContext."
+  "activeEscalations": [ { "thread": "Cesanek WMS production blocker - Stage 3243649 (UFN-66497)", "riskLevel": "high" } ],
+  "outlookCustomersActive": [ "Colavita USA", "Canvas 340 (Wynk)", "Roar Beverages", "Nourison", "Dupray USA" ],
+  "refreshNote": "Outlook context is non-blocking and partial. Dashboard self-artifacts excluded from thread matching."
 }
