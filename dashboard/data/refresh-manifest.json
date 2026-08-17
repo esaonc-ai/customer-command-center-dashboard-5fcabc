@@ -1,42 +1,36 @@
 {
-  "dashboard": "Customer Command Center – NHT/Cesanek",
+  "dashboard": "Customer Command Center",
   "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
   "refresh": {
-    "id": "refresh-2026-08-11T06:56ET-AUTHORITATIVE",
-    "timestamp": "2026-08-11T10:56:56Z",
-    "timestampLocal": "2026-08-11T06:56:56-04:00",
-    "executedBy": "Super Agent (Nicole Weber) – AUTHORITATIVE refresh: LIVE TicketOps connection verified 7 eligible",
+    "id": "refresh-2026-08-16T19:58ET-AUTHORITATIVE",
+    "timestamp": "2026-08-16T23:58:00Z",
+    "timestampLocal": "2026-08-16 19:58:00 ET",
+    "executedBy": "Ticket Operations specialist agent",
     "type": "authoritative",
-    "previousRefreshId": "refresh-2026-08-11T06:52ET-FRESHNESS",
-    "keyChange": "AUTHORITATIVE REFRESH: LIVE TicketOps connection corrected from 9 to 7 eligible. Removed UFN-65035 (closeFlag=true, closed Aug 5 by Yang-Lhing Bague) and UFN-65043 (Reopen status). Corrected UFN-65895 customer from Nourison to Nht Cs (Internal System). 7 verified: 5 New, 2 Pending. 2 SLA-breached: UFN-64607 (245h/10d), UFN-64782 (184h/8d). All 7 Unassigned. 3/7 Outlook matches (43%)."
+    "previousRefreshId": "refresh-2026-08-11T06:56ET-AUTHORITATIVE",
+    "keyChange": "Full authoritative re-enumeration: eligible set corrected from stale 7 to 254. Open=0 (status id 1 = 'Reopen'); 25 closed-Pending and 28 billing/storage/handling items excluded."
   },
   "rulesApplied": {
-    "includeStatuses": ["New", "Open", "Pending"],
-    "excludeStatuses": ["Reopen", "Reopened", "Closed", "Resolved", "Cancelled", "Done"],
-    "excludeInvoiceItems": ["billing", "UF Billing", "storage", "handling"],
-    "ufnFiltering": "enabled",
-    "deduplication": "enabled",
-    "authority": "TicketOps authoritative; Outlook non-blocking"
+    "includeStatuses": [ "New", "Open", "Pending" ],
+    "excludeStatuses": [ "Reopen", "Reopened", "Closed", "Resolved", "Cancelled", "Done" ],
+    "excludeInvoiceItems": [ "billing", "UF Billing", "storage", "handling" ],
+    "ufnFiltering": true,
+    "deduplication": true,
+    "authority": "Ticket Ops status"
   },
   "dataSources": {
-    "tickets": { "source": "TicketOps – AUTHORITATIVE LIVE connection Aug 11 06:55 ET", "status": "live_verified", "file": "data/tickets.json" },
-    "outlook": { "source": "Outlook agent – PRESERVED from LIVE scan Aug 10 23:13 ET", "status": "preserved_live_non_blocking", "file": "data/outlook-context.json" }
+    "tickets": { "source": "Ticket Ops", "status": "ok", "file": "dashboard/data/tickets.json" },
+    "outlook": { "source": "Outlook", "status": "ok", "file": "dashboard/data/outlook-context.json" }
   },
   "dashboardState": {
-    "totalRaw": 572,
-    "totalEligible": 7,
-    "byStatus": { "New": 5, "Open": 0, "Pending": 2 },
-    "customerHealth": { "customersInScope": 7, "healthSummary": "5/7 Healthy. 2 At Risk: Natural Rapport (Q&C Products) (10d/245h) and Daydream Nutrition Inc. (8d/184h)." },
-    "priorityQueue": { "slaBreached": 2, "slaOnTrack": 5, "oldestTicketDays": 10 },
-    "actionBuckets": { "immediate": 5, "shortTerm": 0, "mediumTerm": 0, "watch": 2 },
-    "evidenceMetrics": {
-      "outlookThreadsMatched": 3,
-      "slaBreachCount": 2,
-      "dataFreshness": "AUTHORITATIVE – Aug 11 06:56 ET (LIVE TicketOps connection; 7 verified eligible)",
-      "queueTrend": "↘ CORRECTED from 9 to 7 eligible. UFN-65035 (closeFlag=true), UFN-65043 (Reopen) removed.",
-      "staffingGap": "CRITICAL – All 7 Unassigned"
-    }
+    "totalRaw": 348,
+    "totalEligible": 254,
+    "byStatus": { "New": 209, "Open": 0, "Pending": 45 },
+    "customerHealth": { "customersInScope": 56, "healthSummary": "56 distinct customer/contact values visible in eligible NHT/Cesanek tickets; roster (58) is supplemental only." },
+    "priorityQueue": { "slaBreached": 171, "slaOnTrack": 83, "oldestTicketDays": 164 },
+    "actionBuckets": { "immediate": 1, "shortTerm": 50, "mediumTerm": 203, "watch": 0 },
+    "evidenceMetrics": { "outlookThreadsMatched": 6, "slaBreachCount": 171, "dataFreshness": "2026-08-16 19:58 ET", "queueTrend": "stable-high (large stale backlog + recurring system reports)", "staffingGap": "1 HIGH WMS blocker (UFN-66497) pending engineering" }
   },
-  "notes": "AUTHORITATIVE REFRESH Aug 11 06:56 ET. LIVE TicketOps connection verified 7 eligible (corrected from 9). UFN-65035 Niagara Bottling removed (closeFlag=true, closed Aug 5 by Yang-Lhing Bague). UFN-65043 COLAVITA USA/O Olive Oil removed (Reopen status). UFN-65895 customer corrected to Nht Cs (Internal System). 2 SLA-breached: UFN-64607 (245h/10d), UFN-64782 (184h/8d). All 7 Unassigned. 3/7 Outlook matches (43%). All public/data synced.",
-  "nextScheduledRefresh": "2026-08-11 08:00 ET (daily summary email)"
+  "notes": "Reopen (41) and closed-Pending (25) excluded via closeFlag/displayStatusName. Billing/storage/handling/claim (28) excluded via title/from pattern. Customer Health = ticket-visible coverage (56 distinct customer/contact values); roster supplemental.",
+  "nextScheduledRefresh": "2026-08-17 08:00 ET (daily summary email)"
 }
