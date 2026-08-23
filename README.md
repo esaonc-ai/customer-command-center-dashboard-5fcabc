@@ -19,7 +19,8 @@ Real-time operational dashboard for monitoring ticket queues, customer health, a
 | **Deduplication** | Overlapping ticket/email threads merged |
 | **Outlook Context** | Non-blocking enrichment where available |
 | **Authority** | TicketOps status is authoritative |
-| **closeFlag Verification** | **REQUIRED** – closeFlag=false regardless of displayStatus (strengthened rule) |
+| **Eligibility Gate** | `displayStatusSystemStatus = open` **AND** `displayStatusName ∈ {New, Pending}` |
+| **closeFlag Gate** | **NOT USED** – closeFlag is not a filter; live `closeFlag=true` tickets are retained (auto-close artifacts cause false negatives) |
 
 ## Customer Health
 
@@ -33,23 +34,27 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** – Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** – Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Aug 11 05:07 ET – AUTHORITATIVE)
+## Current Dashboard State (Last Refresh: Aug 23 07:35 ET – AUTHORITATIVE)
 
 | Metric | Value |
 |--------|-------|
-| Total Raw | 572 |
-| Eligible | **9** (8 New, 0 Open, 1 Pending) |
-| UFN-Count | 9 |
-| Excluded | 563 (479 status, 8 invoice items, 0 closeFlag, 76 reopen/other) |
-| Customers | **9** – 2 At Risk: NATURAL RAPPORT, DAYDREAM NUTRITION INC.; 7 Healthy |
-| SLA Risk | **ELEVATED** – 2 of 9 eligible tickets SLA BREACHED (22%); 7 On-Track |
-| Outlook Coverage | 56% direct (5/9); rich facility-level operational context |
-| Last Refresh | 2026-08-11 05:07 ET (**AUTHORITATIVE** – fresh TicketOps LIVE connection verified actual statuses) |
-| Next Refresh | ~08:00 ET (daily summary) |
+| Total Raw (gate-matched) | 282 |
+| Eligible | **244** (172 New, 0 Open, 72 Pending) |
+| UFN-Count | 244 |
+| Excluded | 38 from gate — 34 billing/storage/handling/claim + 4 duplicates (Reopen/other already outside gate) |
+| closeFlag | **NOT a gate** — 22 live `closeFlag=true` tickets retained |
+| Customers | **41** distinct orgs (ticket-visible coverage; roster supplemental) |
+| Priority | 1 Urgent (UFN-67572), 243 Medium |
+| SLA Risk | **ELEVATED** – 174 SLA-breached / 70 on-track (large stale New backlog + recurring system reports) |
+| Outlook Coverage | 8 direct matches (~3.3%); strongest signals Prime Time, Maizly, Colavita, Sheex, Roar |
+| Last Refresh | 2026-08-23 07:35 ET (**AUTHORITATIVE** – fresh TicketOps LIVE connection; closeFlag removed from gate) |
+| Next Refresh | ~08:00 ET (daily summary email) |
 
-### ⏱ Queue Delta: 48 → 9 (−81%)
+### ⏱ Queue Delta (this refresh)
 
-**39 tickets verified resolved/closed in TicketOps** during the ~8-hour gap between the Aug 10 23:20 ET LIVE connection and this authoritative refresh. UFN-65881 (Hint Inc., 11 DNs Release) confirmed resolved. All ~38 previously truncated tickets verified non-eligible. **Only 9 verified eligible tickets remain.**
+**Eligibility gate corrected** — `closeFlag` was previously being used as a filter (dropping `closeFlag=true` tickets). This refresh removed it: eligibility is now `displayStatusSystemStatus=open` + `displayStatusName ∈ {New,Pending}` only. Result: **22 live `closeFlag=true` tickets restored to the eligible set** (e.g. UFN-67426 Maizly hot-sample order). The eligible total remains 244 (172 New / 72 Pending) after removing 34 billing/storage/handling and 4 duplicates.
+
+> The Action Buckets / Customer Health Detail / Priority Queue sections below are from the **Aug 11** refresh and are retained for history only. Authoritative current metrics are in `dashboard/data/tickets.json`, `refresh-manifest.json`, and `public/data/structured_list.json`.
 
 ### Action Buckets
 
