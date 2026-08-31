@@ -1,1 +1,44 @@
-{"dashboard":"Customer Command Center","facility":{"code":"LT_F21","name":"NHT/Cesanek","tenant":"LT","timezone":"America/New_York"},"refresh":{"id":"refresh-2026-08-31T01:07ET-AUTHORITATIVE","timestamp":"2026-08-31T05:07:48Z","timestampLocal":"2026-08-31 01:07 ET","executedBy":"Ticket Operations specialist agent","type":"authoritative","previousRefreshId":"refresh-2026-08-30T05:05ET-AUTHORITATIVE","keyChange":"Full authoritative re-pull. Eligible 211 (New 131, Pending 80, Open 0); closeFlag NOT a gate; 18 billing/storage/handling + 45 reopen + 95 dedup excluded. Outlook context refreshed (non-blocking)."},"rulesApplied":{"includeStatuses":["New","Open","Pending"],"excludeStatuses":["Reopen","Reopened","Closed","Resolved","Cancelled","Done"],"excludeInvoiceItems":["billing","UF Billing","storage","handling"],"ufnFiltering":true,"deduplication":true,"authority":"Ticket Ops status (displayStatusSystemStatus=open + displayStatusName in {New,Pending}; closeFlag NOT a gate)"},"dataSources":{"tickets":{"source":"Ticket Ops","status":"ok","file":"dashboard/data/tickets.json"},"outlook":{"source":"Outlook","status":"ok","file":"dashboard/data/outlook-context.json"}},"dashboardState":{"totalRaw":369,"totalEligible":211,"byStatus":{"New":131,"Open":0,"Pending":80},"customerHealth":{"customersInScope":54,"healthSummary":"54 distinct customer values visible in eligible NHT/Cesanek tickets; roster is supplemental only."},"priorityQueue":{"urgent":0,"high":0,"medium":211,"closeFlagTrueRetained":28,"oldestTicketDays":179},"actionBuckets":{"immediate":146,"shortTerm":65,"mediumTerm":0,"watch":0},"evidenceMetrics":{"outlookThreadsMatched":15,"invoiceItemsExcluded":18,"closeFlagExcluded":0,"reopenExcluded":45,"deduplicated":95,"slaBreached":146,"slaOnTrack":65,"dataFreshness":"2026-08-31 01:07 ET","queueTrend":"elevated - large stale New/Pending backlog (oldest ~179d) plus recurring automated/system reports"}},"notes":"Eligibility gate: displayStatusSystemStatus=open AND displayStatusName in {New,Pending}; closeFlag NOT used. Billing/storage/handling invoice items and recurring/duplicate threads excluded. Customer Health = ticket-visible coverage (roster supplemental). Action buckets: immediate = SLA-breached, shortTerm = within-SLA.","nextScheduledRefresh":"2026-09-01 08:00 ET (daily summary email)"}
+{
+  "refresh": {
+    "id": "refresh-2026-08-31T02:30ET-AUTHORITATIVE-v2",
+    "timestamp": "2026-08-31T06:30:00Z",
+    "timestampLocal": "2026-08-31 02:30 ET",
+    "executedBy": "Ticket Ops specialist agent",
+    "type": "AUTHORITATIVE",
+    "previousRefreshId": "refresh-2026-08-31T01:07ET-AUTHORITATIVE",
+    "keyChange": "Fixed bucket overlap; totalRaw scoped to open statuses; closeFlag removed as gate."
+  },
+  "rulesApplied": [
+    "Include ONLY New, Open, Pending",
+    "Exclude Reopen/Reopened, Closed, Resolved, Cancelled, Done",
+    "Exclude billing / UF Billing / storage / handling invoice items",
+    "UFN-related filtering enabled",
+    "Do not duplicate overlapping ticket/email threads",
+    "Ticket Ops status is authoritative",
+    "Authority: displayStatusSystemStatus=open + displayStatusName in {New,Pending}; closeFlag NOT a gate"
+  ],
+  "dataSources": [
+    "Ticket Ops: POST /v1/iam/tickets/page (departmentId 323826714354839552, displayStatusSystemStatus=10)",
+    "Outlook: unavailable this session (fallback to Ticket Ops first-message/subject)"
+  ],
+  "dashboardState": {
+    "totalRaw": 339,
+    "totalEligible": 185,
+    "byStatus": { "New": 118, "Open": 0, "Pending": 67 },
+    "customerHealth": { "customersInScope": 55, "healthSummary": "55 distinct customer organizations visible in eligible NHT/Cesanek tickets; roster/aliases supplemental (none applied)." },
+    "priorityQueue": { "urgent": 0, "high": 0, "medium": 185, "closeFlagTrueRetained": 21, "oldestTicketDays": 172 },
+    "actionBuckets": { "immediate": 133, "shortTerm": 52, "mediumTerm": 0, "watch": 21 },
+    "evidenceMetrics": {
+      "outlookThreadsMatched": 0,
+      "invoiceItemsExcluded": 18,
+      "closeFlagExcluded": 0,
+      "reopenExcluded": 41,
+      "deduplicated": 95,
+      "slaBreached": 133,
+      "slaOnTrack": 52,
+      "dataFreshness": "live (2026-08-31 02:30 ET)",
+      "queueTrend": "New-heavy (118/185); ~72% SLA-breached; 21 closeFlag=true live artifacts retained"
+    }
+  },
+  "nextScheduledRefresh": "2026-09-01 08:00 ET (daily summary email)"
+}
