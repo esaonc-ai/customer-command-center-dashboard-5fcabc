@@ -1,1 +1,35 @@
-{"dashboard":"Customer Command Center","facility":{"code":"LT_F21","name":"NHT/Cesanek","tenant":"LT","timezone":"America/New_York"},"lastRefreshed":"2026-08-31T05:40:00-04:00","dataSource":"Ticket Ops (authoritative)","refreshType":"authoritative","totalRaw":299,"totalEligible":194,"newCount":122,"openCount":0,"pendingCount":72,"truncationNote":"No truncation (194 eligible < 500).","slaHealth":{"slaBreachCount":142,"slaOnTrackCount":52,"slaBreachRisk":"elevated - large stale New/Pending backlog (oldest ~171 days) plus recurring system reports"},"evidenceMetrics":{"outlookThreadsMatched":1,"outlookCoverage":"0.52%","outlookCustomers":1,"invoiceItemsExcluded":20,"closeFlagExcluded":0,"reopenExcluded":0,"deduplicated":84,"dataFreshness":"2026-08-31 05:40 ET","queueTrend":"elevated","closeFlagTrueRetained":25}}
+{
+  "dashboard": "Customer Command Center",
+  "facility": {
+    "code": "LT_F21",
+    "name": "NHT/Cesanek",
+    "tenant": "LT",
+    "timezone": "America/New_York"
+  },
+  "lastRefreshed": "2026-09-01T14:30:00-04:00",
+  "dataSource": "Ticket Ops (authoritative)",
+  "refreshType": "authoritative",
+  "totalRaw": 285,
+  "totalEligible": 213,
+  "newCount": 117,
+  "openCount": 0,
+  "pendingCount": 96,
+  "truncationNote": "No truncation (213 eligible < 500).",
+  "slaHealth": {
+    "slaBreachCount": 152,
+    "slaOnTrackCount": 61,
+    "slaBreachRisk": "elevated - large stale New/Pending backlog (oldest ~180 days) plus recurring system reports"
+  },
+  "evidenceMetrics": {
+    "outlookThreadsMatched": 7,
+    "outlookCoverage": "3.29%",
+    "outlookCustomers": 7,
+    "billingStorageHandlingExcluded": 24,
+    "closeFlagExcluded": 0,
+    "reopenExcluded": 62,
+    "deduplicated": 72,
+    "dataFreshness": "2026-09-01 14:30 ET",
+    "queueTrend": "elevated",
+    "closeFlagTrueRetained": 30
+  }
+}

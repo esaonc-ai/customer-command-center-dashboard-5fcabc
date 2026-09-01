@@ -1,1 +1,137 @@
-{"facility":"UNIS Fulfillment - Northampton","facilityCode":"LT_F21","generatedAt":"2026-08-31","lastRefreshed":"2026-08-31","dataSource":"Outlook (direct mail search)","threadsMatched":1,"threadsUniquePostDedup":1,"coverage":{"eligibleTicketsTotal":194,"eligibleTicketsWithOutlookDirect":1,"coveragePct":0.52},"ticketThreads":[{"ticketNo":"UFN-68028","account":"COLAVITA USA, LLC","subject":"Re: PU 123801 TMS ID 210964674","status":"Pending","latestUtc":"2026-08-28 16:03","note":"matched eligible ticket; same ticket spans 3 conversation IDs -> deduped to one thread"}],"excludedTicketsWithOutlookContext":[{"ticketNo":"UFN-67030","subject":"Request Excel file (Nourison)","reason":"NOT present in current eligible set - flag for verification (user cited UFN-67030 as live-Pending closeFlag=true example)"}],"operationalThreads":[{"thread":"Advanced Report - Dock Activity","note":"recurring automated; collapsed in dedup"},{"thread":"Reminder: SEND VIVO DAMAGE REPORT","note":"recurring automated; collapsed in dedup"},{"thread":"Cesanek Dropship EOD","note":"recurring automated (multiple brands)"},{"thread":"Cesanek Appointment Watch Report","note":"recurring automated"}],"activeEscalations":[{"ticketNo":"UFN-68822","title":"DN-2124595 - HIGH PRIORITY","account":"ROAR BEVERAGES INC"},{"ticketNo":"UFN-68794","title":"URGENT Shipment Sent without Notification","account":"CKNAPP SALES INC"},{"ticketNo":"UFN-68741","title":"DN-2117821 & DN-2121527 Damages","account":"PRIME TIME PACKAGING LTD"},{"ticketNo":"UFN-67900","title":"T-387 Resin-HIGH MUST pick up","account":"NIAGARA BOTTLING LLC - RESIN"},{"ticketNo":"UFN-68784","title":"AG082426 FedEx tracking stale (closeFlag=true)","account":"TCL NORTH AMERICA"}],"outlookCustomersActive":["COLAVITA USA, LLC"],"refreshNote":"Outlook direct read available this session; 1 UFN thread (UFN-68028) matched the eligible New/Pending set. Non-blocking."}
+{
+  "facility": "UNIS Fulfillment - Northampton",
+  "facilityCode": "LT_F21",
+  "generatedAt": "2026-09-01",
+  "lastRefreshed": "2026-09-01",
+  "dataSource": "Outlook (direct mail search)",
+  "threadsMatched": 10,
+  "threadsUniquePostDedup": 10,
+  "coverage": {
+    "eligibleTicketsTotal": 213,
+    "eligibleTicketsWithOutlookDirect": 7,
+    "coveragePct": 3.29
+  },
+  "ticketThreads": [
+    {
+      "ticketNo": "UFN-68265",
+      "account": "Prime Time Packaging (PTP Bags)",
+      "subject": "Re: DN-2123048 - IF48848",
+      "status": "Pending",
+      "latestUtc": "2026-09-01T17:54:22Z",
+      "note": "Commit-failed / inventory allocation issue; active same-day thread."
+    },
+    {
+      "ticketNo": "UFN-69237",
+      "account": "Dupray",
+      "subject": "Re: RE: Drop trailer / pickup confirmation for Dupray",
+      "status": "Pending",
+      "latestUtc": "2026-09-01T17:45:45Z",
+      "note": "Pickup appointment coordination via CH Robinson."
+    },
+    {
+      "ticketNo": "UFN-69138",
+      "account": "Colavita USA / Romark Logistics",
+      "subject": "Re: UNIS --> Romark Transfers - Week of 8/31",
+      "status": "Pending",
+      "latestUtc": "2026-09-01T16:07:29Z",
+      "note": "Transfer scheduling and shipment weights."
+    },
+    {
+      "ticketNo": "UFN-68714",
+      "account": "Prime Time Packaging",
+      "subject": "Re: [SHIPPED] ... PRIME TIME PACKAGING LTD - [IF48815] - Shipment",
+      "status": "Pending",
+      "latestUtc": "2026-09-01T15:15:41Z",
+      "note": "Shipment follow-up on a WISE outbound notification."
+    },
+    {
+      "ticketNo": "UFN-68718",
+      "account": "Ritual Beverage (via Allied Beverage)",
+      "subject": "Re: P/U REQUEST PO# 309409",
+      "status": "Pending",
+      "latestUtc": "2026-09-01T14:54:08Z",
+      "note": "Pickup request; weight-per-skid vs dimensions discussion."
+    },
+    {
+      "ticketNo": "UFN-68160",
+      "account": "KD Pharma Group (Innova Softgel)",
+      "subject": "Re: Iceland Direct - PO 810308 (SO110377) - DN-2122820",
+      "status": "Pending",
+      "latestUtc": "2026-09-01T16:12:24Z",
+      "note": "Order/DN follow-up."
+    },
+    {
+      "ticketNo": "UFN-67798",
+      "account": "KD Pharma Group (Innova Softgel)",
+      "subject": "Re: Nordic - PO 4500006090 ... DN-2121117/26",
+      "status": "Pending",
+      "latestUtc": "2026-09-01T16:14:21Z",
+      "note": "Order/DN follow-up; has attachment."
+    }
+  ],
+  "excludedTicketsWithOutlookContext": [
+    {
+      "ticketNo": "UFN-68205",
+      "subject": "Re: Pick Note: Sales Order #SO216096 | Veritiv",
+      "reason": "Not in current eligible set (excluded by rules)."
+    },
+    {
+      "ticketNo": "UFN-67030",
+      "subject": "Re: Request Excel file (Nourison)",
+      "reason": "Solved/closed in Ticket Ops (displayStatusSystemStatus=20); excluded by Ops status, NOT closeFlag."
+    },
+    {
+      "ticketNo": "UFN-67134",
+      "subject": "Re: AMI New Roar Order - SO1392627 / DN-2116315",
+      "reason": "Not in current eligible set (excluded by rules)."
+    }
+  ],
+  "operationalThreads": [
+    {
+      "thread": "Advanced Report - Dock Activity",
+      "note": "recurring automated (Lassonde); collapsed in dedup"
+    },
+    {
+      "thread": "[SHIPPED] - [wise/v2/] - [Cesanek] -[Outbound] - Shipment",
+      "note": "recurring automated WISE shipment notification; collapsed in dedup"
+    },
+    {
+      "thread": "Immediate Review Required: Inbound/Outbound Deliveries Scheduled for Next Business Day (Cesanek, PA)",
+      "note": "recurring automated dock report; collapsed in dedup"
+    },
+    {
+      "thread": "Reminder: SEND VIVO DAMAGE REPORT",
+      "note": "recurring automated (Turtle Beach); collapsed in dedup"
+    },
+    {
+      "thread": "DropShip Dashboard",
+      "note": "internal operational link share; collapsed in dedup"
+    },
+    {
+      "thread": "Customer Command Center - Daily Summary (NHT/Cesanek)",
+      "note": "prior dashboard output (self-referential); excluded"
+    }
+  ],
+  "activeEscalations": [
+    {
+      "ticketNo": "UFN-68265",
+      "title": "DN-2126858 commit failed / INVENTORY ISSUES AND SHORT SHIPMENTS",
+      "account": "Prime Time Packaging"
+    },
+    {
+      "ticketNo": "UFN-68741",
+      "title": "DN-2117821 & DN-2121527 Damages",
+      "account": "Prime Time Packaging"
+    }
+  ],
+  "outlookCustomersActive": [
+    "Prime Time Packaging (PTP Bags)",
+    "Dupray",
+    "Colavita USA / Romark Logistics",
+    "KD Pharma Group (Innova Softgel)",
+    "Ritual Beverage (Allied Beverage)",
+    "Veritiv Operating Company",
+    "Nourison"
+  ],
+  "refreshNote": "Outlook direct read (non-blocking). 7 distinct UFN threads matched the current eligible New/Pending set; 3 additional threads (UFN-68205, UFN-67030, UFN-67134) surfaced but are outside the eligible set. Billing/handling/storage items excluded per rules."
+}

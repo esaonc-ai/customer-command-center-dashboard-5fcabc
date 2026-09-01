@@ -1,1 +1,70 @@
-{"refresh":{"id":"refresh-2026-08-31T05:40ET-AUTHORITATIVE-v4","timestamp":"2026-08-31T09:40:00Z","timestampLocal":"2026-08-31 05:40 ET","executedBy":"Super agent (Ticket Ops + Outlook + dashboard data regeneration)","type":"AUTHORITATIVE","previousRefreshId":"refresh-2026-08-31T04:40ET-AUTHORITATIVE-v3","keyChange":"Re-derived eligible set with authoritative gate (displayStatusSystemStatus=open + displayStatusName in {New,Pending}; closeFlag NOT a gate). 20 billing/storage/handling excluded; 84 overlapping-thread + recurring-series dedup."},"rulesApplied":["Include ONLY New, Open, Pending","Exclude Reopen/Reopened, Closed, Resolved, Cancelled, Done","Exclude billing / UF Billing / storage / handling invoice items","UFN-related filtering enabled","Do not duplicate overlapping ticket/email threads","Ticket Ops status is authoritative","Authority: displayStatusSystemStatus=open + displayStatusName in {New,Pending}; closeFlag NOT a gate"],"dataSources":["Ticket Ops: POST /v1/iam/tickets/page (departmentId 323826714354839552, displayStatusSystemStatus=10, displayStatusIds=[6,11])","Outlook: UFN thread search (1 eligible thread matched UFN-68028); non-blocking enrichment"],"dashboardState":{"totalRaw":299,"totalEligible":194,"byStatus":{"New":122,"Open":0,"Pending":72},"customerHealth":{"customersInScope":69,"externalCustomers":64,"healthSummary":"69 distinct customer/account keys (email domains) visible in eligible tickets; roster/aliases supplemental (not applied)."},"priorityQueue":{"urgent":0,"high":0,"medium":194,"closeFlagTrueRetained":25,"oldestTicketDays":171},"actionBuckets":{"immediate":5,"shortTerm":36,"mediumTerm":40,"watch":113},"evidenceMetrics":{"outlookThreadsMatched":1,"invoiceItemsExcluded":20,"closeFlagExcluded":0,"reopenExcluded":0,"deduplicated":84,"slaBreached":142,"slaOnTrack":52,"unassigned":133,"dataFreshness":"live (2026-08-31 05:40 ET)","queueTrend":"New-heavy (122/194); 142 SLA-breached; 25 closeFlag=true live artifacts retained"}},"nextScheduledRefresh":"2026-09-01 08:00 ET (daily summary email)"}
+{
+  "refresh": {
+    "id": "refresh-2026-09-01T14:30ET-AUTHORITATIVE-v5",
+    "timestamp": "2026-09-01T18:30:00Z",
+    "timestampLocal": "2026-09-01 14:30 ET",
+    "executedBy": "Super agent (Ticket Ops + Outlook + dashboard data regeneration)",
+    "type": "AUTHORITATIVE",
+    "previousRefreshId": "refresh-2026-08-31T05:40ET-AUTHORITATIVE-v4",
+    "keyChange": "Fresh Ticket Ops live pull with authoritative gate (displayStatusSystemStatus=open + displayStatusName in {New,Pending}; closeFlag NOT a gate). 30 live closeFlag=true tickets retained. UFN-67030 re-verified as Solved (systemStatus=20) and correctly excluded by Ops status, not closeFlag."
+  },
+  "rulesApplied": [
+    "Include ONLY New, Open, Pending",
+    "Exclude Reopen/Reopened, Closed, Resolved, Cancelled, Done",
+    "Exclude billing / UF Billing / storage / handling invoice items",
+    "UFN-related filtering enabled",
+    "Do not duplicate overlapping ticket/email threads",
+    "Ticket Ops status is authoritative",
+    "Authority: displayStatusSystemStatus=open + displayStatusName in {New,Pending}; closeFlag NOT a gate"
+  ],
+  "dataSources": [
+    "Ticket Ops: POST /v1/iam/tickets/page (departmentId 323826714354839552, displayStatusSystemStatus=10, displayStatusIds=[6,11])",
+    "Outlook: UFN thread search (7 eligible threads matched); non-blocking enrichment"
+  ],
+  "dashboardState": {
+    "totalRaw": 285,
+    "totalEligible": 213,
+    "byStatus": {
+      "New": 117,
+      "Open": 0,
+      "Pending": 96
+    },
+    "customerHealth": {
+      "customersInScope": 50,
+      "healthSummary": "50 distinct customer/account names visible in eligible tickets; roster/aliases supplemental (not applied).",
+      "breakdown": {
+        "Critical": 30,
+        "Warning": 6,
+        "Healthy": 14
+      }
+    },
+    "priorityQueue": {
+      "urgent": 0,
+      "high": 0,
+      "medium": 213,
+      "low": 0,
+      "closeFlagTrueRetained": 30,
+      "oldestTicketDays": 180
+    },
+    "actionBuckets": {
+      "immediate": 48,
+      "shortTerm": 12,
+      "mediumTerm": 26,
+      "watch": 127
+    },
+    "evidenceMetrics": {
+      "outlookThreadsMatched": 7,
+      "outlookCoveragePct": 3.29,
+      "billingStorageHandlingExcluded": 24,
+      "closeFlagExcluded": 0,
+      "reopenExcluded": 62,
+      "deduplicated": 72,
+      "slaBreached": 152,
+      "slaOnTrack": 61,
+      "unassigned": 134,
+      "dataFreshness": "live (2026-09-01 14:30 ET)",
+      "queueTrend": "New-heavy (117/213); 152 SLA-breached; 30 closeFlag=true live artifacts retained"
+    }
+  },
+  "nextScheduledRefresh": "2026-09-02 08:00 ET (daily summary email)"
+}
