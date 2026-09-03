@@ -1,1 +1,33 @@
-{"dashboard":"Customer Command Center","facility":{"code":"LT_F21","name":"NHT/Cesanek","tenant":"LT","timezone":"America/New_York"},"lastRefreshed":"2026-09-03T01:00:00-04:00","dataSource":"Ticket Ops (authoritative)","refreshType":"authoritative","totalRaw":320,"totalEligible":207,"newCount":135,"openCount":0,"pendingCount":72,"truncationNote":"No truncation (207 eligible < 500).","slaHealth":{"slaBreachCount":128,"slaOnTrackCount":79,"slaBreachRisk":"Elevated - large share of items are weeks old and SLA-breached; oldest eligible ticket 182 days."},"evidenceMetrics":{"outlookThreadsMatched":16,"outlookCoverage":"40%","outlookCustomers":16,"billingStorageHandlingExcluded":36,"closeFlagExcluded":0,"reopenExcluded":0,"deduplicated":77,"dataFreshness":"2026-09-03 01:00 ET","queueTrend":"Fresh inbound Sep 2-3; long un-closed watch/noise tail persists.","closeFlagTrueRetained":20}}
+{
+  "dashboard": "Customer Command Center Dashboard",
+  "facility": {
+    "code": "LT_F21",
+    "name": "NHT/Cesanek",
+    "tenant": "LT",
+    "timezone": "America/New_York"
+  },
+  "lastRefreshed": "2026-09-03T01:59:24-04:00",
+  "dataSource": "TicketOps (authoritative) + Outlook (non-blocking)",
+  "refreshType": "AUTHORITATIVE",
+  "totalRaw": 362,
+  "totalEligible": 290,
+  "newCount": 212,
+  "openCount": 0,
+  "pendingCount": 78,
+  "truncationNote": "closeFlag not a gate; Reopen (42) and billing/storage/handling (30) excluded",
+  "slaHealth": {
+    "breached": 204,
+    "onTrack": 86,
+    "unassigned": 219
+  },
+  "evidenceMetrics": {
+    "totalEligible": 290,
+    "slaBreached": 204,
+    "slaOnTrack": 86,
+    "unassigned": 219,
+    "oldestAgeDays": 196,
+    "outlookThreadsMatched": 26,
+    "outlookThreadsUniquePostDedup": 22,
+    "activeEscalations": 4
+  }
+}
