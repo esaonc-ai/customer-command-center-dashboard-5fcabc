@@ -1,316 +1,232 @@
 {
- "facility": "NHT/Cesanek",
- "facilityCode": "LT_F21",
- "generatedAt": "2026-09-04T10:38:00-04:00",
- "lastRefreshed": "2026-09-04T10:38:00-04:00",
- "dataSource": "Outlook (Microsoft Search API) — NHT/Cesanek CS mailbox, 14-day window 2026-08-21..2026-09-04 (non-blocking; direct shared-mailbox API 403 - used authenticated mailbox search)",
- "threadsMatched": 46,
- "threadsUniquePostDedup": 40,
- "coverage": {
-  "eligibleTicketsTotal": 286,
-  "eligibleTicketsWithOutlookDirect": 9,
-  "coveragePct": 3
- },
- "ticketThreads": [
-  {
-   "customer": "Roar Beverages",
-   "subject": "DN-2126156 rush ship",
-   "direction": "inbound-escalation",
-   "ticketRef": null
+  "facility": "NHT/Cesanek",
+  "facilityCode": "LT_F21",
+  "generatedAt": "2026-09-04T08:50:00-04:00",
+  "lastRefreshed": "2026-09-04T08:50:00-04:00",
+  "dataSource": "Outlook — Northampton/Cesanek CS mailbox (nht.cs@unisco.com), window 2026-08-21..2026-09-04",
+  "threadsMatched": 9,
+  "threadsUniquePostDedup": 9,
+  "coverage": {
+    "eligibleTicketsTotal": 273,
+    "eligibleTicketsWithOutlookContext": 9,
+    "coveragePct": 3.3
   },
-  {
-   "customer": "Roar Beverages",
-   "subject": "ROAR BEVERAGES Pick up (KEHE/Uber Freight)",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Roar Beverages",
-   "subject": "UNIS ROAR QVC POWDER MOVE PA to CA DN-2123888",
-   "direction": "inbound",
-   "ticketRef": "UFN-68601"
-  },
-  {
-   "customer": "Roar Beverages",
-   "subject": "AMI New Roar Order SO1393032 / DN-2117711",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Roar Beverages",
-   "subject": "ROAR SINGLES + PO8259-B RECREATE",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Colavita USA",
-   "subject": "COLAVITA WALMART - WEEK 8.31 (Fusion Transport expedite)",
-   "direction": "inbound-escalation",
-   "ticketRef": "UFN-69017"
-  },
-  {
-   "customer": "Colavita USA",
-   "subject": "UNIS->Romark Transfers Week of 8/31",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Colavita USA",
-   "subject": "UNIS->Romark - Week of 9/7",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Colavita USA",
-   "subject": "FW: TO5064 (exec transfer-order thread)",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Colavita USA",
-   "subject": "C&S Orders - Preparation Required (new PO 873687)",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Colavita USA",
-   "subject": "COLAVITA ORDER FOR GENERAL TRADING P.O. 755125 1-pallet return",
-   "direction": "inbound",
-   "ticketRef": "UFN-69474"
-  },
-  {
-   "customer": "Colavita USA",
-   "subject": "SO123801 (DN-2121157) - Short Shipment",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Colavita USA",
-   "subject": "Re: Re: Damages",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Ritual Beverage",
-   "subject": "PO 098087 (Sethmar/Martignetti/Diageo)",
-   "direction": "inbound-escalation",
-   "ticketRef": "UFN-68513"
-  },
-  {
-   "customer": "Ritual Beverage",
-   "subject": "P/U REQUEST PO# 309409 (Logistx)",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Dupray USA",
-   "subject": "Drop trailer / pickup confirmation CHR 566430680/703",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Dupray USA",
-   "subject": "SHIPPING BOL DN-2126109/2126097 CHR#566580484 (driver ETA chases)",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Dupray USA",
-   "subject": "DN-2126109 DN-2126097 DN-2127340",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Dupray USA",
-   "subject": "DN-2126267 / DN-2127294",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "SMEG USA",
-   "subject": "Pro#07126354161 / DN-2126128 BOL Request",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "SMEG USA",
-   "subject": "Pro#07126354104 / DN-2126336 BOL Request",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "SMEG USA",
-   "subject": "Pro#07126354120 / DN-2126179 BOL Request",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Prime Time Packaging",
-   "subject": "Veritiv pickups DN-2123046/2123042/2123039",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Prime Time Packaging",
-   "subject": "Pick Note SO216096 | Veritiv - confirm appts",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Prime Time Packaging",
-   "subject": "Veritiv Truckload BOL V762787 / PO 10246434",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Prime Time Packaging",
-   "subject": "SYSCO LTL PU REQ CS10023909 / PO 21995770",
-   "direction": "inbound-escalation",
-   "ticketRef": null
-  },
-  {
-   "customer": "Prime Time Packaging",
-   "subject": "[SHIPPED] IF48840 - quantity dispute",
-   "direction": "inbound-escalation",
-   "ticketRef": "UFN-69252"
-  },
-  {
-   "customer": "Prime Time Packaging",
-   "subject": "[SHIPPED] IF48815 - shipping docs",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Prime Time Packaging",
-   "subject": "[SHIPPED] IF48851 - shipping docs",
-   "direction": "inbound",
-   "ticketRef": "UFN-69462"
-  },
-  {
-   "customer": "Prime Time Packaging",
-   "subject": "[SHIPPED] IF48852 - shipping docs",
-   "direction": "inbound",
-   "ticketRef": "UFN-69571"
-  },
-  {
-   "customer": "Prime Time Packaging",
-   "subject": "DN-2123048 - IF48848",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Nourison",
-   "subject": "Request Excel file / appointment reschedules",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Hint Beverage",
-   "subject": "DN-2125973 - PO 2484664239",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Hint Beverage",
-   "subject": "UNIS - HINT BEVERAGE - WEEK OF 8/17/26",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Recess",
-   "subject": "Urgent/Recess orders",
-   "direction": "inbound-escalation",
-   "ticketRef": null
-  },
-  {
-   "customer": "Recess",
-   "subject": "Unis-item / API & Shopify update for move to Joliet",
-   "direction": "inbound",
-   "ticketRef": "UFN-69647"
-  },
-  {
-   "customer": "Boundless EC / Unybrands",
-   "subject": "MPW Internal WH Transfer - PA to CA (Walmart/Load scheduling)",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Vita Coco DTC",
-   "subject": "PA to Joliet - Move and Destroy List DTC",
-   "direction": "inbound",
-   "ticketRef": null
-  },
-  {
-   "customer": "Lifepro Fitness / Chaivision",
-   "subject": "URGENT: Amazon 1P Operational Escalations | FRD Non-Compliance & System Mapping",
-   "direction": "inbound-escalation",
-   "ticketRef": "UFN-69436"
-  },
-  {
-   "customer": "Ranch Pools Co (attribution uncertain)",
-   "subject": "PICKUP 1/1 for UF-5002633630 | PHONE Scheduling",
-   "direction": "inbound",
-   "ticketRef": null
-  }
- ],
- "excludedTicketsWithOutlookContext": [
-  "Q&C Products (Cesanek) - Billing 08/01-08/15 and 07/16-07/31",
-  "VITA COCO - DTC Cesanek HANDLING Invoice#19337542 (8/16-8/31)",
-  "Colavita Northampton | September Storage 19337979 19337980 - First follow",
-  "Colavita Northampton | Handling Billing | 0701-0715",
-  "Roar beverage - Storage September 2026 | PA",
-  "Re: Roar Beverage - Handling 8.23-8.29 | PA",
-  "DUPRAY LLC | Cesanek - Handling 8/23-8/29",
-  "Re: DUPRAY l CESANEK - DISPUTE #19277861 (invoice dispute)",
-  "PRIMETIME | Cesanek - Handling 8/23-8/29",
-  "Inventory Confirmation - Maizly (billing-close internal)"
- ],
- "operationalThreads": [
-  "Immediate Review Required / Immediate Action Required: inbound deliveries & Open DN/RN billing-impact notices (Cesanek daily)",
-  "Cesanek Dropship EOD daily batch",
-  "Leadership memos (escalation protocol / daily open-order monitoring / automation)",
-  "WYNK/CANVAS - NORTHAMPTON to SUMMERVILLE Transfer (internal coordination)",
-  "UNIS closed 09/07/2026 Labor Day - scheduling pressure threads"
- ],
- "activeEscalations": [
-  {
-   "customer": "Roar Beverages",
-   "note": "DN-2126156 (UFN-69050): 9/3 escalation - 'I need this shipped today'; WISE shipping-amount processing error on 8/31."
-  },
-  {
-   "customer": "Recess",
-   "note": "Order-volume IT outage 8/31-9/2; 274 orders dropped 9/3, remainder shipping 9/4; Joliet migration in progress."
-  },
-  {
-   "customer": "Colavita USA",
-   "note": "Walmart WEEK 8.31 load (UFN-69017) picked 9/2 still unprocessed; Fusion high-importance follow-ups 9/3; EDI tenders requested."
-  },
-  {
-   "customer": "Ritual Beverage",
-   "note": "UFN-68513 high-importance chase 9/4 - pickup did not happen 9/3 (SAIA/weight questions); UFN-68718 day-4 follow-up PO 309409."
-  },
-  {
-   "customer": "Lifepro Fitness / Chaivision",
-   "note": "URGENT Amazon 1P FRD non-compliance & system-mapping escalation (9/2)."
-  },
-  {
-   "customer": "Prime Time Packaging",
-   "note": "Month-end push (SYSCO), IF48840 quantity-verification dispute, repeated shipping-docs chases IF48815/51/52."
-  }
- ],
- "outlookCustomersActive": [
-  "Roar Beverages",
-  "Colavita USA",
-  "Ritual Beverage",
-  "Dupray USA",
-  "SMEG USA",
-  "Prime Time Packaging",
-  "Nourison",
-  "Hint Beverage",
-  "Recess",
-  "Boundless EC / Unybrands",
-  "Vita Coco DTC",
-  "Lifepro Fitness / Chaivision"
- ],
- "refreshNote": "Outlook enrichment 8/21-9/4 OK (non-blocking). Search against authenticated NHT CS mailbox context (direct shared mailbox 403). Thread matches are representative/newest-first, not exhaustive. ticketRef mapped where subject matches an eligible ticket; verified against the 286-ticket eligible set (direct match ticketRefs: UFN-68513, UFN-68601, UFN-69017, UFN-69252, UFN-69436, UFN-69462, UFN-69474, UFN-69571, UFN-69647). Live signals: Roar DN-2126156 escalation, Recess order-volume recovery + Joliet move, Colavita Walmart expedite (UFN-69017), Ritual UFN-68513/68718 chases, Lifepro Amazon 1P (UFN-69436), Prime Time shipping-docs chases, Dupray pickup delays. All billing/storage/handling invoice threads excluded."
+  "ticketThreads": [
+    {
+      "threadTopic": "Colavita C&S Orders – Preparation Required (new PO 873687, returned DN-2057064 reship)",
+      "lastReceivedAt": "2026-09-03T15:48:56Z",
+      "participants": [
+        "Carlo.Scasserra@colavita.com",
+        "nicole.weber@unisco.com",
+        "nht.cs@unisco.com"
+      ],
+      "matchedTicketId": "UFN-68572",
+      "matchedTicketSubjectHint": "Re: C&S Orders – Preparation Required",
+      "customer": "COLAVITA USA, LLC",
+      "escalation": false
+    },
+    {
+      "threadTopic": "Colavita Walmart week 8.31 shipments via Fusion (LD1695706 pickup)",
+      "lastReceivedAt": "2026-09-04T12:44:29Z",
+      "participants": [
+        "bsantana@fusiontransport.com",
+        "clupo@fusiontransport.com",
+        "nht.cs@unisco.com",
+        "nicole.weber@unisco.com"
+      ],
+      "matchedTicketId": "UFN-69017",
+      "matchedTicketSubjectHint": "Re: COLAVITA WALMART - WEEK 8.31",
+      "customer": "COLAVITA USA, LLC",
+      "escalation": false
+    },
+    {
+      "threadTopic": "Colavita General Trading P.O. 755125 — 1-pallet return acceptance confirmation",
+      "lastReceivedAt": "2026-09-03T12:32:53Z",
+      "participants": [
+        "dorota.mazur@us.dcsfreight.com",
+        "chiara.vitali@colavita.com",
+        "carlo.scasserra@colavita.com",
+        "nht.cs@unisco.com"
+      ],
+      "matchedTicketId": "UFN-69495",
+      "matchedTicketSubjectHint": "Re: RE: RE: COLAVITA ORDER FOR GENERAL TRADING P.O. 755125 1 pallet return",
+      "customer": "COLAVITA USA, LLC",
+      "escalation": false
+    },
+    {
+      "threadTopic": "Roar Beverages QVC powder move PA→CA (DN-2123888)",
+      "lastReceivedAt": "2026-09-02T17:18:55Z",
+      "participants": [
+        "rcincotta@drinkroar.com",
+        "Kevin.Grossi@chrobinson.com",
+        "mchordas@factory-llc.com",
+        "nht.cs@unisco.com"
+      ],
+      "matchedTicketId": "UFN-68601",
+      "matchedTicketSubjectHint": "Re: UNIS ROAR QVC POWDER MOVE From PA to CA DN-2123888",
+      "customer": "ROAR BEVERAGES INC",
+      "escalation": false
+    },
+    {
+      "threadTopic": "Prime Time/Bunzl New England SO216016 pick note",
+      "lastReceivedAt": "2026-08-27T13:22:45Z",
+      "participants": [
+        "andre@primetimepackaging.com",
+        "jordan@ptpbags.com",
+        "nht.cs@unisco.com"
+      ],
+      "matchedTicketId": "UFN-67529",
+      "matchedTicketSubjectHint": "Re: Pick Note: Sales Order #SO216016 | Bunzl New England",
+      "customer": "PRIME TIME PACKAGING LTD",
+      "escalation": false
+    },
+    {
+      "threadTopic": "Prime Time shipped-order docs (IF48815)",
+      "lastReceivedAt": "2026-09-02T15:09:39Z",
+      "participants": [
+        "silvian@primetimepackaging.com",
+        "jordan@ptpbags.com",
+        "nht.cs@unisco.com"
+      ],
+      "matchedTicketId": "UFN-68714",
+      "matchedTicketSubjectHint": "Re: Re: [SHIPPED] ... [IF48815] - Shipment",
+      "customer": "PRIME TIME PACKAGING LTD",
+      "escalation": false
+    },
+    {
+      "threadTopic": "Prime Time shipped-order docs (IF48840)",
+      "lastReceivedAt": "2026-09-02T14:33:23Z",
+      "participants": [
+        "jordan@ptpbags.com",
+        "silvian@primetimepackaging.com",
+        "nht.cs@unisco.com"
+      ],
+      "matchedTicketId": "UFN-69252",
+      "matchedTicketSubjectHint": "Re: Re: [SHIPPED] ... [IF48840] - Shipment",
+      "customer": "PRIME TIME PACKAGING LTD",
+      "escalation": false
+    },
+    {
+      "threadTopic": "Prime Time shipped-order docs (IF48851)",
+      "lastReceivedAt": "2026-09-03T12:17:40Z",
+      "participants": [
+        "jordan@ptpbags.com",
+        "nht.cs@unisco.com"
+      ],
+      "matchedTicketId": "UFN-69462",
+      "matchedTicketSubjectHint": "Re: Re: [SHIPPED] ... [IF48851] - Shipment",
+      "customer": "PRIME TIME PACKAGING LTD",
+      "escalation": false
+    },
+    {
+      "threadTopic": "Prime Time shipped-order docs (IF48852)",
+      "lastReceivedAt": "2026-09-03T17:18:10Z",
+      "participants": [
+        "jordan@ptpbags.com",
+        "nht.cs@unisco.com"
+      ],
+      "matchedTicketId": "UFN-69571",
+      "matchedTicketSubjectHint": "Re: Re: [SHIPPED] ... [PRIME TIME PACKAGING LTD] - [IF48852] - Shipment",
+      "customer": "PRIME TIME PACKAGING LTD",
+      "escalation": false
+    }
+  ],
+  "excludedTicketsWithOutlookContext": [],
+  "operationalThreads": [
+    "Customer Command Center – NHT/Cesanek Daily Summary (dashboard's own daily summaries, e.g., 08/27, 08/28, 09/03 — excluded)",
+    "Immediate Action Required: Open DN Items Impacting Billing (AR/billing digest by Tweetie Lamoste, 08/26–09/01 — billing-related, excluded)",
+    "FOR REVIEW: Q&C Products (Cesanek) - Billing Period (UF Billing Team — billing review, excluded)",
+    "Roar Beverage-Handling 8.23-8.29 | JOLIET (UF Billing invoice — billing/storage invoice item, excluded)",
+    "Empty Notification Report – UNIS Northampton, PA (drayage container-empty ops reports, 08/26–08/27 — operational)",
+    "Operations Review and Approval – Customer Scope of Work Aterian Group (internal ops review — excluded)",
+    "Inventory Confirmation – Maizly / for ALKIT (AR inventory-moveout confirmations — internal, excluded)",
+    "Diageo DNAB Automated Email Alert: UNIS Pick Up Alert (automated alert thread — no direct NHT UFN matched)"
+  ],
+  "activeEscalations": [
+    {
+      "threadTopic": "Roar Beverages DN-2126156 — customer call-out: \"I need this shipped today. Why has this still not gone out?\"",
+      "lastReceivedAt": "2026-09-04T12:27:36Z",
+      "participants": [
+        "rcincotta@drinkroar.com",
+        "nicole.weber@unisco.com",
+        "nht.cs@unisco.com"
+      ],
+      "matchedTicketId": "UFN-69050",
+      "matchedTicketSubjectHint": "Re: DN-2126156",
+      "customer": "Roar Beverages",
+      "escalation": true
+    },
+    {
+      "threadTopic": "Prime Time DN-2123048 - IF48848 picking discrepancy (\"ADVISE at once. Truck will have to be cancelled\")",
+      "lastReceivedAt": "2026-09-02T17:32:59Z",
+      "participants": [
+        "jordan@ptpbags.com",
+        "nht.cs@unisco.com"
+      ],
+      "matchedTicketId": "UFN-68265",
+      "matchedTicketSubjectHint": "Re: DN-2123048 - IF48848",
+      "customer": "Prime Time Packaging",
+      "escalation": true
+    },
+    {
+      "threadTopic": "KD Iceland Direct PO 810308 (\"We urgently need ... today\")",
+      "lastReceivedAt": "2026-09-01T03:42:58Z",
+      "participants": [
+        "victoria.isturiz@kdpharmagroup.com",
+        "silvia.placido@kdpharmagroup.com",
+        "nht.cs@unisco.com"
+      ],
+      "matchedTicketId": "UFN-68160",
+      "matchedTicketSubjectHint": "Re: Iceland Direct - PO 810308 (SO110377) - DN-2122820",
+      "customer": "KD Pharma",
+      "escalation": true
+    },
+    {
+      "threadTopic": "Martignetti PO 098087 — pickup missed; customer high-priority follow-up",
+      "lastReceivedAt": "2026-09-04T10:51:11Z",
+      "participants": [
+        "jdesousa@martignetti.com",
+        "amoon@sethmar.com",
+        "nht.cs@unisco.com"
+      ],
+      "matchedTicketId": "UFN-68513",
+      "matchedTicketSubjectHint": "RE: PO 098087",
+      "customer": "Martignetti (Ritual Beverage)",
+      "escalation": true
+    },
+    {
+      "threadTopic": "CasAmerica/AMI pickup appointments — \"confirm today or we will lose the carrier\" (SO1393032/DN-2117711 & SO1395389/DN-4216239)",
+      "lastReceivedAt": "2026-09-04T12:45:23Z",
+      "participants": [
+        "jossie@casamerica-marine.com",
+        "ellie@athenaintl.com",
+        "mchordas@factory-llc.com",
+        "nht.cs@unisco.com"
+      ],
+      "matchedTicketId": null,
+      "matchedTicketSubjectHint": "RE: AMI New Roar Order - SO1393032/ DN-2117711 (Northampton PA)",
+      "customer": "CasAmerica (AMI)",
+      "escalation": true
+    },
+    {
+      "threadTopic": "KD Pharma Pharmavite PO 350401 (SO1103654) DN-2078802 — returned labels overdue >1 month, customer \"unacceptable\"",
+      "lastReceivedAt": "2026-09-02T13:12:25Z",
+      "participants": [
+        "Silvia.Placido@kdpharmagroup.com",
+        "erin.cambra@unisco.com",
+        "nicole.weber@unisco.com",
+        "nht.cs@unisco.com"
+      ],
+      "matchedTicketId": null,
+      "matchedTicketSubjectHint": "Re: Pharmavite PO 350401 (SO1103654) - DN-2078802 (special instructions)",
+      "customer": "KD Pharma",
+      "escalation": true
+    }
+  ],
+  "outlookCustomersActive": [
+    "COLAVITA USA, LLC",
+    "PRIME TIME PACKAGING LTD",
+    "ROAR BEVERAGES INC"
+  ],
+  "refreshNote": "Outlook enrichment refreshed 2026-09-04 ~08:50 ET from the Northampton/Cesanek CS mailbox context (window 08/21–09/04). 9 unique UFN threads matched to tickets that are open New/Pending in the authoritative TicketOps snapshot and deduped to one thread per ticket (overlapping email/ticket threads merged by conversation). Excluded: dashboard's own daily-summary emails, UF Billing/storage-handling invoice threads, AR/billing digests, drayage empty-notification reports, and internal ops/digest threads (listed in operationalThreads). Additional mailbox threads referenced UFN tickets not open New/Pending at snapshot time (e.g., UFN-69600, UFN-69413, UFN-69050, UFN-68265, UFN-68160, UFN-68513, UFN-69573/74/75, UFN-67030 — closed/resolved or outside the eligible set) and are therefore not in ticketThreads; they remain visible as active escalations where customer call-out urgency applies. No email was sent."
 }

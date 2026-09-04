@@ -1,34 +1,34 @@
 {
- "dashboard": "Customer Command Center Dashboard",
- "facility": {
-  "code": "LT_F21",
-  "name": "NHT/Cesanek",
-  "tenant": "LT",
-  "timezone": "America/New_York"
- },
- "lastRefreshed": "2026-09-04T10:38:00-04:00",
- "dataSource": "TicketOps (authoritative) + Outlook (non-blocking)",
- "refreshType": "AUTHORITATIVE",
- "refreshId": "refresh-2026-09-04T10:38ET-AUTHORITATIVE-v10",
- "totalRaw": 355,
- "totalEligible": 286,
- "newCount": 210,
- "openCount": 0,
- "pendingCount": 76,
- "truncationNote": "closeFlag not a gate; Reopen (49) and billing/storage/handling invoice items (20) excluded",
- "slaHealth": {
-  "breached": 206,
-  "onTrack": 80,
-  "unassigned": 234
- },
- "evidenceMetrics": {
-  "totalEligible": 286,
-  "slaBreached": 206,
-  "slaOnTrack": 80,
-  "unassigned": 234,
-  "oldestAgeDays": 198,
-  "outlookThreadsMatched": 46,
-  "outlookThreadsUniquePostDedup": 40,
-  "activeEscalations": 6
- }
+  "dashboard": "Customer Command Center Dashboard",
+  "facility": {
+    "code": "LT_F21",
+    "name": "NHT/Cesanek",
+    "tenant": "LT",
+    "timezone": "America/New_York"
+  },
+  "lastRefreshed": "2026-09-04T08:50:00-04:00",
+  "dataSource": "TicketOps (authoritative) + Outlook (non-blocking)",
+  "refreshType": "AUTHORITATIVE",
+  "refreshId": "refresh-2026-09-04T08:50ET-AUTHORITATIVE-v11",
+  "totalRaw": 344,
+  "totalEligible": 273,
+  "newCount": 199,
+  "openCount": 0,
+  "pendingCount": 74,
+  "truncationNote": "closeFlag not a gate; Reopen (44) and billing/storage/handling invoice items (26) excluded",
+  "slaHealth": {
+    "breached": 200,
+    "onTrack": 73,
+    "unassigned": 207
+  },
+  "evidenceMetrics": {
+    "totalEligible": 273,
+    "slaBreached": 200,
+    "slaOnTrack": 73,
+    "unassigned": 207,
+    "oldestAgeDays": 197,
+    "outlookThreadsMatched": 9,
+    "outlookThreadsUniquePostDedup": 9,
+    "activeEscalations": 6
+  }
 }
