@@ -1,15 +1,15 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-05T01:05:00-04:00",
-  "lastRefreshed": "2026-09-05T01:05:00-04:00",
-  "dataSource": "Outlook — Northampton/Cesanek CS mailbox context (nht.cs@unisco.com), window 2026-09-04 08:50 ET .. 2026-09-05 01:05 ET (non-blocking)",
+  "generatedAt": "2026-09-05T01:56:00-04:00",
+  "lastRefreshed": "2026-09-05T01:56:00-04:00",
+  "dataSource": "Outlook — Northampton/Cesanek CS mailbox context (nht.cs@unisco.com), window 2026-09-05 01:05 ET .. 01:56 ET (non-blocking); no new messages in window (latest mailbox message 2026-09-04 19:36 ET) — active thread context carried forward from v12 where matched tickets remain eligible",
   "threadsMatched": 9,
   "threadsUniquePostDedup": 9,
   "coverage": {
-    "eligibleTicketsTotal": 254,
+    "eligibleTicketsTotal": 251,
     "eligibleTicketsWithOutlookContext": 9,
-    "coveragePct": 3.5
+    "coveragePct": 3.6
   },
   "ticketThreads": [
     {
@@ -426,5 +426,5 @@
     "UNY Brands",
     "Walmart (Boundless/UNY)"
   ],
-  "refreshNote": "Outlook enrichment refreshed 2026-09-05 ~01:05 ET from the Northampton/Cesanek CS mailbox context (window 09/04 08:50 ET – 09/05 01:05 ET). 25 raw UFN conversation threads -> 24 unique post-dedup (UFN-68714 spans 2 conversations, merged) -> 9 matched to tickets open New/Pending in the authoritative TicketOps snapshot (~3.5% of 254 eligible) and deduped to one thread per ticket. Walmart/Boundless load-45872185 incident spans UFN-69617/69618/69771 and is counted as one distinct escalation. 11 flagged escalation threads = 9 distinct escalated issues; 2 are on eligible tickets (UFN-69811 Diageo/Ritual claim; UFN-69618 Boundless/UNY Walmart labeling incident). Remaining matched threads reference UFN tickets not open New/Pending at snapshot (UFN-69129, UFN-68601, UFN-68616, UFN-69075, UFN-69617, UFN-69138, UFN-68718, UFN-66820, UFN-65796, UFN-69571, UFN-68513, UFN-68572, UFN-69120, UFN-68160, UFN-69596) and are listed under excludedTicketsWithOutlookContext; they remain visible as active escalations where customer urgency applies. No email was sent."
+  "refreshNote": "Window 2026-09-05 01:05 ET -> 01:56 ET: 0 new messages matched (no deltas). Carried forward the 9 active eligible-ticket threads from v12; all matched tickets remain eligible in the v13 snapshot. Eligible escalations unchanged: UFN-69811 Diageo/Ritual claim 18050 and BOUNDLESS EC US LLC Walmart load-45872185 (UFN-69618/UFN-69771, one incident)."
 }

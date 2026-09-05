@@ -1,16 +1,16 @@
 {
   "refresh": {
-    "id": "refresh-2026-09-05T01:05ET-AUTHORITATIVE-v12",
-    "timestamp": "2026-09-05T01:05:00-04:00",
+    "id": "refresh-2026-09-05T01:56ET-AUTHORITATIVE-v13",
+    "timestamp": "2026-09-05T01:56:00-04:00",
     "type": "AUTHORITATIVE",
-    "previousRefreshId": "refresh-2026-09-04T08:50ET-AUTHORITATIVE-v11",
-    "keyChange": "Fresh authoritative TicketOps pull 2026-09-05 ~01:05 ET: 313 open UFN -> 254 eligible (186 New / 0 Open / 68 Pending; displayStatusSystemStatus=open + displayStatusName in {New,Open,Pending}). closeFlag NOT used as gate - 19 live closeFlag=true tickets retained (e.g. UFN-69797 Ritual Diageo Picks, UFN-69618 Boundless WMS load). Excluded 37 Reopen (displayName) + 19 billing/UF Billing/storage/handling invoice items per audit (kept UFN-60009 BOL, UFN-68749 TCL storage-SQFT data request, UFN-69818 open-RN ops digest as operational) + 3 duplicate ticket/email threads (UFN-69842->UFN-69841, UFN-69663->UFN-69661, UFN-69760->UFN-69618). vs v11 (273 on 09/04) delta is snapshot churn (reopens, closures, new tickets). Outlook enrichment refreshed (window 09/04 08:50 ET - 09/05 01:05 ET): 9 eligible-ticket threads matched (~3.5%), 9 distinct escalated issues (2 on eligible tickets: UFN-69811 Diageo/Ritual claim; UFN-69618 Boundless Walmart load-45872185); UFN-67030 no longer open (Solved) - correctly outside gate."
+    "previousRefreshId": "refresh-2026-09-05T01:05ET-AUTHORITATIVE-v12",
+    "keyChange": "Fresh authoritative TicketOps pull 2026-09-05 ~01:56 ET: 313 open UFN (system status 10) -> 251 eligible (184 New / 0 Open / 67 Pending; displayStatusSystemStatus=open + displayStatusName in {New, Pending}). closeFlag NOT used as gate - 19 live closeFlag=true tickets retained (e.g. UFN-69797 Ritual/Diageo Picks, UFN-69618 Boundless Walmart load). Excluded 37 Reopen (displayName) + 22 billing/UF Billing/storage/handling invoice items per audit (kept UFN-60009 BOL, UFN-68749 storage-SQFT data request, UFN-69818 open-RN ops digest as operational) + 3 duplicate ticket/email threads (UFN-69842->UFN-69841, UFN-69663->UFN-69661, UFN-69760->UFN-69618). Delta vs v12 (254 @01:05 ET): 3 tickets left the eligible population (UFN-40670, UFN-53491, UFN-67097 - F26 month-end close reminders and freight-charge claims confirmation moved to the billing/UF Billing audit exclusion per rule) and 0 entered (net 254->251; New 186->184, Pending 68->67). UFN-67030 is Solved - correctly outside the gate. Outlook enrichment (window 09/05 01:05 ET -> 01:56 ET): no new mailbox messages (latest 09-04 19:36 ET); 9 active eligible-ticket threads carried forward (~3.6% coverage), 2 eligible escalations persist (UFN-69811 Diageo/Ritual claim 18050; Boundless Walmart load-45872185 counted as one incident)."
   },
   "rulesApplied": [
     "displayStatusSystemStatus == open (10)",
-    "displayStatusName in {New, Open, Pending} (excludes Reopen/Reopened, Closed, Resolved, Cancelled, Done)",
+    "displayStatusName in {New, Pending} (excludes Reopen/Reopened, Closed, Resolved, Cancelled, Done)",
     "closeFlag NOT used as eligibility gate (19 live closeFlag=true tickets retained)",
-    "exclude billing / UF Billing / storage / handling invoice items (19 audit ids; UFN-60009 BOL, UFN-68749 storage-SQFT data request and UFN-69818 open-RN ops digest kept as operational)",
+    "exclude billing / UF Billing / storage / handling invoice items (22 audit ids; UFN-60009 BOL, UFN-68749 storage-SQFT data request and UFN-69818 open-RN ops digest kept as operational)",
     "UFN-prefix filter (department UNIS Fulfillment - Northampton / Cesanek)",
     "slaStatus = authoritative TicketOps isSlaBreached per ticket",
     "Outlook context non-blocking enrichment; overlapping thread dedup by conversation (one UFN ticket = one thread); Walmart/Boundless load-45872185 counted as one incident",
@@ -22,34 +22,34 @@
     {
       "name": "TicketOps",
       "endpoint": "POST /v1/iam/tickets/page",
-      "note": "input{departmentIds:[NHT 323826714354839552], displayStatusSystemStatus:[10]}; UFN- prefix; pull reference 2026-09-05 01:05-01:09 ET (2 pages; totals 313 open, 203 New + 73 Pending + 37 Reopen server-side)"
+      "note": "input{departmentIds:[NHT 323826714354839552], displayStatusSystemStatus:[10]}; UFN- prefix; pull reference 2026-09-05 01:56 ET (2 pages; totals 313 open UFN server-side; eligible after audit 251 = 184 New + 0 Open + 67 Pending)"
     },
     {
       "name": "Outlook",
-      "note": "Microsoft Search API via delegated context, Northampton/Cesanek CS mailbox (nht.cs@unisco.com), window 2026-09-04 08:50 ET .. 2026-09-05 01:05 ET (non-blocking)"
+      "note": "Microsoft Search API via delegated context, Northampton/Cesanek CS mailbox (nht.cs@unisco.com), window 2026-09-05 01:05 ET .. 01:56 ET (non-blocking); no new messages in window; active thread context carried forward from v12"
     }
   ],
   "dashboardState": {
     "totalRaw": 313,
     "reopenExcluded": 37,
-    "billingExcluded": 19,
+    "billingExcluded": 22,
     "duplicatesRemoved": 3,
-    "totalEligible": 254,
+    "totalEligible": 251,
     "closeFlagTrueRetained": 19,
     "byStatus": {
-      "New": 186,
-      "Open": 0,
-      "Pending": 68
+      "New": 184,
+      "Pending": 67,
+      "Open": 0
     },
     "byPriority": {
-      "Medium": 254
+      "Medium": 251
     },
     "customerHealth": {
-      "totalCustomers": 50,
+      "totalCustomers": 51,
       "tiers": {
-        "Critical": 36,
-        "Warning": 8,
-        "Healthy": 6
+        "Critical": 37,
+        "Warning": 6,
+        "Healthy": 8
       },
       "customers": {
         "LASSONDE PAPPAS AND COMPANY, INC.": {
@@ -59,14 +59,14 @@
           "tier": "Critical"
         },
         "SMEG USA INC": {
-          "tickets": 26,
-          "breached": 15,
+          "tickets": 25,
+          "breached": 14,
           "oldestBreachedAgeDays": 176,
           "tier": "Critical"
         },
         "PRIME TIME PACKAGING LTD": {
           "tickets": 21,
-          "breached": 21,
+          "breached": 20,
           "oldestBreachedAgeDays": 152,
           "tier": "Critical"
         },
@@ -84,20 +84,20 @@
         },
         "DAYDREAM NUTRITION INC.": {
           "tickets": 12,
-          "breached": 9,
+          "breached": 8,
           "oldestBreachedAgeDays": 22,
-          "tier": "Critical"
-        },
-        "RITUAL BEVERAGE COMPANY": {
-          "tickets": 11,
-          "breached": 7,
-          "oldestBreachedAgeDays": 158,
           "tier": "Critical"
         },
         "Midea America Corp": {
           "tickets": 10,
           "breached": 10,
           "oldestBreachedAgeDays": 36,
+          "tier": "Critical"
+        },
+        "RITUAL BEVERAGE COMPANY": {
+          "tickets": 9,
+          "breached": 5,
+          "oldestBreachedAgeDays": 145,
           "tier": "Critical"
         },
         "CANVAS 340 LLC": {
@@ -144,13 +144,13 @@
         },
         "AVIRON INTERACTIVE INC": {
           "tickets": 3,
-          "breached": 2,
+          "breached": 1,
           "oldestBreachedAgeDays": 19,
           "tier": "Critical"
         },
         "COLAVITA USA, LLC": {
           "tickets": 3,
-          "breached": 2,
+          "breached": 1,
           "oldestBreachedAgeDays": 5,
           "tier": "Critical"
         },
@@ -172,12 +172,6 @@
           "oldestBreachedAgeDays": 8,
           "tier": "Critical"
         },
-        "(Niagara) vwang@niagarawater.com": {
-          "tickets": 2,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
-          "tier": "Healthy"
-        },
         "BOUNDLESS EC US LLC": {
           "tickets": 2,
           "breached": 0,
@@ -196,12 +190,6 @@
           "oldestBreachedAgeDays": 81,
           "tier": "Critical"
         },
-        "EMS MIND READER LLC": {
-          "tickets": 2,
-          "breached": 2,
-          "oldestBreachedAgeDays": 65,
-          "tier": "Critical"
-        },
         "HINT INC.": {
           "tickets": 2,
           "breached": 1,
@@ -214,17 +202,17 @@
           "oldestBreachedAgeDays": 0,
           "tier": "Healthy"
         },
+        "vwang@niagarawater.com": {
+          "tickets": 2,
+          "breached": 0,
+          "oldestBreachedAgeDays": 0,
+          "tier": "Healthy"
+        },
         "Y,IWO LLC": {
           "tickets": 2,
           "breached": 2,
           "oldestBreachedAgeDays": 57,
           "tier": "Critical"
-        },
-        "(ODFL carrier)": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 4,
-          "tier": "Warning"
         },
         "ATERIAN INC": {
           "tickets": 1,
@@ -239,6 +227,18 @@
           "tier": "Critical"
         },
         "DUPRAY USA LLC": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 4,
+          "tier": "Warning"
+        },
+        "EMS MIND READER LLC": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 22,
+          "tier": "Critical"
+        },
+        "Erica Stiles": {
           "tickets": 1,
           "breached": 1,
           "oldestBreachedAgeDays": 4,
@@ -270,9 +270,9 @@
         },
         "MODERN INFUSIONS LLC": {
           "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 3,
-          "tier": "Warning"
+          "breached": 0,
+          "oldestBreachedAgeDays": 0,
+          "tier": "Healthy"
         },
         "NAL CONFECTIONARY, LLC": {
           "tickets": 1,
@@ -304,11 +304,17 @@
           "oldestBreachedAgeDays": 19,
           "tier": "Critical"
         },
-        "SPLENDOR WATER LLC": {
+        "smorales@beteshghc.com": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 3,
-          "tier": "Warning"
+          "oldestBreachedAgeDays": 65,
+          "tier": "Critical"
+        },
+        "SPLENDOR WATER LLC": {
+          "tickets": 1,
+          "breached": 0,
+          "oldestBreachedAgeDays": 0,
+          "tier": "Healthy"
         },
         "SUMA BRANDS FUNDING I, LLC": {
           "tickets": 1,
@@ -358,7 +364,7 @@
       {
         "ticketId": "UFN-33604",
         "customer": "Turtle Beach",
-        "subject": "Reminder: SEND VIVO DAMAGE REPORT",
+        "subject": "Pending/Overdue Tickets",
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 184,
@@ -466,17 +472,6 @@
         "assigned": null
       },
       {
-        "ticketId": "UFN-40670",
-        "customer": "RITUAL BEVERAGE COMPANY",
-        "subject": "March F26 Month End Close Reminder",
-        "opsStatus": "Pending",
-        "priority": "Medium",
-        "ageDays": 158,
-        "ageHours": 3793,
-        "slaStatus": "Breached",
-        "assigned": null
-      },
-      {
         "ticketId": "UFN-40860",
         "customer": "Turtle Beach",
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
@@ -519,19 +514,30 @@
         "ageHours": 3649,
         "slaStatus": "Breached",
         "assigned": "Pedro Marte"
+      },
+      {
+        "ticketId": "UFN-42645",
+        "customer": "Turtle Beach",
+        "subject": "Reminder: SEND VIVO DAMAGE REPORT",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 150,
+        "ageHours": 3601,
+        "slaStatus": "Breached",
+        "assigned": null
       }
     ],
     "actionBuckets": {
       "Immediate": 1,
       "Short-Term": 44,
       "Medium-Term": 29,
-      "Watch": 180
+      "Watch": 177
     },
     "evidenceMetrics": {
-      "totalEligible": 254,
-      "slaBreached": 209,
-      "slaOnTrack": 45,
-      "unassigned": 206,
+      "totalEligible": 251,
+      "slaBreached": 200,
+      "slaOnTrack": 51,
+      "unassigned": 204,
       "oldestAgeDays": 184,
       "outlookThreadsMatched": 9,
       "outlookThreadsUniquePostDedup": 9,
