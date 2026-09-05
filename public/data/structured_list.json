@@ -6,29 +6,29 @@
     "tenant": "LT",
     "timezone": "America/New_York"
   },
-  "lastRefreshed": "2026-09-04T08:50:00-04:00",
+  "lastRefreshed": "2026-09-05T01:05:00-04:00",
   "dataSource": "TicketOps (authoritative) + Outlook (non-blocking)",
   "refreshType": "AUTHORITATIVE",
-  "refreshId": "refresh-2026-09-04T08:50ET-AUTHORITATIVE-v11",
-  "totalRaw": 344,
-  "totalEligible": 273,
-  "newCount": 199,
+  "refreshId": "refresh-2026-09-05T01:05ET-AUTHORITATIVE-v12",
+  "totalRaw": 313,
+  "totalEligible": 254,
+  "newCount": 186,
   "openCount": 0,
-  "pendingCount": 74,
-  "truncationNote": "closeFlag not a gate; Reopen (44) and billing/storage/handling invoice items (26) excluded",
+  "pendingCount": 68,
+  "truncationNote": "closeFlag not a gate (19 retained); Reopen (37) and billing/storage/handling invoice items (19) excluded; 3 duplicate threads removed",
   "slaHealth": {
-    "breached": 200,
-    "onTrack": 73,
-    "unassigned": 207
+    "breached": 209,
+    "onTrack": 45,
+    "unassigned": 206
   },
   "evidenceMetrics": {
-    "totalEligible": 273,
-    "slaBreached": 200,
-    "slaOnTrack": 73,
-    "unassigned": 207,
-    "oldestAgeDays": 197,
+    "totalEligible": 254,
+    "slaBreached": 209,
+    "slaOnTrack": 45,
+    "unassigned": 206,
+    "oldestAgeDays": 184,
     "outlookThreadsMatched": 9,
     "outlookThreadsUniquePostDedup": 9,
-    "activeEscalations": 6
+    "activeEscalations": 9
   }
 }
