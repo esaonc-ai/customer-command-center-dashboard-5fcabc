@@ -6,10 +6,10 @@
     "tenant": "LT",
     "timezone": "America/New_York"
   },
-  "lastRefreshed": "2026-09-05T01:56:00-04:00",
+  "lastRefreshed": "2026-09-05T02:39:00-04:00",
   "dataSource": "TicketOps (authoritative) + Outlook (non-blocking)",
   "refreshType": "AUTHORITATIVE",
-  "refreshId": "refresh-2026-09-05T01:56ET-AUTHORITATIVE-v13",
+  "refreshId": "refresh-2026-09-05T02:39ET-AUTHORITATIVE-v14",
   "totalRaw": 313,
   "totalEligible": 251,
   "newCount": 184,
@@ -17,14 +17,14 @@
   "pendingCount": 67,
   "truncationNote": "closeFlag not a gate (19 retained); Reopen (37) and billing/storage/handling invoice items (22) excluded; 3 duplicate threads removed",
   "slaHealth": {
-    "breached": 200,
-    "onTrack": 51,
+    "breached": 213,
+    "onTrack": 38,
     "unassigned": 204
   },
   "evidenceMetrics": {
     "totalEligible": 251,
-    "slaBreached": 200,
-    "slaOnTrack": 51,
+    "slaBreached": 213,
+    "slaOnTrack": 38,
     "unassigned": 204,
     "oldestAgeDays": 184,
     "outlookThreadsMatched": 9,

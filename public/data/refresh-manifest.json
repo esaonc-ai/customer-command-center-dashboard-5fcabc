@@ -1,17 +1,17 @@
 {
   "refresh": {
-    "id": "refresh-2026-09-05T01:56ET-AUTHORITATIVE-v13",
-    "timestamp": "2026-09-05T01:56:00-04:00",
+    "id": "refresh-2026-09-05T02:39ET-AUTHORITATIVE-v14",
+    "timestamp": "2026-09-05T02:39:00-04:00",
     "type": "AUTHORITATIVE",
-    "previousRefreshId": "refresh-2026-09-05T01:05ET-AUTHORITATIVE-v12",
-    "keyChange": "Fresh authoritative TicketOps pull 2026-09-05 ~01:56 ET: 313 open UFN (system status 10) -> 251 eligible (184 New / 0 Open / 67 Pending; displayStatusSystemStatus=open + displayStatusName in {New, Pending}). closeFlag NOT used as gate - 19 live closeFlag=true tickets retained (e.g. UFN-69797 Ritual/Diageo Picks, UFN-69618 Boundless Walmart load). Excluded 37 Reopen (displayName) + 22 billing/UF Billing/storage/handling invoice items per audit (kept UFN-60009 BOL, UFN-68749 storage-SQFT data request, UFN-69818 open-RN ops digest as operational) + 3 duplicate ticket/email threads (UFN-69842->UFN-69841, UFN-69663->UFN-69661, UFN-69760->UFN-69618). Delta vs v12 (254 @01:05 ET): 3 tickets left the eligible population (UFN-40670, UFN-53491, UFN-67097 - F26 month-end close reminders and freight-charge claims confirmation moved to the billing/UF Billing audit exclusion per rule) and 0 entered (net 254->251; New 186->184, Pending 68->67). UFN-67030 is Solved - correctly outside the gate. Outlook enrichment (window 09/05 01:05 ET -> 01:56 ET): no new mailbox messages (latest 09-04 19:36 ET); 9 active eligible-ticket threads carried forward (~3.6% coverage), 2 eligible escalations persist (UFN-69811 Diageo/Ritual claim 18050; Boundless Walmart load-45872185 counted as one incident)."
+    "previousRefreshId": "refresh-2026-09-05T01:56ET-AUTHORITATIVE-v13",
+    "keyChange": "Fresh authoritative TicketOps pull 2026-09-05 ~02:39 ET (dept-wide 323826714354839552, system status 10, 4 pages, 313 open UFN) -> 251 eligible (184 New / 0 Open / 67 Pending; displayStatusSystemStatus=open + displayStatusName in {New, Pending}). closeFlag NOT used as gate - 19 live closeFlag=true tickets retained (e.g. UFN-43887, UFN-48223, UFN-69618, UFN-69797). Excluded 37 Reopen (displayName) + 22 billing/UF Billing/storage/handling invoice items per audit (F26 month-end close reminders UFN-40670/UFN-53491, freight-charge claims UFN-67097; operational keepers UFN-60009 BOL, UFN-68749 storage-SQFT data request and UFN-69818 open-RN ops digest retained) + 3 duplicate ticket/email threads (UFN-69842->UFN-69841, UFN-69663->UFN-69661, UFN-69760->UFN-69618). Membership vs v13 (251 @01:56 ET): unchanged - per-status ID lists verified identical; no tickets entered or exited the eligible set between pulls. Ages rolled forward to 02:39 ET reference; SLA health moved 200/51 -> 213/38 (13 authoritative isSlaBreached flips, mostly tickets crossing SLA thresholds); unassigned 204. UFN-67030 is Solved/closed (system 20) - correctly outside the gate. Outlook enrichment (window 09/05 01:56 ET -> 02:39 ET): no new mailbox messages (watermark 09-04 19:36:54 ET); 9 active eligible-ticket threads carried forward (3.6% coverage); 2 eligible escalations persist (UFN-69811 Diageo/Ritual claim 18050; Boundless Walmart load-45872185 counted as one incident)."
   },
   "rulesApplied": [
     "displayStatusSystemStatus == open (10)",
     "displayStatusName in {New, Pending} (excludes Reopen/Reopened, Closed, Resolved, Cancelled, Done)",
     "closeFlag NOT used as eligibility gate (19 live closeFlag=true tickets retained)",
     "exclude billing / UF Billing / storage / handling invoice items (22 audit ids; UFN-60009 BOL, UFN-68749 storage-SQFT data request and UFN-69818 open-RN ops digest kept as operational)",
-    "UFN-prefix filter (department UNIS Fulfillment - Northampton / Cesanek)",
+    "UFN-prefix filter (department UNIS Fulfillment - Northampton / Cesanek; dept-wide, no team filter)",
     "slaStatus = authoritative TicketOps isSlaBreached per ticket",
     "Outlook context non-blocking enrichment; overlapping thread dedup by conversation (one UFN ticket = one thread); Walmart/Boundless load-45872185 counted as one incident",
     "Customer Health coverage = all customers visible in eligible tickets (roster/aliases supplemental only)",
@@ -22,11 +22,11 @@
     {
       "name": "TicketOps",
       "endpoint": "POST /v1/iam/tickets/page",
-      "note": "input{departmentIds:[NHT 323826714354839552], displayStatusSystemStatus:[10]}; UFN- prefix; pull reference 2026-09-05 01:56 ET (2 pages; totals 313 open UFN server-side; eligible after audit 251 = 184 New + 0 Open + 67 Pending)"
+      "note": "input{departmentIds:[NHT 323826714354839552], displayStatusSystemStatus:[10]}; UFN- prefix; pull reference 2026-09-05 02:39 ET (4 pages; totals 313 open UFN server-side; eligible after audit 251 = 184 New + 0 Open + 67 Pending)"
     },
     {
       "name": "Outlook",
-      "note": "Microsoft Search API via delegated context, Northampton/Cesanek CS mailbox (nht.cs@unisco.com), window 2026-09-05 01:05 ET .. 01:56 ET (non-blocking); no new messages in window; active thread context carried forward from v12"
+      "note": "Microsoft Graph via delegated CS context (nicole.weber@unisco.com; literal shared mailbox nht.cs@unisco.com read requires Mail.Read.Shared grant), Northampton/Cesanek CS mailbox, window 2026-09-05 01:56 ET .. 02:39 ET (non-blocking); no new messages in window; active thread context carried forward from v13"
     }
   ],
   "dashboardState": {
@@ -38,8 +38,8 @@
     "closeFlagTrueRetained": 19,
     "byStatus": {
       "New": 184,
-      "Pending": 67,
-      "Open": 0
+      "Open": 0,
+      "Pending": 67
     },
     "byPriority": {
       "Medium": 251
@@ -48,302 +48,14 @@
       "totalCustomers": 51,
       "tiers": {
         "Critical": 37,
-        "Warning": 6,
-        "Healthy": 8
+        "Warning": 10,
+        "Healthy": 4
       },
       "customers": {
-        "LASSONDE PAPPAS AND COMPANY, INC.": {
-          "tickets": 52,
-          "breached": 50,
-          "oldestBreachedAgeDays": 65,
-          "tier": "Critical"
-        },
-        "SMEG USA INC": {
-          "tickets": 25,
-          "breached": 14,
-          "oldestBreachedAgeDays": 176,
-          "tier": "Critical"
-        },
-        "PRIME TIME PACKAGING LTD": {
-          "tickets": 21,
-          "breached": 20,
-          "oldestBreachedAgeDays": 152,
-          "tier": "Critical"
-        },
         "Turtle Beach": {
           "tickets": 21,
           "breached": 21,
           "oldestBreachedAgeDays": 184,
-          "tier": "Critical"
-        },
-        "NIAGARA BOTTLING LLC": {
-          "tickets": 13,
-          "breached": 13,
-          "oldestBreachedAgeDays": 162,
-          "tier": "Critical"
-        },
-        "DAYDREAM NUTRITION INC.": {
-          "tickets": 12,
-          "breached": 8,
-          "oldestBreachedAgeDays": 22,
-          "tier": "Critical"
-        },
-        "Midea America Corp": {
-          "tickets": 10,
-          "breached": 10,
-          "oldestBreachedAgeDays": 36,
-          "tier": "Critical"
-        },
-        "RITUAL BEVERAGE COMPANY": {
-          "tickets": 9,
-          "breached": 5,
-          "oldestBreachedAgeDays": 145,
-          "tier": "Critical"
-        },
-        "CANVAS 340 LLC": {
-          "tickets": 6,
-          "breached": 5,
-          "oldestBreachedAgeDays": 54,
-          "tier": "Critical"
-        },
-        "CKNAPP SALES INC": {
-          "tickets": 6,
-          "breached": 6,
-          "oldestBreachedAgeDays": 15,
-          "tier": "Critical"
-        },
-        "wilmer.benitez@unisco.com": {
-          "tickets": 6,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
-          "tier": "Warning"
-        },
-        "SHEEX, INC.": {
-          "tickets": 5,
-          "breached": 5,
-          "oldestBreachedAgeDays": 16,
-          "tier": "Critical"
-        },
-        "LIFEPRO FITNESS LLC": {
-          "tickets": 4,
-          "breached": 2,
-          "oldestBreachedAgeDays": 59,
-          "tier": "Critical"
-        },
-        "Natural Rapport (Q & C Products LLC)": {
-          "tickets": 4,
-          "breached": 4,
-          "oldestBreachedAgeDays": 47,
-          "tier": "Critical"
-        },
-        "NIAGARA BOTTLING LLC - RESIN": {
-          "tickets": 4,
-          "breached": 4,
-          "oldestBreachedAgeDays": 8,
-          "tier": "Critical"
-        },
-        "AVIRON INTERACTIVE INC": {
-          "tickets": 3,
-          "breached": 1,
-          "oldestBreachedAgeDays": 19,
-          "tier": "Critical"
-        },
-        "COLAVITA USA, LLC": {
-          "tickets": 3,
-          "breached": 1,
-          "oldestBreachedAgeDays": 5,
-          "tier": "Critical"
-        },
-        "GOLDEN BULL MARKETING": {
-          "tickets": 3,
-          "breached": 3,
-          "oldestBreachedAgeDays": 68,
-          "tier": "Critical"
-        },
-        "RECESS": {
-          "tickets": 3,
-          "breached": 2,
-          "oldestBreachedAgeDays": 124,
-          "tier": "Critical"
-        },
-        "TCL NORTH AMERICA": {
-          "tickets": 3,
-          "breached": 1,
-          "oldestBreachedAgeDays": 8,
-          "tier": "Critical"
-        },
-        "BOUNDLESS EC US LLC": {
-          "tickets": 2,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
-          "tier": "Critical"
-        },
-        "DEEBEE'S ORGANICS INC": {
-          "tickets": 2,
-          "breached": 2,
-          "oldestBreachedAgeDays": 15,
-          "tier": "Critical"
-        },
-        "DELMAR INTERNATIONAL INC": {
-          "tickets": 2,
-          "breached": 2,
-          "oldestBreachedAgeDays": 81,
-          "tier": "Critical"
-        },
-        "HINT INC.": {
-          "tickets": 2,
-          "breached": 1,
-          "oldestBreachedAgeDays": 9,
-          "tier": "Warning"
-        },
-        "Tweetie Leigh Lamoste (tweetie.lamoste@unisco.com)": {
-          "tickets": 2,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
-          "tier": "Healthy"
-        },
-        "vwang@niagarawater.com": {
-          "tickets": 2,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
-          "tier": "Healthy"
-        },
-        "Y,IWO LLC": {
-          "tickets": 2,
-          "breached": 2,
-          "oldestBreachedAgeDays": 57,
-          "tier": "Critical"
-        },
-        "ATERIAN INC": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 177,
-          "tier": "Critical"
-        },
-        "COOLERSBYU, LLC.": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 131,
-          "tier": "Critical"
-        },
-        "DUPRAY USA LLC": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 4,
-          "tier": "Warning"
-        },
-        "EMS MIND READER LLC": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 22,
-          "tier": "Critical"
-        },
-        "Erica Stiles": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 4,
-          "tier": "Warning"
-        },
-        "FXF-DCN": {
-          "tickets": 1,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
-          "tier": "Healthy"
-        },
-        "HISENSE USA CORPORATION": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 32,
-          "tier": "Critical"
-        },
-        "KARAKA, LLC": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 11,
-          "tier": "Warning"
-        },
-        "Kent Joseph Lim (kent.lim@unisco.com)": {
-          "tickets": 1,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
-          "tier": "Healthy"
-        },
-        "MODERN INFUSIONS LLC": {
-          "tickets": 1,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
-          "tier": "Healthy"
-        },
-        "NAL CONFECTIONARY, LLC": {
-          "tickets": 1,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
-          "tier": "Healthy"
-        },
-        "NOURISON": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 12,
-          "tier": "Warning"
-        },
-        "PENNPAK SOLUTIONS, INC.": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 26,
-          "tier": "Critical"
-        },
-        "ROAR BEVERAGES INC": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 127,
-          "tier": "Critical"
-        },
-        "ROYALTY DISTRIBUTION": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 19,
-          "tier": "Critical"
-        },
-        "smorales@beteshghc.com": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 65,
-          "tier": "Critical"
-        },
-        "SPLENDOR WATER LLC": {
-          "tickets": 1,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
-          "tier": "Healthy"
-        },
-        "SUMA BRANDS FUNDING I, LLC": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 66,
-          "tier": "Critical"
-        },
-        "THE ANDERSONS, INC.": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 59,
-          "tier": "Critical"
-        },
-        "THE LUCKY OX LLC": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 152,
-          "tier": "Critical"
-        },
-        "UPTIME ENERGY INC": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 38,
-          "tier": "Critical"
-        },
-        "WYNK BEVERAGE - Reverse": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 168,
           "tier": "Critical"
         },
         "ZEN BEVERAGE": {
@@ -352,8 +64,296 @@
           "oldestBreachedAgeDays": 184,
           "tier": "Critical"
         },
+        "ATERIAN INC": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 177,
+          "tier": "Critical"
+        },
+        "SMEG USA INC": {
+          "tickets": 25,
+          "breached": 14,
+          "oldestBreachedAgeDays": 176,
+          "tier": "Critical"
+        },
+        "WYNK BEVERAGE - Reverse": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 168,
+          "tier": "Critical"
+        },
+        "NIAGARA BOTTLING LLC": {
+          "tickets": 13,
+          "breached": 13,
+          "oldestBreachedAgeDays": 162,
+          "tier": "Critical"
+        },
+        "PRIME TIME PACKAGING LTD": {
+          "tickets": 21,
+          "breached": 20,
+          "oldestBreachedAgeDays": 152,
+          "tier": "Critical"
+        },
+        "THE LUCKY OX LLC": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 152,
+          "tier": "Critical"
+        },
+        "RITUAL BEVERAGE COMPANY": {
+          "tickets": 9,
+          "breached": 5,
+          "oldestBreachedAgeDays": 145,
+          "tier": "Critical"
+        },
+        "COOLERSBYU, LLC.": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 131,
+          "tier": "Critical"
+        },
+        "ROAR BEVERAGES INC": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 127,
+          "tier": "Critical"
+        },
+        "RECESS": {
+          "tickets": 3,
+          "breached": 3,
+          "oldestBreachedAgeDays": 124,
+          "tier": "Critical"
+        },
+        "DELMAR INTERNATIONAL INC": {
+          "tickets": 2,
+          "breached": 2,
+          "oldestBreachedAgeDays": 81,
+          "tier": "Critical"
+        },
+        "GOLDEN BULL MARKETING": {
+          "tickets": 3,
+          "breached": 3,
+          "oldestBreachedAgeDays": 68,
+          "tier": "Critical"
+        },
+        "SUMA BRANDS FUNDING I, LLC": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 66,
+          "tier": "Critical"
+        },
+        "LASSONDE PAPPAS AND COMPANY, INC.": {
+          "tickets": 52,
+          "breached": 52,
+          "oldestBreachedAgeDays": 65,
+          "tier": "Critical"
+        },
+        "smorales@beteshghc.com": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 65,
+          "tier": "Critical"
+        },
+        "THE ANDERSONS, INC.": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 59,
+          "tier": "Critical"
+        },
+        "LIFEPRO FITNESS LLC": {
+          "tickets": 4,
+          "breached": 3,
+          "oldestBreachedAgeDays": 59,
+          "tier": "Critical"
+        },
+        "Y,IWO LLC": {
+          "tickets": 2,
+          "breached": 2,
+          "oldestBreachedAgeDays": 57,
+          "tier": "Critical"
+        },
+        "CANVAS 340 LLC": {
+          "tickets": 6,
+          "breached": 6,
+          "oldestBreachedAgeDays": 54,
+          "tier": "Critical"
+        },
+        "Natural Rapport (Q & C Products LLC)": {
+          "tickets": 4,
+          "breached": 4,
+          "oldestBreachedAgeDays": 47,
+          "tier": "Critical"
+        },
+        "UPTIME ENERGY INC": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 38,
+          "tier": "Critical"
+        },
+        "Midea America Corp": {
+          "tickets": 10,
+          "breached": 10,
+          "oldestBreachedAgeDays": 36,
+          "tier": "Critical"
+        },
+        "HISENSE USA CORPORATION": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 32,
+          "tier": "Critical"
+        },
+        "PENNPAK SOLUTIONS, INC.": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 26,
+          "tier": "Critical"
+        },
+        "DAYDREAM NUTRITION INC.": {
+          "tickets": 12,
+          "breached": 12,
+          "oldestBreachedAgeDays": 22,
+          "tier": "Critical"
+        },
+        "EMS MIND READER LLC": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 22,
+          "tier": "Critical"
+        },
+        "ROYALTY DISTRIBUTION": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 19,
+          "tier": "Critical"
+        },
+        "AVIRON INTERACTIVE INC": {
+          "tickets": 3,
+          "breached": 1,
+          "oldestBreachedAgeDays": 19,
+          "tier": "Critical"
+        },
+        "SHEEX, INC.": {
+          "tickets": 5,
+          "breached": 5,
+          "oldestBreachedAgeDays": 16,
+          "tier": "Critical"
+        },
+        "DEEBEE'S ORGANICS INC": {
+          "tickets": 2,
+          "breached": 2,
+          "oldestBreachedAgeDays": 15,
+          "tier": "Critical"
+        },
+        "CKNAPP SALES INC": {
+          "tickets": 6,
+          "breached": 6,
+          "oldestBreachedAgeDays": 15,
+          "tier": "Critical"
+        },
+        "NOURISON": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 12,
+          "tier": "Warning"
+        },
+        "KARAKA, LLC": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 11,
+          "tier": "Warning"
+        },
+        "HINT INC.": {
+          "tickets": 2,
+          "breached": 1,
+          "oldestBreachedAgeDays": 9,
+          "tier": "Warning"
+        },
+        "NIAGARA BOTTLING LLC - RESIN": {
+          "tickets": 4,
+          "breached": 4,
+          "oldestBreachedAgeDays": 8,
+          "tier": "Critical"
+        },
+        "TCL NORTH AMERICA": {
+          "tickets": 3,
+          "breached": 1,
+          "oldestBreachedAgeDays": 8,
+          "tier": "Critical"
+        },
+        "COLAVITA USA, LLC": {
+          "tickets": 3,
+          "breached": 1,
+          "oldestBreachedAgeDays": 5,
+          "tier": "Critical"
+        },
+        "Erica Stiles": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 4,
+          "tier": "Warning"
+        },
+        "DUPRAY USA LLC": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 4,
+          "tier": "Warning"
+        },
+        "MODERN INFUSIONS LLC": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 3,
+          "tier": "Warning"
+        },
+        "SPLENDOR WATER LLC": {
+          "tickets": 1,
+          "breached": 0,
+          "oldestBreachedAgeDays": 0,
+          "tier": "Healthy"
+        },
         "ZEN BEVERAGE LLC": {
           "tickets": 1,
+          "breached": 0,
+          "oldestBreachedAgeDays": 0,
+          "tier": "Healthy"
+        },
+        "BOUNDLESS EC US LLC": {
+          "tickets": 2,
+          "breached": 0,
+          "oldestBreachedAgeDays": 0,
+          "tier": "Critical"
+        },
+        "NAL CONFECTIONARY, LLC": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 1,
+          "tier": "Warning"
+        },
+        "FXF-DCN": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 1,
+          "tier": "Warning"
+        },
+        "Tweetie Leigh Lamoste (tweetie.lamoste@unisco.com)": {
+          "tickets": 2,
+          "breached": 1,
+          "oldestBreachedAgeDays": 1,
+          "tier": "Warning"
+        },
+        "Kent Joseph Lim (kent.lim@unisco.com)": {
+          "tickets": 1,
+          "breached": 0,
+          "oldestBreachedAgeDays": 0,
+          "tier": "Healthy"
+        },
+        "wilmer.benitez@unisco.com": {
+          "tickets": 6,
+          "breached": 0,
+          "oldestBreachedAgeDays": 0,
+          "tier": "Warning"
+        },
+        "vwang@niagarawater.com": {
+          "tickets": 2,
           "breached": 0,
           "oldestBreachedAgeDays": 0,
           "tier": "Healthy"
@@ -368,7 +368,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 184,
-        "ageHours": 4417,
+        "ageHours": 4418,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -379,7 +379,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 184,
-        "ageHours": 4417,
+        "ageHours": 4418,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -390,7 +390,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 177,
-        "ageHours": 4249,
+        "ageHours": 4250,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -401,7 +401,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 176,
-        "ageHours": 4225,
+        "ageHours": 4226,
         "slaStatus": "Breached",
         "assigned": "Sittie Jhaila Sirad"
       },
@@ -412,7 +412,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 168,
-        "ageHours": 4033,
+        "ageHours": 4034,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -423,7 +423,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 164,
-        "ageHours": 3937,
+        "ageHours": 3938,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -434,7 +434,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 163,
-        "ageHours": 3913,
+        "ageHours": 3914,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -445,7 +445,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 162,
-        "ageHours": 3889,
+        "ageHours": 3890,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -456,7 +456,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 159,
-        "ageHours": 3817,
+        "ageHours": 3818,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -467,7 +467,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 158,
-        "ageHours": 3793,
+        "ageHours": 3794,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -478,7 +478,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 157,
-        "ageHours": 3769,
+        "ageHours": 3770,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -489,7 +489,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 157,
-        "ageHours": 3769,
+        "ageHours": 3770,
         "slaStatus": "Breached",
         "assigned": "Sittie Jhaila Sirad"
       },
@@ -500,7 +500,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 152,
-        "ageHours": 3649,
+        "ageHours": 3650,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -511,7 +511,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 152,
-        "ageHours": 3649,
+        "ageHours": 3650,
         "slaStatus": "Breached",
         "assigned": "Pedro Marte"
       },
@@ -522,7 +522,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 150,
-        "ageHours": 3601,
+        "ageHours": 3602,
         "slaStatus": "Breached",
         "assigned": null
       }
@@ -535,8 +535,8 @@
     },
     "evidenceMetrics": {
       "totalEligible": 251,
-      "slaBreached": 200,
-      "slaOnTrack": 51,
+      "slaBreached": 213,
+      "slaOnTrack": 38,
       "unassigned": 204,
       "oldestAgeDays": 184,
       "outlookThreadsMatched": 9,
