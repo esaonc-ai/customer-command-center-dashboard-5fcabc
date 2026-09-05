@@ -11,7 +11,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4418,
+    "ageHours": 4422,
     "ageDays": 184
   },
   {
@@ -26,7 +26,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4418,
+    "ageHours": 4416,
     "ageDays": 184
   },
   {
@@ -41,8 +41,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4250,
-    "ageDays": 177
+    "ageHours": 4247,
+    "ageDays": 176
   },
   {
     "ticketId": "UFN-35774",
@@ -56,7 +56,7 @@
     "assigned": "Sittie Jhaila Sirad",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4226,
+    "ageHours": 4228,
     "ageDays": 176
   },
   {
@@ -71,7 +71,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4034,
+    "ageHours": 4038,
     "ageDays": 168
   },
   {
@@ -86,7 +86,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3938,
+    "ageHours": 3942,
     "ageDays": 164
   },
   {
@@ -101,7 +101,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3914,
+    "ageHours": 3915,
     "ageDays": 163
   },
   {
@@ -116,7 +116,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3890,
+    "ageHours": 3891,
     "ageDays": 162
   },
   {
@@ -131,7 +131,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3818,
+    "ageHours": 3823,
     "ageDays": 159
   },
   {
@@ -146,8 +146,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3794,
-    "ageDays": 158
+    "ageHours": 3791,
+    "ageDays": 157
   },
   {
     "ticketId": "UFN-40860",
@@ -161,7 +161,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3770,
+    "ageHours": 3774,
     "ageDays": 157
   },
   {
@@ -191,7 +191,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3650,
+    "ageHours": 3667,
     "ageDays": 152
   },
   {
@@ -206,7 +206,7 @@
     "assigned": "Pedro Marte",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3650,
+    "ageHours": 3653,
     "ageDays": 152
   },
   {
@@ -221,7 +221,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3602,
+    "ageHours": 3606,
     "ageDays": 150
   },
   {
@@ -251,7 +251,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3482,
+    "ageHours": 3499,
     "ageDays": 145
   },
   {
@@ -266,8 +266,8 @@
     "assigned": null,
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 3482,
-    "ageDays": 145
+    "ageHours": 3479,
+    "ageDays": 144
   },
   {
     "ticketId": "UFN-44139",
@@ -281,7 +281,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3458,
+    "ageHours": 3457,
     "ageDays": 144
   },
   {
@@ -296,7 +296,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3434,
+    "ageHours": 3438,
     "ageDays": 143
   },
   {
@@ -311,8 +311,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3386,
-    "ageDays": 141
+    "ageHours": 3381,
+    "ageDays": 140
   },
   {
     "ticketId": "UFN-45186",
@@ -326,7 +326,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3314,
+    "ageHours": 3331,
     "ageDays": 138
   },
   {
@@ -341,7 +341,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3314,
+    "ageHours": 3317,
     "ageDays": 138
   },
   {
@@ -356,7 +356,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3266,
+    "ageHours": 3270,
     "ageDays": 136
   },
   {
@@ -371,7 +371,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3218,
+    "ageHours": 3221,
     "ageDays": 134
   },
   {
@@ -386,7 +386,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3218,
+    "ageHours": 3219,
     "ageDays": 134
   },
   {
@@ -401,7 +401,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3146,
+    "ageHours": 3152,
     "ageDays": 131
   },
   {
@@ -416,7 +416,7 @@
     "assigned": "Wilmer Acedo",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3146,
+    "ageHours": 3149,
     "ageDays": 131
   },
   {
@@ -446,7 +446,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3098,
+    "ageHours": 3102,
     "ageDays": 129
   },
   {
@@ -461,7 +461,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3050,
+    "ageHours": 3053,
     "ageDays": 127
   },
   {
@@ -476,7 +476,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2978,
+    "ageHours": 2995,
     "ageDays": 124
   },
   {
@@ -491,7 +491,7 @@
     "assigned": "Austin Steigerwalt",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 2978,
+    "ageHours": 2984,
     "ageDays": 124
   },
   {
@@ -506,7 +506,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2978,
+    "ageHours": 2984,
     "ageDays": 124
   },
   {
@@ -521,7 +521,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2930,
+    "ageHours": 2946,
     "ageDays": 122
   },
   {
@@ -536,7 +536,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2930,
+    "ageHours": 2936,
     "ageDays": 122
   },
   {
@@ -551,7 +551,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2930,
+    "ageHours": 2936,
     "ageDays": 122
   },
   {
@@ -566,7 +566,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2930,
+    "ageHours": 2934,
     "ageDays": 122
   },
   {
@@ -581,7 +581,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2858,
+    "ageHours": 2875,
     "ageDays": 119
   },
   {
@@ -596,7 +596,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2810,
+    "ageHours": 2816,
     "ageDays": 117
   },
   {
@@ -611,7 +611,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2762,
+    "ageHours": 2766,
     "ageDays": 115
   },
   {
@@ -626,7 +626,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2642,
+    "ageHours": 2647,
     "ageDays": 110
   },
   {
@@ -641,7 +641,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2594,
+    "ageHours": 2598,
     "ageDays": 108
   },
   {
@@ -650,7 +650,7 @@
     "customerEmail": "silvian@primetimepackaging.com",
     "opsStatus": "New",
     "priority": "Medium",
-    "subject": "Re: [SHIPPED] [wise/v2] Cesanek Outbound PRIME TIME IF46810 Shipment",
+    "subject": "Re: [SHIPPED] - [wise/v2/] – [Cesanek] –[Outbound] - [PRIME TIME PACKAGING LTD] – [IF46810] – Shipment ]",
     "createdDate": "2026-05-20",
     "lastUpdated": "2026-05-20",
     "assigned": null,
@@ -665,13 +665,13 @@
     "customerEmail": "silvian@primetimepackaging.com",
     "opsStatus": "New",
     "priority": "Medium",
-    "subject": "Re: [SHIPPED] [wise/v2] Cesanek Outbound PRIME TIME IF46678 Shipment",
+    "subject": "Re: [SHIPPED] - [wise/v2/] – [Cesanek] –[Outbound] - [PRIME TIME PACKAGING LTD] – [IF46678] – Shipment ]",
     "createdDate": "2026-05-20",
     "lastUpdated": "2026-05-21",
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2594,
+    "ageHours": 2592,
     "ageDays": 108
   },
   {
@@ -686,7 +686,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2426,
+    "ageHours": 2430,
     "ageDays": 101
   },
   {
@@ -701,7 +701,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2258,
+    "ageHours": 2262,
     "ageDays": 94
   },
   {
@@ -710,13 +710,13 @@
     "customerEmail": "silvian@primetimepackaging.com",
     "opsStatus": "New",
     "priority": "Medium",
-    "subject": "Re: [SHIPPED] [wise/v2] Cesanek Outbound PRIME TIME IF47010 Shipment",
+    "subject": "Re: [SHIPPED] - [wise/v2/] – [Cesanek] –[Outbound] - [PRIME TIME PACKAGING LTD] – [IF47010] – Shipment ]",
     "createdDate": "2026-06-03",
     "lastUpdated": "2026-07-02",
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2258,
+    "ageHours": 2257,
     "ageDays": 94
   },
   {
@@ -731,7 +731,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2258,
+    "ageHours": 2256,
     "ageDays": 94
   },
   {
@@ -746,8 +746,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2234,
-    "ageDays": 93
+    "ageHours": 2231,
+    "ageDays": 92
   },
   {
     "ticketId": "UFN-55002",
@@ -761,8 +761,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2234,
-    "ageDays": 93
+    "ageHours": 2231,
+    "ageDays": 92
   },
   {
     "ticketId": "UFN-55198",
@@ -776,7 +776,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2210,
+    "ageHours": 2211,
     "ageDays": 92
   },
   {
@@ -791,7 +791,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2090,
+    "ageHours": 2094,
     "ageDays": 87
   },
   {
@@ -806,7 +806,7 @@
     "assigned": "Shailene Baez",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 1946,
+    "ageHours": 1964,
     "ageDays": 81
   },
   {
@@ -821,7 +821,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1946,
+    "ageHours": 1951,
     "ageDays": 81
   },
   {
@@ -836,7 +836,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1946,
+    "ageHours": 1945,
     "ageDays": 81
   },
   {
@@ -851,7 +851,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1922,
+    "ageHours": 1926,
     "ageDays": 80
   },
   {
@@ -860,13 +860,13 @@
     "customerEmail": "joseline.rosario@smegusa.com",
     "opsStatus": "Pending",
     "priority": "Medium",
-    "subject": "DN-1588421 Little Red Hen - PO LRH-050626",
+    "subject": "DN-1588421  Little Red Hen - PO LRH-050626",
     "createdDate": "2026-06-22",
     "lastUpdated": "2026-07-02",
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1802,
+    "ageHours": 1806,
     "ageDays": 75
   },
   {
@@ -881,7 +881,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1754,
+    "ageHours": 1758,
     "ageDays": 73
   },
   {
@@ -896,7 +896,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1634,
+    "ageHours": 1636,
     "ageDays": 68
   },
   {
@@ -911,7 +911,7 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1634,
+    "ageHours": 1632,
     "ageDays": 68
   },
   {
@@ -926,7 +926,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1586,
+    "ageHours": 1590,
     "ageDays": 66
   },
   {
@@ -941,7 +941,7 @@
     "assigned": "Kimberly Bautista",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 1586,
+    "ageHours": 1588,
     "ageDays": 66
   },
   {
@@ -956,7 +956,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1586,
+    "ageHours": 1584,
     "ageDays": 66
   },
   {
@@ -971,7 +971,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1562,
+    "ageHours": 1565,
     "ageDays": 65
   },
   {
@@ -980,13 +980,13 @@
     "customerEmail": "smorales@beteshghc.com",
     "opsStatus": "Pending",
     "priority": "Medium",
-    "subject": "BOL Request -FW: Amazon Invoice #403019398",
+    "subject": "BOL Request -FW: Amazon  Invoice #403019398",
     "createdDate": "2026-07-02",
     "lastUpdated": "2026-07-23",
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1562,
+    "ageHours": 1560,
     "ageDays": 65
   },
   {
@@ -1001,7 +1001,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1538,
+    "ageHours": 1541,
     "ageDays": 64
   },
   {
@@ -1016,7 +1016,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1466,
+    "ageHours": 1469,
     "ageDays": 61
   },
   {
@@ -1031,7 +1031,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1442,
+    "ageHours": 1445,
     "ageDays": 60
   },
   {
@@ -1046,7 +1046,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1418,
+    "ageHours": 1423,
     "ageDays": 59
   },
   {
@@ -1061,7 +1061,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1418,
+    "ageHours": 1422,
     "ageDays": 59
   },
   {
@@ -1076,7 +1076,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1418,
+    "ageHours": 1421,
     "ageDays": 59
   },
   {
@@ -1091,7 +1091,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1418,
+    "ageHours": 1417,
     "ageDays": 59
   },
   {
@@ -1106,7 +1106,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1394,
+    "ageHours": 1397,
     "ageDays": 58
   },
   {
@@ -1121,7 +1121,7 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1370,
+    "ageHours": 1374,
     "ageDays": 57
   },
   {
@@ -1136,7 +1136,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1370,
+    "ageHours": 1373,
     "ageDays": 57
   },
   {
@@ -1151,7 +1151,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1298,
+    "ageHours": 1311,
     "ageDays": 54
   },
   {
@@ -1166,7 +1166,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1298,
+    "ageHours": 1301,
     "ageDays": 54
   },
   {
@@ -1181,7 +1181,7 @@
     "assigned": "Maria Aponte",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1298,
+    "ageHours": 1301,
     "ageDays": 54
   },
   {
@@ -1196,7 +1196,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1274,
+    "ageHours": 1277,
     "ageDays": 53
   },
   {
@@ -1211,7 +1211,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1250,
+    "ageHours": 1254,
     "ageDays": 52
   },
   {
@@ -1226,7 +1226,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1250,
+    "ageHours": 1253,
     "ageDays": 52
   },
   {
@@ -1241,7 +1241,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1226,
+    "ageHours": 1229,
     "ageDays": 51
   },
   {
@@ -1256,7 +1256,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1202,
+    "ageHours": 1205,
     "ageDays": 50
   },
   {
@@ -1271,7 +1271,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1130,
+    "ageHours": 1134,
     "ageDays": 47
   },
   {
@@ -1286,7 +1286,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1130,
+    "ageHours": 1133,
     "ageDays": 47
   },
   {
@@ -1301,7 +1301,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1130,
+    "ageHours": 1131,
     "ageDays": 47
   },
   {
@@ -1316,7 +1316,7 @@
     "assigned": "Erin Cambra",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 1130,
+    "ageHours": 1131,
     "ageDays": 47
   },
   {
@@ -1331,7 +1331,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1106,
+    "ageHours": 1109,
     "ageDays": 46
   },
   {
@@ -1346,7 +1346,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1082,
+    "ageHours": 1086,
     "ageDays": 45
   },
   {
@@ -1361,7 +1361,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1082,
+    "ageHours": 1085,
     "ageDays": 45
   },
   {
@@ -1376,7 +1376,7 @@
     "assigned": "Erin Cambra",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 1058,
+    "ageHours": 1061,
     "ageDays": 44
   },
   {
@@ -1391,7 +1391,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1058,
+    "ageHours": 1061,
     "ageDays": 44
   },
   {
@@ -1406,7 +1406,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1058,
+    "ageHours": 1060,
     "ageDays": 44
   },
   {
@@ -1421,7 +1421,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1034,
+    "ageHours": 1037,
     "ageDays": 43
   },
   {
@@ -1436,7 +1436,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 962,
+    "ageHours": 968,
     "ageDays": 40
   },
   {
@@ -1451,7 +1451,22 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 962,
+    "ageHours": 965,
+    "ageDays": 40
+  },
+  {
+    "ticketId": "UFN-63762",
+    "customer": "SMEG USA INC",
+    "customerEmail": "sona.street@smegusa.com",
+    "opsStatus": "Pending",
+    "priority": "Medium",
+    "subject": "FW: Issues with Smeg PO 11053 - Invoice 2618037133",
+    "createdDate": "2026-07-27",
+    "lastUpdated": "2026-07-28",
+    "assigned": "Erin Cambra",
+    "closeFlag": false,
+    "slaStatus": "Breached",
+    "ageHours": 960,
     "ageDays": 40
   },
   {
@@ -1466,8 +1481,8 @@
     "assigned": "Austin Steigerwalt",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 962,
-    "ageDays": 40
+    "ageHours": 958,
+    "ageDays": 39
   },
   {
     "ticketId": "UFN-63890",
@@ -1481,7 +1496,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 938,
+    "ageHours": 942,
     "ageDays": 39
   },
   {
@@ -1496,7 +1511,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 938,
+    "ageHours": 941,
     "ageDays": 39
   },
   {
@@ -1511,7 +1526,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 914,
+    "ageHours": 929,
     "ageDays": 38
   },
   {
@@ -1526,7 +1541,7 @@
     "assigned": "Erin Cambra",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 914,
+    "ageHours": 918,
     "ageDays": 38
   },
   {
@@ -1541,7 +1556,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 914,
+    "ageHours": 918,
     "ageDays": 38
   },
   {
@@ -1556,7 +1571,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 914,
+    "ageHours": 917,
     "ageDays": 38
   },
   {
@@ -1571,7 +1586,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 914,
+    "ageHours": 917,
     "ageDays": 38
   },
   {
@@ -1586,7 +1601,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 890,
+    "ageHours": 893,
     "ageDays": 37
   },
   {
@@ -1601,7 +1616,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 866,
+    "ageHours": 869,
     "ageDays": 36
   },
   {
@@ -1616,8 +1631,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 866,
-    "ageDays": 36
+    "ageHours": 863,
+    "ageDays": 35
   },
   {
     "ticketId": "UFN-64607",
@@ -1631,7 +1646,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 842,
+    "ageHours": 858,
     "ageDays": 35
   },
   {
@@ -1646,7 +1661,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 794,
+    "ageHours": 799,
     "ageDays": 33
   },
   {
@@ -1661,7 +1676,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 794,
+    "ageHours": 799,
     "ageDays": 33
   },
   {
@@ -1676,7 +1691,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 794,
+    "ageHours": 797,
     "ageDays": 33
   },
   {
@@ -1691,7 +1706,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 770,
+    "ageHours": 774,
     "ageDays": 32
   },
   {
@@ -1706,7 +1721,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 770,
+    "ageHours": 773,
     "ageDays": 32
   },
   {
@@ -1721,7 +1736,22 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 746,
+    "ageHours": 749,
+    "ageDays": 31
+  },
+  {
+    "ticketId": "UFN-65196",
+    "customer": "MAIZLY INC.",
+    "customerEmail": "shawn.mabale@unis.co",
+    "opsStatus": "Pending",
+    "priority": "Medium",
+    "subject": "Follow up:  MAIZLY - HANDLING - 07/16-07/31",
+    "createdDate": "2026-08-05",
+    "lastUpdated": "2026-08-07",
+    "assigned": "nicole weber",
+    "closeFlag": true,
+    "slaStatus": "Breached",
+    "ageHours": 749,
     "ageDays": 31
   },
   {
@@ -1736,7 +1766,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 722,
+    "ageHours": 725,
     "ageDays": 30
   },
   {
@@ -1751,7 +1781,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 698,
+    "ageHours": 701,
     "ageDays": 29
   },
   {
@@ -1766,7 +1796,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 626,
+    "ageHours": 629,
     "ageDays": 26
   },
   {
@@ -1781,7 +1811,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 626,
+    "ageHours": 625,
     "ageDays": 26
   },
   {
@@ -1796,7 +1826,7 @@
     "assigned": "nicole weber",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 602,
+    "ageHours": 607,
     "ageDays": 25
   },
   {
@@ -1811,7 +1841,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 602,
+    "ageHours": 605,
     "ageDays": 25
   },
   {
@@ -1826,7 +1856,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 602,
+    "ageHours": 604,
     "ageDays": 25
   },
   {
@@ -1841,7 +1871,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 578,
+    "ageHours": 581,
     "ageDays": 24
   },
   {
@@ -1856,7 +1886,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 578,
+    "ageHours": 576,
     "ageDays": 24
   },
   {
@@ -1871,7 +1901,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 554,
+    "ageHours": 557,
     "ageDays": 23
   },
   {
@@ -1886,7 +1916,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 554,
+    "ageHours": 555,
     "ageDays": 23
   },
   {
@@ -1901,7 +1931,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 530,
+    "ageHours": 547,
     "ageDays": 22
   },
   {
@@ -1916,7 +1946,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 530,
+    "ageHours": 533,
     "ageDays": 22
   },
   {
@@ -1946,7 +1976,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 458,
+    "ageHours": 461,
     "ageDays": 19
   },
   {
@@ -1961,7 +1991,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 458,
+    "ageHours": 461,
     "ageDays": 19
   },
   {
@@ -1976,8 +2006,8 @@
     "assigned": "Youssef Zeitoon",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 458,
-    "ageDays": 19
+    "ageHours": 455,
+    "ageDays": 18
   },
   {
     "ticketId": "UFN-66966",
@@ -1991,7 +2021,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 434,
+    "ageHours": 437,
     "ageDays": 18
   },
   {
@@ -2006,7 +2036,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 434,
+    "ageHours": 433,
     "ageDays": 18
   },
   {
@@ -2021,7 +2051,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 434,
+    "ageHours": 432,
     "ageDays": 18
   },
   {
@@ -2036,7 +2066,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 410,
+    "ageHours": 414,
     "ageDays": 17
   },
   {
@@ -2051,7 +2081,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 410,
+    "ageHours": 413,
     "ageDays": 17
   },
   {
@@ -2066,7 +2096,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 410,
+    "ageHours": 411,
     "ageDays": 17
   },
   {
@@ -2081,7 +2111,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 386,
+    "ageHours": 391,
     "ageDays": 16
   },
   {
@@ -2096,7 +2126,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 386,
+    "ageHours": 390,
     "ageDays": 16
   },
   {
@@ -2111,7 +2141,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 386,
+    "ageHours": 389,
     "ageDays": 16
   },
   {
@@ -2126,7 +2156,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 386,
+    "ageHours": 384,
     "ageDays": 16
   },
   {
@@ -2141,7 +2171,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 386,
+    "ageHours": 384,
     "ageDays": 16
   },
   {
@@ -2156,7 +2186,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 362,
+    "ageHours": 367,
     "ageDays": 15
   },
   {
@@ -2171,7 +2201,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 362,
+    "ageHours": 367,
     "ageDays": 15
   },
   {
@@ -2186,7 +2216,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 362,
+    "ageHours": 365,
     "ageDays": 15
   },
   {
@@ -2201,7 +2231,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 362,
+    "ageHours": 364,
     "ageDays": 15
   },
   {
@@ -2216,7 +2246,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 362,
+    "ageHours": 363,
     "ageDays": 15
   },
   {
@@ -2231,7 +2261,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 362,
+    "ageHours": 361,
     "ageDays": 15
   },
   {
@@ -2246,7 +2276,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 290,
+    "ageHours": 295,
     "ageDays": 12
   },
   {
@@ -2261,7 +2291,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 290,
+    "ageHours": 293,
     "ageDays": 12
   },
   {
@@ -2276,7 +2306,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 290,
+    "ageHours": 289,
     "ageDays": 12
   },
   {
@@ -2291,7 +2321,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 266,
+    "ageHours": 269,
     "ageDays": 11
   },
   {
@@ -2306,7 +2336,7 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 266,
+    "ageHours": 268,
     "ageDays": 11
   },
   {
@@ -2321,7 +2351,7 @@
     "assigned": "Leamsi Gem Mangodas",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 266,
+    "ageHours": 268,
     "ageDays": 11
   },
   {
@@ -2336,7 +2366,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 266,
+    "ageHours": 267,
     "ageDays": 11
   },
   {
@@ -2351,7 +2381,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 266,
+    "ageHours": 267,
     "ageDays": 11
   },
   {
@@ -2381,8 +2411,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 266,
-    "ageDays": 11
+    "ageHours": 263,
+    "ageDays": 10
   },
   {
     "ticketId": "UFN-68149",
@@ -2396,7 +2426,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 242,
+    "ageHours": 247,
     "ageDays": 10
   },
   {
@@ -2411,7 +2441,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 242,
+    "ageHours": 245,
     "ageDays": 10
   },
   {
@@ -2426,7 +2456,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 242,
+    "ageHours": 243,
     "ageDays": 10
   },
   {
@@ -2441,7 +2471,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 218,
+    "ageHours": 221,
     "ageDays": 9
   },
   {
@@ -2456,7 +2486,7 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 218,
+    "ageHours": 219,
     "ageDays": 9
   },
   {
@@ -2486,7 +2516,7 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 218,
+    "ageHours": 217,
     "ageDays": 9
   },
   {
@@ -2501,7 +2531,7 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 194,
+    "ageHours": 198,
     "ageDays": 8
   },
   {
@@ -2516,7 +2546,7 @@
     "assigned": "Yang-Lhing Bague",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 194,
+    "ageHours": 197,
     "ageDays": 8
   },
   {
@@ -2531,7 +2561,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 194,
+    "ageHours": 197,
     "ageDays": 8
   },
   {
@@ -2546,7 +2576,7 @@
     "assigned": "Timothy McHugh",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 194,
+    "ageHours": 197,
     "ageDays": 8
   },
   {
@@ -2561,7 +2591,7 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 194,
+    "ageHours": 196,
     "ageDays": 8
   },
   {
@@ -2576,7 +2606,7 @@
     "assigned": null,
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 194,
+    "ageHours": 196,
     "ageDays": 8
   },
   {
@@ -2591,7 +2621,7 @@
     "assigned": "Youssef Zeitoon",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 194,
+    "ageHours": 196,
     "ageDays": 8
   },
   {
@@ -2606,7 +2636,7 @@
     "assigned": "Kent Claud Caballero",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 194,
+    "ageHours": 192,
     "ageDays": 8
   },
   {
@@ -2621,7 +2651,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 194,
+    "ageHours": 192,
     "ageDays": 8
   },
   {
@@ -2636,8 +2666,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 194,
-    "ageDays": 8
+    "ageHours": 191,
+    "ageDays": 7
   },
   {
     "ticketId": "UFN-68857",
@@ -2651,7 +2681,7 @@
     "assigned": "Kent Claud Caballero",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 170,
+    "ageHours": 173,
     "ageDays": 7
   },
   {
@@ -2666,7 +2696,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 122,
+    "ageHours": 128,
     "ageDays": 5
   },
   {
@@ -2681,7 +2711,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 122,
+    "ageHours": 125,
     "ageDays": 5
   },
   {
@@ -2696,7 +2726,7 @@
     "assigned": null,
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 122,
+    "ageHours": 124,
     "ageDays": 5
   },
   {
@@ -2711,7 +2741,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 98,
+    "ageHours": 115,
     "ageDays": 4
   },
   {
@@ -2726,7 +2756,7 @@
     "assigned": "Youssef Zeitoon",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 98,
+    "ageHours": 115,
     "ageDays": 4
   },
   {
@@ -2741,7 +2771,7 @@
     "assigned": "nicole weber",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 98,
+    "ageHours": 102,
     "ageDays": 4
   },
   {
@@ -2756,7 +2786,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 98,
+    "ageHours": 101,
     "ageDays": 4
   },
   {
@@ -2771,7 +2801,7 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 98,
+    "ageHours": 100,
     "ageDays": 4
   },
   {
@@ -2786,7 +2816,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 98,
+    "ageHours": 100,
     "ageDays": 4
   },
   {
@@ -2801,7 +2831,7 @@
     "assigned": "Yang-Lhing Bague",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 98,
+    "ageHours": 99,
     "ageDays": 4
   },
   {
@@ -2816,7 +2846,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 98,
+    "ageHours": 97,
     "ageDays": 4
   },
   {
@@ -2831,8 +2861,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 98,
-    "ageDays": 4
+    "ageHours": 95,
+    "ageDays": 3
   },
   {
     "ticketId": "UFN-69337",
@@ -2846,8 +2876,8 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 98,
-    "ageDays": 4
+    "ageHours": 94,
+    "ageDays": 3
   },
   {
     "ticketId": "UFN-69380",
@@ -2861,7 +2891,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 74,
+    "ageHours": 80,
     "ageDays": 3
   },
   {
@@ -2876,7 +2906,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 74,
+    "ageHours": 79,
     "ageDays": 3
   },
   {
@@ -2891,7 +2921,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 74,
+    "ageHours": 79,
     "ageDays": 3
   },
   {
@@ -2906,7 +2936,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 74,
+    "ageHours": 78,
     "ageDays": 3
   },
   {
@@ -2921,7 +2951,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 74,
+    "ageHours": 77,
     "ageDays": 3
   },
   {
@@ -2936,7 +2966,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 74,
+    "ageHours": 76,
     "ageDays": 3
   },
   {
@@ -2951,7 +2981,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 74,
+    "ageHours": 76,
     "ageDays": 3
   },
   {
@@ -2966,7 +2996,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 74,
+    "ageHours": 76,
     "ageDays": 3
   },
   {
@@ -2981,7 +3011,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 74,
+    "ageHours": 75,
     "ageDays": 3
   },
   {
@@ -2992,11 +3022,11 @@
     "priority": "Medium",
     "subject": "NIAGARA / UNIS / QUANTIX BULK SCHEDULE / WK 9.7 - 9.13",
     "createdDate": "2026-09-02",
-    "lastUpdated": "2026-09-04",
+    "lastUpdated": "2026-09-05",
     "assigned": "Yang-Lhing Bague",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 74,
+    "ageHours": 75,
     "ageDays": 3
   },
   {
@@ -3010,8 +3040,8 @@
     "lastUpdated": "2026-09-02",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "Breached",
-    "ageHours": 74,
+    "slaStatus": "On Track",
+    "ageHours": 73,
     "ageDays": 3
   },
   {
@@ -3026,7 +3056,7 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 74,
+    "ageHours": 73,
     "ageDays": 3
   },
   {
@@ -3041,7 +3071,7 @@
     "assigned": "Wilmer Acedo",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 74,
+    "ageHours": 73,
     "ageDays": 3
   },
   {
@@ -3050,14 +3080,14 @@
     "customerEmail": "dorota.mazur@us.dcsfreight.com",
     "opsStatus": "Pending",
     "priority": "Medium",
-    "subject": "RE: RE: COLAVITA ORDER FOR GENERAL TRADING P.O. 755125 1 pallet return",
+    "subject": "RE: RE: COLAVITA ORDER FOR GENERAL TRADING   P.O. 755125 1 pallet return",
     "createdDate": "2026-09-02",
     "lastUpdated": "2026-09-03",
     "assigned": "Yang-Lhing Bague",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 74,
-    "ageDays": 3
+    "ageHours": 71,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69508",
@@ -3071,8 +3101,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 74,
-    "ageDays": 3
+    "ageHours": 69,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69511",
@@ -3085,9 +3115,9 @@
     "lastUpdated": "2026-09-02",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "Breached",
-    "ageHours": 74,
-    "ageDays": 3
+    "slaStatus": "On Track",
+    "ageHours": 69,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69519",
@@ -3100,8 +3130,8 @@
     "lastUpdated": "2026-09-03",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "Breached",
-    "ageHours": 50,
+    "slaStatus": "On Track",
+    "ageHours": 67,
     "ageDays": 2
   },
   {
@@ -3116,7 +3146,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 50,
+    "ageHours": 54,
     "ageDays": 2
   },
   {
@@ -3130,8 +3160,8 @@
     "lastUpdated": "2026-09-03",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "Breached",
-    "ageHours": 50,
+    "slaStatus": "On Track",
+    "ageHours": 53,
     "ageDays": 2
   },
   {
@@ -3146,7 +3176,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 50,
+    "ageHours": 53,
     "ageDays": 2
   },
   {
@@ -3161,7 +3191,7 @@
     "assigned": "Shailene Baez",
     "closeFlag": true,
     "slaStatus": "On Track",
-    "ageHours": 50,
+    "ageHours": 51,
     "ageDays": 2
   },
   {
@@ -3172,11 +3202,11 @@
     "priority": "Medium",
     "subject": "RE: Unis-item / API and Shopify update for move to Joliet facility (RECESS)",
     "createdDate": "2026-09-03",
-    "lastUpdated": "2026-09-04",
+    "lastUpdated": "2026-09-03",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "Breached",
-    "ageHours": 50,
+    "slaStatus": "On Track",
+    "ageHours": 48,
     "ageDays": 2
   },
   {
@@ -3190,9 +3220,9 @@
     "lastUpdated": "2026-09-03",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "Breached",
-    "ageHours": 50,
-    "ageDays": 2
+    "slaStatus": "On Track",
+    "ageHours": 47,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-69673",
@@ -3206,8 +3236,8 @@
     "assigned": "Wilmer Acedo",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 50,
-    "ageDays": 2
+    "ageHours": 46,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-69696",
@@ -3220,8 +3250,8 @@
     "lastUpdated": "2026-09-04",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "Breached",
-    "ageHours": 26,
+    "slaStatus": "On Track",
+    "ageHours": 40,
     "ageDays": 1
   },
   {
@@ -3236,7 +3266,7 @@
     "assigned": "Yang-Lhing Bague",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
+    "ageHours": 31,
     "ageDays": 1
   },
   {
@@ -3250,8 +3280,8 @@
     "lastUpdated": "2026-09-04",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "Breached",
-    "ageHours": 26,
+    "slaStatus": "On Track",
+    "ageHours": 31,
     "ageDays": 1
   },
   {
@@ -3265,8 +3295,8 @@
     "lastUpdated": "2026-09-05",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "Breached",
-    "ageHours": 26,
+    "slaStatus": "On Track",
+    "ageHours": 30,
     "ageDays": 1
   },
   {
@@ -3280,8 +3310,8 @@
     "lastUpdated": "2026-09-04",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "Breached",
-    "ageHours": 26,
+    "slaStatus": "On Track",
+    "ageHours": 30,
     "ageDays": 1
   },
   {
@@ -3295,8 +3325,8 @@
     "lastUpdated": "2026-09-04",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "Breached",
-    "ageHours": 26,
+    "slaStatus": "On Track",
+    "ageHours": 29,
     "ageDays": 1
   },
   {
@@ -3311,7 +3341,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
+    "ageHours": 29,
     "ageDays": 1
   },
   {
@@ -3326,7 +3356,7 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
+    "ageHours": 29,
     "ageDays": 1
   },
   {
@@ -3341,7 +3371,7 @@
     "assigned": "Yang-Lhing Bague",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
+    "ageHours": 29,
     "ageDays": 1
   },
   {
@@ -3356,7 +3386,7 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
+    "ageHours": 28,
     "ageDays": 1
   },
   {
@@ -3371,7 +3401,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
+    "ageHours": 28,
     "ageDays": 1
   },
   {
@@ -3386,7 +3416,7 @@
     "assigned": "Yang-Lhing Bague",
     "closeFlag": true,
     "slaStatus": "On Track",
-    "ageHours": 26,
+    "ageHours": 27,
     "ageDays": 1
   },
   {
@@ -3400,7 +3430,7 @@
     "lastUpdated": "2026-09-04",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "Breached",
+    "slaStatus": "On Track",
     "ageHours": 26,
     "ageDays": 1
   },
@@ -3416,7 +3446,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
+    "ageHours": 25,
     "ageDays": 1
   },
   {
@@ -3430,8 +3460,8 @@
     "lastUpdated": "2026-09-04",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "Breached",
-    "ageHours": 26,
+    "slaStatus": "On Track",
+    "ageHours": 24,
     "ageDays": 1
   },
   {
@@ -3446,7 +3476,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
+    "ageHours": 24,
     "ageDays": 1
   },
   {
@@ -3455,14 +3485,14 @@
     "customerEmail": "af-ltl-verify@amazon.com",
     "opsStatus": "New",
     "priority": "Medium",
-    "subject": "RE:[CASE 21895894201] [FMC - Amazon Freight LTL] [113H5TTDC] [EA2VT->JP8O2->6X8HD->83CTZ->JUAX9->XPH7] [US] [ATSLTLInboundVendor] - ARN 46175663671 46141485891 46143261531 46175270161 46143788611 ->1st Event Freight Not Ready",
+    "subject": "RE:[CASE 21895894201] [FMC - Amazon Freight LTL] [113H5TTDC] [EA2VT->JP8O2->6X8HD->83CTZ->JUAX9->XPH7] [US] [ATSLTLInboundVendor] - ARN  46175663671 46141485891 46143261531 46175270161 46143788611  ->1st Event Freight Not Ready",
     "createdDate": "2026-09-04",
     "lastUpdated": "2026-09-04",
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
-    "ageDays": 1
+    "ageHours": 23,
+    "ageDays": 0
   },
   {
     "ticketId": "UFN-69839",
@@ -3476,8 +3506,8 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
-    "ageDays": 1
+    "ageHours": 22,
+    "ageDays": 0
   },
   {
     "ticketId": "UFN-69841",
@@ -3491,8 +3521,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
-    "ageDays": 1
+    "ageHours": 22,
+    "ageDays": 0
   },
   {
     "ticketId": "UFN-69843",
@@ -3506,8 +3536,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
-    "ageDays": 1
+    "ageHours": 21,
+    "ageDays": 0
   },
   {
     "ticketId": "UFN-69844",
@@ -3521,8 +3551,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
-    "ageDays": 1
+    "ageHours": 21,
+    "ageDays": 0
   },
   {
     "ticketId": "UFN-69845",
@@ -3536,8 +3566,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
-    "ageDays": 1
+    "ageHours": 21,
+    "ageDays": 0
   },
   {
     "ticketId": "UFN-69846",
@@ -3551,8 +3581,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
-    "ageDays": 1
+    "ageHours": 21,
+    "ageDays": 0
   },
   {
     "ticketId": "UFN-69847",
@@ -3566,8 +3596,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
-    "ageDays": 1
+    "ageHours": 21,
+    "ageDays": 0
   },
   {
     "ticketId": "UFN-69848",
@@ -3581,8 +3611,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
-    "ageDays": 1
+    "ageHours": 21,
+    "ageDays": 0
   },
   {
     "ticketId": "UFN-69849",
@@ -3596,8 +3626,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
-    "ageDays": 1
+    "ageHours": 21,
+    "ageDays": 0
   },
   {
     "ticketId": "UFN-69850",
@@ -3611,8 +3641,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
-    "ageDays": 1
+    "ageHours": 21,
+    "ageDays": 0
   },
   {
     "ticketId": "UFN-69851",
@@ -3626,8 +3656,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
-    "ageDays": 1
+    "ageHours": 21,
+    "ageDays": 0
   },
   {
     "ticketId": "UFN-69852",
@@ -3641,8 +3671,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
-    "ageDays": 1
+    "ageHours": 21,
+    "ageDays": 0
   },
   {
     "ticketId": "UFN-69853",
@@ -3656,8 +3686,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
-    "ageDays": 1
+    "ageHours": 21,
+    "ageDays": 0
   },
   {
     "ticketId": "UFN-69854",
@@ -3671,8 +3701,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
-    "ageDays": 1
+    "ageHours": 21,
+    "ageDays": 0
   },
   {
     "ticketId": "UFN-69855",
@@ -3686,8 +3716,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
-    "ageDays": 1
+    "ageHours": 21,
+    "ageDays": 0
   },
   {
     "ticketId": "UFN-69856",
@@ -3701,8 +3731,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
-    "ageDays": 1
+    "ageHours": 21,
+    "ageDays": 0
   },
   {
     "ticketId": "UFN-69857",
@@ -3716,8 +3746,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
-    "ageDays": 1
+    "ageHours": 21,
+    "ageDays": 0
   },
   {
     "ticketId": "UFN-69859",
@@ -3731,8 +3761,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
-    "ageDays": 1
+    "ageHours": 20,
+    "ageDays": 0
   },
   {
     "ticketId": "UFN-69860",
@@ -3746,8 +3776,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 26,
-    "ageDays": 1
+    "ageHours": 20,
+    "ageDays": 0
   },
   {
     "ticketId": "UFN-69862",
@@ -3761,7 +3791,112 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 2,
+    "ageHours": 20,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-69881",
+    "customer": "Kent Joseph Lim (kent.lim@unisco.com)",
+    "customerEmail": "kent.lim@unisco.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Cesanek (LT_F21) Appointment Watch — 24-48h Window (2026-09-05)",
+    "createdDate": "2026-09-05",
+    "lastUpdated": "2026-09-05",
+    "assigned": "Kent Joseph Lim",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 7,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-69882",
+    "customer": "MAIZLY INC.",
+    "customerEmail": "mail.service@item.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Dropship Order Daily Report - 2026-09-04",
+    "createdDate": "2026-09-05",
+    "lastUpdated": "2026-09-05",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 7,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-69883",
+    "customer": "MODERN INFUSIONS LLC",
+    "customerEmail": "mail.service@item.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Dropship Order Daily Report - 2026-09-04",
+    "createdDate": "2026-09-05",
+    "lastUpdated": "2026-09-05",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 7,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-69884",
+    "customer": "TCL NORTH AMERICA",
+    "customerEmail": "bob.wang1@tcl.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "FW: [External Sender]Amazon EDI Monitoring – Compliance Issues found.",
+    "createdDate": "2026-09-05",
+    "lastUpdated": "2026-09-05",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 5,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-69888",
+    "customer": "TCL NORTH AMERICA",
+    "customerEmail": "bob.wang1@tcl.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "FW: [External Sender]Amazon EDI Monitoring – Compliance Issues found.",
+    "createdDate": "2026-09-05",
+    "lastUpdated": "2026-09-05",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 4,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-69889",
+    "customer": "MODERN INFUSIONS LLC",
+    "customerEmail": "mail.service@item.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "OMS Alert-Unis, LLC-MODERN INFUSIONS LLC_v3-77 Order Processing Exceptions Detected",
+    "createdDate": "2026-09-05",
+    "lastUpdated": "2026-09-05",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 4,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-69893",
+    "customer": "CANVAS 340 LLC",
+    "customerEmail": "hello@drinkwynk.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Find all 3 flavors in one 12-pack at retailers near you.",
+    "createdDate": "2026-09-05",
+    "lastUpdated": "2026-09-05",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 3,
     "ageDays": 0
   }
 ]

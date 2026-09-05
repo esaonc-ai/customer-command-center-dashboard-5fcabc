@@ -1,15 +1,15 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-05T02:39:00-04:00",
-  "lastRefreshed": "2026-09-05T02:39:00-04:00",
-  "dataSource": "Outlook — Northampton/Cesanek CS mailbox context (nht.cs@unisco.com), window 2026-09-05 01:56 ET .. 02:39 ET (non-blocking; checked via nicole.weber@unisco.com CS context; 0 new messages; watermark 09-04 19:36:54 ET)",
+  "generatedAt": "2026-09-05T16:00:00-04:00",
+  "lastRefreshed": "2026-09-05T16:00:00-04:00",
+  "dataSource": "Outlook — Northampton/Cesanek CS mailbox context (nht.cs@unisco.com), window 2026-09-05 02:39 ET .. ~16:00 ET (non-blocking; checked via nicole.weber@unisco.com CS context; 0 new UFN-related messages; watermark 09-04 19:36:54 ET)",
   "threadsMatched": 9,
   "threadsUniquePostDedup": 9,
   "coverage": {
-    "eligibleTicketsTotal": 251,
+    "eligibleTicketsTotal": 260,
     "eligibleTicketsWithOutlookContext": 9,
-    "coveragePct": 3.6
+    "coveragePct": 3.5
   },
   "ticketThreads": [
     {
@@ -146,7 +146,7 @@
       "lastReceivedAt": "2026-09-04T15:47:16Z",
       "customer": "Colavita (Walmart DCs, via Fusion Transport)",
       "escalation": true,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~02:39 ET (Reopen/other or closed)"
+      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
     },
     {
       "matchedTicketId": "UFN-66820",
@@ -154,7 +154,7 @@
       "lastReceivedAt": "2026-09-04T15:45:42Z",
       "customer": "Hint Beverage (via Fusion Transport)",
       "escalation": true,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~02:39 ET (Reopen/other or closed)"
+      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
     },
     {
       "matchedTicketId": "UFN-68160",
@@ -162,7 +162,7 @@
       "lastReceivedAt": "2026-09-04T13:23:00Z",
       "customer": "KD Nutra (KD Pharma)",
       "escalation": true,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~02:39 ET (Reopen/other or closed)"
+      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
     },
     {
       "matchedTicketId": "UFN-68513",
@@ -170,7 +170,7 @@
       "lastReceivedAt": "2026-09-04T14:07:17Z",
       "customer": "Martignetti / Ritual (via Sethmar)",
       "escalation": true,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~02:39 ET (Reopen/other or closed)"
+      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
     },
     {
       "matchedTicketId": "UFN-68572",
@@ -178,7 +178,7 @@
       "lastReceivedAt": "2026-09-04T14:10:00Z",
       "customer": "Colavita USA",
       "escalation": false,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~02:39 ET (Reopen/other or closed)"
+      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
     },
     {
       "matchedTicketId": "UFN-68601",
@@ -186,7 +186,7 @@
       "lastReceivedAt": "2026-09-04T20:27:43Z",
       "customer": "ROAR Beverage (via C.H. Robinson)",
       "escalation": false,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~02:39 ET (Reopen/other or closed)"
+      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
     },
     {
       "matchedTicketId": "UFN-68616",
@@ -194,7 +194,7 @@
       "lastReceivedAt": "2026-09-04T19:19:12Z",
       "customer": "CasAmerica Marine / Athena",
       "escalation": true,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~02:39 ET (Reopen/other or closed)"
+      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
     },
     {
       "matchedTicketId": "UFN-68718",
@@ -202,7 +202,7 @@
       "lastReceivedAt": "2026-09-04T16:16:58Z",
       "customer": "Allied Beverage (Ritual, NHT)",
       "escalation": false,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~02:39 ET (Reopen/other or closed)"
+      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
     },
     {
       "matchedTicketId": "UFN-69075",
@@ -210,7 +210,7 @@
       "lastReceivedAt": "2026-09-04T18:49:05Z",
       "customer": "ROAR Beverage (via C.H. Robinson)",
       "escalation": true,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~02:39 ET (Reopen/other or closed)"
+      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
     },
     {
       "matchedTicketId": "UFN-69120",
@@ -218,7 +218,7 @@
       "lastReceivedAt": "2026-09-04T13:36:29Z",
       "customer": "KD Nutra (KD Pharma)",
       "escalation": false,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~02:39 ET (Reopen/other or closed)"
+      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
     },
     {
       "matchedTicketId": "UFN-69129",
@@ -226,7 +226,7 @@
       "lastReceivedAt": "2026-09-04T20:30:47Z",
       "customer": "UNY Brands",
       "escalation": true,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~02:39 ET (Reopen/other or closed)"
+      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
     },
     {
       "matchedTicketId": "UFN-69138",
@@ -234,7 +234,7 @@
       "lastReceivedAt": "2026-09-04T18:17:51Z",
       "customer": "Colavita USA",
       "escalation": false,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~02:39 ET (Reopen/other or closed)"
+      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
     },
     {
       "matchedTicketId": "UFN-69571",
@@ -242,7 +242,7 @@
       "lastReceivedAt": "2026-09-04T15:16:34Z",
       "customer": "Prime Time Packaging",
       "escalation": false,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~02:39 ET (Reopen/other or closed)"
+      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
     },
     {
       "matchedTicketId": "UFN-69596",
@@ -250,7 +250,7 @@
       "lastReceivedAt": "2026-09-04T13:44:57Z",
       "customer": "Colavita USA",
       "escalation": false,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~02:39 ET (Reopen/other or closed)"
+      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
     },
     {
       "matchedTicketId": "UFN-69617",
@@ -258,7 +258,7 @@
       "lastReceivedAt": "2026-09-04T15:23:26Z",
       "customer": "Walmart (Boundless/UNY)",
       "escalation": true,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~02:39 ET (Reopen/other or closed)"
+      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
     }
   ],
   "operationalThreads": [],
@@ -426,5 +426,5 @@
     "UNY Brands",
     "Walmart (Boundless/UNY)"
   ],
-  "refreshNote": "Window 2026-09-05 01:56 ET -> 02:39 ET: 0 new messages matched (latest mailbox mail 09-04 19:36:54 ET). Carried forward the 9 active eligible-ticket threads from v13; all matched tickets remain eligible in the v14 snapshot. Eligible escalations unchanged: UFN-69811 Diageo/Ritual claim 18050 and BOUNDLESS EC US LLC Walmart load-45872185 (UFN-69618/UFN-69771, one incident)."
+  "refreshNote": "Window 2026-09-05 02:39 ET -> ~16:00 ET: 0 new UFN-related messages matched (mailbox watermark unchanged 09-04 19:36:54 ET; 2 in-window messages were non-UFN: Teams artifact + internal Vita Coco DTC NHT->JOLIET transition thread with billing/implementation, excluded). Carried forward the 9 active eligible-ticket threads from v14; all matched tickets remain eligible in the v15 snapshot (260). Eligible escalations unchanged: UFN-69811 Diageo/Ritual claim 18050 and BOUNDLESS EC US LLC Walmart load-45872185 (UFN-69618/UFN-69771, one incident)."
 }
