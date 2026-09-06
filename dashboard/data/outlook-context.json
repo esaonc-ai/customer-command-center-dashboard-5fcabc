@@ -1,15 +1,16 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-05T16:00:00-04:00",
-  "lastRefreshed": "2026-09-05T16:00:00-04:00",
-  "dataSource": "Outlook — Northampton/Cesanek CS mailbox context (nht.cs@unisco.com), window 2026-09-05 02:39 ET .. ~16:00 ET (non-blocking; checked via nicole.weber@unisco.com CS context; 0 new UFN-related messages; watermark 09-04 19:36:54 ET)",
+  "generatedAt": "2026-09-06T04:45:00-04:00",
+  "lastRefreshed": "2026-09-06T04:45:00-04:00",
+  "outlookAvailable": false,
+  "dataSource": "Outlook — Northampton/Cesanek CS mailbox context (nht.cs@unisco.com) UNAVAILABLE this cycle (Microsoft Graph 403 ErrorAccessDenied on shared mailbox via nicole.weber@unisco.com; delegated inbox scan 2026-09-05 16:00 ET .. 2026-09-06 04:45 ET: 0 UFN / 0 Cesanek hits). Thread data below carried forward from v15 (2026-09-05 16:00 ET) — watermark 09-04 19:36:54 ET",
   "threadsMatched": 9,
   "threadsUniquePostDedup": 9,
   "coverage": {
-    "eligibleTicketsTotal": 260,
+    "eligibleTicketsTotal": 271,
     "eligibleTicketsWithOutlookContext": 9,
-    "coveragePct": 3.5
+    "coveragePct": 3.3
   },
   "ticketThreads": [
     {
@@ -426,5 +427,5 @@
     "UNY Brands",
     "Walmart (Boundless/UNY)"
   ],
-  "refreshNote": "Window 2026-09-05 02:39 ET -> ~16:00 ET: 0 new UFN-related messages matched (mailbox watermark unchanged 09-04 19:36:54 ET; 2 in-window messages were non-UFN: Teams artifact + internal Vita Coco DTC NHT->JOLIET transition thread with billing/implementation, excluded). Carried forward the 9 active eligible-ticket threads from v14; all matched tickets remain eligible in the v15 snapshot (260). Eligible escalations unchanged: UFN-69811 Diageo/Ritual claim 18050 and BOUNDLESS EC US LLC Walmart load-45872185 (UFN-69618/UFN-69771, one incident)."
+  "refreshNote": "Window 2026-09-05 16:00 ET -> 2026-09-06 ~04:45 ET: Outlook context unavailable (shared mailbox nht.cs@unisco.com 403 ErrorAccessDenied; delegated mailbox nicole.weber@unisco.com had 0 UFN/Cesanek hits and only 1 non-UFN message, Vita Coco NHT->JOLIET transfer, excluded). 9 active eligible-ticket threads carried forward from v15; all matched tickets remain eligible in the v16 snapshot (271). Eligible escalations unchanged: UFN-69811 Diageo/Ritual claim 18050 and BOUNDLESS EC US LLC Walmart load-45872185 (UFN-69618/UFN-69771/UFN-69760, one incident)."
 }
