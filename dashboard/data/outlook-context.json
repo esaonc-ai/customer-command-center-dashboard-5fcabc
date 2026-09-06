@@ -1,16 +1,16 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-06T08:19:00-04:00",
-  "lastRefreshed": "2026-09-06T08:19:00-04:00",
+  "generatedAt": "2026-09-06T13:56:00-04:00",
+  "lastRefreshed": "2026-09-06T13:56:00-04:00",
   "outlookAvailable": false,
-  "dataSource": "Outlook \u2014 Northampton/Cesanek CS mailbox context (nht.cs@unisco.com) UNAVAILABLE this cycle (Microsoft Graph 403 ErrorAccessDenied on shared mailbox via nicole.weber@unisco.com; delegated inbox full-folder scan 2026-09-06 07:28 ET .. 08:19 ET: 0 UFN / 0 Cesanek-related messages \u2014 newest mailbox item remains 09-05 20:57Z VITA COCO transfer, unrelated). Thread data below carried forward from v15/v16/v17 (watermark advanced to 2026-09-06T12:19:00Z / 08:19 ET).",
+  "dataSource": "Outlook — Northampton/Cesanek CS mailbox context (nht.cs@unisco.com) UNAVAILABLE this cycle (Microsoft Graph 403 ErrorAccessDenied on shared mailbox via nicole.weber@unisco.com; delegated inbox full-folder scan 2026-09-06 08:19 ET .. 13:56 ET: 0 UFN / 0 Cesanek-related messages — newest mailbox item remains 2026-09-04T20:30:47Z MPW Internal WH Transfer, pre-window). Thread data below carried forward from v15-v18 (watermark advanced to 2026-09-06T17:56:00Z / 13:56 ET).",
   "threadsMatched": 9,
   "threadsUniquePostDedup": 9,
   "coverage": {
-    "eligibleTicketsTotal": 271,
+    "eligibleTicketsTotal": 280,
     "eligibleTicketsWithOutlookContext": 9,
-    "coveragePct": 3.3
+    "coveragePct": 3.2
   },
   "ticketThreads": [
     {
@@ -427,5 +427,5 @@
     "UNY Brands",
     "Walmart (Boundless/UNY)"
   ],
-  "refreshNote": "v18 cycle 2026-09-06 08:19 ET: delegated mailbox accessible (full-folder listing + search OK, 0 hits received>=2026-09-06); shared mailbox nht.cs@unisco.com still 403 ErrorAccessDenied; no new or updated eligible-thread matches since 07:28 ET pull \u2014 9 eligible-ticket threads carried forward unchanged (Diageo claim 18050/UFN-69811 and Boundless Walmart load-45872185/UFN-69771+UFN-69618 persist as the 2 eligible escalations). Outlook adds no delta to ticket metrics this cycle; TicketOps remains authoritative."
+  "refreshNote": "v19 cycle 2026-09-06 13:56 ET: delegated mailbox accessible via Graph (full-folder listing + search OK; 0 messages received >= 2026-09-06T12:19:00Z; newest mailbox item 09-04T20:30:47Z pre-dates window); shared mailbox nht.cs@unisco.com still 403 ErrorAccessDenied; no new or updated eligible-thread matches since v18 08:19 ET pull — 9 eligible-ticket threads carried forward unchanged (Diageo claim 18050/UFN-69811 and Boundless Walmart load-45872185/UFN-69771+UFN-69618+new UFN-69942 persist as the 2 eligible escalations). Outlook adds no delta to ticket metrics this cycle; TicketOps remains authoritative."
 }
