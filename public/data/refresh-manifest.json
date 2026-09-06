@@ -9,7 +9,7 @@
   "rulesApplied": [
     "displayStatusSystemStatus == open (10)",
     "displayStatusName in {New, Pending} (excludes Reopen/Reopened, Closed, Resolved, Cancelled, Done)",
-    "closeFlag NOT used as eligibility gate (17 live closeFlag=true tickets retained)",
+    "closeFlag NOT used as eligibility gate (19 live closeFlag=true tickets retained - evidence corrected 17->19 on 2026-09-06 ~06:15 ET: UFN-68733/UFN-68750 verified closeFlag=true auto-close artifacts, both live Pending/system-open, retained per rule)",
     "exclude billing / UF Billing / storage / handling invoice items (22 audit ids; UFN-60009 BOL, UFN-68749 storage-SQFT data request, UFN-69818 open-RN ops digest, UFN-69231/UFN-63762/UFN-63959 invoice-dispute ops, UFN-69811 claim-18050 and Boundless load incident kept as operational/escalation)",
     "UFN-prefix filter (department UNIS Fulfillment - Northampton / Cesanek; dept-wide, no team filter)",
     "slaStatus = authoritative TicketOps isSlaBreached per ticket",
@@ -35,7 +35,7 @@
     "billingExcluded": 22,
     "duplicatesRemoved": 3,
     "totalEligible": 271,
-    "closeFlagTrueRetained": 17,
+    "closeFlagTrueRetained": 19,
     "byStatus": {
       "New": 202,
       "Open": 0,

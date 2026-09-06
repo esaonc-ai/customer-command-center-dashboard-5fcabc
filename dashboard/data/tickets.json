@@ -2514,7 +2514,7 @@
     "createdDate": "2026-08-28",
     "lastUpdated": "2026-09-04",
     "assigned": "Yang-Lhing Bague",
-    "closeFlag": false,
+    "closeFlag": true,
     "slaStatus": "Breached",
     "ageHours": 206,
     "ageDays": 8
@@ -2574,7 +2574,7 @@
     "createdDate": "2026-08-28",
     "lastUpdated": "2026-09-04",
     "assigned": null,
-    "closeFlag": false,
+    "closeFlag": true,
     "slaStatus": "Breached",
     "ageHours": 205,
     "ageDays": 8

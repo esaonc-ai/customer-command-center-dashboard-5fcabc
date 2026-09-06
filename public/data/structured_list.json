@@ -15,7 +15,7 @@
   "newCount": 202,
   "openCount": 0,
   "pendingCount": 69,
-  "truncationNote": "closeFlag not a gate (17 retained); Reopen (37) and billing/storage/handling/claims invoice items (22) excluded; 3 duplicate threads removed; Outlook unavailable this cycle - 9 eligible threads carried forward",
+  "truncationNote": "closeFlag not a gate (19 retained; corrected 09/06 06:15 ET); Reopen (37) and billing/storage/handling/claims invoice items (22) excluded; 3 duplicate threads removed; Outlook unavailable this cycle - 9 eligible threads carried forward",
   "slaHealth": {
     "breached": 200,
     "onTrack": 71,
