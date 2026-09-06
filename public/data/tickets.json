@@ -11,7 +11,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4431,
+    "ageHours": 4437,
     "ageDays": 184
   },
   {
@@ -26,7 +26,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4424,
+    "ageHours": 4431,
     "ageDays": 184
   },
   {
@@ -41,7 +41,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4256,
+    "ageHours": 4262,
     "ageDays": 177
   },
   {
@@ -56,7 +56,7 @@
     "assigned": "Sittie Jhaila Sirad",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4236,
+    "ageHours": 4243,
     "ageDays": 176
   },
   {
@@ -71,7 +71,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4046,
+    "ageHours": 4053,
     "ageDays": 168
   },
   {
@@ -86,7 +86,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3951,
+    "ageHours": 3957,
     "ageDays": 164
   },
   {
@@ -101,7 +101,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3924,
+    "ageHours": 3930,
     "ageDays": 163
   },
   {
@@ -116,7 +116,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3900,
+    "ageHours": 3906,
     "ageDays": 162
   },
   {
@@ -131,7 +131,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3831,
+    "ageHours": 3838,
     "ageDays": 159
   },
   {
@@ -146,7 +146,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3800,
+    "ageHours": 3806,
     "ageDays": 158
   },
   {
@@ -161,7 +161,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3783,
+    "ageHours": 3789,
     "ageDays": 157
   },
   {
@@ -176,7 +176,7 @@
     "assigned": "Sittie Jhaila Sirad",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3778,
+    "ageHours": 3785,
     "ageDays": 157
   },
   {
@@ -186,12 +186,12 @@
     "opsStatus": "New",
     "priority": "Medium",
     "subject": "Drayage Assignments",
-    "createdDate": "2026-04-06",
+    "createdDate": "2026-04-05",
     "lastUpdated": "2026-04-06",
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3676,
+    "ageHours": 3682,
     "ageDays": 153
   },
   {
@@ -206,7 +206,7 @@
     "assigned": "Pedro Marte",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3662,
+    "ageHours": 3668,
     "ageDays": 152
   },
   {
@@ -221,7 +221,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3615,
+    "ageHours": 3621,
     "ageDays": 150
   },
   {
@@ -236,7 +236,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3611,
+    "ageHours": 3617,
     "ageDays": 150
   },
   {
@@ -246,12 +246,12 @@
     "opsStatus": "New",
     "priority": "Medium",
     "subject": "Drayage Assignments",
-    "createdDate": "2026-04-13",
+    "createdDate": "2026-04-12",
     "lastUpdated": "2026-04-13",
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3508,
+    "ageHours": 3514,
     "ageDays": 146
   },
   {
@@ -266,7 +266,7 @@
     "assigned": null,
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 3488,
+    "ageHours": 3494,
     "ageDays": 145
   },
   {
@@ -281,7 +281,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3465,
+    "ageHours": 3472,
     "ageDays": 144
   },
   {
@@ -296,7 +296,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3447,
+    "ageHours": 3453,
     "ageDays": 143
   },
   {
@@ -311,7 +311,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3389,
+    "ageHours": 3396,
     "ageDays": 141
   },
   {
@@ -321,12 +321,12 @@
     "opsStatus": "New",
     "priority": "Medium",
     "subject": "Drayage Assignments",
-    "createdDate": "2026-04-20",
+    "createdDate": "2026-04-19",
     "lastUpdated": "2026-04-20",
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3340,
+    "ageHours": 3346,
     "ageDays": 139
   },
   {
@@ -341,7 +341,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3326,
+    "ageHours": 3332,
     "ageDays": 138
   },
   {
@@ -356,7 +356,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3279,
+    "ageHours": 3285,
     "ageDays": 136
   },
   {
@@ -371,7 +371,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3229,
+    "ageHours": 3236,
     "ageDays": 134
   },
   {
@@ -386,7 +386,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3228,
+    "ageHours": 3234,
     "ageDays": 134
   },
   {
@@ -401,7 +401,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3161,
+    "ageHours": 3167,
     "ageDays": 131
   },
   {
@@ -416,7 +416,7 @@
     "assigned": "Wilmer Acedo",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3158,
+    "ageHours": 3164,
     "ageDays": 131
   },
   {
@@ -431,7 +431,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3155,
+    "ageHours": 3161,
     "ageDays": 131
   },
   {
@@ -446,7 +446,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3111,
+    "ageHours": 3117,
     "ageDays": 129
   },
   {
@@ -461,7 +461,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3062,
+    "ageHours": 3068,
     "ageDays": 127
   },
   {
@@ -471,12 +471,12 @@
     "opsStatus": "New",
     "priority": "Medium",
     "subject": "Drayage Assignments",
-    "createdDate": "2026-05-04",
+    "createdDate": "2026-05-03",
     "lastUpdated": "2026-05-04",
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3004,
+    "ageHours": 3010,
     "ageDays": 125
   },
   {
@@ -491,7 +491,7 @@
     "assigned": "Austin Steigerwalt",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 2993,
+    "ageHours": 2999,
     "ageDays": 124
   },
   {
@@ -506,7 +506,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2992,
+    "ageHours": 2999,
     "ageDays": 124
   },
   {
@@ -516,12 +516,12 @@
     "opsStatus": "New",
     "priority": "Medium",
     "subject": "D/O: NIAGARA BOTTLIN_YMJAE490405029",
-    "createdDate": "2026-05-06",
+    "createdDate": "2026-05-05",
     "lastUpdated": "2026-06-26",
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2955,
+    "ageHours": 2961,
     "ageDays": 123
   },
   {
@@ -536,7 +536,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2945,
+    "ageHours": 2951,
     "ageDays": 122
   },
   {
@@ -551,7 +551,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2945,
+    "ageHours": 2951,
     "ageDays": 122
   },
   {
@@ -566,7 +566,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2943,
+    "ageHours": 2949,
     "ageDays": 122
   },
   {
@@ -576,12 +576,12 @@
     "opsStatus": "New",
     "priority": "Medium",
     "subject": "D/O: NIAGARA BOTTLIN_YMJAE490405030",
-    "createdDate": "2026-05-09",
+    "createdDate": "2026-05-08",
     "lastUpdated": "2026-05-12",
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2884,
+    "ageHours": 2890,
     "ageDays": 120
   },
   {
@@ -596,7 +596,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2825,
+    "ageHours": 2831,
     "ageDays": 117
   },
   {
@@ -611,7 +611,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2775,
+    "ageHours": 2781,
     "ageDays": 115
   },
   {
@@ -626,7 +626,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2656,
+    "ageHours": 2662,
     "ageDays": 110
   },
   {
@@ -641,7 +641,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2607,
+    "ageHours": 2613,
     "ageDays": 108
   },
   {
@@ -656,7 +656,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2603,
+    "ageHours": 2609,
     "ageDays": 108
   },
   {
@@ -671,7 +671,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2600,
+    "ageHours": 2607,
     "ageDays": 108
   },
   {
@@ -686,7 +686,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2439,
+    "ageHours": 2445,
     "ageDays": 101
   },
   {
@@ -701,7 +701,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2271,
+    "ageHours": 2277,
     "ageDays": 94
   },
   {
@@ -716,7 +716,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2265,
+    "ageHours": 2272,
     "ageDays": 94
   },
   {
@@ -731,7 +731,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2265,
+    "ageHours": 2271,
     "ageDays": 94
   },
   {
@@ -746,7 +746,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2240,
+    "ageHours": 2246,
     "ageDays": 93
   },
   {
@@ -761,7 +761,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2239,
+    "ageHours": 2246,
     "ageDays": 93
   },
   {
@@ -776,7 +776,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2220,
+    "ageHours": 2226,
     "ageDays": 92
   },
   {
@@ -791,7 +791,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2103,
+    "ageHours": 2109,
     "ageDays": 87
   },
   {
@@ -801,12 +801,12 @@
     "opsStatus": "Pending",
     "priority": "Medium",
     "subject": "PALLETIZED INBOUND - HBL# DMCNSZ036376 - DELMAR",
-    "createdDate": "2026-06-16",
+    "createdDate": "2026-06-15",
     "lastUpdated": "2026-09-04",
     "assigned": "Shailene Baez",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 1972,
+    "ageHours": 1979,
     "ageDays": 82
   },
   {
@@ -821,7 +821,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1960,
+    "ageHours": 1966,
     "ageDays": 81
   },
   {
@@ -836,7 +836,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1954,
+    "ageHours": 1960,
     "ageDays": 81
   },
   {
@@ -851,7 +851,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1935,
+    "ageHours": 1941,
     "ageDays": 80
   },
   {
@@ -866,7 +866,7 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1815,
+    "ageHours": 1821,
     "ageDays": 75
   },
   {
@@ -881,7 +881,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1767,
+    "ageHours": 1773,
     "ageDays": 73
   },
   {
@@ -896,7 +896,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1645,
+    "ageHours": 1651,
     "ageDays": 68
   },
   {
@@ -911,7 +911,7 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1641,
+    "ageHours": 1647,
     "ageDays": 68
   },
   {
@@ -926,7 +926,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1599,
+    "ageHours": 1605,
     "ageDays": 66
   },
   {
@@ -941,7 +941,7 @@
     "assigned": "Kimberly Bautista",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 1596,
+    "ageHours": 1603,
     "ageDays": 66
   },
   {
@@ -956,7 +956,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1593,
+    "ageHours": 1599,
     "ageDays": 66
   },
   {
@@ -971,7 +971,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1574,
+    "ageHours": 1580,
     "ageDays": 65
   },
   {
@@ -986,7 +986,7 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1569,
+    "ageHours": 1575,
     "ageDays": 65
   },
   {
@@ -1001,7 +1001,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1550,
+    "ageHours": 1556,
     "ageDays": 64
   },
   {
@@ -1016,7 +1016,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1478,
+    "ageHours": 1484,
     "ageDays": 61
   },
   {
@@ -1031,7 +1031,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1454,
+    "ageHours": 1460,
     "ageDays": 60
   },
   {
@@ -1046,7 +1046,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1431,
+    "ageHours": 1438,
     "ageDays": 59
   },
   {
@@ -1061,7 +1061,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1431,
+    "ageHours": 1437,
     "ageDays": 59
   },
   {
@@ -1076,7 +1076,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1430,
+    "ageHours": 1436,
     "ageDays": 59
   },
   {
@@ -1091,7 +1091,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1426,
+    "ageHours": 1432,
     "ageDays": 59
   },
   {
@@ -1106,7 +1106,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1406,
+    "ageHours": 1412,
     "ageDays": 58
   },
   {
@@ -1121,7 +1121,7 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1383,
+    "ageHours": 1389,
     "ageDays": 57
   },
   {
@@ -1136,7 +1136,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1382,
+    "ageHours": 1388,
     "ageDays": 57
   },
   {
@@ -1151,7 +1151,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1310,
+    "ageHours": 1316,
     "ageDays": 54
   },
   {
@@ -1166,7 +1166,7 @@
     "assigned": "Maria Aponte",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1309,
+    "ageHours": 1316,
     "ageDays": 54
   },
   {
@@ -1181,7 +1181,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1286,
+    "ageHours": 1292,
     "ageDays": 53
   },
   {
@@ -1196,7 +1196,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1263,
+    "ageHours": 1269,
     "ageDays": 52
   },
   {
@@ -1211,7 +1211,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1262,
+    "ageHours": 1268,
     "ageDays": 52
   },
   {
@@ -1226,7 +1226,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1238,
+    "ageHours": 1244,
     "ageDays": 51
   },
   {
@@ -1241,7 +1241,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1214,
+    "ageHours": 1220,
     "ageDays": 50
   },
   {
@@ -1256,7 +1256,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1143,
+    "ageHours": 1149,
     "ageDays": 47
   },
   {
@@ -1271,7 +1271,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1142,
+    "ageHours": 1148,
     "ageDays": 47
   },
   {
@@ -1286,7 +1286,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1140,
+    "ageHours": 1146,
     "ageDays": 47
   },
   {
@@ -1301,7 +1301,7 @@
     "assigned": "Erin Cambra",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 1140,
+    "ageHours": 1146,
     "ageDays": 47
   },
   {
@@ -1316,7 +1316,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1118,
+    "ageHours": 1124,
     "ageDays": 46
   },
   {
@@ -1331,7 +1331,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1095,
+    "ageHours": 1101,
     "ageDays": 45
   },
   {
@@ -1346,7 +1346,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1094,
+    "ageHours": 1100,
     "ageDays": 45
   },
   {
@@ -1361,7 +1361,7 @@
     "assigned": "Erin Cambra",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 1070,
+    "ageHours": 1076,
     "ageDays": 44
   },
   {
@@ -1376,7 +1376,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1070,
+    "ageHours": 1076,
     "ageDays": 44
   },
   {
@@ -1391,7 +1391,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1069,
+    "ageHours": 1075,
     "ageDays": 44
   },
   {
@@ -1406,7 +1406,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1046,
+    "ageHours": 1052,
     "ageDays": 43
   },
   {
@@ -1421,7 +1421,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 976,
+    "ageHours": 983,
     "ageDays": 40
   },
   {
@@ -1436,7 +1436,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 974,
+    "ageHours": 980,
     "ageDays": 40
   },
   {
@@ -1451,7 +1451,7 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 969,
+    "ageHours": 975,
     "ageDays": 40
   },
   {
@@ -1466,7 +1466,7 @@
     "assigned": "Austin Steigerwalt",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 966,
+    "ageHours": 973,
     "ageDays": 40
   },
   {
@@ -1481,7 +1481,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 951,
+    "ageHours": 957,
     "ageDays": 39
   },
   {
@@ -1496,7 +1496,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 950,
+    "ageHours": 956,
     "ageDays": 39
   },
   {
@@ -1511,7 +1511,7 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 947,
+    "ageHours": 953,
     "ageDays": 39
   },
   {
@@ -1526,7 +1526,7 @@
     "assigned": "Erin Cambra",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 927,
+    "ageHours": 933,
     "ageDays": 38
   },
   {
@@ -1541,7 +1541,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 927,
+    "ageHours": 933,
     "ageDays": 38
   },
   {
@@ -1556,7 +1556,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 926,
+    "ageHours": 932,
     "ageDays": 38
   },
   {
@@ -1571,7 +1571,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 925,
+    "ageHours": 932,
     "ageDays": 38
   },
   {
@@ -1586,7 +1586,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 902,
+    "ageHours": 908,
     "ageDays": 37
   },
   {
@@ -1601,7 +1601,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 878,
+    "ageHours": 884,
     "ageDays": 36
   },
   {
@@ -1616,7 +1616,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 872,
+    "ageHours": 878,
     "ageDays": 36
   },
   {
@@ -1626,12 +1626,12 @@
     "opsStatus": "New",
     "priority": "Medium",
     "subject": "RN-19411 & RN-19412",
-    "createdDate": "2026-08-01",
-    "lastUpdated": "2026-08-01",
+    "createdDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 867,
+    "ageHours": 873,
     "ageDays": 36
   },
   {
@@ -1646,7 +1646,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 808,
+    "ageHours": 814,
     "ageDays": 33
   },
   {
@@ -1661,7 +1661,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 807,
+    "ageHours": 814,
     "ageDays": 33
   },
   {
@@ -1676,7 +1676,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 806,
+    "ageHours": 812,
     "ageDays": 33
   },
   {
@@ -1691,7 +1691,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 783,
+    "ageHours": 789,
     "ageDays": 32
   },
   {
@@ -1706,7 +1706,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 782,
+    "ageHours": 788,
     "ageDays": 32
   },
   {
@@ -1721,7 +1721,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 758,
+    "ageHours": 764,
     "ageDays": 31
   },
   {
@@ -1736,7 +1736,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 734,
+    "ageHours": 740,
     "ageDays": 30
   },
   {
@@ -1751,7 +1751,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 710,
+    "ageHours": 716,
     "ageDays": 29
   },
   {
@@ -1766,7 +1766,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 638,
+    "ageHours": 644,
     "ageDays": 26
   },
   {
@@ -1781,7 +1781,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 634,
+    "ageHours": 640,
     "ageDays": 26
   },
   {
@@ -1796,7 +1796,7 @@
     "assigned": "nicole weber",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 616,
+    "ageHours": 622,
     "ageDays": 25
   },
   {
@@ -1811,7 +1811,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 614,
+    "ageHours": 620,
     "ageDays": 25
   },
   {
@@ -1826,7 +1826,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 613,
+    "ageHours": 619,
     "ageDays": 25
   },
   {
@@ -1841,7 +1841,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 590,
+    "ageHours": 596,
     "ageDays": 24
   },
   {
@@ -1856,7 +1856,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 585,
+    "ageHours": 591,
     "ageDays": 24
   },
   {
@@ -1871,7 +1871,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 566,
+    "ageHours": 572,
     "ageDays": 23
   },
   {
@@ -1886,7 +1886,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 563,
+    "ageHours": 570,
     "ageDays": 23
   },
   {
@@ -1896,12 +1896,12 @@
     "opsStatus": "New",
     "priority": "Medium",
     "subject": "RE: UOM Issue",
-    "createdDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
+    "createdDate": "2026-08-13",
+    "lastUpdated": "2026-08-13",
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 556,
+    "ageHours": 562,
     "ageDays": 23
   },
   {
@@ -1916,7 +1916,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 542,
+    "ageHours": 548,
     "ageDays": 22
   },
   {
@@ -1931,7 +1931,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 538,
+    "ageHours": 545,
     "ageDays": 22
   },
   {
@@ -1946,7 +1946,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 470,
+    "ageHours": 476,
     "ageDays": 19
   },
   {
@@ -1961,7 +1961,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 470,
+    "ageHours": 476,
     "ageDays": 19
   },
   {
@@ -1976,7 +1976,7 @@
     "assigned": "Youssef Zeitoon",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 463,
+    "ageHours": 470,
     "ageDays": 19
   },
   {
@@ -1991,7 +1991,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 446,
+    "ageHours": 452,
     "ageDays": 18
   },
   {
@@ -2006,7 +2006,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 442,
+    "ageHours": 448,
     "ageDays": 18
   },
   {
@@ -2021,7 +2021,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 441,
+    "ageHours": 447,
     "ageDays": 18
   },
   {
@@ -2036,7 +2036,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 423,
+    "ageHours": 429,
     "ageDays": 17
   },
   {
@@ -2051,7 +2051,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 422,
+    "ageHours": 428,
     "ageDays": 17
   },
   {
@@ -2066,7 +2066,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 420,
+    "ageHours": 426,
     "ageDays": 17
   },
   {
@@ -2081,7 +2081,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 399,
+    "ageHours": 406,
     "ageDays": 16
   },
   {
@@ -2096,7 +2096,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 399,
+    "ageHours": 405,
     "ageDays": 16
   },
   {
@@ -2111,7 +2111,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 398,
+    "ageHours": 404,
     "ageDays": 16
   },
   {
@@ -2126,7 +2126,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 393,
+    "ageHours": 399,
     "ageDays": 16
   },
   {
@@ -2141,7 +2141,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 393,
+    "ageHours": 399,
     "ageDays": 16
   },
   {
@@ -2156,7 +2156,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 376,
+    "ageHours": 382,
     "ageDays": 15
   },
   {
@@ -2171,7 +2171,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 376,
+    "ageHours": 382,
     "ageDays": 15
   },
   {
@@ -2186,7 +2186,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 374,
+    "ageHours": 380,
     "ageDays": 15
   },
   {
@@ -2201,7 +2201,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 373,
+    "ageHours": 379,
     "ageDays": 15
   },
   {
@@ -2216,7 +2216,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 371,
+    "ageHours": 378,
     "ageDays": 15
   },
   {
@@ -2231,7 +2231,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 370,
+    "ageHours": 376,
     "ageDays": 15
   },
   {
@@ -2246,7 +2246,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 304,
+    "ageHours": 310,
     "ageDays": 12
   },
   {
@@ -2261,7 +2261,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 302,
+    "ageHours": 308,
     "ageDays": 12
   },
   {
@@ -2276,7 +2276,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 298,
+    "ageHours": 304,
     "ageDays": 12
   },
   {
@@ -2291,7 +2291,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 278,
+    "ageHours": 284,
     "ageDays": 11
   },
   {
@@ -2306,7 +2306,7 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 277,
+    "ageHours": 283,
     "ageDays": 11
   },
   {
@@ -2321,7 +2321,7 @@
     "assigned": "Leamsi Gem Mangodas",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 277,
+    "ageHours": 283,
     "ageDays": 11
   },
   {
@@ -2336,7 +2336,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 276,
+    "ageHours": 282,
     "ageDays": 11
   },
   {
@@ -2351,7 +2351,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 275,
+    "ageHours": 282,
     "ageDays": 11
   },
   {
@@ -2366,7 +2366,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 275,
+    "ageHours": 281,
     "ageDays": 11
   },
   {
@@ -2381,7 +2381,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 272,
+    "ageHours": 278,
     "ageDays": 11
   },
   {
@@ -2396,7 +2396,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 256,
+    "ageHours": 262,
     "ageDays": 10
   },
   {
@@ -2411,7 +2411,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 254,
+    "ageHours": 260,
     "ageDays": 10
   },
   {
@@ -2426,7 +2426,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 252,
+    "ageHours": 258,
     "ageDays": 10
   },
   {
@@ -2441,7 +2441,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 230,
+    "ageHours": 236,
     "ageDays": 9
   },
   {
@@ -2456,7 +2456,7 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 228,
+    "ageHours": 234,
     "ageDays": 9
   },
   {
@@ -2471,7 +2471,7 @@
     "assigned": "Timothy McHugh",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 226,
+    "ageHours": 233,
     "ageDays": 9
   },
   {
@@ -2486,7 +2486,7 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 226,
+    "ageHours": 232,
     "ageDays": 9
   },
   {
@@ -2501,7 +2501,7 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 207,
+    "ageHours": 213,
     "ageDays": 8
   },
   {
@@ -2516,7 +2516,7 @@
     "assigned": "Yang-Lhing Bague",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 206,
+    "ageHours": 212,
     "ageDays": 8
   },
   {
@@ -2531,7 +2531,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 206,
+    "ageHours": 212,
     "ageDays": 8
   },
   {
@@ -2546,7 +2546,7 @@
     "assigned": "Timothy McHugh",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 206,
+    "ageHours": 212,
     "ageDays": 8
   },
   {
@@ -2557,11 +2557,11 @@
     "priority": "Medium",
     "subject": "Monthly TCL Ecommerce Storage SQFT Needed - August 2026",
     "createdDate": "2026-08-28",
-    "lastUpdated": "2026-09-01",
+    "lastUpdated": "2026-08-31",
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 205,
+    "ageHours": 211,
     "ageDays": 8
   },
   {
@@ -2576,7 +2576,7 @@
     "assigned": null,
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 205,
+    "ageHours": 211,
     "ageDays": 8
   },
   {
@@ -2591,7 +2591,7 @@
     "assigned": "Youssef Zeitoon",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 205,
+    "ageHours": 211,
     "ageDays": 8
   },
   {
@@ -2606,7 +2606,7 @@
     "assigned": "Kent Claud Caballero",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 201,
+    "ageHours": 207,
     "ageDays": 8
   },
   {
@@ -2621,7 +2621,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 201,
+    "ageHours": 207,
     "ageDays": 8
   },
   {
@@ -2636,7 +2636,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 199,
+    "ageHours": 206,
     "ageDays": 8
   },
   {
@@ -2651,7 +2651,7 @@
     "assigned": "Kent Claud Caballero",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 182,
+    "ageHours": 188,
     "ageDays": 7
   },
   {
@@ -2666,7 +2666,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 137,
+    "ageHours": 143,
     "ageDays": 5
   },
   {
@@ -2681,7 +2681,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 134,
+    "ageHours": 140,
     "ageDays": 5
   },
   {
@@ -2696,7 +2696,7 @@
     "assigned": null,
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 133,
+    "ageHours": 139,
     "ageDays": 5
   },
   {
@@ -2706,12 +2706,12 @@
     "opsStatus": "New",
     "priority": "Medium",
     "subject": "No Label for MIDEA AMERICA CORP Load# 45909639",
-    "createdDate": "2026-09-01",
+    "createdDate": "2026-08-31",
     "lastUpdated": "2026-09-01",
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 124,
+    "ageHours": 130,
     "ageDays": 5
   },
   {
@@ -2721,12 +2721,12 @@
     "opsStatus": "Pending",
     "priority": "Medium",
     "subject": "Cesenek Expired Inventory - Please dispose",
-    "createdDate": "2026-09-01",
+    "createdDate": "2026-08-31",
     "lastUpdated": "2026-09-02",
     "assigned": "Youssef Zeitoon",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 124,
+    "ageHours": 130,
     "ageDays": 5
   },
   {
@@ -2741,7 +2741,7 @@
     "assigned": "nicole weber",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 111,
+    "ageHours": 117,
     "ageDays": 4
   },
   {
@@ -2756,7 +2756,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 110,
+    "ageHours": 116,
     "ageDays": 4
   },
   {
@@ -2771,7 +2771,7 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 109,
+    "ageHours": 115,
     "ageDays": 4
   },
   {
@@ -2786,7 +2786,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 109,
+    "ageHours": 115,
     "ageDays": 4
   },
   {
@@ -2801,7 +2801,7 @@
     "assigned": "Yang-Lhing Bague",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 108,
+    "ageHours": 114,
     "ageDays": 4
   },
   {
@@ -2816,7 +2816,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 105,
+    "ageHours": 112,
     "ageDays": 4
   },
   {
@@ -2831,7 +2831,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 104,
+    "ageHours": 110,
     "ageDays": 4
   },
   {
@@ -2846,7 +2846,7 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 103,
+    "ageHours": 109,
     "ageDays": 4
   },
   {
@@ -2861,7 +2861,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 89,
+    "ageHours": 95,
     "ageDays": 3
   },
   {
@@ -2876,7 +2876,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 88,
+    "ageHours": 94,
     "ageDays": 3
   },
   {
@@ -2891,7 +2891,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 88,
+    "ageHours": 94,
     "ageDays": 3
   },
   {
@@ -2906,7 +2906,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 87,
+    "ageHours": 93,
     "ageDays": 3
   },
   {
@@ -2921,7 +2921,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 86,
+    "ageHours": 92,
     "ageDays": 3
   },
   {
@@ -2936,7 +2936,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 85,
+    "ageHours": 91,
     "ageDays": 3
   },
   {
@@ -2951,7 +2951,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 85,
+    "ageHours": 91,
     "ageDays": 3
   },
   {
@@ -2966,7 +2966,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 84,
+    "ageHours": 91,
     "ageDays": 3
   },
   {
@@ -2981,7 +2981,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 84,
+    "ageHours": 90,
     "ageDays": 3
   },
   {
@@ -2996,7 +2996,7 @@
     "assigned": "Yang-Lhing Bague",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 84,
+    "ageHours": 90,
     "ageDays": 3
   },
   {
@@ -3011,7 +3011,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 82,
+    "ageHours": 88,
     "ageDays": 3
   },
   {
@@ -3026,7 +3026,7 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 82,
+    "ageHours": 88,
     "ageDays": 3
   },
   {
@@ -3041,7 +3041,7 @@
     "assigned": "Wilmer Acedo",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 81,
+    "ageHours": 87,
     "ageDays": 3
   },
   {
@@ -3056,7 +3056,7 @@
     "assigned": "Yang-Lhing Bague",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 80,
+    "ageHours": 86,
     "ageDays": 3
   },
   {
@@ -3071,7 +3071,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 78,
+    "ageHours": 84,
     "ageDays": 3
   },
   {
@@ -3086,7 +3086,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 78,
+    "ageHours": 84,
     "ageDays": 3
   },
   {
@@ -3096,12 +3096,12 @@
     "opsStatus": "New",
     "priority": "Medium",
     "subject": "Day/Dream Drop Ship order Status",
-    "createdDate": "2026-09-03",
-    "lastUpdated": "2026-09-03",
+    "createdDate": "2026-09-02",
+    "lastUpdated": "2026-09-02",
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 76,
+    "ageHours": 82,
     "ageDays": 3
   },
   {
@@ -3116,7 +3116,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 63,
+    "ageHours": 69,
     "ageDays": 2
   },
   {
@@ -3131,7 +3131,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 62,
+    "ageHours": 68,
     "ageDays": 2
   },
   {
@@ -3146,7 +3146,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 61,
+    "ageHours": 68,
     "ageDays": 2
   },
   {
@@ -3161,7 +3161,7 @@
     "assigned": "Shailene Baez",
     "closeFlag": true,
     "slaStatus": "On Track",
-    "ageHours": 60,
+    "ageHours": 66,
     "ageDays": 2
   },
   {
@@ -3176,7 +3176,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 57,
+    "ageHours": 63,
     "ageDays": 2
   },
   {
@@ -3191,7 +3191,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 56,
+    "ageHours": 62,
     "ageDays": 2
   },
   {
@@ -3206,7 +3206,7 @@
     "assigned": "Wilmer Acedo",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 54,
+    "ageHours": 61,
     "ageDays": 2
   },
   {
@@ -3221,7 +3221,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 48,
+    "ageHours": 55,
     "ageDays": 2
   },
   {
@@ -3236,7 +3236,7 @@
     "assigned": "Yang-Lhing Bague",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 40,
+    "ageHours": 46,
     "ageDays": 1
   },
   {
@@ -3251,7 +3251,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 40,
+    "ageHours": 46,
     "ageDays": 1
   },
   {
@@ -3262,11 +3262,11 @@
     "priority": "Medium",
     "subject": "Urgent: Pending Orders - Please Ship ASAP",
     "createdDate": "2026-09-04",
-    "lastUpdated": "2026-09-05",
+    "lastUpdated": "2026-09-04",
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 39,
+    "ageHours": 45,
     "ageDays": 1
   },
   {
@@ -3281,7 +3281,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 39,
+    "ageHours": 45,
     "ageDays": 1
   },
   {
@@ -3296,7 +3296,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 38,
+    "ageHours": 44,
     "ageDays": 1
   },
   {
@@ -3311,7 +3311,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 38,
+    "ageHours": 44,
     "ageDays": 1
   },
   {
@@ -3326,7 +3326,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 38,
+    "ageHours": 44,
     "ageDays": 1
   },
   {
@@ -3341,7 +3341,7 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 37,
+    "ageHours": 44,
     "ageDays": 1
   },
   {
@@ -3356,7 +3356,7 @@
     "assigned": "Yang-Lhing Bague",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 37,
+    "ageHours": 44,
     "ageDays": 1
   },
   {
@@ -3371,7 +3371,7 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 37,
+    "ageHours": 43,
     "ageDays": 1
   },
   {
@@ -3386,7 +3386,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 37,
+    "ageHours": 43,
     "ageDays": 1
   },
   {
@@ -3401,7 +3401,7 @@
     "assigned": "Yang-Lhing Bague",
     "closeFlag": true,
     "slaStatus": "On Track",
-    "ageHours": 36,
+    "ageHours": 42,
     "ageDays": 1
   },
   {
@@ -3416,7 +3416,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 34,
+    "ageHours": 40,
     "ageDays": 1
   },
   {
@@ -3431,7 +3431,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 34,
+    "ageHours": 40,
     "ageDays": 1
   },
   {
@@ -3446,7 +3446,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 33,
+    "ageHours": 39,
     "ageDays": 1
   },
   {
@@ -3461,7 +3461,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 32,
+    "ageHours": 39,
     "ageDays": 1
   },
   {
@@ -3476,7 +3476,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 32,
+    "ageHours": 38,
     "ageDays": 1
   },
   {
@@ -3491,7 +3491,7 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 31,
+    "ageHours": 37,
     "ageDays": 1
   },
   {
@@ -3506,7 +3506,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 30,
+    "ageHours": 37,
     "ageDays": 1
   },
   {
@@ -3521,7 +3521,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 30,
+    "ageHours": 37,
     "ageDays": 1
   },
   {
@@ -3536,7 +3536,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 30,
+    "ageHours": 36,
     "ageDays": 1
   },
   {
@@ -3551,7 +3551,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 30,
+    "ageHours": 36,
     "ageDays": 1
   },
   {
@@ -3566,7 +3566,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 30,
+    "ageHours": 36,
     "ageDays": 1
   },
   {
@@ -3581,7 +3581,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 30,
+    "ageHours": 36,
     "ageDays": 1
   },
   {
@@ -3596,7 +3596,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 30,
+    "ageHours": 36,
     "ageDays": 1
   },
   {
@@ -3611,7 +3611,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 30,
+    "ageHours": 36,
     "ageDays": 1
   },
   {
@@ -3626,7 +3626,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 30,
+    "ageHours": 36,
     "ageDays": 1
   },
   {
@@ -3641,7 +3641,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 30,
+    "ageHours": 36,
     "ageDays": 1
   },
   {
@@ -3656,7 +3656,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 30,
+    "ageHours": 36,
     "ageDays": 1
   },
   {
@@ -3671,7 +3671,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 30,
+    "ageHours": 36,
     "ageDays": 1
   },
   {
@@ -3686,7 +3686,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 30,
+    "ageHours": 36,
     "ageDays": 1
   },
   {
@@ -3701,7 +3701,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 30,
+    "ageHours": 36,
     "ageDays": 1
   },
   {
@@ -3716,7 +3716,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 30,
+    "ageHours": 36,
     "ageDays": 1
   },
   {
@@ -3731,7 +3731,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 30,
+    "ageHours": 36,
     "ageDays": 1
   },
   {
@@ -3746,7 +3746,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 30,
+    "ageHours": 36,
     "ageDays": 1
   },
   {
@@ -3761,7 +3761,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 29,
+    "ageHours": 35,
     "ageDays": 1
   },
   {
@@ -3776,7 +3776,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 29,
+    "ageHours": 35,
     "ageDays": 1
   },
   {
@@ -3786,12 +3786,12 @@
     "opsStatus": "New",
     "priority": "Medium",
     "subject": "Amazon Freight LTL Pickup Schedule GFA2R for Sep 8, 2026",
-    "createdDate": "2026-09-05",
-    "lastUpdated": "2026-09-05",
+    "createdDate": "2026-09-04",
+    "lastUpdated": "2026-09-04",
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 29,
+    "ageHours": 35,
     "ageDays": 1
   },
   {
@@ -3806,7 +3806,7 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 16,
+    "ageHours": 22,
     "ageDays": 0
   },
   {
@@ -3821,7 +3821,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 16,
+    "ageHours": 22,
     "ageDays": 0
   },
   {
@@ -3836,7 +3836,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 16,
+    "ageHours": 22,
     "ageDays": 0
   },
   {
@@ -3851,7 +3851,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 13,
+    "ageHours": 19,
     "ageDays": 0
   },
   {
@@ -3866,7 +3866,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 13,
+    "ageHours": 19,
     "ageDays": 0
   },
   {
@@ -3881,7 +3881,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 13,
+    "ageHours": 19,
     "ageDays": 0
   },
   {
@@ -3896,7 +3896,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 13,
+    "ageHours": 19,
     "ageDays": 0
   },
   {
@@ -3911,7 +3911,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 13,
+    "ageHours": 19,
     "ageDays": 0
   },
   {
@@ -3926,7 +3926,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 13,
+    "ageHours": 19,
     "ageDays": 0
   },
   {
@@ -3941,7 +3941,7 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 11,
+    "ageHours": 18,
     "ageDays": 0
   },
   {
@@ -3956,7 +3956,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 11,
+    "ageHours": 17,
     "ageDays": 0
   },
   {
@@ -3971,7 +3971,7 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 8,
+    "ageHours": 14,
     "ageDays": 0
   },
   {
@@ -3986,7 +3986,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 8,
+    "ageHours": 14,
     "ageDays": 0
   },
   {
@@ -4001,7 +4001,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 8,
+    "ageHours": 14,
     "ageDays": 0
   },
   {
@@ -4016,7 +4016,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 8,
+    "ageHours": 14,
     "ageDays": 0
   },
   {
@@ -4031,7 +4031,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 8,
+    "ageHours": 14,
     "ageDays": 0
   },
   {
@@ -4046,7 +4046,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 8,
+    "ageHours": 14,
     "ageDays": 0
   },
   {
@@ -4061,7 +4061,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 8,
+    "ageHours": 14,
     "ageDays": 0
   }
 ]

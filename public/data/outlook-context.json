@@ -1,10 +1,10 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-06T04:45:00-04:00",
-  "lastRefreshed": "2026-09-06T04:45:00-04:00",
+  "generatedAt": "2026-09-06T07:28:00-04:00",
+  "lastRefreshed": "2026-09-06T07:28:00-04:00",
   "outlookAvailable": false,
-  "dataSource": "Outlook — Northampton/Cesanek CS mailbox context (nht.cs@unisco.com) UNAVAILABLE this cycle (Microsoft Graph 403 ErrorAccessDenied on shared mailbox via nicole.weber@unisco.com; delegated inbox scan 2026-09-05 16:00 ET .. 2026-09-06 04:45 ET: 0 UFN / 0 Cesanek hits). Thread data below carried forward from v15 (2026-09-05 16:00 ET) — watermark 09-04 19:36:54 ET",
+  "dataSource": "Outlook \u2014 Northampton/Cesanek CS mailbox context (nht.cs@unisco.com) UNAVAILABLE this cycle (Microsoft Graph 403 ErrorAccessDenied on shared mailbox via nicole.weber@unisco.com; delegated inbox scan 2026-09-05 16:00 ET .. 2026-09-06 07:28 ET: 0 UFN / 0 Cesanek hits; 1 unrelated VITA COCO transfer email). Thread data below carried forward from v15/v16 (latest watermark 09-04 19:36:54 ET).",
   "threadsMatched": 9,
   "threadsUniquePostDedup": 9,
   "coverage": {
