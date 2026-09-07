@@ -1,10 +1,10 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-06T20:33:32-04:00",
-  "lastRefreshed": "2026-09-06T20:33:32-04:00",
+  "generatedAt": "2026-09-06T21:00:41-04:00",
+  "lastRefreshed": "2026-09-06T21:00:41-04:00",
   "outlookAvailable": false,
-  "dataSource": "Outlook - Northampton/Cesanek CS mailbox context (nht.cs@unisco.com) PARTIAL this cycle: shared mailbox read still DENIED via nicole.weber@unisco.com (Microsoft Graph 403 ErrorAccessDenied); delegated inbox full-folder scan 2026-09-06 13:56 ET .. 20:33 ET returned 1 new NHT/Cesanek message - Fusion/Colavita 'COLAVITA - WEEK OF 8/31/26-PENDING ORDERS' received 2026-09-06T19:25:11Z (15:25 ET), DIRECT match to new eligible ticket UFN-69953 (created 19:25:14Z). 9 carried-forward eligible-ticket threads (v15-v19) unchanged + 1 new = 10. Watermark advanced to 2026-09-07T00:33:32Z (20:33 ET).",
+  "dataSource": "Outlook - Northampton/Cesanek CS mailbox context (nht.cs@unisco.com) PARTIAL this cycle: shared mailbox read still DENIED via nicole.weber@unisco.com (Microsoft Graph 403 ErrorAccessDenied); delegated inbox scan window 2026-09-06 20:33 ET .. 21:00 ET returned 0 new NHT/Cesanek messages; 10 carried-forward eligible-ticket threads unchanged (3.5% of 287). Watermark advanced to 2026-09-07T01:00:41Z (21:00 ET).",
   "threadsMatched": 10,
   "threadsUniquePostDedup": 10,
   "coverage": {
@@ -442,5 +442,5 @@
     "UNY Brands",
     "Walmart (Boundless/UNY)"
   ],
-  "refreshNote": "v20 cycle 2026-09-06 20:33 ET: delegated mailbox accessible via Graph (full-folder listing + search OK); shared mailbox nht.cs@unisco.com still 403 ErrorAccessDenied; window 13:56 ET .. 20:33 ET returned 1 new NHT/Cesanek message \u2014 Fusion/Colavita 'COLAVITA - WEEK OF 8/31/26-PENDING ORDERS' received 2026-09-06T19:25:11Z (15:25 ET), DIRECT match to new eligible ticket UFN-69953 (created 19:25:14Z; New) \u2014 added as the 10th eligible-thread match (3.5% of 287); 9 prior eligible-ticket threads carried forward unchanged (Diageo claim 18050/UFN-69811 and Boundless Walmart load-45872185/UFN-69771+UFN-69618+UFN-69942 persist as the 2 eligible escalations). Outlook adds no other delta to ticket metrics this cycle; TicketOps remains authoritative."
+  "refreshNote": "v21 refresh 21:00 ET: 0 new Outlook hits since v20 (20:33 ET); ticket set unchanged (287 eligible); thread list carried forward; non-blocking context only."
 }

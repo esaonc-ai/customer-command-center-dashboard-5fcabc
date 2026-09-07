@@ -1,10 +1,10 @@
 {
   "refresh": {
-    "id": "refresh-2026-09-06T20:33ET-AUTHORITATIVE-v20",
-    "timestamp": "2026-09-06T20:33:32-04:00",
+    "id": "refresh-2026-09-06T21:00ET-AUTHORITATIVE-v21",
+    "timestamp": "2026-09-06T21:00:41-04:00",
     "type": "AUTHORITATIVE",
-    "previousRefreshId": "refresh-2026-09-06T13:56ET-AUTHORITATIVE-v19",
-    "keyChange": "AUTHORITATIVE REFRESH v20 - fresh TicketOps LIVE enumeration 2026-09-06 ~20:33 ET (00:33Z 09-07; dept 323826714354839552, POST /v1/iam/tickets/page input{departmentIds:[323826714354839552], displayStatusSystemStatus:[10]}, server status-statistics cross-checked via POST /v1/iam/report/ticket/status): 352 open UFN = 241 New (+7) / 73 Pending (+0) / 38 Reopen (+1). Population delta vs v19 (13:56 ET / 17:56Z): +8 total (+7 New, +1 Reopen, Pending unchanged). New since v19 (cr > 17:56Z): 8 net-new eligible arrivals - UFN-69953 COLAVITA - WEEK OF 8/31/26-PENDING ORDERS (created 19:25:14Z, carrier Fusion pending-orders query -> also the 1 new Outlook hit), UFN-69955 Cesanek Appointment Watch 24-48h (20:23:30Z), and Cesanek Dropship EOD UFN-69960/69961/69962/69964/69965/69967 (WATER PLUS/RISE BREWING/RECOVERY SPORTS/ZEN BEVERAGE/VITA COCO DTC/UPTIME ENERGY, 20:49-20:51Z); 1 v19-eligible ticket left the open set: UFN-69862 Amazon Freight LTL Pickup Schedule GFA2R (SMEG USA INC) - closed/resolved (only removal; all other 279 v19 eligible rows remain open & eligible). Eligibility gate unchanged: displayStatusSystemStatus=open + displayStatusName in {New,Pending}; closeFlag NOT a gate - 19 live closeFlag=true tickets retained (UFN-68733/UFN-68750 auto-close artifacts, UFN-59720, UFN-69797 Diageo Picks, UFN-69618 Boundless no-labels, UFN-43887 Ritual stickering, +13 more; UFN-67030 remains Solved/system-20 closed 09/01, verified absent). Excluded: 38 Reopen (display name; +1 vs v19 - no eligible ticket moved to Reopen) + 22 billing/UF Billing/storage/handling/claims invoice items (v19 audit ids re-verified present; operational keepers retained: UFN-60009 BOL, UFN-68749 storage-SQFT data request, UFN-69818 open-RN ops digest, UFN-69231/UFN-63762/UFN-63959 invoice-dispute ops, UFN-69811 Diageo claim-18050, Boundless incident UFN-69771/UFN-69618/UFN-69942) + 5 duplicate ticket/email threads (same 5 pairs: kept 69946 dropped 69943 / kept 69942 dropped 69941 / kept 69896 dropped 69893 / kept 69892 dropped 69889 / kept 69663 dropped 69661). ELIGIBLE 287 = 218 New + 69 Pending (279 carried + 8 net-new - 1 dropped; +7 net vs v19's 280). Per-row ages recomputed exactly from live createTime (UTC->ET), anchored 20:33 ET (delta vs v19 +6h37m; oldest UFN-33604 exact 4450h/185d; new arrivals 3-5h). SLA health 200 breached / 87 on track (authoritative isSlaBreached; +7 On Track = 8 new arrivals - 1 removed On-Track 69862; 0 flips), unassigned 231 (226 -1 +6 new), oldest 185d, customers 53 (ticket-visible coverage; roster supplemental; no org added/removed - SMEG USA INC 27->26 on 69862 closure, UNIS Internal 9->10, ZEN BEVERAGE & COLAVITA USA, LLC 3->4, EOD orgs RISE BREWING/RECOVERY SPORTS/VITA COCO DTC/UPTIME ENERGY/WATER PLUS 2->3 each; tier split unchanged 36 Critical/6 Warning/11 Healthy). Buckets Immediate 17 / Short-Term 56 / Medium-Term 37 / Watch 177. Outlook context: delegated mailbox (nicole.weber@unisco.com) OK; shared nht.cs@unisco.com still 403 ErrorAccessDenied; window 09-06 13:56 ET -> 20:33 ET: 1 new NHT/Cesanek message - Fusion/Colavita 'COLAVITA - WEEK OF 8/31/26-PENDING ORDERS' received 2026-09-06T19:25:11Z (15:25 ET), DIRECT match to new eligible ticket UFN-69953 (created 19:25:14Z) - non-blocking; 9 carried-forward eligible-ticket threads unchanged + 1 new = 10 (3.5% of 287); 2 eligible escalations persist (UFN-69811 Diageo/Ritual claim 18050; Boundless Walmart load-45872185 as one incident); watermark advanced to 2026-09-07T00:33:32Z (20:33 ET)."
+    "previousRefreshId": "refresh-2026-09-06T20:33ET-AUTHORITATIVE-v20",
+    "keyChange": "AUTHORITATIVE REFRESH v21 - fresh TicketOps LIVE enumeration 2026-09-06 ~21:00 ET (01:00Z 09-07; dept 323826714354839552, POST /v1/iam/tickets/page input{departmentIds:[323826714354839552], displayStatusSystemStatus:[10]}, UFN prefix client-side, server status-statistics cross-checked via POST /v1/iam/report/ticket/status): 352 open UFN = 241 New (+0) / 73 Pending (+0) / 38 Reopen (+0) - population & display-status distribution IDENTICAL to v20 (20:33 ET); no tickets opened, closed, or changed status in the ~27-min window. Eligible 287 = 218 New + 69 Pending (identical set to v20; net 0). Eligibility gate unchanged: displayStatusSystemStatus=open + displayStatusName in {New,Pending}; closeFlag NOT a gate - 19 live closeFlag=true tickets retained (UFN-68733/UFN-68750 auto-close artifacts, UFN-59720, UFN-69797, UFN-69618, UFN-43887 + 14 more; UFN-67030 remains Solved/system-20 closed 09/01, verified absent). Excluded: 38 Reopen (display name; identical to v20) + 22 billing/UF Billing/storage/handling/claims invoice items (v20 audit ids re-verified present; operational keepers retained) + 5 duplicate ticket/email threads (same 5 pairs as v20: kept 69946 dropped 69943 / kept 69942 dropped 69941 / kept 69896 dropped 69893 / kept 69892 dropped 69889 / kept 69663 dropped 69661). Per-row ages recomputed exactly from live createTime (UTC->ET), anchored 21:00:41 ET (delta vs v20 +27m09s; +1h on 111 rows; 3 rows ticked to next age-day; oldest UFN-33604 exact 4451h/185d). SLA health 200 breached / 87 on track (unchanged; 0 flips), unassigned 231, oldest 185d, customers 53 (unchanged ticket-visible set; roster supplemental; DAYDREAM NUTRITION INC. oldestBreachedAgeDays 23->24; tier split unchanged 36 Critical/6 Warning/11 Healthy). Buckets Immediate 17 / Short-Term 56 / Medium-Term 37 / Watch 177 (unchanged). Outlook: window 09-06 20:33 ET -> 21:00 ET (shared mailbox still 403 ErrorAccessDenied): 0 new UFN/Cesanek hits; 10 eligible-ticket threads carried forward unchanged (3.5% of 287); 2 eligible escalations persist (UFN-69811 Diageo/Ritual claim 18050; Boundless Walmart load-45872185 as one incident); watermark advanced to 2026-09-07T01:00:41Z (21:00 ET)."
   },
   "rulesApplied": [
     "displayStatusSystemStatus == open (10)",
@@ -13,7 +13,7 @@
     "exclude billing / UF Billing / storage / handling invoice items (22 audit ids re-verified present in raw open set: storage/handling statements UFN-69710/69234/67930/66757/59971/65196/61451/62682/60573/54721/48436/45559/43725/41484, //BILLING invoice threads UFN-69597/55641/53491/40670/33719, freight-charge claims UFN-67097/64031/61390; operational keepers retained: UFN-60009 BOL, UFN-68749 storage-SQFT data request, UFN-69818 open-RN ops digest, UFN-69231/UFN-63762/UFN-63959 invoice-dispute ops, UFN-69811 claim-18050 and Boundless load incident kept as operational/escalation)",
     "UFN-prefix filter (department UNIS Fulfillment - Northampton; dept-wide, no team filter)",
     "slaStatus = authoritative TicketOps isSlaBreached per ticket (200 breached / 87 on track)",
-    "Outlook context non-blocking enrichment (partial this cycle: shared mailbox 403; 1 new delegated hit - Colavita/Fusion pending-orders -> UFN-69953; 9 threads carried forward + 1 new = 10); overlapping thread dedup by conversation (one UFN ticket = one thread); 5 duplicate threads removed total (same 5 pairs: kept 69946 dropped 69943, kept 69942 dropped 69941, kept 69896 dropped 69893, kept 69892 dropped 69889, kept 69663 dropped 69661); Walmart/Boundless load-45872185 counted as one incident",
+    "Outlook context non-blocking enrichment (partial this cycle: shared mailbox 403; 0 new delegated hits 20:33->21:00 ET - 10 eligible-ticket threads carried forward unchanged); overlapping thread dedup by conversation (one UFN ticket = one thread); 5 duplicate threads removed total (same 5 pairs: kept 69946 dropped 69943, kept 69942 dropped 69941, kept 69896 dropped 69893, kept 69892 dropped 69889, kept 69663 dropped 69661); Walmart/Boundless load-45872185 counted as one incident",
     "Customer Health coverage = all customers visible in eligible tickets (roster/aliases supplemental only)",
     "Action buckets by ageHours: Immediate <24h, Short-Term 24-72h, Medium-Term 72-168h, Watch >168h",
     "Customer Health tier rule (deterministic): Critical = eligible-ticket escalation OR (breached>0 AND (tickets>=3 OR oldestBreachedAgeDays>=14)); Warning = other breached OR tickets>=4 w/o breach; Healthy = otherwise"
@@ -22,11 +22,11 @@
     {
       "name": "TicketOps",
       "endpoint": "POST /v1/iam/tickets/page",
-      "note": "input{departmentIds:[323826714354839552], displayStatusSystemStatus:[10]}; UFN- prefix (client-side). Pull reference 2026-09-06 ~20:33 ET (2026-09-07 00:33Z; server status-statistics cross-checked via POST /v1/iam/report/ticket/status): New 241 / Pending 73 / Reopen 38 = 352 open server-side (+8 vs v19 13:56 ET pull: +7 New, +1 Reopen); eligible 287 after audit (218 New / 69 Pending)."
+      "note": "input{departmentIds:[323826714354839552], displayStatusSystemStatus:[10]}; UFN- prefix (client-side). Pull reference 2026-09-06 ~21:00 ET (2026-09-07 01:00Z; server status-statistics cross-checked via POST /v1/iam/report/ticket/status): New 241 / Pending 73 / Reopen 38 = 352 open server-side (+0 vs v20 20:33 ET pull - population identical, no arrivals/removals/status changes in window); eligible 287 after audit (218 New / 69 Pending)."
     },
     {
       "name": "Outlook",
-      "note": "Microsoft Graph via delegated CS context (nicole.weber@unisco.com; shared mailbox nht.cs@unisco.com read DENIED 403 ErrorAccessDenied), Northampton/Cesanek CS mailbox, window 2026-09-06 13:56 ET .. 20:33 ET (non-blocking): 1 new NHT/Cesanek message (Fusion/Colavita 'COLAVITA - WEEK OF 8/31/26-PENDING ORDERS', received 2026-09-06T19:25:11Z / 15:25 ET) -> ticket UFN-69953 (New, eligible, DIRECT match); 9 carried-forward eligible-ticket threads unchanged + 1 new = 10; watermark advanced to 2026-09-07T00:33:32Z (20:33 ET)."
+      "note": "Microsoft Graph via delegated CS context (nicole.weber@unisco.com; shared mailbox nht.cs@unisco.com read DENIED 403 ErrorAccessDenied), Northampton/Cesanek CS mailbox, window 2026-09-06 20:33 ET .. 21:00 ET (non-blocking): 0 new NHT/Cesanek messages; 10 carried-forward eligible-ticket threads unchanged; watermark advanced to 2026-09-07T01:00:41Z (21:00 ET)."
     }
   ],
   "dashboardState": {
@@ -85,7 +85,7 @@
         "DAYDREAM NUTRITION INC.": {
           "tickets": 12,
           "breached": 8,
-          "oldestBreachedAgeDays": 23,
+          "oldestBreachedAgeDays": 24,
           "tier": "Critical"
         },
         "TCL NORTH AMERICA": {
@@ -380,7 +380,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 185,
-        "ageHours": 4450,
+        "ageHours": 4451,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -402,7 +402,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 178,
-        "ageHours": 4275,
+        "ageHours": 4276,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -435,7 +435,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 165,
-        "ageHours": 3970,
+        "ageHours": 3971,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -446,7 +446,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 164,
-        "ageHours": 3943,
+        "ageHours": 3944,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -479,7 +479,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 159,
-        "ageHours": 3819,
+        "ageHours": 3820,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -490,7 +490,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 158,
-        "ageHours": 3802,
+        "ageHours": 3803,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -534,7 +534,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 151,
-        "ageHours": 3634,
+        "ageHours": 3635,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -545,7 +545,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 151,
-        "ageHours": 3630,
+        "ageHours": 3631,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -589,7 +589,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 144,
-        "ageHours": 3466,
+        "ageHours": 3467,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -622,7 +622,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 139,
-        "ageHours": 3345,
+        "ageHours": 3346,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -633,7 +633,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 137,
-        "ageHours": 3298,
+        "ageHours": 3299,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -666,7 +666,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 132,
-        "ageHours": 3180,
+        "ageHours": 3181,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -688,7 +688,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 132,
-        "ageHours": 3174,
+        "ageHours": 3175,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -699,7 +699,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 130,
-        "ageHours": 3130,
+        "ageHours": 3131,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -710,7 +710,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 128,
-        "ageHours": 3081,
+        "ageHours": 3082,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -765,7 +765,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 123,
-        "ageHours": 2964,
+        "ageHours": 2965,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -776,7 +776,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 123,
-        "ageHours": 2964,
+        "ageHours": 2965,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -787,7 +787,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 123,
-        "ageHours": 2962,
+        "ageHours": 2963,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -820,7 +820,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 116,
-        "ageHours": 2794,
+        "ageHours": 2795,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -842,7 +842,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 109,
-        "ageHours": 2626,
+        "ageHours": 2627,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -875,7 +875,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 102,
-        "ageHours": 2458,
+        "ageHours": 2459,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -886,7 +886,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 95,
-        "ageHours": 2290,
+        "ageHours": 2291,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -908,7 +908,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 95,
-        "ageHours": 2284,
+        "ageHours": 2285,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -919,7 +919,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 94,
-        "ageHours": 2259,
+        "ageHours": 2260,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -941,7 +941,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 93,
-        "ageHours": 2239,
+        "ageHours": 2240,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -952,7 +952,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 88,
-        "ageHours": 2122,
+        "ageHours": 2123,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -974,7 +974,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 82,
-        "ageHours": 1979,
+        "ageHours": 1980,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -985,7 +985,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 82,
-        "ageHours": 1973,
+        "ageHours": 1974,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -996,7 +996,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 81,
-        "ageHours": 1954,
+        "ageHours": 1955,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1007,7 +1007,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 76,
-        "ageHours": 1834,
+        "ageHours": 1835,
         "slaStatus": "Breached",
         "assigned": "Erin Cambra"
       },
@@ -1018,7 +1018,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 74,
-        "ageHours": 1786,
+        "ageHours": 1787,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1040,7 +1040,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 69,
-        "ageHours": 1660,
+        "ageHours": 1661,
         "slaStatus": "Breached",
         "assigned": "Erin Cambra"
       },
@@ -1051,7 +1051,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 67,
-        "ageHours": 1618,
+        "ageHours": 1619,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1073,7 +1073,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 67,
-        "ageHours": 1612,
+        "ageHours": 1613,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1095,7 +1095,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 66,
-        "ageHours": 1588,
+        "ageHours": 1589,
         "slaStatus": "Breached",
         "assigned": "Erin Cambra"
       },
@@ -1150,7 +1150,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 60,
-        "ageHours": 1450,
+        "ageHours": 1451,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1172,7 +1172,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 60,
-        "ageHours": 1445,
+        "ageHours": 1446,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1194,7 +1194,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 58,
-        "ageHours": 1402,
+        "ageHours": 1403,
         "slaStatus": "Breached",
         "assigned": "Kent Joseph Lim"
       },
@@ -1249,7 +1249,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 53,
-        "ageHours": 1282,
+        "ageHours": 1283,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1293,7 +1293,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 48,
-        "ageHours": 1162,
+        "ageHours": 1163,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1315,7 +1315,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 48,
-        "ageHours": 1159,
+        "ageHours": 1160,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1348,7 +1348,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 46,
-        "ageHours": 1114,
+        "ageHours": 1115,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1370,7 +1370,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 45,
-        "ageHours": 1089,
+        "ageHours": 1090,
         "slaStatus": "Breached",
         "assigned": "Erin Cambra"
       },
@@ -1436,7 +1436,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 41,
-        "ageHours": 988,
+        "ageHours": 989,
         "slaStatus": "Breached",
         "assigned": "Erin Cambra"
       },
@@ -1480,7 +1480,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 40,
-        "ageHours": 966,
+        "ageHours": 967,
         "slaStatus": "Breached",
         "assigned": "Erin Cambra"
       },
@@ -1491,7 +1491,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 39,
-        "ageHours": 946,
+        "ageHours": 947,
         "slaStatus": "Breached",
         "assigned": "Erin Cambra"
       },
@@ -1502,7 +1502,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 39,
-        "ageHours": 946,
+        "ageHours": 947,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1557,7 +1557,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 37,
-        "ageHours": 891,
+        "ageHours": 892,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1568,7 +1568,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 36,
-        "ageHours": 886,
+        "ageHours": 887,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1678,7 +1678,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 27,
-        "ageHours": 653,
+        "ageHours": 654,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1689,7 +1689,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 26,
-        "ageHours": 635,
+        "ageHours": 636,
         "slaStatus": "Breached",
         "assigned": "nicole weber"
       },
@@ -1711,7 +1711,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 26,
-        "ageHours": 632,
+        "ageHours": 633,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1765,8 +1765,8 @@
         "subject": "RE: UOM Issue",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 23,
-        "ageHours": 575,
+        "ageDays": 24,
+        "ageHours": 576,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1843,7 +1843,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 19,
-        "ageHours": 461,
+        "ageHours": 462,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1854,7 +1854,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 19,
-        "ageHours": 460,
+        "ageHours": 461,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1865,7 +1865,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 18,
-        "ageHours": 442,
+        "ageHours": 443,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1887,7 +1887,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 18,
-        "ageHours": 439,
+        "ageHours": 440,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1931,7 +1931,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 17,
-        "ageHours": 412,
+        "ageHours": 413,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1942,7 +1942,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 17,
-        "ageHours": 412,
+        "ageHours": 413,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1953,7 +1953,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 16,
-        "ageHours": 395,
+        "ageHours": 396,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1986,7 +1986,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 16,
-        "ageHours": 392,
+        "ageHours": 393,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2008,7 +2008,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 16,
-        "ageHours": 389,
+        "ageHours": 390,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2041,7 +2041,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 13,
-        "ageHours": 317,
+        "ageHours": 318,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2118,7 +2118,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 12,
-        "ageHours": 291,
+        "ageHours": 292,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2129,7 +2129,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 11,
-        "ageHours": 275,
+        "ageHours": 276,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2151,7 +2151,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 11,
-        "ageHours": 271,
+        "ageHours": 272,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2195,7 +2195,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 10,
-        "ageHours": 245,
+        "ageHours": 246,
         "slaStatus": "Breached",
         "assigned": "Erin Cambra"
       },
@@ -2206,7 +2206,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 9,
-        "ageHours": 226,
+        "ageHours": 227,
         "slaStatus": "Breached",
         "assigned": "Kent Joseph Lim"
       },
@@ -2250,7 +2250,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 9,
-        "ageHours": 224,
+        "ageHours": 225,
         "slaStatus": "Breached",
         "assigned": "Erin Cambra"
       },
@@ -2261,7 +2261,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 9,
-        "ageHours": 224,
+        "ageHours": 225,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2272,7 +2272,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 9,
-        "ageHours": 224,
+        "ageHours": 225,
         "slaStatus": "Breached",
         "assigned": "Youssef Zeitoon"
       },
@@ -2283,7 +2283,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 9,
-        "ageHours": 220,
+        "ageHours": 221,
         "slaStatus": "Breached",
         "assigned": "Kent Claud Caballero"
       },
@@ -2316,7 +2316,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 8,
-        "ageHours": 201,
+        "ageHours": 202,
         "slaStatus": "Breached",
         "assigned": "Kent Claud Caballero"
       },
@@ -2327,7 +2327,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 6,
-        "ageHours": 156,
+        "ageHours": 157,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2359,8 +2359,8 @@
         "subject": "No Label for MIDEA AMERICA CORP Load# 45909639",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 5,
-        "ageHours": 143,
+        "ageDays": 6,
+        "ageHours": 144,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2370,8 +2370,8 @@
         "subject": "Cesenek Expired Inventory - Please dispose",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 5,
-        "ageHours": 143,
+        "ageDays": 6,
+        "ageHours": 144,
         "slaStatus": "Breached",
         "assigned": "Youssef Zeitoon"
       },
@@ -2404,7 +2404,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 5,
-        "ageHours": 128,
+        "ageHours": 129,
         "slaStatus": "Breached",
         "assigned": "Kent Joseph Lim"
       },
@@ -2415,7 +2415,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 5,
-        "ageHours": 128,
+        "ageHours": 129,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2426,7 +2426,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 5,
-        "ageHours": 127,
+        "ageHours": 128,
         "slaStatus": "Breached",
         "assigned": "Yang-Lhing Bague"
       },
@@ -2459,7 +2459,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 5,
-        "ageHours": 122,
+        "ageHours": 123,
         "slaStatus": "Breached",
         "assigned": "Erin Cambra"
       },
@@ -2470,7 +2470,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 4,
-        "ageHours": 108,
+        "ageHours": 109,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2503,7 +2503,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 4,
-        "ageHours": 106,
+        "ageHours": 107,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2525,7 +2525,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 4,
-        "ageHours": 104,
+        "ageHours": 105,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2580,7 +2580,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 4,
-        "ageHours": 101,
+        "ageHours": 102,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2591,7 +2591,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 4,
-        "ageHours": 101,
+        "ageHours": 102,
         "slaStatus": "On Track",
         "assigned": "Kent Joseph Lim"
       },
@@ -2624,7 +2624,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 4,
-        "ageHours": 97,
+        "ageHours": 98,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2657,7 +2657,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 3,
-        "ageHours": 82,
+        "ageHours": 83,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2690,7 +2690,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 3,
-        "ageHours": 79,
+        "ageHours": 80,
         "slaStatus": "On Track",
         "assigned": "Shailene Baez"
       },
@@ -2701,7 +2701,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 3,
-        "ageHours": 76,
+        "ageHours": 77,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2712,7 +2712,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 3,
-        "ageHours": 75,
+        "ageHours": 76,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2745,7 +2745,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 59,
+        "ageHours": 60,
         "slaStatus": "On Track",
         "assigned": "Yang-Lhing Bague"
       },
@@ -2767,7 +2767,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 58,
+        "ageHours": 59,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2778,7 +2778,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 58,
+        "ageHours": 59,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2789,7 +2789,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 57,
+        "ageHours": 58,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2855,7 +2855,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 56,
+        "ageHours": 57,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2888,7 +2888,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 53,
+        "ageHours": 54,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2899,7 +2899,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 52,
+        "ageHours": 53,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3130,7 +3130,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 48,
+        "ageHours": 49,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3141,7 +3141,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 48,
+        "ageHours": 49,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3152,7 +3152,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 1,
-        "ageHours": 35,
+        "ageHours": 36,
         "slaStatus": "On Track",
         "assigned": "Kent Joseph Lim"
       },
@@ -3229,7 +3229,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 1,
-        "ageHours": 32,
+        "ageHours": 33,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3273,7 +3273,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 1,
-        "ageHours": 27,
+        "ageHours": 28,
         "slaStatus": "On Track",
         "assigned": "Kent Joseph Lim"
       },
@@ -3284,7 +3284,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 1,
-        "ageHours": 27,
+        "ageHours": 28,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3350,7 +3350,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 0,
-        "ageHours": 11,
+        "ageHours": 12,
         "slaStatus": "On Track",
         "assigned": "Kent Joseph Lim"
       },
@@ -3394,7 +3394,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 0,
-        "ageHours": 8,
+        "ageHours": 9,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3471,7 +3471,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 0,
-        "ageHours": 3,
+        "ageHours": 4,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3482,7 +3482,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 0,
-        "ageHours": 3,
+        "ageHours": 4,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3493,7 +3493,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 0,
-        "ageHours": 3,
+        "ageHours": 4,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3504,7 +3504,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 0,
-        "ageHours": 3,
+        "ageHours": 4,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3515,7 +3515,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 0,
-        "ageHours": 3,
+        "ageHours": 4,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3526,7 +3526,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 0,
-        "ageHours": 3,
+        "ageHours": 4,
         "slaStatus": "On Track",
         "assigned": null
       }
