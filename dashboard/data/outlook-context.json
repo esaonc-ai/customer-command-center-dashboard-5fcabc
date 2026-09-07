@@ -1,16 +1,16 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-07T06:20:00-04:00",
-  "lastRefreshed": "2026-09-07T06:20:00-04:00",
-  "outlookAvailable": false,
-  "dataSource": "Outlook - Northampton/Cesanek CS mailbox context (nht.cs@unisco.com) PARTIAL this cycle: shared mailbox read still DENIED via nicole.weber@unisco.com (Microsoft Graph 403 ErrorAccessDenied); delegated inbox scan window 2026-09-07 01:00:41Z (09-06 21:00 ET) .. 10:13Z (06:13 ET) returned 0 new NHT/Cesanek messages; 10 carried-forward eligible-ticket threads unchanged (3.5% of 287); one Teams @everyone digest (no ticket mapping) not counted. Watermark advanced to 2026-09-07T10:13:00Z (06:13 ET).",
+  "generatedAt": "2026-09-07T19:38:00-04:00",
+  "lastRefreshed": "2026-09-07T19:38:00-04:00",
+  "outlookAvailable": true,
+  "dataSource": "v23 scan (2026-09-07 ~19:29 ET). Mailbox: delegated nicole.weber@unisco.com (inbox/all folders + Microsoft Search); shared mailbox nht.cs@unisco.com read DENIED (Graph 403 ErrorAccessDenied) - unchanged. Window scanned: 2026-09-07T10:13:00Z -> 2026-09-07T23:29:00Z. Hits: 6 messages / 4 unique conversations. Boundless/UNY Walmart load-45872185 incident thread refreshed (last 17:30Z - Assistance Needed, Ticket #3569318, Central Transport pickup 9/8) - same eligible incident, no new unique thread. AMI New Roar Order SO1393032/DN-2117711 thread (17:04Z) matched UFN-68616 which is NOT in the eligible open New/Pending set -> recorded as excluded-context (not an eligible-ticket thread). 2 internal billing-audit digests from tweetie.lamoste@unisco.com (RN 19:21Z / DN 19:04Z 'Impact[ing] Billing') excluded - no UFN ticket mapping. No new Colavita pending-orders / Diageo claim-18050 / Ritual / UNY-brand threads. Threads carried forward: 10 eligible-ticket threads unchanged (3.2% of 311). Watermark advanced to 2026-09-07T23:29:00Z (19:29 ET).",
   "threadsMatched": 10,
   "threadsUniquePostDedup": 10,
   "coverage": {
-    "eligibleTicketsTotal": 287,
+    "eligibleTicketsTotal": 311,
     "eligibleTicketsWithOutlookContext": 10,
-    "coveragePct": 3.5
+    "coveragePct": 3.2
   },
   "ticketThreads": [
     {
@@ -43,33 +43,38 @@
       "escalation": true
     },
     {
-      "threadTopic": "Re: Load #45872185 - No Labels on Cases for BOUNDLESS EC US LLC",
-      "lastReceivedAt": "2026-09-04T18:37:47Z",
+      "threadTopic": "Assistance Needed - Ticket #3569318 | Load 45872185 (unlabeled mixed-destination freight; Central Transport pickup 9/8 to Northampton) [Boundless EC US LLC / UNY Brands Walmart incident]",
+      "lastReceivedAt": "2026-09-07T17:30:03Z",
       "participants": [
-        "ronel.fameux@walmart.com",
-        "shailene.baez@unisco.com",
+        "Yani.Sutherland@walmart.com",
+        "timothy.mchugh@unisco.com",
+        "nht.cs@unisco.com",
+        "alejandra.castillo@unisco.com",
+        "art.ismael@unisco.com",
+        "Garrett.Baskin@walmart.com",
         "unybrands.northampton@unisco.com",
-        "nht.cs@unisco.com"
+        "nicole.weber@unisco.com"
       ],
       "matchedTicketId": "UFN-69771",
-      "matchedTicketSubjectHint": "Load #45872185 - No Labels on Cases for BOUNDLESS EC US LLC",
+      "matchedTicketSubjectHint": "Walmart Ticket #3569318 / Load 45872185; carried incident UFN-69771 / UFN-69618 / UFN-69942 (echo link UFN-69617 in thread)",
       "customer": "BOUNDLESS EC US LLC",
       "escalation": true
     },
     {
-      "threadTopic": "Ticket [3569318] was updated - No Labels on Cases for BOUNDLESS EC US LLC Load# 45872185",
-      "lastReceivedAt": "2026-09-04T18:27:01Z",
+      "threadTopic": "Assistance Needed - Ticket #3569318 | Load 45872185 (unlabeled mixed-destination freight; Central Transport pickup 9/8 to Northampton) [Boundless EC US LLC / UNY Brands Walmart incident]",
+      "lastReceivedAt": "2026-09-07T17:30:03Z",
       "participants": [
-        "ricky.beri@unybrands.com",
-        "shailene.baez@unisco.com",
+        "Yani.Sutherland@walmart.com",
         "timothy.mchugh@unisco.com",
-        "joe.geraldi@unisco.com",
-        "nicole.weber@unisco.com",
+        "nht.cs@unisco.com",
+        "alejandra.castillo@unisco.com",
+        "art.ismael@unisco.com",
+        "Garrett.Baskin@walmart.com",
         "unybrands.northampton@unisco.com",
-        "nht.cs@unisco.com"
+        "nicole.weber@unisco.com"
       ],
       "matchedTicketId": "UFN-69618",
-      "matchedTicketSubjectHint": "No Labels on Cases for BOUNDLESS EC US LLC Load# 45872185",
+      "matchedTicketSubjectHint": "Walmart Ticket #3569318 / Load 45872185; carried incident UFN-69771 / UFN-69618 / UFN-69942 (echo link UFN-69617 in thread)",
       "customer": "BOUNDLESS EC US LLC",
       "escalation": true
     },
@@ -345,7 +350,7 @@
     },
     {
       "threadTopic": "Re: Load #45872185 - No Labels on Cases for BOUNDLESS EC US LLC",
-      "lastReceivedAt": "2026-09-04T18:37:47Z",
+      "lastReceivedAt": "2026-09-07T17:30:03Z",
       "participants": [
         "ronel.fameux@walmart.com",
         "shailene.baez@unisco.com",
@@ -442,5 +447,5 @@
     "UNY Brands",
     "Walmart (Boundless/UNY)"
   ],
-  "refreshNote": "v22 refresh 06:20 ET: 0 new Outlook hits since v21 (21:00 ET); ticket set unchanged (287 eligible); thread list carried forward; non-blocking context only."
+  "refreshNote": "v23 refresh 19:38 ET: +24 net eligible (311 = 242 New/69 Pending); 0 new unique Outlook threads since v22 (10 carried, 3.2%); Boundless Walmart load incident refreshed 17:30Z; AMI/Roar UFN-68616 context excluded; non-blocking context only."
 }

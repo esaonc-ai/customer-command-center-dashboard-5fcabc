@@ -1,20 +1,20 @@
 {
   "refresh": {
-    "id": "refresh-2026-09-07T06:20ET-AUTHORITATIVE-v22",
-    "timestamp": "2026-09-07T06:20:00-04:00",
+    "id": "refresh-2026-09-07T19:38ET-AUTHORITATIVE-v23",
+    "timestamp": "2026-09-07T19:38:00-04:00",
     "type": "AUTHORITATIVE",
-    "previousRefreshId": "refresh-2026-09-06T21:00ET-AUTHORITATIVE-v21",
-    "keyChange": "AUTHORITATIVE REFRESH v22 - fresh TicketOps LIVE enumeration 2026-09-07 ~06:20 ET (10:20Z; dept 323826714354839552, POST /v1/iam/tickets/page input{departmentIds:[323826714354839552], displayStatusSystemStatus:[10]}, UFN prefix client-side): 352 open UFN total (server total unchanged vs v21 352). Population IDENTICAL to v21 (01:00:41Z anchor): newest open ticket UFN-69967 (createTime 09/06/2026 20:51:44Z) equals the v21 max open/eligible id -> 0 arrivals in the ~9h19m window; total unchanged -> 0 removals. Eligible 287 = 218 New + 69 Pending (identical row set to v21; net 0). Eligibility gate unchanged: displayStatusSystemStatus=open + displayStatusName in {New,Pending}; closeFlag NOT a gate - 19 live closeFlag=true tickets retained (UFN-68733/UFN-68750 auto-close artifacts, UFN-59720, UFN-69797, UFN-69618, UFN-43887 + 14 more; UFN-67030 remains closed 09/01 -> outside gate). Excluded: 38 Reopen (display name; identical to v21) + 22 billing/UF Billing/storage/handling/claims invoice items (v21 audit ids re-verified present in raw open set; operational keepers retained: UFN-60009 BOL, UFN-68749 storage-SQFT data request, UFN-69818 open-RN ops digest, UFN-69231/UFN-63762/UFN-63959 invoice-dispute ops, UFN-69811 claim-18050, Boundless load incident) + 5 duplicate ticket/email threads (same 5 pairs as v21: kept 69946 dropped 69943 / kept 69942 dropped 69941 / kept 69896 dropped 69893 / kept 69892 dropped 69889 / kept 69663 dropped 69661). Per-row ages advanced from v21 exact anchor 2026-09-07T01:00:41Z by the live measured delta +9h19m -> +9 whole hours; ageDays = floor(ageHours/24) (oldest UFN-33604 4451h->4460h / 185d unchanged); slaStatus carried from v21 authoritative pull (200 breached / 87 on track) - no eligible-row state change detected in window (0 arrivals/removals; due dates still future). SLA health 200 breached / 87 on track, unassigned 231, oldest 185d, customers 53 (unchanged ticket-visible set; roster supplemental), tier split recomputed deterministic (unchanged from v21). Buckets recomputed from updated ages. Outlook: window 09-06 21:00 ET -> 09-07 06:13 ET (01:00:41Z->10:13Z): 0 new UFN/Cesanek hits (shared mailbox still 403 ErrorAccessDenied; one Teams @everyone digest w/o ticket mapping not counted); 10 eligible-ticket threads carried forward unchanged (3.5% of 287); 2 eligible escalations persist (UFN-69811 Diageo/Ritual claim 18050; Boundless Walmart load-45872185 as one incident); watermark advanced to 2026-09-07T10:13:00Z (06:13 ET)."
+    "previousRefreshId": "refresh-2026-09-07T06:20ET-AUTHORITATIVE-v22",
+    "keyChange": "AUTHORITATIVE REFRESH v23 - fresh TicketOps LIVE enumeration 2026-09-07 ~23:37Z (19:37 ET; dept 323826714354839552, POST /v1/iam/tickets/page input{departmentIds:[323826714354839552], displayStatusSystemStatus:[10], displayStatusIds:[11,6]} - displayStatusIds honored server-side, displayStatusName not): raw open UFN 383 = New 269 / Pending 73 / Reopen 41 (status-statistics verified) vs v22 06:20 ET 352 = 241/73/38. Eligible base (New+Pending) 342 = ALL 287 v22 eligible rows still present (0 removals; every v22 eligible id re-verified open New/Pending) + 55 additions since v22 anchor. Audits: Reopen 41 excluded (display-name outside gate); billing/UF Billing/storage/handling invoice items 22 excluded (same v22 audit ids re-verified present in raw base; operational keepers retained incl. UFN-69818/70016 open-RN ops digests, UFN-60009 BOL, UFN-68749 storage-SQFT request, UFN-69231/63762/63959 invoice-dispute ops, UFN-69811 claim 18050, Boundless incident); dup-thread dedup 9 = same 5 v22 pairs re-verified (kept 69946 dropped 69943 / kept 69942 dropped 69941 / kept 69896 dropped 69893 / kept 69892 dropped 69889 / kept 69663 dropped 69661) + 4 NEW regenerated twins this cycle (kept 70010 dropped 70009 / kept 70002 dropped 70001 / kept 69987 dropped 69986 / kept 70008 dropped 70005). Final eligible 311 = 242 New / 0 Open / 69 Pending (+24 net eligible arrivals: UFN-69985..70035 range, all New - EOD batch, appointment watch, CH Robinson/Uber pickup appts, OMS/dropship reports, Aviron cancel, Boundless load updates; dropship daily reports 69990/69991 and 69938/69939-type retained - different orgs, not twins). closeFlag still NOT a gate: 19 live closeFlag=true tickets retained (unchanged set incl. auto-close artifacts UFN-68733/UFN-68750, UFN-69797, UFN-69618, UFN-59720, UFN-43887). Per-row ages advanced +13 whole hours from v22 exact anchor 2026-09-07T10:20:00Z (measured delta 13h18m; ageDays=floor(ageHours/24)); oldest UFN-33604 4473h / 186d. slaStatus: 200 Breached / 87 On Track carried (no state change among continuing rows - 0 removals/0 arrivals in that set; due windows future) + 24 new rows On Track (isSlaBreached=false) => 200 Breached / 111 On Track; unassigned 253 (231 carried + 22 new unassigned; new assigned UFN-69998/70013 Kent Joseph Lim). Customers 55 (53 + Autoempick + ETCC Reg4 Scheduling; roster supplemental; tiers recomputed deterministic). Action buckets recomputed from updated ages: Immediate 24 / Short-Term 52 / Medium-Term 55 / Watch 180 (all 24 new arrivals <24h land in Immediate; older rows +13h moved Short->Medium/Medium->Watch). UFN-67030 remains closed (09/01) -> outside gate. Outlook: delegated inbox scanned 10:13Z->23:29Z - 0 brand-new unique eligible threads (Boundless Walmart load-45872185 conversation refreshed 17:30Z, same incident); AMI/Roar SO1393032/DN-2117711 context thread (matched UFN-68616, outside eligible set) noted as excluded-context; 2 Tweetie billing digests (no UFN mapping) not counted; shared mailbox nht.cs@unisco.com STILL 403 ErrorAccessDenied; 10 eligible-ticket threads carried unchanged (3.2% of 311); 2 eligible escalations persist (UFN-69811 Diageo/Ritual claim 18050; Boundless Walmart load-45872185 as one incident); watermark advanced to 2026-09-07T23:29:00Z (19:29 ET)."
   },
   "rulesApplied": [
     "displayStatusSystemStatus == open (10)",
-    "displayStatusName in {New, Pending} (excludes Reopen/Reopened, Closed, Resolved, Cancelled, Done)",
-    "closeFlag NOT used as eligibility gate (19 live closeFlag=true tickets retained - incl. UFN-68733/UFN-68750 auto-close artifacts verified live Pending/system-open, UFN-59720, UFN-69797, UFN-69618, UFN-43887; retained per rule)",
-    "exclude billing / UF Billing / storage / handling invoice items (22 audit ids re-verified present in raw open set: storage/handling statements UFN-69710/69234/67930/66757/59971/65196/61451/62682/60573/54721/48436/45559/43725/41484, //BILLING invoice threads UFN-69597/55641/53491/40670/33719, freight-charge claims UFN-67097/64031/61390; operational keepers retained: UFN-60009 BOL, UFN-68749 storage-SQFT data request, UFN-69818 open-RN ops digest, UFN-69231/UFN-63762/UFN-63959 invoice-dispute ops, UFN-69811 claim-18050 and Boundless load incident kept as operational/escalation)",
-    "UFN-prefix filter (department UNIS Fulfillment - Northampton; dept-wide, no team filter)",
-    "slaStatus = authoritative TicketOps isSlaBreached per ticket (200 breached / 87 on track; carried from v21 - no state change in window)",
-    "Outlook context non-blocking enrichment (partial this cycle: shared mailbox 403; 0 new delegated hits 01:00:41Z->10:13Z - 10 eligible-ticket threads carried forward unchanged); overlapping thread dedup by conversation (one UFN ticket = one thread); 5 duplicate threads removed total (same 5 pairs: kept 69946 dropped 69943, kept 69942 dropped 69941, kept 69896 dropped 69893, kept 69892 dropped 69889, kept 69663 dropped 69661); Walmart/Boundless load-45872185 counted as one incident",
-    "Customer Health coverage = all customers visible in eligible tickets (roster/aliases supplemental only)",
+    "displayStatusName in {New, Pending} (excludes Reopen/Reopened, Closed, Resolved, Cancelled, Done) - 41 Reopen excluded this cycle",
+    "closeFlag NOT used as eligibility gate (19 live closeFlag=true tickets retained - incl. auto-close artifacts UFN-68733/UFN-68750, UFN-69797, UFN-69618, UFN-59720, UFN-43887; retained per rule)",
+    "exclude billing / UF Billing / storage / handling invoice items (22 audit ids re-verified present in raw base: storage/handling statements UFN-69710/69234/67930/66757/59971/65196/61451/62682/60573/54721/48436/45559/43725/41484, //BILLING invoice threads UFN-69597/55641/53491/40670/33719, freight-charge claims UFN-67097/64031/61390; operational keepers retained: UFN-60009 BOL, UFN-68749 storage-SQFT request, UFN-69818/UFN-70016 open-RN ops digests, UFN-69231/UFN-63762/UFN-63959 invoice-dispute ops, UFN-69811 claim 18050 and Boundless load incident kept as operational/escalation)",
+    "UFN-prefix filter (department UNIS Fulfillment - Northampton; dept is UFN-scoped, no team filter)",
+    "slaStatus = authoritative TicketOps isSlaBreached per ticket (200 Breached / 111 On Track; continuing rows carried - no state change detected in window; 24 new rows On Track from live pull)",
+    "Outlook context non-blocking enrichment (partial this cycle: shared mailbox 403; 10 eligible-ticket threads carried 3.2% of 311; Boundless Walmart load-45872185 refreshed 17:30Z one incident; AMI/Roar UFN-68616 context excluded); overlapping thread dedup by conversation; 9 duplicate threads removed (5 v22 pairs re-verified + 4 new twins: kept 70010 dropped 70009, kept 70002 dropped 70001, kept 69987 dropped 69986, kept 70008 dropped 70005)",
+    "Customer Health coverage = all customers visible in eligible tickets (55; roster/aliases supplemental only)",
     "Action buckets by ageHours: Immediate <24h, Short-Term 24-72h, Medium-Term 72-168h, Watch >168h",
     "Customer Health tier rule (deterministic): Critical = eligible-ticket escalation OR (breached>0 AND (tickets>=3 OR oldestBreachedAgeDays>=14)); Warning = other breached OR tickets>=4 w/o breach; Healthy = otherwise"
   ],
@@ -22,50 +22,56 @@
     {
       "name": "TicketOps",
       "endpoint": "POST /v1/iam/tickets/page",
-      "note": "input{departmentIds:[323826714354839552], displayStatusSystemStatus:[10]}; UFN- prefix (client-side). Pull reference 2026-09-07 ~06:20 ET (10:20Z): server total 352 open UFN (+0 vs v21 352); newest open ticket UFN-69967 created 09/06/2026 20:51:44Z (== v21 max) -> 0 arrivals / 0 removals since v21 anchor 01:00:41Z; display-status distribution identical to v21 (241 New / 73 Pending / 38 Reopen = 352); eligible 287 after audit (218 New / 69 Pending)."
+      "note": "POST /v1/iam/tickets/page - input{departmentIds:[323826714354839552], displayStatusSystemStatus:[10], displayStatusIds:[11,6]}; UFN-scoped department. Pull 2026-09-07 ~23:37Z (19:37 ET): server total open (system) 383 = New 269 + Pending 73 + Reopen 41; eligible base 342 (New+Pending) = v22 set (287) still fully present (0 removals) + 55 base additions; after audits 311 eligible = 242 New / 69 Pending (+24 net). Ages anchored 2026-09-07T23:38:00Z (+13 whole hours from v22 anchor 10:20:00Z); oldest UFN-33604 4473h/186d."
     },
     {
       "name": "Outlook",
-      "note": "Microsoft Graph via delegated CS context (nicole.weber@unisco.com; shared mailbox nht.cs@unisco.com read DENIED 403 ErrorAccessDenied), Northampton/Cesanek CS mailbox, window 2026-09-07 01:00:41Z (09-06 21:00 ET) .. 10:13Z (06:13 ET) (non-blocking): 0 new NHT/Cesanek messages (Teams @everyone digest without ticket mapping not counted); 10 carried-forward eligible-ticket threads unchanged (3.5%); watermark advanced to 2026-09-07T10:13:00Z (06:13 ET)."
+      "note": "Microsoft Graph via delegated CS context (nicole.weber@unisco.com; shared mailbox nht.cs@unisco.com read DENIED 403 ErrorAccessDenied), Northampton/Cesanek CS mailbox, window 2026-09-07 10:13Z .. 23:29Z (non-blocking): 6 messages / 4 unique conversations - Boundless Walmart load-45872185 refreshed (17:30Z, same incident, 1 eligible incident), AMI/Roar SO1393032/DN-2117711 context (UFN-68616 outside eligible set -> excluded-context), 2 Tweetie 'Impact[ing] Billing' digests w/o UFN mapping not counted; 10 carried-forward eligible-ticket threads unchanged (3.2% of 311); watermark advanced to 2026-09-07T23:29:00Z (19:29 ET)."
     }
   ],
   "dashboardState": {
-    "totalRaw": 352,
-    "reopenExcluded": 38,
+    "totalRaw": 383,
+    "reopenExcluded": 41,
     "billingExcluded": 22,
-    "duplicatesRemoved": 5,
-    "totalEligible": 287,
+    "duplicatesRemoved": 9,
+    "totalEligible": 311,
     "closeFlagTrueRetained": 19,
     "byStatus": {
-      "New": 218,
+      "New": 242,
       "Pending": 69,
       "Open": 0
     },
     "byPriority": {
-      "Medium": 287
+      "Medium": 311
     },
     "customerHealth": {
-      "totalCustomers": 53,
+      "totalCustomers": 55,
       "tiers": {
-        "Critical": 36,
-        "Warning": 6,
-        "Healthy": 11
+        "Critical": 37,
+        "Warning": 10,
+        "Healthy": 8
       },
       "customers": {
         "ATERIAN INC": {
-          "tickets": 2,
+          "tickets": 3,
           "breached": 1,
-          "oldestBreachedAgeDays": 178,
+          "oldestBreachedAgeDays": 179,
           "tier": "Critical"
         },
         "AVIRON INTERACTIVE INC": {
-          "tickets": 3,
+          "tickets": 4,
           "breached": 1,
-          "oldestBreachedAgeDays": 20,
+          "oldestBreachedAgeDays": 21,
           "tier": "Critical"
         },
+        "Autoempick": {
+          "tickets": 3,
+          "breached": 0,
+          "oldestBreachedAgeDays": 0,
+          "tier": "Healthy"
+        },
         "BOUNDLESS EC US LLC": {
-          "tickets": 4,
+          "tickets": 6,
           "breached": 0,
           "oldestBreachedAgeDays": 0,
           "tier": "Critical"
@@ -73,25 +79,25 @@
         "CANVAS 340 LLC": {
           "tickets": 6,
           "breached": 5,
-          "oldestBreachedAgeDays": 55,
+          "oldestBreachedAgeDays": 56,
           "tier": "Critical"
         },
         "CKNAPP SALES INC": {
           "tickets": 6,
           "breached": 6,
-          "oldestBreachedAgeDays": 16,
+          "oldestBreachedAgeDays": 17,
           "tier": "Critical"
         },
         "COLAVITA USA, LLC": {
           "tickets": 4,
           "breached": 1,
-          "oldestBreachedAgeDays": 6,
+          "oldestBreachedAgeDays": 7,
           "tier": "Critical"
         },
         "COOLERSBYU, LLC.": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 132,
+          "oldestBreachedAgeDays": 133,
           "tier": "Critical"
         },
         "DAYDREAM NUTRITION INC.": {
@@ -103,7 +109,7 @@
         "DEEBEE'S ORGANICS INC": {
           "tickets": 2,
           "breached": 2,
-          "oldestBreachedAgeDays": 16,
+          "oldestBreachedAgeDays": 17,
           "tier": "Critical"
         },
         "DELMAR INTERNATIONAL INC": {
@@ -115,19 +121,25 @@
         "DUPRAY USA LLC": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 5,
+          "oldestBreachedAgeDays": 6,
           "tier": "Warning"
         },
         "EMS MIND READER LLC": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 23,
+          "oldestBreachedAgeDays": 24,
           "tier": "Critical"
+        },
+        "ETCC Reg4 Scheduling": {
+          "tickets": 1,
+          "breached": 0,
+          "oldestBreachedAgeDays": 0,
+          "tier": "Healthy"
         },
         "Erica Stiles": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 5,
+          "oldestBreachedAgeDays": 6,
           "tier": "Warning"
         },
         "FXF-DCN": {
@@ -139,47 +151,47 @@
         "GOLDEN BULL MARKETING": {
           "tickets": 3,
           "breached": 3,
-          "oldestBreachedAgeDays": 69,
+          "oldestBreachedAgeDays": 70,
           "tier": "Critical"
         },
         "HINT INC.": {
           "tickets": 2,
           "breached": 1,
-          "oldestBreachedAgeDays": 10,
+          "oldestBreachedAgeDays": 11,
           "tier": "Warning"
         },
         "HISENSE USA CORPORATION": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 33,
+          "oldestBreachedAgeDays": 34,
           "tier": "Critical"
         },
         "KARAKA, LLC": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 12,
+          "oldestBreachedAgeDays": 13,
           "tier": "Warning"
         },
         "LASSONDE PAPPAS AND COMPANY, INC.": {
-          "tickets": 52,
+          "tickets": 53,
           "breached": 50,
-          "oldestBreachedAgeDays": 66,
+          "oldestBreachedAgeDays": 67,
           "tier": "Critical"
         },
         "LIFEPRO FITNESS LLC": {
           "tickets": 4,
           "breached": 2,
-          "oldestBreachedAgeDays": 60,
+          "oldestBreachedAgeDays": 61,
           "tier": "Critical"
         },
         "MAIZLY INC.": {
-          "tickets": 2,
+          "tickets": 3,
           "breached": 0,
           "oldestBreachedAgeDays": 0,
           "tier": "Healthy"
         },
         "MODERN INFUSIONS LLC": {
-          "tickets": 5,
+          "tickets": 7,
           "breached": 0,
           "oldestBreachedAgeDays": 0,
           "tier": "Warning"
@@ -187,11 +199,11 @@
         "Midea America Corp": {
           "tickets": 10,
           "breached": 10,
-          "oldestBreachedAgeDays": 37,
+          "oldestBreachedAgeDays": 38,
           "tier": "Critical"
         },
         "NAL CONFECTIONARY, LLC": {
-          "tickets": 1,
+          "tickets": 2,
           "breached": 0,
           "oldestBreachedAgeDays": 0,
           "tier": "Healthy"
@@ -199,31 +211,31 @@
         "NIAGARA BOTTLING LLC": {
           "tickets": 15,
           "breached": 13,
-          "oldestBreachedAgeDays": 163,
+          "oldestBreachedAgeDays": 164,
           "tier": "Critical"
         },
         "NIAGARA BOTTLING LLC - RESIN": {
           "tickets": 4,
           "breached": 4,
-          "oldestBreachedAgeDays": 9,
+          "oldestBreachedAgeDays": 10,
           "tier": "Critical"
         },
         "NOURISON": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 13,
-          "tier": "Warning"
+          "oldestBreachedAgeDays": 14,
+          "tier": "Critical"
         },
         "Natural Rapport (Q & C Products LLC)": {
           "tickets": 4,
           "breached": 4,
-          "oldestBreachedAgeDays": 48,
+          "oldestBreachedAgeDays": 49,
           "tier": "Critical"
         },
         "PENNPAK SOLUTIONS, INC.": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 27,
+          "oldestBreachedAgeDays": 28,
           "tier": "Critical"
         },
         "PRIME TIME PACKAGING LTD": {
@@ -235,49 +247,49 @@
         "RECESS": {
           "tickets": 3,
           "breached": 2,
-          "oldestBreachedAgeDays": 125,
+          "oldestBreachedAgeDays": 126,
           "tier": "Critical"
         },
         "RECOVERY SPORTS": {
-          "tickets": 3,
+          "tickets": 4,
           "breached": 0,
           "oldestBreachedAgeDays": 0,
-          "tier": "Healthy"
+          "tier": "Warning"
         },
         "RISE BREWING": {
-          "tickets": 3,
+          "tickets": 4,
           "breached": 0,
           "oldestBreachedAgeDays": 0,
-          "tier": "Healthy"
+          "tier": "Warning"
         },
         "RITUAL BEVERAGE COMPANY": {
           "tickets": 9,
           "breached": 5,
-          "oldestBreachedAgeDays": 146,
+          "oldestBreachedAgeDays": 147,
           "tier": "Critical"
         },
         "ROAR BEVERAGES INC": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 128,
+          "oldestBreachedAgeDays": 129,
           "tier": "Critical"
         },
         "ROYALTY DISTRIBUTION": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 20,
+          "oldestBreachedAgeDays": 21,
           "tier": "Critical"
         },
         "SHEEX, INC.": {
           "tickets": 5,
           "breached": 5,
-          "oldestBreachedAgeDays": 17,
+          "oldestBreachedAgeDays": 18,
           "tier": "Critical"
         },
         "SMEG USA INC": {
           "tickets": 26,
           "breached": 16,
-          "oldestBreachedAgeDays": 177,
+          "oldestBreachedAgeDays": 178,
           "tier": "Critical"
         },
         "SPLENDOR WATER LLC": {
@@ -289,65 +301,65 @@
         "SUMA BRANDS FUNDING I, LLC": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 67,
+          "oldestBreachedAgeDays": 68,
           "tier": "Critical"
         },
         "TCL NORTH AMERICA": {
-          "tickets": 11,
+          "tickets": 12,
           "breached": 1,
-          "oldestBreachedAgeDays": 9,
+          "oldestBreachedAgeDays": 10,
           "tier": "Critical"
         },
         "THE ANDERSONS, INC.": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 60,
+          "oldestBreachedAgeDays": 61,
           "tier": "Critical"
         },
         "THE LUCKY OX LLC": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 153,
+          "oldestBreachedAgeDays": 154,
           "tier": "Critical"
         },
         "Turtle Beach": {
           "tickets": 21,
           "breached": 21,
-          "oldestBreachedAgeDays": 185,
+          "oldestBreachedAgeDays": 186,
           "tier": "Critical"
         },
         "UNIS Internal": {
-          "tickets": 10,
+          "tickets": 13,
           "breached": 1,
-          "oldestBreachedAgeDays": 66,
+          "oldestBreachedAgeDays": 67,
           "tier": "Critical"
         },
         "UPTIME ENERGY": {
-          "tickets": 3,
+          "tickets": 4,
           "breached": 0,
           "oldestBreachedAgeDays": 0,
-          "tier": "Healthy"
+          "tier": "Warning"
         },
         "VITA COCO DTC": {
-          "tickets": 3,
+          "tickets": 4,
           "breached": 0,
           "oldestBreachedAgeDays": 0,
-          "tier": "Healthy"
+          "tier": "Warning"
         },
         "WATER PLUS": {
-          "tickets": 3,
+          "tickets": 4,
           "breached": 0,
           "oldestBreachedAgeDays": 0,
-          "tier": "Healthy"
+          "tier": "Warning"
         },
         "WYNK BEVERAGE - Reverse": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 169,
+          "oldestBreachedAgeDays": 170,
           "tier": "Critical"
         },
         "Wynk": {
-          "tickets": 1,
+          "tickets": 2,
           "breached": 0,
           "oldestBreachedAgeDays": 0,
           "tier": "Healthy"
@@ -355,13 +367,13 @@
         "Y,IWO LLC": {
           "tickets": 2,
           "breached": 2,
-          "oldestBreachedAgeDays": 58,
+          "oldestBreachedAgeDays": 59,
           "tier": "Critical"
         },
         "ZEN BEVERAGE": {
-          "tickets": 4,
+          "tickets": 5,
           "breached": 1,
-          "oldestBreachedAgeDays": 185,
+          "oldestBreachedAgeDays": 186,
           "tier": "Critical"
         },
         "ZEN BEVERAGE LLC": {
@@ -379,8 +391,8 @@
         "subject": "Pending/Overdue Tickets",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 185,
-        "ageHours": 4460,
+        "ageDays": 186,
+        "ageHours": 4473,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -390,8 +402,8 @@
         "subject": "12x9x12 Boxes Needed",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 185,
-        "ageHours": 4453,
+        "ageDays": 186,
+        "ageHours": 4466,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -401,8 +413,8 @@
         "subject": "Appointment Request PO DN-1467998 RN-23177 ATERIAN",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 178,
-        "ageHours": 4285,
+        "ageDays": 179,
+        "ageHours": 4298,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -412,8 +424,8 @@
         "subject": "Commit Block Order - DN-1467983",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 177,
-        "ageHours": 4265,
+        "ageDays": 178,
+        "ageHours": 4278,
         "slaStatus": "Breached",
         "assigned": "Sittie Jhaila Sirad"
       },
@@ -423,8 +435,8 @@
         "subject": "welcome, spring",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 169,
-        "ageHours": 4075,
+        "ageDays": 170,
+        "ageHours": 4088,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -434,8 +446,8 @@
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 165,
-        "ageHours": 3980,
+        "ageDays": 166,
+        "ageHours": 3993,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -445,8 +457,8 @@
         "subject": "Reminder following up!",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 164,
-        "ageHours": 3953,
+        "ageDays": 165,
+        "ageHours": 3966,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -456,8 +468,8 @@
         "subject": "NIAGARA//JEFF-0327-SRICHAKRA//JEFFERSONVILLE IN",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 163,
-        "ageHours": 3928,
+        "ageDays": 164,
+        "ageHours": 3941,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -467,8 +479,8 @@
         "subject": "Re: QUANTIX SCHEDULE - 3/28 & 3/30",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 160,
-        "ageHours": 3860,
+        "ageDays": 161,
+        "ageHours": 3873,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -478,8 +490,8 @@
         "subject": "NIAGARA/PLAINFIELD/DUYTAN/ 4.6-4.12",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 159,
-        "ageHours": 3829,
+        "ageDays": 160,
+        "ageHours": 3842,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -489,8 +501,8 @@
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 158,
-        "ageHours": 3812,
+        "ageDays": 159,
+        "ageHours": 3825,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -500,8 +512,8 @@
         "subject": "Schedule Appointment-Pickup(1) - BOL# 33604304",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 158,
-        "ageHours": 3807,
+        "ageDays": 159,
+        "ageHours": 3820,
         "slaStatus": "Breached",
         "assigned": "Sittie Jhaila Sirad"
       },
@@ -512,7 +524,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 154,
-        "ageHours": 3704,
+        "ageHours": 3717,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -522,8 +534,8 @@
         "subject": "FW: Santa LAST EOD 1/9",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 153,
-        "ageHours": 3690,
+        "ageDays": 154,
+        "ageHours": 3703,
         "slaStatus": "Breached",
         "assigned": "Pedro Marte"
       },
@@ -533,8 +545,8 @@
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 151,
-        "ageHours": 3644,
+        "ageDays": 152,
+        "ageHours": 3657,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -544,8 +556,8 @@
         "subject": "RE: NIAGARA/PLAINFIELD/DUYTAN/ 4.12-4.19",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 151,
-        "ageHours": 3640,
+        "ageDays": 152,
+        "ageHours": 3653,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -556,7 +568,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 147,
-        "ageHours": 3536,
+        "ageHours": 3549,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -566,8 +578,8 @@
         "subject": "NH-RIT041026 Stickering",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 146,
-        "ageHours": 3517,
+        "ageDays": 147,
+        "ageHours": 3530,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -577,8 +589,8 @@
         "subject": "Fw: Report RNDC_PO_LIV_166094.pdf processed",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 145,
-        "ageHours": 3494,
+        "ageDays": 146,
+        "ageHours": 3507,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -588,8 +600,8 @@
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 144,
-        "ageHours": 3476,
+        "ageDays": 145,
+        "ageHours": 3489,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -600,7 +612,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 142,
-        "ageHours": 3418,
+        "ageHours": 3431,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -611,7 +623,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 140,
-        "ageHours": 3368,
+        "ageHours": 3381,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -621,8 +633,8 @@
         "subject": "Re: NIAGARA/UNIS/QUANTIX BULK TRUCKS/ 4.13-4.19",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 139,
-        "ageHours": 3355,
+        "ageDays": 140,
+        "ageHours": 3368,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -632,8 +644,8 @@
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 137,
-        "ageHours": 3308,
+        "ageDays": 138,
+        "ageHours": 3321,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -643,8 +655,8 @@
         "subject": "PO: 1057042882",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 135,
-        "ageHours": 3258,
+        "ageDays": 136,
+        "ageHours": 3271,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -654,8 +666,8 @@
         "subject": "DN-1494656 PU# 144588546",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 135,
-        "ageHours": 3256,
+        "ageDays": 136,
+        "ageHours": 3269,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -665,8 +677,8 @@
         "subject": "DN-1549970 BOL Request",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 132,
-        "ageHours": 3190,
+        "ageDays": 133,
+        "ageHours": 3203,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -676,8 +688,8 @@
         "subject": "COOLERS RETURNS",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 132,
-        "ageHours": 3186,
+        "ageDays": 133,
+        "ageHours": 3199,
         "slaStatus": "Breached",
         "assigned": "Wilmer Acedo"
       },
@@ -687,8 +699,8 @@
         "subject": "AMAZON LTL PICK UPS FOR THIS WEEK!!!! URGENT.",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 132,
-        "ageHours": 3184,
+        "ageDays": 133,
+        "ageHours": 3197,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -698,8 +710,8 @@
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 130,
-        "ageHours": 3140,
+        "ageDays": 131,
+        "ageHours": 3153,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -709,8 +721,8 @@
         "subject": "booking note attached for pick up for Pitt and Co.",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 128,
-        "ageHours": 3091,
+        "ageDays": 129,
+        "ageHours": 3104,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -721,7 +733,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 126,
-        "ageHours": 3032,
+        "ageHours": 3045,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -731,8 +743,8 @@
         "subject": "Recess order # 411300 / DN # 2015089",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 125,
-        "ageHours": 3021,
+        "ageDays": 126,
+        "ageHours": 3034,
         "slaStatus": "Breached",
         "assigned": "Austin Steigerwalt"
       },
@@ -742,8 +754,8 @@
         "subject": "STATUS UPDATE | WHLU5826830",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 125,
-        "ageHours": 3021,
+        "ageDays": 126,
+        "ageHours": 3034,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -754,7 +766,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 124,
-        "ageHours": 2983,
+        "ageHours": 2996,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -764,8 +776,8 @@
         "subject": "RE: NIAGARA BOTTLIN_YMJAE490405029",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 123,
-        "ageHours": 2974,
+        "ageDays": 124,
+        "ageHours": 2987,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -775,8 +787,8 @@
         "subject": "RE: Power Outage Shipment Update",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 123,
-        "ageHours": 2974,
+        "ageDays": 124,
+        "ageHours": 2987,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -786,8 +798,8 @@
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 123,
-        "ageHours": 2972,
+        "ageDays": 124,
+        "ageHours": 2985,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -798,7 +810,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 121,
-        "ageHours": 2913,
+        "ageHours": 2926,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -808,8 +820,8 @@
         "subject": "RE: NIAGARA BOTTLIN_EGLV081600022291",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 118,
-        "ageHours": 2854,
+        "ageDays": 119,
+        "ageHours": 2867,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -819,8 +831,8 @@
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 116,
-        "ageHours": 2804,
+        "ageDays": 117,
+        "ageHours": 2817,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -830,8 +842,8 @@
         "subject": "DELIVERY REQUEST | JXLU4475318",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 111,
-        "ageHours": 2684,
+        "ageDays": 112,
+        "ageHours": 2697,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -841,8 +853,8 @@
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 109,
-        "ageHours": 2636,
+        "ageDays": 110,
+        "ageHours": 2649,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -852,8 +864,8 @@
         "subject": "Re: [SHIPPED] Cesanek Outbound PTP - IF46810 Shipment",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 109,
-        "ageHours": 2632,
+        "ageDays": 110,
+        "ageHours": 2645,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -863,8 +875,8 @@
         "subject": "Re: [SHIPPED] Cesanek Outbound PTP - IF46678 Shipment",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 109,
-        "ageHours": 2629,
+        "ageDays": 110,
+        "ageHours": 2642,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -874,8 +886,8 @@
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 102,
-        "ageHours": 2468,
+        "ageDays": 103,
+        "ageHours": 2481,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -885,8 +897,8 @@
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 95,
-        "ageHours": 2300,
+        "ageDays": 96,
+        "ageHours": 2313,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -896,8 +908,8 @@
         "subject": "Re: [SHIPPED] Cesanek Outbound PTP - IF47010 Shipment",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 95,
-        "ageHours": 2294,
+        "ageDays": 96,
+        "ageHours": 2307,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -907,8 +919,8 @@
         "subject": "DELIVERY REQUEST",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 95,
-        "ageHours": 2294,
+        "ageDays": 96,
+        "ageHours": 2307,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -918,8 +930,8 @@
         "subject": "Niagara Update: Resin Name Removal from Delivery Orders Effective June 4",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 94,
-        "ageHours": 2269,
+        "ageDays": 95,
+        "ageHours": 2282,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -929,8 +941,8 @@
         "subject": "T-357 UNIS PA to Lakeland FL - Resin-low pickup 6/5",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 94,
-        "ageHours": 2268,
+        "ageDays": 95,
+        "ageHours": 2281,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -940,8 +952,8 @@
         "subject": "D/O: NIAGARA BOTTLIN_MEDURQ612265_023549",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 93,
-        "ageHours": 2249,
+        "ageDays": 94,
+        "ageHours": 2262,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -951,8 +963,8 @@
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 88,
-        "ageHours": 2132,
+        "ageDays": 89,
+        "ageHours": 2145,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -963,7 +975,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 83,
-        "ageHours": 2001,
+        "ageHours": 2014,
         "slaStatus": "Breached",
         "assigned": "Shailene Baez"
       },
@@ -973,8 +985,8 @@
         "subject": "EMPTY CONFIRMATION z| WHSU5211044",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 82,
-        "ageHours": 1989,
+        "ageDays": 83,
+        "ageHours": 2002,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -984,8 +996,8 @@
         "subject": "Still on Dock PO# 4511617678",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 82,
-        "ageHours": 1983,
+        "ageDays": 83,
+        "ageHours": 1996,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -995,8 +1007,8 @@
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 81,
-        "ageHours": 1964,
+        "ageDays": 82,
+        "ageHours": 1977,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1006,8 +1018,8 @@
         "subject": "DN-1588421 Little Red Hen - PO LRH-050626",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 76,
-        "ageHours": 1844,
+        "ageDays": 77,
+        "ageHours": 1857,
         "slaStatus": "Breached",
         "assigned": "Erin Cambra"
       },
@@ -1017,8 +1029,8 @@
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 74,
-        "ageHours": 1796,
+        "ageDays": 75,
+        "ageHours": 1809,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1028,8 +1040,8 @@
         "subject": "RE: Return authorization notification for Order 112-4505161-2497057",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 69,
-        "ageHours": 1673,
+        "ageDays": 70,
+        "ageHours": 1686,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1039,8 +1051,8 @@
         "subject": "DN-2038293 & DN-1666679- Misship",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 69,
-        "ageHours": 1670,
+        "ageDays": 70,
+        "ageHours": 1683,
         "slaStatus": "Breached",
         "assigned": "Erin Cambra"
       },
@@ -1050,8 +1062,8 @@
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 67,
-        "ageHours": 1628,
+        "ageDays": 68,
+        "ageHours": 1641,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1061,8 +1073,8 @@
         "subject": "Unis Nh SPD 7-1 Mira handicrafts",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 67,
-        "ageHours": 1625,
+        "ageDays": 68,
+        "ageHours": 1638,
         "slaStatus": "Breached",
         "assigned": "Kimberly Bautista"
       },
@@ -1072,8 +1084,8 @@
         "subject": "RE: Return authorization notification for Order 112-4505161-2497057",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 67,
-        "ageHours": 1622,
+        "ageDays": 68,
+        "ageHours": 1635,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1083,8 +1095,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 66,
-        "ageHours": 1602,
+        "ageDays": 67,
+        "ageHours": 1615,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1094,8 +1106,8 @@
         "subject": "BOL Request -FW: Amazon Invoice #403019398",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 66,
-        "ageHours": 1598,
+        "ageDays": 67,
+        "ageHours": 1611,
         "slaStatus": "Breached",
         "assigned": "Erin Cambra"
       },
@@ -1105,8 +1117,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 65,
-        "ageHours": 1578,
+        "ageDays": 66,
+        "ageHours": 1591,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1116,8 +1128,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 62,
-        "ageHours": 1506,
+        "ageDays": 63,
+        "ageHours": 1519,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1127,8 +1139,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 61,
-        "ageHours": 1482,
+        "ageDays": 62,
+        "ageHours": 1495,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1138,8 +1150,8 @@
         "subject": "RE: [EXTERNAL] DN-1608911 Question for Tracking",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 60,
-        "ageHours": 1460,
+        "ageDays": 61,
+        "ageHours": 1473,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1149,8 +1161,8 @@
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 60,
-        "ageHours": 1460,
+        "ageDays": 61,
+        "ageHours": 1473,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1160,8 +1172,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 60,
-        "ageHours": 1458,
+        "ageDays": 61,
+        "ageHours": 1471,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1171,8 +1183,8 @@
         "subject": "FW: RePack SKUs",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 60,
-        "ageHours": 1455,
+        "ageDays": 61,
+        "ageHours": 1468,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1182,8 +1194,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 59,
-        "ageHours": 1434,
+        "ageDays": 60,
+        "ageHours": 1447,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1193,8 +1205,8 @@
         "subject": "Orders #Y,IWO-21034 & #Y,IWO-21129",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 58,
-        "ageHours": 1412,
+        "ageDays": 59,
+        "ageHours": 1425,
         "slaStatus": "Breached",
         "assigned": "Kent Joseph Lim"
       },
@@ -1204,8 +1216,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 58,
-        "ageHours": 1410,
+        "ageDays": 59,
+        "ageHours": 1423,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1215,8 +1227,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 55,
-        "ageHours": 1338,
+        "ageDays": 56,
+        "ageHours": 1351,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1226,8 +1238,8 @@
         "subject": "RE: Canvas340 Project",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 55,
-        "ageHours": 1338,
+        "ageDays": 56,
+        "ageHours": 1351,
         "slaStatus": "Breached",
         "assigned": "Maria Aponte"
       },
@@ -1237,8 +1249,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 54,
-        "ageHours": 1314,
+        "ageDays": 55,
+        "ageHours": 1327,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1248,8 +1260,8 @@
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 53,
-        "ageHours": 1292,
+        "ageDays": 54,
+        "ageHours": 1305,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1259,8 +1271,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 53,
-        "ageHours": 1290,
+        "ageDays": 54,
+        "ageHours": 1303,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1270,8 +1282,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 52,
-        "ageHours": 1266,
+        "ageDays": 53,
+        "ageHours": 1279,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1281,8 +1293,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 51,
-        "ageHours": 1242,
+        "ageDays": 52,
+        "ageHours": 1255,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1292,8 +1304,8 @@
         "subject": "Shipping Questions",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 48,
-        "ageHours": 1172,
+        "ageDays": 49,
+        "ageHours": 1185,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1303,8 +1315,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 48,
-        "ageHours": 1170,
+        "ageDays": 49,
+        "ageHours": 1183,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1314,8 +1326,8 @@
         "subject": "PALLET DIMS REQUEST | ZORO.COM",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 48,
-        "ageHours": 1169,
+        "ageDays": 49,
+        "ageHours": 1182,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1325,8 +1337,8 @@
         "subject": "Damaged Unit",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 48,
-        "ageHours": 1168,
+        "ageDays": 49,
+        "ageHours": 1181,
         "slaStatus": "Breached",
         "assigned": "Erin Cambra"
       },
@@ -1336,8 +1348,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 47,
-        "ageHours": 1146,
+        "ageDays": 48,
+        "ageHours": 1159,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1347,8 +1359,8 @@
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 46,
-        "ageHours": 1124,
+        "ageDays": 47,
+        "ageHours": 1137,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1358,8 +1370,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 46,
-        "ageHours": 1122,
+        "ageDays": 47,
+        "ageHours": 1135,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1369,8 +1381,8 @@
         "subject": "Shipped 7/21, not scanned by Fedex",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 45,
-        "ageHours": 1099,
+        "ageDays": 46,
+        "ageHours": 1112,
         "slaStatus": "Breached",
         "assigned": "Erin Cambra"
       },
@@ -1380,8 +1392,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 45,
-        "ageHours": 1098,
+        "ageDays": 46,
+        "ageHours": 1111,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1391,8 +1403,8 @@
         "subject": "July Business Partner Update",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 45,
-        "ageHours": 1097,
+        "ageDays": 46,
+        "ageHours": 1110,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1402,8 +1414,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 44,
-        "ageHours": 1074,
+        "ageDays": 45,
+        "ageHours": 1087,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1413,8 +1425,8 @@
         "subject": "FW: Delivery / Old Dominion # 7125858550",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 41,
-        "ageHours": 1005,
+        "ageDays": 42,
+        "ageHours": 1018,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1424,8 +1436,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 41,
-        "ageHours": 1002,
+        "ageDays": 42,
+        "ageHours": 1015,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1435,8 +1447,8 @@
         "subject": "FW: Issues with Smeg PO 11053 - Invoice 2618037133",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 41,
-        "ageHours": 998,
+        "ageDays": 42,
+        "ageHours": 1011,
         "slaStatus": "Breached",
         "assigned": "Erin Cambra"
       },
@@ -1446,8 +1458,8 @@
         "subject": "Re: DN-2058591 Canvas340 Summer Bundles to Kit on Demand",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 41,
-        "ageHours": 995,
+        "ageDays": 42,
+        "ageHours": 1008,
         "slaStatus": "Breached",
         "assigned": "Austin Steigerwalt"
       },
@@ -1457,8 +1469,8 @@
         "subject": "Order #Y,IWO-21147",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 40,
-        "ageHours": 979,
+        "ageDays": 41,
+        "ageHours": 992,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1468,8 +1480,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 40,
-        "ageHours": 978,
+        "ageDays": 41,
+        "ageHours": 991,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1479,8 +1491,8 @@
         "subject": "RE: PRO 7126341341 // BILLING",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 40,
-        "ageHours": 976,
+        "ageDays": 41,
+        "ageHours": 989,
         "slaStatus": "Breached",
         "assigned": "Erin Cambra"
       },
@@ -1490,8 +1502,8 @@
         "subject": "Overdue - DN-2081480 / PO CS670307995",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 39,
-        "ageHours": 956,
+        "ageDays": 40,
+        "ageHours": 969,
         "slaStatus": "Breached",
         "assigned": "Erin Cambra"
       },
@@ -1501,8 +1513,8 @@
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 39,
-        "ageHours": 956,
+        "ageDays": 40,
+        "ageHours": 969,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1512,8 +1524,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 39,
-        "ageHours": 954,
+        "ageDays": 40,
+        "ageHours": 967,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1523,8 +1535,8 @@
         "subject": "RN-19320 - delivery",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 39,
-        "ageHours": 954,
+        "ageDays": 40,
+        "ageHours": 967,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1534,8 +1546,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 38,
-        "ageHours": 930,
+        "ageDays": 39,
+        "ageHours": 943,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1545,8 +1557,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 37,
-        "ageHours": 906,
+        "ageDays": 38,
+        "ageHours": 919,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1556,8 +1568,8 @@
         "subject": "Re: Past Pickup report",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 37,
-        "ageHours": 901,
+        "ageDays": 38,
+        "ageHours": 914,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1568,7 +1580,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 37,
-        "ageHours": 896,
+        "ageHours": 909,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1578,8 +1590,8 @@
         "subject": "You spoke. We listened. Here's what's coming to the Vendor Training Hub!",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 34,
-        "ageHours": 836,
+        "ageDays": 35,
+        "ageHours": 849,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1589,8 +1601,8 @@
         "subject": "Transfers back to Bath",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 34,
-        "ageHours": 836,
+        "ageDays": 35,
+        "ageHours": 849,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1600,8 +1612,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 34,
-        "ageHours": 834,
+        "ageDays": 35,
+        "ageHours": 847,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1611,8 +1623,8 @@
         "subject": "Lowe's Vendor Today - August Edition",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 33,
-        "ageHours": 811,
+        "ageDays": 34,
+        "ageHours": 824,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1622,8 +1634,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 33,
-        "ageHours": 810,
+        "ageDays": 34,
+        "ageHours": 823,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1633,8 +1645,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 32,
-        "ageHours": 786,
+        "ageDays": 33,
+        "ageHours": 799,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1644,8 +1656,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 31,
-        "ageHours": 762,
+        "ageDays": 32,
+        "ageHours": 775,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1655,8 +1667,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 30,
-        "ageHours": 738,
+        "ageDays": 31,
+        "ageHours": 751,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1666,8 +1678,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 27,
-        "ageHours": 666,
+        "ageDays": 28,
+        "ageHours": 679,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1677,8 +1689,8 @@
         "subject": "pallets on hand",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 27,
-        "ageHours": 663,
+        "ageDays": 28,
+        "ageHours": 676,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1688,8 +1700,8 @@
         "subject": "RE: Item Master Updates Needed",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 26,
-        "ageHours": 645,
+        "ageDays": 27,
+        "ageHours": 658,
         "slaStatus": "Breached",
         "assigned": "nicole weber"
       },
@@ -1699,8 +1711,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 26,
-        "ageHours": 642,
+        "ageDays": 27,
+        "ageHours": 655,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1710,8 +1722,8 @@
         "subject": "FW: Wynk Short Shipped Items",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 26,
-        "ageHours": 642,
+        "ageDays": 27,
+        "ageHours": 655,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1721,8 +1733,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 25,
-        "ageHours": 618,
+        "ageDays": 26,
+        "ageHours": 631,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1732,8 +1744,8 @@
         "subject": "Weekly Stats",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 25,
-        "ageHours": 614,
+        "ageDays": 26,
+        "ageHours": 627,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1743,8 +1755,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 24,
-        "ageHours": 594,
+        "ageDays": 25,
+        "ageHours": 607,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1754,8 +1766,8 @@
         "subject": "CORRUGATE PROCUREMENT // Natural Rapport Onboarding",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 24,
-        "ageHours": 592,
+        "ageDays": 25,
+        "ageHours": 605,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1766,7 +1778,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 24,
-        "ageHours": 585,
+        "ageHours": 598,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1776,8 +1788,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 23,
-        "ageHours": 570,
+        "ageDays": 24,
+        "ageHours": 583,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1787,8 +1799,8 @@
         "subject": "Important Update: EU Packaging and Packaging Waste Regulation",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 23,
-        "ageHours": 567,
+        "ageDays": 24,
+        "ageHours": 580,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1798,8 +1810,8 @@
         "subject": "DN-1065383",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 20,
-        "ageHours": 499,
+        "ageDays": 21,
+        "ageHours": 512,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1809,8 +1821,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 20,
-        "ageHours": 498,
+        "ageDays": 21,
+        "ageHours": 511,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1820,8 +1832,8 @@
         "subject": "DN-2114744 - TO607",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 20,
-        "ageHours": 492,
+        "ageDays": 21,
+        "ageHours": 505,
         "slaStatus": "Breached",
         "assigned": "Youssef Zeitoon"
       },
@@ -1831,8 +1843,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 19,
-        "ageHours": 474,
+        "ageDays": 20,
+        "ageHours": 487,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1842,8 +1854,8 @@
         "subject": "Vendor Information Review",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 19,
-        "ageHours": 471,
+        "ageDays": 20,
+        "ageHours": 484,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1853,8 +1865,8 @@
         "subject": "RE: Vendor Information Review",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 19,
-        "ageHours": 470,
+        "ageDays": 20,
+        "ageHours": 483,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1864,8 +1876,8 @@
         "subject": "August Business Partner Update",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 18,
-        "ageHours": 452,
+        "ageDays": 19,
+        "ageHours": 465,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1875,8 +1887,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 18,
-        "ageHours": 450,
+        "ageDays": 19,
+        "ageHours": 463,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1886,8 +1898,8 @@
         "subject": "Canceled: Midea Call",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 18,
-        "ageHours": 449,
+        "ageDays": 19,
+        "ageHours": 462,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1897,8 +1909,8 @@
         "subject": "Re: PU APPT REQUEST-LD50361SH",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 17,
-        "ageHours": 428,
+        "ageDays": 18,
+        "ageHours": 441,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1908,8 +1920,8 @@
         "subject": "Amazon Transfer",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 17,
-        "ageHours": 427,
+        "ageDays": 18,
+        "ageHours": 440,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1919,8 +1931,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 17,
-        "ageHours": 426,
+        "ageDays": 18,
+        "ageHours": 439,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1930,8 +1942,8 @@
         "subject": "Address Change #227398 8324472111171",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 17,
-        "ageHours": 422,
+        "ageDays": 18,
+        "ageHours": 435,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1941,8 +1953,8 @@
         "subject": "(video) Target: Q2 Results",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 17,
-        "ageHours": 422,
+        "ageDays": 18,
+        "ageHours": 435,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1952,8 +1964,8 @@
         "subject": "amazon transfers",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 16,
-        "ageHours": 405,
+        "ageDays": 17,
+        "ageHours": 418,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1963,8 +1975,8 @@
         "subject": "RE: Account Manager Assignment Deebee's/Univera | Northampton",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 16,
-        "ageHours": 404,
+        "ageDays": 17,
+        "ageHours": 417,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1974,8 +1986,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 16,
-        "ageHours": 402,
+        "ageDays": 17,
+        "ageHours": 415,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1985,8 +1997,8 @@
         "subject": "Disposal Process and Quote",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 16,
-        "ageHours": 402,
+        "ageDays": 17,
+        "ageHours": 415,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -1996,8 +2008,8 @@
         "subject": "Pick Note: Sales Order #SO216016 | Bunzl New England",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 16,
-        "ageHours": 400,
+        "ageDays": 17,
+        "ageHours": 413,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2007,8 +2019,8 @@
         "subject": "UNIS PA Finial Moves Notes 8/21/2026",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 16,
-        "ageHours": 399,
+        "ageDays": 17,
+        "ageHours": 412,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2018,8 +2030,8 @@
         "subject": "UNIS3PL SKU/UPC item feed,backing code level, SENT to UNIS",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 13,
-        "ageHours": 332,
+        "ageDays": 14,
+        "ageHours": 345,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2029,8 +2041,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 13,
-        "ageHours": 330,
+        "ageDays": 14,
+        "ageHours": 343,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2040,8 +2052,8 @@
         "subject": "drop ship orders",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 13,
-        "ageHours": 327,
+        "ageDays": 14,
+        "ageHours": 340,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2051,8 +2063,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 12,
-        "ageHours": 306,
+        "ageDays": 13,
+        "ageHours": 319,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2062,8 +2074,8 @@
         "subject": "Re: [SHIPPED] Cesanek Outbound PTP - IF48757 Shipment",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 12,
-        "ageHours": 305,
+        "ageDays": 13,
+        "ageHours": 318,
         "slaStatus": "Breached",
         "assigned": "Kent Joseph Lim"
       },
@@ -2073,8 +2085,8 @@
         "subject": "Re: Important Update: Inbound Receiving Deadline - August 28",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 12,
-        "ageHours": 305,
+        "ageDays": 13,
+        "ageHours": 318,
         "slaStatus": "Breached",
         "assigned": "Leamsi Gem Mangodas"
       },
@@ -2084,8 +2096,8 @@
         "subject": "Day/Dream P/U Appt",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 12,
-        "ageHours": 304,
+        "ageDays": 13,
+        "ageHours": 317,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2095,8 +2107,8 @@
         "subject": "Backlog 8/25/26",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 12,
-        "ageHours": 304,
+        "ageDays": 13,
+        "ageHours": 317,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2106,8 +2118,8 @@
         "subject": "RE: Backlog 8/25/26",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 12,
-        "ageHours": 303,
+        "ageDays": 13,
+        "ageHours": 316,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2117,8 +2129,8 @@
         "subject": "Amazon transfer 8-25-26",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 12,
-        "ageHours": 301,
+        "ageDays": 13,
+        "ageHours": 314,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2128,8 +2140,8 @@
         "subject": "Vivo Damages/Returns",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 11,
-        "ageHours": 285,
+        "ageDays": 12,
+        "ageHours": 298,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2139,8 +2151,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 11,
-        "ageHours": 282,
+        "ageDays": 12,
+        "ageHours": 295,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2150,8 +2162,8 @@
         "subject": "Canceled: Midea Call",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 11,
-        "ageHours": 281,
+        "ageDays": 12,
+        "ageHours": 294,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2161,8 +2173,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 10,
-        "ageHours": 258,
+        "ageDays": 11,
+        "ageHours": 271,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2172,8 +2184,8 @@
         "subject": "Re: [SHIPPED] Cesanek Outbound PTP - IF48839 Shipment",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 10,
-        "ageHours": 256,
+        "ageDays": 11,
+        "ageHours": 269,
         "slaStatus": "Breached",
         "assigned": "Kent Joseph Lim"
       },
@@ -2183,8 +2195,8 @@
         "subject": "UNIS - HINT BEVERAGE - NORTHAMPTON, PA - WEEK OF 8/24/26-DISCREPANCIES",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 10,
-        "ageHours": 255,
+        "ageDays": 11,
+        "ageHours": 268,
         "slaStatus": "Breached",
         "assigned": "Timothy McHugh"
       },
@@ -2194,8 +2206,8 @@
         "subject": "FW: Document Processing Error NEBRASKA FURNITURE MART",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 10,
-        "ageHours": 255,
+        "ageDays": 11,
+        "ageHours": 268,
         "slaStatus": "Breached",
         "assigned": "Erin Cambra"
       },
@@ -2205,8 +2217,8 @@
         "subject": "Re: [SHIPPED] Cesanek Outbound PTP - IF48815 Shipment",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 9,
-        "ageHours": 236,
+        "ageDays": 10,
+        "ageHours": 249,
         "slaStatus": "Breached",
         "assigned": "Kent Joseph Lim"
       },
@@ -2216,8 +2228,8 @@
         "subject": "Re: ALN Coverage 8.17 - 10.2",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 9,
-        "ageHours": 235,
+        "ageDays": 10,
+        "ageHours": 248,
         "slaStatus": "Breached",
         "assigned": "Yang-Lhing Bague"
       },
@@ -2227,8 +2239,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 9,
-        "ageHours": 234,
+        "ageDays": 10,
+        "ageHours": 247,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2238,8 +2250,8 @@
         "subject": "DN-2117821 & DN-2121527 Damages",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 9,
-        "ageHours": 234,
+        "ageDays": 10,
+        "ageHours": 247,
         "slaStatus": "Breached",
         "assigned": "Timothy McHugh"
       },
@@ -2249,8 +2261,8 @@
         "subject": "Monthly TCL Ecommerce Storage SQFT Needed - August 2026",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 9,
-        "ageHours": 234,
+        "ageDays": 10,
+        "ageHours": 247,
         "slaStatus": "Breached",
         "assigned": "Erin Cambra"
       },
@@ -2260,8 +2272,8 @@
         "subject": "Re: HAZ coverage Week of 9.7",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 9,
-        "ageHours": 234,
+        "ageDays": 10,
+        "ageHours": 247,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2271,8 +2283,8 @@
         "subject": "ITEM# AGW-07 refill-SW & AGW-07 refill-FS",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 9,
-        "ageHours": 234,
+        "ageDays": 10,
+        "ageHours": 247,
         "slaStatus": "Breached",
         "assigned": "Youssef Zeitoon"
       },
@@ -2282,8 +2294,8 @@
         "subject": "URGENT Shipment Sent without Notification",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 9,
-        "ageHours": 230,
+        "ageDays": 10,
+        "ageHours": 243,
         "slaStatus": "Breached",
         "assigned": "Kent Claud Caballero"
       },
@@ -2293,8 +2305,8 @@
         "subject": "RESENT ORDERS...",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 9,
-        "ageHours": 229,
+        "ageDays": 10,
+        "ageHours": 242,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2304,8 +2316,8 @@
         "subject": "RE: Wynk packing materials",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 9,
-        "ageHours": 228,
+        "ageDays": 10,
+        "ageHours": 241,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2315,8 +2327,8 @@
         "subject": "RE: DN-2122929 - NEED UPDATE 8/31",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 8,
-        "ageHours": 211,
+        "ageDays": 9,
+        "ageHours": 224,
         "slaStatus": "Breached",
         "assigned": "Kent Claud Caballero"
       },
@@ -2326,8 +2338,8 @@
         "subject": "Requesting Pickup - PAU-GENESIS-PAS(1-10)",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 6,
-        "ageHours": 166,
+        "ageDays": 7,
+        "ageHours": 179,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2337,8 +2349,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 6,
-        "ageHours": 162,
+        "ageDays": 7,
+        "ageHours": 175,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2348,8 +2360,8 @@
         "subject": "COLAVITA WALMART - WEEK 8.31",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 6,
-        "ageHours": 161,
+        "ageDays": 7,
+        "ageHours": 174,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2360,7 +2372,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 6,
-        "ageHours": 153,
+        "ageHours": 166,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2371,7 +2383,7 @@
         "opsStatus": "Pending",
         "priority": "Medium",
         "ageDays": 6,
-        "ageHours": 153,
+        "ageHours": 166,
         "slaStatus": "Breached",
         "assigned": "Youssef Zeitoon"
       },
@@ -2381,8 +2393,8 @@
         "subject": "7126341408 SECOND REQUEST",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 5,
-        "ageHours": 139,
+        "ageDays": 6,
+        "ageHours": 152,
         "slaStatus": "Breached",
         "assigned": "nicole weber"
       },
@@ -2392,8 +2404,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 5,
-        "ageHours": 138,
+        "ageDays": 6,
+        "ageHours": 151,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2403,8 +2415,8 @@
         "subject": "Re: [SHIPPED] Cesanek Outbound PTP - IF48840 Shipment",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 5,
-        "ageHours": 138,
+        "ageDays": 6,
+        "ageHours": 151,
         "slaStatus": "Breached",
         "assigned": "Kent Joseph Lim"
       },
@@ -2414,8 +2426,8 @@
         "subject": "To Ship 9/1",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 5,
-        "ageHours": 138,
+        "ageDays": 6,
+        "ageHours": 151,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2425,8 +2437,8 @@
         "subject": "DN-2110794 / 4000200606",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 5,
-        "ageHours": 137,
+        "ageDays": 6,
+        "ageHours": 150,
         "slaStatus": "Breached",
         "assigned": "Yang-Lhing Bague"
       },
@@ -2436,8 +2448,8 @@
         "subject": "RE:[CASE 21836552091] Carrier Missed Pickup (Partnered Carrier)",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 5,
-        "ageHours": 134,
+        "ageDays": 6,
+        "ageHours": 147,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2447,8 +2459,8 @@
         "subject": "DESK-V000VCE",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 5,
-        "ageHours": 132,
+        "ageDays": 6,
+        "ageHours": 145,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2458,8 +2470,8 @@
         "subject": "RE: FBA pickup rescheduled for 9/2",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 5,
-        "ageHours": 132,
+        "ageDays": 6,
+        "ageHours": 145,
         "slaStatus": "Breached",
         "assigned": "Erin Cambra"
       },
@@ -2469,8 +2481,8 @@
         "subject": "Day/Dream drop ship orders update",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 4,
-        "ageHours": 118,
+        "ageDays": 5,
+        "ageHours": 131,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2480,8 +2492,8 @@
         "subject": "Vivo Damages/Returns",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 4,
-        "ageHours": 116,
+        "ageDays": 5,
+        "ageHours": 129,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2491,8 +2503,8 @@
         "subject": "New in the Vendor Training Hub: Meet AI Assistant",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 4,
-        "ageHours": 116,
+        "ageDays": 5,
+        "ageHours": 129,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2502,8 +2514,8 @@
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 4,
-        "ageHours": 116,
+        "ageDays": 5,
+        "ageHours": 129,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2513,8 +2525,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 4,
-        "ageHours": 114,
+        "ageDays": 5,
+        "ageHours": 127,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2524,8 +2536,8 @@
         "subject": "URGENT: Amazon 1P Operational Escalations FRD Non-Compliance (LIFEPRO)",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 4,
-        "ageHours": 114,
+        "ageDays": 5,
+        "ageHours": 127,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2535,8 +2547,8 @@
         "subject": "Thank you for submitting a new contact for CaseID: 21836552091",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 4,
-        "ageHours": 113,
+        "ageDays": 5,
+        "ageHours": 126,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2546,8 +2558,8 @@
         "subject": "RE:[CASE 21836552091] Carrier Missed Pickup (Partnered Carrier)",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 4,
-        "ageHours": 113,
+        "ageDays": 5,
+        "ageHours": 126,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2557,8 +2569,8 @@
         "subject": "RE: UNIS PA: Transfer & Depletion Plan",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 4,
-        "ageHours": 112,
+        "ageDays": 5,
+        "ageHours": 125,
         "slaStatus": "Breached",
         "assigned": null
       },
@@ -2568,8 +2580,8 @@
         "subject": "NIAGARA / UNIS / QUANTIX BULK SCHEDULE / WK 9.7 - 9.13",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 4,
-        "ageHours": 112,
+        "ageDays": 5,
+        "ageHours": 125,
         "slaStatus": "Breached",
         "assigned": "Yang-Lhing Bague"
       },
@@ -2579,8 +2591,8 @@
         "subject": "RE: Modern Infusions Website",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 4,
-        "ageHours": 111,
+        "ageDays": 5,
+        "ageHours": 124,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2590,8 +2602,8 @@
         "subject": "Re: [SHIPPED] Cesanek Outbound PTP - IF48851 Shipment",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 4,
-        "ageHours": 111,
+        "ageDays": 5,
+        "ageHours": 124,
         "slaStatus": "On Track",
         "assigned": "Kent Joseph Lim"
       },
@@ -2601,8 +2613,8 @@
         "subject": "AVIRON RETURNS",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 4,
-        "ageHours": 110,
+        "ageDays": 5,
+        "ageHours": 123,
         "slaStatus": "On Track",
         "assigned": "Wilmer Acedo"
       },
@@ -2612,8 +2624,8 @@
         "subject": "RE: COLAVITA ORDER FOR GENERAL TRADING P.O. 755125 1 pallet return",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 4,
-        "ageHours": 108,
+        "ageDays": 5,
+        "ageHours": 121,
         "slaStatus": "On Track",
         "assigned": "Yang-Lhing Bague"
       },
@@ -2623,8 +2635,8 @@
         "subject": "DN-2127640 // Cypress Transfer",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 4,
-        "ageHours": 107,
+        "ageDays": 5,
+        "ageHours": 120,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2635,7 +2647,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 4,
-        "ageHours": 106,
+        "ageHours": 119,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2646,7 +2658,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 4,
-        "ageHours": 104,
+        "ageHours": 117,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2656,8 +2668,8 @@
         "subject": "Urgent Request - Order Cancellation and Reassignment to New Labels",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 3,
-        "ageHours": 92,
+        "ageDays": 4,
+        "ageHours": 105,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2667,8 +2679,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 3,
-        "ageHours": 90,
+        "ageDays": 4,
+        "ageHours": 103,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2678,8 +2690,8 @@
         "subject": "ZenWTR Small Parcel Boxes - Unis PA",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 3,
-        "ageHours": 90,
+        "ageDays": 4,
+        "ageHours": 103,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2689,8 +2701,8 @@
         "subject": "Ticket [3569318] updated - No Labels BOUNDLESS EC US LLC Load# 45872185",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 3,
-        "ageHours": 89,
+        "ageDays": 4,
+        "ageHours": 102,
         "slaStatus": "On Track",
         "assigned": "Shailene Baez"
       },
@@ -2700,8 +2712,8 @@
         "subject": "RE: Unis-item / API and Shopify update for move to Joliet (RECESS)",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 3,
-        "ageHours": 86,
+        "ageDays": 4,
+        "ageHours": 99,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2711,8 +2723,8 @@
         "subject": "Thank you for submitting a new contact for CaseID: 21861000021",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 3,
-        "ageHours": 85,
+        "ageDays": 4,
+        "ageHours": 98,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2722,8 +2734,8 @@
         "subject": "AVIRON/AIT/UNIS PA - AIT Orders for Pickup Tuesday Aug 25",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 3,
-        "ageHours": 83,
+        "ageDays": 4,
+        "ageHours": 96,
         "slaStatus": "On Track",
         "assigned": "Wilmer Acedo"
       },
@@ -2734,7 +2746,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 3,
-        "ageHours": 77,
+        "ageHours": 90,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2744,8 +2756,8 @@
         "subject": "RE: Diageo DNAB Automated Email Alert: UNIS Pick Up Alert",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 2,
-        "ageHours": 69,
+        "ageDays": 3,
+        "ageHours": 82,
         "slaStatus": "On Track",
         "assigned": "Yang-Lhing Bague"
       },
@@ -2755,8 +2767,8 @@
         "subject": "WYNK Inbound Receiving Request RN-19707 Tuesday 09/08/26",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 2,
-        "ageHours": 68,
+        "ageDays": 3,
+        "ageHours": 81,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2766,8 +2778,8 @@
         "subject": "Urgent: Pending Orders - Please Ship ASAP",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 2,
-        "ageHours": 68,
+        "ageDays": 3,
+        "ageHours": 81,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2777,8 +2789,8 @@
         "subject": "SL&C DISCREPANCY CONFIRMATION <DO-NOT-REPLY>",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 2,
-        "ageHours": 68,
+        "ageDays": 3,
+        "ageHours": 81,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2788,8 +2800,8 @@
         "subject": "Ticket [3569318] updated - No Labels BOUNDLESS EC US LLC Load# 45872185",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 2,
-        "ageHours": 67,
+        "ageDays": 3,
+        "ageHours": 80,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2799,8 +2811,8 @@
         "subject": "Advanced Report - Dock Activity",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 2,
-        "ageHours": 66,
+        "ageDays": 3,
+        "ageHours": 79,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2810,8 +2822,8 @@
         "subject": "Load #45872185 - No Labels on Cases for BOUNDLESS EC US LLC",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 2,
-        "ageHours": 66,
+        "ageDays": 3,
+        "ageHours": 79,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2821,8 +2833,8 @@
         "subject": "PICK UP REQUEST",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 2,
-        "ageHours": 66,
+        "ageDays": 3,
+        "ageHours": 79,
         "slaStatus": "On Track",
         "assigned": "Erin Cambra"
       },
@@ -2832,8 +2844,8 @@
         "subject": "COLAVITA WALMART - WEEK 9/7/26",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 2,
-        "ageHours": 66,
+        "ageDays": 3,
+        "ageHours": 79,
         "slaStatus": "On Track",
         "assigned": "Yang-Lhing Bague"
       },
@@ -2843,8 +2855,8 @@
         "subject": "UNIS - HINT BEVERAGE - NORTHAMPTON, PA - WEEK OF 9/7/26",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 2,
-        "ageHours": 66,
+        "ageDays": 3,
+        "ageHours": 79,
         "slaStatus": "On Track",
         "assigned": "Kent Joseph Lim"
       },
@@ -2854,8 +2866,8 @@
         "subject": "Fw: Diageo DNAB Automated Email Alert: UNIS Pick Up Alert",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 2,
-        "ageHours": 66,
+        "ageDays": 3,
+        "ageHours": 79,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2865,8 +2877,8 @@
         "subject": "Diageo Picks 13x",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 2,
-        "ageHours": 64,
+        "ageDays": 3,
+        "ageHours": 77,
         "slaStatus": "On Track",
         "assigned": "Yang-Lhing Bague"
       },
@@ -2876,8 +2888,8 @@
         "subject": "D2C shipping container",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 2,
-        "ageHours": 63,
+        "ageDays": 3,
+        "ageHours": 76,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2887,8 +2899,8 @@
         "subject": "FW: Claim 18050| Diageo Delivery# 1057383854",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 2,
-        "ageHours": 63,
+        "ageDays": 3,
+        "ageHours": 76,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2898,8 +2910,8 @@
         "subject": "Immediate Action Required: Open RN Items Impacting Billing (Cesanek) 9/4",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 2,
-        "ageHours": 62,
+        "ageDays": 3,
+        "ageHours": 75,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2909,8 +2921,8 @@
         "subject": "Immediate Review: Inbound Deliveries Next Business Day - September 8, 2026 (Cesanek)",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 2,
-        "ageHours": 61,
+        "ageDays": 3,
+        "ageHours": 74,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2920,8 +2932,8 @@
         "subject": "RE:[CASE 21895894201] Amazon Freight LTL ARN 46175663671... 1st Event Freight Not Ready",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 2,
-        "ageHours": 60,
+        "ageDays": 3,
+        "ageHours": 73,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2931,8 +2943,8 @@
         "subject": "Cesanek Appointment-Watch 2026-09-04 17:19 ET - 24-48h window - 0 qualifying",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 2,
-        "ageHours": 60,
+        "ageDays": 3,
+        "ageHours": 73,
         "slaStatus": "On Track",
         "assigned": "Kent Joseph Lim"
       },
@@ -2942,8 +2954,8 @@
         "subject": "FW: Amazon EDI Monitoring - Compliance Issues found.",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 2,
-        "ageHours": 59,
+        "ageDays": 3,
+        "ageHours": 72,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2953,8 +2965,8 @@
         "subject": "FW: Amazon EDI Monitoring - Compliance Issues found.",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 2,
-        "ageHours": 59,
+        "ageDays": 3,
+        "ageHours": 72,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2965,7 +2977,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 58,
+        "ageHours": 71,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2976,7 +2988,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 58,
+        "ageHours": 71,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2987,7 +2999,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 58,
+        "ageHours": 71,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -2998,7 +3010,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 58,
+        "ageHours": 71,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3009,7 +3021,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 58,
+        "ageHours": 71,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3020,7 +3032,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 58,
+        "ageHours": 71,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3031,7 +3043,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 58,
+        "ageHours": 71,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3042,7 +3054,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 58,
+        "ageHours": 71,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3053,7 +3065,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 58,
+        "ageHours": 71,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3064,7 +3076,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 58,
+        "ageHours": 71,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3075,7 +3087,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 58,
+        "ageHours": 71,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3086,7 +3098,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 58,
+        "ageHours": 71,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3097,7 +3109,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 58,
+        "ageHours": 71,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3108,7 +3120,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 58,
+        "ageHours": 71,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3119,7 +3131,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 58,
+        "ageHours": 71,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3130,7 +3142,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 58,
+        "ageHours": 71,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3141,7 +3153,7 @@
         "opsStatus": "New",
         "priority": "Medium",
         "ageDays": 2,
-        "ageHours": 58,
+        "ageHours": 71,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3151,8 +3163,8 @@
         "subject": "Cesanek (LT_F21) Appointment Watch - 24-48h Window (2026-09-05)",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 1,
-        "ageHours": 45,
+        "ageDays": 2,
+        "ageHours": 58,
         "slaStatus": "On Track",
         "assigned": "Kent Joseph Lim"
       },
@@ -3162,8 +3174,8 @@
         "subject": "Dropship Order Daily Report - 2026-09-04",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 1,
-        "ageHours": 44,
+        "ageDays": 2,
+        "ageHours": 57,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3173,8 +3185,8 @@
         "subject": "Dropship Order Daily Report - 2026-09-04",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 1,
-        "ageHours": 44,
+        "ageDays": 2,
+        "ageHours": 57,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3184,8 +3196,8 @@
         "subject": "FW: Amazon EDI Monitoring - Compliance Issues found.",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 1,
-        "ageHours": 42,
+        "ageDays": 2,
+        "ageHours": 55,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3195,8 +3207,8 @@
         "subject": "FW: Amazon EDI Monitoring - Compliance Issues found.",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 1,
-        "ageHours": 42,
+        "ageDays": 2,
+        "ageHours": 55,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3206,8 +3218,8 @@
         "subject": "FW: Amazon EDI Monitoring - Compliance Issues found.",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 1,
-        "ageHours": 42,
+        "ageDays": 2,
+        "ageHours": 55,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3217,8 +3229,8 @@
         "subject": "FW: Amazon EDI Monitoring - Compliance Issues found.",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 1,
-        "ageHours": 42,
+        "ageDays": 2,
+        "ageHours": 55,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3228,8 +3240,8 @@
         "subject": "FW: Amazon EDI Monitoring - Compliance Issues found.",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 1,
-        "ageHours": 42,
+        "ageDays": 2,
+        "ageHours": 55,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3239,8 +3251,8 @@
         "subject": "OMS Alert-Unis, LLC-MODERN INFUSIONS LLC_v3-77 Order Processing Exceptions Detected",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 1,
-        "ageHours": 41,
+        "ageDays": 2,
+        "ageHours": 54,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3250,8 +3262,8 @@
         "subject": "Cesanek (LT_F21) Appointment Watch - 24-48h Window (2026-09-05)",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 1,
-        "ageHours": 40,
+        "ageDays": 2,
+        "ageHours": 53,
         "slaStatus": "On Track",
         "assigned": "Kent Joseph Lim"
       },
@@ -3261,8 +3273,8 @@
         "subject": "Find all 3 flavors in one 12-pack at retailers near you.",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 1,
-        "ageHours": 39,
+        "ageDays": 2,
+        "ageHours": 52,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3272,8 +3284,8 @@
         "subject": "Cesanek Appointment-Watch 2026-09-05 16:22 ET - 24-48h window - 0 qualifying",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 1,
-        "ageHours": 37,
+        "ageDays": 2,
+        "ageHours": 50,
         "slaStatus": "On Track",
         "assigned": "Kent Joseph Lim"
       },
@@ -3283,8 +3295,8 @@
         "subject": "Cesanek Dropship EOD - RISE BREWING - 2026-09-05",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 1,
-        "ageHours": 37,
+        "ageDays": 2,
+        "ageHours": 50,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3294,8 +3306,8 @@
         "subject": "Cesanek Dropship EOD - VITA COCO DTC - 2026-09-05",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 1,
-        "ageHours": 36,
+        "ageDays": 2,
+        "ageHours": 49,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3305,8 +3317,8 @@
         "subject": "Cesanek Dropship EOD - UPTIME ENERGY - 2026-09-05",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 1,
-        "ageHours": 36,
+        "ageDays": 2,
+        "ageHours": 49,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3316,8 +3328,8 @@
         "subject": "Cesanek Dropship EOD - ZEN BEVERAGE - 2026-09-05",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 1,
-        "ageHours": 36,
+        "ageDays": 2,
+        "ageHours": 49,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3327,8 +3339,8 @@
         "subject": "Cesanek Dropship EOD - WATER PLUS - 2026-09-05",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 1,
-        "ageHours": 36,
+        "ageDays": 2,
+        "ageHours": 49,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3338,8 +3350,8 @@
         "subject": "Cesanek Dropship EOD - RECOVERY SPORTS - 2026-09-05",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 1,
-        "ageHours": 36,
+        "ageDays": 2,
+        "ageHours": 49,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3349,8 +3361,8 @@
         "subject": "Cesanek Appointment-Watch 2026-09-06 08:33 ET - 24-48h window - 0 qualifying",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 0,
-        "ageHours": 21,
+        "ageDays": 1,
+        "ageHours": 34,
         "slaStatus": "On Track",
         "assigned": "Kent Joseph Lim"
       },
@@ -3360,8 +3372,8 @@
         "subject": "Dropship Order Daily Report - 2026-09-05",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 0,
-        "ageHours": 20,
+        "ageDays": 1,
+        "ageHours": 33,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3371,8 +3383,8 @@
         "subject": "Dropship Order Daily Report - 2026-09-05",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 0,
-        "ageHours": 20,
+        "ageDays": 1,
+        "ageHours": 33,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3382,8 +3394,8 @@
         "subject": "FBM Outbound Order - UNIS Northampton, PA 09/06/2026",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 0,
-        "ageHours": 19,
+        "ageDays": 1,
+        "ageHours": 32,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3393,8 +3405,8 @@
         "subject": "Ticket [3569318] was updated. - No Labels on Cases for BOUNDLESS EC US LLC Load# 45872185",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 0,
-        "ageHours": 18,
+        "ageDays": 1,
+        "ageHours": 31,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3404,41 +3416,41 @@
         "subject": "OMS Alert-Unis, LLC-MODERN INFUSIONS LLC_v3-74 Order Processing Exceptions Detected",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 0,
-        "ageHours": 17,
+        "ageDays": 1,
+        "ageHours": 30,
         "slaStatus": "On Track",
         "assigned": null
       },
       {
         "ticketId": "UFN-69947",
         "customer": "TCL NORTH AMERICA",
-        "subject": "FW: [External Sender]Amazon EDI Monitoring – Compliance Issues found.",
+        "subject": "FW: [External Sender]Amazon EDI Monitoring \u2013 Compliance Issues found.",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 0,
-        "ageHours": 16,
+        "ageDays": 1,
+        "ageHours": 29,
         "slaStatus": "On Track",
         "assigned": null
       },
       {
         "ticketId": "UFN-69948",
         "customer": "UNIS Internal",
-        "subject": "Appointment Watch — Cesanek (LT_F21) — 24-48h Window (2026-09-07 13:01 ET to 2026-09-08 13:01 ET)",
+        "subject": "Appointment Watch \u2014 Cesanek (LT_F21) \u2014 24-48h Window (2026-09-07 13:01 ET to 2026-09-08 13:01 ET)",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 0,
-        "ageHours": 16,
+        "ageDays": 1,
+        "ageHours": 29,
         "slaStatus": "On Track",
         "assigned": "Kent Joseph Lim"
       },
       {
         "ticketId": "UFN-69949",
         "customer": "TCL NORTH AMERICA",
-        "subject": "FW: [External Sender]Amazon EDI Monitoring – Compliance Issues found.",
+        "subject": "FW: [External Sender]Amazon EDI Monitoring \u2013 Compliance Issues found.",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 0,
-        "ageHours": 16,
+        "ageDays": 1,
+        "ageHours": 29,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3448,19 +3460,19 @@
         "subject": "COLAVITA - WEEK OF 8/31/26-PENDING ORDERS",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 0,
-        "ageHours": 14,
+        "ageDays": 1,
+        "ageHours": 27,
         "slaStatus": "On Track",
         "assigned": "Shailene Baez"
       },
       {
         "ticketId": "UFN-69955",
         "customer": "UNIS Internal",
-        "subject": "Cesanek (LT_F21) Appointment Watch — 24-48h Window (2026-09-06)",
+        "subject": "Cesanek (LT_F21) Appointment Watch \u2014 24-48h Window (2026-09-06)",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 0,
-        "ageHours": 13,
+        "ageDays": 1,
+        "ageHours": 26,
         "slaStatus": "On Track",
         "assigned": "Kent Joseph Lim"
       },
@@ -3470,8 +3482,8 @@
         "subject": "Cesanek Dropship EOD - WATER PLUS - 2026-09-06",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 0,
-        "ageHours": 13,
+        "ageDays": 1,
+        "ageHours": 26,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3481,8 +3493,8 @@
         "subject": "Cesanek Dropship EOD - RISE BREWING - 2026-09-06",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 0,
-        "ageHours": 13,
+        "ageDays": 1,
+        "ageHours": 26,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3492,8 +3504,8 @@
         "subject": "Cesanek Dropship EOD - RECOVERY SPORTS - 2026-09-06",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 0,
-        "ageHours": 13,
+        "ageDays": 1,
+        "ageHours": 26,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3503,8 +3515,8 @@
         "subject": "Cesanek Dropship EOD - ZEN BEVERAGE - 2026-09-06",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 0,
-        "ageHours": 13,
+        "ageDays": 1,
+        "ageHours": 26,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3514,8 +3526,8 @@
         "subject": "Cesanek Dropship EOD - VITA COCO DTC - 2026-09-06",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 0,
-        "ageHours": 13,
+        "ageDays": 1,
+        "ageHours": 26,
         "slaStatus": "On Track",
         "assigned": null
       },
@@ -3525,29 +3537,293 @@
         "subject": "Cesanek Dropship EOD - UPTIME ENERGY - 2026-09-06",
         "opsStatus": "New",
         "priority": "Medium",
+        "ageDays": 1,
+        "ageHours": 26,
+        "slaStatus": "On Track",
+        "assigned": null
+      },
+      {
+        "ticketId": "UFN-69985",
+        "customer": "Autoempick",
+        "subject": "CH Robinson - Pickup Appointment Request (Load # 567052128 for 09/09/2026 03:00 PM) - Follow Up",
+        "opsStatus": "New",
+        "priority": "Medium",
         "ageDays": 0,
-        "ageHours": 13,
+        "ageHours": 12,
+        "slaStatus": "On Track",
+        "assigned": null
+      },
+      {
+        "ticketId": "UFN-69987",
+        "customer": "Wynk",
+        "subject": "Just hours left for 30% off Wynk \u23f0",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 12,
+        "slaStatus": "On Track",
+        "assigned": null
+      },
+      {
+        "ticketId": "UFN-69988",
+        "customer": "TCL NORTH AMERICA",
+        "subject": "FW: [External Sender]Amazon EDI Monitoring \u2013 Compliance Issues found.",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 11,
+        "slaStatus": "On Track",
+        "assigned": null
+      },
+      {
+        "ticketId": "UFN-69990",
+        "customer": "MAIZLY INC.",
+        "subject": "Dropship Order Daily Report - 2026-09-06",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 10,
+        "slaStatus": "On Track",
+        "assigned": null
+      },
+      {
+        "ticketId": "UFN-69991",
+        "customer": "MODERN INFUSIONS LLC",
+        "subject": "Dropship Order Daily Report - 2026-09-06",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 10,
+        "slaStatus": "On Track",
+        "assigned": null
+      },
+      {
+        "ticketId": "UFN-69998",
+        "customer": "UNIS Internal",
+        "subject": "CESANEK APPOINTMENT WATCH | 09/07/2026",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 10,
+        "slaStatus": "On Track",
+        "assigned": "Kent Joseph Lim"
+      },
+      {
+        "ticketId": "UFN-69999",
+        "customer": "Autoempick",
+        "subject": "CH Robinson - Pickup Appointment Request (Load # 566036596 for 09/14/2026 12:00 PM)",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 10,
+        "slaStatus": "On Track",
+        "assigned": null
+      },
+      {
+        "ticketId": "UFN-70000",
+        "customer": "NAL CONFECTIONARY, LLC",
+        "subject": "Uber Freight Pickup Appointment Request [KeHE Trademark Transportation] [3878155, KEHE-3878155, ROAR BEVERAGES INC]",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 9,
+        "slaStatus": "On Track",
+        "assigned": null
+      },
+      {
+        "ticketId": "UFN-70002",
+        "customer": "BOUNDLESS EC US LLC",
+        "subject": "Ticket [3569318] was updated. - No Labels on Cases for BOUNDLESS EC US LLC Load# 45872185",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 9,
+        "slaStatus": "On Track",
+        "assigned": null
+      },
+      {
+        "ticketId": "UFN-70003",
+        "customer": "LASSONDE PAPPAS AND COMPANY, INC.",
+        "subject": "Advanced Report - Dock Activity",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 8,
+        "slaStatus": "On Track",
+        "assigned": null
+      },
+      {
+        "ticketId": "UFN-70004",
+        "customer": "ETCC Reg4 Scheduling",
+        "subject": "MPU Scheduling Notification - Load: 93890252",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 8,
+        "slaStatus": "On Track",
+        "assigned": null
+      },
+      {
+        "ticketId": "UFN-70008",
+        "customer": "MODERN INFUSIONS LLC",
+        "subject": "OMS Alert-Unis, LLC-MODERN INFUSIONS LLC_v3-73 Order Processing Exceptions Detected",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 7,
+        "slaStatus": "On Track",
+        "assigned": null
+      },
+      {
+        "ticketId": "UFN-70010",
+        "customer": "BOUNDLESS EC US LLC",
+        "subject": "Ticket [3569318] was updated. - No Labels on Cases for BOUNDLESS EC US LLC Load# 45872185",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 6,
+        "slaStatus": "On Track",
+        "assigned": null
+      },
+      {
+        "ticketId": "UFN-70011",
+        "customer": "AVIRON INTERACTIVE INC",
+        "subject": "[Aviron Interactive] - Please cancel DN-2129228 - 142070",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 5,
+        "slaStatus": "On Track",
+        "assigned": null
+      },
+      {
+        "ticketId": "UFN-70013",
+        "customer": "UNIS Internal",
+        "subject": "Appointment Watch \u2013 Cesanek (LT_F21) \u2013 2026-09-09 (24\u201348h window) \u2013 4 qualifying orders",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 5,
+        "slaStatus": "On Track",
+        "assigned": "Kent Joseph Lim"
+      },
+      {
+        "ticketId": "UFN-70016",
+        "customer": "UNIS Internal",
+        "subject": "Immediate Action Required: Open RN Items Impacting Billing as of September 7, 2026 (Cesanek, PA Facility)",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 4,
+        "slaStatus": "On Track",
+        "assigned": null
+      },
+      {
+        "ticketId": "UFN-70018",
+        "customer": "Autoempick",
+        "subject": "CH Robinson - Pickup Appointment Request (Load # 566229037 for 09/10/2026 02:00 PM) - Follow Up",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 3,
+        "slaStatus": "On Track",
+        "assigned": null
+      },
+      {
+        "ticketId": "UFN-70029",
+        "customer": "RISE BREWING",
+        "subject": "RISE BREWING Cesanek EOD | 09/07/2026",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 2,
+        "slaStatus": "On Track",
+        "assigned": null
+      },
+      {
+        "ticketId": "UFN-70030",
+        "customer": "VITA COCO DTC",
+        "subject": "VITA COCO DTC Cesanek EOD | 09/07/2026",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 2,
+        "slaStatus": "On Track",
+        "assigned": null
+      },
+      {
+        "ticketId": "UFN-70031",
+        "customer": "ZEN BEVERAGE",
+        "subject": "ZEN BEVERAGE Cesanek EOD | 09/07/2026",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 2,
+        "slaStatus": "On Track",
+        "assigned": null
+      },
+      {
+        "ticketId": "UFN-70032",
+        "customer": "WATER PLUS",
+        "subject": "WATER PLUS Cesanek EOD | 09/07/2026",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 2,
+        "slaStatus": "On Track",
+        "assigned": null
+      },
+      {
+        "ticketId": "UFN-70033",
+        "customer": "ATERIAN INC",
+        "subject": "FBM Outbound Order Volume Update - UNIS Northampton, PA 09/07/2026",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 2,
+        "slaStatus": "On Track",
+        "assigned": null
+      },
+      {
+        "ticketId": "UFN-70034",
+        "customer": "UPTIME ENERGY",
+        "subject": "UPTIME ENERGY Cesanek EOD | 09/07/2026",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 2,
+        "slaStatus": "On Track",
+        "assigned": null
+      },
+      {
+        "ticketId": "UFN-70035",
+        "customer": "RECOVERY SPORTS",
+        "subject": "RECOVERY SPORTS Cesanek EOD | 09/07/2026",
+        "opsStatus": "New",
+        "priority": "Medium",
+        "ageDays": 0,
+        "ageHours": 2,
         "slaStatus": "On Track",
         "assigned": null
       }
     ],
     "actionBuckets": {
-      "Immediate": 17,
-      "Short-Term": 55,
-      "Medium-Term": 38,
-      "Watch": 177
+      "Immediate": 24,
+      "Short-Term": 52,
+      "Medium-Term": 55,
+      "Watch": 180
     },
     "evidenceMetrics": {
-      "totalEligible": 287,
+      "totalEligible": 311,
       "slaBreached": 200,
-      "slaOnTrack": 87,
-      "unassigned": 231,
-      "oldestAgeDays": 185,
+      "slaOnTrack": 111,
+      "unassigned": 253,
+      "oldestAgeDays": 186,
       "outlookThreadsMatched": 10,
       "outlookThreadsUniquePostDedup": 10,
       "activeEscalations": 9,
       "eligibleEscalations": 2
     }
   },
-  "nextScheduledRefresh": "2026-09-07T08:00:00-04:00"
+  "nextScheduledRefresh": "2026-09-08T08:00:00-04:00"
 }
