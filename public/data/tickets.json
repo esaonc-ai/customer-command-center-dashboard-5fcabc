@@ -11,7 +11,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4443,
+    "ageHours": 4450,
     "ageDays": 185
   },
   {
@@ -26,8 +26,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4431,
-    "ageDays": 184
+    "ageHours": 4444,
+    "ageDays": 185
   },
   {
     "ticketId": "UFN-35588",
@@ -41,8 +41,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4264,
-    "ageDays": 177
+    "ageHours": 4275,
+    "ageDays": 178
   },
   {
     "ticketId": "UFN-35774",
@@ -56,8 +56,8 @@
     "assigned": "Sittie Jhaila Sirad",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4245,
-    "ageDays": 176
+    "ageHours": 4256,
+    "ageDays": 177
   },
   {
     "ticketId": "UFN-37858",
@@ -71,8 +71,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4055,
-    "ageDays": 168
+    "ageHours": 4066,
+    "ageDays": 169
   },
   {
     "ticketId": "UFN-39065",
@@ -86,8 +86,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3959,
-    "ageDays": 164
+    "ageHours": 3970,
+    "ageDays": 165
   },
   {
     "ticketId": "UFN-39403",
@@ -101,8 +101,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3932,
-    "ageDays": 163
+    "ageHours": 3943,
+    "ageDays": 164
   },
   {
     "ticketId": "UFN-39662",
@@ -116,8 +116,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3908,
-    "ageDays": 162
+    "ageHours": 3919,
+    "ageDays": 163
   },
   {
     "ticketId": "UFN-40213",
@@ -131,7 +131,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3840,
+    "ageHours": 3851,
     "ageDays": 160
   },
   {
@@ -146,8 +146,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3808,
-    "ageDays": 158
+    "ageHours": 3819,
+    "ageDays": 159
   },
   {
     "ticketId": "UFN-40860",
@@ -161,8 +161,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3791,
-    "ageDays": 157
+    "ageHours": 3802,
+    "ageDays": 158
   },
   {
     "ticketId": "UFN-40969",
@@ -176,8 +176,8 @@
     "assigned": "Sittie Jhaila Sirad",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3786,
-    "ageDays": 157
+    "ageHours": 3798,
+    "ageDays": 158
   },
   {
     "ticketId": "UFN-41878",
@@ -191,7 +191,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3684,
+    "ageHours": 3695,
     "ageDays": 153
   },
   {
@@ -206,8 +206,8 @@
     "assigned": "Pedro Marte",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3670,
-    "ageDays": 152
+    "ageHours": 3681,
+    "ageDays": 153
   },
   {
     "ticketId": "UFN-42645",
@@ -221,8 +221,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3623,
-    "ageDays": 150
+    "ageHours": 3634,
+    "ageDays": 151
   },
   {
     "ticketId": "UFN-42730",
@@ -236,8 +236,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3619,
-    "ageDays": 150
+    "ageHours": 3630,
+    "ageDays": 151
   },
   {
     "ticketId": "UFN-43591",
@@ -251,7 +251,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3516,
+    "ageHours": 3527,
     "ageDays": 146
   },
   {
@@ -266,8 +266,8 @@
     "assigned": null,
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 3496,
-    "ageDays": 145
+    "ageHours": 3508,
+    "ageDays": 146
   },
   {
     "ticketId": "UFN-44139",
@@ -281,8 +281,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3473,
-    "ageDays": 144
+    "ageHours": 3485,
+    "ageDays": 145
   },
   {
     "ticketId": "UFN-44321",
@@ -296,8 +296,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3455,
-    "ageDays": 143
+    "ageHours": 3466,
+    "ageDays": 144
   },
   {
     "ticketId": "UFN-45048",
@@ -311,8 +311,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3397,
-    "ageDays": 141
+    "ageHours": 3409,
+    "ageDays": 142
   },
   {
     "ticketId": "UFN-45186",
@@ -326,7 +326,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3348,
+    "ageHours": 3359,
     "ageDays": 139
   },
   {
@@ -341,8 +341,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3334,
-    "ageDays": 138
+    "ageHours": 3345,
+    "ageDays": 139
   },
   {
     "ticketId": "UFN-45763",
@@ -356,8 +356,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3287,
-    "ageDays": 136
+    "ageHours": 3298,
+    "ageDays": 137
   },
   {
     "ticketId": "UFN-46185",
@@ -371,8 +371,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3237,
-    "ageDays": 134
+    "ageHours": 3249,
+    "ageDays": 135
   },
   {
     "ticketId": "UFN-46256",
@@ -386,8 +386,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3236,
-    "ageDays": 134
+    "ageHours": 3247,
+    "ageDays": 135
   },
   {
     "ticketId": "UFN-46492",
@@ -401,7 +401,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3169,
+    "ageHours": 3180,
     "ageDays": 132
   },
   {
@@ -416,8 +416,8 @@
     "assigned": "Wilmer Acedo",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3166,
-    "ageDays": 131
+    "ageHours": 3177,
+    "ageDays": 132
   },
   {
     "ticketId": "UFN-46639",
@@ -431,8 +431,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3163,
-    "ageDays": 131
+    "ageHours": 3174,
+    "ageDays": 132
   },
   {
     "ticketId": "UFN-47190",
@@ -446,8 +446,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3119,
-    "ageDays": 129
+    "ageHours": 3130,
+    "ageDays": 130
   },
   {
     "ticketId": "UFN-47786",
@@ -461,8 +461,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3070,
-    "ageDays": 127
+    "ageHours": 3081,
+    "ageDays": 128
   },
   {
     "ticketId": "UFN-48152",
@@ -476,7 +476,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3012,
+    "ageHours": 3023,
     "ageDays": 125
   },
   {
@@ -491,7 +491,7 @@
     "assigned": "Austin Steigerwalt",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 3001,
+    "ageHours": 3012,
     "ageDays": 125
   },
   {
@@ -506,7 +506,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3000,
+    "ageHours": 3012,
     "ageDays": 125
   },
   {
@@ -521,7 +521,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2963,
+    "ageHours": 2974,
     "ageDays": 123
   },
   {
@@ -536,7 +536,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2953,
+    "ageHours": 2964,
     "ageDays": 123
   },
   {
@@ -551,7 +551,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2953,
+    "ageHours": 2964,
     "ageDays": 123
   },
   {
@@ -566,8 +566,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2951,
-    "ageDays": 122
+    "ageHours": 2962,
+    "ageDays": 123
   },
   {
     "ticketId": "UFN-49524",
@@ -581,8 +581,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2892,
-    "ageDays": 120
+    "ageHours": 2904,
+    "ageDays": 121
   },
   {
     "ticketId": "UFN-49723",
@@ -596,7 +596,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2833,
+    "ageHours": 2845,
     "ageDays": 118
   },
   {
@@ -611,8 +611,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2783,
-    "ageDays": 115
+    "ageHours": 2794,
+    "ageDays": 116
   },
   {
     "ticketId": "UFN-51184",
@@ -626,7 +626,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2664,
+    "ageHours": 2675,
     "ageDays": 111
   },
   {
@@ -641,8 +641,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2615,
-    "ageDays": 108
+    "ageHours": 2626,
+    "ageDays": 109
   },
   {
     "ticketId": "UFN-51749",
@@ -656,8 +656,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2611,
-    "ageDays": 108
+    "ageHours": 2623,
+    "ageDays": 109
   },
   {
     "ticketId": "UFN-51805",
@@ -671,8 +671,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2608,
-    "ageDays": 108
+    "ageHours": 2620,
+    "ageDays": 109
   },
   {
     "ticketId": "UFN-52990",
@@ -686,8 +686,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2447,
-    "ageDays": 101
+    "ageHours": 2458,
+    "ageDays": 102
   },
   {
     "ticketId": "UFN-54576",
@@ -701,8 +701,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2279,
-    "ageDays": 94
+    "ageHours": 2290,
+    "ageDays": 95
   },
   {
     "ticketId": "UFN-54680",
@@ -716,8 +716,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2273,
-    "ageDays": 94
+    "ageHours": 2285,
+    "ageDays": 95
   },
   {
     "ticketId": "UFN-54684",
@@ -731,8 +731,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2273,
-    "ageDays": 94
+    "ageHours": 2284,
+    "ageDays": 95
   },
   {
     "ticketId": "UFN-54985",
@@ -746,8 +746,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2248,
-    "ageDays": 93
+    "ageHours": 2259,
+    "ageDays": 94
   },
   {
     "ticketId": "UFN-55002",
@@ -761,8 +761,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2247,
-    "ageDays": 93
+    "ageHours": 2259,
+    "ageDays": 94
   },
   {
     "ticketId": "UFN-55198",
@@ -776,8 +776,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2228,
-    "ageDays": 92
+    "ageHours": 2239,
+    "ageDays": 93
   },
   {
     "ticketId": "UFN-55946",
@@ -791,8 +791,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2111,
-    "ageDays": 87
+    "ageHours": 2122,
+    "ageDays": 88
   },
   {
     "ticketId": "UFN-56911",
@@ -806,8 +806,8 @@
     "assigned": "Shailene Baez",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 1981,
-    "ageDays": 82
+    "ageHours": 1992,
+    "ageDays": 83
   },
   {
     "ticketId": "UFN-56957",
@@ -821,7 +821,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1968,
+    "ageHours": 1979,
     "ageDays": 82
   },
   {
@@ -836,8 +836,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1962,
-    "ageDays": 81
+    "ageHours": 1973,
+    "ageDays": 82
   },
   {
     "ticketId": "UFN-57198",
@@ -851,8 +851,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1943,
-    "ageDays": 80
+    "ageHours": 1954,
+    "ageDays": 81
   },
   {
     "ticketId": "UFN-57965",
@@ -866,8 +866,8 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1823,
-    "ageDays": 75
+    "ageHours": 1834,
+    "ageDays": 76
   },
   {
     "ticketId": "UFN-58476",
@@ -881,8 +881,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1775,
-    "ageDays": 73
+    "ageHours": 1786,
+    "ageDays": 74
   },
   {
     "ticketId": "UFN-59238",
@@ -896,8 +896,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1653,
-    "ageDays": 68
+    "ageHours": 1664,
+    "ageDays": 69
   },
   {
     "ticketId": "UFN-59296",
@@ -911,8 +911,8 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1649,
-    "ageDays": 68
+    "ageHours": 1660,
+    "ageDays": 69
   },
   {
     "ticketId": "UFN-59657",
@@ -926,8 +926,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1607,
-    "ageDays": 66
+    "ageHours": 1618,
+    "ageDays": 67
   },
   {
     "ticketId": "UFN-59720",
@@ -941,8 +941,8 @@
     "assigned": "Kimberly Bautista",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 1605,
-    "ageDays": 66
+    "ageHours": 1616,
+    "ageDays": 67
   },
   {
     "ticketId": "UFN-59777",
@@ -956,8 +956,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1601,
-    "ageDays": 66
+    "ageHours": 1612,
+    "ageDays": 67
   },
   {
     "ticketId": "UFN-59915",
@@ -971,8 +971,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1582,
-    "ageDays": 65
+    "ageHours": 1593,
+    "ageDays": 66
   },
   {
     "ticketId": "UFN-60009",
@@ -986,8 +986,8 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1577,
-    "ageDays": 65
+    "ageHours": 1588,
+    "ageDays": 66
   },
   {
     "ticketId": "UFN-60125",
@@ -1001,8 +1001,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1558,
-    "ageDays": 64
+    "ageHours": 1569,
+    "ageDays": 65
   },
   {
     "ticketId": "UFN-60348",
@@ -1016,8 +1016,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1486,
-    "ageDays": 61
+    "ageHours": 1497,
+    "ageDays": 62
   },
   {
     "ticketId": "UFN-60595",
@@ -1031,8 +1031,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1462,
-    "ageDays": 60
+    "ageHours": 1473,
+    "ageDays": 61
   },
   {
     "ticketId": "UFN-60751",
@@ -1046,8 +1046,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1439,
-    "ageDays": 59
+    "ageHours": 1451,
+    "ageDays": 60
   },
   {
     "ticketId": "UFN-60760",
@@ -1061,8 +1061,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1439,
-    "ageDays": 59
+    "ageHours": 1450,
+    "ageDays": 60
   },
   {
     "ticketId": "UFN-60786",
@@ -1076,8 +1076,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1438,
-    "ageDays": 59
+    "ageHours": 1449,
+    "ageDays": 60
   },
   {
     "ticketId": "UFN-60865",
@@ -1091,8 +1091,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1434,
-    "ageDays": 59
+    "ageHours": 1445,
+    "ageDays": 60
   },
   {
     "ticketId": "UFN-60986",
@@ -1106,8 +1106,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1414,
-    "ageDays": 58
+    "ageHours": 1425,
+    "ageDays": 59
   },
   {
     "ticketId": "UFN-61170",
@@ -1121,8 +1121,8 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1391,
-    "ageDays": 57
+    "ageHours": 1402,
+    "ageDays": 58
   },
   {
     "ticketId": "UFN-61190",
@@ -1136,8 +1136,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1390,
-    "ageDays": 57
+    "ageHours": 1401,
+    "ageDays": 58
   },
   {
     "ticketId": "UFN-61462",
@@ -1151,8 +1151,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1318,
-    "ageDays": 54
+    "ageHours": 1329,
+    "ageDays": 55
   },
   {
     "ticketId": "UFN-61467",
@@ -1166,8 +1166,8 @@
     "assigned": "Maria Aponte",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1317,
-    "ageDays": 54
+    "ageHours": 1329,
+    "ageDays": 55
   },
   {
     "ticketId": "UFN-61666",
@@ -1181,8 +1181,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1294,
-    "ageDays": 53
+    "ageHours": 1305,
+    "ageDays": 54
   },
   {
     "ticketId": "UFN-61885",
@@ -1196,8 +1196,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1271,
-    "ageDays": 52
+    "ageHours": 1282,
+    "ageDays": 53
   },
   {
     "ticketId": "UFN-61922",
@@ -1211,8 +1211,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1270,
-    "ageDays": 52
+    "ageHours": 1281,
+    "ageDays": 53
   },
   {
     "ticketId": "UFN-62150",
@@ -1226,8 +1226,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1246,
-    "ageDays": 51
+    "ageHours": 1257,
+    "ageDays": 52
   },
   {
     "ticketId": "UFN-62355",
@@ -1241,8 +1241,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1222,
-    "ageDays": 50
+    "ageHours": 1233,
+    "ageDays": 51
   },
   {
     "ticketId": "UFN-62628",
@@ -1256,8 +1256,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1151,
-    "ageDays": 47
+    "ageHours": 1162,
+    "ageDays": 48
   },
   {
     "ticketId": "UFN-62651",
@@ -1271,8 +1271,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1150,
-    "ageDays": 47
+    "ageHours": 1161,
+    "ageDays": 48
   },
   {
     "ticketId": "UFN-62684",
@@ -1286,8 +1286,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1148,
-    "ageDays": 47
+    "ageHours": 1159,
+    "ageDays": 48
   },
   {
     "ticketId": "UFN-62687",
@@ -1301,8 +1301,8 @@
     "assigned": "Erin Cambra",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 1148,
-    "ageDays": 47
+    "ageHours": 1159,
+    "ageDays": 48
   },
   {
     "ticketId": "UFN-62885",
@@ -1316,8 +1316,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1126,
-    "ageDays": 46
+    "ageHours": 1137,
+    "ageDays": 47
   },
   {
     "ticketId": "UFN-63028",
@@ -1331,8 +1331,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1103,
-    "ageDays": 45
+    "ageHours": 1114,
+    "ageDays": 46
   },
   {
     "ticketId": "UFN-63050",
@@ -1346,8 +1346,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1102,
-    "ageDays": 45
+    "ageHours": 1113,
+    "ageDays": 46
   },
   {
     "ticketId": "UFN-63212",
@@ -1361,8 +1361,8 @@
     "assigned": "Erin Cambra",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 1078,
-    "ageDays": 44
+    "ageHours": 1089,
+    "ageDays": 45
   },
   {
     "ticketId": "UFN-63227",
@@ -1376,8 +1376,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1078,
-    "ageDays": 44
+    "ageHours": 1089,
+    "ageDays": 45
   },
   {
     "ticketId": "UFN-63243",
@@ -1391,8 +1391,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1077,
-    "ageDays": 44
+    "ageHours": 1088,
+    "ageDays": 45
   },
   {
     "ticketId": "UFN-63413",
@@ -1406,8 +1406,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1054,
-    "ageDays": 43
+    "ageHours": 1065,
+    "ageDays": 44
   },
   {
     "ticketId": "UFN-63629",
@@ -1421,7 +1421,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 984,
+    "ageHours": 996,
     "ageDays": 41
   },
   {
@@ -1436,8 +1436,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 982,
-    "ageDays": 40
+    "ageHours": 993,
+    "ageDays": 41
   },
   {
     "ticketId": "UFN-63762",
@@ -1451,8 +1451,8 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 977,
-    "ageDays": 40
+    "ageHours": 988,
+    "ageDays": 41
   },
   {
     "ticketId": "UFN-63804",
@@ -1466,8 +1466,8 @@
     "assigned": "Austin Steigerwalt",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 974,
-    "ageDays": 40
+    "ageHours": 986,
+    "ageDays": 41
   },
   {
     "ticketId": "UFN-63890",
@@ -1481,8 +1481,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 959,
-    "ageDays": 39
+    "ageHours": 970,
+    "ageDays": 40
   },
   {
     "ticketId": "UFN-63913",
@@ -1496,8 +1496,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 958,
-    "ageDays": 39
+    "ageHours": 969,
+    "ageDays": 40
   },
   {
     "ticketId": "UFN-63959",
@@ -1511,8 +1511,8 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 955,
-    "ageDays": 39
+    "ageHours": 966,
+    "ageDays": 40
   },
   {
     "ticketId": "UFN-64099",
@@ -1526,8 +1526,8 @@
     "assigned": "Erin Cambra",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 935,
-    "ageDays": 38
+    "ageHours": 946,
+    "ageDays": 39
   },
   {
     "ticketId": "UFN-64101",
@@ -1541,8 +1541,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 935,
-    "ageDays": 38
+    "ageHours": 946,
+    "ageDays": 39
   },
   {
     "ticketId": "UFN-64129",
@@ -1556,8 +1556,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 934,
-    "ageDays": 38
+    "ageHours": 945,
+    "ageDays": 39
   },
   {
     "ticketId": "UFN-64134",
@@ -1571,8 +1571,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 934,
-    "ageDays": 38
+    "ageHours": 945,
+    "ageDays": 39
   },
   {
     "ticketId": "UFN-64363",
@@ -1586,8 +1586,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 910,
-    "ageDays": 37
+    "ageHours": 921,
+    "ageDays": 38
   },
   {
     "ticketId": "UFN-64524",
@@ -1601,8 +1601,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 886,
-    "ageDays": 36
+    "ageHours": 897,
+    "ageDays": 37
   },
   {
     "ticketId": "UFN-64590",
@@ -1616,8 +1616,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 880,
-    "ageDays": 36
+    "ageHours": 891,
+    "ageDays": 37
   },
   {
     "ticketId": "UFN-64607",
@@ -1631,7 +1631,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 875,
+    "ageHours": 886,
     "ageDays": 36
   },
   {
@@ -1646,7 +1646,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 816,
+    "ageHours": 827,
     "ageDays": 34
   },
   {
@@ -1661,8 +1661,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 815,
-    "ageDays": 33
+    "ageHours": 827,
+    "ageDays": 34
   },
   {
     "ticketId": "UFN-64779",
@@ -1676,8 +1676,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 814,
-    "ageDays": 33
+    "ageHours": 825,
+    "ageDays": 34
   },
   {
     "ticketId": "UFN-64978",
@@ -1691,8 +1691,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 791,
-    "ageDays": 32
+    "ageHours": 802,
+    "ageDays": 33
   },
   {
     "ticketId": "UFN-64996",
@@ -1706,8 +1706,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 790,
-    "ageDays": 32
+    "ageHours": 801,
+    "ageDays": 33
   },
   {
     "ticketId": "UFN-65186",
@@ -1721,8 +1721,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 766,
-    "ageDays": 31
+    "ageHours": 777,
+    "ageDays": 32
   },
   {
     "ticketId": "UFN-65339",
@@ -1736,8 +1736,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 742,
-    "ageDays": 30
+    "ageHours": 753,
+    "ageDays": 31
   },
   {
     "ticketId": "UFN-65542",
@@ -1751,8 +1751,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 718,
-    "ageDays": 29
+    "ageHours": 729,
+    "ageDays": 30
   },
   {
     "ticketId": "UFN-65800",
@@ -1766,8 +1766,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 646,
-    "ageDays": 26
+    "ageHours": 657,
+    "ageDays": 27
   },
   {
     "ticketId": "UFN-65850",
@@ -1781,8 +1781,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 642,
-    "ageDays": 26
+    "ageHours": 653,
+    "ageDays": 27
   },
   {
     "ticketId": "UFN-65951",
@@ -1796,7 +1796,7 @@
     "assigned": "nicole weber",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 624,
+    "ageHours": 635,
     "ageDays": 26
   },
   {
@@ -1811,8 +1811,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 622,
-    "ageDays": 25
+    "ageHours": 633,
+    "ageDays": 26
   },
   {
     "ticketId": "UFN-66004",
@@ -1826,8 +1826,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 621,
-    "ageDays": 25
+    "ageHours": 632,
+    "ageDays": 26
   },
   {
     "ticketId": "UFN-66170",
@@ -1841,8 +1841,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 598,
-    "ageDays": 24
+    "ageHours": 609,
+    "ageDays": 25
   },
   {
     "ticketId": "UFN-66223",
@@ -1856,8 +1856,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 593,
-    "ageDays": 24
+    "ageHours": 605,
+    "ageDays": 25
   },
   {
     "ticketId": "UFN-66351",
@@ -1871,8 +1871,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 574,
-    "ageDays": 23
+    "ageHours": 585,
+    "ageDays": 24
   },
   {
     "ticketId": "UFN-66375",
@@ -1886,8 +1886,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 571,
-    "ageDays": 23
+    "ageHours": 583,
+    "ageDays": 24
   },
   {
     "ticketId": "UFN-66445",
@@ -1901,7 +1901,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 564,
+    "ageHours": 575,
     "ageDays": 23
   },
   {
@@ -1916,8 +1916,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 550,
-    "ageDays": 22
+    "ageHours": 561,
+    "ageDays": 23
   },
   {
     "ticketId": "UFN-66548",
@@ -1931,8 +1931,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 546,
-    "ageDays": 22
+    "ageHours": 558,
+    "ageDays": 23
   },
   {
     "ticketId": "UFN-66759",
@@ -1946,8 +1946,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 478,
-    "ageDays": 19
+    "ageHours": 490,
+    "ageDays": 20
   },
   {
     "ticketId": "UFN-66766",
@@ -1961,8 +1961,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 478,
-    "ageDays": 19
+    "ageHours": 489,
+    "ageDays": 20
   },
   {
     "ticketId": "UFN-66870",
@@ -1976,8 +1976,8 @@
     "assigned": "Youssef Zeitoon",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 471,
-    "ageDays": 19
+    "ageHours": 483,
+    "ageDays": 20
   },
   {
     "ticketId": "UFN-66966",
@@ -1991,8 +1991,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 454,
-    "ageDays": 18
+    "ageHours": 465,
+    "ageDays": 19
   },
   {
     "ticketId": "UFN-67024",
@@ -2006,8 +2006,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 450,
-    "ageDays": 18
+    "ageHours": 461,
+    "ageDays": 19
   },
   {
     "ticketId": "UFN-67031",
@@ -2021,8 +2021,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 449,
-    "ageDays": 18
+    "ageHours": 460,
+    "ageDays": 19
   },
   {
     "ticketId": "UFN-67142",
@@ -2036,8 +2036,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 431,
-    "ageDays": 17
+    "ageHours": 442,
+    "ageDays": 18
   },
   {
     "ticketId": "UFN-67171",
@@ -2051,8 +2051,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 430,
-    "ageDays": 17
+    "ageHours": 441,
+    "ageDays": 18
   },
   {
     "ticketId": "UFN-67199",
@@ -2066,8 +2066,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 428,
-    "ageDays": 17
+    "ageHours": 439,
+    "ageDays": 18
   },
   {
     "ticketId": "UFN-67291",
@@ -2081,8 +2081,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 407,
-    "ageDays": 16
+    "ageHours": 419,
+    "ageDays": 17
   },
   {
     "ticketId": "UFN-67305",
@@ -2096,8 +2096,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 407,
-    "ageDays": 16
+    "ageHours": 418,
+    "ageDays": 17
   },
   {
     "ticketId": "UFN-67322",
@@ -2111,8 +2111,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 406,
-    "ageDays": 16
+    "ageHours": 417,
+    "ageDays": 17
   },
   {
     "ticketId": "UFN-67385",
@@ -2126,8 +2126,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 401,
-    "ageDays": 16
+    "ageHours": 412,
+    "ageDays": 17
   },
   {
     "ticketId": "UFN-67388",
@@ -2141,8 +2141,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 401,
-    "ageDays": 16
+    "ageHours": 412,
+    "ageDays": 17
   },
   {
     "ticketId": "UFN-67452",
@@ -2156,7 +2156,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 384,
+    "ageHours": 395,
     "ageDays": 16
   },
   {
@@ -2171,7 +2171,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 384,
+    "ageHours": 395,
     "ageDays": 16
   },
   {
@@ -2186,8 +2186,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 382,
-    "ageDays": 15
+    "ageHours": 393,
+    "ageDays": 16
   },
   {
     "ticketId": "UFN-67511",
@@ -2201,8 +2201,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 381,
-    "ageDays": 15
+    "ageHours": 392,
+    "ageDays": 16
   },
   {
     "ticketId": "UFN-67529",
@@ -2216,8 +2216,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 379,
-    "ageDays": 15
+    "ageHours": 391,
+    "ageDays": 16
   },
   {
     "ticketId": "UFN-67551",
@@ -2231,8 +2231,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 378,
-    "ageDays": 15
+    "ageHours": 389,
+    "ageDays": 16
   },
   {
     "ticketId": "UFN-67738",
@@ -2246,7 +2246,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 312,
+    "ageHours": 323,
     "ageDays": 13
   },
   {
@@ -2261,8 +2261,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 310,
-    "ageDays": 12
+    "ageHours": 321,
+    "ageDays": 13
   },
   {
     "ticketId": "UFN-67835",
@@ -2276,8 +2276,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 306,
-    "ageDays": 12
+    "ageHours": 317,
+    "ageDays": 13
   },
   {
     "ticketId": "UFN-67983",
@@ -2291,8 +2291,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 286,
-    "ageDays": 11
+    "ageHours": 297,
+    "ageDays": 12
   },
   {
     "ticketId": "UFN-68000",
@@ -2306,8 +2306,8 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 285,
-    "ageDays": 11
+    "ageHours": 296,
+    "ageDays": 12
   },
   {
     "ticketId": "UFN-68002",
@@ -2321,8 +2321,8 @@
     "assigned": "Leamsi Gem Mangodas",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 285,
-    "ageDays": 11
+    "ageHours": 296,
+    "ageDays": 12
   },
   {
     "ticketId": "UFN-68011",
@@ -2336,8 +2336,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 284,
-    "ageDays": 11
+    "ageHours": 295,
+    "ageDays": 12
   },
   {
     "ticketId": "UFN-68017",
@@ -2351,8 +2351,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 283,
-    "ageDays": 11
+    "ageHours": 295,
+    "ageDays": 12
   },
   {
     "ticketId": "UFN-68029",
@@ -2366,8 +2366,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 283,
-    "ageDays": 11
+    "ageHours": 294,
+    "ageDays": 12
   },
   {
     "ticketId": "UFN-68069",
@@ -2381,8 +2381,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 280,
-    "ageDays": 11
+    "ageHours": 291,
+    "ageDays": 12
   },
   {
     "ticketId": "UFN-68149",
@@ -2396,7 +2396,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 264,
+    "ageHours": 275,
     "ageDays": 11
   },
   {
@@ -2411,8 +2411,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 262,
-    "ageDays": 10
+    "ageHours": 273,
+    "ageDays": 11
   },
   {
     "ticketId": "UFN-68233",
@@ -2426,8 +2426,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 260,
-    "ageDays": 10
+    "ageHours": 271,
+    "ageDays": 11
   },
   {
     "ticketId": "UFN-68524",
@@ -2441,8 +2441,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 238,
-    "ageDays": 9
+    "ageHours": 249,
+    "ageDays": 10
   },
   {
     "ticketId": "UFN-68559",
@@ -2456,8 +2456,8 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 236,
-    "ageDays": 9
+    "ageHours": 247,
+    "ageDays": 10
   },
   {
     "ticketId": "UFN-68573",
@@ -2471,8 +2471,8 @@
     "assigned": "Timothy McHugh",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 235,
-    "ageDays": 9
+    "ageHours": 246,
+    "ageDays": 10
   },
   {
     "ticketId": "UFN-68579",
@@ -2486,8 +2486,8 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 234,
-    "ageDays": 9
+    "ageHours": 245,
+    "ageDays": 10
   },
   {
     "ticketId": "UFN-68714",
@@ -2501,8 +2501,8 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 215,
-    "ageDays": 8
+    "ageHours": 226,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-68733",
@@ -2516,8 +2516,8 @@
     "assigned": "Yang-Lhing Bague",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 214,
-    "ageDays": 8
+    "ageHours": 226,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-68739",
@@ -2531,8 +2531,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 214,
-    "ageDays": 8
+    "ageHours": 225,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-68741",
@@ -2546,8 +2546,8 @@
     "assigned": "Timothy McHugh",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 214,
-    "ageDays": 8
+    "ageHours": 225,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-68749",
@@ -2561,8 +2561,8 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 213,
-    "ageDays": 8
+    "ageHours": 224,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-68750",
@@ -2576,8 +2576,8 @@
     "assigned": null,
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 213,
-    "ageDays": 8
+    "ageHours": 224,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-68751",
@@ -2591,8 +2591,8 @@
     "assigned": "Youssef Zeitoon",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 213,
-    "ageDays": 8
+    "ageHours": 224,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-68794",
@@ -2606,8 +2606,8 @@
     "assigned": "Kent Claud Caballero",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 209,
-    "ageDays": 8
+    "ageHours": 220,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-68797",
@@ -2621,8 +2621,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 209,
-    "ageDays": 8
+    "ageHours": 220,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-68815",
@@ -2636,8 +2636,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 208,
-    "ageDays": 8
+    "ageHours": 219,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-68857",
@@ -2651,8 +2651,8 @@
     "assigned": "Kent Claud Caballero",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 190,
-    "ageDays": 7
+    "ageHours": 201,
+    "ageDays": 8
   },
   {
     "ticketId": "UFN-68951",
@@ -2666,7 +2666,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 145,
+    "ageHours": 156,
     "ageDays": 6
   },
   {
@@ -2681,8 +2681,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 142,
-    "ageDays": 5
+    "ageHours": 153,
+    "ageDays": 6
   },
   {
     "ticketId": "UFN-69017",
@@ -2696,8 +2696,8 @@
     "assigned": null,
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 141,
-    "ageDays": 5
+    "ageHours": 152,
+    "ageDays": 6
   },
   {
     "ticketId": "UFN-69123",
@@ -2711,7 +2711,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 132,
+    "ageHours": 143,
     "ageDays": 5
   },
   {
@@ -2726,7 +2726,7 @@
     "assigned": "Youssef Zeitoon",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 132,
+    "ageHours": 143,
     "ageDays": 5
   },
   {
@@ -2741,8 +2741,8 @@
     "assigned": "nicole weber",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 119,
-    "ageDays": 4
+    "ageHours": 130,
+    "ageDays": 5
   },
   {
     "ticketId": "UFN-69245",
@@ -2756,8 +2756,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 118,
-    "ageDays": 4
+    "ageHours": 129,
+    "ageDays": 5
   },
   {
     "ticketId": "UFN-69252",
@@ -2771,8 +2771,8 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 117,
-    "ageDays": 4
+    "ageHours": 128,
+    "ageDays": 5
   },
   {
     "ticketId": "UFN-69257",
@@ -2786,8 +2786,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 117,
-    "ageDays": 4
+    "ageHours": 128,
+    "ageDays": 5
   },
   {
     "ticketId": "UFN-69272",
@@ -2801,8 +2801,8 @@
     "assigned": "Yang-Lhing Bague",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 116,
-    "ageDays": 4
+    "ageHours": 127,
+    "ageDays": 5
   },
   {
     "ticketId": "UFN-69307",
@@ -2816,8 +2816,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 113,
-    "ageDays": 4
+    "ageHours": 125,
+    "ageDays": 5
   },
   {
     "ticketId": "UFN-69334",
@@ -2831,8 +2831,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 112,
-    "ageDays": 4
+    "ageHours": 123,
+    "ageDays": 5
   },
   {
     "ticketId": "UFN-69337",
@@ -2846,8 +2846,8 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 111,
-    "ageDays": 4
+    "ageHours": 122,
+    "ageDays": 5
   },
   {
     "ticketId": "UFN-69380",
@@ -2861,7 +2861,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 97,
+    "ageHours": 108,
     "ageDays": 4
   },
   {
@@ -2876,7 +2876,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 96,
+    "ageHours": 107,
     "ageDays": 4
   },
   {
@@ -2891,7 +2891,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 96,
+    "ageHours": 107,
     "ageDays": 4
   },
   {
@@ -2906,8 +2906,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 95,
-    "ageDays": 3
+    "ageHours": 106,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-69426",
@@ -2921,8 +2921,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 94,
-    "ageDays": 3
+    "ageHours": 105,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-69436",
@@ -2936,8 +2936,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 93,
-    "ageDays": 3
+    "ageHours": 104,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-69447",
@@ -2951,8 +2951,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 93,
-    "ageDays": 3
+    "ageHours": 104,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-69450",
@@ -2966,8 +2966,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 92,
-    "ageDays": 3
+    "ageHours": 104,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-69453",
@@ -2981,8 +2981,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 92,
-    "ageDays": 3
+    "ageHours": 103,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-69454",
@@ -2992,12 +2992,12 @@
     "priority": "Medium",
     "subject": "NIAGARA / UNIS / QUANTIX BULK SCHEDULE / WK 9.7 - 9.13",
     "createdDate": "2026-09-02",
-    "lastUpdated": "2026-09-05",
+    "lastUpdated": "2026-09-06",
     "assigned": "Yang-Lhing Bague",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 92,
-    "ageDays": 3
+    "ageHours": 103,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-69460",
@@ -3011,8 +3011,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 90,
-    "ageDays": 3
+    "ageHours": 101,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-69462",
@@ -3026,8 +3026,8 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 90,
-    "ageDays": 3
+    "ageHours": 101,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-69471",
@@ -3041,8 +3041,8 @@
     "assigned": "Wilmer Acedo",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 89,
-    "ageDays": 3
+    "ageHours": 101,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-69495",
@@ -3056,8 +3056,8 @@
     "assigned": "Yang-Lhing Bague",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 88,
-    "ageDays": 3
+    "ageHours": 99,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-69508",
@@ -3071,8 +3071,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 86,
-    "ageDays": 3
+    "ageHours": 97,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-69511",
@@ -3086,8 +3086,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 86,
-    "ageDays": 3
+    "ageHours": 97,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-69519",
@@ -3101,7 +3101,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 84,
+    "ageHours": 95,
     "ageDays": 3
   },
   {
@@ -3116,8 +3116,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 71,
-    "ageDays": 2
+    "ageHours": 82,
+    "ageDays": 3
   },
   {
     "ticketId": "UFN-69591",
@@ -3131,8 +3131,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 70,
-    "ageDays": 2
+    "ageHours": 81,
+    "ageDays": 3
   },
   {
     "ticketId": "UFN-69595",
@@ -3146,8 +3146,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 69,
-    "ageDays": 2
+    "ageHours": 81,
+    "ageDays": 3
   },
   {
     "ticketId": "UFN-69618",
@@ -3161,8 +3161,8 @@
     "assigned": "Shailene Baez",
     "closeFlag": true,
     "slaStatus": "On Track",
-    "ageHours": 68,
-    "ageDays": 2
+    "ageHours": 79,
+    "ageDays": 3
   },
   {
     "ticketId": "UFN-69647",
@@ -3176,8 +3176,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 65,
-    "ageDays": 2
+    "ageHours": 76,
+    "ageDays": 3
   },
   {
     "ticketId": "UFN-69663",
@@ -3191,8 +3191,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 64,
-    "ageDays": 2
+    "ageHours": 75,
+    "ageDays": 3
   },
   {
     "ticketId": "UFN-69673",
@@ -3206,8 +3206,8 @@
     "assigned": "Wilmer Acedo",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 63,
-    "ageDays": 2
+    "ageHours": 74,
+    "ageDays": 3
   },
   {
     "ticketId": "UFN-69696",
@@ -3221,7 +3221,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 57,
+    "ageHours": 68,
     "ageDays": 2
   },
   {
@@ -3236,7 +3236,7 @@
     "assigned": "Yang-Lhing Bague",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 48,
+    "ageHours": 59,
     "ageDays": 2
   },
   {
@@ -3251,7 +3251,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 48,
+    "ageHours": 59,
     "ageDays": 2
   },
   {
@@ -3266,8 +3266,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 47,
-    "ageDays": 1
+    "ageHours": 58,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69751",
@@ -3281,8 +3281,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 47,
-    "ageDays": 1
+    "ageHours": 58,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69760",
@@ -3296,8 +3296,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 46,
-    "ageDays": 1
+    "ageHours": 57,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69767",
@@ -3311,8 +3311,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 46,
-    "ageDays": 1
+    "ageHours": 57,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69771",
@@ -3326,8 +3326,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 46,
-    "ageDays": 1
+    "ageHours": 57,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69774",
@@ -3341,8 +3341,8 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 46,
-    "ageDays": 1
+    "ageHours": 57,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69779",
@@ -3356,8 +3356,8 @@
     "assigned": "Yang-Lhing Bague",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 45,
-    "ageDays": 1
+    "ageHours": 57,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69781",
@@ -3371,8 +3371,8 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 45,
-    "ageDays": 1
+    "ageHours": 57,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69782",
@@ -3386,8 +3386,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 45,
-    "ageDays": 1
+    "ageHours": 56,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69797",
@@ -3401,8 +3401,8 @@
     "assigned": "Yang-Lhing Bague",
     "closeFlag": true,
     "slaStatus": "On Track",
-    "ageHours": 44,
-    "ageDays": 1
+    "ageHours": 55,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69810",
@@ -3416,8 +3416,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 42,
-    "ageDays": 1
+    "ageHours": 54,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69811",
@@ -3431,8 +3431,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 42,
-    "ageDays": 1
+    "ageHours": 53,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69818",
@@ -3446,8 +3446,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 41,
-    "ageDays": 1
+    "ageHours": 52,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69825",
@@ -3461,8 +3461,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 40,
-    "ageDays": 1
+    "ageHours": 52,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69838",
@@ -3476,8 +3476,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 40,
-    "ageDays": 1
+    "ageHours": 51,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69839",
@@ -3491,8 +3491,8 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 39,
-    "ageDays": 1
+    "ageHours": 51,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69841",
@@ -3506,8 +3506,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 38,
-    "ageDays": 1
+    "ageHours": 50,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69842",
@@ -3521,8 +3521,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 38,
-    "ageDays": 1
+    "ageHours": 50,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69843",
@@ -3536,8 +3536,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 38,
-    "ageDays": 1
+    "ageHours": 49,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69844",
@@ -3551,8 +3551,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 38,
-    "ageDays": 1
+    "ageHours": 49,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69845",
@@ -3566,8 +3566,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 38,
-    "ageDays": 1
+    "ageHours": 49,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69846",
@@ -3581,8 +3581,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 38,
-    "ageDays": 1
+    "ageHours": 49,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69847",
@@ -3596,8 +3596,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 38,
-    "ageDays": 1
+    "ageHours": 49,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69848",
@@ -3611,8 +3611,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 38,
-    "ageDays": 1
+    "ageHours": 49,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69849",
@@ -3626,8 +3626,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 38,
-    "ageDays": 1
+    "ageHours": 49,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69850",
@@ -3641,8 +3641,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 38,
-    "ageDays": 1
+    "ageHours": 49,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69851",
@@ -3656,8 +3656,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 38,
-    "ageDays": 1
+    "ageHours": 49,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69852",
@@ -3671,8 +3671,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 38,
-    "ageDays": 1
+    "ageHours": 49,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69853",
@@ -3686,8 +3686,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 38,
-    "ageDays": 1
+    "ageHours": 49,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69854",
@@ -3701,8 +3701,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 38,
-    "ageDays": 1
+    "ageHours": 49,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69855",
@@ -3716,8 +3716,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 38,
-    "ageDays": 1
+    "ageHours": 49,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69856",
@@ -3731,8 +3731,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 38,
-    "ageDays": 1
+    "ageHours": 49,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69857",
@@ -3746,8 +3746,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 38,
-    "ageDays": 1
+    "ageHours": 49,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69859",
@@ -3761,8 +3761,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 37,
-    "ageDays": 1
+    "ageHours": 48,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69860",
@@ -3776,23 +3776,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 37,
-    "ageDays": 1
-  },
-  {
-    "ticketId": "UFN-69862",
-    "customer": "SMEG USA INC",
-    "customerEmail": "no-reply@freight.amazon.com",
-    "opsStatus": "New",
-    "priority": "Medium",
-    "subject": "Amazon Freight LTL Pickup Schedule GFA2R for Sep 8, 2026",
-    "createdDate": "2026-09-04",
-    "lastUpdated": "2026-09-04",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 37,
-    "ageDays": 1
+    "ageHours": 48,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-69881",
@@ -3806,7 +3791,7 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 24,
+    "ageHours": 35,
     "ageDays": 1
   },
   {
@@ -3821,7 +3806,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 24,
+    "ageHours": 35,
     "ageDays": 1
   },
   {
@@ -3836,7 +3821,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 24,
+    "ageHours": 35,
     "ageDays": 1
   },
   {
@@ -3851,8 +3836,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 21,
-    "ageDays": 0
+    "ageHours": 33,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-69885",
@@ -3866,8 +3851,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 21,
-    "ageDays": 0
+    "ageHours": 33,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-69886",
@@ -3881,8 +3866,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 21,
-    "ageDays": 0
+    "ageHours": 33,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-69887",
@@ -3896,8 +3881,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 21,
-    "ageDays": 0
+    "ageHours": 33,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-69888",
@@ -3911,8 +3896,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 21,
-    "ageDays": 0
+    "ageHours": 32,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-69892",
@@ -3926,8 +3911,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 21,
-    "ageDays": 0
+    "ageHours": 32,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-69894",
@@ -3941,8 +3926,8 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 19,
-    "ageDays": 0
+    "ageHours": 31,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-69896",
@@ -3956,8 +3941,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 19,
-    "ageDays": 0
+    "ageHours": 30,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-69904",
@@ -3971,8 +3956,8 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 16,
-    "ageDays": 0
+    "ageHours": 27,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-69907",
@@ -3986,8 +3971,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 16,
-    "ageDays": 0
+    "ageHours": 27,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-69909",
@@ -4001,8 +3986,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 16,
-    "ageDays": 0
+    "ageHours": 27,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-69912",
@@ -4016,8 +4001,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 16,
-    "ageDays": 0
+    "ageHours": 27,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-69914",
@@ -4031,8 +4016,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 16,
-    "ageDays": 0
+    "ageHours": 27,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-69915",
@@ -4046,8 +4031,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 16,
-    "ageDays": 0
+    "ageHours": 27,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-69916",
@@ -4061,8 +4046,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 16,
-    "ageDays": 0
+    "ageHours": 27,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-69937",
@@ -4076,7 +4061,7 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 5,
+    "ageHours": 11,
     "ageDays": 0
   },
   {
@@ -4091,7 +4076,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 4,
+    "ageHours": 11,
     "ageDays": 0
   },
   {
@@ -4106,7 +4091,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 4,
+    "ageHours": 11,
     "ageDays": 0
   },
   {
@@ -4121,7 +4106,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 3,
+    "ageHours": 10,
     "ageDays": 0
   },
   {
@@ -4136,7 +4121,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 2,
+    "ageHours": 8,
     "ageDays": 0
   },
   {
@@ -4151,7 +4136,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 1,
+    "ageHours": 8,
     "ageDays": 0
   },
   {
@@ -4160,13 +4145,13 @@
     "customerEmail": "bob.wang1@tcl.com",
     "opsStatus": "New",
     "priority": "Medium",
-    "subject": "FW: [External Sender]Amazon EDI Monitoring – Compliance Issues found.",
+    "subject": "FW: [External Sender]Amazon EDI Monitoring \u2013 Compliance Issues found.",
     "createdDate": "2026-09-06",
     "lastUpdated": "2026-09-06",
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 0,
+    "ageHours": 7,
     "ageDays": 0
   },
   {
@@ -4175,13 +4160,13 @@
     "customerEmail": "kent.lim@unisco.com",
     "opsStatus": "New",
     "priority": "Medium",
-    "subject": "Appointment Watch — Cesanek (LT_F21) — 24-48h Window (2026-09-07 13:01 ET to 2026-09-08 13:01 ET)",
+    "subject": "Appointment Watch \u2014 Cesanek (LT_F21) \u2014 24-48h Window (2026-09-07 13:01 ET to 2026-09-08 13:01 ET)",
     "createdDate": "2026-09-06",
     "lastUpdated": "2026-09-06",
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 0,
+    "ageHours": 7,
     "ageDays": 0
   },
   {
@@ -4190,13 +4175,133 @@
     "customerEmail": "bob.wang1@tcl.com",
     "opsStatus": "New",
     "priority": "Medium",
-    "subject": "FW: [External Sender]Amazon EDI Monitoring – Compliance Issues found.",
+    "subject": "FW: [External Sender]Amazon EDI Monitoring \u2013 Compliance Issues found.",
     "createdDate": "2026-09-06",
     "lastUpdated": "2026-09-06",
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 0,
+    "ageHours": 7,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-69953",
+    "customer": "COLAVITA USA, LLC",
+    "customerEmail": "bsantana@fusiontransport.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "COLAVITA - WEEK OF 8/31/26-PENDING ORDERS",
+    "createdDate": "2026-09-06",
+    "lastUpdated": "2026-09-06",
+    "assigned": "Shailene Baez",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 5,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-69955",
+    "customer": "UNIS Internal",
+    "customerEmail": "kent.lim@unisco.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Cesanek (LT_F21) Appointment Watch \u2014 24-48h Window (2026-09-06)",
+    "createdDate": "2026-09-06",
+    "lastUpdated": "2026-09-06",
+    "assigned": "Kent Joseph Lim",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 4,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-69960",
+    "customer": "WATER PLUS",
+    "customerEmail": "wilmer.benitez@unisco.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Cesanek Dropship EOD - WATER PLUS - 2026-09-06",
+    "createdDate": "2026-09-06",
+    "lastUpdated": "2026-09-06",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 3,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-69961",
+    "customer": "RISE BREWING",
+    "customerEmail": "wilmer.benitez@unisco.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Cesanek Dropship EOD - RISE BREWING - 2026-09-06",
+    "createdDate": "2026-09-06",
+    "lastUpdated": "2026-09-06",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 3,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-69962",
+    "customer": "RECOVERY SPORTS",
+    "customerEmail": "wilmer.benitez@unisco.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Cesanek Dropship EOD - RECOVERY SPORTS - 2026-09-06",
+    "createdDate": "2026-09-06",
+    "lastUpdated": "2026-09-06",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 3,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-69964",
+    "customer": "ZEN BEVERAGE",
+    "customerEmail": "wilmer.benitez@unisco.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Cesanek Dropship EOD - ZEN BEVERAGE - 2026-09-06",
+    "createdDate": "2026-09-06",
+    "lastUpdated": "2026-09-06",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 3,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-69965",
+    "customer": "VITA COCO DTC",
+    "customerEmail": "wilmer.benitez@unisco.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Cesanek Dropship EOD - VITA COCO DTC - 2026-09-06",
+    "createdDate": "2026-09-06",
+    "lastUpdated": "2026-09-06",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 3,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-69967",
+    "customer": "UPTIME ENERGY",
+    "customerEmail": "wilmer.benitez@unisco.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Cesanek Dropship EOD - UPTIME ENERGY - 2026-09-06",
+    "createdDate": "2026-09-06",
+    "lastUpdated": "2026-09-06",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 3,
     "ageDays": 0
   }
 ]

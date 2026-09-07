@@ -6,29 +6,29 @@
     "tenant": "LT",
     "timezone": "America/New_York"
   },
-  "lastRefreshed": "2026-09-06T13:56:00-04:00",
-  "dataSource": "TicketOps (authoritative) + Outlook (non-blocking; unavailable this cycle - 403 shared mailbox, 0 new delegated hits)",
+  "lastRefreshed": "2026-09-06T20:33:32-04:00",
+  "dataSource": "TicketOps (authoritative) + Outlook (non-blocking; 1 new Colavita/Fusion pending-orders thread -> UFN-69953; shared mailbox 403)",
   "refreshType": "AUTHORITATIVE",
-  "refreshId": "refresh-2026-09-06T13:56ET-AUTHORITATIVE-v19",
-  "totalRaw": 344,
-  "totalEligible": 280,
-  "newCount": 211,
+  "refreshId": "refresh-2026-09-06T20:33ET-AUTHORITATIVE-v20",
+  "totalRaw": 352,
+  "totalEligible": 287,
+  "newCount": 218,
   "openCount": 0,
   "pendingCount": 69,
-  "truncationNote": "closeFlag not a gate (19 retained incl. auto-close artifacts UFN-68733/UFN-68750/UFN-59720); Reopen (37) and billing/storage/handling/claims invoice items (22) excluded; 5 duplicate threads removed (3 prior + new 69941/69943 kept as 69942/69946); LIVE 13:56 ET pull: 344 open UFN = 234 New + 73 Pending + 37 Reopen (+11 New vs v18, no removals/status changes); eligible 280 = 211 New + 69 Pending (+9 net); new since v18: UFN-69937..69949 (11 arrivals; 2 regenerated twins deduped); Outlook unavailable this cycle - 9 eligible threads carried forward; per-row ages anchored 13:56 ET",
+  "truncationNote": "closeFlag not a gate (19 retained incl. auto-close artifacts UFN-68733/UFN-68750/UFN-59720); Reopen (38) and billing/storage/handling/claims invoice items (22) excluded; 5 duplicate threads removed (same 5 pairs as v19); LIVE 20:33 ET pull: 352 open UFN = 241 New + 73 Pending + 38 Reopen (+8 vs v19: +7 New, +1 Reopen); eligible 287 = 218 New + 69 Pending (+7 net); new since v19: UFN-69953 (Colavita pending orders) + UFN-69955 (Appointment Watch) + Cesanek Dropship EOD UFN-69960/69961/69962/69964/69965/69967 (8 arrivals); 1 removed: UFN-69862 (Amazon Freight LTL Pickup Schedule, SMEG USA INC, closed); Outlook partial - 1 new Colavita/Fusion thread matched to UFN-69953 + 9 carried = 10; per-row ages anchored 20:33 ET",
   "slaHealth": {
     "breached": 200,
-    "onTrack": 80,
-    "unassigned": 226
+    "onTrack": 87,
+    "unassigned": 231
   },
   "evidenceMetrics": {
-    "totalEligible": 280,
+    "totalEligible": 287,
     "slaBreached": 200,
-    "slaOnTrack": 80,
-    "unassigned": 226,
+    "slaOnTrack": 87,
+    "unassigned": 231,
     "oldestAgeDays": 185,
-    "outlookThreadsMatched": 9,
-    "outlookThreadsUniquePostDedup": 9,
+    "outlookThreadsMatched": 10,
+    "outlookThreadsUniquePostDedup": 10,
     "activeEscalations": 9,
     "eligibleEscalations": 2
   }

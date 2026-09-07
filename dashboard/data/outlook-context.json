@@ -1,18 +1,33 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-06T13:56:00-04:00",
-  "lastRefreshed": "2026-09-06T13:56:00-04:00",
+  "generatedAt": "2026-09-06T20:33:32-04:00",
+  "lastRefreshed": "2026-09-06T20:33:32-04:00",
   "outlookAvailable": false,
-  "dataSource": "Outlook — Northampton/Cesanek CS mailbox context (nht.cs@unisco.com) UNAVAILABLE this cycle (Microsoft Graph 403 ErrorAccessDenied on shared mailbox via nicole.weber@unisco.com; delegated inbox full-folder scan 2026-09-06 08:19 ET .. 13:56 ET: 0 UFN / 0 Cesanek-related messages — newest mailbox item remains 2026-09-04T20:30:47Z MPW Internal WH Transfer, pre-window). Thread data below carried forward from v15-v18 (watermark advanced to 2026-09-06T17:56:00Z / 13:56 ET).",
-  "threadsMatched": 9,
-  "threadsUniquePostDedup": 9,
+  "dataSource": "Outlook - Northampton/Cesanek CS mailbox context (nht.cs@unisco.com) PARTIAL this cycle: shared mailbox read still DENIED via nicole.weber@unisco.com (Microsoft Graph 403 ErrorAccessDenied); delegated inbox full-folder scan 2026-09-06 13:56 ET .. 20:33 ET returned 1 new NHT/Cesanek message - Fusion/Colavita 'COLAVITA - WEEK OF 8/31/26-PENDING ORDERS' received 2026-09-06T19:25:11Z (15:25 ET), DIRECT match to new eligible ticket UFN-69953 (created 19:25:14Z). 9 carried-forward eligible-ticket threads (v15-v19) unchanged + 1 new = 10. Watermark advanced to 2026-09-07T00:33:32Z (20:33 ET).",
+  "threadsMatched": 10,
+  "threadsUniquePostDedup": 10,
   "coverage": {
-    "eligibleTicketsTotal": 280,
-    "eligibleTicketsWithOutlookContext": 9,
-    "coveragePct": 3.2
+    "eligibleTicketsTotal": 287,
+    "eligibleTicketsWithOutlookContext": 10,
+    "coveragePct": 3.5
   },
   "ticketThreads": [
+    {
+      "threadTopic": "COLAVITA - WEEK OF 8/31/26-PENDING ORDERS",
+      "lastReceivedAt": "2026-09-06T19:25:11Z",
+      "participants": [
+        "bsantana@fusiontransport.com",
+        "mariah.mateo@unisco.com",
+        "colavita.northampton@unisco.com",
+        "nht.cs@unisco.com",
+        "nicole.weber@unisco.com"
+      ],
+      "matchedTicketId": "UFN-69953",
+      "matchedTicketSubjectHint": "COLAVITA - WEEK OF 8/31/26-PENDING ORDERS",
+      "customer": "COLAVITA USA, LLC",
+      "escalation": false
+    },
     {
       "threadTopic": "FW: Claim 18050 | Diageo Delivery# 1057383854",
       "lastReceivedAt": "2026-09-04T20:06:31Z",
@@ -427,5 +442,5 @@
     "UNY Brands",
     "Walmart (Boundless/UNY)"
   ],
-  "refreshNote": "v19 cycle 2026-09-06 13:56 ET: delegated mailbox accessible via Graph (full-folder listing + search OK; 0 messages received >= 2026-09-06T12:19:00Z; newest mailbox item 09-04T20:30:47Z pre-dates window); shared mailbox nht.cs@unisco.com still 403 ErrorAccessDenied; no new or updated eligible-thread matches since v18 08:19 ET pull — 9 eligible-ticket threads carried forward unchanged (Diageo claim 18050/UFN-69811 and Boundless Walmart load-45872185/UFN-69771+UFN-69618+new UFN-69942 persist as the 2 eligible escalations). Outlook adds no delta to ticket metrics this cycle; TicketOps remains authoritative."
+  "refreshNote": "v20 cycle 2026-09-06 20:33 ET: delegated mailbox accessible via Graph (full-folder listing + search OK); shared mailbox nht.cs@unisco.com still 403 ErrorAccessDenied; window 13:56 ET .. 20:33 ET returned 1 new NHT/Cesanek message \u2014 Fusion/Colavita 'COLAVITA - WEEK OF 8/31/26-PENDING ORDERS' received 2026-09-06T19:25:11Z (15:25 ET), DIRECT match to new eligible ticket UFN-69953 (created 19:25:14Z; New) \u2014 added as the 10th eligible-thread match (3.5% of 287); 9 prior eligible-ticket threads carried forward unchanged (Diageo claim 18050/UFN-69811 and Boundless Walmart load-45872185/UFN-69771+UFN-69618+UFN-69942 persist as the 2 eligible escalations). Outlook adds no other delta to ticket metrics this cycle; TicketOps remains authoritative."
 }
