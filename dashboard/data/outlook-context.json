@@ -1,10 +1,10 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-07T19:38:00-04:00",
-  "lastRefreshed": "2026-09-07T19:38:00-04:00",
+  "generatedAt": "2026-09-07T22:53:00-04:00",
+  "lastRefreshed": "2026-09-07T22:53:00-04:00",
   "outlookAvailable": true,
-  "dataSource": "v23 scan (2026-09-07 ~19:29 ET). Mailbox: delegated nicole.weber@unisco.com (inbox/all folders + Microsoft Search); shared mailbox nht.cs@unisco.com read DENIED (Graph 403 ErrorAccessDenied) - unchanged. Window scanned: 2026-09-07T10:13:00Z -> 2026-09-07T23:29:00Z. Hits: 6 messages / 4 unique conversations. Boundless/UNY Walmart load-45872185 incident thread refreshed (last 17:30Z - Assistance Needed, Ticket #3569318, Central Transport pickup 9/8) - same eligible incident, no new unique thread. AMI New Roar Order SO1393032/DN-2117711 thread (17:04Z) matched UFN-68616 which is NOT in the eligible open New/Pending set -> recorded as excluded-context (not an eligible-ticket thread). 2 internal billing-audit digests from tweetie.lamoste@unisco.com (RN 19:21Z / DN 19:04Z 'Impact[ing] Billing') excluded - no UFN ticket mapping. No new Colavita pending-orders / Diageo claim-18050 / Ritual / UNY-brand threads. Threads carried forward: 10 eligible-ticket threads unchanged (3.2% of 311). Watermark advanced to 2026-09-07T23:29:00Z (19:29 ET).",
+  "dataSource": "v24 scan (2026-09-07 ~22:53 ET; mailbox window to 2026-09-08T02:44:00Z). Shared mailbox nht.cs@unisco.com REACHABLE this cycle via delegated Graph access (prior 403 cleared): scanned UFN+ops threads since 08/20 priority to last 7 days - no brand-new unique eligible threads vs the 10 carried (Boundless Walmart load-45872185 refreshed, same incident; AMI/Roar SO1393032 context maps to UFN-68616 outside eligible set; UFB billing/digests excluded). 10 eligible-ticket threads carried unchanged (3.2% of 311). Non-blocking context only.",
   "threadsMatched": 10,
   "threadsUniquePostDedup": 10,
   "coverage": {
@@ -447,5 +447,5 @@
     "UNY Brands",
     "Walmart (Boundless/UNY)"
   ],
-  "refreshNote": "v23 refresh 19:38 ET: +24 net eligible (311 = 242 New/69 Pending); 0 new unique Outlook threads since v22 (10 carried, 3.2%); Boundless Walmart load incident refreshed 17:30Z; AMI/Roar UFN-68616 context excluded; non-blocking context only."
+  "refreshNote": "v24 refresh 22:53 ET: population unchanged (311 = 242 New/69 Pending, net 0); 0 new unique Outlook threads (10 carried, 3.2%); shared mailbox nht.cs@unisco.com reachable (delegated) - scan window advanced to 02:44:00Z; 2 eligible escalations persist (UFN-69811 Diageo/Ritual claim 18050; Boundless Walmart load-45872185 as one incident)."
 }
