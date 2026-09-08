@@ -1,16 +1,16 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-07T22:53:00-04:00",
-  "lastRefreshed": "2026-09-07T22:53:00-04:00",
-  "outlookAvailable": true,
-  "dataSource": "v24 scan (2026-09-07 ~22:53 ET; mailbox window to 2026-09-08T02:44:00Z). Shared mailbox nht.cs@unisco.com REACHABLE this cycle via delegated Graph access (prior 403 cleared): scanned UFN+ops threads since 08/20 priority to last 7 days - no brand-new unique eligible threads vs the 10 carried (Boundless Walmart load-45872185 refreshed, same incident; AMI/Roar SO1393032 context maps to UFN-68616 outside eligible set; UFB billing/digests excluded). 10 eligible-ticket threads carried unchanged (3.2% of 311). Non-blocking context only.",
+  "generatedAt": "2026-09-08T03:20:00-04:00",
+  "lastRefreshed": "2026-09-08T03:20:00-04:00",
+  "outlookAvailable": false,
+  "dataSource": "v25 scan (2026-09-08 ~03:20 ET; mailbox window 2026-09-08T02:44:00Z -> 07:16:33Z). Shared mailbox nht.cs@unisco.com UNAVAILABLE this cycle (403 ErrorAccessDenied - delegated Mail.Read.Shared grant not effective); delegated inbox (nicole.weber@unisco.com) scanned - 0 UFN/NHT/Cesanek customer threads in window (internal Teams/org mail only). 0 new unique eligible threads; 10 eligible-ticket threads carried forward unchanged (3.1% of 325). Non-blocking context only.",
   "threadsMatched": 10,
   "threadsUniquePostDedup": 10,
   "coverage": {
-    "eligibleTicketsTotal": 311,
+    "eligibleTicketsTotal": 325,
     "eligibleTicketsWithOutlookContext": 10,
-    "coveragePct": 3.2
+    "coveragePct": 3.1
   },
   "ticketThreads": [
     {
@@ -447,5 +447,5 @@
     "UNY Brands",
     "Walmart (Boundless/UNY)"
   ],
-  "refreshNote": "v24 refresh 22:53 ET: population unchanged (311 = 242 New/69 Pending, net 0); 0 new unique Outlook threads (10 carried, 3.2%); shared mailbox nht.cs@unisco.com reachable (delegated) - scan window advanced to 02:44:00Z; 2 eligible escalations persist (UFN-69811 Diageo/Ritual claim 18050; Boundless Walmart load-45872185 as one incident)."
+  "refreshNote": "v25 refresh 03:20 ET: population +14 (325 = 256 New/69 Pending); 0 new unique Outlook threads (02:44Z->07:16:33Z) - 10 carried (3.1%); shared mailbox nht.cs@unisco.com 403 (grant not effective) - delegated inbox no relevant hits; 2 eligible escalations persist (UFN-69811 Diageo/Ritual claim 18050; Boundless Walmart load-45872185 as one incident)."
 }
