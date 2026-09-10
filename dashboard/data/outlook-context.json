@@ -1,107 +1,182 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-08T03:20:00-04:00",
-  "lastRefreshed": "2026-09-08T03:20:00-04:00",
+  "generatedAt": "2026-09-10T00:14:01Z",
+  "lastRefreshed": "2026-09-10T00:14:01Z",
   "outlookAvailable": false,
-  "dataSource": "v25 scan (2026-09-08 ~03:20 ET; mailbox window 2026-09-08T02:44:00Z -> 07:16:33Z). Shared mailbox nht.cs@unisco.com UNAVAILABLE this cycle (403 ErrorAccessDenied - delegated Mail.Read.Shared grant not effective); delegated inbox (nicole.weber@unisco.com) scanned - 0 UFN/NHT/Cesanek customer threads in window (internal Teams/org mail only). 0 new unique eligible threads; 10 eligible-ticket threads carried forward unchanged (3.1% of 325). Non-blocking context only.",
-  "threadsMatched": 10,
-  "threadsUniquePostDedup": 10,
+  "delegatedMailboxAvailable": true,
+  "dataSource": "v26 scan (2026-09-10 ~00:14Z; window 2026-09-08T07:16:33Z -> 2026-09-10T00:14:01Z). Delegated inbox nicole.weber@unisco.com scanned OK; shared mailbox nht.cs@unisco.com UNAVAILABLE (403 ErrorAccessDenied) - non-blocking; no email sent.",
+  "threadsMatched": 14,
+  "threadsUniquePostDedup": 14,
   "coverage": {
-    "eligibleTicketsTotal": 325,
-    "eligibleTicketsWithOutlookContext": 10,
-    "coveragePct": 3.1
+    "eligibleTicketsTotal": 280,
+    "eligibleTicketsWithOutlookContext": 3,
+    "coveragePct": 1.1,
+    "note": "3 eligible tickets have carried matched Outlook threads (UFN-69723, UFN-69462, UFN-68714); 11 additional new eligible ops threads were identified in the scan window without explicit UFN ticket ids (only UFN-69618, now outside the gate, was explicitly referenced)."
   },
   "ticketThreads": [
     {
-      "threadTopic": "COLAVITA - WEEK OF 8/31/26-PENDING ORDERS",
-      "lastReceivedAt": "2026-09-06T19:25:11Z",
+      "threadTopic": "Re: Ticket [3569318] was updated. - No Labels on Cases for BOUNDLESS EC US LLC Load# 45872185",
+      "lastReceivedAt": "2026-09-09T15:21:03Z",
       "participants": [
-        "bsantana@fusiontransport.com",
-        "mariah.mateo@unisco.com",
-        "colavita.northampton@unisco.com",
-        "nht.cs@unisco.com",
-        "nicole.weber@unisco.com"
-      ],
-      "matchedTicketId": "UFN-69953",
-      "matchedTicketSubjectHint": "COLAVITA - WEEK OF 8/31/26-PENDING ORDERS",
-      "customer": "COLAVITA USA, LLC",
-      "escalation": false
-    },
-    {
-      "threadTopic": "FW: Claim 18050 | Diageo Delivery# 1057383854",
-      "lastReceivedAt": "2026-09-04T20:06:31Z",
-      "participants": [
-        "na_claims@diageo.com",
-        "maria.aponte@unisco.com",
-        "ritualbeverage.northampton@unisco.com",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-69811",
-      "matchedTicketSubjectHint": "Claim 18050 | Diageo Delivery# 1057383854",
-      "customer": "RITUAL BEVERAGE COMPANY",
-      "escalation": true
-    },
-    {
-      "threadTopic": "Assistance Needed - Ticket #3569318 | Load 45872185 (unlabeled mixed-destination freight; Central Transport pickup 9/8 to Northampton) [Boundless EC US LLC / UNY Brands Walmart incident]",
-      "lastReceivedAt": "2026-09-07T17:30:03Z",
-      "participants": [
-        "Yani.Sutherland@walmart.com",
+        "ricky.beri@unybrands.com",
+        "shailene.baez@unisco.com",
         "timothy.mchugh@unisco.com",
         "nht.cs@unisco.com",
-        "alejandra.castillo@unisco.com",
-        "art.ismael@unisco.com",
-        "Garrett.Baskin@walmart.com",
-        "unybrands.northampton@unisco.com",
-        "nicole.weber@unisco.com"
-      ],
-      "matchedTicketId": "UFN-69771",
-      "matchedTicketSubjectHint": "Walmart Ticket #3569318 / Load 45872185; carried incident UFN-69771 / UFN-69618 / UFN-69942 (echo link UFN-69617 in thread)",
-      "customer": "BOUNDLESS EC US LLC",
-      "escalation": true
-    },
-    {
-      "threadTopic": "Assistance Needed - Ticket #3569318 | Load 45872185 (unlabeled mixed-destination freight; Central Transport pickup 9/8 to Northampton) [Boundless EC US LLC / UNY Brands Walmart incident]",
-      "lastReceivedAt": "2026-09-07T17:30:03Z",
-      "participants": [
-        "Yani.Sutherland@walmart.com",
-        "timothy.mchugh@unisco.com",
-        "nht.cs@unisco.com",
-        "alejandra.castillo@unisco.com",
-        "art.ismael@unisco.com",
-        "Garrett.Baskin@walmart.com",
-        "unybrands.northampton@unisco.com",
         "nicole.weber@unisco.com"
       ],
       "matchedTicketId": "UFN-69618",
-      "matchedTicketSubjectHint": "Walmart Ticket #3569318 / Load 45872185; carried incident UFN-69771 / UFN-69618 / UFN-69942 (echo link UFN-69617 in thread)",
-      "customer": "BOUNDLESS EC US LLC",
+      "customer": "BOUNDLESS EC US LLC (UNY Brands / Walmart)",
       "escalation": true
     },
     {
-      "threadTopic": "UNIS - HINT BEVERAGE - NORTHAMPTON, PA - WEEK OF 9/7/26",
-      "lastReceivedAt": "2026-09-04T16:23:07Z",
+      "threadTopic": "Re: PA RITUAL COMMIT FAILED ORDERS (DN-2122926 Commit Blocked)",
+      "lastReceivedAt": "2026-09-09T19:36:53Z",
       "participants": [
-        "bsantana@fusiontransport.com",
-        "clupo@fusiontransport.com",
-        "nht.cs@unisco.com"
+        "nht.cs@unisco.com",
+        "DNAB.Operations@Diageo.com",
+        "nicole.weber@unisco.com",
+        "jaime.taber@diageo.com",
+        "David.DiLoreto@diageo.com"
       ],
-      "matchedTicketId": "UFN-69781",
-      "matchedTicketSubjectHint": "UNIS - HINT BEVERAGE - NORTHAMPTON, PA - WEEK OF 9/7/26",
+      "matchedTicketId": null,
+      "customer": "RITUAL BEVERAGE COMPANY (Diageo DNAB)",
+      "escalation": true
+    },
+    {
+      "threadTopic": "PO101-0001466297 / delivery number 1057590884 - CONFIRM APT FOR COLLECTION",
+      "lastReceivedAt": "2026-09-09T20:45:16Z",
+      "participants": [
+        "nht.cs@unisco.com",
+        "jaime.taber@diageo.com",
+        "pnevin@baldorfood.com",
+        "DNAB.Operations@diageo.com",
+        "nicole.weber@unisco.com"
+      ],
+      "matchedTicketId": null,
+      "customer": "RITUAL BEVERAGE COMPANY (Diageo/Baldor)",
+      "escalation": false
+    },
+    {
+      "threadTopic": "RE: Diageo DNAB Automated Email Alert: UNIS Pick Up Alert Message",
+      "lastReceivedAt": "2026-09-09T13:38:26Z",
+      "participants": [
+        "SRoberts@georgiacrown.com",
+        "Jaime.Taber@diageo.com",
+        "DNAB.Operations@diageo.com",
+        "nicole.weber@unisco.com",
+        "ritualbeverage.northampton@unisco.com"
+      ],
+      "matchedTicketId": null,
+      "customer": "RITUAL BEVERAGE COMPANY (Georgia Crown)",
+      "escalation": false
+    },
+    {
+      "threadTopic": "Hint HVP41-1612 shortage / commit-fail (HVP41-1612 Orders + Hint Orders Week 09/08-09/11, DN-2130041/2130038/2130039)",
+      "lastReceivedAt": "2026-09-09T20:40:34Z",
+      "participants": [
+        "bdalder@drinkhint.com",
+        "nht.cs@unisco.com",
+        "nicole.weber@unisco.com",
+        "wayneminott@drinkhint.com",
+        "youssef.zeitoon@unisco.com"
+      ],
+      "matchedTicketId": null,
       "customer": "HINT INC.",
+      "escalation": true
+    },
+    {
+      "threadTopic": "Re: Pickup appointments / COLAVITA / September 2026 (VWL carrier load-cancellation complaint)",
+      "lastReceivedAt": "2026-09-09T20:51:29Z",
+      "participants": [
+        "damir@vwlcorp.com",
+        "nht.cs@unisco.com",
+        "nicole.weber@unisco.com",
+        "chiara.vitali@colavita.com",
+        "dispatch@vwlcorp.com"
+      ],
+      "matchedTicketId": null,
+      "customer": "COLAVITA USA, LLC",
+      "escalation": true
+    },
+    {
+      "threadTopic": "Re: AMI New Roar Order - SO1393032/ DN-2117711 (Northampton PA)",
+      "lastReceivedAt": "2026-09-09T17:26:41Z",
+      "participants": [
+        "nht.cs@unisco.com",
+        "ellie@athenaintl.com",
+        "jossie@casamerica-marine.com",
+        "kevin.grossi@chrobinson.com",
+        "nicole.weber@unisco.com",
+        "mchordas@factory-llc.com"
+      ],
+      "matchedTicketId": null,
+      "customer": "ROAR BEVERAGES INC",
+      "escalation": false
+    },
+    {
+      "threadTopic": "Re: PICKUP 1/1 for UF-5002633630 | PHONE Scheduling",
+      "lastReceivedAt": "2026-09-09T13:03:00Z",
+      "participants": [
+        "kehe-uf@uber.com",
+        "Mario.Rodriguez@kehe.com",
+        "nht.cs@unisco.com",
+        "nicole.weber@unisco.com",
+        "rcincotta@drinkroar.com"
+      ],
+      "matchedTicketId": null,
+      "customer": "ROAR BEVERAGES INC",
+      "escalation": false
+    },
+    {
+      "threadTopic": "Re: Iceland Direct - PO 810308 (SO110377) - DN-2122820",
+      "lastReceivedAt": "2026-09-09T20:23:18Z",
+      "participants": [
+        "ismael.robles@unisco.com",
+        "juan.barragan@unisco.com",
+        "nicole.weber@unisco.com",
+        "timothy.mchugh@unisco.com",
+        "conny.zavala@unisco.com"
+      ],
+      "matchedTicketId": null,
+      "customer": "Iceland Direct (KD Pharma context)",
+      "escalation": false
+    },
+    {
+      "threadTopic": "RE: PO 098087 (SM 486467 / 10067853)",
+      "lastReceivedAt": "2026-09-09T18:49:35Z",
+      "participants": [
+        "jdesousa@martignetti.com",
+        "amoon@sethmar.com",
+        "nht.cs@unisco.com",
+        "nicole.weber@unisco.com",
+        "azikos@martignetti.com"
+      ],
+      "matchedTicketId": null,
+      "customer": "Martignetti (Diageo/Ritual)",
+      "escalation": true
+    },
+    {
+      "threadTopic": "RE: UNIS ROAR QVC POWDER MOVE From PA to CA DN-2123888",
+      "lastReceivedAt": "2026-09-09T20:04:26Z",
+      "participants": [
+        "nht.cs@unisco.com",
+        "kevin.grossi@chrobinson.com",
+        "mchordas@factory-llc.com",
+        "nicole.weber@unisco.com",
+        "roarbeverage.northampton@unisco.com"
+      ],
+      "matchedTicketId": null,
+      "customer": "ROAR BEVERAGES INC",
       "escalation": false
     },
     {
       "threadTopic": "Diageo DNAB Automated Email Alert: UNIS Pick Up Alert Message",
       "lastReceivedAt": "2026-09-04T15:29:07Z",
       "participants": [
-        "dnab.operations@diageo.com",
-        "jaime.taber@diageo.com",
-        "sroberts@georgiacrown.com",
-        "nht.cs@unisco.com"
+        "nicole.weber@unisco.com"
       ],
       "matchedTicketId": "UFN-69723",
-      "matchedTicketSubjectHint": "Diageo DNAB Automated Email Alert: UNIS Pick Up Alert Message",
       "customer": "RITUAL BEVERAGE COMPANY",
       "escalation": false
     },
@@ -109,25 +184,9 @@
       "threadTopic": "PRIME TIME PACKAGING [SHIPPED] IF48851 (Cesanek outbound)",
       "lastReceivedAt": "2026-09-04T14:23:54Z",
       "participants": [
-        "silvian@primetimepackaging.com",
-        "jordan@ptpbags.com",
-        "nht.cs@unisco.com"
+        "nicole.weber@unisco.com"
       ],
       "matchedTicketId": "UFN-69462",
-      "matchedTicketSubjectHint": "PRIME TIME PACKAGING [SHIPPED] IF48851 (Cesanek outbound)",
-      "customer": "PRIME TIME PACKAGING LTD",
-      "escalation": false
-    },
-    {
-      "threadTopic": "PRIME TIME PACKAGING [SHIPPED] IF48840 (Cesanek outbound)",
-      "lastReceivedAt": "2026-09-04T14:22:31Z",
-      "participants": [
-        "silvian@primetimepackaging.com",
-        "jordan@ptpbags.com",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-69252",
-      "matchedTicketSubjectHint": "PRIME TIME PACKAGING [SHIPPED] IF48840 (Cesanek outbound)",
       "customer": "PRIME TIME PACKAGING LTD",
       "escalation": false
     },
@@ -135,317 +194,114 @@
       "threadTopic": "PRIME TIME PACKAGING [SHIPPED] IF48815 (Cesanek outbound)",
       "lastReceivedAt": "2026-09-04T14:19:30Z",
       "participants": [
-        "silvian@primetimepackaging.com",
-        "jordan@ptpbags.com",
-        "nht.cs@unisco.com"
+        "nicole.weber@unisco.com"
       ],
       "matchedTicketId": "UFN-68714",
-      "matchedTicketSubjectHint": "PRIME TIME PACKAGING [SHIPPED] IF48815 (Cesanek outbound)",
       "customer": "PRIME TIME PACKAGING LTD",
-      "escalation": false
-    },
-    {
-      "threadTopic": "COLAVITA WALMART - WEEK 8.31",
-      "lastReceivedAt": "2026-09-04T13:17:09Z",
-      "participants": [
-        "nicole.weber@unisco.com",
-        "clupo@fusiontransport.com",
-        "bsantana@fusiontransport.com",
-        "sjaworski@fusiontransport.com",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-69017",
-      "matchedTicketSubjectHint": "COLAVITA WALMART - WEEK 8.31",
-      "customer": "COLAVITA USA, LLC",
       "escalation": false
     }
   ],
   "excludedTicketsWithOutlookContext": [
     {
-      "matchedTicketId": "UFN-65796",
-      "threadTopic": "COLAVITA - WEEK OF 8/10/26 -- DISCRIPANCY",
-      "lastReceivedAt": "2026-09-04T15:47:16Z",
-      "customer": "Colavita (Walmart DCs, via Fusion Transport)",
-      "escalation": true,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
+      "matchedTicketId": "UFN-69953",
+      "reason": "matched UFN ticket not open New/Pending (outside the v26 authoritative gate)",
+      "carriedFrom": "v25"
     },
     {
-      "matchedTicketId": "UFN-66820",
-      "threadTopic": "UNIS - HINT BEVERAGE - NORTHAMPTON, PA - WEEK OF 8/17/26",
-      "lastReceivedAt": "2026-09-04T15:45:42Z",
-      "customer": "Hint Beverage (via Fusion Transport)",
-      "escalation": true,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
+      "matchedTicketId": "UFN-69811",
+      "reason": "matched UFN ticket not open New/Pending (outside the v26 authoritative gate)",
+      "carriedFrom": "v25"
     },
     {
-      "matchedTicketId": "UFN-68160",
-      "threadTopic": "Iceland Direct - PO 810308 (SO110377) - DN-2122820",
-      "lastReceivedAt": "2026-09-04T13:23:00Z",
-      "customer": "KD Nutra (KD Pharma)",
-      "escalation": true,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
+      "matchedTicketId": "UFN-69771",
+      "reason": "matched UFN ticket not open New/Pending (outside the v26 authoritative gate)",
+      "carriedFrom": "v25"
     },
     {
-      "matchedTicketId": "UFN-68513",
-      "threadTopic": "Re: PO 098087",
-      "lastReceivedAt": "2026-09-04T14:07:17Z",
-      "customer": "Martignetti / Ritual (via Sethmar)",
-      "escalation": true,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
+      "matchedTicketId": "UFN-69618",
+      "reason": "matched UFN ticket not open New/Pending (outside the v26 authoritative gate)",
+      "carriedFrom": "v25"
     },
     {
-      "matchedTicketId": "UFN-68572",
-      "threadTopic": "C&S Orders - Preparation Required",
-      "lastReceivedAt": "2026-09-04T14:10:00Z",
-      "customer": "Colavita USA",
-      "escalation": false,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
+      "matchedTicketId": "UFN-69781",
+      "reason": "matched UFN ticket not open New/Pending (outside the v26 authoritative gate)",
+      "carriedFrom": "v25"
     },
     {
-      "matchedTicketId": "UFN-68601",
-      "threadTopic": "UNIS ROAR QVC POWDER MOVE From PA to CA DN-2123888",
-      "lastReceivedAt": "2026-09-04T20:27:43Z",
-      "customer": "ROAR Beverage (via C.H. Robinson)",
-      "escalation": false,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
+      "matchedTicketId": "UFN-69252",
+      "reason": "matched UFN ticket not open New/Pending (outside the v26 authoritative gate)",
+      "carriedFrom": "v25"
     },
     {
-      "matchedTicketId": "UFN-68616",
-      "threadTopic": "AMI New Roar Order - SO1393032/ DN-2117711 (Northampton PA)",
-      "lastReceivedAt": "2026-09-04T19:19:12Z",
-      "customer": "CasAmerica Marine / Athena",
-      "escalation": true,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
-    },
-    {
-      "matchedTicketId": "UFN-68718",
-      "threadTopic": "P/U REQUEST PO# 309409",
-      "lastReceivedAt": "2026-09-04T16:16:58Z",
-      "customer": "Allied Beverage (Ritual, NHT)",
-      "escalation": false,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
-    },
-    {
-      "matchedTicketId": "UFN-69075",
-      "threadTopic": "SO1393032 - Please accept in @ northampton",
-      "lastReceivedAt": "2026-09-04T18:49:05Z",
-      "customer": "ROAR Beverage (via C.H. Robinson)",
-      "escalation": true,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
-    },
-    {
-      "matchedTicketId": "UFN-69120",
-      "threadTopic": "Nordic - PO4500006091 (SO110100A/B) DN-2126292 & DN-2126300",
-      "lastReceivedAt": "2026-09-04T13:36:29Z",
-      "customer": "KD Nutra (KD Pharma)",
-      "escalation": false,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
-    },
-    {
-      "matchedTicketId": "UFN-69129",
-      "threadTopic": "MPW Internal WH Transfer - PA > CA",
-      "lastReceivedAt": "2026-09-04T20:30:47Z",
-      "customer": "UNY Brands",
-      "escalation": true,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
-    },
-    {
-      "matchedTicketId": "UFN-69138",
-      "threadTopic": "UNIS --> Romark Transfers - Week of 8/31 (PODs DN-2126312/2126328/2126329/2126330)",
-      "lastReceivedAt": "2026-09-04T18:17:51Z",
-      "customer": "Colavita USA",
-      "escalation": false,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
-    },
-    {
-      "matchedTicketId": "UFN-69571",
-      "threadTopic": "PRIME TIME PACKAGING [SHIPPED] IF48852 (Cesanek outbound)",
-      "lastReceivedAt": "2026-09-04T15:16:34Z",
-      "customer": "Prime Time Packaging",
-      "escalation": false,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
-    },
-    {
-      "matchedTicketId": "UFN-69596",
-      "threadTopic": "UNIS --> Edison - Week of 9/7",
-      "lastReceivedAt": "2026-09-04T13:44:57Z",
-      "customer": "Colavita USA",
-      "escalation": false,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
-    },
-    {
-      "matchedTicketId": "UFN-69617",
-      "threadTopic": "Assistance Needed - Ticket #3569318 | Load 45872185",
-      "lastReceivedAt": "2026-09-04T15:23:26Z",
-      "customer": "Walmart (Boundless/UNY)",
-      "escalation": true,
-      "reason": "matched UFN ticket not open New/Open/Pending (displayStatusSystemStatus open) in authoritative TicketOps snapshot 2026-09-05 ~16:00 ET (Reopen/other or closed)"
+      "matchedTicketId": "UFN-69017",
+      "reason": "matched UFN ticket not open New/Pending (outside the v26 authoritative gate)",
+      "carriedFrom": "v25"
     }
   ],
   "operationalThreads": [],
   "activeEscalations": [
     {
-      "threadTopic": "MPW Internal WH Transfer - PA > CA",
-      "lastReceivedAt": "2026-09-04T20:30:47Z",
-      "participants": [
-        "matthew.bobrow@unybrands.com",
-        "shailene.baez@unisco.com",
-        "timothy.mchugh@unisco.com",
-        "nicole.weber@unisco.com",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-69129",
-      "matchedTicketSubjectHint": "MPW Internal WH Transfer PA>CA - pickup/ETA, driver no-show",
-      "customer": "UNY Brands",
-      "escalation": true,
-      "ticketEligible": false
+      "threadTopic": "Re: Ticket [3569318] was updated. - No Labels on Cases for BOUNDLESS EC US LLC Load# 45872185",
+      "lastReceivedAt": "2026-09-09T15:21:03Z",
+      "matchedTicketId": null,
+      "customer": "BOUNDLESS EC US LLC",
+      "ticketEligible": true,
+      "escalation": true
+    },
+    {
+      "threadTopic": "Re: PA RITUAL COMMIT FAILED ORDERS (DN-2122926 Commit Blocked)",
+      "lastReceivedAt": "2026-09-09T19:36:53Z",
+      "matchedTicketId": null,
+      "customer": "RITUAL BEVERAGE COMPANY (Diageo DNAB)",
+      "ticketEligible": true,
+      "escalation": true
+    },
+    {
+      "threadTopic": "Hint HVP41-1612 shortage / commit-fail (DN-2130041/2130038/2130039)",
+      "lastReceivedAt": "2026-09-09T20:40:34Z",
+      "matchedTicketId": null,
+      "customer": "HINT INC.",
+      "ticketEligible": true,
+      "escalation": true
+    },
+    {
+      "threadTopic": "Re: Pickup appointments / COLAVITA / September 2026 (VWL carrier load-cancellation complaint)",
+      "lastReceivedAt": "2026-09-09T20:51:29Z",
+      "matchedTicketId": null,
+      "customer": "COLAVITA USA, LLC",
+      "ticketEligible": true,
+      "escalation": true
+    },
+    {
+      "threadTopic": "RE: PO 098087 (SM 486467 / 10067853)",
+      "lastReceivedAt": "2026-09-09T18:49:35Z",
+      "matchedTicketId": null,
+      "customer": "Martignetti (Diageo/Ritual)",
+      "ticketEligible": false,
+      "escalation": true
     },
     {
       "threadTopic": "FW: Claim 18050 | Diageo Delivery# 1057383854",
       "lastReceivedAt": "2026-09-04T20:06:31Z",
-      "participants": [
-        "na_claims@diageo.com",
-        "maria.aponte@unisco.com",
-        "ritualbeverage.northampton@unisco.com",
-        "nht.cs@unisco.com"
-      ],
       "matchedTicketId": "UFN-69811",
-      "matchedTicketSubjectHint": "Claim 18050 | Diageo Delivery# 1057383854",
-      "customer": "Diageo (Ritual, NHT)",
-      "escalation": true,
-      "ticketEligible": true
-    },
-    {
-      "threadTopic": "AMI New Roar Order - SO1393032/ DN-2117711 (Northampton PA)",
-      "lastReceivedAt": "2026-09-04T19:19:12Z",
-      "participants": [
-        "jossie@casamerica-marine.com",
-        "tina@casamerica-intl.com",
-        "ellie@athenaintl.com",
-        "mchordas@factory-llc.com",
-        "nicole.weber@unisco.com",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-68616",
-      "matchedTicketSubjectHint": "AMI New Roar Order - SO1393032 / DN-2117711 (DN mapping, appts)",
-      "customer": "CasAmerica Marine / Athena",
-      "escalation": true,
-      "ticketEligible": false
-    },
-    {
-      "threadTopic": "SO1393032 - Please accept in @ northampton",
-      "lastReceivedAt": "2026-09-04T18:49:05Z",
-      "participants": [
-        "kevin.grossi@chrobinson.com",
-        "mchordas@factory-llc.com",
-        "roarbeverage.northampton@unisco.com",
-        "nicole.weber@unisco.com",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-69075",
-      "matchedTicketSubjectHint": "SO1393032 mis-shipped - return/re-receipt RMA",
-      "customer": "ROAR Beverage (via C.H. Robinson)",
-      "escalation": true,
-      "ticketEligible": false
-    },
-    {
-      "threadTopic": "Re: Load #45872185 - No Labels on Cases for BOUNDLESS EC US LLC",
-      "lastReceivedAt": "2026-09-07T17:30:03Z",
-      "participants": [
-        "ronel.fameux@walmart.com",
-        "shailene.baez@unisco.com",
-        "unybrands.northampton@unisco.com",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-69771",
-      "matchedTicketSubjectHint": "Load #45872185 - No Labels on Cases for BOUNDLESS EC US LLC",
-      "customer": "Walmart (Boundless/UNY)",
-      "escalation": true,
-      "ticketEligible": true
-    },
-    {
-      "threadTopic": "COLAVITA - WEEK OF 8/10/26 -- DISCRIPANCY",
-      "lastReceivedAt": "2026-09-04T15:47:16Z",
-      "participants": [
-        "mfernandez@fusiontransport.com",
-        "bsantana@fusiontransport.com",
-        "sjaworski@fusiontransport.com",
-        "mariah.mateo@unisco.com",
-        "nicole.weber@unisco.com",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-65796",
-      "matchedTicketSubjectHint": "COLAVITA - WEEK OF 8/10/26 - discrepancy/damaged returns RMA 982/983",
-      "customer": "Colavita (Walmart DCs, via Fusion Transport)",
-      "escalation": true,
-      "ticketEligible": false
-    },
-    {
-      "threadTopic": "UNIS - HINT BEVERAGE - NORTHAMPTON, PA - WEEK OF 8/17/26",
-      "lastReceivedAt": "2026-09-04T15:45:42Z",
-      "participants": [
-        "mfernandez@fusiontransport.com",
-        "bsantana@fusiontransport.com",
-        "sjaworski@fusiontransport.com",
-        "mariah.mateo@unisco.com",
-        "nicole.weber@unisco.com",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-66820",
-      "matchedTicketSubjectHint": "UNIS - HINT BEVERAGE - NORTHAMPTON, PA - WEEK OF 8/17/26 (damages/return, escalation request)",
-      "customer": "Hint Beverage (via Fusion Transport)",
-      "escalation": true,
-      "ticketEligible": false
-    },
-    {
-      "threadTopic": "Re: PO 098087",
-      "lastReceivedAt": "2026-09-04T14:07:17Z",
-      "participants": [
-        "amoon@sethmar.com",
-        "jdesousa@martignetti.com",
-        "ritualbeverage.northampton@unisco.com",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-68513",
-      "matchedTicketSubjectHint": "PO 098087 - LTL pickup not executed / rescheduled",
-      "customer": "Martignetti / Ritual (via Sethmar)",
-      "escalation": true,
-      "ticketEligible": false
-    },
-    {
-      "threadTopic": "Iceland Direct - PO 810308 (SO110377) - DN-2122820",
-      "lastReceivedAt": "2026-09-04T13:23:00Z",
-      "participants": [
-        "silvia.placido@kdpharmagroup.com",
-        "victoria.isturiz@kdpharmagroup.com",
-        "nicole.weber@unisco.com",
-        "timothy.mchugh@unisco.com",
-        "david.morales@unisco.com",
-        "youssef.zeitoon@unisco.com",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-68160",
-      "matchedTicketSubjectHint": "Iceland Direct - PO 810308 (SO110377) - DN-2122820 (missed appts 8/31 & 9/3)",
-      "customer": "KD Nutra (KD Pharma)",
-      "escalation": true,
-      "ticketEligible": false
+      "customer": "RITUAL BEVERAGE COMPANY (Diageo)",
+      "ticketEligible": false,
+      "escalation": true
     }
   ],
   "outlookCustomersActive": [
     "BOUNDLESS EC US LLC",
+    "BOUNDLESS EC US LLC (UNY Brands / Walmart)",
     "COLAVITA USA, LLC",
-    "CasAmerica Marine / Athena",
-    "Colavita (Walmart DCs, via Fusion Transport)",
-    "Diageo (Ritual, NHT)",
     "HINT INC.",
-    "Hint Beverage (via Fusion Transport)",
-    "KD Nutra (KD Pharma)",
-    "Martignetti / Ritual (via Sethmar)",
+    "Iceland Direct (KD Pharma context)",
+    "Martignetti (Diageo/Ritual)",
     "PRIME TIME PACKAGING LTD",
     "RITUAL BEVERAGE COMPANY",
-    "ROAR Beverage (via C.H. Robinson)",
-    "UNY Brands",
-    "Walmart (Boundless/UNY)"
+    "RITUAL BEVERAGE COMPANY (Diageo DNAB)",
+    "RITUAL BEVERAGE COMPANY (Diageo/Baldor)",
+    "RITUAL BEVERAGE COMPANY (Georgia Crown)",
+    "ROAR BEVERAGES INC"
   ],
-  "refreshNote": "v25 refresh 03:20 ET: population +14 (325 = 256 New/69 Pending); 0 new unique Outlook threads (02:44Z->07:16:33Z) - 10 carried (3.1%); shared mailbox nht.cs@unisco.com 403 (grant not effective) - delegated inbox no relevant hits; 2 eligible escalations persist (UFN-69811 Diageo/Ritual claim 18050; Boundless Walmart load-45872185 as one incident)."
+  "refreshNote": "v26 refresh 2026-09-09 21:08 ET: population -45 (280 = 201 New/79 Pending); 11 new eligible Outlook threads (window 09-08T07:16:33Z->09-10T00:14:01Z) + 3 carried matched threads; shared mailbox nht.cs@unisco.com 403 (non-blocking) - delegated inbox ok; 6 active escalations (4 with eligible tickets: Boundless, Ritual/Diageo, Hint, Colavita)."
 }

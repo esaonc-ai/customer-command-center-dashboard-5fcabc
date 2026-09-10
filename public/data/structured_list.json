@@ -6,30 +6,30 @@
     "tenant": "LT",
     "timezone": "America/New_York"
   },
-  "lastRefreshed": "2026-09-08T03:20:00-04:00",
-  "dataSource": "TicketOps (authoritative) + Outlook (non-blocking; 10 threads carried 3.1% of 325; shared mailbox 403 this cycle - context carried forward)",
+  "lastRefreshed": "2026-09-09T21:08:38-04:00",
+  "dataSource": "TicketOps (authoritative) + Outlook (non-blocking; 14 threads: 11 new + 3 carried)",
   "refreshType": "AUTHORITATIVE",
-  "refreshId": "refresh-2026-09-08T03:20ET-AUTHORITATIVE-v25",
-  "totalRaw": 397,
-  "totalEligible": 325,
-  "newCount": 256,
+  "refreshId": "refresh-2026-09-09T21:08ET-AUTHORITATIVE-v26",
+  "totalRaw": 347,
+  "totalEligible": 280,
+  "newCount": 201,
   "openCount": 0,
-  "pendingCount": 69,
-  "truncationNote": "closeFlag not a gate (19 retained incl. auto-close artifacts UFN-68733/UFN-68750/UFN-59720); Reopen (41) and billing/storage/handling/claims invoice items (22) excluded; 9 duplicate threads removed (unchanged v24 pairs); LIVE 07:20Z pull: 397 open UFN = 283 New + 73 Pending + 41 Reopen + 0 Open (+14 vs v24); eligible 325 = 256 New + 69 Pending (+14 net: UFN-70047..70060 SMEG USA INC Amazon LTL/Inbound notices); ages advanced +4h (v24 anchor 02:53Z -> 03:20 ET); oldest UFN-33604 4480h/186d; SLA 200/125; unassigned 261; buckets 38/35/70/182; Outlook 10 threads carried (3.1%); watermark 2026-09-08T07:16:33Z",
+  "pendingCount": 79,
+  "truncationNote": "closeFlag not a gate (25 retained incl. auto-close artifacts); Reopen (42) and billing/UF Billing/storage/handling invoice items (24) excluded; 9 duplicate threads in the rule set (1 applied this cycle, 8 already outside the gate); 4 legacy-department tickets out of scope.",
   "slaHealth": {
-    "breached": 200,
-    "onTrack": 125,
-    "unassigned": 261
+    "breached": 213,
+    "onTrack": 67,
+    "unassigned": 224
   },
   "evidenceMetrics": {
-    "totalEligible": 325,
-    "slaBreached": 200,
-    "slaOnTrack": 125,
-    "unassigned": 261,
-    "oldestAgeDays": 186,
-    "outlookThreadsMatched": 10,
-    "outlookThreadsUniquePostDedup": 10,
-    "activeEscalations": 9,
-    "eligibleEscalations": 2
+    "totalEligible": 280,
+    "slaBreached": 213,
+    "slaOnTrack": 67,
+    "unassigned": 224,
+    "oldestAgeDays": 188,
+    "outlookThreadsMatched": 14,
+    "outlookThreadsUniquePostDedup": 14,
+    "activeEscalations": 6,
+    "eligibleEscalations": 4
   }
 }
