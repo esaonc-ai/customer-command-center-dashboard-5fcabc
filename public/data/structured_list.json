@@ -6,26 +6,26 @@
     "tenant": "LT",
     "timezone": "America/New_York"
   },
-  "lastRefreshed": "2026-09-03T01:59:24-04:00",
+  "lastRefreshed": "2026-09-10T02:39:59-04:00",
   "dataSource": "TicketOps (authoritative) + Outlook (non-blocking)",
   "refreshType": "AUTHORITATIVE",
-  "totalRaw": 362,
-  "totalEligible": 290,
-  "newCount": 212,
+  "totalRaw": 365,
+  "totalEligible": 282,
+  "newCount": 207,
   "openCount": 0,
-  "pendingCount": 78,
-  "truncationNote": "closeFlag not a gate; Reopen (42) and billing/storage/handling (30) excluded",
+  "pendingCount": 75,
+  "truncationNote": "closeFlag not a gate; Reopen (42), billing/storage/handling/invoice/claim/month-end (33), and duplicate threads (8) excluded",
   "slaHealth": {
     "breached": 204,
-    "onTrack": 86,
-    "unassigned": 219
+    "onTrack": 78,
+    "unassigned": 230
   },
   "evidenceMetrics": {
-    "totalEligible": 290,
+    "totalEligible": 282,
     "slaBreached": 204,
-    "slaOnTrack": 86,
-    "unassigned": 219,
-    "oldestAgeDays": 196,
+    "slaOnTrack": 78,
+    "unassigned": 230,
+    "oldestAgeDays": 188,
     "outlookThreadsMatched": 26,
     "outlookThreadsUniquePostDedup": 22,
     "activeEscalations": 4
