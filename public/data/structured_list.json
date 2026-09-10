@@ -6,30 +6,44 @@
     "tenant": "LT",
     "timezone": "America/New_York"
   },
-  "lastRefreshed": "2026-09-09T21:08:38-04:00",
-  "dataSource": "TicketOps (authoritative) + Outlook (non-blocking; 14 threads: 11 new + 3 carried)",
+  "lastRefreshed": "2026-09-10T00:46:07-0400",
+  "dataSource": "TicketOps (authoritative) + Outlook (non-blocking; 13 matched threads)",
   "refreshType": "AUTHORITATIVE",
-  "refreshId": "refresh-2026-09-09T21:08ET-AUTHORITATIVE-v26",
-  "totalRaw": 347,
-  "totalEligible": 280,
-  "newCount": 201,
+  "refreshId": "refresh-2026-09-10T00:46ET-AUTHORITATIVE-v27",
+  "totalRaw": 351,
+  "totalEligible": 283,
+  "newCount": 206,
   "openCount": 0,
-  "pendingCount": 79,
-  "truncationNote": "closeFlag not a gate (25 retained incl. auto-close artifacts); Reopen (42) and billing/UF Billing/storage/handling invoice items (24) excluded; 9 duplicate threads in the rule set (1 applied this cycle, 8 already outside the gate); 4 legacy-department tickets out of scope.",
+  "pendingCount": 77,
+  "truncationNote": "closeFlag is not a gate (25 retained incl. auto-close artifacts); Reopen (42) and billing/UF Billing/storage/handling invoice items (24) excluded; 2 overlapping ticket/email thread drop(s) applied.",
   "slaHealth": {
     "breached": 213,
-    "onTrack": 67,
-    "unassigned": 224
+    "onTrack": 70,
+    "unassigned": 230
+  },
+  "actionBuckets": {
+    "Immediate": 53,
+    "Short-Term": 16,
+    "Medium-Term": 15,
+    "Watch": 199
   },
   "evidenceMetrics": {
-    "totalEligible": 280,
+    "totalEligible": 283,
     "slaBreached": 213,
-    "slaOnTrack": 67,
-    "unassigned": 224,
+    "slaOnTrack": 70,
+    "unassigned": 230,
     "oldestAgeDays": 188,
-    "outlookThreadsMatched": 14,
-    "outlookThreadsUniquePostDedup": 14,
-    "activeEscalations": 6,
-    "eligibleEscalations": 4
+    "outlookThreadsMatched": 13,
+    "outlookThreadsUniquePostDedup": 13,
+    "activeEscalations": 4,
+    "eligibleEscalations": 1
+  },
+  "customers": {
+    "total": 63,
+    "tiers": {
+      "Healthy": 15,
+      "Critical": 41,
+      "Warning": 7
+    }
   }
 }
