@@ -34,19 +34,20 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** – Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** – Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Sep 10 12:46 AM ET – AUTHORITATIVE v27)
+## Current Dashboard State (Last Refresh: Sep 11 5:41 AM ET - AUTHORITATIVE v28)
 
 | Metric | Value |
 |--------|-------|
-| Total Raw (open UFN, dept-gate) | **351** (225 New / 84 Pending / 42 Reopen / 0 Open) |
-| Eligible | **283** (206 New, 0 Open, 77 Pending) |
-| UFN-Count | 283 |
-| Excluded | 68 — 42 Reopen (outside New/Pending gate) + 24 billing/UF Billing/storage/handling invoice items + 2 overlapping ticket/email thread drop(s) |
-| closeFlag | **NOT a gate** — 25 live `closeFlag=true` tickets retained (auto-close artifacts; e.g. UFN-70252, UFN-70203, UFN-70123, UFN-69797, UFN-69739, UFN-69723, UFN-69409) |
-| Customers | **63** distinct orgs (ticket-visible coverage; roster/aliases supplemental; org names from TicketOps org records) |
-| Priority | 283 Medium |
-| SLA Risk | **ELEVATED** – 213 SLA-breached / 70 on-track |
-| Action Buckets | Immediate **53** / Short-Term **16** / Medium-Term **15** / Watch **199** |
-| Outlook Coverage | Delegated inbox nicole.weber@unisco.com scanned (live): **13 matched ticket threads**, 3 active escalations (1 with eligible tickets); shared mailbox nht.cs@unisco.com **403** (non-blocking) |
-| Last Refresh | 2026-09-10T00:46:07-0400 (**AUTHORITATIVE v27** – fresh TicketOps LIVE pull; dept 323826714354839552; dept totals re-verified per row: 351 open UFN = 225 New / 84 Pending / 42 Reopen / 0 Open) |
-| Next Refresh | Hourly dashboard refresh continues; next daily summary email 2026-09-10T08:00:00-04:00 |
+| Total Raw (open UFN, dept-gate) | **380** (250 New / 85 Pending / 45 Reopen / 0 Open) |
+| Eligible | **306** (228 New, 0 Open, 78 Pending) |
+| UFN-Count | 306 |
+| Excluded | 74 - 45 Reopen (outside New/Open/Pending gate) + 27 billing/UF Billing/storage/handling invoice items + 2 overlapping ticket/email thread drops |
+| closeFlag | **NOT a gate** - 31 live `closeFlag=true` tickets retained |
+| Customers | **63** distinct customers (all ticket-visible customers; roster/aliases supplemental; TicketOps organization names used where present) |
+| Priority | 306 Medium |
+| SLA Risk | **ELEVATED** - 225 SLA-breached / 81 on-track; 248 unassigned |
+| Action Buckets | Immediate **43** / Short-Term **46** / Medium-Term **10** / Watch **207** |
+| Outlook Coverage | **15 matched ticket threads**, 6 active escalations (4 with eligible tickets); Outlook remains non-blocking |
+| UFN-67030 | **Solved** / `displayStatusSystemStatus=20` / `closeFlag=true` (outside open eligibility gate) |
+| Last Refresh | 2026-09-11T05:41:57-0400 (**AUTHORITATIVE v28** - fresh TicketOps LIVE pull; dept 323826714354839552; 380 records returned and validated) |
+| Next Refresh | Hourly dashboard refresh continues; next daily summary email 2026-09-12T08:00:00-04:00 |

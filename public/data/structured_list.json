@@ -6,44 +6,44 @@
     "tenant": "LT",
     "timezone": "America/New_York"
   },
-  "lastRefreshed": "2026-09-10T00:46:07-0400",
-  "dataSource": "TicketOps (authoritative) + Outlook (non-blocking; 13 matched threads)",
+  "lastRefreshed": "2026-09-11T05:41:57-0400",
+  "dataSource": "TicketOps (authoritative) + Outlook (non-blocking; 15 matched threads)",
   "refreshType": "AUTHORITATIVE",
-  "refreshId": "refresh-2026-09-10T00:46ET-AUTHORITATIVE-v27",
-  "totalRaw": 351,
-  "totalEligible": 283,
-  "newCount": 206,
+  "refreshId": "refresh-2026-09-11T05:41ET-AUTHORITATIVE-v28",
+  "totalRaw": 380,
+  "totalEligible": 306,
+  "newCount": 228,
   "openCount": 0,
-  "pendingCount": 77,
-  "truncationNote": "closeFlag is not a gate (25 retained incl. auto-close artifacts); Reopen (42) and billing/UF Billing/storage/handling invoice items (24) excluded; 2 overlapping ticket/email thread drop(s) applied.",
+  "pendingCount": 78,
+  "truncationNote": "closeFlag is not a gate (31 retained); Reopen (45) and billing/UF Billing/storage/handling invoice items (27) excluded; 2 overlapping ticket/email thread drops applied.",
   "slaHealth": {
-    "breached": 213,
-    "onTrack": 70,
-    "unassigned": 230
+    "breached": 225,
+    "onTrack": 81,
+    "unassigned": 248
   },
   "actionBuckets": {
-    "Immediate": 53,
-    "Short-Term": 16,
-    "Medium-Term": 15,
-    "Watch": 199
+    "Immediate": 43,
+    "Short-Term": 46,
+    "Medium-Term": 10,
+    "Watch": 207
   },
   "evidenceMetrics": {
-    "totalEligible": 283,
-    "slaBreached": 213,
-    "slaOnTrack": 70,
-    "unassigned": 230,
-    "oldestAgeDays": 188,
-    "outlookThreadsMatched": 13,
-    "outlookThreadsUniquePostDedup": 13,
-    "activeEscalations": 4,
-    "eligibleEscalations": 1
+    "totalEligible": 306,
+    "slaBreached": 225,
+    "slaOnTrack": 81,
+    "unassigned": 248,
+    "oldestAgeDays": 189,
+    "outlookThreadsMatched": 15,
+    "outlookThreadsUniquePostDedup": 15,
+    "activeEscalations": 6,
+    "eligibleEscalations": 4
   },
   "customers": {
     "total": 63,
     "tiers": {
       "Healthy": 15,
-      "Critical": 41,
-      "Warning": 7
+      "Critical": 43,
+      "Warning": 5
     }
   }
 }
