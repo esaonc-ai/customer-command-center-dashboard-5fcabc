@@ -1,10 +1,10 @@
 {
   "refresh": {
-    "id": "refresh-2026-09-12T02:12:15Z-AUTHORITATIVE-v29",
-    "timestamp": "2026-09-12T02:12:15Z",
+    "id": "refresh-2026-09-12T02:25:00Z-AUTHORITATIVE-v30",
+    "timestamp": "2026-09-12T02:25:00Z",
     "type": "AUTHORITATIVE",
-    "previousRefreshId": "refresh-2026-09-11T05:41ET-AUTHORITATIVE-v28",
-    "keyChange": "AUTHORITATIVE REFRESH v29 - fresh TicketOps LIVE department-scoped enumeration (dept 323826714354839552). Raw system-open 378 = New 260 / Pending 66 / Reopen 52. Eligible 302 after 23 billing/UF Billing/storage/handling/service-type/invoice exclusions and 1 duplicate-thread drop. closeFlag remains NOT a gate; 19 live closeFlag=true tickets retained. Ages recomputed at 2026-09-12T02:12:15Z; oldest 190 days. Buckets Immediate 42 / Short-Term 56 / Medium-Term 8 / Watch 196. SLA 220 breached / 82 on track; unassigned 254. Customers 68 (37 Critical / 11 Warning / 20 Healthy). Outlook: 1 supplied matched thread remains eligible; 6 active escalations (1 with an eligible mapped ticket)."
+    "previousRefreshId": "refresh-2026-09-12T02:12:15Z-AUTHORITATIVE-v29",
+    "keyChange": "AUTHORITATIVE REFRESH v30 - fresh TicketOps LIVE department-scoped enumeration (dept 323826714354839552) at 2026-09-12T02:23-02:28Z. Raw system-open 378 = New 260 / Pending 66 / Reopen 52. Eligible 302 after 23 billing/UF Billing/storage/handling/service-type/invoice exclusions and 1 duplicate-thread drop (UFN-69661 -> same thread as UFN-69663). closeFlag remains NOT a gate; 19 live closeFlag=true tickets retained. Ages recomputed at 2026-09-12T02:25:00Z; oldest 190 days. No material movement in the eligible population versus the 02:12Z enumeration (same 302 tickets, same New 243 / Pending 59 split); this cycle re-verifies the counts and refreshes the Outlook-context layer: 6 matched eligible threads (Boundless EC, Factory-LLC/Roar, Colavita, Maizly, KD Nutra, CH Robinson appt stream), 1 thread closed out of the supplied set (Hint UFN-70261 now carries no live customer thread)."
   },
   "rulesApplied": [
     "displayStatusSystemStatus == open (10) - TicketOps status is authoritative",
@@ -12,23 +12,19 @@
     "closeFlag NOT used as an eligibility gate (19 live closeFlag=true tickets retained incl. auto-close artifacts)",
     "exclude billing / UF Billing / storage / handling / service type / invoice title matches (23 audited ids this cycle)",
     "UFN-prefix filter within department 323826714354839552 (UNIS Fulfillment - Northampton)",
-    "overlapping ticket/email threads de-duplicated (1 drop applied this cycle: UFN-69661)",
-    "Outlook context non-blocking enrichment (1 matched eligible thread; email never counted as an extra Ticket Ops item)",
-    "Customer Health coverage = all customers visible in eligible tickets (68; roster/aliases supplemental only; org names from TicketOps organization records where present)",
-    "Action buckets by ageHours: Immediate <24, Short-Term 24-72, Medium-Term 72-168, Watch >168",
-    "Customer Health tier rule (deterministic): Critical = eligible-ticket escalation OR (breached>0 AND (tickets>=3 OR oldestBreachedAgeDays>=14)); Warning = other breached OR tickets>=4 w/o breach; Healthy = otherwise",
-    "Per-row ages recomputed from TicketOps createTime at anchor 2026-09-12T02:12:15Z"
+    "overlapping ticket/email threads de-duplicated (1 drop: UFN-69661)",
+    "Customer Health covers ALL customers visible in eligible tickets; roster/aliases supplemental only"
   ],
   "dataSources": [
     {
       "name": "TicketOps",
       "endpoint": "https://unisticket.item.com/api/item-tickets/v1/iam/tickets/page",
-      "note": "dept 323826714354839552; pull 2026-09-12T02:12:15Z: raw system-open 378 (New 260 / Pending 66 / Reopen 52); eligible 302 after 23 title exclusions + 1 duplicate-thread drop; SLA 220/82; unassigned 254; oldest 190 days"
+      "note": "dept 323826714354839552; pull 2026-09-12T02:25:00Z (2026-09-11 22:25 ET): raw system-open 378 (New 260 / Pending 66 / Reopen 52); eligible 302 after 23 title exclusions + 1 duplicate-thread drop; SLA 220/82; unassigned 254; oldest 190 days"
     },
     {
       "name": "Outlook",
-      "endpoint": "Supplied NHT/Cesanek Outlook evidence",
-      "note": "1 supplied matched ticket thread remains eligible; 6 active escalations (1 with an eligible mapped ticket); supplementary only"
+      "endpoint": "NHT/Cesanek CS mailbox (nht.cs@unisco.com shared mailbox + Nicole Weber)",
+      "note": "Sep 4-11 2026 window; 6 matched eligible threads + 6 active escalations (5 mapping to eligible tickets); supplementary only - Ticket Ops status remains authoritative"
     }
   ],
   "dashboardState": {
@@ -44,7 +40,7 @@
     },
     "byPriority": {
       "Medium": 297,
-      "Unspecified": 5
+      "None": 5
     },
     "customerHealth": {
       "totalCustomers": 68,
@@ -752,324 +748,44 @@
       "slaOnTrack": 82,
       "unassigned": 254,
       "oldestAgeDays": 190,
-      "outlookThreadsMatched": 1,
-      "outlookThreadsUniquePostDedup": 1,
+      "outlookThreadsMatched": 6,
+      "outlookThreadsUniquePostDedup": 6,
       "activeEscalations": 6,
-      "eligibleEscalations": 1
+      "eligibleEscalations": 5,
+      "totalEligible": 302
     }
   },
   "excludedThisCycle": {
-    "reopen": [
-      {
-        "ticketId": "UFN-70551",
-        "subject": "Walmart Routing Status - UNIS 9/11/2026"
-      },
-      {
-        "ticketId": "UFN-70546",
-        "subject": "Certified Origins PO #PO TRVA-006"
-      },
-      {
-        "ticketId": "UFN-70545",
-        "subject": "Cancel Order: #VC153712 / DN-5020015"
-      },
-      {
-        "ticketId": "UFN-70543",
-        "subject": "Certified Origins PO #PO TRVA-005"
-      },
-      {
-        "ticketId": "UFN-70498",
-        "subject": "CH Robinson - Pickup Appointment Request (Load # 566497815 for 9/2/2026 12:00 AM)"
-      },
-      {
-        "ticketId": "UFN-70468",
-        "subject": "DN-5019803 - #VC153608"
-      },
-      {
-        "ticketId": "UFN-70436",
-        "subject": "OUTBOUND ORDER - Wegmans PO#9276037"
-      },
-      {
-        "ticketId": "UFN-70426",
-        "subject": "Unis PA Move-Out | DN-2130726 Outbound Inter DC Transfer - Palletized 09/10/2026"
-      },
-      {
-        "ticketId": "UFN-70408",
-        "subject": "CH Robinson - Delivery Appointment Request (Load # 567642503 for 9/16/2026 9:00 AM)"
-      },
-      {
-        "ticketId": "UFN-70376",
-        "subject": "RE: 19334953 - ZEN BEVERAGE LLC - billing period (08/09/2026-08/15/2026) -  service type (HANDLING) - 825-Northampton,DocumentDate(08/15/2026)"
-      },
-      {
-        "ticketId": "UFN-70365",
-        "subject": "RE: 19332025 - ZEN BEVERAGE LLC - billing period (08/01/2026-08/31/2026) -  service type (STORAGE) - 825-Northampton,DocumentDate(08/01/2026)"
-      },
-      {
-        "ticketId": "UFN-70257",
-        "subject": "Aterian and Unis Fulfillment"
-      },
-      {
-        "ticketId": "UFN-70241",
-        "subject": "Confirmation Needed – Building Closure "
-      },
-      {
-        "ticketId": "UFN-70147",
-        "subject": "RE: Pickup Appointment PO 3878155 - Northampton - Ellettsville"
-      },
-      {
-        "ticketId": "UFN-70084",
-        "subject": "PRO 7126354054"
-      },
-      {
-        "ticketId": "UFN-69764",
-        "subject": "Target Pickup - Load #: 77800694 / PRO: 77800694 - 09-08-2026"
-      },
-      {
-        "ticketId": "UFN-69441",
-        "subject": "Canada Material Truck 2  - SO110835 - DN-2127430"
-      },
-      {
-        "ticketId": "UFN-69440",
-        "subject": "Canada Material Truck 1  - SO110835 - DN-2127427"
-      },
-      {
-        "ticketId": "UFN-69406",
-        "subject": "DN-2127061-RN-130062/DN-2127072-RN-130063"
-      },
-      {
-        "ticketId": "UFN-69256",
-        "subject": "Orders Requiring WISE Update (SSR1+ATS4)"
-      },
-      {
-        "ticketId": "UFN-69120",
-        "subject": "Nordic - PO4500006091 (SO110100A) -DN-2126292 & PO4500006091 (SO110100B) - DN-2126300"
-      },
-      {
-        "ticketId": "UFN-69103",
-        "subject": "Nordic - PO4500005466 (SO109539A) -DN-2126240 & PO4500005466 (SO109539B) -  DN-2126248"
-      },
-      {
-        "ticketId": "UFN-69075",
-        "subject": "SO1393032 -  Please accept in @ northampton "
-      },
-      {
-        "ticketId": "UFN-68999",
-        "subject": "Dropship Orders – Timeline for Stopping Shipments to Facility"
-      },
-      {
-        "ticketId": "UFN-68997",
-        "subject": "CODA 8/31/26"
-      },
-      {
-        "ticketId": "UFN-68787",
-        "subject": "shipment from UNIS Northampton to UNIS Joliet"
-      },
-      {
-        "ticketId": "UFN-68601",
-        "subject": "UNIS ROAR QVC POWDER MOVE From PA to CA DN-2123888"
-      },
-      {
-        "ticketId": "UFN-68515",
-        "subject": "Pharmavite PO 352169  (SO110492) - DN-2123596 (special instructions)"
-      },
-      {
-        "ticketId": "UFN-68506",
-        "subject": "Pharmavite PO 352168  (SO110487) - DN-2123575 (special instructions)"
-      },
-      {
-        "ticketId": "UFN-68175",
-        "subject": "FW: FBA inventory replenish details"
-      },
-      {
-        "ticketId": "UFN-68160",
-        "subject": "Iceland Direct - PO 810308 (SO110377) - DN-2122820"
-      },
-      {
-        "ticketId": "UFN-67825",
-        "subject": "DC Shipment-Thursday 9/10-  Customer Pickup"
-      },
-      {
-        "ticketId": "UFN-67028",
-        "subject": "FW: UPTIME Product - Disposal"
-      },
-      {
-        "ticketId": "UFN-67023",
-        "subject": "Q&C Products/Natural Rapport – Account Exit"
-      },
-      {
-        "ticketId": "UFN-66934",
-        "subject": "Please Ship These DNs from 8/14"
-      },
-      {
-        "ticketId": "UFN-66820",
-        "subject": "UNIS - HINT BEVERAGE - NORTHAMPTON, PA - WEEK OF 8/17/26"
-      },
-      {
-        "ticketId": "UFN-66377",
-        "subject": "EMS MINDREADER - ALL NIGHTLY REPORT - 4:30 pm (2026-08-13)"
-      },
-      {
-        "ticketId": "UFN-64750",
-        "subject": "LOAD 4542286; PO VJZGER - 12 UNITS SHORT"
-      },
-      {
-        "ticketId": "UFN-63750",
-        "subject": "WYNK Delayed Orders"
-      },
-      {
-        "ticketId": "UFN-63665",
-        "subject": "DN-2070500 and tracking issue"
-      },
-      {
-        "ticketId": "UFN-63461",
-        "subject": "Pharmavite PO 350523  (SO110372) - DN-2078874 (special instructions)"
-      },
-      {
-        "ticketId": "UFN-63151",
-        "subject": "Walmart Missed Pickups"
-      },
-      {
-        "ticketId": "UFN-60714",
-        "subject": "Amazon Freight LTL Pickup Schedule 1B9B2 for Jul 9, 2026"
-      },
-      {
-        "ticketId": "UFN-59754",
-        "subject": "Mozart Spd Unis BH SPD Urgent"
-      },
-      {
-        "ticketId": "UFN-56035",
-        "subject": "Canvas340 Summer Bundles to Kit on Demand"
-      },
-      {
-        "ticketId": "UFN-54564",
-        "subject": "**NEED RECOVERY ETA** [MIDEA-PA2*] Pickup Disruption for Shipment ID (ARN): 43685523581"
-      },
-      {
-        "ticketId": "UFN-53095",
-        "subject": "Item 79545 / Mood OG 8 pk Sampler - FEFO Issue"
-      },
-      {
-        "ticketId": "UFN-49350",
-        "subject": "appt"
-      },
-      {
-        "ticketId": "UFN-47865",
-        "subject": "RE: EXT: Re: RE: EXT: RE: Credit RA PO 60340144    "
-      },
-      {
-        "ticketId": "UFN-40335",
-        "subject": "No Carrier Assigned – Macy’s Orders"
-      },
-      {
-        "ticketId": "UFN-37784",
-        "subject": " Committ failed"
-      },
-      {
-        "ticketId": "UFN-35813",
-        "subject": "RE: WEST - Tracking Lost - Claims Filed"
-      }
+    "reopenCount": 52,
+    "billingExcludedIds": [
+      "UFN-33719",
+      "UFN-41484",
+      "UFN-43725",
+      "UFN-45559",
+      "UFN-48436",
+      "UFN-54721",
+      "UFN-55641",
+      "UFN-59971",
+      "UFN-60009",
+      "UFN-60573",
+      "UFN-61451",
+      "UFN-62682",
+      "UFN-63762",
+      "UFN-63959",
+      "UFN-65196",
+      "UFN-67930",
+      "UFN-68749",
+      "UFN-69234",
+      "UFN-70140",
+      "UFN-70156",
+      "UFN-70350",
+      "UFN-70406",
+      "UFN-70613"
     ],
-    "billingStorageHandlingInvoice": [
-      {
-        "ticketId": "UFN-70613",
-        "subject": "Roar Decadence- Handling 8.30-9.05 | PA"
-      },
-      {
-        "ticketId": "UFN-70406",
-        "subject": "PRIMETIME l Cesanek - Handling 8/30-9/05"
-      },
-      {
-        "ticketId": "UFN-70350",
-        "subject": "Immediate Action Required: Open RN Items Impacting Billing as of September 9, 2026 (Cesanek, PA Facility)"
-      },
-      {
-        "ticketId": "UFN-70156",
-        "subject": "Immediate Action Required: Open RN Items Impacting Billing as of September 8, 2026 (Cesanek, PA Facility)"
-      },
-      {
-        "ticketId": "UFN-70140",
-        "subject": "PRO 7126354104,7126354120 // BILLING"
-      },
-      {
-        "ticketId": "UFN-69234",
-        "subject": "NOURISON l Cesanek - Handling 8/16-8/31"
-      },
-      {
-        "ticketId": "UFN-68749",
-        "subject": "Monthly TCL Ecommerce --> Storage SQFT Needed For The Month of August 2026"
-      },
-      {
-        "ticketId": "UFN-67930",
-        "subject": "Fwd: 19334908 - RECESS - billing period (08/01/2026-08/15/2026) - service type (HANDLING) - 825-Northampton,DocumentDate(08/15/2026)"
-      },
-      {
-        "ticketId": "UFN-65196",
-        "subject": "Follow up:  MAIZLY - HANDLING - 07/16-07/31"
-      },
-      {
-        "ticketId": "UFN-63959",
-        "subject": "RE: PRO 7126341341 // BILLING"
-      },
-      {
-        "ticketId": "UFN-63762",
-        "subject": "FW: Issues with Smeg PO 11053 - Invoice 2618037133"
-      },
-      {
-        "ticketId": "UFN-62682",
-        "subject": "Prime time l Cesanek - Handling 7/12-7/18"
-      },
-      {
-        "ticketId": "UFN-61451",
-        "subject": "Prime time l Cesanek - Handling 7/5-7/11"
-      },
-      {
-        "ticketId": "UFN-60573",
-        "subject": "Prime time l Cesanek - Handling 6/28-7/4"
-      },
-      {
-        "ticketId": "UFN-60009",
-        "subject": "BOL Request -FW: Amazon  Invoice #403019398"
-      },
-      {
-        "ticketId": "UFN-59971",
-        "subject": "Lassonde pappas l Cesanek - July Storage 2026"
-      },
-      {
-        "ticketId": "UFN-55641",
-        "subject": "PRO 7126349369 // BILLING"
-      },
-      {
-        "ticketId": "UFN-54721",
-        "subject": "Lassonde pappas l Cesanek - Storage 6.1.2026"
-      },
-      {
-        "ticketId": "UFN-48436",
-        "subject": "RE: 19308065 - PLEASS GLOBAL LIMITED - billing period (05/01/2026-05/31/2026) -  service type (Storage) - 825-Northampton,DocumentDate(05/01/2026)"
-      },
-      {
-        "ticketId": "UFN-45559",
-        "subject": "Prime Time (Northampton) - Handling 04/12-04/18"
-      },
-      {
-        "ticketId": "UFN-43725",
-        "subject": "Prime Time (Northampton) - Handling 04/05-04/11"
-      },
-      {
-        "ticketId": "UFN-41484",
-        "subject": "NIAGARA BOTTLING RESIN HANDLING 0301-0331 | STORAGE 04 2026"
-      },
-      {
-        "ticketId": "UFN-33719",
-        "subject": "****INVOICE UPDATE REQUIRED*****UFN-32193 RE: 19298289 - WATER PLUS LLC - billing period (02/15/2026-02/21/2026) - service type (HANDLING) "
-      }
+    "duplicateThreadDrops": [
+      "UFN-69661"
     ],
-    "duplicateThreads": [
-      {
-        "ticketId": "UFN-69661",
-        "subject": "Thank you for submitting a new contact for CaseID: 21861000021",
-        "duplicateOf": "UFN-69663"
-      }
-    ]
+    "billingRule": "title/item-type matches on billing, UF Billing, storage, handling, service type, invoice"
   },
-  "nextScheduledRefresh": "hourly / on-demand; next daily summary email 2026-09-12T08:00:00-04:00"
+  "nextScheduledRefresh": "2026-09-12T03:00:00-04:00 (hourly Customer Command Center refresh task)"
 }
