@@ -1,53 +1,123 @@
 {
   "refresh": {
-    "id": "refresh-2026-09-12T02:25:00Z-AUTHORITATIVE-v30",
-    "timestamp": "2026-09-12T02:25:00Z",
+    "id": "refresh-2026-09-12T05:19:20Z-AUTHORITATIVE-v31",
+    "timestamp": "2026-09-12T05:19:20.000Z",
     "type": "AUTHORITATIVE",
-    "previousRefreshId": "refresh-2026-09-12T02:12:15Z-AUTHORITATIVE-v29",
-    "keyChange": "AUTHORITATIVE REFRESH v30 - fresh TicketOps LIVE department-scoped enumeration (dept 323826714354839552) at 2026-09-12T02:23-02:28Z. Raw system-open 378 = New 260 / Pending 66 / Reopen 52. Eligible 302 after 23 billing/UF Billing/storage/handling/service-type/invoice exclusions and 1 duplicate-thread drop (UFN-69661 -> same thread as UFN-69663). closeFlag remains NOT a gate; 19 live closeFlag=true tickets retained. Ages recomputed at 2026-09-12T02:25:00Z; oldest 190 days. No material movement in the eligible population versus the 02:12Z enumeration (same 302 tickets, same New 243 / Pending 59 split); this cycle re-verifies the counts and refreshes the Outlook-context layer: 6 matched eligible threads (Boundless EC, Factory-LLC/Roar, Colavita, Maizly, KD Nutra, CH Robinson appt stream), 1 thread closed out of the supplied set (Hint UFN-70261 now carries no live customer thread)."
+    "previousRefreshId": "refresh-2026-09-12T02:25:00Z-AUTHORITATIVE-v30",
+    "keyChange": "Fresh Ticket Ops department-scoped read. Eligibility now uses system-open plus New/Pending without closeFlag. The working set is 297 unique conversations after 24 billing-family exclusions and five confirmed conversation overlaps."
   },
   "rulesApplied": [
-    "displayStatusSystemStatus == open (10) - TicketOps status is authoritative",
-    "displayStatusName in {New, Pending} (excludes Reopen/Reopened, Closed, Resolved/Solved, Cancelled, Done) - 52 Reopen excluded this cycle",
-    "closeFlag NOT used as an eligibility gate (19 live closeFlag=true tickets retained incl. auto-close artifacts)",
-    "exclude billing / UF Billing / storage / handling / service type / invoice title matches (23 audited ids this cycle)",
-    "UFN-prefix filter within department 323826714354839552 (UNIS Fulfillment - Northampton)",
-    "overlapping ticket/email threads de-duplicated (1 drop: UFN-69661)",
-    "Customer Health covers ALL customers visible in eligible tickets; roster/aliases supplemental only"
+    "displayStatusSystemStatus == 10 (open)",
+    "displayStatusName in {New, Pending}",
+    "closeFlag is retained as evidence and is not an eligibility gate",
+    "ticketNumber begins UFN- within department 323826714354839552 (UNIS Fulfillment - Northampton)",
+    "24 audited billing, UF Billing, storage, handling, or invoice items excluded",
+    "five confirmed overlapping conversations removed by external CaseID or confirmed DN/requester identity; subject alone is never a dedupe key",
+    "Customer Health includes every customer visible in the eligible ticket set; existing aliases are supplemental only",
+    "Priority queue orders SLA-breached items first, then due date; priority label is not used for rank"
   ],
   "dataSources": [
     {
-      "name": "TicketOps",
-      "endpoint": "https://unisticket.item.com/api/item-tickets/v1/iam/tickets/page",
-      "note": "dept 323826714354839552; pull 2026-09-12T02:25:00Z (2026-09-11 22:25 ET): raw system-open 378 (New 260 / Pending 66 / Reopen 52); eligible 302 after 23 title exclusions + 1 duplicate-thread drop; SLA 220/82; unassigned 254; oldest 190 days"
+      "name": "Ticket Ops",
+      "note": "Live read at 2026-09-12T05:19:20Z for department 323826714354839552: 378 system-open UFN rows; 260 New, 66 Pending, 52 Reopen."
     },
     {
       "name": "Outlook",
-      "endpoint": "NHT/Cesanek CS mailbox (nht.cs@unisco.com shared mailbox + Nicole Weber)",
-      "note": "Sep 4-11 2026 window; 6 matched eligible threads + 6 active escalations (5 mapping to eligible tickets); supplementary only - Ticket Ops status remains authoritative"
+      "note": "Mailbox integration was unavailable in this build. No email-derived records or counts were inferred; self-sent dashboard summaries remain excluded by policy."
     }
   ],
+  "developerNotes": [
+    "The Sep 11 daily summary reported 327 (251 New / 76 Pending). It does not reconcile with the authoritative Ticket Ops read and is not used by the business UI.",
+    "Five eligible Ticket Ops rows had no priorityName/priorityId in both page and brief responses. Their priority remains unavailable rather than inferred; ordering is based on SLA and due date."
+  ],
+  "exclusions": {
+    "billingTicketIds": [
+      "UFN-70613",
+      "UFN-70406",
+      "UFN-70350",
+      "UFN-70156",
+      "UFN-70140",
+      "UFN-69234",
+      "UFN-68749",
+      "UFN-67930",
+      "UFN-65196",
+      "UFN-63959",
+      "UFN-63762",
+      "UFN-62682",
+      "UFN-61451",
+      "UFN-60573",
+      "UFN-59971",
+      "UFN-55641",
+      "UFN-54721",
+      "UFN-53491",
+      "UFN-48436",
+      "UFN-45559",
+      "UFN-43725",
+      "UFN-41484",
+      "UFN-40670",
+      "UFN-33719"
+    ],
+    "duplicateConversations": [
+      {
+        "ticketId": "UFN-69661",
+        "canonical": "UFN-69511",
+        "conversationId": "external-case:21861000021"
+      },
+      {
+        "ticketId": "UFN-69663",
+        "canonical": "UFN-69511",
+        "conversationId": "external-case:21861000021"
+      },
+      {
+        "ticketId": "UFN-69447",
+        "canonical": "UFN-69307",
+        "conversationId": "external-case:21836552091"
+      },
+      {
+        "ticketId": "UFN-69450",
+        "canonical": "UFN-69307",
+        "conversationId": "external-case:21836552091"
+      },
+      {
+        "ticketId": "UFN-70352",
+        "canonical": "UFN-70351",
+        "conversationId": "dn:2107462"
+      }
+    ]
+  },
   "dashboardState": {
     "totalRaw": 378,
+    "eligibleBeforeExclusions": 326,
     "reopenExcluded": 52,
-    "billingExcluded": 23,
-    "duplicatesRemoved": 1,
-    "totalEligible": 302,
+    "billingExcluded": 24,
+    "eligibleBeforeDeduplication": 302,
+    "duplicatesRemoved": 5,
+    "totalEligible": 297,
     "closeFlagTrueRetained": 19,
     "byStatus": {
-      "New": 243,
+      "New": 238,
       "Pending": 59
     },
     "byPriority": {
-      "Medium": 297,
-      "None": 5
+      "Medium": 292,
+      "unavailable": 5
+    },
+    "workload": {
+      "overdueOrSlaBreached": 216,
+      "current": 81
+    },
+    "actionBuckets": {
+      "Immediate": 40,
+      "Short-Term": 56,
+      "Medium-Term": 9,
+      "Watch": 192
     },
     "customerHealth": {
-      "totalCustomers": 68,
+      "totalCustomers": 69,
       "tiers": {
         "Healthy": 20,
         "Warning": 11,
-        "Critical": 37
+        "Critical": 38
       },
       "customers": {
         "VITA COCO - DTC": {
@@ -111,9 +181,9 @@
           "tier": "Critical"
         },
         "RITUAL BEVERAGE COMPANY": {
-          "tickets": 9,
-          "breached": 7,
-          "oldestBreachedAgeDays": 164,
+          "tickets": 7,
+          "breached": 5,
+          "oldestBreachedAgeDays": 151,
           "tier": "Critical"
         },
         "ROOM TO GROW NATIONAL INC": {
@@ -195,9 +265,9 @@
           "tier": "Healthy"
         },
         "DAYDREAM NUTRITION INC.": {
-          "tickets": 18,
-          "breached": 15,
-          "oldestBreachedAgeDays": 28,
+          "tickets": 14,
+          "breached": 12,
+          "oldestBreachedAgeDays": 29,
           "tier": "Critical"
         },
         "AVIRON INTERACTIVE INC": {
@@ -323,7 +393,7 @@
         "Yuki Ho": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 2,
+          "oldestBreachedAgeDays": 3,
           "tier": "Warning"
         },
         "EMS MIND READER LLC": {
@@ -341,7 +411,7 @@
         "PRIME TIME PACKAGING LTD": {
           "tickets": 18,
           "breached": 18,
-          "oldestBreachedAgeDays": 158,
+          "oldestBreachedAgeDays": 159,
           "tier": "Critical"
         },
         "CKNAPP SALES INC": {
@@ -395,7 +465,7 @@
         "UPTIME ENERGY INC": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 44,
+          "oldestBreachedAgeDays": 45,
           "tier": "Critical"
         },
         "Y,IWO LLC": {
@@ -414,6 +484,12 @@
           "tickets": 1,
           "breached": 1,
           "oldestBreachedAgeDays": 65,
+          "tier": "Critical"
+        },
+        "smorales@beteshghc.com": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 71,
           "tier": "Critical"
         },
         "SUMA BRANDS FUNDING I, LLC": {
@@ -464,328 +540,271 @@
       {
         "ticketId": "UFN-33604",
         "customer": "Turtle Beach",
-        "subject": "Pending/Overdue Tickets",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 190,
-        "ageHours": 4567,
+        "dueDate": "2026-03-09T13:00:00.000Z",
         "slaStatus": "Breached",
-        "assigned": null
+        "ageDays": 190,
+        "subject": "Pending/Overdue Tickets"
       },
       {
         "ticketId": "UFN-33722",
         "customer": "ZEN BEVERAGE",
-        "subject": "12x9x12 Boxes Needed",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 190,
-        "ageHours": 4560,
+        "dueDate": "2026-03-10T16:28:00.000Z",
         "slaStatus": "Breached",
-        "assigned": null
+        "ageDays": 190,
+        "subject": "12x9x12 Boxes Needed"
       },
       {
         "ticketId": "UFN-35588",
         "customer": "ATERIAN INC",
-        "subject": "Appointment Request :: PO: DN-1467998 RN-23177 Flock Ref#: VY8-M2X5 ATERIAN, INC.",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 183,
-        "ageHours": 4393,
+        "dueDate": "2026-03-17T17:57:00.000Z",
         "slaStatus": "Breached",
-        "assigned": null
+        "ageDays": 183,
+        "subject": "Appointment Request :: PO: DN-1467998 RN-23177 Flock Ref#: VY8-M2X5 ATERIAN, INC."
       },
       {
         "ticketId": "UFN-35774",
         "customer": "SMEG USA INC",
-        "subject": "Commit Block Order - DN-1467983",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 182,
-        "ageHours": 4373,
+        "dueDate": "2026-03-17T22:16:00.000Z",
         "slaStatus": "Breached",
-        "assigned": "Sittie Jhaila Sirad"
+        "ageDays": 182,
+        "subject": "Commit Block Order - DN-1467983"
       },
       {
         "ticketId": "UFN-37858",
         "customer": "WYNK BEVERAGE - Reverse",
-        "subject": "welcome, spring 🌷🍋🪻🍓",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 174,
-        "ageHours": 4183,
+        "dueDate": "2026-03-25T21:00:00.000Z",
         "slaStatus": "Breached",
-        "assigned": null
+        "ageDays": 174,
+        "subject": "welcome, spring 🌷🍋🪻🍓"
       },
       {
         "ticketId": "UFN-39065",
         "customer": "Turtle Beach",
-        "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 170,
-        "ageHours": 4088,
+        "dueDate": "2026-03-27T21:00:00.000Z",
         "slaStatus": "Breached",
-        "assigned": null
+        "ageDays": 170,
+        "subject": "Reminder: SEND VIVO DAMAGE REPORT "
       },
       {
         "ticketId": "UFN-39403",
         "customer": "SMEG USA INC",
-        "subject": "Reminder following up!",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 169,
-        "ageHours": 4061,
+        "dueDate": "2026-03-30T14:54:00.000Z",
         "slaStatus": "Breached",
-        "assigned": null
+        "ageDays": 169,
+        "subject": "Reminder following up!"
       },
       {
         "ticketId": "UFN-39662",
         "customer": "NIAGARA BOTTLING LLC",
-        "subject": "NIAGARA//JEFF-0327-SRICHAKRA//JEFFERSONVILLE IN",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 168,
-        "ageHours": 4037,
+        "dueDate": "2026-03-31T23:05:00.000Z",
         "slaStatus": "Breached",
-        "assigned": null
+        "ageDays": 168,
+        "subject": "NIAGARA//JEFF-0327-SRICHAKRA//JEFFERSONVILLE IN"
       },
       {
         "ticketId": "UFN-40213",
         "customer": "NIAGARA BOTTLING LLC",
-        "subject": "Re: QUANTIX SCHEDULE - 3/28 & 3/30",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 165,
-        "ageHours": 3968,
+        "dueDate": "2026-04-01T21:00:00.000Z",
         "slaStatus": "Breached",
-        "assigned": null
+        "ageDays": 165,
+        "subject": "Re: QUANTIX SCHEDULE - 3/28 & 3/30"
       },
       {
         "ticketId": "UFN-40654",
         "customer": "NIAGARA BOTTLING LLC",
-        "subject": "NIAGARA/PLAINFIELD/ DUYTAN/ 4.6- 4.12",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 164,
-        "ageHours": 3937,
+        "dueDate": "2026-04-03T17:35:00.000Z",
         "slaStatus": "Breached",
-        "assigned": null
-      },
-      {
-        "ticketId": "UFN-40670",
-        "customer": "RITUAL BEVERAGE COMPANY",
-        "subject": "March F26 Month End Close Reminder",
-        "opsStatus": "Pending",
-        "priority": "Medium",
         "ageDays": 164,
-        "ageHours": 3936,
-        "slaStatus": "Breached",
-        "assigned": null
+        "subject": "NIAGARA/PLAINFIELD/ DUYTAN/ 4.6- 4.12"
       },
       {
         "ticketId": "UFN-40860",
         "customer": "Turtle Beach",
-        "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 163,
-        "ageHours": 3920,
+        "dueDate": "2026-04-03T21:00:00.000Z",
         "slaStatus": "Breached",
-        "assigned": null
+        "ageDays": 163,
+        "subject": "Reminder: SEND VIVO DAMAGE REPORT "
       },
       {
         "ticketId": "UFN-40969",
         "customer": "SMEG USA INC",
-        "subject": "Schedule Appointment-Pickup(1) - BOL# 33604304",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 163,
-        "ageHours": 3915,
+        "dueDate": "2026-04-06T07:28:00.000Z",
         "slaStatus": "Breached",
-        "assigned": "Sittie Jhaila Sirad"
+        "ageDays": 163,
+        "subject": "Schedule Appointment-Pickup(1) - BOL# 33604304"
       },
       {
         "ticketId": "UFN-41878",
         "customer": "PRIME TIME PACKAGING LTD",
-        "subject": "Drayage Assignments",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 158,
-        "ageHours": 3813,
+        "dueDate": "2026-04-08T21:00:00.000Z",
         "slaStatus": "Breached",
-        "assigned": null
+        "ageDays": 159,
+        "subject": "Drayage Assignments"
       },
       {
         "ticketId": "UFN-42031",
         "customer": "THE LUCKY OX LLC",
-        "subject": "FW: Santa LAST EOD 1/9 ",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 158,
-        "ageHours": 3799,
+        "dueDate": "2026-04-08T21:05:00.000Z",
         "slaStatus": "Breached",
-        "assigned": "Pedro Marte"
+        "ageDays": 158,
+        "subject": "FW: Santa LAST EOD 1/9 "
       },
       {
         "ticketId": "UFN-42645",
         "customer": "Turtle Beach",
-        "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 156,
-        "ageHours": 3752,
+        "dueDate": "2026-04-10T21:00:00.000Z",
         "slaStatus": "Breached",
-        "assigned": null
+        "ageDays": 156,
+        "subject": "Reminder: SEND VIVO DAMAGE REPORT "
       },
       {
         "ticketId": "UFN-42730",
         "customer": "NIAGARA BOTTLING LLC",
-        "subject": "RE: NIAGARA/PLAINFIELD/ DUYTAN/ 4.12- 4.19",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 156,
-        "ageHours": 3748,
+        "dueDate": "2026-04-10T23:46:00.000Z",
         "slaStatus": "Breached",
-        "assigned": null
+        "ageDays": 156,
+        "subject": "RE: NIAGARA/PLAINFIELD/ DUYTAN/ 4.12- 4.19"
       },
       {
         "ticketId": "UFN-43591",
         "customer": "PRIME TIME PACKAGING LTD",
-        "subject": "Drayage Assignments",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 151,
-        "ageHours": 3645,
+        "dueDate": "2026-04-15T21:00:00.000Z",
         "slaStatus": "Breached",
-        "assigned": null
+        "ageDays": 152,
+        "subject": "Drayage Assignments"
       },
       {
         "ticketId": "UFN-43887",
         "customer": "RITUAL BEVERAGE COMPANY",
-        "subject": "NH-RIT041026 Stickering",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 151,
-        "ageHours": 3625,
+        "dueDate": "2026-04-16T17:33:00.000Z",
         "slaStatus": "Breached",
-        "assigned": null
+        "ageDays": 151,
+        "subject": "NH-RIT041026 Stickering"
       },
       {
         "ticketId": "UFN-44139",
         "customer": "RITUAL BEVERAGE COMPANY",
-        "subject": "Fw: Report RNDC_PO_LIV_166094.pdf has been processed at 15:19:22",
         "opsStatus": "Pending",
         "priority": "Medium",
-        "ageDays": 150,
-        "ageHours": 3602,
+        "dueDate": "2026-04-17T16:25:00.000Z",
         "slaStatus": "Breached",
-        "assigned": null
+        "ageDays": 150,
+        "subject": "Fw: Report RNDC_PO_LIV_166094.pdf has been processed at 15:19:22"
       },
       {
         "ticketId": "UFN-44321",
         "customer": "Turtle Beach",
-        "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 149,
-        "ageHours": 3584,
+        "dueDate": "2026-04-17T21:00:00.000Z",
         "slaStatus": "Breached",
-        "assigned": null
+        "ageDays": 149,
+        "subject": "Reminder: SEND VIVO DAMAGE REPORT "
       },
       {
         "ticketId": "UFN-45048",
         "customer": "NIAGARA BOTTLING LLC",
-        "subject": "D/O: NIAGARA BOTTLIN_EGLV235600249049_012756_01_1295081",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 146,
-        "ageHours": 3526,
+        "dueDate": "2026-04-22T20:20:00.000Z",
         "slaStatus": "Breached",
-        "assigned": null
+        "ageDays": 147,
+        "subject": "D/O: NIAGARA BOTTLIN_EGLV235600249049_012756_01_1295081"
       },
       {
         "ticketId": "UFN-45186",
         "customer": "PRIME TIME PACKAGING LTD",
-        "subject": "Drayage Assignments",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 144,
-        "ageHours": 3477,
+        "dueDate": "2026-04-22T21:00:00.000Z",
         "slaStatus": "Breached",
-        "assigned": null
+        "ageDays": 145,
+        "subject": "Drayage Assignments"
       },
       {
         "ticketId": "UFN-45316",
         "customer": "NIAGARA BOTTLING LLC",
-        "subject": "Re: NIAGARA/ UNIS / QUANTIX BULK TRUCKS/ 4.13- 4.19",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 144,
-        "ageHours": 3463,
+        "dueDate": "2026-04-22T21:00:00.000Z",
         "slaStatus": "Breached",
-        "assigned": null
+        "ageDays": 144,
+        "subject": "Re: NIAGARA/ UNIS / QUANTIX BULK TRUCKS/ 4.13- 4.19"
       },
       {
         "ticketId": "UFN-45763",
         "customer": "Turtle Beach",
-        "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
         "opsStatus": "New",
         "priority": "Medium",
-        "ageDays": 142,
-        "ageHours": 3416,
+        "dueDate": "2026-04-24T21:00:00.000Z",
         "slaStatus": "Breached",
-        "assigned": null
+        "ageDays": 142,
+        "subject": "Reminder: SEND VIVO DAMAGE REPORT "
+      },
+      {
+        "ticketId": "UFN-46185",
+        "customer": "RITUAL BEVERAGE COMPANY",
+        "opsStatus": "Pending",
+        "priority": "Medium",
+        "dueDate": "2026-04-28T21:20:00.000Z",
+        "slaStatus": "Breached",
+        "ageDays": 140,
+        "subject": "PO: 1057042882"
       }
     ],
-    "actionBuckets": {
-      "Immediate": 42,
-      "Short-Term": 56,
-      "Medium-Term": 8,
-      "Watch": 196
-    },
     "evidenceMetrics": {
-      "slaBreached": 220,
-      "slaOnTrack": 82,
-      "unassigned": 254,
+      "totalEligible": 297,
+      "slaBreached": 216,
+      "slaOnTrack": 81,
+      "unassigned": 249,
       "oldestAgeDays": 190,
-      "outlookThreadsMatched": 6,
-      "outlookThreadsUniquePostDedup": 6,
-      "activeEscalations": 6,
-      "eligibleEscalations": 5,
-      "totalEligible": 302
+      "outlookStatus": "pending",
+      "outlookThreadsMatched": null,
+      "invoiceItemsExcluded": 24,
+      "duplicatesRemoved": 5
     }
   },
   "excludedThisCycle": {
-    "reopenCount": 52,
-    "billingExcludedIds": [
-      "UFN-33719",
-      "UFN-41484",
-      "UFN-43725",
-      "UFN-45559",
-      "UFN-48436",
-      "UFN-54721",
-      "UFN-55641",
-      "UFN-59971",
-      "UFN-60009",
-      "UFN-60573",
-      "UFN-61451",
-      "UFN-62682",
-      "UFN-63762",
-      "UFN-63959",
-      "UFN-65196",
-      "UFN-67930",
-      "UFN-68749",
-      "UFN-69234",
-      "UFN-70140",
-      "UFN-70156",
-      "UFN-70350",
-      "UFN-70406",
-      "UFN-70613"
-    ],
-    "duplicateThreadDrops": [
-      "UFN-69661"
-    ],
-    "billingRule": "title/item-type matches on billing, UF Billing, storage, handling, service type, invoice"
+    "status": 52,
+    "billing": 24,
+    "duplicateConversations": 5,
+    "total": 81
   },
-  "nextScheduledRefresh": "2026-09-12T03:00:00-04:00 (hourly Customer Command Center refresh task)"
+  "nextScheduledRefresh": null
 }

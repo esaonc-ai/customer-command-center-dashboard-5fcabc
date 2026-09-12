@@ -21,11 +21,14 @@
   async function refreshAll() {
     try {
       const config = await DataLoader.loadConfig();
-      const rawTickets = await DataLoader.loadTickets(config);
+      const [rawTickets, outlookContext] = await Promise.all([
+        DataLoader.loadTickets(config),
+        DataLoader.loadOutlook(),
+      ]);
       const filteredTickets = DataLoader.applyFilters(rawTickets, config);
       const dedupedTickets = DataLoader.deduplicate(filteredTickets, config);
 
-      const stats = DataLoader.computeStats(rawTickets, dedupedTickets, config);
+      const stats = DataLoader.computeStats(rawTickets, dedupedTickets, config, outlookContext);
 
       renderCounts(stats);
       renderPriorityQueue(dedupedTickets);
@@ -33,12 +36,12 @@
       renderCustomerHealth(dedupedTickets, config);
       renderEvidenceMetrics(stats);
 
-      const now = new Date();
+      const now = new Date(config.snapshotMetrics?.refreshedAt || Date.now());
       document.getElementById('lastRefresh').textContent =
         'Last refreshed: ' + now.toLocaleTimeString('en-US', { timeZone: 'America/New_York' });
     } catch (err) {
       console.error('[CCC] Refresh failed:', err);
-      document.getElementById('lastRefresh').textContent = 'Refresh failed — check console';
+      document.getElementById('lastRefresh').textContent = 'Data temporarily unavailable';
     }
   }
 
@@ -56,8 +59,10 @@
   function renderPriorityQueue(tickets) {
     const tbody = document.getElementById('priorityQueueBody');
     const sorted = [...tickets].sort((a, b) => {
-      const prio = { Critical: 0, High: 1, Medium: 2, Low: 3 };
-      return (prio[a.priority] ?? 99) - (prio[b.priority] ?? 99) || a.ageDays - b.ageDays;
+      const slaOrder = (a.slaStatus === 'Breached' ? 0 : 1) - (b.slaStatus === 'Breached' ? 0 : 1);
+      const dueA = a.dueDate ? new Date(a.dueDate).getTime() : Number.MAX_SAFE_INTEGER;
+      const dueB = b.dueDate ? new Date(b.dueDate).getTime() : Number.MAX_SAFE_INTEGER;
+      return slaOrder || dueA - dueB || (b.ageDays || 0) - (a.ageDays || 0);
     });
 
     if (sorted.length === 0) {

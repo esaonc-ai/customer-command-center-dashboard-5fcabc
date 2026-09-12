@@ -6,44 +6,50 @@
     "tenant": "LT",
     "timezone": "America/New_York"
   },
-  "lastRefreshed": "2026-09-12T02:25:00Z",
-  "dataSource": "TicketOps (authoritative) + Outlook (non-blocking; 6 matched eligible threads)",
+  "lastRefreshed": "2026-09-12T05:19:20.000Z",
+  "dataSource": "Ticket Ops (authoritative); mailbox sync pending",
   "refreshType": "AUTHORITATIVE",
-  "refreshId": "refresh-2026-09-12T02:25:00Z-AUTHORITATIVE-v30",
+  "refreshId": "refresh-2026-09-12T05:19:20Z-AUTHORITATIVE-v31",
   "totalRaw": 378,
-  "totalEligible": 302,
-  "newCount": 243,
+  "eligibleBeforeDeduplication": 302,
+  "totalEligible": 297,
+  "newCount": 238,
   "openCount": 0,
   "pendingCount": 59,
-  "truncationNote": "closeFlag is not a gate (19 retained); Reopen (52) and billing/UF Billing/storage/handling/service-type/invoice items (23) excluded; 1 overlapping ticket/email thread drop applied.",
+  "exclusionSummary": {
+    "reopen": 52,
+    "billingFamily": 24,
+    "overlappingConversations": 5
+  },
+  "closeFlagTrueRetained": 19,
   "slaHealth": {
-    "breached": 220,
-    "onTrack": 82,
-    "unassigned": 254
+    "breached": 216,
+    "onTrack": 81,
+    "unassigned": 249
   },
   "actionBuckets": {
-    "Immediate": 42,
+    "Immediate": 40,
     "Short-Term": 56,
-    "Medium-Term": 8,
-    "Watch": 196
+    "Medium-Term": 9,
+    "Watch": 192
   },
   "evidenceMetrics": {
-    "slaBreached": 220,
-    "slaOnTrack": 82,
-    "unassigned": 254,
+    "totalEligible": 297,
+    "slaBreached": 216,
+    "slaOnTrack": 81,
+    "unassigned": 249,
     "oldestAgeDays": 190,
-    "outlookThreadsMatched": 6,
-    "outlookThreadsUniquePostDedup": 6,
-    "activeEscalations": 6,
-    "eligibleEscalations": 5,
-    "totalEligible": 302
+    "outlookStatus": "pending",
+    "outlookThreadsMatched": null,
+    "invoiceItemsExcluded": 24,
+    "duplicatesRemoved": 5
   },
   "customers": {
-    "total": 68,
+    "total": 69,
     "tiers": {
       "Healthy": 20,
       "Warning": 11,
-      "Critical": 37
+      "Critical": 38
     }
   }
 }

@@ -9,7 +9,12 @@
     "includeStatuses": ["New", "Open", "Pending"],
     "excludeStatuses": ["Reopen", "Reopened", "Closed", "Resolved", "Cancelled", "Done"],
     "excludeInvoiceItems": ["billing", "UF Billing", "storage", "handling"],
-    "ufnFilterEnabled": true
+    "ufnFilterEnabled": true,
+    "authoritativeGate": {
+      "displayStatusSystemStatus": 10,
+      "displayStatusNames": ["New", "Pending"],
+      "useCloseFlag": false
+    }
   },
   "customerHealth": {
     "coverageRule": "all_customers_visible_in_eligible_tickets",
@@ -17,14 +22,26 @@
   },
   "outlook": {
     "integration": "non_blocking",
-    "useWhenAvailable": true
+    "useWhenAvailable": true,
+    "status": "pending"
   },
   "deduplication": {
     "enabled": true,
-    "scope": "overlapping_ticket_email_threads"
+    "scope": "overlapping_ticket_email_threads",
+    "conversationIdOnly": true
   },
   "dashboard": {
     "sections": ["counts", "priorityQueue", "actionBuckets", "customerHealth", "evidenceMetrics"],
     "refreshIntervalMinutes": 15
+  },
+  "snapshotMetrics": {
+    "totalRaw": 378,
+    "totalEligible": 297,
+    "excludedCount": 81,
+    "duplicatesRemoved": 5,
+    "invoiceItemsExcluded": 24,
+    "closeFlagTrueRetained": 19,
+    "outlookStatus": "pending",
+    "refreshedAt": "2026-09-12T05:19:20Z"
   }
 }

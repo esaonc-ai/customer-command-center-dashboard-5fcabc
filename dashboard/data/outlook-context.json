@@ -1,119 +1,30 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-12T02:25:00Z",
-  "lastRefreshed": "2026-09-12T02:25:00Z",
-  "outlookAvailable": true,
-  "delegatedMailboxAvailable": true,
-  "dataSource": "NHT/Cesanek CS mailbox (nht.cs@unisco.com shared mailbox + Nicole Weber inbox), Sep 4-11 2026 window; non-blocking enrichment only. No email was sent.",
+  "generatedAt": "2026-09-12T05:19:20.000Z",
+  "lastRefreshed": "2026-09-12T05:19:20.000Z",
+  "outlookAvailable": false,
+  "delegatedMailboxAvailable": false,
+  "integrationStatus": "pending",
+  "statusLabel": "Mailbox sync pending",
+  "dataSource": null,
   "integration": "non_blocking",
-  "threadsMatched": 6,
-  "threadsUniquePostDedup": 6,
-  "activeEscalations": 6,
-  "eligibleEscalations": 5,
+  "threadsMatched": null,
+  "threadsUniquePostDedup": null,
+  "activeEscalations": null,
+  "eligibleEscalations": null,
   "coverage": {
-    "eligibleTicketsTotal": 302,
-    "eligibleTicketsWithOutlookContext": 6,
-    "coveragePct": 2.0,
-    "note": "Outlook context is supplementary only; Ticket Ops status remains authoritative. One ticket = many emails, so email threads are never counted as additional items. Threads whose tickets are no longer eligible remain context only."
+    "eligibleTicketsTotal": 297,
+    "eligibleTicketsWithOutlookContext": null,
+    "coveragePct": null,
+    "note": "Email context is not included in this refresh because mailbox integration was unavailable."
   },
-  "ticketThreads": [
-    {
-      "threadTopic": "No Labels on Cases for BOUNDLESS EC US LLC Load# 45872185",
-      "matchedTicketId": "UFN-70302",
-      "customer": "BOUNDLESS EC US LLC",
-      "escalation": true,
-      "lastMessageAt": "2026-09-10T15:58:00-04:00",
-      "lastDirection": "customer",
-      "awaiting": "customer",
-      "note": "Customer cancelled the Walmart POs and disputes the freight charge ('should not be charged ... this was a UNIS PA mistake'); mixed/mislabeled pallets across destinations; we replied 9/10 17:58 ET."
-    },
-    {
-      "threadTopic": "UNIS ROAR QVC POWDER MOVE From PA to CA DN-2123888",
-      "matchedTicketId": "UFN-70262",
-      "customer": "Factory-LLC / Roar Beverages (C.H. Robinson)",
-      "escalation": true,
-      "lastMessageAt": "2026-09-10T20:06:00-04:00",
-      "lastDirection": "unis",
-      "awaiting": "customer",
-      "note": "Customer asked for a carrier assist; CHR asked for a phone contact; we replied 9/10 20:06 ET."
-    },
-    {
-      "threadTopic": "C.H. Robinson pickup appointment request / follow-up stream (The Andersons, Roar, Hub Group)",
-      "matchedTicketId": "UFN-70594",
-      "customer": "THE ANDERSONS, INC. / ROAR BEVERAGES INC",
-      "escalation": false,
-      "lastMessageAt": "2026-09-11T16:10:00-04:00",
-      "lastDirection": "carrier",
-      "awaiting": "unis",
-      "note": "Recurring auto-pickup appointment requests and follow-ups; carrier looping on 9/11 for confirmation."
-    },
-    {
-      "threadTopic": "Order for La Famosa Order #00017979 - pickup appointment request (Colavita/Vitelli)",
-      "matchedTicketId": "UFN-70596",
-      "customer": "COLAVITA USA, LLC",
-      "escalation": true,
-      "lastMessageAt": "2026-09-11T16:19:00-04:00",
-      "lastDirection": "unis",
-      "awaiting": "unis",
-      "note": "DN-2118567 shipped 33 pallets (did not fit the 48' container); short-ship approval requested."
-    },
-    {
-      "threadTopic": "RE: Appt Request (pickup 9/17 13:00)",
-      "matchedTicketId": "UFN-70287",
-      "customer": "MAIZLY INC.",
-      "escalation": true,
-      "lastMessageAt": "2026-09-11T17:09:00-04:00",
-      "lastDirection": "customer",
-      "awaiting": "unis",
-      "note": "Customer requesting a 9/17 13:00 pickup appointment; awaiting our scheduling confirmation."
-    },
-    {
-      "threadTopic": "Iceland Direct PO 810308 (SO110377) DN-2122820 - appointment confirmation",
-      "matchedTicketId": "UFN-70556",
-      "customer": "INNOVA SOFTGEL LLC DBA KD NUTRA",
-      "escalation": true,
-      "lastMessageAt": "2026-09-11T20:15:00-04:00",
-      "lastDirection": "customer",
-      "awaiting": "unis",
-      "note": "High-importance 9/11 20:15 ET chase for appointment confirmation; order shows picked but never shipped; missed appointments 8/31 and 9/3."
-    }
-  ],
-  "nonUfnThreads": [
-    {
-      "threadTopic": "Smeg / ODFL BOL + short-pallet discrepancy (PRO 7126352827 / 7126352801, DN-2124458)",
-      "note": "Carrier-side thread; reports short 1 pallet. Context for the eligible Smeg tickets."
-    },
-    {
-      "threadTopic": "Diageo / Medlog containers MSMU6875562 and MSDU7175119",
-      "note": "Active escalation; no eligible ticket mapping this cycle."
-    },
-    {
-      "threadTopic": "Pharmavite PO 352168 / 352169 relabeling question (KD Nutra cluster)",
-      "note": "Active escalation; no eligible ticket mapping this cycle."
-    },
-    {
-      "threadTopic": "Cesanek Dropship EOD / BOD rollups (multi-customer)",
-      "note": "Automated rollup volume; maps to eligible UFN-706xx/704xx tickets but is not a customer thread."
-    },
-    {
-      "threadTopic": "Immediate Review Required - Inbound Deliveries (Cesanek, PA) blasts; Appointment-Watch and Dock Activity reports",
-      "note": "Automated notification volume; read as volume, not live escalations."
-    }
-  ],
-  "billingThreadsExcluded": [
-    {
-      "threadTopic": "Roar Decadence handling 8.30-9.05 | PA"
-    },
-    {
-      "threadTopic": "RN/DN items impacting billing (Cesanek) notices"
-    }
-  ],
+  "ticketThreads": [],
+  "nonUfnThreads": [],
+  "billingThreadsExcluded": [],
   "dedupNotes": [
-    "One ticket = many emails. Count the Ticket Ops conversation once; Outlook is evidence only.",
-    "Boundless EC appears as UFN-70302 on the ticket side and as the Load 45872185 mail thread; counted once.",
-    "The CH Robinson pickup-appointment stream spans multiple UFN tickets and is represented once here.",
-    "Duplicate ticket drop this cycle: UFN-69661 (same CaseID/thread as UFN-69663).",
-    "Hint (UFN-70261) remains eligible on the ticket side but no longer carries a live customer thread this cycle."
+    "Ticket counts come only from the authoritative Ticket Ops set.",
+    "Self-sent Customer Command Center summary messages are never counted as tickets.",
+    "Email-derived fields remain pending until mailbox access is available."
   ]
 }

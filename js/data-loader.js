@@ -25,6 +25,16 @@ window.DataLoader = (function () {
     return resp.json();
   }
 
+  async function loadOutlook() {
+    try {
+      const resp = await fetch(OUTLOOK_URL);
+      if (!resp.ok) return { integrationStatus: 'pending', outlookAvailable: false };
+      return resp.json();
+    } catch (e) {
+      return { integrationStatus: 'pending', outlookAvailable: false };
+    }
+  }
+
   /* ── Load Raw Tickets ───────────────────────────────────────── */
   async function loadTickets(config) {
     let tickets = [];
@@ -44,13 +54,19 @@ window.DataLoader = (function () {
 
   /* ── Apply Filters ──────────────────────────────────────────── */
   function applyFilters(tickets, config) {
-    const includeStatuses = (config.ticketFilters.includeStatuses || []).map(s => s.toLowerCase());
+    const authoritativeGate = config.ticketFilters.authoritativeGate || {};
+    const requiredSystemStatus = authoritativeGate.displayStatusSystemStatus ?? 10;
+    const includeStatuses = (authoritativeGate.displayStatusNames || ['New', 'Pending']).map(s => s.toLowerCase());
     const excludeStatuses = (config.ticketFilters.excludeStatuses || []).map(s => s.toLowerCase());
     const excludeInvoiceItems = (config.ticketFilters.excludeInvoiceItems || []).map(s => s.toLowerCase());
     const ufnEnabled = config.ticketFilters.ufnFilterEnabled !== false;
 
     let filtered = tickets.filter(t => {
-      const status = (t.opsStatus || t.status || '').toLowerCase();
+      const status = (t.displayStatusName || t.opsStatus || t.status || '').toLowerCase();
+      const systemStatus = t.displayStatusSystemStatus;
+
+      // Ticket Ops system/display status is the complete eligibility gate.
+      if (systemStatus !== requiredSystemStatus) return false;
 
       // Must be in include list
       if (!includeStatuses.includes(status)) return false;
@@ -62,14 +78,15 @@ window.DataLoader = (function () {
       const itemType = (t.invoiceItemType || '').toLowerCase();
       if (itemType && excludeInvoiceItems.some(ex => itemType.includes(ex))) return false;
 
-      // UFN filter: if enabled, only passes tickets explicitly tagged as UFN when relevant
-      // (keep all tickets, but mark UFN status for downstream rendering)
+      if (ufnEnabled && !/^UFN-/i.test(t.ticketId || '')) return false;
+
+      // closeFlag is intentionally evidence-only and never gates eligibility.
       return true;
     });
 
     // Tag each ticket with UFN status
     filtered.forEach(t => {
-      t.isUFN = !!(t.ufn || t.ufnTag || (t.tags && t.tags.some(tag => /ufn/i.test(tag))));
+      t.isUFN = /^UFN-/i.test(t.ticketId || '') || !!(t.ufn || t.ufnTag || (t.tags && t.tags.some(tag => /ufn/i.test(tag))));
     });
 
     return filtered;
@@ -83,21 +100,22 @@ window.DataLoader = (function () {
     const result = [];
 
     tickets.forEach(t => {
-      // Build dedup key from subject + customer
-      const key = normalizeDedupKey(t);
-      if (!seen.has(key)) {
-        seen.add(key);
+      // Only a source-backed conversation identifier may collapse records.
+      if (!t.conversationId) {
         result.push(t);
+        return;
       }
+      if (seen.has(t.conversationId)) return;
+      seen.add(t.conversationId);
+      result.push(t);
     });
 
     return result;
   }
 
   /* ── Compute Statistics ─────────────────────────────────────── */
-  function computeStats(rawTickets, dedupedTickets, config) {
-    const includeStatuses = (config.ticketFilters.includeStatuses || []).map(s => s.toLowerCase());
-    const excludeInvoiceItems = (config.ticketFilters.excludeInvoiceItems || []).map(s => s.toLowerCase());
+  function computeStats(rawTickets, dedupedTickets, config, outlookContext) {
+    const snapshot = config.snapshotMetrics || {};
 
     const byStatus = {};
     dedupedTickets.forEach(t => {
@@ -107,38 +125,15 @@ window.DataLoader = (function () {
 
     const ufnCount = dedupedTickets.filter(t => t.isUFN).length;
 
-    // Excluded count = raw minus eligible (approximation)
-    const eligibleInRaw = rawTickets.filter(t => {
-      const status = (t.opsStatus || t.status || '').toLowerCase();
-      return includeStatuses.includes(status);
-    }).length;
-    const excludedCount = rawTickets.length - eligibleInRaw;
-
-    // Duplicates removed
-    const duplicatesRemoved = (rawTickets.length > 0)
-      ? rawTickets.filter(t => {
-          const status = (t.opsStatus || t.status || '').toLowerCase();
-          return includeStatuses.includes(status);
-        }).length - dedupedTickets.length
-      : 0;
-
-    // Invoice items excluded
-    const invoiceItemsExcluded = rawTickets.filter(t => {
-      const itemType = (t.invoiceItemType || '').toLowerCase();
-      return itemType && excludeInvoiceItems.some(ex => itemType.includes(ex));
-    }).length;
-
-    // Outlook context
-    let outlookThreadsMatched = '—';
-    try {
-      // Attempt synchronous read from pre-loaded data
-      if (window.__outlookContext) {
-        outlookThreadsMatched = window.__outlookContext.threadsMatched || 0;
-      }
-    } catch (e) { /* non-blocking */ }
+    const excludedCount = snapshot.excludedCount ?? 0;
+    const duplicatesRemoved = snapshot.duplicatesRemoved ?? 0;
+    const invoiceItemsExcluded = snapshot.invoiceItemsExcluded ?? 0;
+    const outlookThreadsMatched = outlookContext?.outlookAvailable
+      ? (outlookContext.threadsMatched ?? 0)
+      : 'Pending';
 
     return {
-      totalEligible: dedupedTickets.length,
+      totalEligible: snapshot.totalEligible ?? dedupedTickets.length,
       byStatus,
       ufnCount,
       excludedCount,
@@ -147,21 +142,28 @@ window.DataLoader = (function () {
       outlookThreadsMatched,
       avgResponseHours: computeAvgResponse(dedupedTickets),
       slaBreachRisk: computeSLARisk(dedupedTickets),
-      dataFreshness: computeFreshness(dedupedTickets),
+      dataFreshness: computeFreshness(snapshot.refreshedAt),
     };
   }
 
   /* ── Helpers ────────────────────────────────────────────────── */
   function normalizeTicket(t) {
     return {
-      ticketId: t.ticketId || t.id || t.ticket_id || `T-${Math.random().toString(36).slice(2,8)}`,
-      customer: t.customer || t.customerName || t.account || 'Unknown',
-      status: t.status || 'New',
-      opsStatus: t.opsStatus || t.ops_status || t.status || 'New',
+      ticketId: t.ticketId || t.id || t.ticket_id || null,
+      customer: t.customer || t.customerName || t.account || 'Customer not listed',
+      status: t.displayStatusName || t.status || '',
+      opsStatus: t.displayStatusName || t.opsStatus || t.ops_status || t.status || '',
+      displayStatusName: t.displayStatusName || t.opsStatus || t.status || '',
+      displayStatusSystemStatus: t.displayStatusSystemStatus,
       subject: t.subject || t.title || t.summary || '',
-      priority: t.priority || t.severity || 'Medium',
-      createdAt: t.createdAt || t.created_at || t.createdDate || new Date().toISOString(),
-      ageDays: computeAgeDays(t.createdAt || t.created_at || t.createdDate || new Date().toISOString()),
+      priority: t.priority || t.severity || null,
+      createdAt: t.createdAt || t.created_at || t.createdDate || null,
+      ageDays: t.ageDays ?? computeAgeDays(t.createdAt || t.created_at || t.createdDate),
+      ageHours: t.ageHours ?? null,
+      dueDate: t.dueDate || null,
+      slaStatus: t.slaStatus || null,
+      closeFlag: t.closeFlag === true,
+      conversationId: t.conversationId || null,
       invoiceItemType: t.invoiceItemType || t.invoice_item_type || t.itemType || '',
       ufn: t.ufn || t.ufnTag || false,
       tags: t.tags || [],
@@ -169,13 +171,8 @@ window.DataLoader = (function () {
     };
   }
 
-  function normalizeDedupKey(t) {
-    const subject = (t.subject || '').toLowerCase().replace(/^(re|fwd?):\s*/i, '').trim();
-    const customer = (t.customer || '').toLowerCase().trim();
-    return `${subject}::${customer}`;
-  }
-
   function computeAgeDays(createdAt) {
+    if (!createdAt) return null;
     const created = new Date(createdAt);
     if (isNaN(created.getTime())) return 0;
     return Math.floor((Date.now() - created.getTime()) / (1000 * 60 * 60 * 24));
@@ -189,24 +186,22 @@ window.DataLoader = (function () {
   }
 
   function computeSLARisk(tickets) {
-    if (tickets.length === 0) return 'None';
-    const atRisk = tickets.filter(t => t.ageDays > 5 && (t.priority === 'Critical' || t.priority === 'High'));
-    if (atRisk.length === 0) return 'None';
-    return atRisk.length + ' ticket(s)';
+    const atRisk = tickets.filter(t => t.slaStatus === 'Breached');
+    return atRisk.length === 0 ? 'None' : atRisk.length + ' tickets';
   }
 
-  function computeFreshness(tickets) {
-    if (tickets.length === 0) return 'N/A';
-    const ages = tickets.map(t => t.ageDays);
-    const maxAge = Math.max(...ages);
-    if (maxAge > 30) return 'Stale';
-    if (maxAge > 14) return 'Aging';
-    return 'Fresh';
+  function computeFreshness(refreshedAt) {
+    if (!refreshedAt) return 'Pending';
+    const ageMinutes = (Date.now() - new Date(refreshedAt).getTime()) / 60000;
+    if (!Number.isFinite(ageMinutes)) return 'Pending';
+    if (ageMinutes > 120) return 'Refresh due';
+    return 'Current';
   }
 
   /* ── Public API ─────────────────────────────────────────────── */
   return {
     loadConfig,
+    loadOutlook,
     loadTickets,
     applyFilters,
     deduplicate,
