@@ -1,5 +1,575 @@
 [
   {
+    "ticketId": "UFN-70616",
+    "customer": "VITA COCO - DTC",
+    "customerEmail": "vitacoco.northampton@unisco.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Re: Jacksonville Vitacoco_Reroute Request",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 0,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70614",
+    "customer": "ROAR BEVERAGES INC",
+    "customerEmail": "yaseen.rafiqzad@chrobinson.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "CH Robinson - Pickup Appointment Request (Load # 567642638)",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 0,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70611",
+    "customer": "HINT INC.",
+    "customerEmail": "jehnifur.morvai@unisco.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "PA Inventory - Hint @ Unis",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 0,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70610",
+    "customer": "wilmer.benitez@unisco.com",
+    "customerEmail": "wilmer.benitez@unisco.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Cesanek Dropship EOD - RECOVERY SPORTS - 2026-09-11",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 1,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70609",
+    "customer": "wilmer.benitez@unisco.com",
+    "customerEmail": "wilmer.benitez@unisco.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Cesanek Dropship EOD - WATER PLUS - 2026-09-11",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 1,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70608",
+    "customer": "wilmer.benitez@unisco.com",
+    "customerEmail": "wilmer.benitez@unisco.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Cesanek Dropship EOD - ZEN BEVERAGE - 2026-09-11",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 1,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70607",
+    "customer": "wilmer.benitez@unisco.com",
+    "customerEmail": "wilmer.benitez@unisco.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Cesanek Dropship EOD - UPTIME ENERGY - 2026-09-11",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 1,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70606",
+    "customer": "wilmer.benitez@unisco.com",
+    "customerEmail": "wilmer.benitez@unisco.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Cesanek Dropship EOD - VITA COCO DTC - 2026-09-11",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 1,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70605",
+    "customer": "wilmer.benitez@unisco.com",
+    "customerEmail": "wilmer.benitez@unisco.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Cesanek Dropship EOD - RISE BREWING - 2026-09-11",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 1,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70603",
+    "customer": "Greg Russello (GRussello@vitacoco.com)",
+    "customerEmail": "GRussello@vitacoco.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Automatic reply: Cancel Order: #VC153712 / DN-5020015",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": "Tweetie Leigh Lamoste",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 1,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70599",
+    "customer": "ohrvhel@catalyze-x.com",
+    "customerEmail": "ohrvhel@catalyze-x.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Order Creation JV to BP",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 1,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70596",
+    "customer": "COLAVITA USA, LLC",
+    "customerEmail": "cprince@somersetfoods.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "FW: Colavita Vitelli Pickup PO #61723",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 1,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70595",
+    "customer": "Tweetie Leigh Lamoste (tweetie.lamoste@unisco.com)",
+    "customerEmail": "tweetie.lamoste@unisco.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Immediate Review Required: Inbound Deliveries Scheduled for the Next Business Day -September 14, 2026 (Cesanek, PA Facility)",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 1,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70594",
+    "customer": "THE ANDERSONS, INC.",
+    "customerEmail": "AUTOEMPICK@chrobinson.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "CH Robinson - Pickup Appointment Request (Load # 567745919 for 09/16/2026 01:00 PM) - Follow Up",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 1,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70593",
+    "customer": "THE ANDERSONS, INC.",
+    "customerEmail": "AUTOEMPICK@chrobinson.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "CH Robinson - Pickup Appointment Request (Load # 567745481 for 09/16/2026 01:30 PM) - Follow Up",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 1,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70588",
+    "customer": "THE ANDERSONS, INC.",
+    "customerEmail": "AUTOEMPICK@chrobinson.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "CH Robinson - Pickup Appointment Request (Load # 567744358 for 09/16/2026 02:00 PM) - Follow Up",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 1,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70587",
+    "customer": "THE ANDERSONS, INC.",
+    "customerEmail": "AUTOEMPICK@chrobinson.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "CH Robinson - Pickup Appointment Request (Load # 567743703 for 09/15/2026 01:30 PM) - Follow Up",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 1,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70586",
+    "customer": "THE ANDERSONS, INC.",
+    "customerEmail": "AUTOEMPICK@chrobinson.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "CH Robinson - Pickup Appointment Request (Load # 567742824 for 09/15/2026 01:00 PM) - Follow Up",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 1,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70585",
+    "customer": "NIAGARA BOTTLING LLC - RESIN",
+    "customerEmail": "erin.cambra@unisco.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Allocated Orders and Inventory Remaining",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 1,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70584",
+    "customer": "RITUAL BEVERAGE COMPANY",
+    "customerEmail": "tyler.sheppard@circledelivers.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Pickup",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 2,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70580",
+    "customer": "THE ANDERSONS, INC.",
+    "customerEmail": "AUTOEMPICK@chrobinson.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "CH Robinson - Pickup Appointment Request (Load # 567732938 for 09/14/2026 01:30 PM) - Follow Up",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 2,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70579",
+    "customer": "THE ANDERSONS, INC.",
+    "customerEmail": "AUTOEMPICK@chrobinson.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "CH Robinson - Pickup Appointment Request (Load # 567731491 for 09/14/2026 02:00 PM) - Follow Up",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 2,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70576",
+    "customer": "ROOM TO GROW NATIONAL INC",
+    "customerEmail": "allison.luciano@roomtogrow.org",
+    "opsStatus": "Pending",
+    "priority": "Medium",
+    "subject": "Final Pick-up Scheduling",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 3,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70574",
+    "customer": "ATERIAN GROUP, INC.",
+    "customerEmail": "rachelle.gabriel@tmkgl.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "FBM Outbound Order - UNIS Northampton, PA 09/11/2026",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 3,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70573",
+    "customer": "ATERIAN GROUP, INC.",
+    "customerEmail": "milos.stokic@tmkgl.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Northampton -> Joliet | Move out Transfers",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 3,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70572",
+    "customer": "ATERIAN GROUP, INC.",
+    "customerEmail": "milos.stokic@tmkgl.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Northampton -> Pooler | Move out Transfers",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 3,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70570",
+    "customer": "NIAGARA BOTTLING LLC - RESIN",
+    "customerEmail": "erin.cambra@unisco.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Transfers 9.3-9.11",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 4,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70565",
+    "customer": "Chiara Vitali",
+    "customerEmail": "chiara.vitali@colavita.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Automatic reply - Pickup/Delivery Appointment Information",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 5,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70559",
+    "customer": "ATERIAN GROUP, INC.",
+    "customerEmail": "milos.stokic@tmkgl.com",
+    "opsStatus": "Pending",
+    "priority": "Medium",
+    "subject": "All Pending (Picked) Dropship Orders 9/11",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": "Kacey Nicole Lebrun",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 6,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70557",
+    "customer": "Ben Axelrod",
+    "customerEmail": "baxelrod@spotinc.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Certified Origins Sched. Request --- TRVA-004 / DN-5020149",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 6,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70556",
+    "customer": "INNOVA SOFTGEL LLC DBA KD NUTRA",
+    "customerEmail": "yesica.villalona@suntecktts.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Delivery appointments needed for containers MAEU274833196 ",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 6,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70554",
+    "customer": "SMEG USA INC",
+    "customerEmail": "rona.roopchand@smegusa.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "RE: Almi Interiors ACC#10036032 PO#912026",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 6,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70550",
+    "customer": "LASSONDE PAPPAS AND COMPANY, INC.",
+    "customerEmail": "noreply@tms.blujaysolutions.net",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Advanced Report - Dock Activity",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 7,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70548",
+    "customer": "sara@splendorwater.com",
+    "customerEmail": "sara@splendorwater.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "Automatic reply: Confirmation Needed – Building Closure ",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 7,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70537",
+    "customer": "SMEG USA INC",
+    "customerEmail": "mark.tulipas@unisco.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "SMEG 9/11/26",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 8,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70532",
+    "customer": "TCL NORTH AMERICA",
+    "customerEmail": "nr@armstrongtransport.com",
+    "opsStatus": "Pending",
+    "priority": "Medium",
+    "subject": "pick up request",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 8,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70529",
+    "customer": "Kent Joseph Lim (kent.lim@unisco.com)",
+    "customerEmail": "kent.lim@unisco.com",
+    "opsStatus": "New",
+    "priority": "Medium",
+    "subject": "CESANEK APPOINTMENT WATCH | 09/11/2026",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": "Kent Joseph Lim",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 9,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-70517",
+    "customer": "RECESS",
+    "customerEmail": "madison@hopewellbev.com",
+    "opsStatus": "Pending",
+    "priority": "Medium",
+    "subject": "Recess order # 423035",
+    "createdDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "assigned": null,
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "ageHours": 11,
+    "ageDays": 0
+  },
+  {
     "ticketId": "UFN-70513",
     "customer": "FXF-DCN",
     "customerEmail": "dcn-slc@fedexfreight.com",
@@ -11,12 +581,12 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 0,
+    "ageHours": 13,
     "ageDays": 0
   },
   {
     "ticketId": "UFN-70512",
-    "customer": "UNIS Internal",
+    "customer": "Quarantine",
     "customerEmail": "quarantine@messaging.microsoft.com",
     "opsStatus": "New",
     "priority": "Medium",
@@ -26,7 +596,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 0,
+    "ageHours": 16,
     "ageDays": 0
   },
   {
@@ -41,7 +611,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 5,
+    "ageHours": 22,
     "ageDays": 0
   },
   {
@@ -56,22 +626,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 7,
-    "ageDays": 0
-  },
-  {
-    "ticketId": "UFN-70498",
-    "customer": "ROAR BEVERAGES INC",
-    "customerEmail": "yaseen.rafiqzad@chrobinson.com",
-    "opsStatus": "New",
-    "priority": "Medium",
-    "subject": "CH Robinson - Pickup Appointment Request (Load # 566497815 for 9/2/2026 12:00 AM)",
-    "createdDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 8,
+    "ageHours": 23,
     "ageDays": 0
   },
   {
@@ -86,8 +641,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 8,
-    "ageDays": 0
+    "ageHours": 24,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70496",
@@ -101,8 +656,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 8,
-    "ageDays": 0
+    "ageHours": 24,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70495",
@@ -116,8 +671,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 8,
-    "ageDays": 0
+    "ageHours": 24,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70494",
@@ -131,8 +686,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 8,
-    "ageDays": 0
+    "ageHours": 24,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70493",
@@ -146,8 +701,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 8,
-    "ageDays": 0
+    "ageHours": 24,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70492",
@@ -161,8 +716,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 8,
-    "ageDays": 0
+    "ageHours": 24,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70491",
@@ -176,8 +731,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 8,
-    "ageDays": 0
+    "ageHours": 24,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70489",
@@ -191,8 +746,8 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 8,
-    "ageDays": 0
+    "ageHours": 24,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70481",
@@ -206,8 +761,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 9,
-    "ageDays": 0
+    "ageHours": 25,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70480",
@@ -221,8 +776,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 9,
-    "ageDays": 0
+    "ageHours": 25,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70475",
@@ -236,8 +791,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 9,
-    "ageDays": 0
+    "ageHours": 25,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70474",
@@ -251,8 +806,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 9,
-    "ageDays": 0
+    "ageHours": 25,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70473",
@@ -266,8 +821,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 9,
-    "ageDays": 0
+    "ageHours": 25,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70472",
@@ -277,12 +832,12 @@
     "priority": "Medium",
     "subject": "Pickup appointment - PO 3887641 Joliet-Douglasville",
     "createdDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
+    "lastUpdated": "2026-09-11",
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 9,
-    "ageDays": 0
+    "ageHours": 25,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70471",
@@ -296,8 +851,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 9,
-    "ageDays": 0
+    "ageHours": 25,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70466",
@@ -307,12 +862,12 @@
     "priority": "Medium",
     "subject": "[Aviron Interactive] Re: LTL Pickup Scheduled – September 10th, 2026 – BOL#2346-2136 (Roadrunner Transportation Services) / Aviron/UNIS PA –SO#3601 – DN-2128307",
     "createdDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
+    "lastUpdated": "2026-09-11",
     "assigned": "Shailene Baez",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 10,
-    "ageDays": 0
+    "ageHours": 26,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70465",
@@ -326,8 +881,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 10,
-    "ageDays": 0
+    "ageHours": 26,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70464",
@@ -341,83 +896,23 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 10,
-    "ageDays": 0
+    "ageHours": 26,
+    "ageDays": 1
   },
   {
-    "ticketId": "UFN-70463",
-    "customer": "COLAVITA USA, LLC",
-    "customerEmail": "kelli.lundquist@priority1inc.net",
+    "ticketId": "UFN-70443",
+    "customer": "RITUAL BEVERAGE COMPANY",
+    "customerEmail": "lisa.lenhart@dhl.com",
     "opsStatus": "Pending",
     "priority": "Medium",
-    "subject": "Appt for Order #SO123954 & SO124260",
+    "subject": "Pick ups",
     "createdDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "assigned": "Yang-Lhing Bague",
-    "closeFlag": true,
-    "slaStatus": "On Track",
-    "ageHours": 10,
-    "ageDays": 0
-  },
-  {
-    "ticketId": "UFN-70452",
-    "customer": "COLAVITA USA, LLC",
-    "customerEmail": "kflory@driscollfoods.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "Pickup Appointment",
-    "createdDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
+    "lastUpdated": "2026-09-11",
     "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 11,
-    "ageDays": 0
-  },
-  {
-    "ticketId": "UFN-70448",
-    "customer": "MEDLOG",
-    "customerEmail": "jocelyn.borgono@medlog.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "MSMU6875562",
-    "createdDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "assigned": "Yang-Lhing Bague",
     "closeFlag": true,
     "slaStatus": "On Track",
-    "ageHours": 11,
-    "ageDays": 0
-  },
-  {
-    "ticketId": "UFN-70447",
-    "customer": "MEDLOG",
-    "customerEmail": "jocelyn.borgono@medlog.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "MSDU7175119",
-    "createdDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "assigned": "Yang-Lhing Bague",
-    "closeFlag": true,
-    "slaStatus": "On Track",
-    "ageHours": 11,
-    "ageDays": 0
-  },
-  {
-    "ticketId": "UFN-70441",
-    "customer": "COLAVITA USA, LLC",
-    "customerEmail": "chiara.vitali@colavita.com",
-    "opsStatus": "New",
-    "priority": "Medium",
-    "subject": "SO123785 - PO# 1560 - DN-2121008 ",
-    "createdDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 12,
-    "ageDays": 0
+    "ageHours": 28,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70440",
@@ -431,42 +926,12 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 12,
-    "ageDays": 0
-  },
-  {
-    "ticketId": "UFN-70439",
-    "customer": "THE ANDERSONS, INC.",
-    "customerEmail": "brian_houdashelt@andersonsinc.com",
-    "opsStatus": "New",
-    "priority": "Medium",
-    "subject": "Please Cancel DN-2130467",
-    "createdDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 12,
-    "ageDays": 0
-  },
-  {
-    "ticketId": "UFN-70435",
-    "customer": "ETCC Reg4 Scheduling",
-    "customerEmail": "etccreg4scheduling@walmart.com",
-    "opsStatus": "New",
-    "priority": "Medium",
-    "subject": "MPU Scheduling Notification - Load: 93910011",
-    "createdDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 13,
-    "ageDays": 0
+    "ageHours": 29,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70431",
-    "customer": "CERTIFIED ORIGINS",
+    "customer": "Cameron Marble",
     "customerEmail": "cameron.marble@chrobinson.com",
     "opsStatus": "New",
     "priority": "Medium",
@@ -476,8 +941,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 13,
-    "ageDays": 0
+    "ageHours": 30,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70428",
@@ -491,23 +956,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 13,
-    "ageDays": 0
-  },
-  {
-    "ticketId": "UFN-70424",
-    "customer": "SMEG USA INC",
-    "customerEmail": "erin.cambra@unisco.com",
-    "opsStatus": "New",
-    "priority": "Medium",
-    "subject": "Canceled: SMEG/Unis Touchbase",
-    "createdDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 14,
-    "ageDays": 0
+    "ageHours": 30,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70423",
@@ -521,8 +971,8 @@
     "assigned": "Kacey Nicole Lebrun",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 14,
-    "ageDays": 0
+    "ageHours": 30,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70416",
@@ -536,8 +986,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 14,
-    "ageDays": 0
+    "ageHours": 31,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70415",
@@ -551,68 +1001,23 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 14,
-    "ageDays": 0
+    "ageHours": 31,
+    "ageDays": 1
   },
   {
-    "ticketId": "UFN-70414",
-    "customer": "COLAVITA USA, LLC",
-    "customerEmail": "kyle.wittenbauer@colavita.com",
-    "opsStatus": "New",
+    "ticketId": "UFN-70412",
+    "customer": "ATERIAN GROUP, INC.",
+    "customerEmail": "carizza.guinto@tmkgl.com",
+    "opsStatus": "Pending",
     "priority": "Medium",
-    "subject": "UNIS --> Edison - Week of 9/14",
+    "subject": "SQP Target DVS for UNIS Northampton - 09-10-2026",
     "createdDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "assigned": null,
-    "closeFlag": false,
+    "lastUpdated": "2026-09-11",
+    "assigned": "Kacey Nicole Lebrun",
+    "closeFlag": true,
     "slaStatus": "On Track",
-    "ageHours": 14,
-    "ageDays": 0
-  },
-  {
-    "ticketId": "UFN-70413",
-    "customer": "COLAVITA USA, LLC",
-    "customerEmail": "kyle.wittenbauer@colavita.com",
-    "opsStatus": "New",
-    "priority": "Medium",
-    "subject": "UNIS --> Romark - Week of 9/14",
-    "createdDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 14,
-    "ageDays": 0
-  },
-  {
-    "ticketId": "UFN-70411",
-    "customer": "RITUAL BEVERAGE COMPANY",
-    "customerEmail": "c.gudino@lipmanbrothers.com",
-    "opsStatus": "New",
-    "priority": "Medium",
-    "subject": "Purchase Order 63482 DIAGEO NON ALCOHOLIC BEVERAGES LLC",
-    "createdDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 15,
-    "ageDays": 0
-  },
-  {
-    "ticketId": "UFN-70408",
-    "customer": "ROAR BEVERAGES INC",
-    "customerEmail": "Kevin.Grossi@chrobinson.com",
-    "opsStatus": "New",
-    "priority": "Medium",
-    "subject": "CH Robinson - Delivery Appointment Request (Load # 567642503 for 9/16/2026 9:00 AM)",
-    "createdDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 15,
-    "ageDays": 0
+    "ageHours": 31,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70405",
@@ -626,27 +1031,12 @@
     "assigned": "Angelica Achacoso",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 15,
-    "ageDays": 0
-  },
-  {
-    "ticketId": "UFN-70385",
-    "customer": "NIAGARA BOTTLING LLC - RESIN",
-    "customerEmail": "kasmith@niagarawater.com",
-    "opsStatus": "New",
-    "priority": "Medium",
-    "subject": "BOL 20260909201 - LOT NUMBER",
-    "createdDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 17,
-    "ageDays": 0
+    "ageHours": 32,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-70363",
-    "customer": "UNIS Internal",
+    "customer": "Quarantine",
     "customerEmail": "quarantine@messaging.microsoft.com",
     "opsStatus": "New",
     "priority": "Medium",
@@ -656,7 +1046,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 24,
+    "ageHours": 40,
     "ageDays": 1
   },
   {
@@ -671,7 +1061,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 28,
+    "ageHours": 44,
     "ageDays": 1
   },
   {
@@ -686,37 +1076,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 28,
-    "ageDays": 1
-  },
-  {
-    "ticketId": "UFN-70350",
-    "customer": "Tweetie Leigh Lamoste (tweetie.lamoste@unisco.com)",
-    "customerEmail": "tweetie.lamoste@unisco.com",
-    "opsStatus": "New",
-    "priority": "Medium",
-    "subject": "Immediate Action Required: Open RN Items Impacting Billing as of September 9, 2026 (Cesanek, PA Facility)",
-    "createdDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 28,
-    "ageDays": 1
-  },
-  {
-    "ticketId": "UFN-70335",
-    "customer": "NIAGARA BOTTLING LLC - RESIN",
-    "customerEmail": "rsomashekar@niagarawater.com",
-    "opsStatus": "New",
-    "priority": "Medium",
-    "subject": "JEF -SRICHAKRA BOLS",
-    "createdDate": "2026-09-09",
-    "lastUpdated": "2026-09-09",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 32,
+    "ageHours": 44,
     "ageDays": 1
   },
   {
@@ -731,23 +1091,8 @@
     "assigned": "Cristina Paula Batulanon",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 32,
-    "ageDays": 1
-  },
-  {
-    "ticketId": "UFN-70331",
-    "customer": "SMEG USA INC",
-    "customerEmail": "angelica.achacoso@unisco.com",
-    "opsStatus": "New",
-    "priority": "Medium",
-    "subject": "On Vacation – Angelica Achacoso – September 10-11, 2026",
-    "createdDate": "2026-09-09",
-    "lastUpdated": "2026-09-10",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 32,
-    "ageDays": 1
+    "ageHours": 49,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70319",
@@ -761,8 +1106,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 33,
-    "ageDays": 1
+    "ageHours": 49,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70316",
@@ -776,8 +1121,8 @@
     "assigned": "Sheehan Ramos",
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 33,
-    "ageDays": 1
+    "ageHours": 50,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70312",
@@ -791,8 +1136,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 34,
-    "ageDays": 1
+    "ageHours": 50,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70311",
@@ -806,8 +1151,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 34,
-    "ageDays": 1
+    "ageHours": 50,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70310",
@@ -821,8 +1166,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 34,
-    "ageDays": 1
+    "ageHours": 50,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70309",
@@ -836,8 +1181,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 34,
-    "ageDays": 1
+    "ageHours": 50,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70308",
@@ -851,8 +1196,23 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 34,
-    "ageDays": 1
+    "ageHours": 51,
+    "ageDays": 2
+  },
+  {
+    "ticketId": "UFN-70304",
+    "customer": "SMEG USA INC",
+    "customerEmail": "logistics@smegusa.com",
+    "opsStatus": "Pending",
+    "priority": null,
+    "subject": "DN-2128791",
+    "createdDate": "2026-09-09",
+    "lastUpdated": "2026-09-11",
+    "assigned": "Angelica Achacoso",
+    "closeFlag": true,
+    "slaStatus": "On Track",
+    "ageHours": 51,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70302",
@@ -862,27 +1222,12 @@
     "priority": "Medium",
     "subject": "RE: 348588401 Freight on Hold - mg",
     "createdDate": "2026-09-09",
-    "lastUpdated": "2026-09-10",
+    "lastUpdated": "2026-09-11",
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "On Track",
-    "ageHours": 35,
-    "ageDays": 1
-  },
-  {
-    "ticketId": "UFN-70298",
-    "customer": "chodde@niagarawater.com",
-    "customerEmail": "chodde@niagarawater.com",
-    "opsStatus": "New",
-    "priority": "Medium",
-    "subject": "RE: NIAGARA/PLAINFIELD/ DUYTAN/ 9.9 - 9.20",
-    "createdDate": "2026-09-09",
-    "lastUpdated": "2026-09-09",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 35,
-    "ageDays": 1
+    "ageHours": 51,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70295",
@@ -895,24 +1240,9 @@
     "lastUpdated": "2026-09-10",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 36,
-    "ageDays": 1
-  },
-  {
-    "ticketId": "UFN-70294",
-    "customer": "THE ANDERSONS, INC.",
-    "customerEmail": "brian_houdashelt@andersonsinc.com",
-    "opsStatus": "New",
-    "priority": "Medium",
-    "subject": "Please Ship DNs",
-    "createdDate": "2026-09-09",
-    "lastUpdated": "2026-09-09",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 36,
-    "ageDays": 1
+    "slaStatus": "Breached",
+    "ageHours": 53,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70287",
@@ -922,12 +1252,12 @@
     "priority": "Medium",
     "subject": "Confirmation Needed - Building Closure",
     "createdDate": "2026-09-09",
-    "lastUpdated": "2026-09-10",
+    "lastUpdated": "2026-09-11",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 37,
-    "ageDays": 1
+    "slaStatus": "Breached",
+    "ageHours": 53,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70285",
@@ -940,9 +1270,9 @@
     "lastUpdated": "2026-09-09",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 37,
-    "ageDays": 1
+    "slaStatus": "Breached",
+    "ageHours": 53,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70272",
@@ -955,9 +1285,9 @@
     "lastUpdated": "2026-09-09",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 37,
-    "ageDays": 1
+    "slaStatus": "Breached",
+    "ageHours": 54,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70268",
@@ -970,9 +1300,9 @@
     "lastUpdated": "2026-09-09",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 38,
-    "ageDays": 1
+    "slaStatus": "Breached",
+    "ageHours": 55,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70267",
@@ -985,9 +1315,9 @@
     "lastUpdated": "2026-09-09",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 38,
-    "ageDays": 1
+    "slaStatus": "Breached",
+    "ageHours": 55,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70265",
@@ -1000,9 +1330,9 @@
     "lastUpdated": "2026-09-09",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 38,
-    "ageDays": 1
+    "slaStatus": "Breached",
+    "ageHours": 55,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70262",
@@ -1015,24 +1345,24 @@
     "lastUpdated": "2026-09-09",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 38,
-    "ageDays": 1
+    "slaStatus": "Breached",
+    "ageHours": 55,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70261",
     "customer": "HINT INC.",
     "customerEmail": "bdalder@drinkhint.com",
     "opsStatus": "Pending",
-    "priority": "Medium",
+    "priority": null,
     "subject": "HVP41-1612 Orders | 09/07- 09/11",
     "createdDate": "2026-09-09",
-    "lastUpdated": "2026-09-10",
+    "lastUpdated": "2026-09-11",
     "assigned": "Youssef Zeitoon",
     "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 39,
-    "ageDays": 1
+    "slaStatus": "Breached",
+    "ageHours": 55,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70255",
@@ -1045,9 +1375,9 @@
     "lastUpdated": "2026-09-09",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 39,
-    "ageDays": 1
+    "slaStatus": "Breached",
+    "ageHours": 56,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70246",
@@ -1057,12 +1387,12 @@
     "priority": "Medium",
     "subject": "Confirmation Needed – Building Closure ",
     "createdDate": "2026-09-09",
-    "lastUpdated": "2026-09-10",
+    "lastUpdated": "2026-09-11",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 40,
-    "ageDays": 1
+    "slaStatus": "Breached",
+    "ageHours": 57,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70244",
@@ -1075,9 +1405,9 @@
     "lastUpdated": "2026-09-11",
     "assigned": "Shailene Baez",
     "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 40,
-    "ageDays": 1
+    "slaStatus": "Breached",
+    "ageHours": 57,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70243",
@@ -1087,27 +1417,12 @@
     "priority": "Medium",
     "subject": "Confirmation Needed – Building Closure ",
     "createdDate": "2026-09-09",
-    "lastUpdated": "2026-09-10",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 40,
-    "ageDays": 1
-  },
-  {
-    "ticketId": "UFN-70241",
-    "customer": "ROOM TO GROW NATIONAL INC",
-    "customerEmail": "shailene.baez@unisco.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "Confirmation Needed – Building Closure ",
-    "createdDate": "2026-09-09",
-    "lastUpdated": "2026-09-10",
+    "lastUpdated": "2026-09-11",
     "assigned": "Shailene Baez",
     "closeFlag": true,
-    "slaStatus": "On Track",
-    "ageHours": 40,
-    "ageDays": 1
+    "slaStatus": "Breached",
+    "ageHours": 57,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70222",
@@ -1120,9 +1435,9 @@
     "lastUpdated": "2026-09-09",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 42,
-    "ageDays": 1
+    "slaStatus": "Breached",
+    "ageHours": 58,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70220",
@@ -1135,9 +1450,9 @@
     "lastUpdated": "2026-09-09",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 42,
-    "ageDays": 1
+    "slaStatus": "Breached",
+    "ageHours": 59,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70215",
@@ -1150,8 +1465,8 @@
     "lastUpdated": "2026-09-09",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 49,
+    "slaStatus": "Breached",
+    "ageHours": 65,
     "ageDays": 2
   },
   {
@@ -1165,84 +1480,9 @@
     "lastUpdated": "2026-09-09",
     "assigned": null,
     "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 56,
-    "ageDays": 2
-  },
-  {
-    "ticketId": "UFN-70161",
-    "customer": "KARAKA, LLC",
-    "customerEmail": "john.mills@goessor.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "Northampton, PA Facility Closure – Inventory Transition Plan",
-    "createdDate": "2026-09-08",
-    "lastUpdated": "2026-09-09",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 57,
-    "ageDays": 2
-  },
-  {
-    "ticketId": "UFN-70156",
-    "customer": "Tweetie Leigh Lamoste (tweetie.lamoste@unisco.com)",
-    "customerEmail": "tweetie.lamoste@unisco.com",
-    "opsStatus": "New",
-    "priority": "Medium",
-    "subject": "Immediate Action Required: Open RN Items Impacting Billing as of September 8, 2026 (Cesanek, PA Facility)",
-    "createdDate": "2026-09-08",
-    "lastUpdated": "2026-09-08",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 58,
-    "ageDays": 2
-  },
-  {
-    "ticketId": "UFN-70143",
-    "customer": "NIAGARA BOTTLING LLC - RESIN",
-    "customerEmail": "justin.dilan@plasticexpress.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "RE: ALN-0908-K076N-1",
-    "createdDate": "2026-09-08",
-    "lastUpdated": "2026-09-08",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "ageHours": 59,
-    "ageDays": 2
-  },
-  {
-    "ticketId": "UFN-70141",
-    "customer": "COLAVITA USA, LLC",
-    "customerEmail": "nicole.weber@unisco.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "Colavita/Hint Beverage - Northampton, PA Week of 9/7/26",
-    "createdDate": "2026-09-08",
-    "lastUpdated": "2026-09-10",
-    "assigned": "Kent Joseph Lim",
-    "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 59,
-    "ageDays": 2
-  },
-  {
-    "ticketId": "UFN-70138",
-    "customer": "SMEG USA INC",
-    "customerEmail": "vanessa.patrone@smegusa.com",
-    "opsStatus": "New",
-    "priority": "Medium",
-    "subject": "To Ship 9/8",
-    "createdDate": "2026-09-08",
-    "lastUpdated": "2026-09-08",
-    "assigned": "Angelica Achacoso",
-    "closeFlag": false,
-    "slaStatus": "Breached",
-    "ageHours": 60,
-    "ageDays": 2
+    "ageHours": 73,
+    "ageDays": 3
   },
   {
     "ticketId": "UFN-70131",
@@ -1256,8 +1496,23 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 61,
-    "ageDays": 2
+    "ageHours": 77,
+    "ageDays": 3
+  },
+  {
+    "ticketId": "UFN-70130",
+    "customer": "ATERIAN GROUP, INC.",
+    "customerEmail": "carizza.guinto@tmkgl.com",
+    "opsStatus": "Pending",
+    "priority": "Medium",
+    "subject": "SQP Home Depot and Target DVS for UNIS Northampton - 09-08-2026",
+    "createdDate": "2026-09-08",
+    "lastUpdated": "2026-09-11",
+    "assigned": "Kacey Nicole Lebrun",
+    "closeFlag": true,
+    "slaStatus": "Breached",
+    "ageHours": 77,
+    "ageDays": 3
   },
   {
     "ticketId": "UFN-70124",
@@ -1271,8 +1526,8 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 61,
-    "ageDays": 2
+    "ageHours": 78,
+    "ageDays": 3
   },
   {
     "ticketId": "UFN-70114",
@@ -1286,8 +1541,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 62,
-    "ageDays": 2
+    "ageHours": 79,
+    "ageDays": 3
   },
   {
     "ticketId": "UFN-70100",
@@ -1301,8 +1556,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 63,
-    "ageDays": 2
+    "ageHours": 80,
+    "ageDays": 3
   },
   {
     "ticketId": "UFN-70098",
@@ -1316,23 +1571,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 63,
-    "ageDays": 2
-  },
-  {
-    "ticketId": "UFN-70085",
-    "customer": "BOUNDLESS EC US LLC",
-    "customerEmail": "arvin.gamay@unybrands.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "9/7/2026 Walmart Orders - UNIS PA- Unybrands",
-    "createdDate": "2026-09-08",
-    "lastUpdated": "2026-09-10",
-    "assigned": "Cristina Paula Batulanon",
-    "closeFlag": true,
-    "slaStatus": "Breached",
-    "ageHours": 64,
-    "ageDays": 2
+    "ageHours": 80,
+    "ageDays": 3
   },
   {
     "ticketId": "UFN-70003",
@@ -1346,38 +1586,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 86,
-    "ageDays": 3
-  },
-  {
-    "ticketId": "UFN-70000",
-    "customer": "NAL CONFECTIONARY, LLC",
-    "customerEmail": "kehe-uf@uber.com",
-    "opsStatus": "New",
-    "priority": "Medium",
-    "subject": "Uber Freight Pickup Appointment Request [KeHE Trademark Transportation] [3878155, KEHE-3878155, ROAR BEVERAGES INC]",
-    "createdDate": "2026-09-07",
-    "lastUpdated": "2026-09-07",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "Breached",
-    "ageHours": 87,
-    "ageDays": 3
-  },
-  {
-    "ticketId": "UFN-69815",
-    "customer": "NIAGARA BOTTLING LLC - RESIN",
-    "customerEmail": "rsomashekar@niagarawater.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "Re: [EXT] Re: HAZ coverage for next week’s orders",
-    "createdDate": "2026-09-04",
-    "lastUpdated": "2026-09-10",
-    "assigned": null,
-    "closeFlag": true,
-    "slaStatus": "Breached",
-    "ageHours": 154,
-    "ageDays": 6
+    "ageHours": 103,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-69810",
@@ -1391,38 +1601,23 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 155,
-    "ageDays": 6
+    "ageHours": 171,
+    "ageDays": 7
   },
   {
     "ticketId": "UFN-69781",
     "customer": "HINT INC.",
     "customerEmail": "bsantana@fusiontransport.com",
     "opsStatus": "Pending",
-    "priority": "Medium",
+    "priority": null,
     "subject": "UNIS - HINT BEVERAGE - NORTHAMPTON, PA - WEEK OF 9/7/26",
     "createdDate": "2026-09-04",
-    "lastUpdated": "2026-09-10",
+    "lastUpdated": "2026-09-11",
     "assigned": "Kent Joseph Lim",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 158,
-    "ageDays": 6
-  },
-  {
-    "ticketId": "UFN-69776",
-    "customer": "ZEN BEVERAGE LLC",
-    "customerEmail": "mirza@atnglobal.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "Pickup appointment request // Northampton, PA - Pittston, PA // batch",
-    "createdDate": "2026-09-04",
-    "lastUpdated": "2026-09-10",
-    "assigned": "Kent Joseph Lim",
-    "closeFlag": true,
-    "slaStatus": "Breached",
-    "ageHours": 158,
-    "ageDays": 6
+    "ageHours": 174,
+    "ageDays": 7
   },
   {
     "ticketId": "UFN-69767",
@@ -1436,8 +1631,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 158,
-    "ageDays": 6
+    "ageHours": 175,
+    "ageDays": 7
   },
   {
     "ticketId": "UFN-69751",
@@ -1451,8 +1646,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 159,
-    "ageDays": 6
+    "ageHours": 176,
+    "ageDays": 7
   },
   {
     "ticketId": "UFN-69738",
@@ -1466,37 +1661,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 160,
-    "ageDays": 6
-  },
-  {
-    "ticketId": "UFN-69723",
-    "customer": "RITUAL BEVERAGE COMPANY",
-    "customerEmail": "jaime.taber@diageo.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "RE: Diageo DNAB Automated Email Alert: UNIS Pick Up Alert Message",
-    "createdDate": "2026-09-04",
-    "lastUpdated": "2026-09-10",
-    "assigned": "Yang-Lhing Bague",
-    "closeFlag": true,
-    "slaStatus": "Breached",
-    "ageHours": 160,
-    "ageDays": 6
-  },
-  {
-    "ticketId": "UFN-69696",
-    "customer": "NAL CONFECTIONARY, LLC",
-    "customerEmail": "jeannye@vrtcl.co",
-    "opsStatus": "New",
-    "priority": "Medium",
-    "subject": "Cititrends Order DN-2128127 ",
-    "createdDate": "2026-09-04",
-    "lastUpdated": "2026-09-04",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "Breached",
-    "ageHours": 169,
+    "ageHours": 177,
     "ageDays": 7
   },
   {
@@ -1511,8 +1676,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 176,
-    "ageDays": 7
+    "ageHours": 193,
+    "ageDays": 8
   },
   {
     "ticketId": "UFN-69647",
@@ -1526,23 +1691,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 178,
-    "ageDays": 7
-  },
-  {
-    "ticketId": "UFN-69618",
-    "customer": "BOUNDLESS EC US LLC",
-    "customerEmail": "customerservices@wmservicessupport.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "Ticket [3569318] was updated. - No Labels on Cases for BOUNDLESS EC US LLC Load# 45872185",
-    "createdDate": "2026-09-03",
-    "lastUpdated": "2026-09-10",
-    "assigned": "Shailene Baez",
-    "closeFlag": true,
-    "slaStatus": "Breached",
-    "ageHours": 180,
-    "ageDays": 7
+    "ageHours": 194,
+    "ageDays": 8
   },
   {
     "ticketId": "UFN-69595",
@@ -1556,8 +1706,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 182,
-    "ageDays": 7
+    "ageHours": 198,
+    "ageDays": 8
   },
   {
     "ticketId": "UFN-69591",
@@ -1571,38 +1721,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 182,
-    "ageDays": 7
-  },
-  {
-    "ticketId": "UFN-69583",
-    "customer": "RECESS",
-    "customerEmail": "madison@hopewellbev.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "Recess order # 421885 / DN # 5015113",
-    "createdDate": "2026-09-03",
-    "lastUpdated": "2026-09-10",
-    "assigned": "Angelica Achacoso",
-    "closeFlag": true,
-    "slaStatus": "Breached",
-    "ageHours": 183,
-    "ageDays": 7
-  },
-  {
-    "ticketId": "UFN-69580",
-    "customer": "LIFEPRO FITNESS LLC",
-    "customerEmail": "m.ali@chaivision.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "Urgent Request – Order Cancellation and Reassignment to New Labels",
-    "createdDate": "2026-09-03",
-    "lastUpdated": "2026-09-08",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "Breached",
-    "ageHours": 183,
-    "ageDays": 7
+    "ageHours": 199,
+    "ageDays": 8
   },
   {
     "ticketId": "UFN-69519",
@@ -1616,7 +1736,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 196,
+    "ageHours": 213,
     "ageDays": 8
   },
   {
@@ -1631,22 +1751,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 198,
-    "ageDays": 8
-  },
-  {
-    "ticketId": "UFN-69508",
-    "customer": "SPLENDOR WATER LLC",
-    "customerEmail": "sydney@splendorwater.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "DN-2127640 // Cypress Transfer",
-    "createdDate": "2026-09-02",
-    "lastUpdated": "2026-09-03",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "Breached",
-    "ageHours": 198,
+    "ageHours": 215,
     "ageDays": 8
   },
   {
@@ -1661,8 +1766,8 @@
     "assigned": "Wilmer Acedo",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 202,
-    "ageDays": 8
+    "ageHours": 218,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-69462",
@@ -1676,8 +1781,8 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 202,
-    "ageDays": 8
+    "ageHours": 219,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-69450",
@@ -1691,8 +1796,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 205,
-    "ageDays": 8
+    "ageHours": 221,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-69447",
@@ -1706,8 +1811,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 205,
-    "ageDays": 8
+    "ageHours": 222,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-69426",
@@ -1721,23 +1826,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 206,
-    "ageDays": 8
-  },
-  {
-    "ticketId": "UFN-69409",
-    "customer": "SHEEX, INC.",
-    "customerEmail": "ffalconio@sheex.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "RE: RE: DN-2122929 - NEED UPDATE 8/31 - NOW 9/02",
-    "createdDate": "2026-09-02",
-    "lastUpdated": "2026-09-10",
-    "assigned": "Kent Claud Caballero",
-    "closeFlag": true,
-    "slaStatus": "Breached",
-    "ageHours": 207,
-    "ageDays": 8
+    "ageHours": 223,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-69405",
@@ -1751,8 +1841,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 207,
-    "ageDays": 8
+    "ageHours": 224,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-69397",
@@ -1766,8 +1856,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 208,
-    "ageDays": 8
+    "ageHours": 225,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-69380",
@@ -1781,8 +1871,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 209,
-    "ageDays": 8
+    "ageHours": 226,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-69337",
@@ -1796,8 +1886,8 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 224,
-    "ageDays": 9
+    "ageHours": 240,
+    "ageDays": 10
   },
   {
     "ticketId": "UFN-69334",
@@ -1811,8 +1901,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 224,
-    "ageDays": 9
+    "ageHours": 241,
+    "ageDays": 10
   },
   {
     "ticketId": "UFN-69307",
@@ -1826,8 +1916,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 226,
-    "ageDays": 9
+    "ageHours": 242,
+    "ageDays": 10
   },
   {
     "ticketId": "UFN-69245",
@@ -1841,8 +1931,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 230,
-    "ageDays": 9
+    "ageHours": 247,
+    "ageDays": 10
   },
   {
     "ticketId": "UFN-69231",
@@ -1856,23 +1946,8 @@
     "assigned": "nicole weber",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 231,
-    "ageDays": 9
-  },
-  {
-    "ticketId": "UFN-69186",
-    "customer": "NIAGARA BOTTLING LLC - RESIN",
-    "customerEmail": "kasmith@niagarawater.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "BLM Resin Schedule 9/7/2026 - 9/13/2026",
-    "createdDate": "2026-09-01",
-    "lastUpdated": "2026-09-09",
-    "assigned": null,
-    "closeFlag": true,
-    "slaStatus": "Breached",
-    "ageHours": 235,
-    "ageDays": 9
+    "ageHours": 247,
+    "ageDays": 10
   },
   {
     "ticketId": "UFN-69148",
@@ -1886,7 +1961,7 @@
     "assigned": "Youssef Zeitoon",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 244,
+    "ageHours": 261,
     "ageDays": 10
   },
   {
@@ -1901,22 +1976,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 244,
-    "ageDays": 10
-  },
-  {
-    "ticketId": "UFN-69018",
-    "customer": "NIAGARA BOTTLING LLC - RESIN",
-    "customerEmail": "justin.dilan@plasticexpress.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "PE SCHEDULE - WEEK 8.31",
-    "createdDate": "2026-08-31",
-    "lastUpdated": "2026-09-10",
-    "assigned": null,
-    "closeFlag": true,
-    "slaStatus": "Breached",
-    "ageHours": 253,
+    "ageHours": 261,
     "ageDays": 10
   },
   {
@@ -1931,8 +1991,23 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 254,
-    "ageDays": 10
+    "ageHours": 271,
+    "ageDays": 11
+  },
+  {
+    "ticketId": "UFN-68980",
+    "customer": "ATERIAN GROUP, INC.",
+    "customerEmail": "AUTOEMPICK@chrobinson.com",
+    "opsStatus": "Pending",
+    "priority": "Medium",
+    "subject": "CH Robinson - Pickup Appointment Request (Load # 566229037 for 09/01/2026 04:00 PM) - Follow Up",
+    "createdDate": "2026-08-31",
+    "lastUpdated": "2026-09-11",
+    "assigned": "Kacey Nicole Lebrun",
+    "closeFlag": true,
+    "slaStatus": "Breached",
+    "ageHours": 271,
+    "ageDays": 11
   },
   {
     "ticketId": "UFN-68951",
@@ -1942,27 +2017,12 @@
     "priority": "Medium",
     "subject": "Requesting Pickup - PAU-GENESIS-PAS(1-10)",
     "createdDate": "2026-08-31",
-    "lastUpdated": "2026-09-10",
+    "lastUpdated": "2026-09-11",
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 257,
-    "ageDays": 10
-  },
-  {
-    "ticketId": "UFN-68857",
-    "customer": "SHEEX, INC.",
-    "customerEmail": "ffalconio@sheex.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "RE: DN-2122929 - NEED UPDATE 8/31",
-    "createdDate": "2026-08-29",
-    "lastUpdated": "2026-08-31",
-    "assigned": "Kent Claud Caballero",
-    "closeFlag": false,
-    "slaStatus": "Breached",
-    "ageHours": 303,
-    "ageDays": 12
+    "ageHours": 274,
+    "ageDays": 11
   },
   {
     "ticketId": "UFN-68815",
@@ -1976,23 +2036,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 320,
-    "ageDays": 13
-  },
-  {
-    "ticketId": "UFN-68797",
-    "customer": "SHEEX, INC.",
-    "customerEmail": "ffalconio@sheex.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "RESENT ORDERS...",
-    "createdDate": "2026-08-28",
-    "lastUpdated": "2026-08-28",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "Breached",
-    "ageHours": 321,
-    "ageDays": 13
+    "ageHours": 336,
+    "ageDays": 14
   },
   {
     "ticketId": "UFN-68752",
@@ -2002,42 +2047,12 @@
     "priority": "Medium",
     "subject": "DN-2124398 // SFF order 826",
     "createdDate": "2026-08-28",
-    "lastUpdated": "2026-09-10",
+    "lastUpdated": "2026-09-11",
     "assigned": "Shailene Baez",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 325,
-    "ageDays": 13
-  },
-  {
-    "ticketId": "UFN-68751",
-    "customer": "DELMAR INTERNATIONAL INC",
-    "customerEmail": "napoleon.lauren@delmarcargo.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "ITEM# AGW-07 refill-SW & AGW-07 refill-FS",
-    "createdDate": "2026-08-28",
-    "lastUpdated": "2026-09-01",
-    "assigned": "Youssef Zeitoon",
-    "closeFlag": false,
-    "slaStatus": "Breached",
-    "ageHours": 325,
-    "ageDays": 13
-  },
-  {
-    "ticketId": "UFN-68750",
-    "customer": "NIAGARA BOTTLING LLC - RESIN",
-    "customerEmail": "rsomashekar@niagarawater.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "Re: HAZ coverage Week of 9.7",
-    "createdDate": "2026-08-28",
-    "lastUpdated": "2026-09-08",
-    "assigned": null,
-    "closeFlag": true,
-    "slaStatus": "Breached",
-    "ageHours": 325,
-    "ageDays": 13
+    "ageHours": 342,
+    "ageDays": 14
   },
   {
     "ticketId": "UFN-68741",
@@ -2051,8 +2066,8 @@
     "assigned": "Timothy McHugh",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 326,
-    "ageDays": 13
+    "ageHours": 342,
+    "ageDays": 14
   },
   {
     "ticketId": "UFN-68739",
@@ -2066,8 +2081,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 326,
-    "ageDays": 13
+    "ageHours": 343,
+    "ageDays": 14
   },
   {
     "ticketId": "UFN-68714",
@@ -2081,37 +2096,7 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 327,
-    "ageDays": 13
-  },
-  {
-    "ticketId": "UFN-68687",
-    "customer": "RITUAL BEVERAGE COMPANY",
-    "customerEmail": "mdavis@sethmar.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "PICK UP REQ - 4501542500",
-    "createdDate": "2026-08-28",
-    "lastUpdated": "2026-09-10",
-    "assigned": "Yang-Lhing Bague",
-    "closeFlag": true,
-    "slaStatus": "Breached",
-    "ageHours": 328,
-    "ageDays": 13
-  },
-  {
-    "ticketId": "UFN-68579",
-    "customer": "SMEG USA INC",
-    "customerEmail": "sona.street@smegusa.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "FW: Document Processing Error: NEBRASKA FURNITURE MART 2026-08-26 21:10:53",
-    "createdDate": "2026-08-27",
-    "lastUpdated": "2026-08-28",
-    "assigned": "Erin Cambra",
-    "closeFlag": false,
-    "slaStatus": "Breached",
-    "ageHours": 346,
+    "ageHours": 344,
     "ageDays": 14
   },
   {
@@ -2119,30 +2104,15 @@
     "customer": "HINT INC.",
     "customerEmail": "bsantana@fusiontransport.com",
     "opsStatus": "New",
-    "priority": "Medium",
+    "priority": null,
     "subject": "UNIS - HINT BEVERAGE - NORTHAMPTON, PA - WEEK OF 8/24/26-DISCREPANCIES",
     "createdDate": "2026-08-27",
     "lastUpdated": "2026-09-02",
     "assigned": "Timothy McHugh",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 347,
-    "ageDays": 14
-  },
-  {
-    "ticketId": "UFN-68563",
-    "customer": "CERTIFIED ORIGINS",
-    "customerEmail": "leticia@certifiedorigins.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "RN ERRORS {RN-19516 & RN-19517",
-    "createdDate": "2026-08-27",
-    "lastUpdated": "2026-09-08",
-    "assigned": "Youssef Zeitoon",
-    "closeFlag": true,
-    "slaStatus": "Breached",
-    "ageHours": 348,
-    "ageDays": 14
+    "ageHours": 363,
+    "ageDays": 15
   },
   {
     "ticketId": "UFN-68537",
@@ -2156,8 +2126,8 @@
     "assigned": "Kacey Nicole Lebrun",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 349,
-    "ageDays": 14
+    "ageHours": 366,
+    "ageDays": 15
   },
   {
     "ticketId": "UFN-68524",
@@ -2171,8 +2141,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 350,
-    "ageDays": 14
+    "ageHours": 367,
+    "ageDays": 15
   },
   {
     "ticketId": "UFN-68233",
@@ -2186,8 +2156,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 372,
-    "ageDays": 15
+    "ageHours": 389,
+    "ageDays": 16
   },
   {
     "ticketId": "UFN-68191",
@@ -2201,8 +2171,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 374,
-    "ageDays": 15
+    "ageHours": 391,
+    "ageDays": 16
   },
   {
     "ticketId": "UFN-68149",
@@ -2216,8 +2186,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 376,
-    "ageDays": 15
+    "ageHours": 393,
+    "ageDays": 16
   },
   {
     "ticketId": "UFN-68069",
@@ -2231,8 +2201,23 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 392,
-    "ageDays": 16
+    "ageHours": 409,
+    "ageDays": 17
+  },
+  {
+    "ticketId": "UFN-68064",
+    "customer": "AVIRON INTERACTIVE INC",
+    "customerEmail": "jason@avironactive.com",
+    "opsStatus": "Pending",
+    "priority": "Medium",
+    "subject": "Damaged Inventory Consolidation for Shipping",
+    "createdDate": "2026-08-25",
+    "lastUpdated": "2026-09-11",
+    "assigned": "Youssef Zeitoon",
+    "closeFlag": true,
+    "slaStatus": "Breached",
+    "ageHours": 409,
+    "ageDays": 17
   },
   {
     "ticketId": "UFN-68029",
@@ -2246,8 +2231,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 395,
-    "ageDays": 16
+    "ageHours": 412,
+    "ageDays": 17
   },
   {
     "ticketId": "UFN-68025",
@@ -2257,12 +2242,12 @@
     "priority": "Medium",
     "subject": "Requesting Pickup - PAU-GENESIS-PAS(1-10) - 10 Loads Total",
     "createdDate": "2026-08-25",
-    "lastUpdated": "2026-09-09",
+    "lastUpdated": "2026-09-11",
     "assigned": "Kent Claud Caballero",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 395,
-    "ageDays": 16
+    "ageHours": 412,
+    "ageDays": 17
   },
   {
     "ticketId": "UFN-68017",
@@ -2276,8 +2261,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 396,
-    "ageDays": 16
+    "ageHours": 412,
+    "ageDays": 17
   },
   {
     "ticketId": "UFN-68011",
@@ -2291,23 +2276,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 396,
-    "ageDays": 16
-  },
-  {
-    "ticketId": "UFN-68002",
-    "customer": "KARAKA, LLC",
-    "customerEmail": "renee.martos@goessor.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "Re: Re: Important Update: Inbound Receiving Deadline – August 28",
-    "createdDate": "2026-08-25",
-    "lastUpdated": "2026-09-11",
-    "assigned": "Leamsi Gem Mangodas",
-    "closeFlag": true,
-    "slaStatus": "Breached",
-    "ageHours": 397,
-    "ageDays": 16
+    "ageHours": 413,
+    "ageDays": 17
   },
   {
     "ticketId": "UFN-67983",
@@ -2321,8 +2291,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 398,
-    "ageDays": 16
+    "ageHours": 415,
+    "ageDays": 17
   },
   {
     "ticketId": "UFN-67835",
@@ -2336,8 +2306,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 418,
-    "ageDays": 17
+    "ageHours": 435,
+    "ageDays": 18
   },
   {
     "ticketId": "UFN-67777",
@@ -2351,23 +2321,23 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 422,
-    "ageDays": 17
+    "ageHours": 439,
+    "ageDays": 18
   },
   {
     "ticketId": "UFN-67775",
     "customer": "NIAGARA BOTTLING LLC - RESIN",
     "customerEmail": "justin.dilan@plasticexpress.com",
     "opsStatus": "Pending",
-    "priority": "Medium",
+    "priority": null,
     "subject": "PE SCHEDULE WEEK 8.24",
     "createdDate": "2026-08-24",
-    "lastUpdated": "2026-09-10",
+    "lastUpdated": "2026-09-11",
     "assigned": "Yang-Lhing Bague",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 422,
-    "ageDays": 17
+    "ageHours": 439,
+    "ageDays": 18
   },
   {
     "ticketId": "UFN-67551",
@@ -2381,8 +2351,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 491,
-    "ageDays": 20
+    "ageHours": 507,
+    "ageDays": 21
   },
   {
     "ticketId": "UFN-67529",
@@ -2396,8 +2366,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 492,
-    "ageDays": 20
+    "ageHours": 508,
+    "ageDays": 21
   },
   {
     "ticketId": "UFN-67511",
@@ -2411,8 +2381,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 493,
-    "ageDays": 20
+    "ageHours": 510,
+    "ageDays": 21
   },
   {
     "ticketId": "UFN-67500",
@@ -2426,8 +2396,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 494,
-    "ageDays": 20
+    "ageHours": 511,
+    "ageDays": 21
   },
   {
     "ticketId": "UFN-67463",
@@ -2441,8 +2411,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 496,
-    "ageDays": 20
+    "ageHours": 513,
+    "ageDays": 21
   },
   {
     "ticketId": "UFN-67452",
@@ -2456,8 +2426,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 496,
-    "ageDays": 20
+    "ageHours": 513,
+    "ageDays": 21
   },
   {
     "ticketId": "UFN-67388",
@@ -2471,8 +2441,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 514,
-    "ageDays": 21
+    "ageHours": 530,
+    "ageDays": 22
   },
   {
     "ticketId": "UFN-67322",
@@ -2486,23 +2456,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 518,
-    "ageDays": 21
-  },
-  {
-    "ticketId": "UFN-67305",
-    "customer": "SHEEX, INC.",
-    "customerEmail": "alabant@sheex.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "Amazon Transfer",
-    "createdDate": "2026-08-20",
-    "lastUpdated": "2026-08-20",
-    "assigned": null,
-    "closeFlag": false,
-    "slaStatus": "Breached",
-    "ageHours": 519,
-    "ageDays": 21
+    "ageHours": 535,
+    "ageDays": 22
   },
   {
     "ticketId": "UFN-67291",
@@ -2516,8 +2471,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 520,
-    "ageDays": 21
+    "ageHours": 536,
+    "ageDays": 22
   },
   {
     "ticketId": "UFN-67199",
@@ -2531,8 +2486,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 540,
-    "ageDays": 22
+    "ageHours": 557,
+    "ageDays": 23
   },
   {
     "ticketId": "UFN-67171",
@@ -2546,8 +2501,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 542,
-    "ageDays": 22
+    "ageHours": 559,
+    "ageDays": 23
   },
   {
     "ticketId": "UFN-67142",
@@ -2561,8 +2516,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 543,
-    "ageDays": 22
+    "ageHours": 560,
+    "ageDays": 23
   },
   {
     "ticketId": "UFN-67031",
@@ -2576,8 +2531,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 562,
-    "ageDays": 23
+    "ageHours": 578,
+    "ageDays": 24
   },
   {
     "ticketId": "UFN-67024",
@@ -2591,8 +2546,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 562,
-    "ageDays": 23
+    "ageHours": 579,
+    "ageDays": 24
   },
   {
     "ticketId": "UFN-66966",
@@ -2606,8 +2561,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 566,
-    "ageDays": 23
+    "ageHours": 583,
+    "ageDays": 24
   },
   {
     "ticketId": "UFN-66870",
@@ -2621,8 +2576,8 @@
     "assigned": "Youssef Zeitoon",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 584,
-    "ageDays": 24
+    "ageHours": 600,
+    "ageDays": 25
   },
   {
     "ticketId": "UFN-66766",
@@ -2636,8 +2591,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 590,
-    "ageDays": 24
+    "ageHours": 607,
+    "ageDays": 25
   },
   {
     "ticketId": "UFN-66759",
@@ -2651,8 +2606,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 591,
-    "ageDays": 24
+    "ageHours": 607,
+    "ageDays": 25
   },
   {
     "ticketId": "UFN-66548",
@@ -2666,8 +2621,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 659,
-    "ageDays": 27
+    "ageHours": 675,
+    "ageDays": 28
   },
   {
     "ticketId": "UFN-66507",
@@ -2681,8 +2636,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 662,
-    "ageDays": 27
+    "ageHours": 679,
+    "ageDays": 28
   },
   {
     "ticketId": "UFN-66445",
@@ -2696,12 +2651,12 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 676,
+    "ageHours": 693,
     "ageDays": 28
   },
   {
     "ticketId": "UFN-66375",
-    "customer": "Natural Rapport (Q & C Products LLC)",
+    "customer": "Natural Rapport (Q & C Products LLC) ",
     "customerEmail": "mari.mendoza@unisco.com",
     "opsStatus": "New",
     "priority": "Medium",
@@ -2711,8 +2666,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 684,
-    "ageDays": 28
+    "ageHours": 700,
+    "ageDays": 29
   },
   {
     "ticketId": "UFN-66351",
@@ -2726,8 +2681,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 686,
-    "ageDays": 28
+    "ageHours": 703,
+    "ageDays": 29
   },
   {
     "ticketId": "UFN-66223",
@@ -2741,8 +2696,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 706,
-    "ageDays": 29
+    "ageHours": 722,
+    "ageDays": 30
   },
   {
     "ticketId": "UFN-66170",
@@ -2756,8 +2711,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 710,
-    "ageDays": 29
+    "ageHours": 727,
+    "ageDays": 30
   },
   {
     "ticketId": "UFN-66004",
@@ -2771,8 +2726,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 733,
-    "ageDays": 30
+    "ageHours": 750,
+    "ageDays": 31
   },
   {
     "ticketId": "UFN-65984",
@@ -2786,8 +2741,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 734,
-    "ageDays": 30
+    "ageHours": 751,
+    "ageDays": 31
   },
   {
     "ticketId": "UFN-65951",
@@ -2801,8 +2756,8 @@
     "assigned": "nicole weber",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 736,
-    "ageDays": 30
+    "ageHours": 753,
+    "ageDays": 31
   },
   {
     "ticketId": "UFN-65850",
@@ -2816,8 +2771,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 755,
-    "ageDays": 31
+    "ageHours": 771,
+    "ageDays": 32
   },
   {
     "ticketId": "UFN-65800",
@@ -2831,8 +2786,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 758,
-    "ageDays": 31
+    "ageHours": 775,
+    "ageDays": 32
   },
   {
     "ticketId": "UFN-65542",
@@ -2846,8 +2801,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 830,
-    "ageDays": 34
+    "ageHours": 847,
+    "ageDays": 35
   },
   {
     "ticketId": "UFN-65339",
@@ -2861,8 +2816,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 854,
-    "ageDays": 35
+    "ageHours": 871,
+    "ageDays": 36
   },
   {
     "ticketId": "UFN-65186",
@@ -2876,8 +2831,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 878,
-    "ageDays": 36
+    "ageHours": 895,
+    "ageDays": 37
   },
   {
     "ticketId": "UFN-64996",
@@ -2891,8 +2846,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 902,
-    "ageDays": 37
+    "ageHours": 919,
+    "ageDays": 38
   },
   {
     "ticketId": "UFN-64978",
@@ -2906,8 +2861,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 903,
-    "ageDays": 37
+    "ageHours": 920,
+    "ageDays": 38
   },
   {
     "ticketId": "UFN-64779",
@@ -2921,8 +2876,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 926,
-    "ageDays": 38
+    "ageHours": 943,
+    "ageDays": 39
   },
   {
     "ticketId": "UFN-64739",
@@ -2936,8 +2891,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 928,
-    "ageDays": 38
+    "ageHours": 944,
+    "ageDays": 39
   },
   {
     "ticketId": "UFN-64731",
@@ -2951,12 +2906,12 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 928,
-    "ageDays": 38
+    "ageHours": 945,
+    "ageDays": 39
   },
   {
     "ticketId": "UFN-64607",
-    "customer": "Natural Rapport (Q & C Products LLC)",
+    "customer": "Natural Rapport (Q & C Products LLC) ",
     "customerEmail": "jessi@naturalpetinnovations.com",
     "opsStatus": "New",
     "priority": "Medium",
@@ -2966,7 +2921,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 987,
+    "ageHours": 1004,
     "ageDays": 41
   },
   {
@@ -2981,8 +2936,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 992,
-    "ageDays": 41
+    "ageHours": 1009,
+    "ageDays": 42
   },
   {
     "ticketId": "UFN-64524",
@@ -2996,8 +2951,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 998,
-    "ageDays": 41
+    "ageHours": 1015,
+    "ageDays": 42
   },
   {
     "ticketId": "UFN-64363",
@@ -3011,12 +2966,12 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1022,
-    "ageDays": 42
+    "ageHours": 1038,
+    "ageDays": 43
   },
   {
     "ticketId": "UFN-64134",
-    "customer": "Natural Rapport (Q & C Products LLC)",
+    "customer": "Natural Rapport (Q & C Products LLC) ",
     "customerEmail": "jessi@naturalpetinnovations.com",
     "opsStatus": "New",
     "priority": "Medium",
@@ -3026,8 +2981,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1046,
-    "ageDays": 43
+    "ageHours": 1062,
+    "ageDays": 44
   },
   {
     "ticketId": "UFN-64129",
@@ -3041,8 +2996,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1046,
-    "ageDays": 43
+    "ageHours": 1063,
+    "ageDays": 44
   },
   {
     "ticketId": "UFN-64101",
@@ -3056,8 +3011,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1047,
-    "ageDays": 43
+    "ageHours": 1064,
+    "ageDays": 44
   },
   {
     "ticketId": "UFN-64099",
@@ -3071,8 +3026,8 @@
     "assigned": "Erin Cambra",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 1047,
-    "ageDays": 43
+    "ageHours": 1064,
+    "ageDays": 44
   },
   {
     "ticketId": "UFN-64031",
@@ -3086,7 +3041,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1058,
+    "ageHours": 1074,
     "ageDays": 44
   },
   {
@@ -3101,8 +3056,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1070,
-    "ageDays": 44
+    "ageHours": 1087,
+    "ageDays": 45
   },
   {
     "ticketId": "UFN-63890",
@@ -3116,8 +3071,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1071,
-    "ageDays": 44
+    "ageHours": 1088,
+    "ageDays": 45
   },
   {
     "ticketId": "UFN-63804",
@@ -3131,7 +3086,7 @@
     "assigned": "Austin Steigerwalt",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1087,
+    "ageHours": 1103,
     "ageDays": 45
   },
   {
@@ -3146,8 +3101,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1094,
-    "ageDays": 45
+    "ageHours": 1111,
+    "ageDays": 46
   },
   {
     "ticketId": "UFN-63629",
@@ -3161,8 +3116,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1097,
-    "ageDays": 45
+    "ageHours": 1113,
+    "ageDays": 46
   },
   {
     "ticketId": "UFN-63413",
@@ -3176,8 +3131,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1166,
-    "ageDays": 48
+    "ageHours": 1183,
+    "ageDays": 49
   },
   {
     "ticketId": "UFN-63243",
@@ -3191,8 +3146,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1189,
-    "ageDays": 49
+    "ageHours": 1206,
+    "ageDays": 50
   },
   {
     "ticketId": "UFN-63227",
@@ -3206,8 +3161,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1190,
-    "ageDays": 49
+    "ageHours": 1207,
+    "ageDays": 50
   },
   {
     "ticketId": "UFN-63212",
@@ -3221,8 +3176,8 @@
     "assigned": "Erin Cambra",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 1191,
-    "ageDays": 49
+    "ageHours": 1207,
+    "ageDays": 50
   },
   {
     "ticketId": "UFN-63050",
@@ -3236,8 +3191,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1214,
-    "ageDays": 50
+    "ageHours": 1231,
+    "ageDays": 51
   },
   {
     "ticketId": "UFN-63028",
@@ -3251,8 +3206,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1215,
-    "ageDays": 50
+    "ageHours": 1232,
+    "ageDays": 51
   },
   {
     "ticketId": "UFN-62885",
@@ -3266,22 +3221,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1238,
-    "ageDays": 51
-  },
-  {
-    "ticketId": "UFN-62687",
-    "customer": "SMEG USA INC",
-    "customerEmail": "rona.roopchand@smegusa.com",
-    "opsStatus": "Pending",
-    "priority": "Medium",
-    "subject": "Damaged Unit ",
-    "createdDate": "2026-07-20",
-    "lastUpdated": "2026-08-26",
-    "assigned": "Erin Cambra",
-    "closeFlag": true,
-    "slaStatus": "Breached",
-    "ageHours": 1260,
+    "ageHours": 1255,
     "ageDays": 52
   },
   {
@@ -3296,8 +3236,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1260,
-    "ageDays": 52
+    "ageHours": 1277,
+    "ageDays": 53
   },
   {
     "ticketId": "UFN-62651",
@@ -3311,12 +3251,12 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1262,
-    "ageDays": 52
+    "ageHours": 1279,
+    "ageDays": 53
   },
   {
     "ticketId": "UFN-62628",
-    "customer": "Natural Rapport (Q & C Products LLC)",
+    "customer": "Natural Rapport (Q & C Products LLC) ",
     "customerEmail": "jessi@naturalpetinnovations.com",
     "opsStatus": "New",
     "priority": "Medium",
@@ -3326,8 +3266,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1263,
-    "ageDays": 52
+    "ageHours": 1280,
+    "ageDays": 53
   },
   {
     "ticketId": "UFN-62355",
@@ -3341,8 +3281,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1334,
-    "ageDays": 55
+    "ageHours": 1351,
+    "ageDays": 56
   },
   {
     "ticketId": "UFN-62150",
@@ -3356,8 +3296,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1358,
-    "ageDays": 56
+    "ageHours": 1375,
+    "ageDays": 57
   },
   {
     "ticketId": "UFN-61922",
@@ -3371,8 +3311,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1382,
-    "ageDays": 57
+    "ageHours": 1399,
+    "ageDays": 58
   },
   {
     "ticketId": "UFN-61885",
@@ -3386,8 +3326,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1383,
-    "ageDays": 57
+    "ageHours": 1400,
+    "ageDays": 58
   },
   {
     "ticketId": "UFN-61666",
@@ -3401,8 +3341,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1406,
-    "ageDays": 58
+    "ageHours": 1423,
+    "ageDays": 59
   },
   {
     "ticketId": "UFN-61467",
@@ -3416,8 +3356,8 @@
     "assigned": "Maria Aponte",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1430,
-    "ageDays": 59
+    "ageHours": 1446,
+    "ageDays": 60
   },
   {
     "ticketId": "UFN-61462",
@@ -3431,8 +3371,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1430,
-    "ageDays": 59
+    "ageHours": 1447,
+    "ageDays": 60
   },
   {
     "ticketId": "UFN-61390",
@@ -3446,7 +3386,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1440,
+    "ageHours": 1456,
     "ageDays": 60
   },
   {
@@ -3461,8 +3401,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1502,
-    "ageDays": 62
+    "ageHours": 1519,
+    "ageDays": 63
   },
   {
     "ticketId": "UFN-61170",
@@ -3476,8 +3416,8 @@
     "assigned": "Kent Joseph Lim",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1503,
-    "ageDays": 62
+    "ageHours": 1520,
+    "ageDays": 63
   },
   {
     "ticketId": "UFN-60986",
@@ -3491,8 +3431,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1526,
-    "ageDays": 63
+    "ageHours": 1543,
+    "ageDays": 64
   },
   {
     "ticketId": "UFN-60865",
@@ -3506,8 +3446,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1546,
-    "ageDays": 64
+    "ageHours": 1563,
+    "ageDays": 65
   },
   {
     "ticketId": "UFN-60786",
@@ -3521,8 +3461,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1550,
-    "ageDays": 64
+    "ageHours": 1567,
+    "ageDays": 65
   },
   {
     "ticketId": "UFN-60760",
@@ -3536,8 +3476,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1551,
-    "ageDays": 64
+    "ageHours": 1568,
+    "ageDays": 65
   },
   {
     "ticketId": "UFN-60751",
@@ -3551,8 +3491,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1552,
-    "ageDays": 64
+    "ageHours": 1568,
+    "ageDays": 65
   },
   {
     "ticketId": "UFN-60595",
@@ -3566,8 +3506,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1574,
-    "ageDays": 65
+    "ageHours": 1591,
+    "ageDays": 66
   },
   {
     "ticketId": "UFN-60348",
@@ -3581,8 +3521,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1598,
-    "ageDays": 66
+    "ageHours": 1615,
+    "ageDays": 67
   },
   {
     "ticketId": "UFN-60125",
@@ -3596,8 +3536,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1670,
-    "ageDays": 69
+    "ageHours": 1687,
+    "ageDays": 70
   },
   {
     "ticketId": "UFN-59915",
@@ -3611,8 +3551,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1694,
-    "ageDays": 70
+    "ageHours": 1711,
+    "ageDays": 71
   },
   {
     "ticketId": "UFN-59777",
@@ -3626,8 +3566,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1713,
-    "ageDays": 71
+    "ageHours": 1730,
+    "ageDays": 72
   },
   {
     "ticketId": "UFN-59720",
@@ -3641,8 +3581,8 @@
     "assigned": "Kimberly Bautista",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 1717,
-    "ageDays": 71
+    "ageHours": 1733,
+    "ageDays": 72
   },
   {
     "ticketId": "UFN-59657",
@@ -3656,8 +3596,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1719,
-    "ageDays": 71
+    "ageHours": 1736,
+    "ageDays": 72
   },
   {
     "ticketId": "UFN-59296",
@@ -3671,8 +3611,8 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1762,
-    "ageDays": 73
+    "ageHours": 1778,
+    "ageDays": 74
   },
   {
     "ticketId": "UFN-59238",
@@ -3686,8 +3626,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1765,
-    "ageDays": 73
+    "ageHours": 1781,
+    "ageDays": 74
   },
   {
     "ticketId": "UFN-58476",
@@ -3701,8 +3641,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1887,
-    "ageDays": 78
+    "ageHours": 1904,
+    "ageDays": 79
   },
   {
     "ticketId": "UFN-57965",
@@ -3716,8 +3656,8 @@
     "assigned": "Erin Cambra",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 1935,
-    "ageDays": 80
+    "ageHours": 1952,
+    "ageDays": 81
   },
   {
     "ticketId": "UFN-57198",
@@ -3731,8 +3671,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2055,
-    "ageDays": 85
+    "ageHours": 2072,
+    "ageDays": 86
   },
   {
     "ticketId": "UFN-57050",
@@ -3746,8 +3686,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2074,
-    "ageDays": 86
+    "ageHours": 2091,
+    "ageDays": 87
   },
   {
     "ticketId": "UFN-56957",
@@ -3761,8 +3701,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2080,
-    "ageDays": 86
+    "ageHours": 2097,
+    "ageDays": 87
   },
   {
     "ticketId": "UFN-55946",
@@ -3776,8 +3716,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2223,
-    "ageDays": 92
+    "ageHours": 2240,
+    "ageDays": 93
   },
   {
     "ticketId": "UFN-55198",
@@ -3791,8 +3731,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2341,
-    "ageDays": 97
+    "ageHours": 2357,
+    "ageDays": 98
   },
   {
     "ticketId": "UFN-55002",
@@ -3806,8 +3746,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2360,
-    "ageDays": 98
+    "ageHours": 2376,
+    "ageDays": 99
   },
   {
     "ticketId": "UFN-54985",
@@ -3821,8 +3761,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2360,
-    "ageDays": 98
+    "ageHours": 2377,
+    "ageDays": 99
   },
   {
     "ticketId": "UFN-54684",
@@ -3836,8 +3776,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2386,
-    "ageDays": 99
+    "ageHours": 2402,
+    "ageDays": 100
   },
   {
     "ticketId": "UFN-54680",
@@ -3851,8 +3791,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2386,
-    "ageDays": 99
+    "ageHours": 2402,
+    "ageDays": 100
   },
   {
     "ticketId": "UFN-54576",
@@ -3866,8 +3806,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2391,
-    "ageDays": 99
+    "ageHours": 2408,
+    "ageDays": 100
   },
   {
     "ticketId": "UFN-53491",
@@ -3881,8 +3821,8 @@
     "assigned": "nicole weber",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2512,
-    "ageDays": 104
+    "ageHours": 2529,
+    "ageDays": 105
   },
   {
     "ticketId": "UFN-52990",
@@ -3896,8 +3836,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2559,
-    "ageDays": 106
+    "ageHours": 2576,
+    "ageDays": 107
   },
   {
     "ticketId": "UFN-51805",
@@ -3911,8 +3851,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2721,
-    "ageDays": 113
+    "ageHours": 2737,
+    "ageDays": 114
   },
   {
     "ticketId": "UFN-51749",
@@ -3926,8 +3866,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2724,
-    "ageDays": 113
+    "ageHours": 2740,
+    "ageDays": 114
   },
   {
     "ticketId": "UFN-51698",
@@ -3941,8 +3881,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2727,
-    "ageDays": 113
+    "ageHours": 2744,
+    "ageDays": 114
   },
   {
     "ticketId": "UFN-51184",
@@ -3956,8 +3896,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2776,
-    "ageDays": 115
+    "ageHours": 2793,
+    "ageDays": 116
   },
   {
     "ticketId": "UFN-50365",
@@ -3971,8 +3911,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2895,
-    "ageDays": 120
+    "ageHours": 2912,
+    "ageDays": 121
   },
   {
     "ticketId": "UFN-49723",
@@ -3986,8 +3926,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 2946,
-    "ageDays": 122
+    "ageHours": 2962,
+    "ageDays": 123
   },
   {
     "ticketId": "UFN-49524",
@@ -4001,7 +3941,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3005,
+    "ageHours": 3021,
     "ageDays": 125
   },
   {
@@ -4016,8 +3956,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3063,
-    "ageDays": 127
+    "ageHours": 3080,
+    "ageDays": 128
   },
   {
     "ticketId": "UFN-48781",
@@ -4031,8 +3971,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3065,
-    "ageDays": 127
+    "ageHours": 3082,
+    "ageDays": 128
   },
   {
     "ticketId": "UFN-48777",
@@ -4046,8 +3986,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3066,
-    "ageDays": 127
+    "ageHours": 3082,
+    "ageDays": 128
   },
   {
     "ticketId": "UFN-48670",
@@ -4061,7 +4001,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3075,
+    "ageHours": 3092,
     "ageDays": 128
   },
   {
@@ -4076,8 +4016,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3113,
-    "ageDays": 129
+    "ageHours": 3129,
+    "ageDays": 130
   },
   {
     "ticketId": "UFN-48223",
@@ -4091,8 +4031,8 @@
     "assigned": "Austin Steigerwalt",
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 3113,
-    "ageDays": 129
+    "ageHours": 3130,
+    "ageDays": 130
   },
   {
     "ticketId": "UFN-48152",
@@ -4106,7 +4046,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3124,
+    "ageHours": 3141,
     "ageDays": 130
   },
   {
@@ -4121,8 +4061,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3182,
-    "ageDays": 132
+    "ageHours": 3199,
+    "ageDays": 133
   },
   {
     "ticketId": "UFN-47190",
@@ -4136,8 +4076,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3231,
-    "ageDays": 134
+    "ageHours": 3248,
+    "ageDays": 135
   },
   {
     "ticketId": "UFN-46639",
@@ -4151,8 +4091,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3275,
-    "ageDays": 136
+    "ageHours": 3292,
+    "ageDays": 137
   },
   {
     "ticketId": "UFN-46564",
@@ -4166,8 +4106,8 @@
     "assigned": "Wilmer Acedo",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3278,
-    "ageDays": 136
+    "ageHours": 3295,
+    "ageDays": 137
   },
   {
     "ticketId": "UFN-46492",
@@ -4181,8 +4121,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3281,
-    "ageDays": 136
+    "ageHours": 3298,
+    "ageDays": 137
   },
   {
     "ticketId": "UFN-46256",
@@ -4196,8 +4136,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3348,
-    "ageDays": 139
+    "ageHours": 3364,
+    "ageDays": 140
   },
   {
     "ticketId": "UFN-46185",
@@ -4211,8 +4151,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3350,
-    "ageDays": 139
+    "ageHours": 3366,
+    "ageDays": 140
   },
   {
     "ticketId": "UFN-45763",
@@ -4226,8 +4166,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3399,
-    "ageDays": 141
+    "ageHours": 3416,
+    "ageDays": 142
   },
   {
     "ticketId": "UFN-45316",
@@ -4241,8 +4181,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3447,
-    "ageDays": 143
+    "ageHours": 3463,
+    "ageDays": 144
   },
   {
     "ticketId": "UFN-45186",
@@ -4256,7 +4196,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3460,
+    "ageHours": 3477,
     "ageDays": 144
   },
   {
@@ -4271,7 +4211,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3510,
+    "ageHours": 3526,
     "ageDays": 146
   },
   {
@@ -4286,8 +4226,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3567,
-    "ageDays": 148
+    "ageHours": 3584,
+    "ageDays": 149
   },
   {
     "ticketId": "UFN-44139",
@@ -4301,8 +4241,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3586,
-    "ageDays": 149
+    "ageHours": 3602,
+    "ageDays": 150
   },
   {
     "ticketId": "UFN-43887",
@@ -4316,8 +4256,8 @@
     "assigned": null,
     "closeFlag": true,
     "slaStatus": "Breached",
-    "ageHours": 3609,
-    "ageDays": 150
+    "ageHours": 3625,
+    "ageDays": 151
   },
   {
     "ticketId": "UFN-43591",
@@ -4331,7 +4271,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3628,
+    "ageHours": 3645,
     "ageDays": 151
   },
   {
@@ -4346,8 +4286,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3731,
-    "ageDays": 155
+    "ageHours": 3748,
+    "ageDays": 156
   },
   {
     "ticketId": "UFN-42645",
@@ -4361,8 +4301,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3735,
-    "ageDays": 155
+    "ageHours": 3752,
+    "ageDays": 156
   },
   {
     "ticketId": "UFN-42031",
@@ -4376,8 +4316,8 @@
     "assigned": "Pedro Marte",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3782,
-    "ageDays": 157
+    "ageHours": 3799,
+    "ageDays": 158
   },
   {
     "ticketId": "UFN-41878",
@@ -4391,7 +4331,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3796,
+    "ageHours": 3813,
     "ageDays": 158
   },
   {
@@ -4406,8 +4346,8 @@
     "assigned": "Sittie Jhaila Sirad",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3899,
-    "ageDays": 162
+    "ageHours": 3915,
+    "ageDays": 163
   },
   {
     "ticketId": "UFN-40860",
@@ -4421,8 +4361,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3903,
-    "ageDays": 162
+    "ageHours": 3920,
+    "ageDays": 163
   },
   {
     "ticketId": "UFN-40670",
@@ -4436,8 +4376,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3920,
-    "ageDays": 163
+    "ageHours": 3936,
+    "ageDays": 164
   },
   {
     "ticketId": "UFN-40654",
@@ -4451,8 +4391,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3921,
-    "ageDays": 163
+    "ageHours": 3937,
+    "ageDays": 164
   },
   {
     "ticketId": "UFN-40213",
@@ -4466,8 +4406,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 3952,
-    "ageDays": 164
+    "ageHours": 3968,
+    "ageDays": 165
   },
   {
     "ticketId": "UFN-39662",
@@ -4481,8 +4421,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4020,
-    "ageDays": 167
+    "ageHours": 4037,
+    "ageDays": 168
   },
   {
     "ticketId": "UFN-39403",
@@ -4496,8 +4436,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4044,
-    "ageDays": 168
+    "ageHours": 4061,
+    "ageDays": 169
   },
   {
     "ticketId": "UFN-39065",
@@ -4511,8 +4451,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4071,
-    "ageDays": 169
+    "ageHours": 4088,
+    "ageDays": 170
   },
   {
     "ticketId": "UFN-37858",
@@ -4526,8 +4466,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4167,
-    "ageDays": 173
+    "ageHours": 4183,
+    "ageDays": 174
   },
   {
     "ticketId": "UFN-35774",
@@ -4541,8 +4481,8 @@
     "assigned": "Sittie Jhaila Sirad",
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4357,
-    "ageDays": 181
+    "ageHours": 4373,
+    "ageDays": 182
   },
   {
     "ticketId": "UFN-35588",
@@ -4556,8 +4496,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4376,
-    "ageDays": 182
+    "ageHours": 4393,
+    "ageDays": 183
   },
   {
     "ticketId": "UFN-33722",
@@ -4571,8 +4511,8 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4544,
-    "ageDays": 189
+    "ageHours": 4560,
+    "ageDays": 190
   },
   {
     "ticketId": "UFN-33604",
@@ -4586,7 +4526,7 @@
     "assigned": null,
     "closeFlag": false,
     "slaStatus": "Breached",
-    "ageHours": 4550,
-    "ageDays": 189
+    "ageHours": 4567,
+    "ageDays": 190
   }
 ]

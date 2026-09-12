@@ -1,241 +1,86 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-11T05:41:57-0400",
-  "lastRefreshed": "2026-09-11T05:41:57-0400",
+  "generatedAt": "2026-09-12T02:12:15Z",
+  "lastRefreshed": "2026-09-12T02:12:15Z",
   "outlookAvailable": true,
   "delegatedMailboxAvailable": true,
-  "dataSource": "Provided live Outlook context for NHT/Cesanek operational threads plus carried non-UFN and billing side context; non-blocking enrichment only. No email was sent.",
+  "dataSource": "Supplied Outlook evidence for NHT/Cesanek operational threads; non-blocking enrichment only. No email was sent.",
   "integration": "non_blocking",
-  "threadsMatched": 15,
-  "threadsUniquePostDedup": 15,
+  "threadsMatched": 1,
+  "threadsUniquePostDedup": 1,
   "activeEscalations": 6,
-  "eligibleEscalations": 4,
+  "eligibleEscalations": 1,
   "coverage": {
-    "eligibleTicketsTotal": 306,
-    "eligibleTicketsWithOutlookContext": 5,
-    "coveragePct": 1.6,
-    "note": "Outlook context is supplementary only; Ticket Ops status remains authoritative. One ticket = many emails, so email threads are never counted as additional items. Threads whose tickets are no longer eligible remain context only."
+    "eligibleTicketsTotal": 302,
+    "eligibleTicketsWithOutlookContext": 1,
+    "coveragePct": 0.3,
+    "note": "Outlook context is supplementary only; Ticket Ops status remains authoritative. One ticket = many emails, so email threads are never counted as additional items. Supplied threads whose tickets are no longer eligible remain context only."
   },
   "ticketThreads": [
     {
-      "threadTopic": "HVP41-1612 Orders 09/07-09/11",
-      "lastReceivedAt": "2026-09-10T22:00:00Z",
-      "participants": [
-        "Brian Dalder / drinkhint",
-        "nht.cs@unisco.com"
-      ],
+      "threadTopic": "HVP41-1612 orders",
+      "lastReceivedAt": null,
+      "participants": [],
       "matchedTicketId": "UFN-70261",
       "customer": "HINT INC.",
       "escalation": true,
-      "note": "Asking for an update on remaining inventory on hand."
-    },
-    {
-      "threadTopic": "UNIS - HINT BEVERAGE - NORTHAMPTON, PA - WEEK OF 9/7/26",
-      "lastReceivedAt": "2026-09-10T18:57:00Z",
-      "participants": [
-        "Beatriz Santana / Fusion Transport",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-69781",
-      "customer": "HINT INC.",
-      "escalation": false,
-      "note": "Carrier reschedule and EID tender coordination."
-    },
-    {
-      "threadTopic": "MSDU7175119",
-      "lastReceivedAt": "2026-09-10T23:56:00Z",
-      "participants": [
-        "Jocelyn Borgono / MedLog",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-70447",
-      "customer": "MEDLOG",
-      "escalation": true,
-      "note": "Inbound scheduling; facility cannot accommodate the inbound."
-    },
-    {
-      "threadTopic": "MSMU6875562",
-      "lastReceivedAt": "2026-09-10T23:56:00Z",
-      "participants": [
-        "Jocelyn Borgono / MedLog",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-70448",
-      "customer": "MEDLOG",
-      "escalation": true,
-      "note": "Inbound scheduling; facility cannot accommodate the inbound."
-    },
-    {
-      "threadTopic": "Unshipped Orders",
-      "lastReceivedAt": "2026-09-10T16:34:00Z",
-      "participants": [
-        "Adam Meyer / Maizly",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-70399",
-      "customer": "MAIZLY INC.",
-      "escalation": true,
-      "note": "Follow-up on unshipped orders."
-    },
-    {
-      "threadTopic": "Transfer Orders",
-      "lastReceivedAt": "2026-09-10T16:15:00Z",
-      "participants": [
-        "Kyle Wittenbauer / Colavita",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-70404",
-      "customer": "COLAVITA USA, LLC",
-      "escalation": false,
-      "note": "Transfer-order coordination."
-    },
-    {
-      "threadTopic": "ODFL PRO BOL request",
-      "lastReceivedAt": "2026-09-10T13:14:00Z",
-      "participants": [
-        "Jeanine Covello / ODFL",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-70395",
-      "customer": "ODFL",
-      "escalation": false,
-      "note": "PRO and BOL request."
-    },
-    {
-      "threadTopic": "ODFL PRO BOL request",
-      "lastReceivedAt": "2026-09-10T13:58:00Z",
-      "participants": [
-        "Jeanine Covello / ODFL",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-70400",
-      "customer": "ODFL",
-      "escalation": false,
-      "note": "PRO and BOL request."
-    },
-    {
-      "threadTopic": "Pickup appointments / COLAVITA / September 2026",
-      "lastReceivedAt": "2026-09-10T13:38:00Z",
-      "participants": [
-        "COLAVITA / carrier",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-70252",
-      "customer": "COLAVITA USA, LLC",
-      "escalation": false,
-      "note": "Pickup appointment coordination for September 2026."
-    },
-    {
-      "threadTopic": "Ticket [3569318] BOUNDLESS EC US LLC Load# 45872185",
-      "lastReceivedAt": "2026-09-10T16:10:00Z",
-      "participants": [
-        "BOUNDLESS / Walmart Services",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-69618",
-      "customer": "BOUNDLESS EC US LLC",
-      "escalation": true,
-      "note": "External ticket 3569318 is the same conversation as UFN-69618 and is counted once."
-    },
-    {
-      "threadTopic": "KDP Pharmavite PO 352168",
-      "lastReceivedAt": "2026-09-10T20:56:00Z",
-      "participants": [
-        "Silvia Placido / KDP",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-68506",
-      "customer": "KDP",
-      "escalation": false,
-      "note": "KDP Pharmavite batch."
-    },
-    {
-      "threadTopic": "KDP Pharmavite PO 352169",
-      "lastReceivedAt": "2026-09-10T20:55:00Z",
-      "participants": [
-        "Silvia Placido / KDP",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-68515",
-      "customer": "KDP",
-      "escalation": false,
-      "note": "KDP Pharmavite batch."
-    },
-    {
-      "threadTopic": "KDP Nordic PO",
-      "lastReceivedAt": "2026-09-10T20:50:00Z",
-      "participants": [
-        "Silvia Placido / KDP",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-69103",
-      "customer": "KDP",
-      "escalation": false,
-      "note": "KDP Nordic batch."
-    },
-    {
-      "threadTopic": "KDP Nordic PO",
-      "lastReceivedAt": "2026-09-10T20:49:00Z",
-      "participants": [
-        "Silvia Placido / KDP",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-69120",
-      "customer": "KDP",
-      "escalation": false,
-      "note": "KDP Nordic batch."
-    },
-    {
-      "threadTopic": "UNIS ROAR QVC POWDER MOVE PA to CA",
-      "lastReceivedAt": "2026-09-10T20:06:00Z",
-      "participants": [
-        "Kevin Grossi / CH Robinson",
-        "nht.cs@unisco.com"
-      ],
-      "matchedTicketId": "UFN-68601",
-      "customer": "ROAR BEVERAGES INC",
-      "escalation": true,
-      "note": "Carrier escalation needs a response."
+      "note": "Hint HVP41-1612 orders; escalation."
     }
   ],
   "nonUfnThreads": [
     {
-      "threadTopic": "RE: KD Pharma- Potential Move to Savannah",
-      "lastReceivedAt": "2026-09-10T03:31:00Z",
-      "participants": "John Diaz / Timothy McHugh"
+      "threadTopic": "Maizly claims dispute (~$1,057.50 inventory loss, SKU-FG-0009)",
+      "lastReceivedAt": null,
+      "participants": [],
+      "note": "Active escalation; no eligible supplied ticket mapping."
     },
     {
-      "threadTopic": "RE: Confirmation Needed - Building Closure (Diageo)",
-      "lastReceivedAt": "2026-09-09T22:47:00Z",
-      "participants": "David DiLoreto / Nicole"
+      "threadTopic": "Diageo / Medlog containers MSMU6875562 and MSDU7175119",
+      "lastReceivedAt": null,
+      "participants": [],
+      "note": "Active escalation; no eligible supplied ticket mapping."
     },
     {
-      "threadTopic": "RE: WYNK/CANVAS - NORTHAMPTON to SUMMERVILLE Transfer",
-      "lastReceivedAt": "2026-09-09T20:19:00Z",
-      "participants": "Luke Darang"
+      "threadTopic": "Pharmavite PO 352168 / 352169 and Nordic / Iceland Direct PO 810308",
+      "lastReceivedAt": null,
+      "participants": [],
+      "note": "Active escalation; no eligible supplied ticket mapping."
     },
     {
-      "threadTopic": "RE: Canvas340 Cesanek Northampton transition plan",
-      "lastReceivedAt": "2026-09-09T20:01:00Z",
-      "participants": "Jehnifur Morvai / Joe Russo"
+      "threadTopic": "Hint beverage week of 9/7",
+      "lastReceivedAt": null,
+      "participants": [],
+      "note": "Active escalation context; only supplied matched ticket UFN-70261 remains in ticketThreads."
+    },
+    {
+      "threadTopic": "Colavita outbound transfer capacity",
+      "lastReceivedAt": null,
+      "participants": [],
+      "note": "Active escalation; no eligible supplied ticket mapping."
+    },
+    {
+      "threadTopic": "Colavita Walmart damage freight",
+      "lastReceivedAt": null,
+      "participants": [],
+      "note": "Active escalation; no eligible supplied ticket mapping."
     }
   ],
   "billingThreadsExcluded": [
     {
-      "threadTopic": "Immediate Action Required: Open RN Items Impacting Billing (Cesanek)",
-      "lastReceivedAt": "2026-09-10T00:49:00Z"
+      "threadTopic": "Roar Decadence handling 8.30-9.05 | PA",
+      "lastReceivedAt": null
     },
     {
-      "threadTopic": "Immediate Action Required: Open DN Items Impacting Billing (Cesanek)",
-      "lastReceivedAt": "2026-09-10T00:34:00Z"
+      "threadTopic": "RN/DN items impacting billing (Cesanek) notices",
+      "lastReceivedAt": null
     }
   ],
   "dedupNotes": [
     "One ticket = many emails. Count the Ticket Ops conversation once; Outlook is evidence only.",
-    "Customer Command Center - NHT/Cesanek Daily Summary self-notification threads are excluded.",
-    "MedLog UFN-70447 and UFN-70448 are two tickets grouped under one MEDLOG customer.",
-    "KDP UFN-68506, UFN-68515, UFN-69103, and UFN-69120 are grouped as one KDP customer batch.",
-    "External ticket [3569318] is the same conversation as UFN-69618 and is not counted separately."
+    "Maizly appears across 3+ supplied threads and is treated as one issue.",
+    "Hint appears across several supplied threads and is treated as one issue.",
+    "Context-only supplied thread IDs not present in the refreshed eligible set and omitted from ticketThreads: UFN-69129, UFN-70553, UFN-70542, UFN-70414, UFN-69116, UFN-70252, UFN-70399, UFN-67809.",
+    "Only UFN-70261 from the supplied matched-thread list remains in the refreshed eligible set."
   ]
 }

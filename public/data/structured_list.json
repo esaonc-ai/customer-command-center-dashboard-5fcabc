@@ -6,44 +6,44 @@
     "tenant": "LT",
     "timezone": "America/New_York"
   },
-  "lastRefreshed": "2026-09-11T05:41:57-0400",
-  "dataSource": "TicketOps (authoritative) + Outlook (non-blocking; 15 matched threads)",
+  "lastRefreshed": "2026-09-12T02:12:15Z",
+  "dataSource": "TicketOps (authoritative) + Outlook (non-blocking; 1 matched eligible thread)",
   "refreshType": "AUTHORITATIVE",
-  "refreshId": "refresh-2026-09-11T05:41ET-AUTHORITATIVE-v28",
-  "totalRaw": 380,
-  "totalEligible": 306,
-  "newCount": 228,
+  "refreshId": "refresh-2026-09-12T02:12:15Z-AUTHORITATIVE-v29",
+  "totalRaw": 378,
+  "totalEligible": 302,
+  "newCount": 243,
   "openCount": 0,
-  "pendingCount": 78,
-  "truncationNote": "closeFlag is not a gate (31 retained); Reopen (45) and billing/UF Billing/storage/handling invoice items (27) excluded; 2 overlapping ticket/email thread drops applied.",
+  "pendingCount": 59,
+  "truncationNote": "closeFlag is not a gate (19 retained); Reopen (52) and billing/UF Billing/storage/handling/service-type/invoice items (23) excluded; 1 overlapping ticket/email thread drop applied.",
   "slaHealth": {
-    "breached": 225,
-    "onTrack": 81,
-    "unassigned": 248
+    "breached": 220,
+    "onTrack": 82,
+    "unassigned": 254
   },
   "actionBuckets": {
-    "Immediate": 43,
-    "Short-Term": 46,
-    "Medium-Term": 10,
-    "Watch": 207
+    "Immediate": 42,
+    "Short-Term": 56,
+    "Medium-Term": 8,
+    "Watch": 196
   },
   "evidenceMetrics": {
-    "totalEligible": 306,
-    "slaBreached": 225,
-    "slaOnTrack": 81,
-    "unassigned": 248,
-    "oldestAgeDays": 189,
-    "outlookThreadsMatched": 15,
-    "outlookThreadsUniquePostDedup": 15,
+    "totalEligible": 302,
+    "slaBreached": 220,
+    "slaOnTrack": 82,
+    "unassigned": 254,
+    "oldestAgeDays": 190,
+    "outlookThreadsMatched": 1,
+    "outlookThreadsUniquePostDedup": 1,
     "activeEscalations": 6,
-    "eligibleEscalations": 4
+    "eligibleEscalations": 1
   },
   "customers": {
-    "total": 63,
+    "total": 68,
     "tiers": {
-      "Healthy": 15,
-      "Critical": 43,
-      "Warning": 5
+      "Healthy": 20,
+      "Warning": 11,
+      "Critical": 37
     }
   }
 }
