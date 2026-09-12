@@ -6,74 +6,57 @@
     "tenant": "LT",
     "timezone": "America/New_York"
   },
-  "lastRefreshed": "2026-09-12T09:25:21Z",
+  "lastRefreshed": "2026-09-12T12:10:00-04:00",
   "dataSource": "Ticket Ops (authoritative); Outlook mailbox context available (supplemental)",
   "refreshType": "AUTHORITATIVE",
-  "refreshId": "refresh-2026-09-12T09:25:21Z-AUTHORITATIVE-v32",
-  "totalRaw": 378,
-  "eligibleBeforeDeduplication": 302,
-  "totalEligible": 297,
-  "newCount": 238,
+  "refreshId": "refresh-2026-09-12T12:10ET-AUTHORITATIVE-v33",
+  "totalRaw": 375,
+  "eligibleBeforeExclusions": 323,
+  "eligibleBeforeDeduplication": 301,
+  "totalEligible": 296,
+  "newCount": 239,
   "openCount": 0,
-  "pendingCount": 59,
+  "pendingCount": 57,
   "exclusionSummary": {
     "reopen": 52,
-    "billingFamily": 24,
+    "billingFamily": 22,
     "overlappingConversations": 5
   },
   "closeFlagTrueRetained": 19,
   "slaHealth": {
-    "breached": 216,
-    "onTrack": 81,
+    "breached": 213,
+    "onTrack": 83,
     "unassigned": 249
   },
   "actionBuckets": {
-    "Immediate": 38,
-    "Short-Term": 58,
-    "Medium-Term": 9,
-    "Watch": 192
+    "Immediate": 32,
+    "Short-Term": 54,
+    "Medium-Term": 21,
+    "Watch": 189
   },
   "evidenceMetrics": {
-    "totalEligible": 297,
-    "slaBreached": 216,
-    "slaOnTrack": 81,
+    "totalEligible": 296,
+    "slaBreached": 213,
+    "slaOnTrack": 83,
     "unassigned": 249,
-    "oldestAgeDays": 190,
+    "oldestAgeDays": 191,
     "outlookStatus": "available",
-    "outlookThreadsMatched": 8,
+    "outlookThreadsMatched": 11,
     "outlookThreadsLinkedToEligibleTickets": 1,
-    "invoiceItemsExcluded": 24,
+    "invoiceItemsExcluded": 22,
     "duplicatesRemoved": 5
   },
   "outlook": {
     "status": "available",
-    "threadsRetrieved": 8,
+    "threadsRetrieved": 11,
     "threadsLinkedToEligibleTickets": 1
   },
-  "candidateOverlapsRetained": [
-    {
-      "tickets": [
-        "UFN-59238",
-        "UFN-59777"
-      ],
-      "identity": "order:112-4505161-2497057",
-      "status": "retained — pending confirmation"
-    },
-    {
-      "tickets": [
-        "UFN-48670",
-        "UFN-48777"
-      ],
-      "identity": "shipment:YMJAE490405029_015445_01_US-PA-30001253",
-      "status": "retained — pending confirmation"
-    }
-  ],
   "customers": {
-    "total": 69,
+    "total": 57,
     "tiers": {
-      "Healthy": 20,
-      "Warning": 11,
-      "Critical": 38
+      "Healthy": 18,
+      "Critical": 33,
+      "Warning": 6
     }
   }
 }
