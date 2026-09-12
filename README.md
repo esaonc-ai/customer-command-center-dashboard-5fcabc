@@ -36,34 +36,34 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** – Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** – Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Sep 12 12:10 PM ET - AUTHORITATIVE v33)
+## Current Dashboard State (Last Refresh: Sep 12 1:45 PM ET - AUTHORITATIVE v34)
 
 | Metric | Value |
 |--------|-------|
-| Total Raw (open UFN, dept scope) | **375** (260 New / 63 Pending / 52 Reopen / 0 Open) &middot; 382 open department-wide |
-| Eligible | **296** conversations (239 New, 0 Open, 57 Pending) |
-| UFN-Count | 296 |
-| Excluded | 97 - 52 Reopen + 22 billing/UF Billing/storage/handling/billing-cycle items + 5 confirmed overlapping conversations |
+| Total Raw (open UFN, department scope) | **384** = 266 New / 66 Pending / 52 Reopen &middot; New+Pending gate **332** |
+| Eligible | **303** conversations (244 New, 0 Open, 59 Pending) |
+| UFN-Count | 303 |
+| Excluded | 29 &mdash; 24 billing/UF Billing/storage/handling items + 5 confirmed overlapping conversations (+52 Reopen rows outside the gate) |
 | closeFlag | **NOT a gate** - 19 live `closeFlag=true` tickets retained |
-| Customers | **57** distinct customers (all ticket-visible customers; roster/aliases supplemental; Ticket Ops organization names used where present) |
-| Priority | 287 Medium / 9 unavailable from source; ranking does not depend on priority |
-| SLA Risk | **ELEVATED** - 213 SLA-breached / 83 current; 249 unassigned |
-| Action Buckets | Immediate **32** / Short-Term **54** / Medium-Term **21** / Watch **189** |
-| Outlook Coverage | **Available** - 11 current UFN threads and 23 customer threads retrieved; 1 links to an eligible ticket (UFN-70261); supplemental only, never counted in ticket totals |
-| Last Refresh | 2026-09-12T12:10:00-04:00 (**AUTHORITATIVE v33** - fresh Ticket Ops read of department 323826714354839552, paged to exhaustion) |
-
+| Customers | **70** distinct customers (all ticket-visible customers; roster/aliases supplemental) |
+| Priority | 298 Medium / 5 unavailable from source; ranking does not depend on priority |
+| SLA Risk | **ELEVATED** - 216 SLA-breached / 87 current; 253 unassigned |
+| Action Buckets | Immediate **32** / Short-Term **55** / Medium-Term **24** / Watch **192** |
+| Outlook Coverage | **Available** - 8 UFN threads retrieved, 2 link to eligible tickets; supplemental only, never counted in ticket totals |
+| Last Refresh | 2026-09-12T13:45:00-04:00 (**AUTHORITATIVE v34** - fresh Ticket Ops read of department 323826714354839552, paged to exhaustion) |
 
 ## Developer Reconciliation Note
 
-The v32 snapshot (Sep 12 5:25 AM ET) and this refresh (Sep 12 12:10 PM ET) were both built from a fresh Ticket Ops read of the same department and scope; the movement between them is operational, not methodological:
+### v33 -> v34 (Sep 12 12:10 PM ET -> Sep 12 1:45 PM ET)
 
-- **Departed the gate (5):** UFN-70512, UFN-70363, UFN-69751, UFN-69231, UFN-33722 - no longer New/Pending in Ticket Ops.
-- **Arrived (4 new report tickets):** UFN-70642, UFN-70639, UFN-70638, UFN-70637.
-- **Roster movement:** 69 customers to 57; the reduction is concentrated in single-ticket customers whose only conversation left the gate, plus the customers that dropped out with the departed tickets.
-- **Tiering:** the Customer Health tier rule was recovered from the v32 line's own output and re-validated against it (Critical if SLA-breached>=1 AND (tickets>=3 OR oldestBreachedAgeDays>=14); Warning if SLA-breached>=1 OR tickets>=10; else Healthy). It reproduces the v32 tier counts exactly.
+The movement is partly operational and partly a **methodology correction**:
 
-Notes for the next cycle:
-- **UFN-67030** is no longer live-Pending, and neither is **UFN-70141**. Ticket Ops returns `displayStatusName = Solved` / `displayStatusSystemStatus = 20` for both, each closed by a named staff user. They fail the gate on system status - not on `closeFlag`. The `closeFlag` rule is unchanged and remains correct; only the stale example has been replaced.
-- **Ten subject-identity duplicate pairs** are retained rather than collapsed (seven C.H. Robinson "Follow Up" load re-sends, UFN-70481/70594 and siblings, plus UFN-59238/59777 and UFN-48670/48777). They are listed in `refresh-manifest.json` under `exclusions.additionalCandidateOverlaps`. Confirming the seven load pairs would move the working set from 296 to 289.
-- **UFN-70350** ("Open RN Items Impacting Billing") is an operational alert rather than an invoice line; it is excluded here to stay aligned with the v32 audited billing set. Surfacing it would move the working set to 297.
-- **Client-side rendering note:** `js/dashboard.js` renders the priority-queue Status column from `t.status`, while `tickets.json` carries `opsStatus`/`displayStatusName`. Because no `status` key exists, every queue row renders the `New` badge regardless of its real status. The counts cards are unaffected. No code change was made in this data refresh.
+- **Restored 6 records (methodology correction).** v33 applied a topic-scope filter that silently removed the six `General Inquiry` topic rows. They never left the New/Pending gate: UFN-70636, UFN-70512, UFN-70363, UFN-69751, UFN-69231, UFN-33722 were each re-verified live as `displayStatusSystemStatus=10` with `closeFlag=false`. v33's note that they "left the gate" was an artefact of that filter.
+- **One arrival.** UFN-70643 (CESANEK APPOINTMENT WATCH, 09/12) is new in this window.
+- **closeFlag.** 19 live `closeFlag=true` records are retained as evidence. An intermediate read claimed 24; that was a transcription error (it wrongly carried UFN-70559 plus two billing-excluded rows). 19 is confirmed live.
+- **UFN-67030 stays out.** Re-verified: `displayStatusId` 2 / "Solved" / system status 20 / `closeFlag` true / closed 2026-09-01 16:56:56. It fails the gate on **system status, not on closeFlag** - the closeFlag rule is unchanged and remains correct.
+- **Two records flagged rather than silently resolved.** UFN-69231 ("7126341408 SECOND REQUEST") has no billing keyword but is an Old Dominion PRO-number request in the same `7126341xxx` series as three explicitly billing-labelled tickets - retained, ruling requested. UFN-60009 references an Amazon Invoice but is a BOL request, not an invoice line - retained, consistent with the v33 audited set.
+- **Subject-identity overlaps stay retained.** The seven C.H. Robinson " - Follow Up" re-sends and the duplicate Dropship/OMS report pairs are listed under `exclusions.additionalCandidateOverlaps`: only a source-backed conversation identifier may collapse a record.
+- **Customer Health tiers now use the dashboard's own rule.** The evidence artefact previously reported tier counts from an undocumented rule that did not match what `js/dashboard.js` renders. It now uses that client rule directly (Critical when the >7-day share is >= 50% or the customer has 3+ tickets; Warning when the share is >= 25% or 1+ ticket). Because every eligible ticket is UFN-tagged, "Healthy" is structurally unreachable in this dataset - the tiers are 45 Critical / 25 Warning / 0 Healthy.
+
+Everything else follows v32/v33 methodology: authoritative New/Pending gate, closeFlag non-gating, billing-family exclusions, conversation-identity dedup, customer-health coverage of every ticket-visible customer, Outlook as non-blocking context.

@@ -60,15 +60,15 @@
     "refreshIntervalMinutes": 15
   },
   "snapshotMetrics": {
-    "refreshId": "refresh-2026-09-12T12:10ET-AUTHORITATIVE-v33",
-    "refreshedAt": "2026-09-12T12:10:00-04:00",
-    "totalRaw": 375,
-    "totalEligible": 296,
-    "excludedCount": 79,
+    "refreshId": "refresh-2026-09-12T13:45ET-AUTHORITATIVE-v34",
+    "refreshedAt": "2026-09-12T13:45:00-04:00",
+    "totalRaw": 384,
+    "totalEligible": 303,
+    "excludedCount": 29,
     "duplicatesRemoved": 5,
-    "invoiceItemsExcluded": 22,
+    "invoiceItemsExcluded": 24,
     "closeFlagTrueRetained": 19,
     "outlookStatus": "available",
-    "outlookThreadsMatched": 11
+    "outlookThreadsMatched": 8
   }
 }

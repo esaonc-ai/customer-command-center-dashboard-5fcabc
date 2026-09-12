@@ -6,57 +6,58 @@
     "tenant": "LT",
     "timezone": "America/New_York"
   },
-  "lastRefreshed": "2026-09-12T12:10:00-04:00",
+  "lastRefreshed": "2026-09-12T13:45:00-04:00",
   "dataSource": "Ticket Ops (authoritative); Outlook mailbox context available (supplemental)",
   "refreshType": "AUTHORITATIVE",
-  "refreshId": "refresh-2026-09-12T12:10ET-AUTHORITATIVE-v33",
-  "totalRaw": 375,
-  "eligibleBeforeExclusions": 323,
-  "eligibleBeforeDeduplication": 301,
-  "totalEligible": 296,
-  "newCount": 239,
+  "refreshId": "refresh-2026-09-12T13:45ET-AUTHORITATIVE-v34",
+  "totalRaw": 384,
+  "eligibleBeforeExclusions": 332,
+  "eligibleBeforeDeduplication": 308,
+  "totalEligible": 303,
+  "newCount": 244,
   "openCount": 0,
-  "pendingCount": 57,
+  "pendingCount": 59,
   "exclusionSummary": {
     "reopen": 52,
-    "billingFamily": 22,
+    "billingFamily": 24,
     "overlappingConversations": 5
   },
   "closeFlagTrueRetained": 19,
   "slaHealth": {
-    "breached": 213,
-    "onTrack": 83,
-    "unassigned": 249
+    "breached": 216,
+    "onTrack": 87,
+    "unassigned": 253
   },
   "actionBuckets": {
     "Immediate": 32,
-    "Short-Term": 54,
-    "Medium-Term": 21,
-    "Watch": 189
+    "Short-Term": 55,
+    "Medium-Term": 24,
+    "Watch": 192
   },
   "evidenceMetrics": {
-    "totalEligible": 296,
-    "slaBreached": 213,
-    "slaOnTrack": 83,
-    "unassigned": 249,
+    "totalEligible": 303,
+    "slaBreached": 216,
+    "slaOnTrack": 87,
+    "unassigned": 253,
     "oldestAgeDays": 191,
     "outlookStatus": "available",
-    "outlookThreadsMatched": 11,
-    "outlookThreadsLinkedToEligibleTickets": 1,
-    "invoiceItemsExcluded": 22,
+    "outlookThreadsMatched": 8,
+    "outlookThreadsLinkedToEligibleTickets": 2,
+    "invoiceItemsExcluded": 24,
     "duplicatesRemoved": 5
   },
   "outlook": {
     "status": "available",
-    "threadsRetrieved": 11,
-    "threadsLinkedToEligibleTickets": 1
+    "threadsRetrieved": 8,
+    "threadsLinkedToEligibleTickets": 2
   },
   "customers": {
-    "total": 57,
+    "total": 70,
     "tiers": {
-      "Healthy": 18,
-      "Critical": 33,
-      "Warning": 6
-    }
+      "Healthy": 0,
+      "Critical": 45,
+      "Warning": 25
+    },
+    "tierRule": "js/dashboard.js Customer Health rule: Critical when >7-day share >= 50% or 3+ tickets; Warning when share >= 25% or 1+ ticket; every eligible ticket is UFN-tagged, so Healthy is structurally unreachable in this dataset."
   }
 }
