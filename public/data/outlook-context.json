@@ -1,30 +1,112 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-12T05:19:20.000Z",
-  "lastRefreshed": "2026-09-12T05:19:20.000Z",
-  "outlookAvailable": false,
-  "delegatedMailboxAvailable": false,
-  "integrationStatus": "pending",
-  "statusLabel": "Mailbox sync pending",
-  "dataSource": null,
+  "generatedAt": "2026-09-12T09:25:21Z",
+  "lastRefreshed": "2026-09-12T09:25:21Z",
+  "outlookAvailable": true,
+  "delegatedMailboxAvailable": true,
+  "integrationStatus": "available",
+  "statusLabel": "Mailbox context available",
+  "dataSource": "Delegated NHT/Cesanek mailbox (nht.cs@unisco.com and facility aliases)",
   "integration": "non_blocking",
-  "threadsMatched": null,
-  "threadsUniquePostDedup": null,
-  "activeEscalations": null,
-  "eligibleEscalations": null,
+  "threadsMatched": 8,
+  "threadsLinkedToEligibleTickets": 1,
+  "threadsUniquePostDedup": 8,
+  "activeEscalations": 2,
+  "eligibleEscalations": 1,
   "coverage": {
     "eligibleTicketsTotal": 297,
-    "eligibleTicketsWithOutlookContext": null,
-    "coveragePct": null,
-    "note": "Email context is not included in this refresh because mailbox integration was unavailable."
+    "eligibleTicketsWithOutlookContext": 1,
+    "coveragePct": 0.3,
+    "note": "Mailbox context is supplemental. Seven of the eight retrieved threads reference tickets that are already closed/Solved in Ticket Ops, so only UFN-70261 links to an eligible conversation. Outlook never adds to Ticket Ops counts."
   },
-  "ticketThreads": [],
+  "ticketThreads": [
+    {
+      "id": "UFN-70261",
+      "severity": "escalation",
+      "title": "Re: HVP41-1612 Orders | 09/07-09/11",
+      "account": "HINT INC. / DrinkHint",
+      "detail": "09/11 4:20 PM ET: customer chasing ('Any word on this Kent?'); inventory shortage / short-ship on 2 DNs. CC youssef.zeitoon, nicole.weber, tim.mchugh, Wayne Minott.",
+      "reference": "UFN-70261",
+      "matched": true,
+      "ticketStatus": "Pending"
+    },
+    {
+      "id": "UFN-69129",
+      "severity": "coordination",
+      "title": "Re: MPW Internal WH Transfer - PA > CA",
+      "account": "UNY Brands / MPW (Cesanek)",
+      "detail": "09/11 3:24 PM ET: positive progress - 'Estes arrived and is being loaded'. CC unybrands.northampton, bpk2.cs.",
+      "reference": "UFN-69129",
+      "matched": false,
+      "ticketStatus": "Solved"
+    },
+    {
+      "id": "UFN-70553",
+      "severity": "coordination",
+      "title": "Re: SO124422 / PO 997609bis / DN-2128230",
+      "account": "Colavita (Chiara Vitali)",
+      "detail": "09/11 2:37 PM ET: pickup confirmed for Mon 9/14 after earlier customer complaint about planned-mode delay.",
+      "reference": "UFN-70553",
+      "matched": false,
+      "ticketStatus": "Solved"
+    },
+    {
+      "id": "UFN-70542",
+      "severity": "escalation",
+      "title": "RE: Order # 1576 and # 1577",
+      "account": "Maizly (Adam Meyer)",
+      "detail": "09/11 2:27 PM ET: 'Please try to get these out the door today'; response - DNs showing shipped. CC wayne@maizly, nicole.weber.",
+      "reference": "UFN-70542",
+      "matched": false,
+      "ticketStatus": "Solved"
+    },
+    {
+      "id": "UFN-70252",
+      "severity": "coordination",
+      "title": "Re: Pickup appointments / COLAVITA / September 2026",
+      "account": "Colavita / VWL (carrier)",
+      "detail": "09/11 2:02 PM ET: carrier chasing ('still loading?'); DN-2130356 showing shipped. CC morillo/mchugh/colavita.northampton.",
+      "reference": "UFN-70252",
+      "matched": false,
+      "ticketStatus": "Solved"
+    },
+    {
+      "id": "UFN-70414",
+      "severity": "coordination",
+      "title": "Re: UNIS --> Edison - Week of 9/14",
+      "account": "Vinworld / Colavita-Romark",
+      "detail": "09/11 12:28 PM ET: appointment / early-arrival coordination; no escalation.",
+      "reference": "UFN-70414",
+      "matched": false,
+      "ticketStatus": "Solved"
+    },
+    {
+      "id": "UFN-69116",
+      "severity": "coordination",
+      "title": "Re: La Famosa Order #00017979 - pickup appointment request",
+      "account": "Colavita / Vitelli Foods",
+      "detail": "09/11 12:19 PM ET: short-ship approved, pending confirmation. CC importdept, vitellifoods.",
+      "reference": "UFN-69116",
+      "matched": false,
+      "ticketStatus": "Solved"
+    },
+    {
+      "id": "UFN-67030",
+      "severity": "coordination",
+      "title": "Re: Request Excel file (appointment reschedules)",
+      "account": "Nourison (Randy Black)",
+      "detail": "09/01 11:09 AM ET: wrap-up ('last DN' details provided). Ticket Ops now shows Solved / systemStatus 20, so it is not eligible - excluded on status, not on closeFlag.",
+      "reference": "UFN-67030",
+      "matched": false,
+      "ticketStatus": "Solved"
+    }
+  ],
   "nonUfnThreads": [],
   "billingThreadsExcluded": [],
   "dedupNotes": [
     "Ticket counts come only from the authoritative Ticket Ops set.",
     "Self-sent Customer Command Center summary messages are never counted as tickets.",
-    "Email-derived fields remain pending until mailbox access is available."
+    "Overlapping email/ticket threads are counted once as context (e.g. UFN-70553 and the COLAVITA appointment thread UFN-70252)."
   ]
 }

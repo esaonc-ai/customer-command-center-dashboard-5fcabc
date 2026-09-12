@@ -6,10 +6,10 @@
     "tenant": "LT",
     "timezone": "America/New_York"
   },
-  "lastRefreshed": "2026-09-12T05:19:20.000Z",
-  "dataSource": "Ticket Ops (authoritative); mailbox sync pending",
+  "lastRefreshed": "2026-09-12T09:25:21Z",
+  "dataSource": "Ticket Ops (authoritative); Outlook mailbox context available (supplemental)",
   "refreshType": "AUTHORITATIVE",
-  "refreshId": "refresh-2026-09-12T05:19:20Z-AUTHORITATIVE-v31",
+  "refreshId": "refresh-2026-09-12T09:25:21Z-AUTHORITATIVE-v32",
   "totalRaw": 378,
   "eligibleBeforeDeduplication": 302,
   "totalEligible": 297,
@@ -28,8 +28,8 @@
     "unassigned": 249
   },
   "actionBuckets": {
-    "Immediate": 40,
-    "Short-Term": 56,
+    "Immediate": 38,
+    "Short-Term": 58,
     "Medium-Term": 9,
     "Watch": 192
   },
@@ -39,11 +39,35 @@
     "slaOnTrack": 81,
     "unassigned": 249,
     "oldestAgeDays": 190,
-    "outlookStatus": "pending",
-    "outlookThreadsMatched": null,
+    "outlookStatus": "available",
+    "outlookThreadsMatched": 8,
+    "outlookThreadsLinkedToEligibleTickets": 1,
     "invoiceItemsExcluded": 24,
     "duplicatesRemoved": 5
   },
+  "outlook": {
+    "status": "available",
+    "threadsRetrieved": 8,
+    "threadsLinkedToEligibleTickets": 1
+  },
+  "candidateOverlapsRetained": [
+    {
+      "tickets": [
+        "UFN-59238",
+        "UFN-59777"
+      ],
+      "identity": "order:112-4505161-2497057",
+      "status": "retained — pending confirmation"
+    },
+    {
+      "tickets": [
+        "UFN-48670",
+        "UFN-48777"
+      ],
+      "identity": "shipment:YMJAE490405029_015445_01_US-PA-30001253",
+      "status": "retained — pending confirmation"
+    }
+  ],
   "customers": {
     "total": 69,
     "tiers": {

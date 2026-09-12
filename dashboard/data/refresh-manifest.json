@@ -1,10 +1,10 @@
 {
   "refresh": {
-    "id": "refresh-2026-09-12T05:19:20Z-AUTHORITATIVE-v31",
-    "timestamp": "2026-09-12T05:19:20.000Z",
+    "id": "refresh-2026-09-12T09:25:21Z-AUTHORITATIVE-v32",
+    "timestamp": "2026-09-12T09:25:21Z",
     "type": "AUTHORITATIVE",
-    "previousRefreshId": "refresh-2026-09-12T02:25:00Z-AUTHORITATIVE-v30",
-    "keyChange": "Fresh Ticket Ops department-scoped read. Eligibility now uses system-open plus New/Pending without closeFlag. The working set is 297 unique conversations after 24 billing-family exclusions and five confirmed conversation overlaps."
+    "previousRefreshId": "refresh-2026-09-12T05:19:20Z-AUTHORITATIVE-v31",
+    "keyChange": "Fresh NHT/Cesanek Ticket Ops read: 378 system-open UFN rows (260 New / 66 Pending / 52 Reopen); 326 New+Pending. After 24 billing-family exclusions and 5 confirmed overlapping conversations the working set is 297 conversations (238 New / 59 Pending). Outlook mailbox context became available this cycle and is recorded as supplemental context."
   },
   "rulesApplied": [
     "displayStatusSystemStatus == 10 (open)",
@@ -12,50 +12,55 @@
     "closeFlag is retained as evidence and is not an eligibility gate",
     "ticketNumber begins UFN- within department 323826714354839552 (UNIS Fulfillment - Northampton)",
     "24 audited billing, UF Billing, storage, handling, or invoice items excluded",
-    "five confirmed overlapping conversations removed by external CaseID or confirmed DN/requester identity; subject alone is never a dedupe key",
+    "five confirmed overlapping conversations removed by external CaseID or confirmed DN identity; subject alone is never a dedupe key",
     "Customer Health includes every customer visible in the eligible ticket set; existing aliases are supplemental only",
-    "Priority queue orders SLA-breached items first, then due date; priority label is not used for rank"
+    "Priority queue orders SLA-breached items first, then due date; priority label is not used for rank",
+    "Outlook context is supplemental and never contributes to ticket counts, queue, buckets, customer health, or evidence metrics"
   ],
   "dataSources": [
     {
       "name": "Ticket Ops",
-      "note": "Live read at 2026-09-12T05:19:20Z for department 323826714354839552: 378 system-open UFN rows; 260 New, 66 Pending, 52 Reopen."
+      "note": "Live read 2026-09-12T09:25:21Z for department 323826714354839552: 378 system-open UFN rows (260 New / 66 Pending / 52 Reopen); 326 New+Pending server-verified."
     },
     {
       "name": "Outlook",
-      "note": "Mailbox integration was unavailable in this build. No email-derived records or counts were inferred; self-sent dashboard summaries remain excluded by policy."
+      "note": "Mailbox context AVAILABLE this cycle (previously pending). 8 current UFN threads retrieved; 1 maps to an eligible ticket (UFN-70261). Self-sent Customer Command Center summary mail excluded by policy."
     }
   ],
   "developerNotes": [
-    "The Sep 11 daily summary reported 327 (251 New / 76 Pending). It does not reconcile with the authoritative Ticket Ops read and is not used by the business UI.",
-    "Five eligible Ticket Ops rows had no priorityName/priorityId in both page and brief responses. Their priority remains unavailable rather than inferred; ordering is based on SLA and due date."
+    "The Sep 11 daily summary reported 327 tickets (251 New / 76 Pending). It does not reconcile with the authoritative Ticket Ops read and is not used by the business UI.",
+    "Five eligible Ticket Ops rows had no priorityName/priorityId in both page and brief responses. Their priority remains unavailable rather than inferred; ordering is based on SLA and due date.",
+    "Eligibility composition was unchanged versus the previous refresh: the same 326 New+Pending rows, the same 24 billing-family exclusions and the same 5 confirmed overlaps resolve to the same working set.",
+    "UFN-67030 is no longer live-Pending: Ticket Ops now shows displayStatusName Solved / displayStatusSystemStatus 20. It fails the gate on system status, not on closeFlag.",
+    "Two further identity-backed overlaps were surfaced in this read but were NOT auto-collapsed because they are outside the previously confirmed dedup set; see exclusions.additionalCandidateOverlaps.",
+    "19 live New/Pending conversations carry closeFlag=true and are retained; closeFlag is evidence only."
   ],
   "exclusions": {
     "billingTicketIds": [
-      "UFN-70613",
-      "UFN-70406",
-      "UFN-70350",
-      "UFN-70156",
-      "UFN-70140",
-      "UFN-69234",
-      "UFN-68749",
-      "UFN-67930",
-      "UFN-65196",
-      "UFN-63959",
-      "UFN-63762",
-      "UFN-62682",
-      "UFN-61451",
-      "UFN-60573",
-      "UFN-59971",
-      "UFN-55641",
-      "UFN-54721",
-      "UFN-53491",
-      "UFN-48436",
-      "UFN-45559",
-      "UFN-43725",
-      "UFN-41484",
+      "UFN-33719",
       "UFN-40670",
-      "UFN-33719"
+      "UFN-41484",
+      "UFN-43725",
+      "UFN-45559",
+      "UFN-48436",
+      "UFN-53491",
+      "UFN-54721",
+      "UFN-55641",
+      "UFN-59971",
+      "UFN-60573",
+      "UFN-61451",
+      "UFN-62682",
+      "UFN-63762",
+      "UFN-63959",
+      "UFN-65196",
+      "UFN-67930",
+      "UFN-68749",
+      "UFN-69234",
+      "UFN-70140",
+      "UFN-70156",
+      "UFN-70350",
+      "UFN-70406",
+      "UFN-70613"
     ],
     "duplicateConversations": [
       {
@@ -83,6 +88,24 @@
         "canonical": "UFN-70351",
         "conversationId": "dn:2107462"
       }
+    ],
+    "additionalCandidateOverlaps": [
+      {
+        "tickets": [
+          "UFN-59238",
+          "UFN-59777"
+        ],
+        "identity": "order:112-4505161-2497057",
+        "status": "retained — pending confirmation"
+      },
+      {
+        "tickets": [
+          "UFN-48670",
+          "UFN-48777"
+        ],
+        "identity": "shipment:YMJAE490405029_015445_01_US-PA-30001253",
+        "status": "retained — pending confirmation"
+      }
     ]
   },
   "dashboardState": {
@@ -107,8 +130,8 @@
       "current": 81
     },
     "actionBuckets": {
-      "Immediate": 40,
-      "Short-Term": 56,
+      "Immediate": 38,
+      "Short-Term": 58,
       "Medium-Term": 9,
       "Watch": 192
     },
@@ -794,8 +817,9 @@
       "slaOnTrack": 81,
       "unassigned": 249,
       "oldestAgeDays": 190,
-      "outlookStatus": "pending",
-      "outlookThreadsMatched": null,
+      "outlookStatus": "available",
+      "outlookThreadsMatched": 8,
+      "outlookThreadsLinkedToEligibleTickets": 1,
       "invoiceItemsExcluded": 24,
       "duplicatesRemoved": 5
     }

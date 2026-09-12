@@ -6,13 +6,32 @@
     "timezone": "America/New_York"
   },
   "ticketFilters": {
-    "includeStatuses": ["New", "Open", "Pending"],
-    "excludeStatuses": ["Reopen", "Reopened", "Closed", "Resolved", "Cancelled", "Done"],
-    "excludeInvoiceItems": ["billing", "UF Billing", "storage", "handling"],
+    "includeStatuses": [
+      "New",
+      "Open",
+      "Pending"
+    ],
+    "excludeStatuses": [
+      "Reopen",
+      "Reopened",
+      "Closed",
+      "Resolved",
+      "Cancelled",
+      "Done"
+    ],
+    "excludeInvoiceItems": [
+      "billing",
+      "UF Billing",
+      "storage",
+      "handling"
+    ],
     "ufnFilterEnabled": true,
     "authoritativeGate": {
       "displayStatusSystemStatus": 10,
-      "displayStatusNames": ["New", "Pending"],
+      "displayStatusNames": [
+        "New",
+        "Pending"
+      ],
       "useCloseFlag": false
     }
   },
@@ -23,7 +42,7 @@
   "outlook": {
     "integration": "non_blocking",
     "useWhenAvailable": true,
-    "status": "pending"
+    "status": "available"
   },
   "deduplication": {
     "enabled": true,
@@ -31,7 +50,13 @@
     "conversationIdOnly": true
   },
   "dashboard": {
-    "sections": ["counts", "priorityQueue", "actionBuckets", "customerHealth", "evidenceMetrics"],
+    "sections": [
+      "counts",
+      "priorityQueue",
+      "actionBuckets",
+      "customerHealth",
+      "evidenceMetrics"
+    ],
     "refreshIntervalMinutes": 15
   },
   "snapshotMetrics": {
@@ -41,7 +66,8 @@
     "duplicatesRemoved": 5,
     "invoiceItemsExcluded": 24,
     "closeFlagTrueRetained": 19,
-    "outlookStatus": "pending",
-    "refreshedAt": "2026-09-12T05:19:20Z"
+    "outlookStatus": "available",
+    "outlookThreadsMatched": 8,
+    "refreshedAt": "2026-09-12T09:25:21Z"
   }
 }
