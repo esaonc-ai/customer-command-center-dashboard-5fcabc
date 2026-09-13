@@ -36,23 +36,31 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** – Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** – Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Sep 12 1:45 PM ET - AUTHORITATIVE v34)
+## Current Dashboard State (Last Refresh: Sep 12 8:48 PM ET - AUTHORITATIVE v35)
 
 | Metric | Value |
 |--------|-------|
-| Total Raw (open UFN, department scope) | **384** = 266 New / 66 Pending / 52 Reopen &middot; New+Pending gate **332** |
-| Eligible | **303** conversations (244 New, 0 Open, 59 Pending) |
-| UFN-Count | 303 |
-| Excluded | 29 &mdash; 24 billing/UF Billing/storage/handling items + 5 confirmed overlapping conversations (+52 Reopen rows outside the gate) |
+| Total Raw (open UFN, department scope) | **391** = 273 New / 66 Pending / 52 Reopen &middot; New+Pending gate **339** |
+| Eligible | **310** conversations (251 New, 0 Open, 59 Pending) |
+| UFN-Count | 310 |
+| Excluded | 29 &mdash; 24 billing/UF Billing/storage/handling/invoice items + 5 confirmed overlapping conversations (+52 Reopen rows outside the gate) |
 | closeFlag | **NOT a gate** - 19 live `closeFlag=true` tickets retained |
-| Customers | **70** distinct customers (all ticket-visible customers; roster/aliases supplemental) |
-| Priority | 298 Medium / 5 unavailable from source; ranking does not depend on priority |
-| SLA Risk | **ELEVATED** - 216 SLA-breached / 87 current; 253 unassigned |
-| Action Buckets | Immediate **32** / Short-Term **55** / Medium-Term **24** / Watch **192** |
-| Outlook Coverage | **Available** - 8 UFN threads retrieved, 2 link to eligible tickets; supplemental only, never counted in ticket totals |
-| Last Refresh | 2026-09-12T13:45:00-04:00 (**AUTHORITATIVE v34** - fresh Ticket Ops read of department 323826714354839552, paged to exhaustion) |
+| Customers | **70** distinct customers (45 Critical / 25 Warning / 0 Healthy; all ticket-visible customers, roster/aliases supplemental) |
+| Priority | 305 Medium / 5 unavailable from source; ranking does not depend on priority |
+| SLA Risk | **ELEVATED** - 216 SLA-breached / 94 current; 259 unassigned |
+| Action Buckets | Immediate **13** / Short-Term **71** / Medium-Term **34** / Watch **192** |
+| Outlook Coverage | **Available** - 25 UFN threads retrieved, 2 link to eligible tickets (0.6%); supplemental only, never counted in ticket totals |
+| Last Refresh | 2026-09-12T20:48:59-04:00 (**AUTHORITATIVE v35** - fresh Ticket Ops read of department 323826714354839552, paged to exhaustion) |
 
 ## Developer Reconciliation Note
+
+### v34 -> v35 (Sep 12 1:45 PM ET -> Sep 12 8:48 PM ET)
+
+- **Net movement: +0.** The authoritative New/Pending gate moved from 332 to 339. Seven source-backed New tickets arrived (UFN-70664, UFN-70663, UFN-70662, UFN-70661, UFN-70660, UFN-70659, UFN-70652); no previously eligible v34 ticket left the gate.
+- **Exclusions remain exact.** All 24 specialist-confirmed billing-family rows and all 5 duplicate-to-survivor rows were present in the live pull and excluded. No other topic, subject, date, closeFlag, or Outlook filter was applied.
+- **closeFlag evidence.** 19 live `closeFlag=true` tickets remain in the eligible set; `closeFlag` is not a gate.
+- **Flagged records remain retained.** UFN-69231 (ODFL PRO-number request in the billing-number series) still has no billing keyword and awaits a business ruling. UFN-60009 remains an operational BOL request despite referencing an Amazon Invoice.
+- **Customer Health matches the rendered rule.** The eligible set covers every ticket-visible customer and yields 45 Critical / 25 Warning / 0 Healthy. Healthy remains structurally unreachable because every eligible ticket is UFN-tagged.
 
 ### v33 -> v34 (Sep 12 12:10 PM ET -> Sep 12 1:45 PM ET)
 

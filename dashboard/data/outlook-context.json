@@ -1,240 +1,297 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-12T13:45:00-04:00",
-  "lastRefreshed": "2026-09-12T13:45:00-04:00",
+  "generatedAt": "2026-09-12T20:48:59-04:00",
+  "lastRefreshed": "2026-09-12T20:48:59-04:00",
   "outlookAvailable": true,
   "delegatedMailboxAvailable": true,
   "integrationStatus": "available",
   "statusLabel": "Mailbox context available",
-  "dataSource": "Delegated NHT/Cesanek CS mailbox; activity through 2026-09-12T01:16:00Z; latest customer/operational activity 2026-09-11T23:48:00Z",
+  "dataSource": "Delegated NHT/Cesanek CS mailbox (nicole.weber@unisco.com); UFN-referencing traffic through 2026-09-11T20:33:00-04:00, plus the Customer Command Center daily-summary series through Fri 2026-09-11. Sampled window: Sep 10 18:39 ET - Sep 11 20:33 ET.",
   "integration": "non_blocking",
-  "threadsMatched": 8,
+  "threadsMatched": 25,
   "threadsLinkedToEligibleTickets": 2,
-  "threadsUniquePostDedup": 27,
+  "threadsUniquePostDedup": 31,
   "activeEscalations": null,
   "eligibleEscalations": null,
   "coverage": {
-    "eligibleTicketsTotal": 303,
+    "eligibleTicketsTotal": 310,
     "eligibleTicketsWithOutlookContext": 2,
-    "coveragePct": 0.7,
-    "note": "Mailbox context is supplemental. 2 of the 8 supplied UFN threads link to eligible conversations; Outlook never adds to Ticket Ops counts, queue, buckets, customer health, or SLA metrics."
+    "coveragePct": 0.6,
+    "note": "Mailbox context is supplemental and non-blocking. 2 of the 25 supplied UFN threads link to eligible conversations; Outlook never adds to Ticket Ops counts, queue, buckets, customer health, or SLA metrics."
   },
   "ticketThreads": [
     {
       "ticketRef": "UFN-70252",
       "customer": "COLAVITA USA, LLC",
-      "subject": "Colavita pickup appointments",
-      "lastMessageET": "09-11 14:02 ET",
+      "subject": "Pickup appointments / COLAVITA / September 2026",
+      "lastMessageET": "09-11 18:02 ET",
       "ask": null,
-      "linkedToEligibleTicket": false
+      "linkedToEligibleTicket": false,
+      "note": "Colavita cancelled-loads escalation"
     },
     {
       "ticketRef": "UFN-70553",
       "customer": "COLAVITA USA, LLC",
       "subject": "SO124422 / PO 997609bis / DN-2128230",
-      "lastMessageET": "09-11 14:37 ET",
+      "lastMessageET": "09-11 18:37 ET",
       "ask": null,
-      "linkedToEligibleTicket": false
+      "linkedToEligibleTicket": false,
+      "note": null
     },
     {
-      "ticketRef": "UFN-70414",
-      "customer": "kyle.wittenbauer@colavita.com",
-      "subject": "UNIS -> Edison week of 9/14",
-      "lastMessageET": "09-11 12:28 ET",
+      "ticketRef": "UFN-67809",
+      "customer": "MAIZLY INC.",
+      "subject": "DN-2121155 PO3878087 KEHE0034",
+      "lastMessageET": "09-11 18:30 ET",
       "ask": null,
-      "linkedToEligibleTicket": false
-    },
-    {
-      "ticketRef": "UFN-69116",
-      "customer": "COLAVITA USA, LLC",
-      "subject": "La Famosa #00017979 pickup appointment",
-      "lastMessageET": "09-11 12:19 ET",
-      "ask": null,
-      "linkedToEligibleTicket": false
+      "linkedToEligibleTicket": false,
+      "note": null
     },
     {
       "ticketRef": "UFN-70542",
       "customer": "MAIZLY INC.",
       "subject": "Order # 1576 and # 1577",
-      "lastMessageET": "09-11 14:27 ET",
+      "lastMessageET": "09-11 18:27 ET",
       "ask": null,
-      "linkedToEligibleTicket": false
+      "linkedToEligibleTicket": false,
+      "note": null
+    },
+    {
+      "ticketRef": "UFN-70399",
+      "customer": "MAIZLY INC.",
+      "subject": "Unshipped Orders",
+      "lastMessageET": "09-11 12:33 ET",
+      "ask": null,
+      "linkedToEligibleTicket": false,
+      "note": null
     },
     {
       "ticketRef": "UFN-70261",
       "customer": "HINT INC.",
-      "subject": "HVP41-1612 Orders 09/07-09/11",
-      "lastMessageET": "09-11 16:21 ET",
+      "subject": "HVP41-1612 Orders | 09/07-09/11",
+      "lastMessageET": "09-11 20:21 ET",
       "ask": null,
-      "linkedToEligibleTicket": true
+      "linkedToEligibleTicket": true,
+      "note": null
+    },
+    {
+      "ticketRef": null,
+      "customer": "HINT INC.",
+      "subject": "PA Inventory - Hint @ Unis",
+      "lastMessageET": "09-11 22:30 ET",
+      "ask": null,
+      "linkedToEligibleTicket": false,
+      "note": "UFN carried in ticket footer only"
+    },
+    {
+      "ticketRef": "UFN-69781",
+      "customer": "HINT INC.",
+      "subject": "UNIS - HINT BEVERAGE - NORTHAMPTON, PA - WEEK OF 9/7/26",
+      "lastMessageET": "09-11 19:04 ET",
+      "ask": null,
+      "linkedToEligibleTicket": true,
+      "note": "carrier thread"
+    },
+    {
+      "ticketRef": "UFN-68506",
+      "customer": "KD PHARMA",
+      "subject": "Pharmavite PO 352168 (SO110487) - DN-2123575",
+      "lastMessageET": "09-11 20:18 ET",
+      "ask": null,
+      "linkedToEligibleTicket": false,
+      "note": null
+    },
+    {
+      "ticketRef": "UFN-68515",
+      "customer": "KD PHARMA",
+      "subject": "Pharmavite PO 352169 (SO110492) - DN-2123596",
+      "lastMessageET": "09-11 20:22 ET",
+      "ask": null,
+      "linkedToEligibleTicket": false,
+      "note": null
+    },
+    {
+      "ticketRef": null,
+      "customer": "KD PHARMA",
+      "subject": "Pharmavite PO 350523 (SO110372) - DN-2078874",
+      "lastMessageET": "09-11 12:21 ET",
+      "ask": null,
+      "linkedToEligibleTicket": false,
+      "note": "UFN carried in ticket footer only"
+    },
+    {
+      "ticketRef": "UFN-69103",
+      "customer": "KD PHARMA",
+      "subject": "Nordic - PO4500005466 - DN-2126240 / DN-2126248",
+      "lastMessageET": "09-11 20:11 ET",
+      "ask": null,
+      "linkedToEligibleTicket": false,
+      "note": null
+    },
+    {
+      "ticketRef": "UFN-69120",
+      "customer": "KD PHARMA",
+      "subject": "Nordic - PO4500006091 - DN-2126292 / DN-2126300",
+      "lastMessageET": "09-11 20:12 ET",
+      "ask": null,
+      "linkedToEligibleTicket": false,
+      "note": null
+    },
+    {
+      "ticketRef": null,
+      "customer": "ICELAND DIRECT",
+      "subject": "Iceland Direct - PO 810308 (SO110377) - DN-2122820",
+      "lastMessageET": "09-11 20:15 ET",
+      "ask": null,
+      "linkedToEligibleTicket": false,
+      "note": "flagged \"needs to ship ASAP\""
+    },
+    {
+      "ticketRef": "UFN-69116",
+      "customer": "COLAVITA USA, LLC",
+      "subject": "Order for La Famosa #00017979 - pickup appointment request",
+      "lastMessageET": "09-11 16:19 ET",
+      "ask": null,
+      "linkedToEligibleTicket": false,
+      "note": null
+    },
+    {
+      "ticketRef": "UFN-59091",
+      "customer": "COLAVITA USA, LLC",
+      "subject": "COLAVITA WAL-MART WEEK 6/1/26 - DAMAGE FREIGHT",
+      "lastMessageET": "09-11 15:54 ET",
+      "ask": null,
+      "linkedToEligibleTicket": false,
+      "note": null
+    },
+    {
+      "ticketRef": "UFN-70414",
+      "customer": "VINWORLD",
+      "subject": "UNIS --> Edison - Week of 9/14",
+      "lastMessageET": "09-11 16:28 ET",
+      "ask": null,
+      "linkedToEligibleTicket": false,
+      "note": null
+    },
+    {
+      "ticketRef": null,
+      "customer": "VINWORLD",
+      "subject": "UNIS --> Romark - Week of 9/7",
+      "lastMessageET": "09-11 19:34 ET",
+      "ask": null,
+      "linkedToEligibleTicket": false,
+      "note": "UFN carried in ticket footer only"
+    },
+    {
+      "ticketRef": "UFN-70147",
+      "customer": "THE ANDERSONS, INC.",
+      "subject": "Pickup Appointment PO 3878155 - Northampton - Ellettsville",
+      "lastMessageET": "09-11 16:10 ET",
+      "ask": null,
+      "linkedToEligibleTicket": false,
+      "note": null
     },
     {
       "ticketRef": "UFN-69129",
-      "customer": "BOUNDLESS EC US LLC",
-      "subject": "MPW Internal WH Transfer PA>CA",
-      "lastMessageET": "09-11 15:24 ET",
+      "customer": "UNYBRANDS",
+      "subject": "MPW Internal WH Transfer - PA > CA",
+      "lastMessageET": "09-11 19:24 ET",
       "ask": null,
-      "linkedToEligibleTicket": false
+      "linkedToEligibleTicket": false,
+      "note": null
     },
     {
-      "ticketRef": "UFN-70474",
-      "customer": "Tweetie Leigh Lamoste (tweetie.lamoste@unisco.com)",
-      "subject": "Immediate Review Required - Inbound Deliveries, Next Business Day - Sept 14 2026 (Cesanek, PA)",
-      "lastMessageET": "09-11 16:33 ET",
+      "ticketRef": "UFN-70448",
+      "customer": "DIAGEO",
+      "subject": "MSMU6875562",
+      "lastMessageET": "09-11 23:01 ET",
       "ask": null,
-      "linkedToEligibleTicket": true
+      "linkedToEligibleTicket": false,
+      "note": null
+    },
+    {
+      "ticketRef": "UFN-70447",
+      "customer": "DIAGEO",
+      "subject": "MSDU7175119",
+      "lastMessageET": "09-10 20:23 ET",
+      "ask": null,
+      "linkedToEligibleTicket": false,
+      "note": null
+    },
+    {
+      "ticketRef": "UFN-68601",
+      "customer": "ROAR BEVERAGES INC",
+      "subject": "UNIS ROAR QVC POWDER MOVE From PA to CA DN-2123888",
+      "lastMessageET": "09-10 20:06 ET",
+      "ask": null,
+      "linkedToEligibleTicket": false,
+      "note": null
+    },
+    {
+      "ticketRef": "UFN-67030",
+      "customer": "NOURISON",
+      "subject": "Request Excel file",
+      "lastMessageET": "09-01 15:09 ET",
+      "ask": null,
+      "linkedToEligibleTicket": false,
+      "note": "ticket is Solved in Ticket Ops - context only"
+    },
+    {
+      "ticketRef": "UFN-68616",
+      "customer": "ROAR BEVERAGES INC",
+      "subject": "AMI New Roar Order - SO1393032 / DN-2117711",
+      "lastMessageET": "09-11 12:31 ET",
+      "ask": null,
+      "linkedToEligibleTicket": false,
+      "note": null
     }
   ],
   "nonUfnThreads": [
     {
-      "customer": "C.H. ROBINSON",
-      "subject": "CH Robinson SO1393032",
-      "lastMessageET": "09-08 11:54 ET",
-      "ask": null
+      "customer": "COLAVITA USA, LLC",
+      "subject": "Outbound Transfer Capacity",
+      "lastMessageET": "09-11 ET",
+      "note": "same-facility operational thread, no UFN in body"
     },
     {
-      "customer": "ROAR BEVERAGES INC",
-      "subject": "UNIS ROAR QVC powder move DN-2123888",
-      "lastMessageET": "09-10 16:06 ET",
-      "ask": null
+      "customer": "NATURAL RAPPORT",
+      "subject": "Schedule to Remove Products from UNIS Warehouses - PA",
+      "lastMessageET": "09-11 ET",
+      "note": "same-facility operational thread, no UFN in body"
     },
     {
-      "customer": "ROAR BEVERAGES INC",
-      "subject": "CLOSE OUT ROAR LOADS",
-      "lastMessageET": "09-10 10:42 ET",
-      "ask": null
+      "customer": "ATERIAN GROUP, INC.",
+      "subject": "Operations Review and Approval - Customer Scope of Work",
+      "lastMessageET": "09-11 ET",
+      "note": "same-facility operational thread, no UFN in body"
     },
     {
-      "customer": null,
-      "subject": "Immediate Review Required - Outbound Shipments next business day Sept 14",
-      "lastMessageET": "09-11 16:28 ET",
-      "ask": null
-    },
-    {
-      "customer": "MAIZLY INC.",
-      "subject": "Unshipped Orders",
-      "lastMessageET": "09-11 08:33 ET",
-      "ask": null
-    },
-    {
-      "customer": "MAIZLY INC.",
-      "subject": "DN-2121155 / PO3878087 KEHE0034",
-      "lastMessageET": "09-11 14:30 ET",
-      "ask": null
-    },
-    {
-      "customer": "HINT INC.",
-      "subject": "PA Inventory - Hint @ Unis",
-      "lastMessageET": "09-11 18:30 ET",
-      "ask": null
-    },
-    {
-      "customer": "HINT INC.",
-      "subject": "UNIS - HINT BEVERAGE - NORTHAMPTON PA - WEEK OF 9/7/26",
-      "lastMessageET": "09-11 15:04 ET",
-      "ask": null
-    },
-    {
-      "customer": "ROAR BEVERAGES INC",
-      "subject": "DN-2130557 & DN-2130497",
-      "lastMessageET": "09-10 11:59 ET",
-      "ask": null
-    },
-    {
-      "customer": "INNOVA SOFTGEL LLC DBA KD NUTRA",
-      "subject": "Iceland Direct PO 810308",
-      "lastMessageET": "09-11 16:15 ET",
-      "ask": null
-    },
-    {
-      "customer": "INNOVA SOFTGEL LLC DBA KD NUTRA",
-      "subject": "Pharmavite PO 352169",
-      "lastMessageET": "09-11 16:22 ET",
-      "ask": null
-    },
-    {
-      "customer": "INNOVA SOFTGEL LLC DBA KD NUTRA",
-      "subject": "Pharmavite PO 352168",
-      "lastMessageET": "09-11 16:18 ET",
-      "ask": null
-    },
-    {
-      "customer": "INNOVA SOFTGEL LLC DBA KD NUTRA",
-      "subject": "Nordic PO4500006091",
-      "lastMessageET": "09-11 16:12 ET",
-      "ask": null
-    },
-    {
-      "customer": "INNOVA SOFTGEL LLC DBA KD NUTRA",
-      "subject": "Nordic PO4500005466",
-      "lastMessageET": "09-11 16:11 ET",
-      "ask": null
-    },
-    {
-      "customer": "DIAGEO",
-      "subject": "MSMU6875562 (Diageo container redirect)",
-      "lastMessageET": "09-11 19:01 ET",
-      "ask": null
-    },
-    {
-      "customer": "CANVAS 340 LLC",
-      "subject": "Canvas340 Cesanek Northampton transition plan",
-      "lastMessageET": "09-11 14:15 ET",
-      "ask": null
-    },
-    {
-      "customer": null,
-      "subject": "INBOUND UNIS NORTHAMPTON CONTAINERS 9/14",
-      "lastMessageET": "09-11 17:10 ET",
-      "ask": null
-    },
-    {
-      "customer": "Natural Rapport (Q & C Products LLC)",
-      "subject": "Schedule to Remove Products from UNIS Warehouses",
-      "lastMessageET": "09-11 15:56 ET",
-      "ask": null
-    },
-    {
-      "customer": "ATERIAN / RITUAL / VITA COCO / AVIRON / NIAGARA",
-      "subject": "Operations Review/Approval - SOW",
-      "lastMessageET": "09-11 17:16 ET",
-      "ask": null
+      "customer": "Cesanek internal (Tweetie Leigh Lamoste)",
+      "subject": "Immediate Review Required: Inbound/Outbound (Cesanek, PA Facility) daily series",
+      "lastMessageET": "09-11 ET",
+      "note": "automated notification series; maps to the UFN-70350 / UFN-70474 class"
     }
   ],
   "billingThreadsExcluded": [
     {
-      "customer": "ROAR BEVERAGES INC",
-      "subject": "Roar Decadence - Handling 8.30-9.05 | PA"
+      "subject": "Roar Decadence - Handling 8.30-9.05 | PA",
+      "sender": "ufbillingticket@unisco.com",
+      "excludedReason": "storage/handling invoice (billing family)"
     },
     {
-      "customer": "PRIME TIME PACKAGING LTD",
-      "subject": null
-    },
-    {
-      "customer": "CANVAS 340 LLC",
-      "subject": null
-    },
-    {
-      "customer": "NOURISON",
-      "subject": null
-    },
-    {
-      "customer": "AVIRON INTERACTIVE INC",
-      "subject": null
-    },
-    {
-      "customer": "COLAVITA USA, LLC",
-      "subject": "3RD FOLLOW UP: COLAVITA USA, LLC - PAYMENT REQUEST"
-    },
-    {
-      "customer": "MAIZLY INC.",
-      "subject": "MAIZLY INC Disputes and Claims Update ($1,057.50 claim)"
+      "subject": "MAIZLY INC - Disputes and Claims Update",
+      "sender": "MAIZLY INC.",
+      "excludedReason": "billing dispute thread"
     }
   ],
   "dedupNotes": [
-    "Each supplied UFN ticket maps to one mailbox thread and is counted once in Outlook context.",
-    "Action/ask text was not supplied; ask values are null (source-missing). Exact subjects were not supplied for the four UF Billing handling-invoice threads, so those subject values are null (source-missing).",
-    "The previously used example subjects \"Cesanek Dropship EOD - <CUSTOMER> - <date>\" and \"CESANEK APPOINTMENT WATCH\" do not exist as mailbox threads. Dropship BOD/EOD signals exist only inside automated daily summary emails as UFN ticket batches."
+    "Each supplied UFN ticket maps to one mailbox conversation and is counted once in Outlook context.",
+    "threadsUniquePostDedup = 25 UFN threads + 4 non-UFN same-facility threads + 2 billing/dispute threads, after collapsing multi-message threads by conversation id.",
+    "Multi-message threads were collapsed by conversation id (e.g. Colavita, Maizly, Hint, KD Pharma, Colavita/La Famosa, Vinworld, CH Robinson).",
+    "Same customer across distinct threads is not a duplicate: Maizly (3), Colavita (4), KD Pharma/Pharmavite+Nordic+Iceland Direct (6), Hint (3), Vinworld (2), Diageo/MSC (2).",
+    "Duplicate daily-summary emails (same internetMessageId under two sender addresses) count once; the 9/10 series has a superseded original and a \"Corrected\" copy - the corrected copy is the reference.",
+    "Action/ask text was not supplied; ask values are null (source-missing).",
+    "The daily-summary email carries the mailbox's own approximate figures for the same queue; Ticket Ops is authoritative and those email figures were not used for any count."
   ]
 }
