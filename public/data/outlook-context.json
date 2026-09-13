@@ -1,8 +1,8 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-13T06:36:00-04:00",
-  "lastRefreshed": "2026-09-13T06:36:00-04:00",
+  "generatedAt": "2026-09-13T08:41:00-04:00",
+  "lastRefreshed": "2026-09-13T08:41:00-04:00",
   "outlookAvailable": true,
   "delegatedMailboxAvailable": true,
   "integrationStatus": "available",
@@ -297,9 +297,11 @@
     "Two New-side auto-replies are conversation legs of Reopen-side threads (UFN-70603 -> UFN-70545, UFN-70316 -> UFN-69406) and are not counted as separate conversations.",
     "UFN numbers appear in message bodies rather than subjects, so subject-only UFN searches return nothing; the mailbox was searched on message content.",
     "Read window 2026-08-30 through 2026-09-13; the mailbox was bulk-loaded on 2026-09-12 so visible activity concentrates on 09-09 through 09-11.",
+    "The nht.cs@unisco.com shared alias remains unreadable (access denied); results in this file come from nicole.weber@unisco.com.",
     "This cycle re-read only the most recent UFN page; all 13 UFN threads it returned were already present in the carried-forward inventory, so no Outlook thread was added or removed.",
+    "One additional UFN-referencing transportation message (UT-62013) surfaced but is not a UFN ticket and stays in the non-UFN set.",
     "The nht.cs@unisco.com shared alias remains unreadable (access denied); results in this file come from nicole.weber@unisco.com."
   ],
   "mailboxScopeUsed": "nicole.weber@unisco.com",
-  "mailboxReadWindow": "Most recent UFN message page (25 messages, receivedDateTime desc) reviewed for this cycle; the fuller 2026-08-30 to 2026-09-13 thread inventory below is carried forward unchanged."
+  "mailboxReadWindow": "Most recent UFN message page reviewed for this cycle; the fuller 2026-08-30 to 2026-09-13 thread inventory below is carried forward unchanged."
 }

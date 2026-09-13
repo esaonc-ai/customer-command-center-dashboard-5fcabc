@@ -36,7 +36,7 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** – Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** – Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Sep 13 6:36 AM ET - AUTHORITATIVE v37)
+## Current Dashboard State (Last Refresh: Sep 13 8:41 AM ET - AUTHORITATIVE v38)
 
 | Metric | Value |
 |--------|-------|
@@ -51,9 +51,21 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 | SLA Risk | **ELEVATED** - 216 SLA-breached / 95 current; 260 unassigned |
 | Action Buckets | Immediate **14** / Short-Term **69** / Medium-Term **36** / Watch **192** |
 | Outlook Coverage | **Available** - 25 UFN threads retrieved, 2 link to eligible tickets; supplemental only, never counted in ticket totals |
-| Last Refresh | 2026-09-13T06:36:00-04:00 (**AUTHORITATIVE v37** - live Ticket Ops gate read of department 323826714354839552, independent of the prior cycle) |
+| Last Refresh | 2026-09-13T08:41:00-04:00 (**AUTHORITATIVE v38** - live Ticket Ops gate read of department 323826714354839552, independent of the prior cycle) |
 
 ## Developer Reconciliation Note
+
+### v37 -> v38 (Sep 13 6:36 AM ET -> Sep 13 8:41 AM ET)
+
+- **Net movement: +0.** The authoritative New+Pending gate is unchanged at 340 rows (274 New / 66 Pending) inside a 392-row open bucket that still holds 52 Reopen rows. A full ticket-number set diff against v37 returned **zero arrivals and zero departures**, and a per-record comparison of status, closeFlag, SLA and overdue flags matched on all 311 eligible records.
+- **Exclusions re-confirmed against the live gate, not re-guessed.** All 24 billing-family rows and all 5 duplicate conversations were present in the live read, so the exclusion set is unchanged. UFN-60009 (Amazon Invoice reference on a BOL request) and UFN-69231 (ODFL PRO-number request) remain retained pending a business ruling.
+- **closeFlag evidence unchanged and re-proven.** 19 live `closeFlag=true` records remain in the eligible set (gate-wide 20; UFN-65196 is billing-excluded). All 20 sit on Pending rows that are system-OPEN, which is exactly the auto-close artifact that makes closeFlag unusable as an eligibility gate.
+- **The UFN-67030 citation is stale.** It is not in this department's New/Pending or Reopen rows at this read - it closed on **authoritative status**, not on closeFlag. The rule stands and is better evidenced by the live closeFlag=true Pending rows (UFN-70443, UFN-70412, UFN-70243, UFN-69781).
+- **Status-name audit.** The display-status dictionary in use here is New(11), Pending(6), Reopen(1), Solved(2) - there are no "Open"-named rows, so the "New / Open / Pending" inclusion rule resolves to New + Pending with Reopen excluded by name. No Pending sub-status split is published, because all 66 Pending rows carry a single status "Pending" (id 6).
+- **Flagged records remain retained.** The 7 same-load C.H. Robinson pairs are still carried unchanged pending a business ruling; deduplication continues to collapse only CASE/DN conversation identity.
+- **Time-derived fields refreshed.** ageHours/ageDays, action buckets and freshness were recomputed at the new refresh instant; 12 records crossed a whole-day age boundary.
+- **Customer Health matches the rendered rule.** All customers visible in eligible tickets are covered (roster/aliases supplemental; the structured list carries an empty roster) and the tiers remain 45 Critical / 25 Warning / 0 Healthy, with Healthy structurally unreachable because every eligible ticket is UFN-tagged.
+- **Outlook stayed supplemental.** The cycle re-read the most recent UFN page of the delegated CS mailbox: all 13 UFN threads returned were already in the carried-forward inventory, and 2 threads still link to eligible conversations (UFN-69781, UFN-70261). The nht.cs@unisco.com shared mailbox was not readable this cycle (access denied) and is disclosed as a limitation rather than silently dropped.
 
 ### v36 -> v37 (Sep 13 12:33 AM ET -> Sep 13 6:36 AM ET)
 

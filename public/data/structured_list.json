@@ -6,10 +6,10 @@
     "tenant": "LT",
     "timezone": "America/New_York"
   },
-  "lastRefreshed": "2026-09-13T06:36:00-04:00",
+  "lastRefreshed": "2026-09-13T08:41:00-04:00",
   "dataSource": "Ticket Ops (authoritative); Outlook mailbox context available (supplemental)",
   "refreshType": "AUTHORITATIVE",
-  "refreshId": "refresh-2026-09-13T06:36:00-04:00-AUTHORITATIVE-v37",
+  "refreshId": "refresh-2026-09-13T08:41:00-04:00-AUTHORITATIVE-v38",
   "totalRaw": 392,
   "eligibleBeforeExclusions": 340,
   "eligibleBeforeDeduplication": 316,
