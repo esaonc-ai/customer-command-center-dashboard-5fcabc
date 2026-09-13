@@ -60,8 +60,8 @@
     "refreshIntervalMinutes": 15
   },
   "snapshotMetrics": {
-    "refreshId": "refresh-2026-09-12T20:48:59-04:00-AUTHORITATIVE-v35",
-    "refreshedAt": "2026-09-12T20:48:59-04:00",
+    "refreshId": "refresh-2026-09-13T00:33:00-04:00-AUTHORITATIVE-v36",
+    "refreshedAt": "2026-09-13T00:33:00-04:00",
     "totalRaw": 391,
     "totalEligible": 310,
     "excludedCount": 29,

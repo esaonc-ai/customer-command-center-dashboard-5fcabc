@@ -36,7 +36,7 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** – Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** – Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Sep 12 8:48 PM ET - AUTHORITATIVE v35)
+## Current Dashboard State (Last Refresh: Sep 13 12:33 AM ET - AUTHORITATIVE v36)
 
 | Metric | Value |
 |--------|-------|
@@ -44,15 +44,26 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 | Eligible | **310** conversations (251 New, 0 Open, 59 Pending) |
 | UFN-Count | 310 |
 | Excluded | 29 &mdash; 24 billing/UF Billing/storage/handling/invoice items + 5 confirmed overlapping conversations (+52 Reopen rows outside the gate) |
+| Flagged | 7 C.H. Robinson same-load overlap pairs retained pending a business ruling (would take eligible to 303) |
 | closeFlag | **NOT a gate** - 19 live `closeFlag=true` tickets retained |
 | Customers | **70** distinct customers (45 Critical / 25 Warning / 0 Healthy; all ticket-visible customers, roster/aliases supplemental) |
 | Priority | 305 Medium / 5 unavailable from source; ranking does not depend on priority |
 | SLA Risk | **ELEVATED** - 216 SLA-breached / 94 current; 259 unassigned |
-| Action Buckets | Immediate **13** / Short-Term **71** / Medium-Term **34** / Watch **192** |
-| Outlook Coverage | **Available** - 25 UFN threads retrieved, 2 link to eligible tickets (0.6%); supplemental only, never counted in ticket totals |
-| Last Refresh | 2026-09-12T20:48:59-04:00 (**AUTHORITATIVE v35** - fresh Ticket Ops read of department 323826714354839552, paged to exhaustion) |
+| Action Buckets | Immediate **13** / Short-Term **70** / Medium-Term **35** / Watch **192** |
+| Outlook Coverage | **Available** - 25 UFN threads retrieved, 2 link to eligible tickets; supplemental only, never counted in ticket totals |
+| Last Refresh | 2026-09-13T00:33:00-04:00 (**AUTHORITATIVE v36** - live Ticket Ops gate re-read of department 323826714354839552, paged to exhaustion) |
 
 ## Developer Reconciliation Note
+
+### v35 -> v36 (Sep 12 8:48 PM ET -> Sep 13 12:33 AM ET)
+
+- **Net movement: +0.** The authoritative New+Pending gate is still 339 (273 New / 66 Pending) inside a 391-row open bucket with 52 Reopen rows. A full ticket-number set diff of all 339 gate rows against v35 returned **zero arrivals and zero departures**, and per-record status, closeFlag and SLA flags also matched with no movement.
+- **Exclusions re-confirmed, not re-guessed.** All 24 billing-family rows were re-checked individually. Three of them - UFN-60573 (Prime Time Handling 6/28-7/4), UFN-53491 and UFN-40670 (F26 Month End Close Reminder series) - were disputed by an intermediate read and are confirmed billing-family, so the v35 exclusion count stands.
+- **New overlap evidence, deliberately not applied.** Seven C.H. Robinson appointment pairs share an identical source load number (original request plus " - Follow Up" re-send): UFN-70594/70481, 70593/70480, 70588/70475, 70587/70473, 70586/70471, 70580/70465, 70579/70464. They are flagged under `exclusions.additionalCandidateOverlaps` and retained, because the dashboard's configured rule collapses only source-backed conversation identity (CASE/DN). Applying load-number identity would reduce eligible conversations from 310 to 303. Awaiting a business ruling.
+- **Assignment field left as-is.** A delegate read reported 272 unassigned in the eligible set against 259 in the machine baseline. A targeted per-record re-read of the 13 conflicting tickets found a populated `staffName` on all 13, so the baseline assignment data is retained and the transcribed split was discarded.
+- **Time-derived fields refreshed.** ageHours/ageDays, action buckets and freshness were recomputed at the new refresh instant; 13 records crossed a whole-day age boundary.
+- **closeFlag evidence unchanged.** 19 live `closeFlag=true` tickets remain in the eligible set (gate-wide 20; UFN-65196 is billing-excluded). UFN-67030 remains excluded on authoritative status (Solved / systemStatus 20), not on closeFlag.
+- **Customer Health matches the rendered rule.** The eligible set covers every ticket-visible customer and yields 45 Critical / 25 Warning / 0 Healthy. Healthy remains structurally unreachable because every eligible ticket is UFN-tagged.
 
 ### v34 -> v35 (Sep 12 1:45 PM ET -> Sep 12 8:48 PM ET)
 
