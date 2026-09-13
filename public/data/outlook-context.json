@@ -1,24 +1,28 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-13T00:33:00-04:00",
-  "lastRefreshed": "2026-09-13T00:33:00-04:00",
+  "generatedAt": "2026-09-13T06:36:00-04:00",
+  "lastRefreshed": "2026-09-13T06:36:00-04:00",
   "outlookAvailable": true,
   "delegatedMailboxAvailable": true,
   "integrationStatus": "available",
   "statusLabel": "Available",
-  "dataSource": "Delegated NHT/Cesanek CS mailbox read (nht.cs@unisco.com / nicole.weber@unisco.com)",
+  "dataSource": "Delegated NHT/Cesanek CS mailbox read (nicole.weber@unisco.com; nht.cs@unisco.com shared mailbox returned access denied this cycle)",
   "integration": "non_blocking",
   "threadsMatched": 25,
   "threadsLinkedToEligibleTickets": 2,
   "threadsUniquePostDedup": 31,
-  "activeEscalations": null,
-  "eligibleEscalations": null,
+  "activeEscalations": [
+    "Colavita / Vital (UFN-70252): customer chasing loading status; carrier escalated cancelled loads and threatened TONU.",
+    "Hint Beverage / Fusion Transport (UFN-69781): HIGH IMPORTANCE - EDI tenders missing, loads at risk; thread links to an eligible conversation.",
+    "KD Nutra / Pharmavite series (UFN-68506, UFN-68515, UFN-69103, UFN-69120): time-sensitive appointment/relabeling confirmations; none currently eligible."
+  ],
+  "eligibleEscalations": 1,
   "coverage": {
-    "eligibleTicketsTotal": 310,
+    "eligibleTicketsTotal": 311,
     "eligibleTicketsWithOutlookContext": 2,
-    "coveragePct": 0.6,
-    "note": "Mailbox context is supplemental and non-blocking. 2 of the 25 supplied UFN threads link to eligible conversations; Outlook never adds to Ticket Ops counts, queue, buckets, customer health, or SLA metrics."
+    "coveragePct": 0.64,
+    "note": "Mailbox context is supplemental and non-blocking. 2 of the 25 supplied UFN threads (UFN-69781, UFN-70261) link to eligible conversations; Outlook never adds to Ticket Ops counts, queue, buckets, customer health or SLA metrics. The nht.cs@unisco.com shared mailbox was not readable this cycle."
   },
   "ticketThreads": [
     {
@@ -293,6 +297,9 @@
     "Two New-side auto-replies are conversation legs of Reopen-side threads (UFN-70603 -> UFN-70545, UFN-70316 -> UFN-69406) and are not counted as separate conversations.",
     "UFN numbers appear in message bodies rather than subjects, so subject-only UFN searches return nothing; the mailbox was searched on message content.",
     "Read window 2026-08-30 through 2026-09-13; the mailbox was bulk-loaded on 2026-09-12 so visible activity concentrates on 09-09 through 09-11.",
-    "Action/ask text was not supplied; ask values are null (source-missing)."
-  ]
+    "This cycle re-read only the most recent UFN page; all 13 UFN threads it returned were already present in the carried-forward inventory, so no Outlook thread was added or removed.",
+    "The nht.cs@unisco.com shared alias remains unreadable (access denied); results in this file come from nicole.weber@unisco.com."
+  ],
+  "mailboxScopeUsed": "nicole.weber@unisco.com",
+  "mailboxReadWindow": "Most recent UFN message page (25 messages, receivedDateTime desc) reviewed for this cycle; the fuller 2026-08-30 to 2026-09-13 thread inventory below is carried forward unchanged."
 }

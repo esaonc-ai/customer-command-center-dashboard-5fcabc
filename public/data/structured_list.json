@@ -6,15 +6,15 @@
     "tenant": "LT",
     "timezone": "America/New_York"
   },
-  "lastRefreshed": "2026-09-12T13:45:00-04:00",
+  "lastRefreshed": "2026-09-13T06:36:00-04:00",
   "dataSource": "Ticket Ops (authoritative); Outlook mailbox context available (supplemental)",
   "refreshType": "AUTHORITATIVE",
-  "refreshId": "refresh-2026-09-12T13:45ET-AUTHORITATIVE-v34",
-  "totalRaw": 384,
-  "eligibleBeforeExclusions": 332,
-  "eligibleBeforeDeduplication": 308,
-  "totalEligible": 303,
-  "newCount": 244,
+  "refreshId": "refresh-2026-09-13T06:36:00-04:00-AUTHORITATIVE-v37",
+  "totalRaw": 392,
+  "eligibleBeforeExclusions": 340,
+  "eligibleBeforeDeduplication": 316,
+  "totalEligible": 311,
+  "newCount": 252,
   "openCount": 0,
   "pendingCount": 59,
   "exclusionSummary": {
@@ -29,9 +29,9 @@
     "unassigned": 253
   },
   "actionBuckets": {
-    "Immediate": 32,
-    "Short-Term": 55,
-    "Medium-Term": 24,
+    "Immediate": 14,
+    "Short-Term": 69,
+    "Medium-Term": 36,
     "Watch": 192
   },
   "evidenceMetrics": {
@@ -59,5 +59,21 @@
       "Warning": 25
     },
     "tierRule": "js/dashboard.js Customer Health rule: Critical when >7-day share >= 50% or 3+ tickets; Warning when share >= 25% or 1+ ticket; every eligible ticket is UFN-tagged, so Healthy is structurally unreachable in this dataset."
-  }
+  },
+  "excludedCount": 29,
+  "duplicatesRemoved": 5,
+  "invoiceItemsExcluded": 24,
+  "customerCount": 70,
+  "customerHealthTiers": {
+    "Critical": 45,
+    "Warning": 25,
+    "Healthy": 0
+  },
+  "slaBreached": 216,
+  "slaOnTrack": 95,
+  "unassigned": 260,
+  "oldestAgeDays": 191,
+  "outlookStatus": "available",
+  "outlookThreadsMatched": 25,
+  "outlookThreadsLinkedToEligibleTickets": 2
 }

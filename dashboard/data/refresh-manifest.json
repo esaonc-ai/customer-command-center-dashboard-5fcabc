@@ -1,11 +1,11 @@
 {
   "refresh": {
-    "id": "refresh-2026-09-13T00:33:00-04:00-AUTHORITATIVE-v36",
-    "timestamp": "2026-09-13T00:33:00-04:00",
+    "id": "refresh-2026-09-13T06:36:00-04:00-AUTHORITATIVE-v37",
+    "timestamp": "2026-09-13T06:36:00-04:00",
     "type": "AUTHORITATIVE",
-    "previousRefreshId": "refresh-2026-09-12T20:48:59-04:00-AUTHORITATIVE-v35",
+    "previousRefreshId": "refresh-2026-09-13T00:33:00-04:00-AUTHORITATIVE-v36",
     "status": "complete",
-    "keyChange": "Re-verified NHT/Cesanek Ticket Ops read at 2026-09-13T00:33:00-04:00: the open-system bucket still holds 391 UFN rows (273 New / 66 Pending at the gate, 52 Reopen) and the gate record set is unchanged. Exclusions stand at 24 billing-family rows plus 5 source-backed conversation duplicates, so the working set remains 310 conversations (251 New / 59 Pending). A further 7 same-load C.H. Robinson overlap pairs are flagged for a business ruling rather than collapsed."
+    "keyChange": "Fresh NHT/Cesanek Ticket Ops gate read at 2026-09-13T06:36:00-04:00: 392 open-system UFN rows (274 New / 66 Pending at the gate, 52 Reopen). One arrival (UFN-70676) and no departures; all 24 billing-family and 5 conversation-duplicate exclusions still present. Working set is 311 conversations (252 New / 59 Pending)."
   },
   "rulesApplied": [
     "displayStatusSystemStatus == 10 AND displayStatusName in {New, Pending} is the authoritative eligibility gate",
@@ -34,7 +34,7 @@
           ]
         }
       },
-      "note": "Independent live gate read at 2026-09-13T00:33:00-04:00 returned 339 New+Pending rows, paged to the response total; used to verify the gate record set, per-record status, closeFlag and SLA flags."
+      "note": "Authoritative New+Pending gate read at 2026-09-13T06:36:00-04:00 (delegated Ticket Ops read of department 323826714354839552, paged to exhaustion) plus an independent paged read of the same department in the same window; both agreed on the 340-row gate."
     },
     {
       "name": "Ticket Ops Reopen reconciliation",
@@ -51,20 +51,22 @@
           ]
         }
       },
-      "note": "Supplemental read-only validation returned 52 Reopen rows, all system status 10; not a source for tickets.json."
+      "note": "Read-only reconciliation returned 52 Reopen rows, all displayStatusSystemStatus 10; excluded from the eligible set by displayStatusName, not by closeFlag."
     },
     {
       "name": "Outlook",
-      "note": "Delegated NHT/Cesanek CS mailbox context, refreshed for this cycle; supplemental and non-blocking."
+      "note": "Delegated NHT/Cesanek CS mailbox context read this cycle (nicole.weber@unisco.com; nht.cs@unisco.com returned access denied), supplemental and non-blocking."
     }
   ],
   "developerNotes": [
-    "v36 re-verified the live New+Pending gate (339 rows = 273 New / 66 Pending) and confirmed the gate record set is identical to v35: zero arrivals, zero departures, zero status moves, zero closeFlag moves, zero SLA-flag moves.",
-    "The 24 billing / UF Billing / storage / handling invoice-family exclusions were re-confirmed record by record. UFN-60573 (Handling 6/28-7/4), UFN-53491 and UFN-40670 (F26 Month End Close Reminder series) were re-examined and confirmed billing-family - an intermediate read had wrongly treated them as eligible.",
-    "19 live closeFlag=true records remain in the eligible set (gate-wide 20, of which UFN-65196 is billing-excluded). closeFlag is evidence only and is never an eligibility gate; UFN-67030 is excluded by authoritative status (Solved / systemStatus 20), not by closeFlag.",
-    "The assignment column was NOT refreshed: the delegate's hand-transcribed unassigned split (293 gate-wide) conflicted with the machine-derived baseline on 13 rows, and a targeted per-record re-read confirmed the baseline staffName values were correct. Assignment is retained from the prior machine-derived read and remains the least reliable field in the set.",
-    "Time-derived fields (ageHours, ageDays, action buckets, data freshness) were recomputed at the new refresh instant; 13 records crossed a whole-day age boundary.",
-    "Customer Health covers every customer visible in the eligible ticket set (roster/aliases supplemental only) and still yields 0 Healthy because every eligible record is UFN-tagged."
+    "v37 re-read the live New+Pending gate: 340 rows = 274 New / 66 Pending inside a 392-row open bucket that also holds 52 Reopen rows (all system status 10, excluded by displayStatusName).",
+    "Exactly one arrival this cycle: UFN-70676 (\"Re: Ecommerce Unis\", UPTIME ENERGY INC, created 2026-09-13T05:22:57.000Z), non-billing, no CASE/DN identity collision. No previously eligible record left the gate and no per-record status, closeFlag, SLA or overdue flag moved against v36.",
+    "19 live closeFlag=true records remain in the eligible set (gate-wide 20, of which UFN-65196 is billing-excluded). closeFlag stays evidence-only and is never an eligibility gate.",
+    "UFN-67030 was re-verified by ticket number this cycle: displayStatusName \"Solved\", displayStatusId 2, displayStatusSystemStatus 20, closeFlag=true, last updated 2026-09-01 16:57. It is closed on authoritative status, not on closeFlag; the closeFlag rule is unchanged and the example citation should be replaced with a live closeFlag=true Pending ticket such as UFN-70443 or UFN-70243.",
+    "The 24 billing / UF Billing / storage / handling invoice-family exclusions and the 5 source-backed conversation duplicates were re-confirmed present in the live gate. Deduplication still collapses only CASE/DN conversation identity, never subject text.",
+    "Time-derived fields (ageHours, ageDays, action buckets, freshness) were recomputed at the new refresh instant; 4 records crossed a whole-day age boundary.",
+    "Customer Health covers every customer visible in the eligible ticket set (configured roster/aliases remain supplemental only; public/data/structured_list.json carries an empty roster) and still yields 0 Healthy because every eligible record is UFN-tagged.",
+    "Outlook context was refreshed for this cycle and remains supplemental: 25 supplied UFN threads (13 re-confirmed in this cycle's most-recent window), 2 linking to eligible conversations. The delegated nht.cs@unisco.com shared mailbox could not be read this cycle (HTTP 403); nicole.weber@unisco.com was readable and is the mailbox scope actually used. Outlook never contributes to ticket counts, queue, buckets, customer health or SLA metrics."
   ],
   "exclusions": {
     "billingTicketIds": [
@@ -198,32 +200,32 @@
     "candidateOverlapNote": "Seven C.H. Robinson appointment pairs share an identical source load number (original request plus ' - Follow Up' re-send). They are retained in the eligible set and flagged here because the dashboard's configured deduplication rule collapses only source-backed conversation identity (CASE/DN), never subject- or load-text similarity. Ticket Ops confirms they are the same load; the ticket count would fall from 310 to 303 if the rule were extended to load-number identity. Awaiting a business ruling."
   },
   "dashboardState": {
-    "totalRaw": 391,
-    "totalRawDepartmentWide": 391,
-    "eligibleBeforeExclusions": 339,
+    "totalRaw": 392,
+    "totalRawDepartmentWide": 392,
+    "eligibleBeforeExclusions": 340,
     "reopenExcluded": 52,
     "billingExcluded": 24,
-    "eligibleBeforeDeduplication": 315,
+    "eligibleBeforeDeduplication": 316,
     "duplicatesRemoved": 5,
-    "totalEligible": 310,
+    "totalEligible": 311,
     "closeFlagTrueRetained": 19,
     "byStatus": {
-      "New": 251,
+      "New": 252,
       "Open": 0,
       "Pending": 59
     },
     "byPriority": {
-      "Medium": 305,
+      "Medium": 306,
       "unavailable": 5
     },
     "workload": {
       "overdueOrSlaBreached": 216,
-      "current": 94
+      "current": 95
     },
     "actionBuckets": {
-      "Immediate": 13,
-      "Short-Term": 70,
-      "Medium-Term": 35,
+      "Immediate": 14,
+      "Short-Term": 69,
+      "Medium-Term": 36,
       "Watch": 192
     },
     "customerHealth": {
@@ -427,6 +429,12 @@
           "oldestBreachedAgeDays": 15,
           "tier": "Critical"
         },
+        "UPTIME ENERGY INC": {
+          "tickets": 2,
+          "breached": 1,
+          "oldestBreachedAgeDays": 46,
+          "tier": "Critical"
+        },
         "Y,IWO LLC": {
           "tickets": 2,
           "breached": 2,
@@ -619,12 +627,6 @@
           "oldestBreachedAgeDays": 16,
           "tier": "Critical"
         },
-        "UPTIME ENERGY INC": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 46,
-          "tier": "Critical"
-        },
         "VITA COCO - DTC": {
           "tickets": 1,
           "breached": 0,
@@ -663,7 +665,7 @@
         "customer": "Turtle Beach",
         "subject": "Pending/Overdue Tickets",
         "ageDays": 191,
-        "ageHours": 4598,
+        "ageHours": 4604,
         "slaStatus": "Breached"
       },
       {
@@ -671,7 +673,7 @@
         "customer": "ZEN BEVERAGE",
         "subject": "12x9x12 Boxes Needed",
         "ageDays": 191,
-        "ageHours": 4592,
+        "ageHours": 4598,
         "slaStatus": "Breached"
       },
       {
@@ -679,7 +681,7 @@
         "customer": "ATERIAN INC",
         "subject": "Appointment Request :: PO: DN-1467998 RN-23177 Flock Ref#: VY8-M2X5 ATERIAN, INC.",
         "ageDays": 184,
-        "ageHours": 4423,
+        "ageHours": 4429,
         "slaStatus": "Breached"
       },
       {
@@ -687,7 +689,7 @@
         "customer": "SMEG USA INC",
         "subject": "Commit Block Order - DN-1467983",
         "ageDays": 183,
-        "ageHours": 4404,
+        "ageHours": 4410,
         "slaStatus": "Breached"
       },
       {
@@ -695,7 +697,7 @@
         "customer": "WYNK BEVERAGE - Reverse",
         "subject": "welcome, spring 🌷🍋🪻🍓",
         "ageDays": 175,
-        "ageHours": 4214,
+        "ageHours": 4220,
         "slaStatus": "Breached"
       },
       {
@@ -703,7 +705,7 @@
         "customer": "Turtle Beach",
         "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
         "ageDays": 171,
-        "ageHours": 4118,
+        "ageHours": 4124,
         "slaStatus": "Breached"
       },
       {
@@ -711,7 +713,7 @@
         "customer": "SMEG USA INC",
         "subject": "Reminder following up!",
         "ageDays": 170,
-        "ageHours": 4091,
+        "ageHours": 4097,
         "slaStatus": "Breached"
       },
       {
@@ -719,7 +721,7 @@
         "customer": "NIAGARA BOTTLING LLC",
         "subject": "NIAGARA//JEFF-0327-SRICHAKRA//JEFFERSONVILLE IN",
         "ageDays": 169,
-        "ageHours": 4067,
+        "ageHours": 4073,
         "slaStatus": "Breached"
       },
       {
@@ -727,7 +729,7 @@
         "customer": "NIAGARA BOTTLING LLC",
         "subject": "Re: QUANTIX SCHEDULE - 3/28 & 3/30",
         "ageDays": 166,
-        "ageHours": 3999,
+        "ageHours": 4005,
         "slaStatus": "Breached"
       },
       {
@@ -735,7 +737,7 @@
         "customer": "NIAGARA BOTTLING LLC",
         "subject": "NIAGARA/PLAINFIELD/ DUYTAN/ 4.6- 4.12",
         "ageDays": 165,
-        "ageHours": 3967,
+        "ageHours": 3974,
         "slaStatus": "Breached"
       },
       {
@@ -743,7 +745,7 @@
         "customer": "Turtle Beach",
         "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
         "ageDays": 164,
-        "ageHours": 3950,
+        "ageHours": 3956,
         "slaStatus": "Breached"
       },
       {
@@ -751,7 +753,7 @@
         "customer": "SMEG USA INC",
         "subject": "Schedule Appointment-Pickup(1) - BOL# 33604304",
         "ageDays": 164,
-        "ageHours": 3946,
+        "ageHours": 3952,
         "slaStatus": "Breached"
       },
       {
@@ -759,7 +761,7 @@
         "customer": "PRIME TIME PACKAGING LTD",
         "subject": "Drayage Assignments",
         "ageDays": 160,
-        "ageHours": 3843,
+        "ageHours": 3849,
         "slaStatus": "Breached"
       },
       {
@@ -767,7 +769,7 @@
         "customer": "THE LUCKY OX LLC",
         "subject": "FW: Santa LAST EOD 1/9 ",
         "ageDays": 159,
-        "ageHours": 3829,
+        "ageHours": 3835,
         "slaStatus": "Breached"
       },
       {
@@ -775,15 +777,15 @@
         "customer": "Turtle Beach",
         "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
         "ageDays": 157,
-        "ageHours": 3782,
+        "ageHours": 3788,
         "slaStatus": "Breached"
       }
     ],
     "evidenceMetrics": {
-      "totalEligible": 310,
+      "totalEligible": 311,
       "slaBreached": 216,
-      "slaOnTrack": 94,
-      "unassigned": 259,
+      "slaOnTrack": 95,
+      "unassigned": 260,
       "oldestAgeDays": 191,
       "outlookStatus": "available",
       "outlookThreadsMatched": 25,
@@ -794,7 +796,7 @@
     }
   },
   "excludedThisCycle": {
-    "refreshId": "refresh-2026-09-13T00:33:00-04:00-AUTHORITATIVE-v36",
+    "refreshId": "refresh-2026-09-13T06:36:00-04:00-AUTHORITATIVE-v37",
     "mappingRules": {
       "customer": "Use organization.name, then organizations[0].name; otherwise preserve the source customerName display label unchanged, including email-valued or already-parenthesized names.",
       "priority": "Use source priorityName when valid; otherwise render \"unavailable\" and retain prioritySourceMissing=true (priority never drives queue rank).",

@@ -60,10 +60,10 @@
     "refreshIntervalMinutes": 15
   },
   "snapshotMetrics": {
-    "refreshId": "refresh-2026-09-13T00:33:00-04:00-AUTHORITATIVE-v36",
-    "refreshedAt": "2026-09-13T00:33:00-04:00",
-    "totalRaw": 391,
-    "totalEligible": 310,
+    "refreshId": "refresh-2026-09-13T06:36:00-04:00-AUTHORITATIVE-v37",
+    "refreshedAt": "2026-09-13T06:36:00-04:00",
+    "totalRaw": 392,
+    "totalEligible": 311,
     "excludedCount": 29,
     "duplicatesRemoved": 5,
     "invoiceItemsExcluded": 24,
