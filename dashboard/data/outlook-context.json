@@ -1,8 +1,8 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-13T11:16:00-04:00",
-  "lastRefreshed": "2026-09-13T11:16:00-04:00",
+  "generatedAt": "2026-09-13T17:05:00-04:00",
+  "lastRefreshed": "2026-09-13T17:05:00-04:00",
   "outlookAvailable": true,
   "delegatedMailboxAvailable": true,
   "integrationStatus": "available",
@@ -19,7 +19,7 @@
   ],
   "eligibleEscalations": 1,
   "coverage": {
-    "eligibleTicketsTotal": 320,
+    "eligibleTicketsTotal": 318,
     "eligibleTicketsWithOutlookContext": 2,
     "coveragePct": 0.63,
     "note": "Mailbox context is supplemental and non-blocking. 2 of the 25 supplied UFN threads link to eligible conversations; Outlook never adds to Ticket Ops counts, queue, buckets, customer health or SLA metrics."
@@ -303,5 +303,31 @@
     "The nht.cs@unisco.com shared alias remains unreadable (access denied); results in this file come from nicole.weber@unisco.com."
   ],
   "mailboxScopeUsed": "nicole.weber@unisco.com",
-  "mailboxReadWindow": "Most recent UFN message page reviewed for this cycle; the fuller 2026-08-30 to 2026-09-13 thread inventory below is carried forward unchanged until superseded."
+  "mailboxReadWindow": "Most recent UFN message page reviewed for this cycle; the fuller 2026-08-30 to 2026-09-13 thread inventory below is carried forward unchanged until superseded.",
+  "sharedMailbox": {
+    "mailbox": "nht.cs@unisco.com",
+    "readable": false,
+    "reason": "Access denied (403, insufficient Mail.Read / Mail.Read.Shared) this cycle. Traffic to and from this shared box remains visible because it is copied into the delegated nicole.weber@unisco.com mailbox. Disclosed as a limitation rather than silently dropped."
+  },
+  "thisCycleRead": {
+    "messagesRetrieved": 25,
+    "distinctThreadsPostDedup": 13,
+    "threadsMappedToUfn": 13,
+    "ufnRefs": [
+      "UFN-68515",
+      "UFN-70261",
+      "UFN-68506",
+      "UFN-69120",
+      "UFN-69103",
+      "UFN-69129",
+      "UFN-69781",
+      "UFN-67809",
+      "UFN-70542",
+      "UFN-70553",
+      "UFN-70252",
+      "UFN-70414",
+      "UFN-69116"
+    ],
+    "note": "Read-only. Threads were de-duplicated by conversationId so no ticket/email thread is counted twice."
+  }
 }
