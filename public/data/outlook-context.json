@@ -1,13 +1,13 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-13T08:41:00-04:00",
-  "lastRefreshed": "2026-09-13T08:41:00-04:00",
+  "generatedAt": "2026-09-13T11:16:00-04:00",
+  "lastRefreshed": "2026-09-13T11:16:00-04:00",
   "outlookAvailable": true,
   "delegatedMailboxAvailable": true,
   "integrationStatus": "available",
   "statusLabel": "Available",
-  "dataSource": "Delegated NHT/Cesanek CS mailbox read (nicole.weber@unisco.com; nht.cs@unisco.com shared mailbox returned access denied this cycle)",
+  "dataSource": "Delegated NHT/Cesanek CS mailbox read (nicole.weber@unisco.com); supplemental and non-blocking",
   "integration": "non_blocking",
   "threadsMatched": 25,
   "threadsLinkedToEligibleTickets": 2,
@@ -19,10 +19,10 @@
   ],
   "eligibleEscalations": 1,
   "coverage": {
-    "eligibleTicketsTotal": 311,
+    "eligibleTicketsTotal": 320,
     "eligibleTicketsWithOutlookContext": 2,
-    "coveragePct": 0.64,
-    "note": "Mailbox context is supplemental and non-blocking. 2 of the 25 supplied UFN threads (UFN-69781, UFN-70261) link to eligible conversations; Outlook never adds to Ticket Ops counts, queue, buckets, customer health or SLA metrics. The nht.cs@unisco.com shared mailbox was not readable this cycle."
+    "coveragePct": 0.63,
+    "note": "Mailbox context is supplemental and non-blocking. 2 of the 25 supplied UFN threads link to eligible conversations; Outlook never adds to Ticket Ops counts, queue, buckets, customer health or SLA metrics."
   },
   "ticketThreads": [
     {
@@ -303,5 +303,5 @@
     "The nht.cs@unisco.com shared alias remains unreadable (access denied); results in this file come from nicole.weber@unisco.com."
   ],
   "mailboxScopeUsed": "nicole.weber@unisco.com",
-  "mailboxReadWindow": "Most recent UFN message page reviewed for this cycle; the fuller 2026-08-30 to 2026-09-13 thread inventory below is carried forward unchanged."
+  "mailboxReadWindow": "Most recent UFN message page reviewed for this cycle; the fuller 2026-08-30 to 2026-09-13 thread inventory below is carried forward unchanged until superseded."
 }

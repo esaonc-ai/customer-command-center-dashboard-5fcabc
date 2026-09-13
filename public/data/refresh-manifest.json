@@ -1,11 +1,11 @@
 {
   "refresh": {
-    "id": "refresh-2026-09-13T08:41:00-04:00-AUTHORITATIVE-v38",
-    "timestamp": "2026-09-13T08:41:00-04:00",
+    "id": "refresh-2026-09-13T11:16:00-04:00-AUTHORITATIVE-v39",
+    "timestamp": "2026-09-13T11:16:00-04:00",
     "type": "AUTHORITATIVE",
-    "previousRefreshId": "refresh-2026-09-13T06:36:00-04:00-AUTHORITATIVE-v37",
+    "previousRefreshId": "refresh-2026-09-13T08:41:00-04:00-AUTHORITATIVE-v38",
     "status": "complete",
-    "keyChange": "Fresh NHT/Cesanek Ticket Ops gate read at 2026-09-13T08:41:00-04:00: 392 open-system UFN rows (274 New / 66 Pending at the gate, 52 Reopen). No arrivals and no departures; all 24 billing-family and 5 conversation-duplicate exclusions still present and per-record status/closeFlag/SLA/overdue flags unchanged. Working set is 311 conversations (252 New / 59 Pending)."
+    "keyChange": "Fresh NHT/Cesanek Ticket Ops gate read at 2026-09-13T11:16:00-04:00: 401 open-system UFN rows (283 New / 66 Pending at the gate, 52 Reopen). 9 arrivals and 0 departures; all 24 billing-family and 5 conversation-duplicate exclusions still present. Working set is 320 conversations (261 New / 59 Pending)."
   },
   "rulesApplied": [
     "displayStatusSystemStatus == 10 AND displayStatusName in {New, Pending} is the authoritative eligibility gate",
@@ -34,7 +34,7 @@
           ]
         }
       },
-      "note": "Authoritative New+Pending gate read at 2026-09-13T08:41:00-04:00 (delegated Ticket Ops read of department 323826714354839552, paged to exhaustion; two reads in the same window returned identical totals and identical ticket sets, 274 / 66)."
+      "note": "Authoritative New+Pending gate read at 2026-09-13T11:16:00-04:00 (paged to exhaustion from the live Ticket Ops gate of department 323826714354839552; 283 New / 66 Pending / 349 total, with the New and Pending totals independently re-counted at 283 and 66)."
     },
     {
       "name": "Ticket Ops Reopen reconciliation",
@@ -55,20 +55,20 @@
     },
     {
       "name": "Outlook",
-      "note": "Delegated NHT/Cesanek CS mailbox context read this cycle (nicole.weber@unisco.com; nht.cs@unisco.com returned access denied 403), supplemental and non-blocking."
+      "note": "Delegated NHT/Cesanek CS mailbox context read this cycle, supplemental and non-blocking."
     }
   ],
   "developerNotes": [
-    "v38 re-read the live New+Pending gate: 340 rows = 274 New / 66 Pending inside a 392-row open bucket that also holds 52 Reopen rows (all system status 10, excluded by displayStatusName).",
-    "Zero movement this cycle: the live gate reconciles row-for-row with the v37 baseline (311 eligible + 24 billing + 5 duplicate conversations = 340) — no arrival, no departure, and no per-record status, closeFlag, SLA or overdue flag moved.",
+    "v39 re-read the live New+Pending gate: 349 rows = 283 New / 66 Pending inside a 401-row open bucket that also holds 52 Reopen rows (all system status 10, excluded by displayStatusName).",
+    "Movement this cycle: 9 arrivals (UFN-70688, UFN-70687, UFN-70686, UFN-70685, UFN-70684, UFN-70683, UFN-70682, UFN-70681, UFN-70680) against 0 departures. The eligible working set moved 311 -> 320.",
+    "The 24 billing / UF Billing / storage / handling invoice-family exclusions and the 5 source-backed conversation duplicates were all re-confirmed present in the live gate. Deduplication still collapses only CASE/DN conversation identity, never subject text.",
     "19 live closeFlag=true records remain in the eligible set (gate-wide 20, of which UFN-65196 is billing-excluded). closeFlag stays evidence-only and is never an eligibility gate.",
-    "The UFN-67030 citation remains stale and is NOT in this department's New/Pending or Reopen rows at this read. It is closed on authoritative status, not on closeFlag. The rule is independently evidenced by the 20 live Pending rows carrying closeFlag=true (for example UFN-70443, UFN-70412, UFN-70243, UFN-69781), all of which are system-OPEN and Pending and were correctly retained.",
-    "The 24 billing / UF Billing / storage / handling invoice-family exclusions and the 5 source-backed conversation duplicates were re-confirmed present in the live gate. Deduplication still collapses only CASE/DN conversation identity, never subject text.",
-    "Time-derived fields (ageHours, ageDays, action buckets, freshness) were recomputed at the new refresh instant; 12 records crossed a whole-day age boundary.",
+    "The UFN-67030 citation is stale and is NOT in this department's New/Pending or Reopen rows at this read; it is Solved on authoritative status (displayStatusSystemStatus 20, closedTime 09/01/2026). Its exclusion is driven by status, not by closeFlag.",
+    "Time-derived fields (ageHours, ageDays, action buckets, freshness) were recomputed at the new refresh instant; 126 existing records crossed a whole-day age boundary.",
     "Status-name audit: the display-status dictionary actually in use in this department is New(11), Pending(6), Reopen(1), Solved(2). There are no \"Open\"-named rows, so the \"New / Open / Pending\" inclusion rule resolves to New + Pending, with the Reopen cohort excluded by name.",
-    "No Pending sub-status breakdown is published: all 66 Pending rows carry a single display status \"Pending\" (id 6). A Pending-Customer / Pending-3rdParty / Pending-Operations split has no ticket-level basis in this department and is deliberately not printed.",
+    "No Pending sub-status breakdown is published: all 66 Pending rows carry a single display status \"Pending\" (id 6).",
     "Customer Health covers every customer visible in the eligible ticket set (configured roster/aliases remain supplemental only; public/data/structured_list.json carries an empty roster) and still yields 0 Healthy because every eligible record is UFN-tagged.",
-    "Outlook context was refreshed for this cycle and remains supplemental: 25 supplied UFN threads, 2 linking to eligible conversations (UFN-69781, UFN-70261). The delegated nht.cs@unisco.com shared mailbox could not be read this cycle (HTTP 403); nicole.weber@unisco.com was readable and is the mailbox scope actually used. Outlook never contributes to ticket counts, queue, buckets, customer health or SLA metrics."
+    "Outlook context remains supplemental and never contributes to ticket counts, queue, buckets, customer health or SLA metrics."
   ],
   "exclusions": {
     "billingTicketIds": [
@@ -202,39 +202,39 @@
     "candidateOverlapNote": "Seven C.H. Robinson appointment pairs share an identical source load number (original request plus ' - Follow Up' re-send). They are retained in the eligible set and flagged here because the dashboard's configured deduplication rule collapses only source-backed conversation identity (CASE/DN), never subject- or load-text similarity. Ticket Ops confirms they are the same load; the ticket count would fall from 310 to 303 if the rule were extended to load-number identity. Awaiting a business ruling."
   },
   "dashboardState": {
-    "totalRaw": 392,
-    "totalRawDepartmentWide": 392,
-    "eligibleBeforeExclusions": 340,
+    "totalRaw": 401,
+    "totalRawDepartmentWide": 401,
+    "eligibleBeforeExclusions": 349,
     "reopenExcluded": 52,
     "billingExcluded": 24,
-    "eligibleBeforeDeduplication": 316,
+    "eligibleBeforeDeduplication": 325,
     "duplicatesRemoved": 5,
-    "totalEligible": 311,
+    "totalEligible": 320,
     "closeFlagTrueRetained": 19,
     "byStatus": {
-      "New": 252,
+      "New": 261,
       "Open": 0,
       "Pending": 59
     },
     "byPriority": {
-      "Medium": 306,
+      "Medium": 315,
       "unavailable": 5
     },
     "workload": {
       "overdueOrSlaBreached": 216,
-      "current": 95
+      "current": 104
     },
     "actionBuckets": {
-      "Immediate": 14,
-      "Short-Term": 69,
-      "Medium-Term": 36,
+      "Immediate": 20,
+      "Short-Term": 68,
+      "Medium-Term": 40,
       "Watch": 192
     },
     "customerHealth": {
       "totalCustomers": 70,
       "tiers": {
-        "Critical": 45,
-        "Warning": 25,
+        "Critical": 46,
+        "Warning": 24,
         "Healthy": 0
       },
       "tierRule": "Critical if ticketsOlderThan7Days/tickets >= 0.5 OR ufnCount >= 3; Warning if share >= 0.25 OR ufnCount >= 1; otherwise Healthy. Every eligible ticket is UFN-tagged, so Healthy is structurally unreachable.",
@@ -242,13 +242,19 @@
         "LASSONDE PAPPAS AND COMPANY, INC.": {
           "tickets": 57,
           "breached": 55,
-          "oldestBreachedAgeDays": 72,
+          "oldestBreachedAgeDays": 73,
+          "tier": "Critical"
+        },
+        "wilmer.benitez@unisco.com": {
+          "tickets": 24,
+          "breached": 0,
+          "oldestBreachedAgeDays": 0,
           "tier": "Critical"
         },
         "Turtle Beach": {
           "tickets": 22,
           "breached": 22,
-          "oldestBreachedAgeDays": 191,
+          "oldestBreachedAgeDays": 192,
           "tier": "Critical"
         },
         "PRIME TIME PACKAGING LTD": {
@@ -257,16 +263,10 @@
           "oldestBreachedAgeDays": 160,
           "tier": "Critical"
         },
-        "wilmer.benitez@unisco.com": {
-          "tickets": 18,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
-          "tier": "Critical"
-        },
         "THE ANDERSONS, INC.": {
           "tickets": 16,
           "breached": 1,
-          "oldestBreachedAgeDays": 66,
+          "oldestBreachedAgeDays": 67,
           "tier": "Critical"
         },
         "SMEG USA INC": {
@@ -296,7 +296,7 @@
         "ATERIAN GROUP, INC.": {
           "tickets": 7,
           "breached": 2,
-          "oldestBreachedAgeDays": 12,
+          "oldestBreachedAgeDays": 13,
           "tier": "Critical"
         },
         "RITUAL BEVERAGE COMPANY": {
@@ -332,7 +332,7 @@
         "NIAGARA BOTTLING LLC - RESIN": {
           "tickets": 5,
           "breached": 2,
-          "oldestBreachedAgeDays": 19,
+          "oldestBreachedAgeDays": 20,
           "tier": "Critical"
         },
         "AVIRON INTERACTIVE INC": {
@@ -341,10 +341,16 @@
           "oldestBreachedAgeDays": 26,
           "tier": "Critical"
         },
+        "MODERN INFUSIONS LLC": {
+          "tickets": 4,
+          "breached": 0,
+          "oldestBreachedAgeDays": 0,
+          "tier": "Critical"
+        },
         "Natural Rapport (Q & C Products LLC) ": {
           "tickets": 4,
           "breached": 4,
-          "oldestBreachedAgeDays": 54,
+          "oldestBreachedAgeDays": 55,
           "tier": "Critical"
         },
         "RECESS": {
@@ -353,10 +359,16 @@
           "oldestBreachedAgeDays": 132,
           "tier": "Critical"
         },
+        "RISE BEVERAGES LLC dba RISE BREWING COMPANY": {
+          "tickets": 4,
+          "breached": 1,
+          "oldestBreachedAgeDays": 4,
+          "tier": "Critical"
+        },
         "ROAR BEVERAGES INC": {
           "tickets": 4,
           "breached": 1,
-          "oldestBreachedAgeDays": 134,
+          "oldestBreachedAgeDays": 135,
           "tier": "Critical"
         },
         "GOLDEN BULL MARKETING": {
@@ -365,16 +377,10 @@
           "oldestBreachedAgeDays": 75,
           "tier": "Critical"
         },
-        "MODERN INFUSIONS LLC": {
-          "tickets": 3,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
-          "tier": "Critical"
-        },
-        "RISE BEVERAGES LLC dba RISE BREWING COMPANY": {
+        "MAIZLY INC.": {
           "tickets": 3,
           "breached": 1,
-          "oldestBreachedAgeDays": 4,
+          "oldestBreachedAgeDays": 3,
           "tier": "Critical"
         },
         "Tweetie Leigh Lamoste (tweetie.lamoste@unisco.com)": {
@@ -386,7 +392,7 @@
         "DEEBEE'S ORGANICS INC": {
           "tickets": 2,
           "breached": 2,
-          "oldestBreachedAgeDays": 22,
+          "oldestBreachedAgeDays": 23,
           "tier": "Critical"
         },
         "EMS MIND READER LLC": {
@@ -398,20 +404,14 @@
         "FXF-DCN": {
           "tickets": 2,
           "breached": 1,
-          "oldestBreachedAgeDays": 8,
+          "oldestBreachedAgeDays": 9,
           "tier": "Critical"
         },
         "HISENSE USA CORPORATION": {
           "tickets": 2,
           "breached": 2,
-          "oldestBreachedAgeDays": 39,
+          "oldestBreachedAgeDays": 40,
           "tier": "Critical"
-        },
-        "MAIZLY INC.": {
-          "tickets": 2,
-          "breached": 1,
-          "oldestBreachedAgeDays": 3,
-          "tier": "Warning"
         },
         "Quarantine": {
           "tickets": 2,
@@ -422,7 +422,7 @@
         "SHEEX, INC.": {
           "tickets": 2,
           "breached": 2,
-          "oldestBreachedAgeDays": 22,
+          "oldestBreachedAgeDays": 23,
           "tier": "Critical"
         },
         "SPLENDOR WATER LLC": {
@@ -440,7 +440,7 @@
         "Y,IWO LLC": {
           "tickets": 2,
           "breached": 2,
-          "oldestBreachedAgeDays": 64,
+          "oldestBreachedAgeDays": 65,
           "tier": "Critical"
         },
         "ZEN BEVERAGE LLC": {
@@ -518,13 +518,13 @@
         "COOLERSBYU, LLC.": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 138,
+          "oldestBreachedAgeDays": 139,
           "tier": "Critical"
         },
         "Erica Stiles": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 11,
+          "oldestBreachedAgeDays": 12,
           "tier": "Critical"
         },
         "Greg Russello (GRussello@vitacoco.com)": {
@@ -542,7 +542,7 @@
         "KARAKA, LLC": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 3,
+          "oldestBreachedAgeDays": 4,
           "tier": "Warning"
         },
         "LIFEPRO FITNESS LLC": {
@@ -554,7 +554,7 @@
         "mchordas@factory-llc.com": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 3,
+          "oldestBreachedAgeDays": 4,
           "tier": "Warning"
         },
         "mlibertore@codaresources.com": {
@@ -590,7 +590,7 @@
         "ROYALTY DISTRIBUTION": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 26,
+          "oldestBreachedAgeDays": 27,
           "tier": "Critical"
         },
         "sara@splendorwater.com": {
@@ -620,7 +620,7 @@
         "THE LUCKY OX LLC": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 159,
+          "oldestBreachedAgeDays": 160,
           "tier": "Critical"
         },
         "UNIVERA BRANDS": {
@@ -644,7 +644,7 @@
         "WYNK BEVERAGE - Reverse": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 175,
+          "oldestBreachedAgeDays": 176,
           "tier": "Critical"
         },
         "Yuki Ho": {
@@ -666,8 +666,8 @@
         "ticketId": "UFN-33604",
         "customer": "Turtle Beach",
         "subject": "Pending/Overdue Tickets",
-        "ageDays": 191,
-        "ageHours": 4606,
+        "ageDays": 192,
+        "ageHours": 4609,
         "slaStatus": "Breached"
       },
       {
@@ -675,7 +675,7 @@
         "customer": "ZEN BEVERAGE",
         "subject": "12x9x12 Boxes Needed",
         "ageDays": 191,
-        "ageHours": 4600,
+        "ageHours": 4602,
         "slaStatus": "Breached"
       },
       {
@@ -683,7 +683,7 @@
         "customer": "ATERIAN INC",
         "subject": "Appointment Request :: PO: DN-1467998 RN-23177 Flock Ref#: VY8-M2X5 ATERIAN, INC.",
         "ageDays": 184,
-        "ageHours": 4431,
+        "ageHours": 4434,
         "slaStatus": "Breached"
       },
       {
@@ -691,23 +691,23 @@
         "customer": "SMEG USA INC",
         "subject": "Commit Block Order - DN-1467983",
         "ageDays": 183,
-        "ageHours": 4412,
+        "ageHours": 4415,
         "slaStatus": "Breached"
       },
       {
         "ticketId": "UFN-37858",
         "customer": "WYNK BEVERAGE - Reverse",
         "subject": "welcome, spring 🌷🍋🪻🍓",
-        "ageDays": 175,
-        "ageHours": 4222,
+        "ageDays": 176,
+        "ageHours": 4224,
         "slaStatus": "Breached"
       },
       {
         "ticketId": "UFN-39065",
         "customer": "Turtle Beach",
         "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
-        "ageDays": 171,
-        "ageHours": 4126,
+        "ageDays": 172,
+        "ageHours": 4129,
         "slaStatus": "Breached"
       },
       {
@@ -715,7 +715,7 @@
         "customer": "SMEG USA INC",
         "subject": "Reminder following up!",
         "ageDays": 170,
-        "ageHours": 4099,
+        "ageHours": 4102,
         "slaStatus": "Breached"
       },
       {
@@ -723,15 +723,15 @@
         "customer": "NIAGARA BOTTLING LLC",
         "subject": "NIAGARA//JEFF-0327-SRICHAKRA//JEFFERSONVILLE IN",
         "ageDays": 169,
-        "ageHours": 4075,
+        "ageHours": 4078,
         "slaStatus": "Breached"
       },
       {
         "ticketId": "UFN-40213",
         "customer": "NIAGARA BOTTLING LLC",
         "subject": "Re: QUANTIX SCHEDULE - 3/28 & 3/30",
-        "ageDays": 166,
-        "ageHours": 4007,
+        "ageDays": 167,
+        "ageHours": 4009,
         "slaStatus": "Breached"
       },
       {
@@ -739,15 +739,15 @@
         "customer": "NIAGARA BOTTLING LLC",
         "subject": "NIAGARA/PLAINFIELD/ DUYTAN/ 4.6- 4.12",
         "ageDays": 165,
-        "ageHours": 3976,
+        "ageHours": 3978,
         "slaStatus": "Breached"
       },
       {
         "ticketId": "UFN-40860",
         "customer": "Turtle Beach",
         "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
-        "ageDays": 164,
-        "ageHours": 3958,
+        "ageDays": 165,
+        "ageHours": 3961,
         "slaStatus": "Breached"
       },
       {
@@ -755,7 +755,7 @@
         "customer": "SMEG USA INC",
         "subject": "Schedule Appointment-Pickup(1) - BOL# 33604304",
         "ageDays": 164,
-        "ageHours": 3954,
+        "ageHours": 3956,
         "slaStatus": "Breached"
       },
       {
@@ -763,42 +763,44 @@
         "customer": "PRIME TIME PACKAGING LTD",
         "subject": "Drayage Assignments",
         "ageDays": 160,
-        "ageHours": 3851,
+        "ageHours": 3854,
         "slaStatus": "Breached"
       },
       {
         "ticketId": "UFN-42031",
         "customer": "THE LUCKY OX LLC",
         "subject": "FW: Santa LAST EOD 1/9 ",
-        "ageDays": 159,
-        "ageHours": 3837,
+        "ageDays": 160,
+        "ageHours": 3840,
         "slaStatus": "Breached"
       },
       {
         "ticketId": "UFN-42645",
         "customer": "Turtle Beach",
         "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
-        "ageDays": 157,
-        "ageHours": 3790,
+        "ageDays": 158,
+        "ageHours": 3793,
         "slaStatus": "Breached"
       }
     ],
     "evidenceMetrics": {
-      "totalEligible": 311,
+      "totalEligible": 320,
       "slaBreached": 216,
-      "slaOnTrack": 95,
-      "unassigned": 260,
-      "oldestAgeDays": 191,
+      "slaOnTrack": 104,
+      "unassigned": 263,
+      "oldestAgeDays": 192,
       "outlookStatus": "available",
       "outlookThreadsMatched": 25,
       "outlookThreadsLinkedToEligibleTickets": 2,
       "invoiceItemsExcluded": 24,
       "duplicatesRemoved": 5,
-      "candidateOverlapsFlagged": 7
+      "candidateOverlapsFlagged": 7,
+      "arrivalsThisCycle": 9,
+      "departuresThisCycle": 0
     }
   },
   "excludedThisCycle": {
-    "refreshId": "refresh-2026-09-13T08:41:00-04:00-AUTHORITATIVE-v38",
+    "refreshId": "refresh-2026-09-13T11:16:00-04:00-AUTHORITATIVE-v39",
     "mappingRules": {
       "customer": "Use organization.name, then organizations[0].name; otherwise preserve the source customerName display label unchanged, including email-valued or already-parenthesized names.",
       "priority": "Use source priorityName when valid; otherwise render \"unavailable\" and retain prioritySourceMissing=true (priority never drives queue rank).",
@@ -878,7 +880,32 @@
       "UFN-43887"
     ],
     "candidateOverlapsRetained": 7,
-    "total": 81
+    "total": 81,
+    "arrivals": {
+      "count": 9,
+      "ticketNumbers": [
+        "UFN-70688",
+        "UFN-70687",
+        "UFN-70686",
+        "UFN-70685",
+        "UFN-70684",
+        "UFN-70683",
+        "UFN-70682",
+        "UFN-70681",
+        "UFN-70680"
+      ],
+      "customers": [
+        "MAIZLY INC.",
+        "MODERN INFUSIONS LLC",
+        "RISE BEVERAGES LLC dba RISE BREWING COMPANY",
+        "wilmer.benitez@unisco.com"
+      ]
+    },
+    "departures": {
+      "count": 0,
+      "ticketNumbers": []
+    },
+    "recordFlagChanges": []
   },
   "nextScheduledRefresh": "2026-09-14T08:00:00-04:00"
 }

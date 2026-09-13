@@ -36,24 +36,38 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** – Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** – Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Sep 13 8:41 AM ET - AUTHORITATIVE v38)
+## Current Dashboard State (Last Refresh: Sep 13 11:16 AM ET - AUTHORITATIVE v39)
 
 | Metric | Value |
 |--------|-------|
-| Total Raw (open UFN, department scope) | **392** = 274 New / 66 Pending / 52 Reopen &middot; New+Pending gate **340** |
-| Eligible | **311** conversations (252 New, 0 Open, 59 Pending) |
-| UFN-Count | 311 |
+| Total Raw (open UFN, department scope) | **401** = 283 New / 66 Pending / 52 Reopen &middot; New+Pending gate **349** |
+| Eligible | **320** conversations (261 New, 0 Open, 59 Pending) |
+| UFN-Count | 320 |
 | Excluded | 29 &mdash; 24 billing/UF Billing/storage/handling/invoice items + 5 confirmed overlapping conversations (+52 Reopen rows outside the gate) |
-| Flagged | 7 C.H. Robinson same-load overlap pairs retained pending a business ruling (would take eligible to 304) |
-| closeFlag | **NOT a gate** - 19 live `closeFlag=true` tickets retained |
-| Customers | **70** distinct customers (45 Critical / 25 Warning / 0 Healthy; all ticket-visible customers, roster/aliases supplemental) |
-| Priority | 306 Medium / 5 unavailable from source; ranking does not depend on priority |
-| SLA Risk | **ELEVATED** - 216 SLA-breached / 95 current; 260 unassigned |
-| Action Buckets | Immediate **14** / Short-Term **69** / Medium-Term **36** / Watch **192** |
+| Arrivals this cycle | **+9** (UFN-70688, UFN-70687, UFN-70686, UFN-70685, UFN-70684, UFN-70683, UFN-70682, UFN-70681, UFN-70680) &middot; departures **0** |
+| Flagged | 7 C.H. Robinson same-load overlap pairs retained pending a business ruling (would take eligible to 313) |
+| closeFlag | **NOT a gate** - 19 live \`closeFlag=true\` tickets retained |
+| Customers | **70** distinct customers (46 Critical / 24 Warning / 0 Healthy; all ticket-visible customers, roster/aliases supplemental) |
+| Priority | 315 Medium / 5 unavailable from source; ranking does not depend on priority |
+| SLA Risk | **ELEVATED** - 216 SLA-breached / 104 current; 263 unassigned |
+| Action Buckets | Immediate **20** / Short-Term **68** / Medium-Term **40** / Watch **192** |
 | Outlook Coverage | **Available** - 25 UFN threads retrieved, 2 link to eligible tickets; supplemental only, never counted in ticket totals |
-| Last Refresh | 2026-09-13T08:41:00-04:00 (**AUTHORITATIVE v38** - live Ticket Ops gate read of department 323826714354839552, independent of the prior cycle) |
+| Last Refresh | 2026-09-13T11:16:00-04:00 (**AUTHORITATIVE v39** - live Ticket Ops gate read of department 323826714354839552, independent of the prior cycle) |
 
 ## Developer Reconciliation Note
+
+### v38 -> v39 (Sep 13 8:41 AM ET -> Sep 13 11:16 AM ET)
+
+- **Net movement: +9 eligible conversations.** The authoritative New+Pending gate moved 340 -> 349 rows (283 New / 66 Pending) inside a 401-row open bucket that still holds 52 Reopen rows.
+- **Arrivals are exact and enumerated.** 9 new tickets entered the gate and none departed: UFN-70688, UFN-70687, UFN-70686, UFN-70685, UFN-70684, UFN-70683, UFN-70682, UFN-70681, UFN-70680. They resolve to 4 customer labels: MAIZLY INC.; MODERN INFUSIONS LLC; RISE BEVERAGES LLC dba RISE BREWING COMPANY; wilmer.benitez@unisco.com. Nothing else in the gate moved in status.
+- **Exclusions re-confirmed against the live gate, not re-guessed.** All 24 billing-family rows and all 5 duplicate conversations were present in the live read, so the exclusion set is unchanged. UFN-60009 (Amazon Invoice reference on a BOL request) and UFN-69231 (ODFL PRO-number request) remain retained pending a business ruling.
+- **closeFlag evidence unchanged and re-proven.** 19 live \`closeFlag=true\` records remain in the eligible set (gate-wide 20; UFN-65196 is billing-excluded). All 20 sit on Pending rows that are system-OPEN, which is exactly the auto-close artifact that makes closeFlag unusable as an eligibility gate.
+- **The UFN-67030 citation is stale.** Authoritative Ticket Ops status for UFN-67030 is Solved (displayStatusSystemStatus 20, closedTime 09/01/2026, displayStatusName "Solved"), so it is excluded on **status**, not on closeFlag. The closeFlag rule stands and is better evidenced by the live closeFlag=true Pending rows (UFN-70443, UFN-70412, UFN-70304, UFN-70243, UFN-70130, UFN-69781).
+- **Status-name audit.** The display-status dictionary in use here is New(11), Pending(6), Reopen(1), Solved(2) - there are no "Open"-named rows, so the "New / Open / Pending" inclusion rule resolves to New + Pending with Reopen excluded by name. No Pending sub-status split is published, because all 66 Pending rows carry a single status "Pending" (id 6).
+- **Flagged records remain retained.** The 7 same-load C.H. Robinson pairs are still carried unchanged pending a business ruling; deduplication continues to collapse only CASE/DN conversation identity.
+- **Time-derived fields refreshed.** ageHours/ageDays, action buckets and freshness were recomputed at the new refresh instant; 126 existing records crossed a whole-day age boundary.
+- **Customer Health matches the rendered rule.** All customers visible in eligible tickets are covered (roster/aliases supplemental; the structured list carries an empty roster) and the tiers remain 46 Critical / 24 Warning / 0 Healthy, with Healthy structurally unreachable because every eligible ticket is UFN-tagged.
+- **Outlook stayed supplemental.** Mailbox context was refreshed for this cycle and remains non-blocking: it never contributes to ticket counts, queue, buckets, customer health or SLA metrics.
 
 ### v37 -> v38 (Sep 13 6:36 AM ET -> Sep 13 8:41 AM ET)
 
