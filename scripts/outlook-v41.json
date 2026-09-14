@@ -1,0 +1,132 @@
+{
+  "refreshId": "refresh-2026-09-13T22:31:00-04:00-AUTHORITATIVE-v41",
+  "sourceNote": "Delegated Outlook context read for the NHT/Cesanek Customer Command Center refresh. Supplemental and non-blocking; never contributes to ticket counts, queue, action buckets, customer health or SLA metrics.",
+  "generatedAtET": "2026-09-13T22:30:00-04:00",
+  "mailboxesRead": ["nicole.weber@unisco.com"],
+  "mailboxesBlocked": [
+    {
+      "mailbox": "nht.cs@unisco.com",
+      "reason": "403 Access denied - requires Mail.Read.Shared (delegated) or Mail.Read (application). Traffic to and from this shared box is still visible because it is copied into the delegated nicole.weber@unisco.com mailbox."
+    }
+  ],
+  "paginationLimitation": "Search pagination beyond the first page is unsupported for this mailbox; the context window is the most recent UFN message page (25 messages), matching prior cycles.",
+  "contextWindow": {
+    "ufnMessagesInPage": 25,
+    "distinctThreadsPostDedup": 13,
+    "distinctUfnTickets": 13,
+    "dedupeKey": "conversationId"
+  },
+  "escalations": [
+    "UFN-69781 - HINT Beverage via Fusion Transport: HIGH IMPORTANCE, repeated missing-EDI-tender chase on loads picked up 9/9-9/11.",
+    "UFN-67809 - Maizly/KeHE via Klimson Logistics: customer chasing pickup/drop-trailer and PRO per BOL; carrier did not pick up as scheduled.",
+    "UFN-68515, UFN-68506, UFN-69120, UFN-69103 - KD Nutra (Pharmavite / Nordic): time-sensitive relabeling, shipping and appointment-confirmation chases.",
+    "UFN-70261 - Drink Hint: inventory shortage (HVP41-1612); cancel-order and cycle-count chase.",
+    "UFN-70542, UFN-70252, UFN-70414, UFN-70553 - Maizly / Colavita: schedule pressure, 'push out today', early-arrival and appointment requests."
+  ],
+  "threads": [
+    {
+      "ticketRef": "UFN-67809",
+      "customer": "Maizly (for KeHE) via Klimson Logistics",
+      "subject": "RE: DN-2121155 PO3878087 KEHE0034",
+      "lastMessageET": "09-13 20:54 ET",
+      "ask": null,
+      "note": "Customer chase: confirm the three POs are on Estes / drop trailer and provide PRO per BOL; carrier did not pick up as scheduled. Content is quoted inside the HINT thread, so it is counted once here."
+    },
+    {
+      "ticketRef": "UFN-69781",
+      "customer": "HINT Beverage (via Fusion Transport)",
+      "subject": "UNIS - HINT BEVERAGE - NORTHAMPTON, PA - WEEK OF 9/7/26",
+      "lastMessageET": "09-13 19:20 ET",
+      "ask": null,
+      "note": "HIGH IMPORTANCE - repeated chase for EDI tenders / PRO for loads picked up 9/9-9/11; tenders 50040721/722/723 missing."
+    },
+    {
+      "ticketRef": "UFN-68515",
+      "customer": "KD Nutra / Pharmavite (Silvia Placido)",
+      "subject": "Re: Pharmavite PO 352169 (SO110492) - DN-2123596 (special instructions)",
+      "lastMessageET": "09-11 16:22 ET",
+      "ask": null,
+      "note": "Confirm whether relabeling + shipment will be performed by Unis; time-sensitive."
+    },
+    {
+      "ticketRef": "UFN-70261",
+      "customer": "DrinkHint (HINT) - Brian Dalder",
+      "subject": "HVP41-1612 Orders | 09/07-09/11",
+      "lastMessageET": "09-11 16:21 ET",
+      "ask": null,
+      "note": "Customer chase: inventory short (HVP41-1612); cancel orders / cycle count of remaining inventory; repeated follow-ups."
+    },
+    {
+      "ticketRef": "UFN-68506",
+      "customer": "KD Nutra / Pharmavite (Silvia Placido)",
+      "subject": "Re: Pharmavite PO 352168 (SO110487) - DN-2123575 (special instructions)",
+      "lastMessageET": "09-11 16:18 ET",
+      "ask": null,
+      "note": "Have labels arrived / has work started? Order must ship this week; awaiting confirmation."
+    },
+    {
+      "ticketRef": "UFN-69120",
+      "customer": "KD Nutra / Nordic (Silvia Placido)",
+      "subject": "Re: Nordic - PO4500006091 (SO110100A) - DN-2126292 & (SO110100B) - DN-2126300",
+      "lastMessageET": "09-11 16:12 ET",
+      "ask": null,
+      "note": "Time-sensitive; urgently needs appointment confirmation so pickup can be scheduled."
+    },
+    {
+      "ticketRef": "UFN-69103",
+      "customer": "KD Nutra / Nordic (Silvia Placido)",
+      "subject": "Re: Nordic - PO4500005466 (SO109539A) - DN-2126240 & (SO109539B) - DN-2126248",
+      "lastMessageET": "09-11 16:11 ET",
+      "ask": null,
+      "note": "Time-sensitive; needs appointment confirmation / pickup scheduling."
+    },
+    {
+      "ticketRef": "UFN-69129",
+      "customer": "UNY Brands / MPW (Matthew Bobrow); Shailene Baez (Unis AM)",
+      "subject": "Re: MPW Internal WH Transfer - PA > CA",
+      "lastMessageET": "09-11 15:24 ET",
+      "ask": null,
+      "note": "Walmart orders from 9/8 scheduled for pickup Mon 9/14 (load 93910011); pending import into Wise / transfer orders."
+    },
+    {
+      "ticketRef": "UFN-70553",
+      "customer": "Colavita (Chiara Vitali) / Vitelli Foods",
+      "subject": "Re: SO124422 / PO 997609bis / DN-2128230",
+      "lastMessageET": "09-11 14:37 ET",
+      "ask": null,
+      "note": "Pickup scheduled Mon 9/14 (9am-2pm); confirm relabel/ship responsibilities."
+    },
+    {
+      "ticketRef": "UFN-70542",
+      "customer": "Maizly - Adam Meyer",
+      "subject": "RE: Order # 1576 and # 1577",
+      "lastMessageET": "09-11 14:27 ET",
+      "ask": null,
+      "note": "Two orders just came through; push to ship today."
+    },
+    {
+      "ticketRef": "UFN-70252",
+      "customer": "Colavita (Chiara Vitali) / Vital Warehouse LLC",
+      "subject": "Re: Pickup appointments / COLAVITA / September 2026",
+      "lastMessageET": "09-11 14:02 ET",
+      "ask": null,
+      "note": "DN-2130356 loaded/showing shipped; customer chasing whether the load is still loading / BOL."
+    },
+    {
+      "ticketRef": "UFN-70414",
+      "customer": "Colavita Edison (Kyle Wittenbauer) / Vin World / Romark",
+      "subject": "Re: UNIS --> Edison - Week of 9/14",
+      "lastMessageET": "09-11 12:28 ET",
+      "ask": null,
+      "note": "Arrive ~9am / earlier-than-10am pickups so delivery can be made by 1pm; confirm appointment times for week of 9/14 transfers."
+    },
+    {
+      "ticketRef": "UFN-69116",
+      "customer": "La Famosa / Colavita (Luz Velasquez) / Transnow",
+      "subject": "Re: Order for La Famosa Order #00017979 - pickup appointment request",
+      "lastMessageET": "09-11 12:19 ET",
+      "ask": null,
+      "note": "DN-2118567 shipped with 33 pallets (did not fit a 48' container); short-ship approval requested/granted to close systematically."
+    }
+  ]
+}
