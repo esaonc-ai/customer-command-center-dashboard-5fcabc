@@ -35,6 +35,8 @@
       renderActionBuckets(dedupedTickets);
       renderCustomerHealth(dedupedTickets, config);
       renderEvidenceMetrics(stats);
+      document.getElementById('evidenceRefreshId').textContent =
+        config.snapshotMetrics?.refreshId || 'Unavailable';
 
       const now = new Date(config.snapshotMetrics?.refreshedAt || Date.now());
       document.getElementById('lastRefresh').textContent =

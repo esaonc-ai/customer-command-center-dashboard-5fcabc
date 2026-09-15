@@ -20,7 +20,7 @@ function resolveWithin(baseDirectory, relativePath) {
 }
 
 function resolveRequestPath(pathname) {
-  if (pathname === '/' || pathname === '/dashboard' || pathname === '/dashboard/') {
+  if (pathname === '/' || pathname === '/dashboard' || pathname === '/dashboard/' || pathname === '/evidence' || pathname === '/evidence/') {
     return path.join(root, 'dashboard', 'index.html');
   }
   if (pathname === '/config.json') return path.join(root, 'public', 'config.json');

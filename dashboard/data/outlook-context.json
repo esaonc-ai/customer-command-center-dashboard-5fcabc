@@ -1,228 +1,103 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-13T22:31:00-04:00",
-  "lastRefreshed": "2026-09-13T22:31:00-04:00",
+  "generatedAt": "2026-09-15T06:34:05-04:00",
+  "lastRefreshed": "2026-09-15T06:34:05-04:00",
   "outlookAvailable": true,
   "delegatedMailboxAvailable": true,
   "integrationStatus": "available",
   "statusLabel": "Available",
-  "dataSource": "Delegated NHT/Cesanek CS mailbox read (nicole.weber@unisco.com); supplemental and non-blocking",
   "integration": "non_blocking",
+  "dataSource": "Delegated CS mailbox nicole.weber@unisco.com; supplemental and non-blocking",
   "threadsMatched": 25,
-  "threadsLinkedToEligibleTickets": 2,
-  "threadsUniquePostDedup": 13,
+  "threadsUniquePostDedup": 9,
+  "threadsLinkedToEligibleTickets": 1,
+  "latestMessageUtc": "2026-09-14T21:46:00Z",
   "activeEscalations": [
-    "UFN-69781 - HINT Beverage via Fusion Transport: HIGH IMPORTANCE, repeated missing-EDI-tender chase on loads picked up 9/9-9/11.",
-    "UFN-67809 - Maizly/KeHE via Klimson Logistics: customer chasing pickup/drop-trailer and PRO per BOL; carrier did not pick up as scheduled.",
-    "UFN-68515, UFN-68506, UFN-69120, UFN-69103 - KD Nutra (Pharmavite / Nordic): time-sensitive relabeling, shipping and appointment-confirmation chases.",
-    "UFN-70261 - Drink Hint: inventory shortage (HVP41-1612); cancel-order and cycle-count chase.",
-    "UFN-70542, UFN-70252, UFN-70414, UFN-70553 - Maizly / Colavita: schedule pressure, 'push out today', early-arrival and appointment requests."
+    "UFN-70731"
   ],
-  "eligibleEscalations": 2,
+  "eligibleEscalations": 1,
   "coverage": {
-    "eligibleTicketsTotal": 323,
-    "eligibleTicketsWithOutlookContext": 2,
-    "coveragePct": 0.62,
-    "note": "Mailbox context is supplemental and non-blocking. 2 of the 13 supplied UFN threads link to eligible conversations; Outlook never adds to Ticket Ops counts, queue, buckets, customer health or SLA metrics."
+    "eligibleTicketsTotal": 290,
+    "eligibleTicketsWithOutlookContext": 1,
+    "coveragePct": 0.34,
+    "note": "Supplemental only. 1 of 9 threads links to an eligible Ticket Ops conversation."
   },
   "ticketThreads": [
     {
-      "ticketRef": "UFN-67809",
-      "customer": "Maizly (for KeHE) via Klimson Logistics",
-      "subject": "RE: DN-2121155 PO3878087 KEHE0034",
-      "lastMessageET": "09-13 20:54 ET",
-      "ask": null,
-      "linkedToEligibleTicket": false,
-      "note": "Customer chase: confirm the three POs are on Estes / drop trailer and provide PRO per BOL; carrier did not pick up as scheduled. Content is quoted inside the HINT thread, so it is counted once here."
+      "ticketRef": "UFN-70731",
+      "linkedToEligibleTicket": true
     },
     {
-      "ticketRef": "UFN-69781",
-      "customer": "HINT Beverage (via Fusion Transport)",
-      "subject": "UNIS - HINT BEVERAGE - NORTHAMPTON, PA - WEEK OF 9/7/26",
-      "lastMessageET": "09-13 19:20 ET",
-      "ask": null,
-      "linkedToEligibleTicket": true,
-      "note": "HIGH IMPORTANCE - repeated chase for EDI tenders / PRO for loads picked up 9/9-9/11; tenders 50040721/722/723 missing."
+      "ticketRef": "UFN-70804",
+      "linkedToEligibleTicket": false
     },
     {
-      "ticketRef": "UFN-68515",
-      "customer": "KD Nutra / Pharmavite (Silvia Placido)",
-      "subject": "Re: Pharmavite PO 352169 (SO110492) - DN-2123596 (special instructions)",
-      "lastMessageET": "09-11 16:22 ET",
-      "ask": null,
-      "linkedToEligibleTicket": false,
-      "note": "Confirm whether relabeling + shipment will be performed by Unis; time-sensitive."
+      "ticketRef": "UFN-68616",
+      "linkedToEligibleTicket": false
     },
     {
-      "ticketRef": "UFN-70261",
-      "customer": "DrinkHint (HINT) - Brian Dalder",
-      "subject": "HVP41-1612 Orders | 09/07-09/11",
-      "lastMessageET": "09-11 16:21 ET",
-      "ask": null,
-      "linkedToEligibleTicket": true,
-      "note": "Customer chase: inventory short (HVP41-1612); cancel orders / cycle count of remaining inventory; repeated follow-ups."
+      "ticketRef": "UFN-70404",
+      "linkedToEligibleTicket": false
     },
     {
-      "ticketRef": "UFN-68506",
-      "customer": "KD Nutra / Pharmavite (Silvia Placido)",
-      "subject": "Re: Pharmavite PO 352168 (SO110487) - DN-2123575 (special instructions)",
-      "lastMessageET": "09-11 16:18 ET",
-      "ask": null,
-      "linkedToEligibleTicket": false,
-      "note": "Have labels arrived / has work started? Order must ship this week; awaiting confirmation."
+      "ticketRef": "UFN-69618",
+      "linkedToEligibleTicket": false
     },
     {
-      "ticketRef": "UFN-69120",
-      "customer": "KD Nutra / Nordic (Silvia Placido)",
-      "subject": "Re: Nordic - PO4500006091 (SO110100A) - DN-2126292 & (SO110100B) - DN-2126300",
-      "lastMessageET": "09-11 16:12 ET",
-      "ask": null,
-      "linkedToEligibleTicket": false,
-      "note": "Time-sensitive; urgently needs appointment confirmation so pickup can be scheduled."
-    },
-    {
-      "ticketRef": "UFN-69103",
-      "customer": "KD Nutra / Nordic (Silvia Placido)",
-      "subject": "Re: Nordic - PO4500005466 (SO109539A) - DN-2126240 & (SO109539B) - DN-2126248",
-      "lastMessageET": "09-11 16:11 ET",
-      "ask": null,
-      "linkedToEligibleTicket": false,
-      "note": "Time-sensitive; needs appointment confirmation / pickup scheduling."
-    },
-    {
-      "ticketRef": "UFN-69129",
-      "customer": "UNY Brands / MPW (Matthew Bobrow); Shailene Baez (Unis AM)",
-      "subject": "Re: MPW Internal WH Transfer - PA > CA",
-      "lastMessageET": "09-11 15:24 ET",
-      "ask": null,
-      "linkedToEligibleTicket": false,
-      "note": "Walmart orders from 9/8 scheduled for pickup Mon 9/14 (load 93910011); pending import into Wise / transfer orders."
+      "ticketRef": "UFN-70413",
+      "linkedToEligibleTicket": false
     },
     {
       "ticketRef": "UFN-70553",
-      "customer": "Colavita (Chiara Vitali) / Vitelli Foods",
-      "subject": "Re: SO124422 / PO 997609bis / DN-2128230",
-      "lastMessageET": "09-11 14:37 ET",
-      "ask": null,
-      "linkedToEligibleTicket": false,
-      "note": "Pickup scheduled Mon 9/14 (9am-2pm); confirm relabel/ship responsibilities."
+      "linkedToEligibleTicket": false
     },
     {
-      "ticketRef": "UFN-70542",
-      "customer": "Maizly - Adam Meyer",
-      "subject": "RE: Order # 1576 and # 1577",
-      "lastMessageET": "09-11 14:27 ET",
-      "ask": null,
-      "linkedToEligibleTicket": false,
-      "note": "Two orders just came through; push to ship today."
+      "ticketRef": "UFN-70753",
+      "linkedToEligibleTicket": false
     },
     {
-      "ticketRef": "UFN-70252",
-      "customer": "Colavita (Chiara Vitali) / Vital Warehouse LLC",
-      "subject": "Re: Pickup appointments / COLAVITA / September 2026",
-      "lastMessageET": "09-11 14:02 ET",
-      "ask": null,
-      "linkedToEligibleTicket": false,
-      "note": "DN-2130356 loaded/showing shipped; customer chasing whether the load is still loading / BOL."
-    },
-    {
-      "ticketRef": "UFN-70414",
-      "customer": "Colavita Edison (Kyle Wittenbauer) / Vin World / Romark",
-      "subject": "Re: UNIS --> Edison - Week of 9/14",
-      "lastMessageET": "09-11 12:28 ET",
-      "ask": null,
-      "linkedToEligibleTicket": false,
-      "note": "Arrive ~9am / earlier-than-10am pickups so delivery can be made by 1pm; confirm appointment times for week of 9/14 transfers."
-    },
-    {
-      "ticketRef": "UFN-69116",
-      "customer": "La Famosa / Colavita (Luz Velasquez) / Transnow",
-      "subject": "Re: Order for La Famosa Order #00017979 - pickup appointment request",
-      "lastMessageET": "09-11 12:19 ET",
-      "ask": null,
-      "linkedToEligibleTicket": false,
-      "note": "DN-2118567 shipped with 33 pallets (did not fit a 48' container); short-ship approval requested/granted to close systematically."
+      "ticketRef": "UFN-70761",
+      "linkedToEligibleTicket": false
     }
-  ],
-  "nonUfnThreads": [
-    {
-      "customer": "Iceland Direct",
-      "subject": "PO 810308 (SO110377) - DN-2122820",
-      "lastMessageET": "09-10 ET",
-      "note": "transportation ticket UT-62013; not in the UFN set"
-    },
-    {
-      "customer": "Hint Beverage / Colavita",
-      "subject": "Weekly transportation discrepancy series",
-      "lastMessageET": "09-11 ET",
-      "note": "UTTS-78582 / UTTS-78861 / UTTS-80797 / UTTS-80798; transportation tickets, filtered out by the UFN-only rule"
-    },
-    {
-      "customer": "Wherehouse Beverage (WYNK)",
-      "subject": "Canvas340 Cesanek Northampton transition plan",
-      "lastMessageET": "09-11 ET",
-      "note": "UFSU-21133; facility-transition context - Nicole advised regular operations end 9/11 and shipments should be rerouted"
-    },
-    {
-      "customer": "Cesanek internal (Tweetie Leigh Lamoste)",
-      "subject": "Immediate Review Required: Inbound/Outbound (Cesanek, PA Facility) daily series",
-      "lastMessageET": "09-11 ET",
-      "note": "automated notification series; maps to the UFN-70350 / UFN-70474 class"
-    }
-  ],
-  "billingThreadsExcluded": [
-    {
-      "subject": "DUPRAY LLC l Cesanek - Handling 8/30-9/05",
-      "sender": "ufbillingticket@unisco.com",
-      "excludedReason": "UFBL-65145 - storage/handling invoice (billing family)"
-    },
-    {
-      "subject": "PRIMETIME l Cesanek - Handling 8/30-9/05",
-      "sender": "ufbillingticket@unisco.com",
-      "excludedReason": "UFBL-65227 - storage/handling invoice (billing family)"
-    }
-  ],
-  "dedupNotes": [
-    "Each supplied UFN ticket maps to one mailbox conversation and is counted once in Outlook context.",
-    "threadsUniquePostDedup = 25 UFN threads + 4 non-UFN same-facility threads + 2 billing/dispute threads, after collapsing multi-message threads by conversation id.",
-    "Multi-message threads were collapsed by conversation id (e.g. Colavita, Maizly, Hint, KD Pharma, Vinmark/Vinworld, CH Robinson, Diageo/Medlog).",
-    "Same customer across distinct threads is not a duplicate: Maizly (3), Colavita (5), KD Pharma/Pharmavite (4), Hint (2), Unybrands (2), Diageo/Medlog (2).",
-    "Two New-side auto-replies are conversation legs of Reopen-side threads (UFN-70603 -> UFN-70545, UFN-70316 -> UFN-69406) and are not counted as separate conversations.",
-    "UFN numbers appear in message bodies rather than subjects, so subject-only UFN searches return nothing; the mailbox was searched on message content.",
-    "Read window 2026-08-30 through 2026-09-13; the mailbox was bulk-loaded on 2026-09-12 so visible activity concentrates on 09-09 through 09-11.",
-    "The nht.cs@unisco.com shared alias remains unreadable (access denied); results in this file come from nicole.weber@unisco.com.",
-    "This cycle re-read only the most recent UFN page; all 13 UFN threads it returned were already present in the carried-forward inventory, so no Outlook thread was added or removed.",
-    "One additional UFN-referencing transportation message (UT-62013) surfaced but is not a UFN ticket and stays in the non-UFN set.",
-    "The nht.cs@unisco.com shared alias remains unreadable (access denied); results in this file come from nicole.weber@unisco.com."
   ],
   "mailboxScopeUsed": "nicole.weber@unisco.com",
-  "mailboxReadWindow": "Most recent UFN message page reviewed for this cycle (25 messages -> 13 distinct threads by conversationId).",
+  "mailboxReadWindow": "25 UFN messages, 9 distinct threads; latest 2026-09-14T21:46:00Z.",
   "sharedMailbox": {
     "mailbox": "nht.cs@unisco.com",
     "readable": false,
-    "reason": "403 Access denied - requires Mail.Read.Shared (delegated) or Mail.Read (application). Traffic to and from this shared box is still visible because it is copied into the delegated nicole.weber@unisco.com mailbox. Disclosed as a limitation rather than silently dropped."
+    "reason": "403 - requires Mail.Read.Shared. Traffic is mirrored into the readable delegated mailbox."
   },
   "thisCycleRead": {
     "messagesRetrieved": 25,
-    "distinctThreadsPostDedup": 13,
-    "threadsMappedToUfn": 13,
+    "distinctThreadsPostDedup": 9,
+    "threadsMappedToUfn": 9,
     "ufnRefs": [
-      "UFN-67809",
-      "UFN-69781",
-      "UFN-68515",
-      "UFN-70261",
-      "UFN-68506",
-      "UFN-69120",
-      "UFN-69103",
-      "UFN-69129",
+      "UFN-70731",
+      "UFN-70804",
+      "UFN-68616",
+      "UFN-70404",
+      "UFN-69618",
+      "UFN-70413",
       "UFN-70553",
-      "UFN-70542",
-      "UFN-70252",
-      "UFN-70414",
-      "UFN-69116"
+      "UFN-70753",
+      "UFN-70761"
     ],
-    "threadsLinkedToEligibleTickets": 2,
-    "note": "Read-only. Threads were de-duplicated by conversationId so no ticket/email thread is counted twice."
+    "eligibleUfnRefs": [
+      "UFN-70731"
+    ],
+    "ineligibleUfnRefs": [
+      "UFN-70804",
+      "UFN-68616",
+      "UFN-70404",
+      "UFN-69618",
+      "UFN-70413",
+      "UFN-70553",
+      "UFN-70753",
+      "UFN-70761"
+    ],
+    "threadsLinkedToEligibleTickets": 1,
+    "latestMessageUtc": "2026-09-14T21:46:00Z",
+    "note": "Read-only and supplemental; it does not alter dashboard metrics."
   }
 }

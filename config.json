@@ -16,6 +16,7 @@
       "Reopened",
       "Closed",
       "Resolved",
+      "Solved",
       "Cancelled",
       "Done"
     ],
@@ -23,7 +24,8 @@
       "billing",
       "UF Billing",
       "storage",
-      "handling"
+      "handling",
+      "invoice"
     ],
     "ufnFilterEnabled": true,
     "authoritativeGate": {
@@ -60,16 +62,17 @@
     "refreshIntervalMinutes": 15
   },
   "snapshotMetrics": {
-    "refreshId": "refresh-2026-09-13T22:31:00-04:00-AUTHORITATIVE-v41",
-    "refreshedAt": "2026-09-13T22:31:00-04:00",
-    "totalRaw": 406,
-    "totalEligible": 323,
-    "excludedCount": 29,
-    "duplicatesRemoved": 5,
-    "invoiceItemsExcluded": 24,
-    "closeFlagTrueRetained": 19,
-    "arrivalsThisCycle": 5,
-    "departuresThisCycle": 0,
+    "refreshId": "refresh-2026-09-15T06:34:05-04:00-AUTHORITATIVE-v42",
+    "refreshedAt": "2026-09-15T06:34:05-04:00",
+    "totalRaw": 376,
+    "totalGateRows": 323,
+    "totalEligible": 290,
+    "excludedCount": 33,
+    "duplicatesRemoved": 10,
+    "invoiceItemsExcluded": 23,
+    "closeFlagTrueRetained": 16,
+    "arrivalsThisCycle": 42,
+    "departuresThisCycle": 75,
     "outlookStatus": "available",
     "outlookThreadsMatched": 25
   }
