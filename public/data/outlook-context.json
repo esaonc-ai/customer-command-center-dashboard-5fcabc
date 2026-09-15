@@ -1,1 +1,130 @@
-{"facility":"NHT/Cesanek","facilityCode":"LT_F21","generatedAt":"2026-09-14T05:29:00-04:00","lastRefreshed":"2026-09-14T05:29:00-04:00","dataSource":"Outlook (Item AI Outlook agent) \u2014 non-blocking, window ~2026-09-01..2026-09-14","threadsMatched":14,"threadsUniquePostDedup":12,"coverage":{"eligibleTicketsTotal":332,"eligibleTicketsWithOutlookDirect":12,"coveragePct":4},"ticketThreads":[{"customer":"MAIZLY INC.","subject":"Re: Order # 1576 and # 1577","direction":"inbound","ticketRef":"UFN-70542"},{"customer":"MAIZLY INC.","subject":"RE: Unshipped Orders","direction":"inbound","ticketRef":"UFN-70399"},{"customer":"COLAVITA USA","subject":"Re: SO124422 / PO 997609bis / DN-2128230","direction":"inbound","ticketRef":"UFN-70553"},{"customer":"COLAVITA USA","subject":"Re: Pickup appointments / COLAVITA / September 2026","direction":"inbound/awaiting","ticketRef":"UFN-70252"},{"customer":"HINT INC.","subject":"Re: HVP41-1612 Orders | 09/07\u201309/11","direction":"inbound","ticketRef":"UFN-70261"},{"customer":"THE ANDERSONS / HUB GROUP","subject":"Re: Pickup Appointment PO 3878155 - Northampton - Ellettsville","direction":"inbound","ticketRef":"UFN-70147"},{"customer":"CANVAS 340 / WYNK","subject":"Re: UNIS \u2192 Edison \u2013 Week of 9/14","direction":"inbound","ticketRef":"UFN-70414"},{"customer":"MEDLOG / DIAGEO","subject":"RE: MSDU7175119","direction":"inbound","ticketRef":"UFN-70447"},{"customer":"MEDLOG / DIAGEO","subject":"RE: MSMU6875562","direction":"inbound","ticketRef":"UFN-70448"},{"customer":"PRIME TIME PACKAGING","subject":"RE: PRIME TIME PACKAGING LTD DISPUTES \u2013 19338229/19336927/19338911","direction":"inbound/escalation","ticketRef":"UFN-68741"},{"customer":"MAIZLY INC.","subject":"Re: MAIZLY INC \u2013 Disputes and Claims Update","direction":"inbound/escalation","ticketRef":null},{"customer":"CANVAS 340 / WYNK","subject":"RE: Canvas340 Cesanek Northampton transition plan","direction":"inbound/outbound","ticketRef":"UFN-69647"}],"excludedTicketsWithOutlookContext":["billing/storage/handling invoice threads: Roar Decadence Handling, PRIMETIME Handling, ZEN BEVERAGE HANDLING/STORAGE, RECESS Handling, MAIZLY Handling, SMEG BILLING"],"operationalThreads":["Open RN/DN Items Impacting Billing (Cesanek) \u2014 duplicates UFN-70350 / UFN-70156","Inbound/Outbound Shipments Next Business Day (Cesanek) \u2014 duplicates UFN-70474 / UFN-70319"],"activeEscalations":[{"customer":"MAIZLY INC.","note":"Claim escalation: 450-unit shortage SKU-FG-0009, $1,057.50 (thread 2026-09-11)"},{"customer":"PRIME TIME PACKAGING LTD","note":"Open disputes 19338229/19336927/19338911 (thread 2026-09-14)"},{"customer":"CANVAS 340 / WYNK","note":"Cesanek \u2192 Northampton transition; dropship live, escalations to John Diaz"}],"outlookCustomersActive":["Colavita USA","Maizly","Hint","The Andersons / Hub Group","Canvas 340 / WYNK","Medlog / Diageo","Prime Time Packaging","KD Pharma","Vita Coco","Recess","Niagara Bottling (Resin)","Uptime Energy"],"refreshNote":"Non-blocking enrichment only. UFN-tagged email threads map 1:1 to tickets and are NOT double-counted. Dashboard self-threads (daily summaries) excluded. Overlapping ticket/email threads deduped; ticket series NOT collapsed (per v8 rule)."}
+{
+ "facility": "NHT/Cesanek",
+ "facilityCode": "LT_F21",
+ "generatedAt": "2026-09-15T12:20:39-04:00",
+ "lastRefreshed": "2026-09-15T12:20:39-04:00",
+ "dataSource": "Outlook (Item AI Outlook agent) — non-blocking, window 2026-09-03 → 2026-09-15 (full-mailbox search; 12,082+ NHT/Cesanek/UFN matches, recent-first review)",
+ "threadsMatched": 39,
+ "threadsUniquePostDedup": 33,
+ "coverage": {
+  "eligibleTicketsTotal": 286,
+  "eligibleTicketsWithOutlookDirect": 12,
+  "coveragePct": 4.2
+ },
+ "ticketThreads": [
+  {
+   "customer": "MAIZLY INC.",
+   "subject": "Re: Unshipped Orders",
+   "direction": "Both",
+   "ticketRef": "UFN-70399"
+  },
+  {
+   "customer": "COLAVITA USA, LLC",
+   "subject": "RE: P.O. #60843",
+   "direction": "Both",
+   "ticketRef": "UFN-43874"
+  },
+  {
+   "customer": "COLAVITA USA, LLC",
+   "subject": "RE: PO# 99464980 - DN-1573571",
+   "direction": "Both",
+   "ticketRef": "UFN-54244"
+  },
+  {
+   "customer": "COLAVITA USA, LLC / Romark Logistics",
+   "subject": "RE: [EXTERNAL] UNIS --> Romark - Week of 9/14",
+   "direction": "Both",
+   "ticketRef": "UFN-70413"
+  },
+  {
+   "customer": "VINWORLD / Colavita",
+   "subject": "Re: Transfer Orders",
+   "direction": "Both",
+   "ticketRef": "UFN-70404"
+  },
+  {
+   "customer": "HINT INC. (via Fusion Transport)",
+   "subject": "Re: UNIS - HINT BEVERAGE - NORTHAMPTON, PA - WEEK OF 9/14/26",
+   "direction": "Both",
+   "ticketRef": "UFN-70804"
+  },
+  {
+   "customer": "INNOVA SOFTGEL LLC dba KD NUTRA",
+   "subject": "URGENT RE: Delivery appointments needed for containers MAEU274833196",
+   "direction": "Both",
+   "ticketRef": "UFN-70731"
+  },
+  {
+   "customer": "BOUNDLESS EC US LLC",
+   "subject": "Ticket [3569318] was updated. - No Labels on Cases (Load# 45872185)",
+   "direction": "Inbound",
+   "ticketRef": "UFN-70795"
+  },
+  {
+   "customer": "AMI / ROAR BEVERAGES INC (CasAmerica)",
+   "subject": "RE: AMI New Roar Order - SO1393032/ DN-2117711 (Northampton PA)",
+   "direction": "Both",
+   "ticketRef": "UFN-68616"
+  },
+  {
+   "customer": "CAMBRIDGE SLEEP SCIENCES",
+   "subject": "Re: Confirmation Needed - Building Closure",
+   "direction": "Both",
+   "ticketRef": "UFN-70243"
+  },
+  {
+   "customer": "CAMBRIDGE SLEEP SCIENCES",
+   "subject": "Re: Confirmation Needed - Building Closure",
+   "direction": "Both",
+   "ticketRef": "UFN-70244"
+  },
+  {
+   "customer": "CAMBRIDGE SLEEP SCIENCES",
+   "subject": "Re: Confirmation Needed - Building Closure",
+   "direction": "Both",
+   "ticketRef": "UFN-70246"
+  }
+ ],
+ "excludedTicketsWithOutlookContext": [
+  "2ND FOLLOW UP: Urgent Payment Request – Northampton Outstanding Balance - HINT INC. (billing/AR)",
+  "4th FOLLOW UP: COLAVITA USA, LLC - PAYMENT REQUEST (billing/AR)",
+  "AVIRON INTERACTIVE INC Cesanek HANDLING Invoice #19339745 (9/6-9/12) (handling invoice)",
+  "Northampton Move Out Transportation Cost (Dupray; UF Billing cc)",
+  "Roar Decadence- Handling 8.30-9.05 | PA (UF Billing handling)"
+ ],
+ "operationalThreads": [
+  "Immediate Action Required: Open DN Items Impacting Billing as of September 14, 2026 (Cesanek, PA Facility) — internal ops feed, no single UFN; references open DN rows incl. DN-2127990/DN-2127953 (Roar/AMI UFN-68616)",
+  "Immediate Review Required: Inbound Deliveries Scheduled for the Next Business Day - September 15, 2026 (Cesanek, PA Facility) — automated feed, no UFN",
+  "Immediate Review Required: Outbound Shipments Scheduled for the Next Business Day - September 15, 2026 (Cesanek, PA Facility) — automated feed (High), no UFN",
+  "Immediate Action Required: Open RN Items Impacting Billing as of September 9, 2026 (Cesanek, PA Facility) — automated feed, no UFN",
+  "INBOUND UNIS NORTHAMPTON CONTAINERS 9/15 (Drayage Support – NJ) — automated feed, no UFN",
+  "Drop trailer / pickup confirmation for Dupray (Ch. Robinson OOO auto-reply, Elisa Bonavita) — auto-reply, no UFN",
+  "Customer Command Center — Daily Summary (Northampton / Cesanek) — Mon Sep 14, 2026 (no-reply-itemgpt) — generated digest, cites UFN-67030/UFN-37858/UFN-35588 et al.",
+  "There's new activity in Teams (no-reply@teams.mail.microsoft) x3 on 9/15 — notification digests, no UFN"
+ ],
+ "activeEscalations": [
+  {
+   "customer": "WYNK / CANVAS 340 LLC",
+   "note": "Timm Crosby 9/14: 300+ unfulfilled orders + cancel #230074/#229252/#229246/#229245 then #228990/#229191/#229381; McHugh: ~400 orders commit-blocked/failed (no inventory), first transfer to Summerville Tue AM, Jehnifur Morvai re-points fulfillment; 9/15 awaiting customer confirmation on cancel list. ACTIVE."
+  },
+  {
+   "customer": "AMI / ROAR BEVERAGES INC",
+   "note": "Pickup SO1393032 / DN-2117711 confirmed — 1st order picked up 9/14, 2nd scheduled 9/15 1pm; CasAmerica 9/15 thanked UNIS. APPEARS RESOLVED (thread = UFN-68616)."
+  }
+ ],
+ "outlookCustomersActive": [
+  "WYNK / CANVAS 340 LLC",
+  "AMI / ROAR BEVERAGES INC",
+  "HINT INC.",
+  "COLAVITA USA, LLC",
+  "MAIZLY INC.",
+  "INNOVA SOFTGEL LLC dba KD NUTRA",
+  "BOUNDLESS EC US LLC",
+  "CAMBRIDGE SLEEP SCIENCES",
+  "VINWORLD / Romark Logistics",
+  "AVIRON INTERACTIVE INC",
+  "Dupray",
+  "RECESS (Hopewell Beverage)"
+ ],
+ "refreshNote": "Non-blocking enrichment only; UFN-tagged email threads map 1:1 to tickets and are NOT double-counted; overlapping ticket/email threads deduped."
+}

@@ -1,1 +1,33 @@
-{"dashboard":"Customer Command Center Dashboard","facility":{"code":"LT_F21","name":"NHT/Cesanek","tenant":"LT","timezone":"America/New_York"},"lastRefreshed":"2026-09-14T05:29:00-04:00","dataSource":"TicketOps (authoritative)","refreshType":"AUTHORITATIVE","totalRaw":406,"totalEligible":332,"newCount":272,"openCount":0,"pendingCount":60,"truncationNote":"closeFlag not a gate; Reopen (54) and billing/storage/handling (20) excluded","slaHealth":{"breached":223,"onTrack":109,"unassigned":278},"evidenceMetrics":{"totalEligible":332,"slaBreached":223,"slaOnTrack":109,"unassigned":278,"oldestAgeDays":192,"outlookThreadsMatched":14,"outlookThreadsUniquePostDedup":12,"activeEscalations":3}}
+{
+ "dashboard": "Customer Command Center Dashboard",
+ "facility": {
+  "code": "LT_F21",
+  "name": "NHT/Cesanek",
+  "tenant": "LT",
+  "timezone": "America/New_York"
+ },
+ "lastRefreshed": "2026-09-15T12:36:00-04:00",
+ "dataSource": "TicketOps (authoritative)",
+ "refreshType": "AUTHORITATIVE",
+ "totalRaw": 371,
+ "totalEligible": 286,
+ "newCount": 216,
+ "openCount": 0,
+ "pendingCount": 70,
+ "truncationNote": "closeFlag not a gate; Reopen (57) and billing/storage/handling (21) excluded; 7 overlapping duplicates dropped",
+ "slaHealth": {
+  "breached": 224,
+  "onTrack": 62,
+  "unassigned": 239
+ },
+ "evidenceMetrics": {
+  "totalEligible": 286,
+  "slaBreached": 224,
+  "slaOnTrack": 62,
+  "unassigned": 239,
+  "oldestAgeDays": 194,
+  "outlookThreadsMatched": 39,
+  "outlookThreadsUniquePostDedup": 33,
+  "activeEscalations": 2
+ }
+}
