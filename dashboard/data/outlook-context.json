@@ -1,27 +1,35 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-15T06:34:05-04:00",
-  "lastRefreshed": "2026-09-15T06:34:05-04:00",
-  "outlookAvailable": true,
-  "delegatedMailboxAvailable": true,
-  "integrationStatus": "available",
-  "statusLabel": "Available",
+  "generatedAt": "2026-09-16T18:31:00-04:00",
+  "lastRefreshed": "2026-09-16T18:31:00-04:00",
+  "outlookAvailable": false,
+  "delegatedMailboxAvailable": false,
+  "integrationStatus": "unavailable",
+  "statusLabel": "Unavailable",
   "integration": "non_blocking",
   "dataSource": "Delegated CS mailbox nicole.weber@unisco.com; supplemental and non-blocking",
+  "stale": true,
+  "staleness": {
+    "reason": "No Outlook read was possible for this cycle; the last observed delegated-mailbox values (v42) are retained for context only and were not re-verified.",
+    "lastObservedUtc": "2026-09-14T21:46:00Z",
+    "lastObservedCycle": "refresh-2026-09-15T06:34:05-04:00-AUTHORITATIVE-v42"
+  },
   "threadsMatched": 25,
   "threadsUniquePostDedup": 9,
-  "threadsLinkedToEligibleTickets": 1,
+  "threadsLinkedToEligibleTickets": 3,
   "latestMessageUtc": "2026-09-14T21:46:00Z",
   "activeEscalations": [
-    "UFN-70731"
+    "UFN-70731",
+    "UFN-70413",
+    "UFN-70753"
   ],
-  "eligibleEscalations": 1,
+  "eligibleEscalations": 3,
   "coverage": {
-    "eligibleTicketsTotal": 290,
-    "eligibleTicketsWithOutlookContext": 1,
-    "coveragePct": 0.34,
-    "note": "Supplemental only. 1 of 9 threads links to an eligible Ticket Ops conversation."
+    "eligibleTicketsTotal": 256,
+    "eligibleTicketsWithOutlookContext": 3,
+    "coveragePct": 1.17,
+    "note": "Stale context only. 3 of 9 last-observed threads links to an eligible Ticket Ops conversation; no Outlook read was performed this cycle."
   },
   "ticketThreads": [
     {
@@ -46,7 +54,7 @@
     },
     {
       "ticketRef": "UFN-70413",
-      "linkedToEligibleTicket": false
+      "linkedToEligibleTicket": true
     },
     {
       "ticketRef": "UFN-70553",
@@ -54,7 +62,7 @@
     },
     {
       "ticketRef": "UFN-70753",
-      "linkedToEligibleTicket": false
+      "linkedToEligibleTicket": true
     },
     {
       "ticketRef": "UFN-70761",
@@ -62,42 +70,15 @@
     }
   ],
   "mailboxScopeUsed": "nicole.weber@unisco.com",
-  "mailboxReadWindow": "25 UFN messages, 9 distinct threads; latest 2026-09-14T21:46:00Z.",
-  "sharedMailbox": {
-    "mailbox": "nht.cs@unisco.com",
-    "readable": false,
-    "reason": "403 - requires Mail.Read.Shared. Traffic is mirrored into the readable delegated mailbox."
-  },
+  "mailboxReadWindow": "not read this cycle",
   "thisCycleRead": {
-    "messagesRetrieved": 25,
-    "distinctThreadsPostDedup": 9,
-    "threadsMappedToUfn": 9,
-    "ufnRefs": [
-      "UFN-70731",
-      "UFN-70804",
-      "UFN-68616",
-      "UFN-70404",
-      "UFN-69618",
-      "UFN-70413",
-      "UFN-70553",
-      "UFN-70753",
-      "UFN-70761"
-    ],
-    "eligibleUfnRefs": [
-      "UFN-70731"
-    ],
-    "ineligibleUfnRefs": [
-      "UFN-70804",
-      "UFN-68616",
-      "UFN-70404",
-      "UFN-69618",
-      "UFN-70413",
-      "UFN-70553",
-      "UFN-70753",
-      "UFN-70761"
-    ],
-    "threadsLinkedToEligibleTickets": 1,
-    "latestMessageUtc": "2026-09-14T21:46:00Z",
-    "note": "Read-only and supplemental; it does not alter dashboard metrics."
+    "messagesRetrieved": 0,
+    "distinctThreadsPostDedup": 0,
+    "threadsMappedToUfn": 0,
+    "ufnRefs": [],
+    "eligibleUfnRefs": [],
+    "ineligibleUfnRefs": [],
+    "threadsLinkedToEligibleTickets": 0,
+    "note": "No Outlook read was possible this cycle. Values shown elsewhere are the last observed v42 context and are marked stale."
   }
 }

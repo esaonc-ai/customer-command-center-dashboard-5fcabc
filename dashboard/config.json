@@ -44,7 +44,9 @@
   "outlook": {
     "integration": "non_blocking",
     "useWhenAvailable": true,
-    "status": "available"
+    "status": "unavailable",
+    "lastObservedUtc": "2026-09-14T21:46:00Z",
+    "stale": true
   },
   "deduplication": {
     "enabled": true,
@@ -62,18 +64,18 @@
     "refreshIntervalMinutes": 15
   },
   "snapshotMetrics": {
-    "refreshId": "refresh-2026-09-15T06:34:05-04:00-AUTHORITATIVE-v42",
-    "refreshedAt": "2026-09-15T06:34:05-04:00",
-    "totalRaw": 376,
-    "totalGateRows": 323,
-    "totalEligible": 290,
-    "excludedCount": 33,
-    "duplicatesRemoved": 10,
-    "invoiceItemsExcluded": 23,
-    "closeFlagTrueRetained": 16,
-    "arrivalsThisCycle": 42,
-    "departuresThisCycle": 75,
-    "outlookStatus": "available",
+    "refreshId": "refresh-2026-09-16T18:31:00-04:00-AUTHORITATIVE-v43",
+    "refreshedAt": "2026-09-16T18:31:00-04:00",
+    "totalRaw": 329,
+    "totalGateRows": 286,
+    "totalEligible": 256,
+    "excludedCount": 30,
+    "duplicatesRemoved": 5,
+    "invoiceItemsExcluded": 25,
+    "closeFlagTrueRetained": 20,
+    "arrivalsThisCycle": 30,
+    "departuresThisCycle": 64,
+    "outlookStatus": "unavailable",
     "outlookThreadsMatched": 25
   }
 }
