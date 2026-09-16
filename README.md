@@ -34,27 +34,23 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** – Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** – Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Aug 23 07:35 ET – AUTHORITATIVE)
+## Current Dashboard State (Last Refresh: Sep 15 2026 23:45 ET – AUTHORITATIVE)
 
 | Metric | Value |
 |--------|-------|
-| Total Raw (gate-matched) | 282 |
-| Eligible | **244** (172 New, 0 Open, 72 Pending) |
-| UFN-Count | 244 |
-| Excluded | 38 from gate — 34 billing/storage/handling/claim + 4 duplicates (Reopen/other already outside gate) |
-| closeFlag | **NOT a gate** — 22 live `closeFlag=true` tickets retained |
-| Customers | **41** distinct orgs (ticket-visible coverage; roster supplemental) |
-| Priority | 1 Urgent (UFN-67572), 243 Medium |
-| SLA Risk | **ELEVATED** – 174 SLA-breached / 70 on-track (large stale New backlog + recurring system reports) |
-| Outlook Coverage | 8 direct matches (~3.3%); strongest signals Prime Time, Maizly, Colavita, Sheex, Roar |
-| Last Refresh | 2026-08-23 07:35 ET (**AUTHORITATIVE** – fresh TicketOps LIVE connection; closeFlag removed from gate) |
+| Total Raw (systemStatus=open) | 368 = New 234 + Pending 78 + Reopen 56 |
+| Gate matched | 312 (New 234, Pending 78) |
+| Eligible | **291** (217 New, 0 Open, 74 Pending) |
+| UFN-Count | 291 |
+| Excluded | 16 billing/UF Billing/storage/handling + 5 overlapping-thread duplicates; Reopen 56 outside gate |
+| closeFlag | **NOT a gate** — 21 live `closeFlag=true` tickets retained |
+| Customers | **56** distinct orgs (all customers visible in eligible tickets; roster supplemental) |
+| SLA Risk | **HIGH** – 247 SLA-breached / 44 on-track; 238 unassigned |
+| Outlook Coverage | 7 direct eligible matches (~2.4%) from 60 matched threads / 53 unique post-dedup; 3 active escalations |
+| Last Refresh | 2026-09-15 23:45 ET (**AUTHORITATIVE** – fresh TicketOps pull, 312/312 rows enumerated) |
 | Next Refresh | ~08:00 ET (daily summary email) |
 
-### ⏱ Queue Delta (this refresh)
-
-**Eligibility gate corrected** — `closeFlag` was previously being used as a filter (dropping `closeFlag=true` tickets). This refresh removed it: eligibility is now `displayStatusSystemStatus=open` + `displayStatusName ∈ {New,Pending}` only. Result: **22 live `closeFlag=true` tickets restored to the eligible set** (e.g. UFN-67426 Maizly hot-sample order). The eligible total remains 244 (172 New / 72 Pending) after removing 34 billing/storage/handling and 4 duplicates.
-
-> The Action Buckets / Customer Health Detail / Priority Queue sections below are from the **Aug 11** refresh and are retained for history only. Authoritative current metrics are in `dashboard/data/tickets.json`, `refresh-manifest.json`, and `public/data/structured_list.json`.
+> **Premise correction (this refresh):** the instruction cited UFN-67030 as "live-Pending with closeFlag=true". Ticket Ops is authoritative and shows UFN-67030 = `displayStatusName=Solved`, `displayStatusSystemStatus=20`, `closeFlag=true`, staff-closed 2026-09-01. It is excluded **by status**, not by closeFlag. The rule stands: `closeFlag` is not an eligibility gate.
 
 ### Action Buckets
 
