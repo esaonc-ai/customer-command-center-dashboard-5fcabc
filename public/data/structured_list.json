@@ -6,39 +6,39 @@
     "tenant": "LT",
     "timezone": "America/New_York"
   },
-  "lastRefreshed": "2026-09-17T10:24:19-04:00",
+  "lastRefreshed": "2026-09-17T16:05:00-04:00",
   "dataSource": "Ticket Ops (authoritative); Outlook unavailable this cycle (last observed values stale)",
   "refreshType": "AUTHORITATIVE",
-  "refreshId": "refresh-2026-09-17T10:24:19-04:00-AUTHORITATIVE-v44",
-  "totalRaw": 330,
-  "eligibleBeforeExclusions": 284,
-  "eligibleBeforeDeduplication": 261,
-  "totalEligible": 256,
-  "newCount": 197,
+  "refreshId": "refresh-2026-09-17T16:05:00-04:00-AUTHORITATIVE-v45",
+  "totalRaw": 335,
+  "eligibleBeforeExclusions": 292,
+  "eligibleBeforeDeduplication": 268,
+  "totalEligible": 263,
+  "newCount": 205,
   "openCount": 0,
-  "pendingCount": 59,
+  "pendingCount": 58,
   "exclusionSummary": {
-    "reopen": 46,
-    "billingFamily": 23,
+    "reopen": 43,
+    "billingFamily": 24,
     "overlappingConversations": 5
   },
-  "closeFlagTrueRetained": 20,
+  "closeFlagTrueRetained": 21,
   "slaHealth": {
-    "breached": 224,
-    "onTrack": 32,
-    "unassigned": 211
+    "breached": 230,
+    "onTrack": 33,
+    "unassigned": 216
   },
   "actionBuckets": {
-    "Immediate": 14,
-    "Short-Term": 25,
-    "Medium-Term": 15,
-    "Watch": 202
+    "Immediate": 19,
+    "Short-Term": 19,
+    "Medium-Term": 22,
+    "Watch": 203
   },
   "evidenceMetrics": {
-    "totalEligible": 256,
-    "slaBreached": 224,
-    "slaOnTrack": 32,
-    "unassigned": 211,
+    "totalEligible": 263,
+    "slaBreached": 230,
+    "slaOnTrack": 33,
+    "unassigned": 216,
     "oldestAgeDays": 196,
     "outlookStatus": "unavailable",
     "outlookThreadsMatched": 25,
@@ -46,11 +46,11 @@
     "outlookThreadsLinkedToEligibleTickets": 3,
     "outlookStale": true,
     "outlookLastObservedUtc": "2026-09-14T21:46:00Z",
-    "invoiceItemsExcluded": 23,
+    "invoiceItemsExcluded": 24,
     "duplicatesRemoved": 5,
-    "closeFlagTrueRetained": 20,
-    "arrivalsThisCycle": 9,
-    "departuresThisCycle": 9
+    "closeFlagTrueRetained": 21,
+    "arrivalsThisCycle": 17,
+    "departuresThisCycle": 10
   },
   "outlook": {
     "status": "unavailable",
@@ -61,31 +61,31 @@
     "lastObservedUtc": "2026-09-14T21:46:00Z"
   },
   "customers": {
-    "total": 112,
+    "total": 116,
     "tiers": {
       "Critical": 84,
-      "Warning": 28,
+      "Warning": 32,
       "Healthy": 0
     },
     "tierRule": "Critical if ticketsOlderThan7Days/tickets >= 0.5 OR ufnCount >= 3; Warning if share >= 0.25 OR ufnCount >= 1; otherwise Healthy. Every eligible ticket is UFN-tagged, so Healthy is structurally unreachable."
   },
-  "excludedCount": 28,
+  "excludedCount": 29,
   "duplicatesRemoved": 5,
-  "invoiceItemsExcluded": 23,
-  "customerCount": 112,
+  "invoiceItemsExcluded": 24,
+  "customerCount": 116,
   "customerHealthTiers": {
     "Critical": 84,
-    "Warning": 28,
+    "Warning": 32,
     "Healthy": 0
   },
-  "slaBreached": 224,
-  "slaOnTrack": 32,
-  "unassigned": 211,
+  "slaBreached": 230,
+  "slaOnTrack": 33,
+  "unassigned": 216,
   "oldestAgeDays": 196,
   "outlookStatus": "unavailable",
   "outlookThreadsMatched": 25,
   "outlookThreadsLinkedToEligibleTickets": 3,
-  "arrivalsThisCycle": 9,
-  "departuresThisCycle": 9,
+  "arrivalsThisCycle": 17,
+  "departuresThisCycle": 10,
   "outlookDistinctThreads": 9
 }
