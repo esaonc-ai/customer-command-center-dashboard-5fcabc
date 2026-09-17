@@ -64,17 +64,17 @@
     "refreshIntervalMinutes": 15
   },
   "snapshotMetrics": {
-    "refreshId": "refresh-2026-09-16T18:31:00-04:00-AUTHORITATIVE-v43",
-    "refreshedAt": "2026-09-16T18:31:00-04:00",
-    "totalRaw": 329,
-    "totalGateRows": 286,
+    "refreshId": "refresh-2026-09-17T10:24:19-04:00-AUTHORITATIVE-v44",
+    "refreshedAt": "2026-09-17T10:24:19-04:00",
+    "totalRaw": 330,
+    "totalGateRows": 284,
     "totalEligible": 256,
-    "excludedCount": 30,
+    "excludedCount": 28,
     "duplicatesRemoved": 5,
-    "invoiceItemsExcluded": 25,
+    "invoiceItemsExcluded": 23,
     "closeFlagTrueRetained": 20,
-    "arrivalsThisCycle": 30,
-    "departuresThisCycle": 64,
+    "arrivalsThisCycle": 9,
+    "departuresThisCycle": 9,
     "outlookStatus": "unavailable",
     "outlookThreadsMatched": 25
   }
