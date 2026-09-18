@@ -452,7 +452,8 @@
   "UFN-70804"
  ],
  "dataSource": "Outlook (external app agent) - NON-BLOCKING enrichment; window 2026-09-04 -> 2026-09-15 (America/New_York); full UFN search paged (460 raw hits)",
- "generatedAt": "2026-09-15T23:45:00-04:00",
- "lastRefreshed": "2026-09-15T23:45:00-04:00",
- "refreshNote": "Non-blocking enrichment only; UFN-tagged email threads map 1:1 to tickets and are NOT double-counted; overlapping ticket/email threads deduped. Old threads surfaced only via message history were excluded rather than carried forward. Ticket Ops remains authoritative for ticket status. Counts are email-side derived and best-effort."
+ "generatedAt": "2026-09-18T11:35:00-04:00",
+ "lastRefreshed": "2026-09-18T11:35:00-04:00",
+ "refreshNote": "Outlook enrichment could not be collected for the 2026-09-18 cycle (mailbox/tooling unavailable). Thread data below is unchanged from the prior collection window 2026-09-04 -> 2026-09-15. Outlook is non-blocking and contributed nothing to any count in this refresh.",
+ "collectionStatus": "unavailable_this_cycle"
 }

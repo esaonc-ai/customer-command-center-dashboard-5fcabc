@@ -34,23 +34,24 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** – Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** – Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Sep 15 2026 23:45 ET – AUTHORITATIVE)
+## Current Dashboard State (Last Refresh: Sep 18 2026 11:35 ET – AUTHORITATIVE)
 
 | Metric | Value |
 |--------|-------|
-| Total Raw (systemStatus=open) | 368 = New 234 + Pending 78 + Reopen 56 |
-| Gate matched | 312 (New 234, Pending 78) |
-| Eligible | **291** (217 New, 0 Open, 74 Pending) |
-| UFN-Count | 291 |
-| Excluded | 16 billing/UF Billing/storage/handling + 5 overlapping-thread duplicates; Reopen 56 outside gate |
-| closeFlag | **NOT a gate** — 21 live `closeFlag=true` tickets retained |
-| Customers | **56** distinct orgs (all customers visible in eligible tickets; roster supplemental) |
-| SLA Risk | **HIGH** – 247 SLA-breached / 44 on-track; 238 unassigned |
-| Outlook Coverage | 7 direct eligible matches (~2.4%) from 60 matched threads / 53 unique post-dedup; 3 active escalations |
-| Last Refresh | 2026-09-15 23:45 ET (**AUTHORITATIVE** – fresh TicketOps pull, 312/312 rows enumerated) |
-| Next Refresh | ~08:00 ET (daily summary email) |
+| Total Raw (systemStatus=open) | 340 = New 230 + Pending 69 + Reopen 41 |
+| Gate matched | 299 (New 230, Pending 69) |
+| Eligible | **273** (212 New, 0 Open, 61 Pending) |
+| UFN-Count | 273 |
+| Excluded | 23 billing/UF Billing/storage/handling + 3 overlapping-thread duplicates; Reopen 41 outside gate |
+| closeFlag | **NOT a gate** — 23 live `closeFlag=true` tickets retained |
+| Customers | **49** distinct orgs (all customers visible in eligible tickets; roster supplemental) |
+| Customer Health tiers | Critical 27 / Warning 20 / Healthy 2 |
+| SLA Risk | **HIGH** – 240 SLA-breached / 33 on-track; 227 unassigned; oldest 196d |
+| Outlook Coverage | **Not collected this cycle** (non-blocking). Prior window 2026-09-04 → 2026-09-15 retained: 60 matched threads / 53 unique post-dedup; 7 direct eligible matches; 3 active escalations |
+| Last Refresh | 2026-09-18 11:35 ET (**AUTHORITATIVE** – fresh TicketOps pull, 273/273 eligible rows enumerated) |
+| Next Refresh | 2026-09-19 ~08:00 ET (daily summary email) |
 
-> **Premise correction (this refresh):** the instruction cited UFN-67030 as "live-Pending with closeFlag=true". Ticket Ops is authoritative and shows UFN-67030 = `displayStatusName=Solved`, `displayStatusSystemStatus=20`, `closeFlag=true`, staff-closed 2026-09-01. It is excluded **by status**, not by closeFlag. The rule stands: `closeFlag` is not an eligibility gate.
+> **Premise correction (re-confirmed this refresh):** the instruction again cites UFN-67030 as "live-Pending with closeFlag=true". Ticket Ops is authoritative and shows UFN-67030 = `displayStatusName=Solved`, `displayStatusSystemStatus=20`, `closeFlag=true`, staff-closed 2026-09-01. It is excluded **by status**, not by closeFlag. The rule stands: `closeFlag` is not an eligibility gate — 23 live `closeFlag=true` New/Pending tickets are retained this cycle.
 
 ### Action Buckets
 
@@ -81,6 +82,7 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 
 | Refresh | Time (ET) | Key Change |
 |---------|-----------|------------|
+| refresh-2026-09-18T11:35ET-AUTHORITATIVE | 11:35 | **AUTHORITATIVE REFRESH** – Fresh TicketOps pull. Gate 299 (New 230 / Pending 69) − 23 billing/storage/handling − 3 overlapping-thread duplicates = **273 eligible** (212 New / 61 Pending). Reopen 41 excluded by status; closeFlag not a gate (23 retained). Customers 49. 240 SLA-breached / 33 on-track; 227 unassigned. Merged 71059→71056, 70352→70351, 59777→59238. Outlook unavailable this cycle (non-blocking). |
 | refresh-2026-08-11T05:07ET-AUTHORITATIVE | 05:07 | **AUTHORITATIVE REFRESH** – Fresh TicketOps LIVE connection. 48 stale → **9 verified eligible** (81% reduction). 39 tickets resolved/closed during ~8h gap. UFN-65881 (Hint Inc.) resolved. UFN-64607: 243h/10d. UFN-64782: 182h/7d. All 9 Unassigned. 5/9 Outlook matches (56%). Watch bucket cleared to 0. All public/data synced. |
 | refresh-2026-08-11T05:03ET-FRESHNESS | 05:03 | FRESHNESS REFRESH – Ages recalculated (+1h43m since 03:20 ET). Data preserved from authoritative baseline. |
 | refresh-2026-08-11T03:20ET-AUTHORITATIVE | 03:20 | AUTHORITATIVE REFRESH – Fresh TicketOps LIVE connection. 48 stale → 9 verified. 39 resolved/closed. |
@@ -107,9 +109,16 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 
 ## 🚨 Data Freshness Notice
 
-**This refresh (Aug 11 05:07 ET) is an AUTHORITATIVE refresh** with a fresh TicketOps LIVE connection. All statuses verified directly against TicketOps. 39 tickets that were previously assumed eligible (based on Aug 10 23:20 ET preserved state) were found to have moved to ineligible statuses (Closed/Resolved/Cancelled) in TicketOps.
+**This refresh (Sep 18 2026 11:35 ET) is an AUTHORITATIVE refresh** with a fresh TicketOps connection; all 273 eligible
+rows were enumerated directly from TicketOps. Scope: tenant LT, facility LT_F21 (Cesanek), department
+"UNIS Fulfillment - Northampton". 41 Reopen rows sit outside the gate; 23 billing/storage/handling items and 3
+overlapping ticket/email duplicates were removed from the gate-matched set.
 
-**Queue health**: 81% reduction from stale state. Only 9 verified eligible tickets remain. SLA breach rate is now 22% (2/9), which is significantly elevated due to the smaller denominator.
+**Queue health:** SLA breach rate remains very high (240/273 breached). The facility is in an active closure/transition
+wave, which is why recurring notification series (Dock Activity, VIVO damage reminders, Business Partner Updates) and
+move-out/transfer threads dominate the aged tail.
+
+**Outlook context:** not available this cycle; it is non-blocking and contributed nothing to any count.
 
 ## Data Files
 

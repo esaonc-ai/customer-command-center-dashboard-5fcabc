@@ -6,29 +6,30 @@
   "tenant": "LT",
   "timezone": "America/New_York"
  },
- "lastRefreshed": "2026-09-15T23:45:00-04:00",
+ "lastRefreshed": "2026-09-18T11:35:00-04:00",
  "dataSource": "TicketOps (authoritative)",
  "refreshType": "AUTHORITATIVE",
- "totalRaw": 368,
- "totalEligible": 291,
- "newCount": 217,
+ "totalRaw": 340,
+ "totalEligible": 273,
+ "newCount": 212,
  "openCount": 0,
- "pendingCount": 74,
- "truncationNote": "closeFlag not a gate; Reopen (56) and billing/storage/handling (16) excluded; 5 overlapping duplicates dropped",
+ "pendingCount": 61,
+ "truncationNote": "closeFlag not a gate; Reopen (41) and billing/storage/handling (23) excluded; 3 overlapping duplicates dropped",
  "slaHealth": {
-  "breached": 247,
-  "onTrack": 44,
-  "unassigned": 238
+  "breached": 240,
+  "onTrack": 33,
+  "unassigned": 227
  },
  "evidenceMetrics": {
-  "totalEligible": 291,
-  "slaBreached": 247,
-  "slaOnTrack": 44,
-  "unassigned": 238,
-  "oldestAgeDays": 195,
+  "totalEligible": 273,
+  "slaBreached": 240,
+  "slaOnTrack": 33,
+  "unassigned": 227,
+  "oldestAgeDays": 196,
   "outlookThreadsMatched": 60,
   "outlookThreadsUniquePostDedup": 53,
   "outlookDirectEligibleMatches": 7,
-  "activeEscalations": 3
+  "activeEscalations": 3,
+  "outlookStatus": "carried_forward_unavailable_this_cycle"
  }
 }
