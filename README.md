@@ -36,26 +36,38 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** – Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** – Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Sep 18 5:35 AM ET - AUTHORITATIVE v46)
+## Current Dashboard State (Last Refresh: Sep 19 2:26 PM ET - AUTHORITATIVE v47)
 
 | Metric | Value |
 |--------|-------|
-| Total Raw (system-open UFN, department scope) | **339** = 229 New / 69 Pending / 41 Reopen; New+Pending gate **298** |
-| Eligible | **268** conversations (208 New, 0 Open, 60 Pending) |
-| Excluded | 30 = 25 billing-family + 5 overlapping conversations; 41 Reopen rows outside the gate |
-| Eligible arrivals | **+5**: UFN-68537, UFN-71035, UFN-71085, UFN-71093, UFN-71098 |
-| Eligible departures | **-0**: none |
-| closeFlag | **NOT a gate** - 23 live closeFlag=true tickets retained (24 gate-wide) |
-| Customers | **118** distinct live customer labels (85 Critical / 33 Warning / 0 Healthy; every ticket-visible customer covered) |
-| Priority | 268 Medium |
-| SLA Risk | **ELEVATED** - 235 SLA-breached / 33 current; 219 unassigned |
-| Action Buckets | Immediate **23** / Short-Term **15** / Medium-Term **23** / Watch **207** |
+| Total Raw (system-open UFN, department scope) | **345** = 236 New / 70 Pending / 39 Reopen; New+Pending gate **306** |
+| Eligible | **277** conversations (216 New, 0 Open, 61 Pending) |
+| Excluded | 29 = 24 billing-family + 5 overlapping conversations; 39 Reopen rows outside the gate |
+| Eligible arrivals | **+29**: UFN-69811, UFN-70404, UFN-70980, UFN-71077, UFN-71112, UFN-71124, UFN-71126, UFN-71127, UFN-71131, UFN-71132, UFN-71134, UFN-71143, UFN-71146, UFN-71147, UFN-71148, UFN-71150, UFN-71152, UFN-71161, UFN-71162, UFN-71163, UFN-71164, UFN-71180, UFN-71182, UFN-71194, UFN-71195, UFN-71196, UFN-71197, UFN-71200, UFN-71201 |
+| Eligible departures | **-20**: UFN-67551, UFN-68149, UFN-68951, UFN-69334, UFN-70244, UFN-70309, UFN-70413, UFN-70500, UFN-70513, UFN-70825, UFN-70919, UFN-70984, UFN-71027, UFN-71030, UFN-71035, UFN-71056, UFN-71059, UFN-71072, UFN-71079, UFN-71098 |
+| closeFlag | **NOT a gate** - 24 live closeFlag=true tickets retained (25 gate-wide) |
+| Customers | **123** distinct live customer labels (87 Critical / 36 Warning / 0 Healthy; every ticket-visible customer covered) |
+| Priority | 273 Medium / 4 unavailable |
+| SLA Risk | **ELEVATED** - 234 SLA-breached / 43 current; 226 unassigned |
+| Action Buckets | Immediate **12** / Short-Term **31** / Medium-Term **28** / Watch **206** |
 | Outlook Coverage | **Unavailable this cycle** - last observed (v42): 25 UFN messages / 9 distinct threads, latest 2026-09-14T21:46:00Z; stale and supplemental only |
-| Last Refresh | 2026-09-18T05:35:00-04:00 (**AUTHORITATIVE v45**, department 323826714354839552) |
+| Last Refresh | 2026-09-19T14:26:00-04:00 (**AUTHORITATIVE v47**, department 323826714354839552) |
 
 ## Developer Reconciliation Note
 
-### v45 -> v46 (Sep 18 5:35 AM ET)
+### v46 -> v47 (Sep 19 2:26 PM ET)
+
+- **Live gate.** 345 system-open rows = 236 New / 70 Pending / 39 Reopen. The exact New/Pending UFN gate contains 306 rows.
+- **Gate arrivals (29).** UFN-69811, UFN-70404, UFN-70980, UFN-71077, UFN-71112, UFN-71124, UFN-71126, UFN-71127, UFN-71131, UFN-71132, UFN-71134, UFN-71143, UFN-71146, UFN-71147, UFN-71148, UFN-71150, UFN-71152, UFN-71161, UFN-71162, UFN-71163, UFN-71164, UFN-71180, UFN-71182, UFN-71194, UFN-71195, UFN-71196, UFN-71197, UFN-71200, UFN-71201.
+- **Gate departures (21).** UFN-67551, UFN-68149, UFN-68951, UFN-69334, UFN-70244, UFN-70309, UFN-70413, UFN-70500, UFN-70513, UFN-70825, UFN-70919, UFN-70984, UFN-71027, UFN-71030, UFN-71035, UFN-71056, UFN-71059, UFN-71072, UFN-71079, UFN-71098, UFN-71107.
+- **Eligible arrivals (29).** UFN-69811, UFN-70404, UFN-70980, UFN-71077, UFN-71112, UFN-71124, UFN-71126, UFN-71127, UFN-71131, UFN-71132, UFN-71134, UFN-71143, UFN-71146, UFN-71147, UFN-71148, UFN-71150, UFN-71152, UFN-71161, UFN-71162, UFN-71163, UFN-71164, UFN-71180, UFN-71182, UFN-71194, UFN-71195, UFN-71196, UFN-71197, UFN-71200, UFN-71201.
+- **Eligible departures (20).** UFN-67551, UFN-68149, UFN-68951, UFN-69334, UFN-70244, UFN-70309, UFN-70413, UFN-70500, UFN-70513, UFN-70825, UFN-70919, UFN-70984, UFN-71027, UFN-71030, UFN-71035, UFN-71056, UFN-71059, UFN-71072, UFN-71079, UFN-71098.
+- **Exclusions.** 24 live billing/UF Billing/storage/handling/invoice-family rows (including the carried-forward F26 Month End Close Reminder rows) and 5 overlapping CASE/DN rows were excluded, yielding 277 eligible conversations.
+- **closeFlag evidence.** 24 closeFlag=true rows remain eligible (25 gate-wide); closeFlag was not used as a gate. UFN-67030 is Solved / systemStatus 20 and is outside the open bucket, so the gate is proven by the live closeFlag=true New/Pending rows instead.
+- **Customer Health.** All 123 customer labels visible in eligible live tickets are included; roster and aliases are supplemental only.
+- **Outlook was unavailable this cycle.** No delegated-mailbox read was performed, so no Outlook value was refreshed. The v42 values (25 messages / 9 threads, latest 2026-09-14T21:46:00Z) are carried forward and labelled stale, and no operational metric depends on them.
+
+### v45 -> v46 (superseded by v47) (Sep 18 5:35 AM ET)
 
 - **Live gate.** 339 system-open rows = 229 New / 69 Pending / 41 Reopen. The exact New/Pending UFN gate contains 298 rows.
 - **Gate arrivals (6).** UFN-68537, UFN-71035, UFN-71085, UFN-71093, UFN-71098, UFN-71107.

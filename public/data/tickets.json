@@ -1,20 +1,20 @@
 [
   {
-    "ticketId": "UFN-71098",
-    "customer": "sona.street@smegusa.com",
-    "customerEmail": "sona.street@smegusa.com",
+    "ticketId": "UFN-71201",
+    "customer": "Jenelle Shimko",
+    "customerEmail": "jenelle.shimko@smegusa.com",
     "opsStatus": "New",
     "displayStatusName": "New",
     "displayStatusSystemStatus": 10,
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "BOL for Crate&Barrel's MISSED PALLET ",
-    "createdAt": "2026-09-17T23:57:56.000Z",
-    "createdDate": "2026-09-17",
-    "updatedAt": "2026-09-17T23:57:58.000Z",
-    "lastUpdated": "2026-09-17",
-    "dueDate": "2026-09-22T20:58:00.000Z",
+    "subject": "TRANS123 - TRANS132 - Imported status",
+    "createdAt": "2026-09-19T17:44:25.000Z",
+    "createdDate": "2026-09-19",
+    "updatedAt": "2026-09-19T17:44:35.000Z",
+    "lastUpdated": "2026-09-19",
+    "dueDate": "2026-09-23T18:00:00.000Z",
     "assigned": "Unassigned",
     "closeFlag": false,
     "slaStatus": "On Track",
@@ -23,8 +23,656 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 9,
+    "ageHours": 0,
     "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-71200",
+    "customer": "mail.service@item.com",
+    "customerEmail": "mail.service@item.com",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "OMS Alert-Unis, LLC-MODERN INFUSIONS LLC_v3-34 Order Processing Exceptions Detected",
+    "createdAt": "2026-09-19T16:02:14.000Z",
+    "createdDate": "2026-09-19",
+    "updatedAt": "2026-09-19T16:02:14.000Z",
+    "lastUpdated": "2026-09-19",
+    "dueDate": "2026-09-23T18:00:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 2,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-71197",
+    "customer": "mail.service@item.com",
+    "customerEmail": "mail.service@item.com",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "OMS Alert-Unis, LLC-MODERN INFUSIONS LLC_v3-34 Order Processing Exceptions Detected",
+    "createdAt": "2026-09-19T16:00:07.000Z",
+    "createdDate": "2026-09-19",
+    "updatedAt": "2026-09-19T16:00:12.000Z",
+    "lastUpdated": "2026-09-19",
+    "dueDate": "2026-09-23T18:00:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 2,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-71196",
+    "customer": "Margaret Dandrea (margaret.dandrea@unisco.com)",
+    "customerEmail": "margaret.dandrea@unisco.com",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "@smeg.northampton@unisco.com E: FW: Almi Interiors ACC#10036032 PO#912026",
+    "createdAt": "2026-09-19T14:39:42.000Z",
+    "createdDate": "2026-09-19",
+    "updatedAt": "2026-09-19T14:39:45.000Z",
+    "lastUpdated": "2026-09-19",
+    "dueDate": "2026-09-23T18:00:00.000Z",
+    "assigned": "Angelica Achacoso",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 3,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-71195",
+    "customer": "mail.service@item.com",
+    "customerEmail": "mail.service@item.com",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "Dropship Order Daily Report - 2026-09-18",
+    "createdAt": "2026-09-19T13:00:58.000Z",
+    "createdDate": "2026-09-19",
+    "updatedAt": "2026-09-19T13:01:04.000Z",
+    "lastUpdated": "2026-09-19",
+    "dueDate": "2026-09-23T18:00:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 5,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-71194",
+    "customer": "mail.service@item.com",
+    "customerEmail": "mail.service@item.com",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "Dropship Order Daily Report - 2026-09-18",
+    "createdAt": "2026-09-19T13:00:56.000Z",
+    "createdDate": "2026-09-19",
+    "updatedAt": "2026-09-19T13:01:04.000Z",
+    "lastUpdated": "2026-09-19",
+    "dueDate": "2026-09-23T18:00:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 5,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-71182",
+    "customer": "Arthur Navarrete",
+    "customerEmail": "arthur.navarrete@tcl.com",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "UNIS - (HVAC & AC) Shipping Notice 9-18-2026",
+    "createdAt": "2026-09-19T00:08:43.000Z",
+    "createdDate": "2026-09-19",
+    "updatedAt": "2026-09-19T00:08:48.000Z",
+    "lastUpdated": "2026-09-19",
+    "dueDate": "2026-09-23T18:00:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 18,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-71180",
+    "customer": "bdalder@drinkhint.com",
+    "customerEmail": "bdalder@drinkhint.com",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "Re: OUTBOUND: DN-3352726 // REF# 122661670",
+    "createdAt": "2026-09-18T23:35:48.000Z",
+    "createdDate": "2026-09-18",
+    "updatedAt": "2026-09-18T23:35:58.000Z",
+    "lastUpdated": "2026-09-18",
+    "dueDate": "2026-09-23T18:00:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 18,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-71164",
+    "customer": "jerantony.k.ayala@unfi.com",
+    "customerEmail": "jerantony.k.ayala@unfi.com",
+    "opsStatus": "Pending",
+    "displayStatusName": "Pending",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "Appt Request",
+    "createdAt": "2026-09-18T19:29:42.000Z",
+    "createdDate": "2026-09-18",
+    "updatedAt": "2026-09-18T20:00:10.000Z",
+    "lastUpdated": "2026-09-18",
+    "dueDate": "2026-09-23T16:30:00.000Z",
+    "assigned": "Timothy McHugh",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 22,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-71163",
+    "customer": "Jehnifur Morvai (jehnifur.morvai@unisco.com)",
+    "customerEmail": "jehnifur.morvai@unisco.com",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "RE: Wise access to Cyprus",
+    "createdAt": "2026-09-18T19:17:01.000Z",
+    "createdDate": "2026-09-18",
+    "updatedAt": "2026-09-18T19:17:01.000Z",
+    "lastUpdated": "2026-09-18",
+    "dueDate": "2026-09-23T16:18:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 23,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-71162",
+    "customer": "ichan@vitacoco.com",
+    "customerEmail": "ichan@vitacoco.com",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "JAX to BP Transfer | 09/18/26",
+    "createdAt": "2026-09-18T19:10:45.000Z",
+    "createdDate": "2026-09-18",
+    "updatedAt": "2026-09-18T19:11:54.000Z",
+    "lastUpdated": "2026-09-18",
+    "dueDate": "2026-09-23T16:11:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 23,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-71161",
+    "customer": "Kevin Grossi (Kevin.Grossi@chrobinson.com)",
+    "customerEmail": "Kevin.Grossi@chrobinson.com",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "ROAR - TRANSFER18; Boxes, SOS",
+    "createdAt": "2026-09-18T19:06:50.000Z",
+    "createdDate": "2026-09-18",
+    "updatedAt": "2026-09-18T19:06:51.000Z",
+    "lastUpdated": "2026-09-18",
+    "dueDate": "2026-09-23T16:07:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 23,
+    "ageDays": 0
+  },
+  {
+    "ticketId": "UFN-71152",
+    "customer": "Kevin Grossi (Kevin.Grossi@chrobinson.com)",
+    "customerEmail": "Kevin.Grossi@chrobinson.com",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "unavailable",
+    "priorityNameSource": "unavailable",
+    "prioritySourceMissing": true,
+    "subject": "ROAR TRANSFER ORDERS",
+    "createdAt": "2026-09-18T17:35:33.000Z",
+    "createdDate": "2026-09-18",
+    "updatedAt": "2026-09-18T20:46:31.000Z",
+    "lastUpdated": "2026-09-18",
+    "dueDate": "2026-09-22T23:36:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 3,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 24,
+    "ageDays": 1
+  },
+  {
+    "ticketId": "UFN-71150",
+    "customer": "Kelvin Johnson",
+    "customerEmail": "kjohnson@globaltranz.com",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "Pickup Request: Hint UNIS Outbound Confirmation",
+    "createdAt": "2026-09-18T17:18:59.000Z",
+    "createdDate": "2026-09-18",
+    "updatedAt": "2026-09-18T18:57:10.000Z",
+    "lastUpdated": "2026-09-18",
+    "dueDate": "2026-09-22T23:19:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 25,
+    "ageDays": 1
+  },
+  {
+    "ticketId": "UFN-71148",
+    "customer": "Read Assistant (executiveassistant@e.read.ai)",
+    "customerEmail": "executiveassistant@e.read.ai",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "🗓 UNIS DTC Call on September 18, 2026 | Read Meeting Report",
+    "createdAt": "2026-09-18T16:47:48.000Z",
+    "createdDate": "2026-09-18",
+    "updatedAt": "2026-09-19T16:03:24.000Z",
+    "lastUpdated": "2026-09-19",
+    "dueDate": "2026-09-22T22:48:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 25,
+    "ageDays": 1
+  },
+  {
+    "ticketId": "UFN-71147",
+    "customer": "lokelly@sheex.com",
+    "customerEmail": "lokelly@sheex.com",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "FW: Gaiters",
+    "createdAt": "2026-09-18T16:38:58.000Z",
+    "createdDate": "2026-09-18",
+    "updatedAt": "2026-09-18T16:39:13.000Z",
+    "lastUpdated": "2026-09-18",
+    "dueDate": "2026-09-22T22:39:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 25,
+    "ageDays": 1
+  },
+  {
+    "ticketId": "UFN-71146",
+    "customer": "mail.service@item.com",
+    "customerEmail": "mail.service@item.com",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "OMS Alert-Unis, LLC-MODERN INFUSIONS LLC_v3-35 Order Processing Exceptions Detected",
+    "createdAt": "2026-09-18T16:01:51.000Z",
+    "createdDate": "2026-09-18",
+    "updatedAt": "2026-09-18T16:01:59.000Z",
+    "lastUpdated": "2026-09-18",
+    "dueDate": "2026-09-22T22:02:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 26,
+    "ageDays": 1
+  },
+  {
+    "ticketId": "UFN-71143",
+    "customer": "mail.service@item.com",
+    "customerEmail": "mail.service@item.com",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "OMS Alert-Unis, LLC-MODERN INFUSIONS LLC_v3-35 Order Processing Exceptions Detected",
+    "createdAt": "2026-09-18T16:01:04.000Z",
+    "createdDate": "2026-09-18",
+    "updatedAt": "2026-09-18T16:01:06.000Z",
+    "lastUpdated": "2026-09-18",
+    "dueDate": "2026-09-22T22:02:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 26,
+    "ageDays": 1
+  },
+  {
+    "ticketId": "UFN-71134",
+    "customer": "kelly.feteira@colavita.com",
+    "customerEmail": "kelly.feteira@colavita.com",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "C&S 803289 DN-2126974",
+    "createdAt": "2026-09-18T15:24:12.000Z",
+    "createdDate": "2026-09-18",
+    "updatedAt": "2026-09-18T15:44:02.000Z",
+    "lastUpdated": "2026-09-18",
+    "dueDate": "2026-09-22T21:25:00.000Z",
+    "assigned": "Timothy McHugh",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 27,
+    "ageDays": 1
+  },
+  {
+    "ticketId": "UFN-71132",
+    "customer": "noreply@tms.blujaysolutions.net",
+    "customerEmail": "noreply@tms.blujaysolutions.net",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "Advanced Report - Dock Activity",
+    "createdAt": "2026-09-18T15:04:42.000Z",
+    "createdDate": "2026-09-18",
+    "updatedAt": "2026-09-18T15:04:45.000Z",
+    "lastUpdated": "2026-09-18",
+    "dueDate": "2026-09-22T21:05:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 27,
+    "ageDays": 1
+  },
+  {
+    "ticketId": "UFN-71131",
+    "customer": "timothy.mchugh@unisco.com",
+    "customerEmail": "timothy.mchugh@unisco.com",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "RE: MAIZLY INC - Disputes and Claims Update  - $40,000 Claim",
+    "createdAt": "2026-09-18T15:04:40.000Z",
+    "createdDate": "2026-09-18",
+    "updatedAt": "2026-09-18T18:19:02.000Z",
+    "lastUpdated": "2026-09-18",
+    "dueDate": "2026-09-22T21:05:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 27,
+    "ageDays": 1
+  },
+  {
+    "ticketId": "UFN-71127",
+    "customer": "James Devlin (jamesdevlin@zenwtr.com)",
+    "customerEmail": "jamesdevlin@zenwtr.com",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "RE: DN-2131002",
+    "createdAt": "2026-09-18T14:43:31.000Z",
+    "createdDate": "2026-09-18",
+    "updatedAt": "2026-09-18T20:22:52.000Z",
+    "lastUpdated": "2026-09-18",
+    "dueDate": "2026-09-22T21:00:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 27,
+    "ageDays": 1
+  },
+  {
+    "ticketId": "UFN-71126",
+    "customer": "ETCC Reg4 Scheduling",
+    "customerEmail": "etccreg4scheduling@walmart.com",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "MPU Scheduling Notification - Load: 93951408",
+    "createdAt": "2026-09-18T14:22:18.000Z",
+    "createdDate": "2026-09-18",
+    "updatedAt": "2026-09-18T14:22:25.000Z",
+    "lastUpdated": "2026-09-18",
+    "dueDate": "2026-09-22T21:00:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 28,
+    "ageDays": 1
+  },
+  {
+    "ticketId": "UFN-71124",
+    "customer": "noreply@infornexus.com",
+    "customerEmail": "noreply@infornexus.com",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "Niagara Warehouse Inbound Report - NJ/NY  - UNIS PA *Visibility Only*[NO RESULTS]",
+    "createdAt": "2026-09-18T14:09:56.000Z",
+    "createdDate": "2026-09-18",
+    "updatedAt": "2026-09-18T20:49:23.000Z",
+    "lastUpdated": "2026-09-18",
+    "dueDate": "2026-09-22T21:00:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 28,
+    "ageDays": 1
+  },
+  {
+    "ticketId": "UFN-71112",
+    "customer": "Jeffrey Long - jsl003k",
+    "customerEmail": "jeffrey.long@walmart.com",
+    "opsStatus": "New",
+    "displayStatusName": "New",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "RE: bills",
+    "createdAt": "2026-09-18T12:46:45.000Z",
+    "createdDate": "2026-09-18",
+    "updatedAt": "2026-09-18T12:46:45.000Z",
+    "lastUpdated": "2026-09-18",
+    "dueDate": "2026-09-22T21:00:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": false,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 29,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-71093",
@@ -39,8 +687,8 @@
     "subject": "RE: Hint - Inventroy",
     "createdAt": "2026-09-17T21:12:57.000Z",
     "createdDate": "2026-09-17",
-    "updatedAt": "2026-09-17T21:13:02.000Z",
-    "lastUpdated": "2026-09-17",
+    "updatedAt": "2026-09-18T22:28:52.000Z",
+    "lastUpdated": "2026-09-18",
     "dueDate": "2026-09-22T18:13:00.000Z",
     "assigned": "Unassigned",
     "closeFlag": false,
@@ -50,15 +698,15 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 12,
-    "ageDays": 0
+    "ageHours": 45,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-71085",
     "customer": "kelly.feteira@colavita.com",
     "customerEmail": "kelly.feteira@colavita.com",
-    "opsStatus": "New",
-    "displayStatusName": "New",
+    "opsStatus": "Pending",
+    "displayStatusName": "Pending",
     "displayStatusSystemStatus": 10,
     "priority": "Medium",
     "priorityNameSource": "ticket",
@@ -66,10 +714,10 @@
     "subject": "Open Orders at Unis",
     "createdAt": "2026-09-17T20:38:30.000Z",
     "createdDate": "2026-09-17",
-    "updatedAt": "2026-09-17T20:38:36.000Z",
-    "lastUpdated": "2026-09-17",
+    "updatedAt": "2026-09-18T12:16:21.000Z",
+    "lastUpdated": "2026-09-18",
     "dueDate": "2026-09-22T17:39:00.000Z",
-    "assigned": "Unassigned",
+    "assigned": "Timothy McHugh",
     "closeFlag": false,
     "slaStatus": "On Track",
     "isOverdue": false,
@@ -77,35 +725,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 12,
-    "ageDays": 0
-  },
-  {
-    "ticketId": "UFN-71079",
-    "customer": "Mosso, Tina",
-    "customerEmail": "tina.mosso@estes-express.com",
-    "opsStatus": "New",
-    "displayStatusName": "New",
-    "displayStatusSystemStatus": 10,
-    "priority": "Medium",
-    "priorityNameSource": "ticket",
-    "prioritySourceMissing": false,
-    "subject": "RYDER PICK UP--RE: [EXTERNAL]  RyderTrac Alert - Low - EXLA BOL - 99866596",
-    "createdAt": "2026-09-17T19:41:16.000Z",
-    "createdDate": "2026-09-17",
-    "updatedAt": "2026-09-17T19:41:25.000Z",
-    "lastUpdated": "2026-09-17",
-    "dueDate": "2026-09-22T16:42:00.000Z",
-    "assigned": "Unassigned",
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "isOverdue": false,
-    "isSlaBreached": false,
-    "conversationId": null,
-    "sourceChannel": 2,
-    "topicTitle": "UF General Inquiry",
-    "ageHours": 13,
-    "ageDays": 0
+    "ageHours": 45,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-71078",
@@ -120,8 +741,8 @@
     "subject": "UNIS --> Edison - Week of 9/21",
     "createdAt": "2026-09-17T19:32:27.000Z",
     "createdDate": "2026-09-17",
-    "updatedAt": "2026-09-17T19:32:42.000Z",
-    "lastUpdated": "2026-09-17",
+    "updatedAt": "2026-09-18T20:47:41.000Z",
+    "lastUpdated": "2026-09-18",
     "dueDate": "2026-09-22T16:33:00.000Z",
     "assigned": "Unassigned",
     "closeFlag": false,
@@ -131,8 +752,35 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 14,
-    "ageDays": 0
+    "ageHours": 46,
+    "ageDays": 1
+  },
+  {
+    "ticketId": "UFN-71077",
+    "customer": "Mirza Abdic",
+    "customerEmail": "mirza@atnglobal.com",
+    "opsStatus": "Pending",
+    "displayStatusName": "Pending",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "Pickup appointment request // Northampton, PA - PA and CA // Tomorrow",
+    "createdAt": "2026-09-17T19:22:11.000Z",
+    "createdDate": "2026-09-17",
+    "updatedAt": "2026-09-18T20:56:23.000Z",
+    "lastUpdated": "2026-09-18",
+    "dueDate": "2026-09-22T16:23:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": true,
+    "slaStatus": "On Track",
+    "isOverdue": false,
+    "isSlaBreached": false,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 47,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-71073",
@@ -158,35 +806,8 @@
     "conversationId": "DN-2131002",
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 14,
-    "ageDays": 0
-  },
-  {
-    "ticketId": "UFN-71072",
-    "customer": "dsteigerwalt@niagarawater.com",
-    "customerEmail": "dsteigerwalt@niagarawater.com",
-    "opsStatus": "New",
-    "displayStatusName": "New",
-    "displayStatusSystemStatus": 10,
-    "priority": "Medium",
-    "priorityNameSource": "ticket",
-    "prioritySourceMissing": false,
-    "subject": "New orders B280 / CB616 / Chozen / Billion  (HAZ): Pickup at UNIS Northampton new orders (9/21-9/26)",
-    "createdAt": "2026-09-17T18:32:20.000Z",
-    "createdDate": "2026-09-17",
-    "updatedAt": "2026-09-17T20:20:33.000Z",
-    "lastUpdated": "2026-09-17",
-    "dueDate": "2026-09-22T15:33:00.000Z",
-    "assigned": "Yang-Lhing Bague",
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "isOverdue": false,
-    "isSlaBreached": false,
-    "conversationId": null,
-    "sourceChannel": 2,
-    "topicTitle": "UF General Inquiry",
-    "ageHours": 15,
-    "ageDays": 0
+    "ageHours": 47,
+    "ageDays": 1
   },
   {
     "ticketId": "UFN-71068",
@@ -212,8 +833,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 15,
-    "ageDays": 0
+    "ageHours": 48,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-71067",
@@ -239,8 +860,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 15,
-    "ageDays": 0
+    "ageHours": 48,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-71065",
@@ -266,8 +887,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 15,
-    "ageDays": 0
+    "ageHours": 48,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-71064",
@@ -282,8 +903,8 @@
     "subject": "UNIS --> Romark - Week of 9/21",
     "createdAt": "2026-09-17T17:49:23.000Z",
     "createdDate": "2026-09-17",
-    "updatedAt": "2026-09-17T17:49:36.000Z",
-    "lastUpdated": "2026-09-17",
+    "updatedAt": "2026-09-18T20:47:01.000Z",
+    "lastUpdated": "2026-09-18",
     "dueDate": "2026-09-21T15:50:00.000Z",
     "assigned": "Unassigned",
     "closeFlag": false,
@@ -293,62 +914,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 15,
-    "ageDays": 0
-  },
-  {
-    "ticketId": "UFN-71059",
-    "customer": "mail.service@item.com",
-    "customerEmail": "mail.service@item.com",
-    "opsStatus": "New",
-    "displayStatusName": "New",
-    "displayStatusSystemStatus": 10,
-    "priority": "Medium",
-    "priorityNameSource": "ticket",
-    "prioritySourceMissing": false,
-    "subject": "OMS Alert-Unis, LLC-MODERN INFUSIONS LLC_v3-45 Order Processing Exceptions Detected",
-    "createdAt": "2026-09-17T16:03:36.000Z",
-    "createdDate": "2026-09-17",
-    "updatedAt": "2026-09-17T16:03:39.000Z",
-    "lastUpdated": "2026-09-17",
-    "dueDate": "2026-09-21T14:04:00.000Z",
-    "assigned": "Unassigned",
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "isOverdue": false,
-    "isSlaBreached": false,
-    "conversationId": null,
-    "sourceChannel": 2,
-    "topicTitle": "UF General Inquiry",
-    "ageHours": 17,
-    "ageDays": 0
-  },
-  {
-    "ticketId": "UFN-71056",
-    "customer": "mail.service@item.com",
-    "customerEmail": "mail.service@item.com",
-    "opsStatus": "New",
-    "displayStatusName": "New",
-    "displayStatusSystemStatus": 10,
-    "priority": "Medium",
-    "priorityNameSource": "ticket",
-    "prioritySourceMissing": false,
-    "subject": "OMS Alert-Unis, LLC-MODERN INFUSIONS LLC_v3-45 Order Processing Exceptions Detected",
-    "createdAt": "2026-09-17T16:00:21.000Z",
-    "createdDate": "2026-09-17",
-    "updatedAt": "2026-09-17T16:00:27.000Z",
-    "lastUpdated": "2026-09-17",
-    "dueDate": "2026-09-21T14:01:00.000Z",
-    "assigned": "Unassigned",
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "isOverdue": false,
-    "isSlaBreached": false,
-    "conversationId": null,
-    "sourceChannel": 2,
-    "topicTitle": "UF General Inquiry",
-    "ageHours": 17,
-    "ageDays": 0
+    "ageHours": 48,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-71055",
@@ -374,8 +941,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 17,
-    "ageDays": 0
+    "ageHours": 50,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-71054",
@@ -401,8 +968,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 17,
-    "ageDays": 0
+    "ageHours": 50,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-71053",
@@ -428,8 +995,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 17,
-    "ageDays": 0
+    "ageHours": 50,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-71040",
@@ -455,35 +1022,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 18,
-    "ageDays": 0
-  },
-  {
-    "ticketId": "UFN-71035",
-    "customer": "Marlen Viera (Marlen@idcintl.com)",
-    "customerEmail": "Marlen@idcintl.com",
-    "opsStatus": "Pending",
-    "displayStatusName": "Pending",
-    "displayStatusSystemStatus": 10,
-    "priority": "Medium",
-    "priorityNameSource": "ticket",
-    "prioritySourceMissing": false,
-    "subject": "TCL containers",
-    "createdAt": "2026-09-17T14:24:55.000Z",
-    "createdDate": "2026-09-17",
-    "updatedAt": "2026-09-17T23:27:13.000Z",
-    "lastUpdated": "2026-09-17",
-    "dueDate": "2026-09-21T13:00:00.000Z",
-    "assigned": "Lesean Torres",
-    "closeFlag": true,
-    "slaStatus": "On Track",
-    "isOverdue": false,
-    "isSlaBreached": false,
-    "conversationId": null,
-    "sourceChannel": 2,
-    "topicTitle": "UF General Inquiry",
-    "ageHours": 19,
-    "ageDays": 0
+    "ageHours": 51,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-71032",
@@ -509,8 +1049,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 19,
-    "ageDays": 0
+    "ageHours": 52,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-71031",
@@ -536,62 +1076,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 20,
-    "ageDays": 0
-  },
-  {
-    "ticketId": "UFN-71030",
-    "customer": "Joseph Griffin",
-    "customerEmail": "joseph.griffin@ttgi.com",
-    "opsStatus": "New",
-    "displayStatusName": "New",
-    "displayStatusSystemStatus": 10,
-    "priority": "Medium",
-    "priorityNameSource": "ticket",
-    "prioritySourceMissing": false,
-    "subject": "Pick-ups",
-    "createdAt": "2026-09-17T13:26:58.000Z",
-    "createdDate": "2026-09-17",
-    "updatedAt": "2026-09-17T17:14:54.000Z",
-    "lastUpdated": "2026-09-17",
-    "dueDate": "2026-09-21T13:00:00.000Z",
-    "assigned": "Unassigned",
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "isOverdue": false,
-    "isSlaBreached": false,
-    "conversationId": null,
-    "sourceChannel": 2,
-    "topicTitle": "UF General Inquiry",
-    "ageHours": 20,
-    "ageDays": 0
-  },
-  {
-    "ticketId": "UFN-71027",
-    "customer": "mail.service@item.com",
-    "customerEmail": "mail.service@item.com",
-    "opsStatus": "New",
-    "displayStatusName": "New",
-    "displayStatusSystemStatus": 10,
-    "priority": "Medium",
-    "priorityNameSource": "ticket",
-    "prioritySourceMissing": false,
-    "subject": "Dropship Order Daily Report - 2026-09-16",
-    "createdAt": "2026-09-17T13:04:57.000Z",
-    "createdDate": "2026-09-17",
-    "updatedAt": "2026-09-17T13:05:11.000Z",
-    "lastUpdated": "2026-09-17",
-    "dueDate": "2026-09-21T13:00:00.000Z",
-    "assigned": "Unassigned",
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "isOverdue": false,
-    "isSlaBreached": false,
-    "conversationId": null,
-    "sourceChannel": 2,
-    "topicTitle": "UF General Inquiry",
-    "ageHours": 20,
-    "ageDays": 0
+    "ageHours": 52,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-71026",
@@ -606,8 +1092,8 @@
     "subject": "Northampton -> Joliet | Move out Transfers // DN-2130966",
     "createdAt": "2026-09-17T13:04:55.000Z",
     "createdDate": "2026-09-17",
-    "updatedAt": "2026-09-17T14:46:48.000Z",
-    "lastUpdated": "2026-09-17",
+    "updatedAt": "2026-09-18T16:19:21.000Z",
+    "lastUpdated": "2026-09-18",
     "dueDate": "2026-09-21T13:00:00.000Z",
     "assigned": "Unassigned",
     "closeFlag": false,
@@ -617,8 +1103,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 20,
-    "ageDays": 0
+    "ageHours": 53,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70992",
@@ -633,8 +1119,8 @@
     "subject": "Re: [EXTERNAL] Re: UNIS --> Romark - SATURDAY LOADS - 9/19",
     "createdAt": "2026-09-16T19:05:45.000Z",
     "createdDate": "2026-09-16",
-    "updatedAt": "2026-09-17T18:53:38.000Z",
-    "lastUpdated": "2026-09-17",
+    "updatedAt": "2026-09-19T16:30:11.000Z",
+    "lastUpdated": "2026-09-19",
     "dueDate": "2026-09-21T08:06:00.000Z",
     "assigned": "Timothy McHugh",
     "closeFlag": false,
@@ -644,15 +1130,15 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 38,
-    "ageDays": 1
+    "ageHours": 71,
+    "ageDays": 2
   },
   {
     "ticketId": "UFN-70987",
     "customer": "chodde@niagarawater.com",
     "customerEmail": "chodde@niagarawater.com",
-    "opsStatus": "New",
-    "displayStatusName": "New",
+    "opsStatus": "Pending",
+    "displayStatusName": "Pending",
     "displayStatusSystemStatus": 10,
     "priority": "Medium",
     "priorityNameSource": "ticket",
@@ -660,8 +1146,8 @@
     "subject": "RE: NIAGARA/PLAINFIELD/ DUYTAN/ 9.16 - 9.27",
     "createdAt": "2026-09-16T19:00:10.000Z",
     "createdDate": "2026-09-16",
-    "updatedAt": "2026-09-17T20:05:25.000Z",
-    "lastUpdated": "2026-09-17",
+    "updatedAt": "2026-09-18T13:00:55.000Z",
+    "lastUpdated": "2026-09-18",
     "dueDate": "2026-09-21T08:01:00.000Z",
     "assigned": "Unassigned",
     "closeFlag": false,
@@ -671,35 +1157,35 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 38,
-    "ageDays": 1
+    "ageHours": 71,
+    "ageDays": 2
   },
   {
-    "ticketId": "UFN-70984",
-    "customer": "Raphael Gomez",
-    "customerEmail": "rgomez@bozzutos.com",
+    "ticketId": "UFN-70980",
+    "customer": "wayneminott@drinkhint.com",
+    "customerEmail": "wayneminott@drinkhint.com",
     "opsStatus": "Pending",
     "displayStatusName": "Pending",
     "displayStatusSystemStatus": 10,
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "PU for Bozzutos ",
-    "createdAt": "2026-09-16T18:07:37.000Z",
+    "subject": "Hint UNIS Outbound Confirmation",
+    "createdAt": "2026-09-16T17:29:42.000Z",
     "createdDate": "2026-09-16",
-    "updatedAt": "2026-09-17T17:36:02.000Z",
-    "lastUpdated": "2026-09-17",
-    "dueDate": "2026-09-21T07:08:00.000Z",
-    "assigned": "Timothy McHugh",
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "isOverdue": false,
-    "isSlaBreached": false,
+    "updatedAt": "2026-09-18T15:32:05.000Z",
+    "lastUpdated": "2026-09-18",
+    "dueDate": "2026-09-18T23:30:00.000Z",
+    "assigned": "Unassigned",
+    "closeFlag": true,
+    "slaStatus": "Breached",
+    "isOverdue": true,
+    "isSlaBreached": true,
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 39,
-    "ageDays": 1
+    "ageHours": 72,
+    "ageDays": 3
   },
   {
     "ticketId": "UFN-70971",
@@ -711,7 +1197,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Canceled: Midea Call ",
+    "subject": "Canceled: Midea Call",
     "createdAt": "2026-09-16T16:07:04.000Z",
     "createdDate": "2026-09-16",
     "updatedAt": "2026-09-16T16:07:16.000Z",
@@ -719,14 +1205,14 @@
     "dueDate": "2026-09-18T22:08:00.000Z",
     "assigned": "Unassigned",
     "closeFlag": false,
-    "slaStatus": "On Track",
-    "isOverdue": false,
-    "isSlaBreached": false,
+    "slaStatus": "Breached",
+    "isOverdue": true,
+    "isSlaBreached": true,
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 41,
-    "ageDays": 1
+    "ageHours": 74,
+    "ageDays": 3
   },
   {
     "ticketId": "UFN-70955",
@@ -746,14 +1232,14 @@
     "dueDate": "2026-09-18T21:04:00.000Z",
     "assigned": "Unassigned",
     "closeFlag": false,
-    "slaStatus": "On Track",
-    "isOverdue": false,
-    "isSlaBreached": false,
+    "slaStatus": "Breached",
+    "isOverdue": true,
+    "isSlaBreached": true,
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 42,
-    "ageDays": 1
+    "ageHours": 75,
+    "ageDays": 3
   },
   {
     "ticketId": "UFN-70949",
@@ -773,14 +1259,14 @@
     "dueDate": "2026-09-18T21:00:00.000Z",
     "assigned": "Unassigned",
     "closeFlag": false,
-    "slaStatus": "On Track",
-    "isOverdue": false,
-    "isSlaBreached": false,
+    "slaStatus": "Breached",
+    "isOverdue": true,
+    "isSlaBreached": true,
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 43,
-    "ageDays": 1
+    "ageHours": 76,
+    "ageDays": 3
   },
   {
     "ticketId": "UFN-70946",
@@ -792,7 +1278,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+    "subject": "Reminder: SEND VIVO DAMAGE REPORT",
     "createdAt": "2026-09-16T13:45:29.000Z",
     "createdDate": "2026-09-16",
     "updatedAt": "2026-09-16T13:45:33.000Z",
@@ -800,14 +1286,14 @@
     "dueDate": "2026-09-18T21:00:00.000Z",
     "assigned": "Unassigned",
     "closeFlag": false,
-    "slaStatus": "On Track",
-    "isOverdue": false,
-    "isSlaBreached": false,
+    "slaStatus": "Breached",
+    "isOverdue": true,
+    "isSlaBreached": true,
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 43,
-    "ageDays": 1
+    "ageHours": 76,
+    "ageDays": 3
   },
   {
     "ticketId": "UFN-70934",
@@ -827,41 +1313,14 @@
     "dueDate": "2026-09-18T21:00:00.000Z",
     "assigned": "Unassigned",
     "closeFlag": false,
-    "slaStatus": "On Track",
-    "isOverdue": false,
-    "isSlaBreached": false,
+    "slaStatus": "Breached",
+    "isOverdue": true,
+    "isSlaBreached": true,
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 50,
-    "ageDays": 2
-  },
-  {
-    "ticketId": "UFN-70919",
-    "customer": "adam@maizly.com",
-    "customerEmail": "adam@maizly.com",
-    "opsStatus": "New",
-    "displayStatusName": "New",
-    "displayStatusSystemStatus": 10,
-    "priority": "Medium",
-    "priorityNameSource": "ticket",
-    "prioritySourceMissing": false,
-    "subject": "Missing Items",
-    "createdAt": "2026-09-15T21:43:34.000Z",
-    "createdDate": "2026-09-15",
-    "updatedAt": "2026-09-15T21:43:39.000Z",
-    "lastUpdated": "2026-09-15",
-    "dueDate": "2026-09-18T18:44:00.000Z",
-    "assigned": "Unassigned",
-    "closeFlag": false,
-    "slaStatus": "On Track",
-    "isOverdue": false,
-    "isSlaBreached": false,
-    "conversationId": null,
-    "sourceChannel": 2,
-    "topicTitle": "UF General Inquiry",
-    "ageHours": 59,
-    "ageDays": 2
+    "ageHours": 83,
+    "ageDays": 3
   },
   {
     "ticketId": "UFN-70918",
@@ -876,19 +1335,19 @@
     "subject": "DN-2131307 Stock Transfer03",
     "createdAt": "2026-09-15T21:28:12.000Z",
     "createdDate": "2026-09-15",
-    "updatedAt": "2026-09-17T20:34:42.000Z",
-    "lastUpdated": "2026-09-17",
+    "updatedAt": "2026-09-18T20:53:48.000Z",
+    "lastUpdated": "2026-09-18",
     "dueDate": "2026-09-18T18:29:00.000Z",
     "assigned": "Youssef Zeitoon",
     "closeFlag": false,
-    "slaStatus": "On Track",
-    "isOverdue": false,
-    "isSlaBreached": false,
+    "slaStatus": "Breached",
+    "isOverdue": true,
+    "isSlaBreached": true,
     "conversationId": "DN-2131307",
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 60,
-    "ageDays": 2
+    "ageHours": 92,
+    "ageDays": 3
   },
   {
     "ticketId": "UFN-70895",
@@ -914,8 +1373,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "General Inquiry",
-    "ageHours": 64,
-    "ageDays": 2
+    "ageHours": 97,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-70889",
@@ -930,8 +1389,8 @@
     "subject": "Re: NFCV - CH Robinson - Pickup Appointment Request (Load # 566229037 for 09/01/2026 04:00 PM) - Follow Up",
     "createdAt": "2026-09-15T16:19:55.000Z",
     "createdDate": "2026-09-15",
-    "updatedAt": "2026-09-17T21:11:48.000Z",
-    "lastUpdated": "2026-09-17",
+    "updatedAt": "2026-09-18T20:54:50.000Z",
+    "lastUpdated": "2026-09-18",
     "dueDate": "2026-09-17T22:20:00.000Z",
     "assigned": "Kacey Nicole Lebrun",
     "closeFlag": false,
@@ -941,8 +1400,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 65,
-    "ageDays": 2
+    "ageHours": 98,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-70873",
@@ -968,8 +1427,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 66,
-    "ageDays": 2
+    "ageHours": 99,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-70863",
@@ -995,8 +1454,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 67,
-    "ageDays": 2
+    "ageHours": 100,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-70858",
@@ -1022,35 +1481,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 67,
-    "ageDays": 2
-  },
-  {
-    "ticketId": "UFN-70825",
-    "customer": "Jonathan Wallace",
-    "customerEmail": "jmwallace@tql.com",
-    "opsStatus": "New",
-    "displayStatusName": "New",
-    "displayStatusSystemStatus": 10,
-    "priority": "Medium",
-    "priorityNameSource": "ticket",
-    "prioritySourceMissing": false,
-    "subject": "Last Transfer - VIVO - Philadelphia",
-    "createdAt": "2026-09-14T21:13:21.000Z",
-    "createdDate": "2026-09-14",
-    "updatedAt": "2026-09-16T22:36:20.000Z",
-    "lastUpdated": "2026-09-16",
-    "dueDate": "2026-09-17T18:14:00.000Z",
-    "assigned": "Unassigned",
-    "closeFlag": false,
-    "slaStatus": "Breached",
-    "isOverdue": true,
-    "isSlaBreached": true,
-    "conversationId": null,
-    "sourceChannel": 2,
-    "topicTitle": "UF General Inquiry",
-    "ageHours": 84,
-    "ageDays": 3
+    "ageHours": 100,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-70824",
@@ -1076,8 +1508,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 84,
-    "ageDays": 3
+    "ageHours": 117,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-70821",
@@ -1103,8 +1535,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 84,
-    "ageDays": 3
+    "ageHours": 117,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-70816",
@@ -1130,8 +1562,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 84,
-    "ageDays": 3
+    "ageHours": 117,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-70800",
@@ -1157,8 +1589,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 86,
-    "ageDays": 3
+    "ageHours": 119,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-70792",
@@ -1184,8 +1616,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 86,
-    "ageDays": 3
+    "ageHours": 119,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-70789",
@@ -1200,8 +1632,8 @@
     "subject": "Order Template - PA-->SC Transfers",
     "createdAt": "2026-09-14T18:26:21.000Z",
     "createdDate": "2026-09-14",
-    "updatedAt": "2026-09-17T14:19:49.000Z",
-    "lastUpdated": "2026-09-17",
+    "updatedAt": "2026-09-18T17:14:44.000Z",
+    "lastUpdated": "2026-09-18",
     "dueDate": "2026-09-17T15:27:00.000Z",
     "assigned": "JEHNIFUR MORVAI",
     "closeFlag": false,
@@ -1211,8 +1643,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 87,
-    "ageDays": 3
+    "ageHours": 119,
+    "ageDays": 4
   },
   {
     "ticketId": "UFN-70786",
@@ -1238,8 +1670,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 87,
-    "ageDays": 3
+    "ageHours": 120,
+    "ageDays": 5
   },
   {
     "ticketId": "UFN-70779",
@@ -1265,8 +1697,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 88,
-    "ageDays": 3
+    "ageHours": 121,
+    "ageDays": 5
   },
   {
     "ticketId": "UFN-70777",
@@ -1292,8 +1724,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 88,
-    "ageDays": 3
+    "ageHours": 121,
+    "ageDays": 5
   },
   {
     "ticketId": "UFN-70770",
@@ -1319,8 +1751,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 89,
-    "ageDays": 3
+    "ageHours": 122,
+    "ageDays": 5
   },
   {
     "ticketId": "UFN-70757",
@@ -1346,8 +1778,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 90,
-    "ageDays": 3
+    "ageHours": 123,
+    "ageDays": 5
   },
   {
     "ticketId": "UFN-70756",
@@ -1373,8 +1805,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 90,
-    "ageDays": 3
+    "ageHours": 123,
+    "ageDays": 5
   },
   {
     "ticketId": "UFN-70753",
@@ -1400,8 +1832,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 90,
-    "ageDays": 3
+    "ageHours": 123,
+    "ageDays": 5
   },
   {
     "ticketId": "UFN-70732",
@@ -1427,8 +1859,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 93,
-    "ageDays": 3
+    "ageHours": 126,
+    "ageDays": 5
   },
   {
     "ticketId": "UFN-70731",
@@ -1440,7 +1872,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "URGENT RE: Delivery appointments needed for containers MAEU274833196 ",
+    "subject": "URGENT RE: Delivery appointments needed for containers MAEU274833196",
     "createdAt": "2026-09-14T12:10:32.000Z",
     "createdDate": "2026-09-14",
     "updatedAt": "2026-09-14T21:47:04.000Z",
@@ -1454,8 +1886,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 93,
-    "ageDays": 3
+    "ageHours": 126,
+    "ageDays": 5
   },
   {
     "ticketId": "UFN-70676",
@@ -1481,8 +1913,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 124,
-    "ageDays": 5
+    "ageHours": 157,
+    "ageDays": 6
   },
   {
     "ticketId": "UFN-70611",
@@ -1508,8 +1940,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 156,
-    "ageDays": 6
+    "ageHours": 189,
+    "ageDays": 7
   },
   {
     "ticketId": "UFN-70596",
@@ -1524,8 +1956,8 @@
     "subject": "FW: Colavita Vitelli Pickup PO #61723",
     "createdAt": "2026-09-11T20:49:46.000Z",
     "createdDate": "2026-09-11",
-    "updatedAt": "2026-09-17T19:06:33.000Z",
-    "lastUpdated": "2026-09-17",
+    "updatedAt": "2026-09-18T20:35:46.000Z",
+    "lastUpdated": "2026-09-18",
     "dueDate": "2026-09-16T17:50:00.000Z",
     "assigned": "Timothy McHugh",
     "closeFlag": true,
@@ -1535,12 +1967,12 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 156,
-    "ageDays": 6
+    "ageHours": 189,
+    "ageDays": 7
   },
   {
     "ticketId": "UFN-70576",
-    "customer": "allison.luciano@roomtogrow.org ",
+    "customer": "allison.luciano@roomtogrow.org",
     "customerEmail": "allison.luciano@roomtogrow.org",
     "opsStatus": "Pending",
     "displayStatusName": "Pending",
@@ -1551,8 +1983,8 @@
     "subject": "Final Pick-up Scheduling",
     "createdAt": "2026-09-11T19:01:13.000Z",
     "createdDate": "2026-09-11",
-    "updatedAt": "2026-09-17T15:02:30.000Z",
-    "lastUpdated": "2026-09-17",
+    "updatedAt": "2026-09-18T14:31:56.000Z",
+    "lastUpdated": "2026-09-18",
     "dueDate": "2026-09-16T16:02:00.000Z",
     "assigned": "Shailene Baez",
     "closeFlag": false,
@@ -1562,8 +1994,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 158,
-    "ageDays": 6
+    "ageHours": 191,
+    "ageDays": 7
   },
   {
     "ticketId": "UFN-70573",
@@ -1589,8 +2021,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 159,
-    "ageDays": 6
+    "ageHours": 191,
+    "ageDays": 7
   },
   {
     "ticketId": "UFN-70572",
@@ -1605,8 +2037,8 @@
     "subject": "Northampton -> Pooler | Move out Transfers",
     "createdAt": "2026-09-11T18:33:57.000Z",
     "createdDate": "2026-09-11",
-    "updatedAt": "2026-09-17T18:16:11.000Z",
-    "lastUpdated": "2026-09-17",
+    "updatedAt": "2026-09-18T20:56:52.000Z",
+    "lastUpdated": "2026-09-18",
     "dueDate": "2026-09-16T15:34:00.000Z",
     "assigned": "Kacey Nicole Lebrun",
     "closeFlag": true,
@@ -1616,8 +2048,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 159,
-    "ageDays": 6
+    "ageHours": 191,
+    "ageDays": 7
   },
   {
     "ticketId": "UFN-70550",
@@ -1643,62 +2075,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 162,
-    "ageDays": 6
-  },
-  {
-    "ticketId": "UFN-70513",
-    "customer": "FXF-DCN",
-    "customerEmail": "dcn-slc@fedexfreight.com",
-    "opsStatus": "New",
-    "displayStatusName": "New",
-    "displayStatusSystemStatus": 10,
-    "priority": "Medium",
-    "priorityNameSource": "ticket",
-    "prioritySourceMissing": false,
-    "subject": "SL&C DISCREPANCY CONFIRMATION <DO-NOT-REPLY>",
-    "createdAt": "2026-09-11T08:22:50.000Z",
-    "createdDate": "2026-09-11",
-    "updatedAt": "2026-09-17T14:27:31.000Z",
-    "lastUpdated": "2026-09-17",
-    "dueDate": "2026-09-15T21:00:00.000Z",
-    "assigned": "Unassigned",
-    "closeFlag": false,
-    "slaStatus": "Breached",
-    "isOverdue": true,
-    "isSlaBreached": true,
-    "conversationId": null,
-    "sourceChannel": 2,
-    "topicTitle": "UF General Inquiry",
-    "ageHours": 169,
-    "ageDays": 7
-  },
-  {
-    "ticketId": "UFN-70500",
-    "customer": "vwang@niagarawater.com",
-    "customerEmail": "vwang@niagarawater.com",
-    "opsStatus": "New",
-    "displayStatusName": "New",
-    "displayStatusSystemStatus": 10,
-    "priority": "Medium",
-    "priorityNameSource": "ticket",
-    "prioritySourceMissing": false,
-    "subject": "Transfer loads > 20 bags",
-    "createdAt": "2026-09-10T22:27:45.000Z",
-    "createdDate": "2026-09-10",
-    "updatedAt": "2026-09-10T22:27:46.000Z",
-    "lastUpdated": "2026-09-10",
-    "dueDate": "2026-09-15T19:28:00.000Z",
-    "assigned": "Unassigned",
-    "closeFlag": false,
-    "slaStatus": "Breached",
-    "isOverdue": true,
-    "isSlaBreached": true,
-    "conversationId": null,
-    "sourceChannel": 2,
-    "topicTitle": "UF General Inquiry",
-    "ageHours": 179,
-    "ageDays": 7
+    "ageHours": 195,
+    "ageDays": 8
   },
   {
     "ticketId": "UFN-70491",
@@ -1724,8 +2102,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 180,
-    "ageDays": 7
+    "ageHours": 212,
+    "ageDays": 8
   },
   {
     "ticketId": "UFN-70436",
@@ -1751,8 +2129,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 185,
-    "ageDays": 7
+    "ageHours": 218,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-70423",
@@ -1778,8 +2156,8 @@
     "conversationId": null,
     "sourceChannel": 3,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 186,
-    "ageDays": 7
+    "ageHours": 218,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-70416",
@@ -1805,8 +2183,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 186,
-    "ageDays": 7
+    "ageHours": 219,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-70415",
@@ -1832,26 +2210,26 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 186,
-    "ageDays": 7
+    "ageHours": 219,
+    "ageDays": 9
   },
   {
-    "ticketId": "UFN-70413",
-    "customer": "kyle.wittenbauer@colavita.com",
-    "customerEmail": "kyle.wittenbauer@colavita.com",
+    "ticketId": "UFN-70404",
+    "customer": "Nicole Weber",
+    "customerEmail": "nicole.weber@unisco.com",
     "opsStatus": "Pending",
     "displayStatusName": "Pending",
     "displayStatusSystemStatus": 10,
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "UNIS --> Romark - Week of 9/14",
-    "createdAt": "2026-09-10T14:56:25.000Z",
+    "subject": "Transfer Orders",
+    "createdAt": "2026-09-10T13:43:05.000Z",
     "createdDate": "2026-09-10",
-    "updatedAt": "2026-09-17T20:05:28.000Z",
-    "lastUpdated": "2026-09-17",
+    "updatedAt": "2026-09-18T20:43:59.000Z",
+    "lastUpdated": "2026-09-18",
     "dueDate": "2026-09-14T13:00:00.000Z",
-    "assigned": "Unassigned",
+    "assigned": "Timothy McHugh",
     "closeFlag": true,
     "slaStatus": "Breached",
     "isOverdue": true,
@@ -1859,8 +2237,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 186,
-    "ageDays": 7
+    "ageHours": 220,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-70385",
@@ -1886,8 +2264,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 189,
-    "ageDays": 7
+    "ageHours": 222,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-70351",
@@ -1913,8 +2291,8 @@
     "conversationId": "DN-2107462",
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 200,
-    "ageDays": 8
+    "ageHours": 233,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-70312",
@@ -1940,35 +2318,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 206,
-    "ageDays": 8
-  },
-  {
-    "ticketId": "UFN-70309",
-    "customer": "erin.cambra@unisco.com",
-    "customerEmail": "erin.cambra@unisco.com",
-    "opsStatus": "New",
-    "displayStatusName": "New",
-    "displayStatusSystemStatus": 10,
-    "priority": "Medium",
-    "priorityNameSource": "ticket",
-    "prioritySourceMissing": false,
-    "subject": "Facility Closure and Next Steps ",
-    "createdAt": "2026-09-09T19:15:04.000Z",
-    "createdDate": "2026-09-09",
-    "updatedAt": "2026-09-09T19:15:08.000Z",
-    "lastUpdated": "2026-09-09",
-    "dueDate": "2026-09-14T08:16:00.000Z",
-    "assigned": "Unassigned",
-    "closeFlag": false,
-    "slaStatus": "Breached",
-    "isOverdue": true,
-    "isSlaBreached": true,
-    "conversationId": null,
-    "sourceChannel": 2,
-    "topicTitle": "UF General Inquiry",
-    "ageHours": 206,
-    "ageDays": 8
+    "ageHours": 239,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-70308",
@@ -1994,8 +2345,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 206,
-    "ageDays": 8
+    "ageHours": 239,
+    "ageDays": 9
   },
   {
     "ticketId": "UFN-70298",
@@ -2021,8 +2372,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 207,
-    "ageDays": 8
+    "ageHours": 240,
+    "ageDays": 10
   },
   {
     "ticketId": "UFN-70287",
@@ -2048,8 +2399,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 209,
-    "ageDays": 8
+    "ageHours": 241,
+    "ageDays": 10
   },
   {
     "ticketId": "UFN-70285",
@@ -2075,8 +2426,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 209,
-    "ageDays": 8
+    "ageHours": 241,
+    "ageDays": 10
   },
   {
     "ticketId": "UFN-70272",
@@ -2102,8 +2453,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 209,
-    "ageDays": 8
+    "ageHours": 242,
+    "ageDays": 10
   },
   {
     "ticketId": "UFN-70268",
@@ -2115,7 +2466,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Canceled: Midea Call ",
+    "subject": "Canceled: Midea Call",
     "createdAt": "2026-09-09T15:06:48.000Z",
     "createdDate": "2026-09-09",
     "updatedAt": "2026-09-09T15:07:06.000Z",
@@ -2129,8 +2480,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 210,
-    "ageDays": 8
+    "ageHours": 243,
+    "ageDays": 10
   },
   {
     "ticketId": "UFN-70267",
@@ -2156,8 +2507,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 210,
-    "ageDays": 8
+    "ageHours": 243,
+    "ageDays": 10
   },
   {
     "ticketId": "UFN-70265",
@@ -2183,8 +2534,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 210,
-    "ageDays": 8
+    "ageHours": 243,
+    "ageDays": 10
   },
   {
     "ticketId": "UFN-70261",
@@ -2193,9 +2544,9 @@
     "opsStatus": "Pending",
     "displayStatusName": "Pending",
     "displayStatusSystemStatus": 10,
-    "priority": "Medium",
-    "priorityNameSource": "ticket",
-    "prioritySourceMissing": false,
+    "priority": "unavailable",
+    "priorityNameSource": "unavailable",
+    "prioritySourceMissing": true,
     "subject": "HVP41-1612 Orders | 09/07- 09/11",
     "createdAt": "2026-09-09T14:19:14.000Z",
     "createdDate": "2026-09-09",
@@ -2210,8 +2561,8 @@
     "conversationId": null,
     "sourceChannel": 3,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 211,
-    "ageDays": 8
+    "ageHours": 244,
+    "ageDays": 10
   },
   {
     "ticketId": "UFN-70255",
@@ -2223,7 +2574,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+    "subject": "Reminder: SEND VIVO DAMAGE REPORT",
     "createdAt": "2026-09-09T13:46:17.000Z",
     "createdDate": "2026-09-09",
     "updatedAt": "2026-09-09T13:46:26.000Z",
@@ -2237,8 +2588,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 211,
-    "ageDays": 8
+    "ageHours": 244,
+    "ageDays": 10
   },
   {
     "ticketId": "UFN-70246",
@@ -2250,7 +2601,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Confirmation Needed – Building Closure ",
+    "subject": "Confirmation Needed – Building Closure",
     "createdAt": "2026-09-09T13:05:15.000Z",
     "createdDate": "2026-09-09",
     "updatedAt": "2026-09-14T17:21:23.000Z",
@@ -2264,35 +2615,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 212,
-    "ageDays": 8
-  },
-  {
-    "ticketId": "UFN-70244",
-    "customer": "Shailene Baez (shailene.baez@unisco.com)",
-    "customerEmail": "shailene.baez@unisco.com",
-    "opsStatus": "Pending",
-    "displayStatusName": "Pending",
-    "displayStatusSystemStatus": 10,
-    "priority": "Medium",
-    "priorityNameSource": "ticket",
-    "prioritySourceMissing": false,
-    "subject": "Confirmation Needed – Building Closure ",
-    "createdAt": "2026-09-09T13:03:51.000Z",
-    "createdDate": "2026-09-09",
-    "updatedAt": "2026-09-17T17:30:27.000Z",
-    "lastUpdated": "2026-09-17",
-    "dueDate": "2026-09-11T21:00:00.000Z",
-    "assigned": "Shailene Baez",
-    "closeFlag": true,
-    "slaStatus": "Breached",
-    "isOverdue": true,
-    "isSlaBreached": true,
-    "conversationId": null,
-    "sourceChannel": 2,
-    "topicTitle": "UF General Inquiry",
-    "ageHours": 212,
-    "ageDays": 8
+    "ageHours": 245,
+    "ageDays": 10
   },
   {
     "ticketId": "UFN-70222",
@@ -2304,7 +2628,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "FW: FBM orders - Shipping labels & packing slips ",
+    "subject": "FW: FBM orders - Shipping labels & packing slips",
     "createdAt": "2026-09-09T11:13:15.000Z",
     "createdDate": "2026-09-09",
     "updatedAt": "2026-09-09T13:51:05.000Z",
@@ -2318,8 +2642,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 214,
-    "ageDays": 8
+    "ageHours": 247,
+    "ageDays": 10
   },
   {
     "ticketId": "UFN-70161",
@@ -2328,14 +2652,14 @@
     "opsStatus": "Pending",
     "displayStatusName": "Pending",
     "displayStatusSystemStatus": 10,
-    "priority": "Medium",
-    "priorityNameSource": "ticket",
-    "prioritySourceMissing": false,
+    "priority": "unavailable",
+    "priorityNameSource": "unavailable",
+    "prioritySourceMissing": true,
     "subject": "Northampton, PA Facility Closure – Inventory Transition Plan",
     "createdAt": "2026-09-08T20:08:46.000Z",
     "createdDate": "2026-09-08",
-    "updatedAt": "2026-09-17T22:57:30.000Z",
-    "lastUpdated": "2026-09-17",
+    "updatedAt": "2026-09-18T19:40:23.000Z",
+    "lastUpdated": "2026-09-18",
     "dueDate": "2026-09-11T17:09:00.000Z",
     "assigned": "Shailene Baez",
     "closeFlag": true,
@@ -2345,8 +2669,8 @@
     "conversationId": null,
     "sourceChannel": 3,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 229,
-    "ageDays": 9
+    "ageHours": 262,
+    "ageDays": 10
   },
   {
     "ticketId": "UFN-70131",
@@ -2372,8 +2696,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 232,
-    "ageDays": 9
+    "ageHours": 265,
+    "ageDays": 11
   },
   {
     "ticketId": "UFN-70114",
@@ -2399,8 +2723,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 234,
-    "ageDays": 9
+    "ageHours": 267,
+    "ageDays": 11
   },
   {
     "ticketId": "UFN-70100",
@@ -2426,8 +2750,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 235,
-    "ageDays": 9
+    "ageHours": 268,
+    "ageDays": 11
   },
   {
     "ticketId": "UFN-70098",
@@ -2453,8 +2777,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 235,
-    "ageDays": 9
+    "ageHours": 268,
+    "ageDays": 11
   },
   {
     "ticketId": "UFN-70003",
@@ -2480,8 +2804,35 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 258,
-    "ageDays": 10
+    "ageHours": 291,
+    "ageDays": 12
+  },
+  {
+    "ticketId": "UFN-69811",
+    "customer": "na_claims@diageo.com",
+    "customerEmail": "na_claims@diageo.com",
+    "opsStatus": "Pending",
+    "displayStatusName": "Pending",
+    "displayStatusSystemStatus": 10,
+    "priority": "Medium",
+    "priorityNameSource": "ticket",
+    "prioritySourceMissing": false,
+    "subject": "FW: Claim 18050| Diageo Delivery# 1057383854",
+    "createdAt": "2026-09-04T18:41:43.000Z",
+    "createdDate": "2026-09-04",
+    "updatedAt": "2026-09-18T19:56:18.000Z",
+    "lastUpdated": "2026-09-18",
+    "dueDate": "2026-09-10T15:42:00.000Z",
+    "assigned": "Timothy McHugh",
+    "closeFlag": true,
+    "slaStatus": "Breached",
+    "isOverdue": true,
+    "isSlaBreached": true,
+    "conversationId": null,
+    "sourceChannel": 2,
+    "topicTitle": "UF General Inquiry",
+    "ageHours": 359,
+    "ageDays": 14
   },
   {
     "ticketId": "UFN-69810",
@@ -2507,8 +2858,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 327,
-    "ageDays": 13
+    "ageHours": 359,
+    "ageDays": 14
   },
   {
     "ticketId": "UFN-69767",
@@ -2534,8 +2885,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 330,
-    "ageDays": 13
+    "ageHours": 363,
+    "ageDays": 15
   },
   {
     "ticketId": "UFN-69595",
@@ -2561,8 +2912,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 354,
-    "ageDays": 14
+    "ageHours": 387,
+    "ageDays": 16
   },
   {
     "ticketId": "UFN-69591",
@@ -2588,8 +2939,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 354,
-    "ageDays": 14
+    "ageHours": 387,
+    "ageDays": 16
   },
   {
     "ticketId": "UFN-69519",
@@ -2615,8 +2966,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 368,
-    "ageDays": 15
+    "ageHours": 401,
+    "ageDays": 16
   },
   {
     "ticketId": "UFN-69511",
@@ -2642,8 +2993,8 @@
     "conversationId": "CASE-21861000021",
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 370,
-    "ageDays": 15
+    "ageHours": 403,
+    "ageDays": 16
   },
   {
     "ticketId": "UFN-69426",
@@ -2669,8 +3020,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 378,
-    "ageDays": 15
+    "ageHours": 411,
+    "ageDays": 17
   },
   {
     "ticketId": "UFN-69405",
@@ -2682,7 +3033,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+    "subject": "Reminder: SEND VIVO DAMAGE REPORT",
     "createdAt": "2026-09-02T13:47:16.000Z",
     "createdDate": "2026-09-02",
     "updatedAt": "2026-09-04T17:59:55.000Z",
@@ -2696,8 +3047,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 379,
-    "ageDays": 15
+    "ageHours": 412,
+    "ageDays": 17
   },
   {
     "ticketId": "UFN-69397",
@@ -2723,8 +3074,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 380,
-    "ageDays": 15
+    "ageHours": 413,
+    "ageDays": 17
   },
   {
     "ticketId": "UFN-69380",
@@ -2750,8 +3101,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 381,
-    "ageDays": 15
+    "ageHours": 414,
+    "ageDays": 17
   },
   {
     "ticketId": "UFN-69337",
@@ -2777,35 +3128,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 396,
-    "ageDays": 16
-  },
-  {
-    "ticketId": "UFN-69334",
-    "customer": "clayton.ulrich@vivo-us.com",
-    "customerEmail": "clayton.ulrich@vivo-us.com",
-    "opsStatus": "Pending",
-    "displayStatusName": "Pending",
-    "displayStatusSystemStatus": 10,
-    "priority": "Medium",
-    "priorityNameSource": "ticket",
-    "prioritySourceMissing": false,
-    "subject": "DESK-V000VCE",
-    "createdAt": "2026-09-01T21:07:03.000Z",
-    "createdDate": "2026-09-01",
-    "updatedAt": "2026-09-03T13:27:02.000Z",
-    "lastUpdated": "2026-09-03",
-    "dueDate": "2026-09-04T18:08:00.000Z",
-    "assigned": "Unassigned",
-    "closeFlag": false,
-    "slaStatus": "Breached",
-    "isOverdue": true,
-    "isSlaBreached": true,
-    "conversationId": null,
-    "sourceChannel": 2,
-    "topicTitle": "UF General Inquiry",
-    "ageHours": 396,
-    "ageDays": 16
+    "ageHours": 428,
+    "ageDays": 17
   },
   {
     "ticketId": "UFN-69307",
@@ -2831,8 +3155,8 @@
     "conversationId": "CASE-21836552091",
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 398,
-    "ageDays": 16
+    "ageHours": 431,
+    "ageDays": 17
   },
   {
     "ticketId": "UFN-69245",
@@ -2858,8 +3182,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 402,
-    "ageDays": 16
+    "ageHours": 435,
+    "ageDays": 18
   },
   {
     "ticketId": "UFN-69231",
@@ -2885,8 +3209,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "General Inquiry",
-    "ageHours": 403,
-    "ageDays": 16
+    "ageHours": 436,
+    "ageDays": 18
   },
   {
     "ticketId": "UFN-69148",
@@ -2912,8 +3236,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 416,
-    "ageDays": 17
+    "ageHours": 449,
+    "ageDays": 18
   },
   {
     "ticketId": "UFN-69123",
@@ -2939,8 +3263,8 @@
     "conversationId": "CASE-3571755",
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 416,
-    "ageDays": 17
+    "ageHours": 449,
+    "ageDays": 18
   },
   {
     "ticketId": "UFN-69004",
@@ -2966,8 +3290,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 426,
-    "ageDays": 17
+    "ageHours": 459,
+    "ageDays": 19
   },
   {
     "ticketId": "UFN-68980",
@@ -2993,35 +3317,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 427,
-    "ageDays": 17
-  },
-  {
-    "ticketId": "UFN-68951",
-    "customer": "Jonathan Wallace",
-    "customerEmail": "jmwallace@tql.com",
-    "opsStatus": "Pending",
-    "displayStatusName": "Pending",
-    "displayStatusSystemStatus": 10,
-    "priority": "Medium",
-    "priorityNameSource": "ticket",
-    "prioritySourceMissing": false,
-    "subject": "Requesting Pickup - PAU-GENESIS-PAS(1-10)",
-    "createdAt": "2026-08-31T11:44:32.000Z",
-    "createdDate": "2026-08-31",
-    "updatedAt": "2026-09-11T13:06:46.000Z",
-    "lastUpdated": "2026-09-11",
-    "dueDate": "2026-09-02T21:00:00.000Z",
-    "assigned": "Unassigned",
-    "closeFlag": false,
-    "slaStatus": "Breached",
-    "isOverdue": true,
-    "isSlaBreached": true,
-    "conversationId": null,
-    "sourceChannel": 2,
-    "topicTitle": "UF General Inquiry",
-    "ageHours": 429,
-    "ageDays": 17
+    "ageHours": 459,
+    "ageDays": 19
   },
   {
     "ticketId": "UFN-68752",
@@ -3047,8 +3344,8 @@
     "conversationId": "DN-2124398",
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 497,
-    "ageDays": 20
+    "ageHours": 530,
+    "ageDays": 22
   },
   {
     "ticketId": "UFN-68741",
@@ -3074,8 +3371,8 @@
     "conversationId": "DN-2117821",
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 498,
-    "ageDays": 20
+    "ageHours": 531,
+    "ageDays": 22
   },
   {
     "ticketId": "UFN-68739",
@@ -3101,8 +3398,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 498,
-    "ageDays": 20
+    "ageHours": 531,
+    "ageDays": 22
   },
   {
     "ticketId": "UFN-68573",
@@ -3111,9 +3408,9 @@
     "opsStatus": "New",
     "displayStatusName": "New",
     "displayStatusSystemStatus": 10,
-    "priority": "Medium",
-    "priorityNameSource": "ticket",
-    "prioritySourceMissing": false,
+    "priority": "unavailable",
+    "priorityNameSource": "unavailable",
+    "prioritySourceMissing": true,
     "subject": "UNIS - HINT BEVERAGE - NORTHAMPTON, PA - WEEK OF 8/24/26-DISCREPANCIES",
     "createdAt": "2026-08-27T18:17:29.000Z",
     "createdDate": "2026-08-27",
@@ -3128,8 +3425,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 519,
-    "ageDays": 21
+    "ageHours": 552,
+    "ageDays": 23
   },
   {
     "ticketId": "UFN-68537",
@@ -3144,8 +3441,8 @@
     "subject": "LQ Order – Urgent Picking, Packing & Pallet Details NH - Remaining inventory",
     "createdAt": "2026-08-27T15:53:41.000Z",
     "createdDate": "2026-08-27",
-    "updatedAt": "2026-09-17T20:53:45.000Z",
-    "lastUpdated": "2026-09-17",
+    "updatedAt": "2026-09-18T16:19:06.000Z",
+    "lastUpdated": "2026-09-18",
     "dueDate": "2026-08-31T13:54:00.000Z",
     "assigned": "Kacey Nicole Lebrun",
     "closeFlag": true,
@@ -3155,8 +3452,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 521,
-    "ageDays": 21
+    "ageHours": 554,
+    "ageDays": 23
   },
   {
     "ticketId": "UFN-68524",
@@ -3182,8 +3479,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 522,
-    "ageDays": 21
+    "ageHours": 555,
+    "ageDays": 23
   },
   {
     "ticketId": "UFN-68233",
@@ -3195,7 +3492,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Canceled: Midea Call ",
+    "subject": "Canceled: Midea Call",
     "createdAt": "2026-08-26T16:47:56.000Z",
     "createdDate": "2026-08-26",
     "updatedAt": "2026-08-26T16:47:59.000Z",
@@ -3209,8 +3506,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 544,
-    "ageDays": 22
+    "ageHours": 577,
+    "ageDays": 24
   },
   {
     "ticketId": "UFN-68191",
@@ -3236,35 +3533,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 546,
-    "ageDays": 22
-  },
-  {
-    "ticketId": "UFN-68149",
-    "customer": "Timothy Nitka",
-    "customerEmail": "timothy.nitka@unisco.com",
-    "opsStatus": "New",
-    "displayStatusName": "New",
-    "displayStatusSystemStatus": 10,
-    "priority": "Medium",
-    "priorityNameSource": "ticket",
-    "prioritySourceMissing": false,
-    "subject": "Vivo Damages/Returns",
-    "createdAt": "2026-08-26T12:49:35.000Z",
-    "createdDate": "2026-08-26",
-    "updatedAt": "2026-08-26T12:49:39.000Z",
-    "lastUpdated": "2026-08-26",
-    "dueDate": "2026-08-28T21:00:00.000Z",
-    "assigned": "Unassigned",
-    "closeFlag": false,
-    "slaStatus": "Breached",
-    "isOverdue": true,
-    "isSlaBreached": true,
-    "conversationId": null,
-    "sourceChannel": 2,
-    "topicTitle": "UF General Inquiry",
-    "ageHours": 548,
-    "ageDays": 22
+    "ageHours": 579,
+    "ageDays": 24
   },
   {
     "ticketId": "UFN-68029",
@@ -3290,8 +3560,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 567,
-    "ageDays": 23
+    "ageHours": 600,
+    "ageDays": 25
   },
   {
     "ticketId": "UFN-68017",
@@ -3317,8 +3587,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 568,
-    "ageDays": 23
+    "ageHours": 601,
+    "ageDays": 25
   },
   {
     "ticketId": "UFN-68011",
@@ -3344,8 +3614,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 568,
-    "ageDays": 23
+    "ageHours": 601,
+    "ageDays": 25
   },
   {
     "ticketId": "UFN-67983",
@@ -3371,8 +3641,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 570,
-    "ageDays": 23
+    "ageHours": 603,
+    "ageDays": 25
   },
   {
     "ticketId": "UFN-67835",
@@ -3398,8 +3668,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 590,
-    "ageDays": 24
+    "ageHours": 623,
+    "ageDays": 25
   },
   {
     "ticketId": "UFN-67777",
@@ -3425,35 +3695,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 594,
-    "ageDays": 24
-  },
-  {
-    "ticketId": "UFN-67551",
-    "customer": "kylek@vivo-us.com",
-    "customerEmail": "kylek@vivo-us.com",
-    "opsStatus": "New",
-    "displayStatusName": "New",
-    "displayStatusSystemStatus": 10,
-    "priority": "Medium",
-    "priorityNameSource": "ticket",
-    "prioritySourceMissing": false,
-    "subject": "UNIS PA Finial Moves Notes 8/21/2026",
-    "createdAt": "2026-08-21T18:40:19.000Z",
-    "createdDate": "2026-08-21",
-    "updatedAt": "2026-09-04T21:21:49.000Z",
-    "lastUpdated": "2026-09-04",
-    "dueDate": "2026-08-26T15:41:00.000Z",
-    "assigned": "Unassigned",
-    "closeFlag": false,
-    "slaStatus": "Breached",
-    "isOverdue": true,
-    "isSlaBreached": true,
-    "conversationId": null,
-    "sourceChannel": 2,
-    "topicTitle": "UF General Inquiry",
-    "ageHours": 662,
-    "ageDays": 27
+    "ageHours": 627,
+    "ageDays": 26
   },
   {
     "ticketId": "UFN-67529",
@@ -3479,8 +3722,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 664,
-    "ageDays": 27
+    "ageHours": 697,
+    "ageDays": 29
   },
   {
     "ticketId": "UFN-67511",
@@ -3492,7 +3735,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Disposal Process and Quote | ",
+    "subject": "Disposal Process and Quote |",
     "createdAt": "2026-08-21T15:59:50.000Z",
     "createdDate": "2026-08-21",
     "updatedAt": "2026-08-27T13:51:16.000Z",
@@ -3506,8 +3749,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 665,
-    "ageDays": 27
+    "ageHours": 698,
+    "ageDays": 29
   },
   {
     "ticketId": "UFN-67500",
@@ -3533,8 +3776,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 666,
-    "ageDays": 27
+    "ageHours": 699,
+    "ageDays": 29
   },
   {
     "ticketId": "UFN-67388",
@@ -3560,8 +3803,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 685,
-    "ageDays": 28
+    "ageHours": 718,
+    "ageDays": 29
   },
   {
     "ticketId": "UFN-67322",
@@ -3587,8 +3830,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 690,
-    "ageDays": 28
+    "ageHours": 723,
+    "ageDays": 30
   },
   {
     "ticketId": "UFN-67291",
@@ -3614,8 +3857,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 692,
-    "ageDays": 28
+    "ageHours": 725,
+    "ageDays": 30
   },
   {
     "ticketId": "UFN-67199",
@@ -3627,7 +3870,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Canceled: Midea Call ",
+    "subject": "Canceled: Midea Call",
     "createdAt": "2026-08-19T16:48:47.000Z",
     "createdDate": "2026-08-19",
     "updatedAt": "2026-08-19T16:48:54.000Z",
@@ -3641,8 +3884,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 712,
-    "ageDays": 29
+    "ageHours": 745,
+    "ageDays": 31
   },
   {
     "ticketId": "UFN-67171",
@@ -3668,8 +3911,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 714,
-    "ageDays": 29
+    "ageHours": 747,
+    "ageDays": 31
   },
   {
     "ticketId": "UFN-67142",
@@ -3695,8 +3938,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 715,
-    "ageDays": 29
+    "ageHours": 748,
+    "ageDays": 31
   },
   {
     "ticketId": "UFN-67031",
@@ -3722,8 +3965,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 734,
-    "ageDays": 30
+    "ageHours": 766,
+    "ageDays": 31
   },
   {
     "ticketId": "UFN-67024",
@@ -3749,8 +3992,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 734,
-    "ageDays": 30
+    "ageHours": 767,
+    "ageDays": 31
   },
   {
     "ticketId": "UFN-66966",
@@ -3776,8 +4019,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 738,
-    "ageDays": 30
+    "ageHours": 771,
+    "ageDays": 32
   },
   {
     "ticketId": "UFN-66934",
@@ -3803,8 +4046,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 740,
-    "ageDays": 30
+    "ageHours": 773,
+    "ageDays": 32
   },
   {
     "ticketId": "UFN-66766",
@@ -3830,8 +4073,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 762,
-    "ageDays": 31
+    "ageHours": 795,
+    "ageDays": 33
   },
   {
     "ticketId": "UFN-66759",
@@ -3857,8 +4100,8 @@
     "conversationId": "DN-1065383",
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 763,
-    "ageDays": 31
+    "ageHours": 795,
+    "ageDays": 33
   },
   {
     "ticketId": "UFN-66548",
@@ -3884,8 +4127,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 831,
-    "ageDays": 34
+    "ageHours": 864,
+    "ageDays": 36
   },
   {
     "ticketId": "UFN-66507",
@@ -3911,8 +4154,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 834,
-    "ageDays": 34
+    "ageHours": 867,
+    "ageDays": 36
   },
   {
     "ticketId": "UFN-66445",
@@ -3938,8 +4181,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 848,
-    "ageDays": 35
+    "ageHours": 881,
+    "ageDays": 36
   },
   {
     "ticketId": "UFN-66375",
@@ -3965,8 +4208,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 856,
-    "ageDays": 35
+    "ageHours": 889,
+    "ageDays": 37
   },
   {
     "ticketId": "UFN-66351",
@@ -3992,8 +4235,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 858,
-    "ageDays": 35
+    "ageHours": 891,
+    "ageDays": 37
   },
   {
     "ticketId": "UFN-66223",
@@ -4019,8 +4262,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 878,
-    "ageDays": 36
+    "ageHours": 910,
+    "ageDays": 37
   },
   {
     "ticketId": "UFN-66170",
@@ -4046,8 +4289,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 882,
-    "ageDays": 36
+    "ageHours": 915,
+    "ageDays": 38
   },
   {
     "ticketId": "UFN-66004",
@@ -4073,8 +4316,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 905,
-    "ageDays": 37
+    "ageHours": 938,
+    "ageDays": 39
   },
   {
     "ticketId": "UFN-65984",
@@ -4100,8 +4343,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 906,
-    "ageDays": 37
+    "ageHours": 939,
+    "ageDays": 39
   },
   {
     "ticketId": "UFN-65951",
@@ -4127,8 +4370,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 908,
-    "ageDays": 37
+    "ageHours": 941,
+    "ageDays": 39
   },
   {
     "ticketId": "UFN-65850",
@@ -4154,8 +4397,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 926,
-    "ageDays": 38
+    "ageHours": 959,
+    "ageDays": 39
   },
   {
     "ticketId": "UFN-65800",
@@ -4181,8 +4424,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 930,
-    "ageDays": 38
+    "ageHours": 963,
+    "ageDays": 40
   },
   {
     "ticketId": "UFN-65542",
@@ -4208,8 +4451,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1002,
-    "ageDays": 41
+    "ageHours": 1035,
+    "ageDays": 43
   },
   {
     "ticketId": "UFN-65339",
@@ -4235,8 +4478,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1026,
-    "ageDays": 42
+    "ageHours": 1059,
+    "ageDays": 44
   },
   {
     "ticketId": "UFN-65186",
@@ -4262,8 +4505,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1050,
-    "ageDays": 43
+    "ageHours": 1083,
+    "ageDays": 45
   },
   {
     "ticketId": "UFN-64996",
@@ -4289,8 +4532,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1074,
-    "ageDays": 44
+    "ageHours": 1107,
+    "ageDays": 46
   },
   {
     "ticketId": "UFN-64978",
@@ -4316,8 +4559,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1075,
-    "ageDays": 44
+    "ageHours": 1108,
+    "ageDays": 46
   },
   {
     "ticketId": "UFN-64779",
@@ -4343,8 +4586,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1098,
-    "ageDays": 45
+    "ageHours": 1131,
+    "ageDays": 47
   },
   {
     "ticketId": "UFN-64739",
@@ -4370,8 +4613,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1100,
-    "ageDays": 45
+    "ageHours": 1133,
+    "ageDays": 47
   },
   {
     "ticketId": "UFN-64731",
@@ -4397,8 +4640,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1100,
-    "ageDays": 45
+    "ageHours": 1133,
+    "ageDays": 47
   },
   {
     "ticketId": "UFN-64607",
@@ -4424,8 +4667,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1159,
-    "ageDays": 48
+    "ageHours": 1192,
+    "ageDays": 49
   },
   {
     "ticketId": "UFN-64590",
@@ -4451,8 +4694,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1164,
-    "ageDays": 48
+    "ageHours": 1197,
+    "ageDays": 49
   },
   {
     "ticketId": "UFN-64524",
@@ -4478,8 +4721,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1170,
-    "ageDays": 48
+    "ageHours": 1203,
+    "ageDays": 50
   },
   {
     "ticketId": "UFN-64363",
@@ -4505,8 +4748,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1194,
-    "ageDays": 49
+    "ageHours": 1227,
+    "ageDays": 51
   },
   {
     "ticketId": "UFN-64134",
@@ -4532,8 +4775,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1218,
-    "ageDays": 50
+    "ageHours": 1251,
+    "ageDays": 52
   },
   {
     "ticketId": "UFN-64129",
@@ -4559,8 +4802,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1218,
-    "ageDays": 50
+    "ageHours": 1251,
+    "ageDays": 52
   },
   {
     "ticketId": "UFN-64101",
@@ -4572,7 +4815,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+    "subject": "Reminder: SEND VIVO DAMAGE REPORT",
     "createdAt": "2026-07-29T13:45:28.000Z",
     "createdDate": "2026-07-29",
     "updatedAt": "2026-07-30T12:12:59.000Z",
@@ -4586,8 +4829,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1219,
-    "ageDays": 50
+    "ageHours": 1252,
+    "ageDays": 52
   },
   {
     "ticketId": "UFN-64099",
@@ -4613,8 +4856,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1219,
-    "ageDays": 50
+    "ageHours": 1252,
+    "ageDays": 52
   },
   {
     "ticketId": "UFN-64031",
@@ -4640,8 +4883,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1230,
-    "ageDays": 51
+    "ageHours": 1262,
+    "ageDays": 52
   },
   {
     "ticketId": "UFN-63913",
@@ -4667,8 +4910,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1242,
-    "ageDays": 51
+    "ageHours": 1275,
+    "ageDays": 53
   },
   {
     "ticketId": "UFN-63804",
@@ -4694,8 +4937,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1259,
-    "ageDays": 52
+    "ageHours": 1291,
+    "ageDays": 53
   },
   {
     "ticketId": "UFN-63698",
@@ -4721,8 +4964,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1266,
-    "ageDays": 52
+    "ageHours": 1299,
+    "ageDays": 54
   },
   {
     "ticketId": "UFN-63629",
@@ -4748,8 +4991,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1269,
-    "ageDays": 52
+    "ageHours": 1302,
+    "ageDays": 54
   },
   {
     "ticketId": "UFN-63413",
@@ -4775,8 +5018,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1338,
-    "ageDays": 55
+    "ageHours": 1371,
+    "ageDays": 57
   },
   {
     "ticketId": "UFN-63243",
@@ -4802,8 +5045,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1361,
-    "ageDays": 56
+    "ageHours": 1394,
+    "ageDays": 58
   },
   {
     "ticketId": "UFN-63227",
@@ -4829,8 +5072,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1362,
-    "ageDays": 56
+    "ageHours": 1395,
+    "ageDays": 58
   },
   {
     "ticketId": "UFN-63212",
@@ -4856,8 +5099,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1362,
-    "ageDays": 56
+    "ageHours": 1395,
+    "ageDays": 58
   },
   {
     "ticketId": "UFN-63050",
@@ -4883,8 +5126,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1386,
-    "ageDays": 57
+    "ageHours": 1419,
+    "ageDays": 59
   },
   {
     "ticketId": "UFN-63028",
@@ -4896,7 +5139,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+    "subject": "Reminder: SEND VIVO DAMAGE REPORT",
     "createdAt": "2026-07-22T13:45:34.000Z",
     "createdDate": "2026-07-22",
     "updatedAt": "2026-07-22T17:33:07.000Z",
@@ -4910,8 +5153,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1387,
-    "ageDays": 57
+    "ageHours": 1420,
+    "ageDays": 59
   },
   {
     "ticketId": "UFN-62885",
@@ -4937,8 +5180,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1410,
-    "ageDays": 58
+    "ageHours": 1443,
+    "ageDays": 60
   },
   {
     "ticketId": "UFN-62684",
@@ -4964,8 +5207,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1432,
-    "ageDays": 59
+    "ageHours": 1465,
+    "ageDays": 61
   },
   {
     "ticketId": "UFN-62651",
@@ -4991,8 +5234,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1434,
-    "ageDays": 59
+    "ageHours": 1467,
+    "ageDays": 61
   },
   {
     "ticketId": "UFN-62628",
@@ -5018,8 +5261,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1435,
-    "ageDays": 59
+    "ageHours": 1468,
+    "ageDays": 61
   },
   {
     "ticketId": "UFN-62355",
@@ -5045,8 +5288,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1506,
-    "ageDays": 62
+    "ageHours": 1539,
+    "ageDays": 64
   },
   {
     "ticketId": "UFN-62150",
@@ -5072,8 +5315,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1530,
-    "ageDays": 63
+    "ageHours": 1563,
+    "ageDays": 65
   },
   {
     "ticketId": "UFN-61922",
@@ -5099,8 +5342,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1554,
-    "ageDays": 64
+    "ageHours": 1587,
+    "ageDays": 66
   },
   {
     "ticketId": "UFN-61885",
@@ -5112,7 +5355,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+    "subject": "Reminder: SEND VIVO DAMAGE REPORT",
     "createdAt": "2026-07-15T13:45:53.000Z",
     "createdDate": "2026-07-15",
     "updatedAt": "2026-07-16T15:56:34.000Z",
@@ -5126,8 +5369,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1555,
-    "ageDays": 64
+    "ageHours": 1588,
+    "ageDays": 66
   },
   {
     "ticketId": "UFN-61666",
@@ -5153,8 +5396,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1578,
-    "ageDays": 65
+    "ageHours": 1611,
+    "ageDays": 67
   },
   {
     "ticketId": "UFN-61467",
@@ -5180,8 +5423,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1602,
-    "ageDays": 66
+    "ageHours": 1635,
+    "ageDays": 68
   },
   {
     "ticketId": "UFN-61462",
@@ -5207,8 +5450,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1602,
-    "ageDays": 66
+    "ageHours": 1635,
+    "ageDays": 68
   },
   {
     "ticketId": "UFN-61390",
@@ -5234,8 +5477,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1612,
-    "ageDays": 67
+    "ageHours": 1645,
+    "ageDays": 68
   },
   {
     "ticketId": "UFN-61190",
@@ -5261,8 +5504,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1674,
-    "ageDays": 69
+    "ageHours": 1707,
+    "ageDays": 71
   },
   {
     "ticketId": "UFN-60986",
@@ -5288,8 +5531,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1698,
-    "ageDays": 70
+    "ageHours": 1731,
+    "ageDays": 72
   },
   {
     "ticketId": "UFN-60865",
@@ -5315,8 +5558,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1718,
-    "ageDays": 71
+    "ageHours": 1751,
+    "ageDays": 72
   },
   {
     "ticketId": "UFN-60786",
@@ -5342,8 +5585,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1722,
-    "ageDays": 71
+    "ageHours": 1755,
+    "ageDays": 73
   },
   {
     "ticketId": "UFN-60760",
@@ -5355,7 +5598,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+    "subject": "Reminder: SEND VIVO DAMAGE REPORT",
     "createdAt": "2026-07-08T13:45:52.000Z",
     "createdDate": "2026-07-08",
     "updatedAt": "2026-07-08T20:18:35.000Z",
@@ -5369,8 +5612,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1723,
-    "ageDays": 71
+    "ageHours": 1756,
+    "ageDays": 73
   },
   {
     "ticketId": "UFN-60751",
@@ -5396,8 +5639,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1724,
-    "ageDays": 71
+    "ageHours": 1756,
+    "ageDays": 73
   },
   {
     "ticketId": "UFN-60595",
@@ -5423,8 +5666,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1746,
-    "ageDays": 72
+    "ageHours": 1779,
+    "ageDays": 74
   },
   {
     "ticketId": "UFN-60348",
@@ -5450,8 +5693,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1770,
-    "ageDays": 73
+    "ageHours": 1803,
+    "ageDays": 75
   },
   {
     "ticketId": "UFN-60125",
@@ -5477,8 +5720,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1842,
-    "ageDays": 76
+    "ageHours": 1875,
+    "ageDays": 78
   },
   {
     "ticketId": "UFN-60009",
@@ -5504,8 +5747,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1861,
-    "ageDays": 77
+    "ageHours": 1894,
+    "ageDays": 78
   },
   {
     "ticketId": "UFN-59915",
@@ -5531,8 +5774,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1866,
-    "ageDays": 77
+    "ageHours": 1899,
+    "ageDays": 79
   },
   {
     "ticketId": "UFN-59777",
@@ -5558,8 +5801,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1885,
-    "ageDays": 78
+    "ageHours": 1918,
+    "ageDays": 79
   },
   {
     "ticketId": "UFN-59720",
@@ -5585,8 +5828,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1889,
-    "ageDays": 78
+    "ageHours": 1922,
+    "ageDays": 80
   },
   {
     "ticketId": "UFN-59657",
@@ -5598,7 +5841,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+    "subject": "Reminder: SEND VIVO DAMAGE REPORT",
     "createdAt": "2026-07-01T13:45:36.000Z",
     "createdDate": "2026-07-01",
     "updatedAt": "2026-07-03T15:11:29.000Z",
@@ -5612,8 +5855,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1891,
-    "ageDays": 78
+    "ageHours": 1924,
+    "ageDays": 80
   },
   {
     "ticketId": "UFN-59296",
@@ -5639,8 +5882,8 @@
     "conversationId": "DN-2038293",
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1933,
-    "ageDays": 80
+    "ageHours": 1966,
+    "ageDays": 81
   },
   {
     "ticketId": "UFN-59238",
@@ -5666,8 +5909,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 1937,
-    "ageDays": 80
+    "ageHours": 1970,
+    "ageDays": 82
   },
   {
     "ticketId": "UFN-58476",
@@ -5679,7 +5922,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+    "subject": "Reminder: SEND VIVO DAMAGE REPORT",
     "createdAt": "2026-06-24T13:46:00.000Z",
     "createdDate": "2026-06-24",
     "updatedAt": "2026-07-03T15:11:26.000Z",
@@ -5693,8 +5936,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 2059,
-    "ageDays": 85
+    "ageHours": 2092,
+    "ageDays": 87
   },
   {
     "ticketId": "UFN-57965",
@@ -5706,7 +5949,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "DN-1588421  Little Red Hen - PO LRH-050626 ",
+    "subject": "DN-1588421  Little Red Hen - PO LRH-050626",
     "createdAt": "2026-06-22T13:42:23.000Z",
     "createdDate": "2026-06-22",
     "updatedAt": "2026-07-02T16:28:35.000Z",
@@ -5720,8 +5963,8 @@
     "conversationId": "DN-1588421",
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 2107,
-    "ageDays": 87
+    "ageHours": 2140,
+    "ageDays": 89
   },
   {
     "ticketId": "UFN-57198",
@@ -5733,7 +5976,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+    "subject": "Reminder: SEND VIVO DAMAGE REPORT",
     "createdAt": "2026-06-17T13:45:51.000Z",
     "createdDate": "2026-06-17",
     "updatedAt": "2026-07-03T15:11:19.000Z",
@@ -5747,8 +5990,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 2227,
-    "ageDays": 92
+    "ageHours": 2260,
+    "ageDays": 94
   },
   {
     "ticketId": "UFN-57050",
@@ -5774,8 +6017,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 2246,
-    "ageDays": 93
+    "ageHours": 2279,
+    "ageDays": 94
   },
   {
     "ticketId": "UFN-56957",
@@ -5801,8 +6044,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 2252,
-    "ageDays": 93
+    "ageHours": 2285,
+    "ageDays": 95
   },
   {
     "ticketId": "UFN-55946",
@@ -5814,7 +6057,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+    "subject": "Reminder: SEND VIVO DAMAGE REPORT",
     "createdAt": "2026-06-10T13:45:43.000Z",
     "createdDate": "2026-06-10",
     "updatedAt": "2026-07-03T15:11:16.000Z",
@@ -5828,8 +6071,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 2395,
-    "ageDays": 99
+    "ageHours": 2428,
+    "ageDays": 101
   },
   {
     "ticketId": "UFN-55198",
@@ -5855,8 +6098,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 2512,
-    "ageDays": 104
+    "ageHours": 2545,
+    "ageDays": 106
   },
   {
     "ticketId": "UFN-55002",
@@ -5882,8 +6125,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 2532,
-    "ageDays": 105
+    "ageHours": 2565,
+    "ageDays": 106
   },
   {
     "ticketId": "UFN-54985",
@@ -5909,8 +6152,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 2532,
-    "ageDays": 105
+    "ageHours": 2565,
+    "ageDays": 106
   },
   {
     "ticketId": "UFN-54684",
@@ -5936,8 +6179,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 2558,
-    "ageDays": 106
+    "ageHours": 2590,
+    "ageDays": 107
   },
   {
     "ticketId": "UFN-54680",
@@ -5963,8 +6206,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 2558,
-    "ageDays": 106
+    "ageHours": 2591,
+    "ageDays": 107
   },
   {
     "ticketId": "UFN-54576",
@@ -5976,7 +6219,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+    "subject": "Reminder: SEND VIVO DAMAGE REPORT",
     "createdAt": "2026-06-03T13:45:36.000Z",
     "createdDate": "2026-06-03",
     "updatedAt": "2026-07-03T15:11:09.000Z",
@@ -5990,8 +6233,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 2563,
-    "ageDays": 106
+    "ageHours": 2596,
+    "ageDays": 108
   },
   {
     "ticketId": "UFN-52990",
@@ -6003,7 +6246,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+    "subject": "Reminder: SEND VIVO DAMAGE REPORT",
     "createdAt": "2026-05-27T13:45:32.000Z",
     "createdDate": "2026-05-27",
     "updatedAt": "2026-05-28T12:55:43.000Z",
@@ -6017,8 +6260,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 2731,
-    "ageDays": 113
+    "ageHours": 2764,
+    "ageDays": 115
   },
   {
     "ticketId": "UFN-51805",
@@ -6044,8 +6287,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 2893,
-    "ageDays": 120
+    "ageHours": 2926,
+    "ageDays": 121
   },
   {
     "ticketId": "UFN-51749",
@@ -6071,8 +6314,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 2896,
-    "ageDays": 120
+    "ageHours": 2928,
+    "ageDays": 122
   },
   {
     "ticketId": "UFN-51698",
@@ -6084,7 +6327,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+    "subject": "Reminder: SEND VIVO DAMAGE REPORT",
     "createdAt": "2026-05-20T13:45:19.000Z",
     "createdDate": "2026-05-20",
     "updatedAt": "2026-05-20T16:53:20.000Z",
@@ -6098,8 +6341,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 2899,
-    "ageDays": 120
+    "ageHours": 2932,
+    "ageDays": 122
   },
   {
     "ticketId": "UFN-51184",
@@ -6125,8 +6368,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 2948,
-    "ageDays": 122
+    "ageHours": 2981,
+    "ageDays": 124
   },
   {
     "ticketId": "UFN-50365",
@@ -6138,7 +6381,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+    "subject": "Reminder: SEND VIVO DAMAGE REPORT",
     "createdAt": "2026-05-13T13:45:45.000Z",
     "createdDate": "2026-05-13",
     "updatedAt": "2026-05-13T20:05:33.000Z",
@@ -6152,8 +6395,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3067,
-    "ageDays": 127
+    "ageHours": 3100,
+    "ageDays": 129
   },
   {
     "ticketId": "UFN-49723",
@@ -6179,8 +6422,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3118,
-    "ageDays": 129
+    "ageHours": 3150,
+    "ageDays": 131
   },
   {
     "ticketId": "UFN-49524",
@@ -6206,8 +6449,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3177,
-    "ageDays": 132
+    "ageHours": 3209,
+    "ageDays": 133
   },
   {
     "ticketId": "UFN-48832",
@@ -6219,7 +6462,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+    "subject": "Reminder: SEND VIVO DAMAGE REPORT",
     "createdAt": "2026-05-06T13:45:52.000Z",
     "createdDate": "2026-05-06",
     "updatedAt": "2026-05-06T14:48:55.000Z",
@@ -6233,8 +6476,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3235,
-    "ageDays": 134
+    "ageHours": 3268,
+    "ageDays": 136
   },
   {
     "ticketId": "UFN-48781",
@@ -6260,8 +6503,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3237,
-    "ageDays": 134
+    "ageHours": 3270,
+    "ageDays": 136
   },
   {
     "ticketId": "UFN-48777",
@@ -6287,8 +6530,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3237,
-    "ageDays": 134
+    "ageHours": 3270,
+    "ageDays": 136
   },
   {
     "ticketId": "UFN-48670",
@@ -6314,8 +6557,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3247,
-    "ageDays": 135
+    "ageHours": 3280,
+    "ageDays": 136
   },
   {
     "ticketId": "UFN-48225",
@@ -6341,8 +6584,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3285,
-    "ageDays": 136
+    "ageHours": 3318,
+    "ageDays": 138
   },
   {
     "ticketId": "UFN-48223",
@@ -6368,8 +6611,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3285,
-    "ageDays": 136
+    "ageHours": 3318,
+    "ageDays": 138
   },
   {
     "ticketId": "UFN-48152",
@@ -6395,8 +6638,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3296,
-    "ageDays": 137
+    "ageHours": 3329,
+    "ageDays": 138
   },
   {
     "ticketId": "UFN-47786",
@@ -6422,8 +6665,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3354,
-    "ageDays": 139
+    "ageHours": 3387,
+    "ageDays": 141
   },
   {
     "ticketId": "UFN-47190",
@@ -6435,7 +6678,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+    "subject": "Reminder: SEND VIVO DAMAGE REPORT",
     "createdAt": "2026-04-29T13:47:06.000Z",
     "createdDate": "2026-04-29",
     "updatedAt": "2026-04-30T13:23:07.000Z",
@@ -6449,8 +6692,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3403,
-    "ageDays": 141
+    "ageHours": 3436,
+    "ageDays": 143
   },
   {
     "ticketId": "UFN-46639",
@@ -6462,7 +6705,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "AMAZON LTL PICK UPS FOR THIS WEEK!!!! URGENT. ",
+    "subject": "AMAZON LTL PICK UPS FOR THIS WEEK!!!! URGENT.",
     "createdAt": "2026-04-27T17:50:28.000Z",
     "createdDate": "2026-04-27",
     "updatedAt": "2026-04-30T14:09:20.000Z",
@@ -6476,8 +6719,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3447,
-    "ageDays": 143
+    "ageHours": 3480,
+    "ageDays": 145
   },
   {
     "ticketId": "UFN-46564",
@@ -6489,7 +6732,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "COOLERS RETURNS ",
+    "subject": "COOLERS RETURNS",
     "createdAt": "2026-04-27T15:05:09.000Z",
     "createdDate": "2026-04-27",
     "updatedAt": "2026-04-30T18:51:35.000Z",
@@ -6503,8 +6746,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3450,
-    "ageDays": 143
+    "ageHours": 3483,
+    "ageDays": 145
   },
   {
     "ticketId": "UFN-46492",
@@ -6530,8 +6773,8 @@
     "conversationId": "DN-1549970",
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3453,
-    "ageDays": 143
+    "ageHours": 3486,
+    "ageDays": 145
   },
   {
     "ticketId": "UFN-46256",
@@ -6557,8 +6800,8 @@
     "conversationId": "DN-1494656",
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3520,
-    "ageDays": 146
+    "ageHours": 3553,
+    "ageDays": 148
   },
   {
     "ticketId": "UFN-46185",
@@ -6584,8 +6827,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3522,
-    "ageDays": 146
+    "ageHours": 3555,
+    "ageDays": 148
   },
   {
     "ticketId": "UFN-45763",
@@ -6597,7 +6840,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+    "subject": "Reminder: SEND VIVO DAMAGE REPORT",
     "createdAt": "2026-04-22T13:45:22.000Z",
     "createdDate": "2026-04-22",
     "updatedAt": "2026-04-22T16:36:37.000Z",
@@ -6611,8 +6854,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3571,
-    "ageDays": 148
+    "ageHours": 3604,
+    "ageDays": 150
   },
   {
     "ticketId": "UFN-45316",
@@ -6638,8 +6881,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3618,
-    "ageDays": 150
+    "ageHours": 3651,
+    "ageDays": 152
   },
   {
     "ticketId": "UFN-45186",
@@ -6665,8 +6908,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3632,
-    "ageDays": 151
+    "ageHours": 3665,
+    "ageDays": 152
   },
   {
     "ticketId": "UFN-45048",
@@ -6692,8 +6935,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3682,
-    "ageDays": 153
+    "ageHours": 3715,
+    "ageDays": 154
   },
   {
     "ticketId": "UFN-44321",
@@ -6705,7 +6948,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+    "subject": "Reminder: SEND VIVO DAMAGE REPORT",
     "createdAt": "2026-04-15T13:45:33.000Z",
     "createdDate": "2026-04-15",
     "updatedAt": "2026-04-21T11:37:10.000Z",
@@ -6719,8 +6962,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3739,
-    "ageDays": 155
+    "ageHours": 3772,
+    "ageDays": 157
   },
   {
     "ticketId": "UFN-44139",
@@ -6746,8 +6989,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3758,
-    "ageDays": 156
+    "ageHours": 3791,
+    "ageDays": 157
   },
   {
     "ticketId": "UFN-43887",
@@ -6773,8 +7016,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3781,
-    "ageDays": 157
+    "ageHours": 3813,
+    "ageDays": 158
   },
   {
     "ticketId": "UFN-43591",
@@ -6800,8 +7043,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3800,
-    "ageDays": 158
+    "ageHours": 3833,
+    "ageDays": 159
   },
   {
     "ticketId": "UFN-42730",
@@ -6827,8 +7070,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3903,
-    "ageDays": 162
+    "ageHours": 3936,
+    "ageDays": 164
   },
   {
     "ticketId": "UFN-42645",
@@ -6840,7 +7083,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+    "subject": "Reminder: SEND VIVO DAMAGE REPORT",
     "createdAt": "2026-04-08T13:51:51.000Z",
     "createdDate": "2026-04-08",
     "updatedAt": "2026-04-08T13:53:12.000Z",
@@ -6854,8 +7097,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3907,
-    "ageDays": 162
+    "ageHours": 3940,
+    "ageDays": 164
   },
   {
     "ticketId": "UFN-42031",
@@ -6867,7 +7110,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "FW: Santa LAST EOD 1/9 ",
+    "subject": "FW: Santa LAST EOD 1/9",
     "createdAt": "2026-04-06T15:04:46.000Z",
     "createdDate": "2026-04-06",
     "updatedAt": "2026-04-30T15:44:13.000Z",
@@ -6881,8 +7124,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3954,
-    "ageDays": 164
+    "ageHours": 3987,
+    "ageDays": 166
   },
   {
     "ticketId": "UFN-41878",
@@ -6908,8 +7151,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 3968,
-    "ageDays": 165
+    "ageHours": 4001,
+    "ageDays": 166
   },
   {
     "ticketId": "UFN-40969",
@@ -6935,8 +7178,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 4071,
-    "ageDays": 169
+    "ageHours": 4103,
+    "ageDays": 170
   },
   {
     "ticketId": "UFN-40860",
@@ -6948,7 +7191,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+    "subject": "Reminder: SEND VIVO DAMAGE REPORT",
     "createdAt": "2026-04-01T13:45:24.000Z",
     "createdDate": "2026-04-01",
     "updatedAt": "2026-04-01T17:53:08.000Z",
@@ -6962,8 +7205,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 4075,
-    "ageDays": 169
+    "ageHours": 4108,
+    "ageDays": 171
   },
   {
     "ticketId": "UFN-40654",
@@ -6989,8 +7232,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 4093,
-    "ageDays": 170
+    "ageHours": 4125,
+    "ageDays": 171
   },
   {
     "ticketId": "UFN-40213",
@@ -7016,8 +7259,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 4124,
-    "ageDays": 171
+    "ageHours": 4157,
+    "ageDays": 173
   },
   {
     "ticketId": "UFN-39662",
@@ -7043,8 +7286,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 4192,
-    "ageDays": 174
+    "ageHours": 4225,
+    "ageDays": 176
   },
   {
     "ticketId": "UFN-39403",
@@ -7070,8 +7313,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 4216,
-    "ageDays": 175
+    "ageHours": 4249,
+    "ageDays": 177
   },
   {
     "ticketId": "UFN-39065",
@@ -7083,7 +7326,7 @@
     "priority": "Medium",
     "priorityNameSource": "ticket",
     "prioritySourceMissing": false,
-    "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+    "subject": "Reminder: SEND VIVO DAMAGE REPORT",
     "createdAt": "2026-03-25T13:45:33.000Z",
     "createdDate": "2026-03-25",
     "updatedAt": "2026-03-26T17:00:23.000Z",
@@ -7097,8 +7340,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 4243,
-    "ageDays": 176
+    "ageHours": 4276,
+    "ageDays": 178
   },
   {
     "ticketId": "UFN-37858",
@@ -7124,8 +7367,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 4339,
-    "ageDays": 180
+    "ageHours": 4372,
+    "ageDays": 182
   },
   {
     "ticketId": "UFN-35774",
@@ -7151,8 +7394,8 @@
     "conversationId": null,
     "sourceChannel": 3,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 4529,
-    "ageDays": 188
+    "ageHours": 4562,
+    "ageDays": 190
   },
   {
     "ticketId": "UFN-35588",
@@ -7178,8 +7421,8 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 4548,
-    "ageDays": 189
+    "ageHours": 4581,
+    "ageDays": 190
   },
   {
     "ticketId": "UFN-33722",
@@ -7205,8 +7448,8 @@
     "conversationId": null,
     "sourceChannel": 3,
     "topicTitle": "General Inquiry",
-    "ageHours": 4717,
-    "ageDays": 196
+    "ageHours": 4749,
+    "ageDays": 197
   },
   {
     "ticketId": "UFN-33604",
@@ -7232,7 +7475,7 @@
     "conversationId": null,
     "sourceChannel": 2,
     "topicTitle": "UF General Inquiry",
-    "ageHours": 4723,
-    "ageDays": 196
+    "ageHours": 4756,
+    "ageDays": 198
   }
 ]
