@@ -36,24 +36,33 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** – Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** – Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Sep 20 2:28 AM ET - AUTHORITATIVE v48)
+## Current Dashboard State (Last Refresh: Sep 20 6:15 AM ET - AUTHORITATIVE v49)
 
 | Metric | Value |
 |--------|-------|
 | Total Raw (system-open UFN, department scope) | **344** = 236 New / 70 Pending / 38 Reopen; New+Pending gate **306** |
-| Eligible | **277** conversations (216 New, 0 Open, 61 Pending) - unchanged from v47 |
-| Excluded | 29 = 24 billing-family + 5 overlapping conversations; 38 Reopen rows outside the gate |
-| Eligible arrivals | **0** - the eligible UFN New/Pending set is identical to v47. (v47 arrivals, for reference: UFN-69811, UFN-70404, UFN-70980, UFN-71077, UFN-71112, UFN-71124, UFN-71126, UFN-71127, UFN-71131, UFN-71132, UFN-71134, UFN-71143, UFN-71146, UFN-71147, UFN-71148, UFN-71150, UFN-71152, UFN-71161, UFN-71162, UFN-71163, UFN-71164, UFN-71180, UFN-71182, UFN-71194, UFN-71195, UFN-71196, UFN-71197, UFN-71200, UFN-71201 |
-| Eligible departures | **0** - no departures this cycle. (v47 departures, for reference: UFN-67551, UFN-68149, UFN-68951, UFN-69334, UFN-70244, UFN-70309, UFN-70413, UFN-70500, UFN-70513, UFN-70825, UFN-70919, UFN-70984, UFN-71027, UFN-71030, UFN-71035, UFN-71056, UFN-71059, UFN-71072, UFN-71079, UFN-71098 |
-| closeFlag | **NOT a gate** - 24 live closeFlag=true tickets retained (25 gate-wide) |
+| Eligible | **276** conversations (215 New, 0 Open, 61 Pending) - v48 was 277; the single delta is the DN-2131002 dedupe |
+| Excluded | 30 = 24 billing-family + 6 overlapping conversations; 38 Reopen rows outside the gate |
+| Eligible arrivals | **0** - no new eligible tickets this cycle |
+| Eligible departures | **1** - UFN-71127 removed as the duplicate of UFN-71073 (conversation DN-2131002) |
+| closeFlag | **NOT a gate** - 24 live closeFlag=true tickets retained |
 | Customers | **123** distinct live customer labels (89 Critical / 34 Warning / 0 Healthy; every ticket-visible customer covered) |
-| Priority | 273 Medium / 4 unavailable |
-| SLA Risk | **ELEVATED** - 234 SLA-breached / 43 current; 226 unassigned |
-| Action Buckets | Immediate **6** / Short-Term **35** / Medium-Term **29** / Watch **207** |
+| Priority | 272 Medium / 4 unavailable |
+| SLA Risk | **ELEVATED** - 234 SLA-breached / 42 current; 225 unassigned |
+| Action Buckets | Immediate **6** / Short-Term **34** / Medium-Term **29** / Watch **207** |
 | Outlook Coverage | **Unavailable this cycle** - last observed (v42): 25 UFN messages / 9 distinct threads, latest 2026-09-14T21:46:00Z; stale and supplemental only |
-| Last Refresh | 2026-09-20T02:28:00-04:00 (**AUTHORITATIVE v48**, department 323826714354839552) |
+| Last Refresh | 2026-09-20T06:15:00-04:00 (**AUTHORITATIVE v49**, department 323826714354839552) |
 
 ## Developer Reconciliation Note
+
+### v48 -> v49 (Sep 20 2:28 AM ET -> Sep 20 6:15 AM ET)
+
+- **Net movement: -1.** The authoritative New/Pending gate is unchanged at 306 (344 system-open = 236 New / 70 Pending / 38 Reopen). The eligible set moves 277 -> **276** because **UFN-71127** is now removed as an overlapping conversation.
+- **New dedupe correction.** UFN-71127 ("RE: DN-2131002") quotes UFN-71073 ("DN-2131002") verbatim - same load conversation, same author and recipient. UFN-71073 (created 09/17 18:43) survives; UFN-71127 (created 09/18 14:43) is dropped. The pair had been carried as two separate eligible rows (UFN-71127 stored a null `conversationId`, so the client-side dedupe never collapsed it); the overlap is now resolved explicitly in the snapshot.
+- **Exclusions re-verified.** The 24 billing-family rows are unchanged and were re-checked against the live gate: UFN-40670 / UFN-53491 (Diageo "F26 Month End Close Reminder" finance cutoffs) stay excluded; UFN-71112 ("RE: bills") and UFN-60009 ("BOL Request – FW: Amazon Invoice") are BOL/document requests and stay eligible.
+- **closeFlag evidence.** 24 live `closeFlag=true` tickets remain in the eligible set; `closeFlag` is not a gate.
+- **Serving fix.** The previous cycle updated only the root `config.json`, leaving `public/config.json` and `dashboard/config.json` stale at v47. All served copies - including the `/config.json` that `server.js` actually serves - are now written from one snapshot so the UI reads v49 metrics.
+- **Customer Health matches the rendered rule.** 123 ticket-visible customers, 89 Critical / 34 Warning / 0 Healthy. Healthy remains structurally unreachable because every eligible ticket is UFN-tagged.
 
 ### v47 -> v48 (Sep 20 2:28 AM ET)
 
