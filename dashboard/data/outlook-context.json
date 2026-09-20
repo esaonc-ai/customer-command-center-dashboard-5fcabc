@@ -1,8 +1,8 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-20T11:32:00-04:00",
-  "lastRefreshed": "2026-09-20T11:32:00-04:00",
+  "generatedAt": "2026-09-20T13:26:00-04:00",
+  "lastRefreshed": "2026-09-20T13:26:00-04:00",
   "outlookAvailable": false,
   "delegatedMailboxAvailable": false,
   "integrationStatus": "unavailable",
@@ -26,9 +26,9 @@
   ],
   "eligibleEscalations": 3,
   "coverage": {
-    "eligibleTicketsTotal": 289,
+    "eligibleTicketsTotal": 291,
     "eligibleTicketsWithOutlookContext": 3,
-    "coveragePct": 1.04,
+    "coveragePct": 1.03,
     "note": "Stale context only; no Outlook read this cycle. 3 of 9 last-observed threads link to an eligible conversation."
   },
   "ticketThreads": [

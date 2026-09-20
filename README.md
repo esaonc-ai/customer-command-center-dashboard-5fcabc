@@ -34,22 +34,35 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** – Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** – Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Sep 20 11:32 AM ET - AUTHORITATIVE v51)
+## Current Dashboard State (Last Refresh: Sep 20 1:26 PM ET - AUTHORITATIVE v52)
 
 | Metric | Value |
 |--------|-------|
-| Total Raw (system-open UFN, department scope) | **347** = 239 New / 70 Pending / 38 Reopen; New/Open/Pending gate **309** |
-| Eligible | **289** conversations (225 New, 0 Open, 64 Pending) - 13 arrivals / 0 departures vs v50 |
+| Total Raw (system-open UFN, department scope) | **349** = 241 New / 70 Pending / 38 Reopen; New/Open/Pending gate **311** |
+| Eligible | **291** conversations (227 New, 0 Open, 64 Pending) - 2 arrivals / 0 departures vs v51 |
 | Excluded | 20 billing-family; 38 Reopen rows outside the gate; 6 CASE/DN overlaps flagged but retained |
 | closeFlag | **NOT a gate** - 24 live closeFlag=true tickets retained (25 gate-wide; UFN-65196 is billing-excluded) |
 | Customers | **49** customer organizations (45 Critical / 4 Warning / 0 Healthy; every ticket-visible customer covered) |
-| Priority | 285 Medium / 4 unavailable |
-| SLA Risk | **ELEVATED** - 243 SLA-breached / 46 current; 235 unassigned |
-| Action Buckets | Immediate **6** / Short-Term **34** / Medium-Term **33** / Watch **216** |
+| Priority | 287 Medium / 4 unavailable |
+| SLA Risk | **ELEVATED** - 243 SLA-breached / 48 current; 237 unassigned |
+| Action Buckets | Immediate **6** / Short-Term **33** / Medium-Term **36** / Watch **216** |
 | Outlook Coverage | **Unavailable this cycle** - last observed (v42): 25 UFN messages / 9 distinct threads, latest 2026-09-14T21:46:00Z; stale and supplemental only |
-| Last Refresh | 2026-09-20T11:32:00-04:00 (**AUTHORITATIVE v51**, department 323826714354839552) |
+| Last Refresh | 2026-09-20T13:26:00-04:00 (**AUTHORITATIVE v52**, department 323826714354839552) |
 
 ## Developer Reconciliation Note
+
+### v51 -> v52 (Sep 20 11:32 AM ET -> Sep 20 1:26 PM ET)
+
+- **Net movement: 2 in / 0 out.** The live read returns 349 system-open rows (241 New / 70 Pending / 38 Reopen) and a 311-row New/Open/Pending gate. Eligible: **291** conversations (227 New / 64 Pending).
+- **Real gate arrivals:** UFN-71236, UFN-71233. No relative departures this cycle.
+- **No method change vs v51.** The gate definition, the 20 billing-family exclusions, the flag-but-retain overlap handling, and the organization-keyed Customer Health grouping are all unchanged.
+- **closeFlag is still not a gate.** 24 of 25 gate-wide `closeFlag=true` rows are eligible (UFN-65196 is billing-excluded); all sit on live system-OPEN New/Pending rows - the auto-close artifact.
+- **UFN-67030 re-checked live.** `displayStatusName` "Solved" / `displayStatusSystemStatus` 20 (CLOSED) / `closeFlag` true. It is outside the gate on **authoritative status**, not on closeFlag; the circulated "live-Pending with closeFlag=true" premise is false and must not be reused.
+- **Status-name audit.** No row in this queue is named "Open" (display-status id 1 resolves to Reopen, which is excluded by name), so New/Open/Pending is exactly New + Pending = 311.
+- **Customer Health coverage unchanged.** 49 organizations (45 Critical / 4 Warning / 0 Healthy); every customer visible in eligible tickets is covered; roster/aliases supplemental only.
+- **Age-derived sections recomputed** at 2026-09-20T13:26:00-04:00: SLA 243 breached / 48 current; buckets Immediate 6 / Short-Term 33 / Medium-Term 36 / Watch 216.
+- **Outlook unavailable again this cycle** (delegated-mailbox read returned no result). v42 values are carried forward, labelled stale, and no operational metric depends on them.
+- **Production rendering is not changed by this commit.** The deployed dashboard reads its own authenticated data route; this repo is the audit/evidence mirror.
 
 ### v50 -> v51 (Sep 20 8:16 AM ET -> Sep 20 11:32 AM ET)
 

@@ -6,16 +6,16 @@
     "tenant": "LT",
     "timezone": "America/New_York"
   },
-  "lastRefreshed": "2026-09-20T11:32:00-04:00",
+  "lastRefreshed": "2026-09-20T13:26:00-04:00",
   "dataSource": "Ticket Ops (authoritative); Outlook unavailable this cycle (last observed values stale)",
   "refreshType": "AUTHORITATIVE",
-  "refreshId": "refresh-2026-09-20T11:32:00-04:00-AUTHORITATIVE-v51",
-  "version": "v51",
-  "totalRaw": 347,
-  "eligibleBeforeExclusions": 309,
-  "eligibleBeforeDeduplication": 289,
-  "totalEligible": 289,
-  "newCount": 225,
+  "refreshId": "refresh-2026-09-20T13:26:00-04:00-AUTHORITATIVE-v52",
+  "version": "v52",
+  "totalRaw": 349,
+  "eligibleBeforeExclusions": 311,
+  "eligibleBeforeDeduplication": 291,
+  "totalEligible": 291,
+  "newCount": 227,
   "openCount": 0,
   "pendingCount": 64,
   "exclusionSummary": {
@@ -27,20 +27,20 @@
   "closeFlagTrueGate": 25,
   "slaHealth": {
     "breached": 243,
-    "onTrack": 46,
-    "unassigned": 235
+    "onTrack": 48,
+    "unassigned": 237
   },
   "actionBuckets": {
     "Immediate": 6,
-    "Short-Term": 34,
-    "Medium-Term": 33,
+    "Short-Term": 33,
+    "Medium-Term": 36,
     "Watch": 216
   },
   "evidenceMetrics": {
-    "totalEligible": 289,
+    "totalEligible": 291,
     "slaBreached": 243,
-    "slaOnTrack": 46,
-    "unassigned": 235,
+    "slaOnTrack": 48,
+    "unassigned": 237,
     "oldestAgeDays": 199,
     "outlookStatus": "unavailable",
     "outlookThreadsMatched": 25,
@@ -51,7 +51,7 @@
     "invoiceItemsExcluded": 20,
     "duplicatesRemoved": 0,
     "closeFlagTrueRetained": 24,
-    "arrivalsThisCycle": 13,
+    "arrivalsThisCycle": 2,
     "departuresThisCycle": 0
   },
   "outlook": {
@@ -78,7 +78,7 @@
       "customer": "Turtle Beach",
       "subject": "Pending/Overdue Tickets",
       "ageDays": 199,
-      "ageHours": 4777,
+      "ageHours": 4779,
       "slaStatus": "Breached"
     },
     {
@@ -86,7 +86,7 @@
       "customer": "ZEN BEVERAGE",
       "subject": "12x9x12 Boxes Needed",
       "ageDays": 198,
-      "ageHours": 4771,
+      "ageHours": 4772,
       "slaStatus": "Breached"
     },
     {
@@ -94,15 +94,15 @@
       "customer": "ATERIAN INC",
       "subject": "Appointment Request :: PO: DN-1467998 RN-23177 Flock Ref#: VY8-M2X5 ATERIAN, INC.",
       "ageDays": 191,
-      "ageHours": 4602,
+      "ageHours": 4604,
       "slaStatus": "Breached"
     },
     {
       "ticketId": "UFN-35774",
       "customer": "SMEG USA INC",
       "subject": "Commit Block Order - DN-1467983",
-      "ageDays": 190,
-      "ageHours": 4583,
+      "ageDays": 191,
+      "ageHours": 4585,
       "slaStatus": "Breached"
     },
     {
@@ -110,7 +110,7 @@
       "customer": "WYNK BEVERAGE - Reverse",
       "subject": "welcome, spring 🌷🍋🪻🍓",
       "ageDays": 183,
-      "ageHours": 4393,
+      "ageHours": 4395,
       "slaStatus": "Breached"
     },
     {
@@ -118,23 +118,23 @@
       "customer": "Turtle Beach",
       "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
       "ageDays": 179,
-      "ageHours": 4297,
+      "ageHours": 4299,
       "slaStatus": "Breached"
     },
     {
       "ticketId": "UFN-39403",
       "customer": "SMEG USA INC",
       "subject": "Reminder following up!",
-      "ageDays": 177,
-      "ageHours": 4270,
+      "ageDays": 178,
+      "ageHours": 4272,
       "slaStatus": "Breached"
     },
     {
       "ticketId": "UFN-39662",
       "customer": "NIAGARA BOTTLING LLC",
       "subject": "NIAGARA//JEFF-0327-SRICHAKRA//JEFFERSONVILLE IN",
-      "ageDays": 176,
-      "ageHours": 4246,
+      "ageDays": 177,
+      "ageHours": 4248,
       "slaStatus": "Breached"
     },
     {
@@ -142,7 +142,7 @@
       "customer": "NIAGARA BOTTLING LLC",
       "subject": "Re: QUANTIX SCHEDULE - 3/28 & 3/30",
       "ageDays": 174,
-      "ageHours": 4178,
+      "ageHours": 4180,
       "slaStatus": "Breached"
     },
     {
@@ -150,7 +150,7 @@
       "customer": "NIAGARA BOTTLING LLC",
       "subject": "NIAGARA/PLAINFIELD/ DUYTAN/ 4.6- 4.12",
       "ageDays": 172,
-      "ageHours": 4146,
+      "ageHours": 4148,
       "slaStatus": "Breached"
     },
     {
@@ -158,7 +158,7 @@
       "customer": "RITUAL BEVERAGE COMPANY",
       "subject": "March F26 Month End Close Reminder",
       "ageDays": 172,
-      "ageHours": 4145,
+      "ageHours": 4147,
       "slaStatus": "Breached"
     },
     {
@@ -166,7 +166,7 @@
       "customer": "Turtle Beach",
       "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
       "ageDays": 172,
-      "ageHours": 4129,
+      "ageHours": 4131,
       "slaStatus": "Breached"
     },
     {
@@ -174,7 +174,7 @@
       "customer": "SMEG USA INC",
       "subject": "Schedule Appointment-Pickup(1) - BOL# 33604304",
       "ageDays": 171,
-      "ageHours": 4125,
+      "ageHours": 4126,
       "slaStatus": "Breached"
     },
     {
@@ -182,7 +182,7 @@
       "customer": "PRIME TIME PACKAGING LTD",
       "subject": "Drayage Assignments",
       "ageDays": 167,
-      "ageHours": 4022,
+      "ageHours": 4024,
       "slaStatus": "Breached"
     },
     {
@@ -190,10 +190,10 @@
       "customer": "THE LUCKY OX LLC",
       "subject": "FW: Santa LAST EOD 1/9 ",
       "ageDays": 167,
-      "ageHours": 4008,
+      "ageHours": 4010,
       "slaStatus": "Breached"
     }
   ],
-  "arrivalsThisCycle": 13,
+  "arrivalsThisCycle": 2,
   "departuresThisCycle": 0
 }
