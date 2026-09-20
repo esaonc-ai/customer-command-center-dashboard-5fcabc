@@ -36,24 +36,37 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** – Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** – Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Sep 20 6:15 AM ET - AUTHORITATIVE v49)
+## Current Dashboard State (Last Refresh: Sep 20 8:16 AM ET - AUTHORITATIVE v50)
 
 | Metric | Value |
 |--------|-------|
 | Total Raw (system-open UFN, department scope) | **344** = 236 New / 70 Pending / 38 Reopen; New+Pending gate **306** |
-| Eligible | **276** conversations (215 New, 0 Open, 61 Pending) - v48 was 277; the single delta is the DN-2131002 dedupe |
+| Eligible | **276** conversations (215 New, 0 Open, 61 Pending) - identical set to v49 (0 arrivals / 0 departures) |
 | Excluded | 30 = 24 billing-family + 6 overlapping conversations; 38 Reopen rows outside the gate |
-| Eligible arrivals | **0** - no new eligible tickets this cycle |
-| Eligible departures | **1** - UFN-71127 removed as the duplicate of UFN-71073 (conversation DN-2131002) |
-| closeFlag | **NOT a gate** - 24 live closeFlag=true tickets retained |
+| Eligible arrivals | **0** - the live gate is an exact set and order match to v49 |
+| Eligible departures | **0** |
+| closeFlag | **NOT a gate** - 24 live closeFlag=true tickets retained (25 gate-wide; UFN-65196 is billing-excluded) |
 | Customers | **123** distinct live customer labels (89 Critical / 34 Warning / 0 Healthy; every ticket-visible customer covered) |
 | Priority | 272 Medium / 4 unavailable |
 | SLA Risk | **ELEVATED** - 234 SLA-breached / 42 current; 225 unassigned |
 | Action Buckets | Immediate **6** / Short-Term **34** / Medium-Term **29** / Watch **207** |
 | Outlook Coverage | **Unavailable this cycle** - last observed (v42): 25 UFN messages / 9 distinct threads, latest 2026-09-14T21:46:00Z; stale and supplemental only |
-| Last Refresh | 2026-09-20T06:15:00-04:00 (**AUTHORITATIVE v49**, department 323826714354839552) |
+| Last Refresh | 2026-09-20T08:16:00-04:00 (**AUTHORITATIVE v50**, department 323826714354839552) |
 
 ## Developer Reconciliation Note
+
+### v49 -> v50 (Sep 20 6:15 AM ET -> Sep 20 8:16 AM ET)
+
+- **Net movement: 0.** The live Ticket Ops read returns the same 344 system-open rows (236 New / 70 Pending / 38 Reopen) and the same 306-row New/Pending gate. The eligible set is unchanged at **276** conversations (215 New / 61 Pending). Nothing arrived and nothing departed.
+- **This cycle's movement claim is verified, not asserted.** The full 306-row gate was captured to `scripts/gate-live-2026-09-20-v50.txt` and set-compared against v49: exact set identity (276 eligible + 24 billing + 6 overlap losers) with the eligible rows in the same createdAt-descending order. `scripts/refresh-v50.mjs` re-runs that guard and aborts if the capture and the snapshot ever disagree. Prior cycles could only assert "0 arrivals" because the raw read was not persisted.
+- **closeFlag is still not a gate.** 24 of the 25 gate-wide `closeFlag=true` rows are eligible (UFN-65196 is billing-excluded). All 25 sit on **live Pending rows whose system status is OPEN** - exactly the auto-close artifact that makes closeFlag unusable as an eligibility gate.
+- **The circulated UFN-67030 example is false and was re-refuted live.** UFN-67030 reads `displayStatusName` "Solved" / `displayStatusSystemStatus` 20 (CLOSED) / `displayStatusId` 2 / closedTime 2026-09-01 16:56:56 / `closeFlag` true. It is outside the open bucket on **authoritative status**, not on closeFlag, so it cannot serve as the closeFlag counter-example. The rule stands and is properly evidenced by the 24 eligible live closeFlag=true Pending rows.
+- **Status-name audit.** The dictionary in use is New / Pending / Reopen (plus Solved outside the bucket). There are **no "Open"-named rows**, so the "New / Open / Pending" inclusion rule resolves to New + Pending, and Reopen is excluded by name.
+- **Exclusions re-verified against the live gate.** All 24 billing-family rows and all 6 overlap losers were present in the read. UFN-40670 / UFN-53491 (Diageo "F26 Month End Close Reminder" finance cutoffs) stay excluded; UFN-71112 ("RE: bills") and UFN-60009 ("BOL Request – FW: Amazon Invoice #403019398") are operational document requests and stay eligible. No new billing-family-looking row arrived. No new source-backed CASE/DN overlap arrived either.
+- **Priority and assignee were not silently overwritten.** The page response reports `priorityName` "Medium" on all 306 rows, which conflicts with the stored 272 Medium / 4 unavailable split, and a delegate count of 272 unassigned conflicts with the stored 225. Stored values are retained and the conflict is disclosed (non-Medium rows: UFN-71152, UFN-70261, UFN-70161, UFN-68573).
+- **Age-derived sections recomputed** at 2026-09-20T08:16:00-04:00: SLA 234 breached / 42 current (unchanged); buckets Immediate 6 / Short-Term 34 / Medium-Term 29 / Watch 207; Customer Health 89 Critical / 34 Warning / 0 Healthy across the same 123 customer labels.
+- **Customer Health matches the rendered rule.** Every customer visible in the eligible live tickets is covered; the configured roster/aliases remain supplemental only, and Healthy stays structurally unreachable because every eligible ticket is UFN-tagged.
+- **Outlook was unavailable again this cycle** (the delegated-mailbox read returned no result). The v42 values are carried forward, labelled stale, and no operational metric depends on them.
 
 ### v48 -> v49 (Sep 20 2:28 AM ET -> Sep 20 6:15 AM ET)
 

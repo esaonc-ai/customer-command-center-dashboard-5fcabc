@@ -6,10 +6,11 @@
     "tenant": "LT",
     "timezone": "America/New_York"
   },
-  "lastRefreshed": "2026-09-20T06:15:00-04:00",
+  "lastRefreshed": "2026-09-20T08:16:00-04:00",
   "dataSource": "Ticket Ops (authoritative); Outlook unavailable this cycle (last observed values stale)",
   "refreshType": "AUTHORITATIVE",
-  "refreshId": "refresh-2026-09-20T06:15:00-04:00-AUTHORITATIVE-v49",
+  "refreshId": "refresh-2026-09-20T08:16:00-04:00-AUTHORITATIVE-v50",
+  "version": "v50",
   "totalRaw": 344,
   "eligibleBeforeExclusions": 306,
   "eligibleBeforeDeduplication": 282,
@@ -23,6 +24,7 @@
     "overlappingConversations": 6
   },
   "closeFlagTrueRetained": 24,
+  "closeFlagTrueGate": 25,
   "slaHealth": {
     "breached": 234,
     "onTrack": 42,
@@ -50,7 +52,7 @@
     "duplicatesRemoved": 6,
     "closeFlagTrueRetained": 24,
     "arrivalsThisCycle": 0,
-    "departuresThisCycle": 1
+    "departuresThisCycle": 0
   },
   "outlook": {
     "status": "unavailable",
@@ -86,6 +88,6 @@
   "outlookThreadsMatched": 25,
   "outlookThreadsLinkedToEligibleTickets": 3,
   "arrivalsThisCycle": 0,
-  "departuresThisCycle": 1,
+  "departuresThisCycle": 0,
   "outlookDistinctThreads": 9
 }

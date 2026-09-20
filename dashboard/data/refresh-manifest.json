@@ -1,16 +1,16 @@
 {
   "refresh": {
-    "id": "refresh-2026-09-20T06:15:00-04:00-AUTHORITATIVE-v49",
-    "timestamp": "2026-09-20T06:15:00-04:00",
+    "id": "refresh-2026-09-20T08:16:00-04:00-AUTHORITATIVE-v50",
+    "timestamp": "2026-09-20T08:16:00-04:00",
     "type": "AUTHORITATIVE",
-    "previousRefreshId": "refresh-2026-09-20T02:28:00-04:00-AUTHORITATIVE-v48",
+    "previousRefreshId": "refresh-2026-09-20T06:15:00-04:00-AUTHORITATIVE-v49",
     "status": "complete",
-    "keyChange": "344 system-open rows (236 New / 70 Pending / 38 Reopen) and the 306-row New/Pending UFN gate are unchanged from v48. A newly confirmed overlap (DN-2131002: UFN-71073 surviving, UFN-71127 removed) takes the eligible set to 276 conversations (215 New / 61 Pending). 24 billing-family exclusions stand. All age-derived sections were recomputed at the new reference time."
+    "keyChange": "No movement. The live Ticket Ops read returns the identical 306-row New/Pending gate as v49 (344 system-open = 236 New / 70 Pending / 38 Reopen), so the eligible set is unchanged at 276 conversations (215 New / 61 Pending): 0 arrivals, 0 departures. Only age-derived sections were recomputed at the new reference time. closeFlag is not a gate (24 live closeFlag=true rows retained). Outlook unavailable (non-blocking)."
   },
   "rulesApplied": [
     "displayStatusSystemStatus == 10 AND displayStatusName in {New, Pending} is the authoritative eligibility gate",
-    "Reopen/Reopened, Closed, Resolved, Solved, Cancelled and Done are excluded by display status name",
-    "closeFlag is retained as evidence and is not an eligibility gate",
+    "Reopen/Reopened, Closed, Resolved, Solved, Cancelled and Done are excluded by display status name (there are no \"Open\"-named rows, so the New/Open/Pending rule resolves to New + Pending)",
+    "closeFlag is retained as evidence and is NEVER an eligibility gate (auto-close artifacts on live system-open Pending rows would cause false negatives)",
     "ticketNumber begins UFN- within department 323826714354839552",
     "24 live billing, UF Billing, storage, handling or invoice-family rows are excluded",
     "6 overlapping rows are removed by source CASE/DN conversation identity (subject text alone is never a dedupe key)",
@@ -33,24 +33,26 @@
           ]
         }
       },
-      "rawCapture": "not persisted this cycle - the authoritative live read was performed in-session at 2026-09-20T10:04-10:08Z, and the resulting eligible projection is captured in dashboard/data/tickets.json",
-      "note": "Authoritative live read at 2026-09-20T06:15:00-04:00 (pages 1-2, size 200), paged to exhaustion: data.total = 344 open-system rows = 236 New / 70 Pending / 38 Reopen. The 306 New/Pending gate rows are unchanged from v48."
+      "rawCapture": "scripts/gate-live-2026-09-20-v50.txt (all 306 gate ticket numbers, persisted this cycle)",
+      "note": "Authoritative live read at 2026-09-20T12:16:00Z (pages 1-2, size 200), paged to exhaustion: data.total = 344 open-system rows = 236 New / 70 Pending / 38 Reopen. The 306-row New/Pending gate is set-identical and order-identical to v49."
     },
     {
       "name": "Outlook",
-      "note": "No Outlook read was possible this cycle either (the delegated-mailbox read returned no result); the last observed v42 values are retained for context only and were not re-verified. Outlook remains non-blocking."
+      "note": "Outlook was unavailable again this cycle (the delegated-mailbox read returned no result). The last observed v42 values (25 messages / 9 distinct threads, latest 2026-09-14T21:46:00Z) are carried forward and labelled stale. Outlook remains non-blocking."
     }
   ],
   "developerNotes": [
-    "v49 live read: 344 open-system rows = 236 New / 70 Pending / 38 Reopen; exact UFN New/Pending gate 306 (unchanged from v48).",
-    "Eligible set: 276 conversations (215 New / 61 Pending). Single delta vs v48: UFN-71127 removed as a duplicate of UFN-71073 (DN-2131002).",
-    "Gate movement: 0 arrivals / 0 departures. The eligible change is a deduplication correction, not a status change.",
-    "Billing-family exclusions are unchanged at 24 live rows, re-verified against the live gate (UFN-40670 and UFN-53491 remain billing/finance month-end-close items; UFN-71112 \"RE: bills\" and UFN-60009 \"BOL Request – FW: Amazon Invoice\" are operational document requests and remain eligible).",
-    "24 closeFlag=true rows remain eligible. closeFlag was never used as a gate.",
-    "The DN-2131002 pair was carried as two separate eligible rows in v48 (UFN-71127 was stored with a null conversationId, so the client-side dedupe never collapsed it). The overlap is now resolved explicitly in the snapshot: UFN-71073 survives, UFN-71127 is excluded.",
-    "Age-derived sections recomputed at the v49 reference time: action buckets and Customer Health tiers are shown in dashboardState below.",
+    "v50 live read: 344 open-system rows = 236 New / 70 Pending / 38 Reopen; exact UFN New/Pending gate 306.",
+    "Verified, not assumed: the 306 gate rows are an exact SET match to v49 (276 eligible + 24 billing + 6 overlap losers), and the 276 eligible rows appear in the same createdAt-descending order. 0 arrivals / 0 departures.",
+    "The live read was persisted this cycle (scripts/gate-live-2026-09-20-v50.txt) so the gate identity is reproducible instead of being asserted from memory; refresh-v50.mjs fails hard if the capture and the snapshot disagree.",
+    "Billing-family exclusions unchanged at 24 live rows, re-verified present in the gate. UFN-40670 / UFN-53491 (Diageo \"F26 Month End Close Reminder\" finance cutoffs) stay excluded; UFN-71112 (\"RE: bills\") and UFN-60009 (\"BOL Request – FW: Amazon Invoice #403019398\") are operational document requests and stay eligible. No new billing-family-looking gate row arrived.",
+    "24 of the 25 gate-wide closeFlag=true rows remain eligible (UFN-65196 is billing-excluded); all 25 are live Pending rows on system-OPEN tickets. closeFlag is evidence only and was not used as a gate.",
+    "UFN-67030 re-read directly this cycle: displayStatusName \"Solved\", displayStatusSystemStatus 20 (CLOSED), displayStatusId 2, closedTime 2026-09-01 16:56:56, closeFlag true. It is outside the open bucket on AUTHORITATIVE STATUS, not on closeFlag. The circulated claim that it is \"live-Pending with closeFlag=true\" is FALSE and must not be reused; the correct closeFlag counter-evidence is the 24 eligible live closeFlag=true Pending rows.",
+    "Overlap re-verification: all 6 prior CASE/DN removals (UFN-69447/69450 -> UFN-69307 CASE-21836552091; UFN-69661/69663 -> UFN-69511 CASE-21861000021; UFN-70352 -> UFN-70351 DN-2107462; UFN-71127 -> UFN-71073 DN-2131002) are present in the gate and no NEW source-backed CASE/DN overlap arrived. Subject-only lookalikes (UFN-71031/71032, UFN-70098/70100, UFN-69231/70895) remain separate rows by rule.",
+    "Priority and assignee fields were NOT re-derived from this read: the page response reports priorityName \"Medium\" on every row, which conflicts with the stored 272 Medium / 4 unavailable split, and the delegate report of 272 unassigned conflicts with the stored 225. The stored per-ticket values are retained and the conflict is disclosed. (The 4 non-Medium rows are UFN-71152, UFN-70261, UFN-70161, UFN-68573.)",
+    "Age-derived sections recomputed at the v50 reference time: action buckets, Customer Health tiers and SLA counts are shown in dashboardState below.",
     "Customer Health covers all 123 customer labels visible on the 276 eligible live records; roster and aliases remain supplemental only.",
-    "Outlook was unavailable again this cycle (the delegated-mailbox read returned no result); the v42 values (25 messages / 9 threads, latest 2026-09-14T21:46:00Z) are carried forward and labelled stale. They were not used in any ticket, queue, bucket, health or SLA metric."
+    "Outlook was unavailable again this cycle; the v42 values are carried forward, labelled stale, and were not used in any ticket, queue, bucket, health or SLA metric."
   ],
   "exclusions": {
     "billingTicketIds": [
@@ -276,7 +278,7 @@
         "Jenelle Shimko": {
           "tickets": 3,
           "breached": 2,
-          "oldestBreachedAgeDays": 136,
+          "oldestBreachedAgeDays": 137,
           "tier": "Critical"
         },
         "jessi@naturalpetinnovations.com": {
@@ -402,7 +404,7 @@
         "TRT International": {
           "tickets": 2,
           "breached": 2,
-          "oldestBreachedAgeDays": 136,
+          "oldestBreachedAgeDays": 137,
           "tier": "Critical"
         },
         "ups@upsemail.com": {
@@ -624,7 +626,7 @@
         "Jeanine Covello": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 145,
+          "oldestBreachedAgeDays": 146,
           "tier": "Critical"
         },
         "Jeffrey Long - jsl003k": {
@@ -672,7 +674,7 @@
         "kasmith@niagarawater.com": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 9,
+          "oldestBreachedAgeDays": 10,
           "tier": "Critical"
         },
         "Kelvin Johnson": {
@@ -720,7 +722,7 @@
         "madison@hopewellbev.com": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 138,
+          "oldestBreachedAgeDays": 139,
           "tier": "Critical"
         },
         "Margaret Dandrea (margaret.dandrea@unisco.com)": {
@@ -906,7 +908,7 @@
         "Yesica Villalona": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 5,
+          "oldestBreachedAgeDays": 6,
           "tier": "Warning"
         },
         "youssef.zeitoon@unisco.com": {
@@ -935,7 +937,7 @@
         "customer": "Maria Aponte (maria.aponte@unisco.com)",
         "subject": "Pending/Overdue Tickets",
         "ageDays": 198,
-        "ageHours": 4772,
+        "ageHours": 4774,
         "slaStatus": "Breached"
       },
       {
@@ -943,7 +945,7 @@
         "customer": "erin.cambra@unisco.com",
         "subject": "12x9x12 Boxes Needed",
         "ageDays": 198,
-        "ageHours": 4765,
+        "ageHours": 4767,
         "slaStatus": "Breached"
       },
       {
@@ -951,7 +953,7 @@
         "customer": "aterian@flockfreight.com",
         "subject": "Appointment Request :: PO: DN-1467998 RN-23177 Flock Ref#: VY8-M2X5 ATERIAN, INC.",
         "ageDays": 191,
-        "ageHours": 4597,
+        "ageHours": 4599,
         "slaStatus": "Breached"
       },
       {
@@ -959,7 +961,7 @@
         "customer": "logistics@smegusa.com",
         "subject": "Commit Block Order - DN-1467983",
         "ageDays": 190,
-        "ageHours": 4577,
+        "ageHours": 4580,
         "slaStatus": "Breached"
       },
       {
@@ -967,7 +969,7 @@
         "customer": "Wynk",
         "subject": "welcome, spring 🌷🍋🪻🍓",
         "ageDays": 182,
-        "ageHours": 4387,
+        "ageHours": 4389,
         "slaStatus": "Breached"
       },
       {
@@ -975,7 +977,7 @@
         "customer": "Maria Aponte (maria.aponte@unisco.com)",
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "ageDays": 178,
-        "ageHours": 4292,
+        "ageHours": 4294,
         "slaStatus": "Breached"
       },
       {
@@ -983,7 +985,7 @@
         "customer": "zachary.short@smegusa.com",
         "subject": "Reminder following up!",
         "ageDays": 177,
-        "ageHours": 4265,
+        "ageHours": 4267,
         "slaStatus": "Breached"
       },
       {
@@ -991,7 +993,7 @@
         "customer": "niagarabottling@quantixscs.com",
         "subject": "NIAGARA//JEFF-0327-SRICHAKRA//JEFFERSONVILLE IN",
         "ageDays": 176,
-        "ageHours": 4241,
+        "ageHours": 4243,
         "slaStatus": "Breached"
       },
       {
@@ -999,7 +1001,7 @@
         "customer": "niagarabottling@quantixscs.com",
         "subject": "Re: QUANTIX SCHEDULE - 3/28 & 3/30",
         "ageDays": 173,
-        "ageHours": 4172,
+        "ageHours": 4174,
         "slaStatus": "Breached"
       },
       {
@@ -1007,7 +1009,7 @@
         "customer": "niagarabottling@quantixscs.com",
         "subject": "NIAGARA/PLAINFIELD/ DUYTAN/ 4.6- 4.12",
         "ageDays": 172,
-        "ageHours": 4141,
+        "ageHours": 4143,
         "slaStatus": "Breached"
       },
       {
@@ -1015,7 +1017,7 @@
         "customer": "Maria Aponte (maria.aponte@unisco.com)",
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "ageDays": 171,
-        "ageHours": 4124,
+        "ageHours": 4126,
         "slaStatus": "Breached"
       },
       {
@@ -1023,7 +1025,7 @@
         "customer": "homedepotimc@swifttrans.com",
         "subject": "Schedule Appointment-Pickup(1) - BOL# 33604304",
         "ageDays": 171,
-        "ageHours": 4119,
+        "ageHours": 4121,
         "slaStatus": "Breached"
       },
       {
@@ -1031,7 +1033,7 @@
         "customer": "PTP Notifications",
         "subject": "Drayage Assignments",
         "ageDays": 167,
-        "ageHours": 4017,
+        "ageHours": 4019,
         "slaStatus": "Breached"
       },
       {
@@ -1039,7 +1041,7 @@
         "customer": "Shailene Baez (shailene.baez@unisco.com)",
         "subject": "FW: Santa LAST EOD 1/9",
         "ageDays": 166,
-        "ageHours": 4003,
+        "ageHours": 4005,
         "slaStatus": "Breached"
       },
       {
@@ -1047,7 +1049,7 @@
         "customer": "Maria Aponte (maria.aponte@unisco.com)",
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "ageDays": 164,
-        "ageHours": 3956,
+        "ageHours": 3958,
         "slaStatus": "Breached"
       }
     ],
@@ -1067,51 +1069,11 @@
       "duplicatesRemoved": 6,
       "closeFlagTrueRetained": 24,
       "arrivalsThisCycle": 0,
-      "departuresThisCycle": 1
+      "departuresThisCycle": 0
     }
   },
   "excludedThisCycle": {
-    "reopenByStatusName": [
-      "UFN-29547",
-      "UFN-35813",
-      "UFN-37784",
-      "UFN-40335",
-      "UFN-47865",
-      "UFN-49350",
-      "UFN-53095",
-      "UFN-54564",
-      "UFN-55357",
-      "UFN-56035",
-      "UFN-59754",
-      "UFN-60562",
-      "UFN-60633",
-      "UFN-60714",
-      "UFN-63461",
-      "UFN-63665",
-      "UFN-63750",
-      "UFN-64750",
-      "UFN-65782",
-      "UFN-66334",
-      "UFN-66377",
-      "UFN-66820",
-      "UFN-67023",
-      "UFN-67028",
-      "UFN-68160",
-      "UFN-68175",
-      "UFN-68506",
-      "UFN-68515",
-      "UFN-68787",
-      "UFN-69103",
-      "UFN-69120",
-      "UFN-69440",
-      "UFN-69441",
-      "UFN-69597",
-      "UFN-70241",
-      "UFN-70776",
-      "UFN-70935",
-      "UFN-70986",
-      "UFN-71130"
-    ],
+    "reopenByStatusName": 38,
     "billingFamily": [
       "UFN-33719",
       "UFN-40670",
@@ -1163,10 +1125,8 @@
     "gateArrivals": [],
     "gateDepartures": [],
     "eligibleArrivals": [],
-    "eligibleDepartures": [
-      "UFN-71127"
-    ],
-    "note": "No gate movement this cycle. The eligible set moves 277 -> 276 solely because UFN-71127 is now removed as the DN-2131002 overlap loser."
+    "eligibleDepartures": [],
+    "note": "No movement in any dimension. The live gate is an exact set and order match to v49 (verified against the persisted capture), so nothing arrived and nothing departed."
   },
   "fieldAvailability": {
     "ticketNumber": "read",
@@ -1185,5 +1145,5 @@
     "organizationName": "returned by the live ticket page where an organization is linked; Customer Health still keys on the customer label and excludes no visible customer"
   },
   "nextScheduledRefresh": "2026-09-20T20:00:00-04:00",
-  "verifiedAgainst": "Live Ticket Ops read 2026-09-20T06:15:00-04:00 (department 323826714354839552, displayStatusSystemStatus=10)"
+  "verifiedAgainst": "Live Ticket Ops read 2026-09-20T12:16:00Z (department 323826714354839552, displayStatusSystemStatus=10), set-verified against scripts/gate-live-2026-09-20-v50.txt"
 }
