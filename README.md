@@ -34,23 +34,36 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** – Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** – Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Sep 15 2026 23:45 ET – AUTHORITATIVE)
+## Current Dashboard State (Last Refresh: Sep 19 2026 23:05 ET – AUTHORITATIVE)
 
 | Metric | Value |
 |--------|-------|
-| Total Raw (systemStatus=open) | 368 = New 234 + Pending 78 + Reopen 56 |
-| Gate matched | 312 (New 234, Pending 78) |
-| Eligible | **291** (217 New, 0 Open, 74 Pending) |
-| UFN-Count | 291 |
-| Excluded | 16 billing/UF Billing/storage/handling + 5 overlapping-thread duplicates; Reopen 56 outside gate |
-| closeFlag | **NOT a gate** — 21 live `closeFlag=true` tickets retained |
-| Customers | **56** distinct orgs (all customers visible in eligible tickets; roster supplemental) |
-| SLA Risk | **HIGH** – 247 SLA-breached / 44 on-track; 238 unassigned |
-| Outlook Coverage | 7 direct eligible matches (~2.4%) from 60 matched threads / 53 unique post-dedup; 3 active escalations |
-| Last Refresh | 2026-09-15 23:45 ET (**AUTHORITATIVE** – fresh TicketOps pull, 312/312 rows enumerated) |
+| Total Raw (systemStatus=open) | 344 = New 236 + Pending 66 + Reopen 38 + billing-topic 1 + General Inquiry topic 3 |
+| Gate matched | 302 (New 236, Pending 66) |
+| Eligible | **275** (217 New, 0 Open, 58 Pending) |
+| UFN-Count | 275 |
+| Excluded | 22 billing/UF Billing/storage/handling + 5 overlapping-thread duplicates; Reopen 38 outside gate |
+| closeFlag | **NOT a gate** — 24 live `closeFlag=true` tickets retained |
+| Customers | **46** distinct orgs (all customers visible in eligible tickets; roster supplemental) |
+| SLA Risk | **HIGH** – 232 SLA-breached / 43 on-track; 226 unassigned; 172 aged 15+ days |
+| Outlook Coverage | **Unavailable this cycle** (Outlook agent returned no content, 2 attempts) – non-blocking, so ticket data stays authoritative; 0 direct matches reported rather than stale threads |
+| Last Refresh | 2026-09-19 23:05 ET (**AUTHORITATIVE** – fresh TicketOps pull, 344 open rows enumerated in department, topic scope "UF General Inquiry") |
 | Next Refresh | ~08:00 ET (daily summary email) |
 
-> **Premise correction (this refresh):** the instruction cited UFN-67030 as "live-Pending with closeFlag=true". Ticket Ops is authoritative and shows UFN-67030 = `displayStatusName=Solved`, `displayStatusSystemStatus=20`, `closeFlag=true`, staff-closed 2026-09-01. It is excluded **by status**, not by closeFlag. The rule stands: `closeFlag` is not an eligibility gate.
+> **Premise correction (this refresh):** the instruction cited UFN-67030 as "live-Pending with closeFlag=true". Ticket Ops is authoritative and shows UFN-67030 = `displayStatusName=Solved`, `displayStatusSystemStatus=20`, `closeFlag=true`, staff-closed 2026-09-01. It is excluded **by status**, not by closeFlag. The rule stands: `closeFlag` is not an eligibility gate (24 live `closeFlag=true` rows are retained in this refresh).
+>
+> **Billing-rule flag:** Ticket Ops' own signals (topic `UTCS: Accessorial charges`, the `Billable items` form field, and the separate `Unis Fulfillment Billing` department) identify only one true invoice item at this facility (**UFN-33719**), which sits outside the gate. The 22 rows excluded here are removed by the dashboard's established `excludeInvoiceItems` subject/type rule and are mostly facility billing statements ("Cesanek – Final invoice", "Cesanek – Billing 9/01-9/15", "Storage <month>", "Handling <period>"). Owner to confirm whether the rule should be narrowed to true invoice items.
+
+### Action Buckets (this refresh, n=275)
+
+| Bucket | Count |
+|--------|-------|
+| Automated report / notification series | 105 |
+| Other customer service / ops | 64 |
+| Order commit-blocked / failed & order-status exceptions | 39 |
+| Appointment / carrier pickup requests | 25 |
+| Facility move-out / transfer | 22 |
+| Claims / damage / returns | 20 |
 
 ### Action Buckets
 

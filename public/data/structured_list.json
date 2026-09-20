@@ -1,34 +1,52 @@
 {
- "dashboard": "Customer Command Center Dashboard",
- "facility": {
-  "code": "LT_F21",
-  "name": "NHT/Cesanek",
-  "tenant": "LT",
-  "timezone": "America/New_York"
- },
- "lastRefreshed": "2026-09-15T23:45:00-04:00",
- "dataSource": "TicketOps (authoritative)",
- "refreshType": "AUTHORITATIVE",
- "totalRaw": 368,
- "totalEligible": 291,
- "newCount": 217,
- "openCount": 0,
- "pendingCount": 74,
- "truncationNote": "closeFlag not a gate; Reopen (56) and billing/storage/handling (16) excluded; 5 overlapping duplicates dropped",
- "slaHealth": {
-  "breached": 247,
-  "onTrack": 44,
-  "unassigned": 238
+ "dashboard": "Customer Command Center - NHT/Cesanek (LT_F21)",
+ "generatedAt": "2026-09-19T23:05:00-04:00",
+ "refreshId": "refresh-2026-09-19T23:05ET-AUTHORITATIVE",
+ "counts": {
+  "totalEligible": 275,
+  "new": 217,
+  "open": 0,
+  "pending": 58,
+  "ufnTagged": 275,
+  "excluded": {
+   "reopen": 38,
+   "billingInvoiceItems": 22,
+   "overlappingThreads": 5,
+   "outOfTopic": 3,
+   "closedResolvedCancelledDone": "excluded upstream by displayStatusSystemStatus=open gate"
+  },
+  "closeFlagNotAGate": 24
  },
  "evidenceMetrics": {
-  "totalEligible": 291,
-  "slaBreached": 247,
-  "slaOnTrack": 44,
-  "unassigned": 238,
-  "oldestAgeDays": 195,
-  "outlookThreadsMatched": 60,
-  "outlookThreadsUniquePostDedup": 53,
-  "outlookDirectEligibleMatches": 7,
-  "activeEscalations": 3
+  "totalEligible": 275,
+  "slaBreached": 232,
+  "slaOnTrack": 43,
+  "unassigned": 226,
+  "oldestAgeDays": 198,
+  "aging15Plus": 172,
+  "pendingSlaBreached": 53,
+  "billingExcluded": 22,
+  "reopenExcluded": 38,
+  "dedupRemovals": 5,
+  "closeFlagTrueRetained": 24
+ },
+ "slaHealth": {
+  "breached": 232,
+  "onTrack": 43,
+  "riskLevel": "HIGH"
+ },
+ "customerHealth": {
+  "totalCustomers": 46,
+  "tiers": {
+   "Critical": 25,
+   "Warning": 17,
+   "Healthy": 4
+  },
+  "coverageRule": "all customers visible in eligible tickets; roster/aliases supplemental"
+ },
+ "outlook": {
+  "available": false,
+  "coveragePct": 0,
+  "note": "Outlook enrichment unavailable this cycle; non-blocking."
  }
 }
