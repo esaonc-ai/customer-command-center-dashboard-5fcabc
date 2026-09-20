@@ -1,13 +1,82 @@
 {
-  "facility": { "code": "LT_F21", "name": "NHT/Cesanek", "tenant": "LT", "timezone": "America/New_York" },
-  "ticketFilters": {
-    "includeStatuses": ["New", "Open", "Pending"],
-    "excludeStatuses": ["Reopen", "Reopened", "Closed", "Resolved", "Cancelled", "Done"],
-    "excludeInvoiceItems": ["billing", "UF Billing", "storage", "handling"],
-    "ufnFilterEnabled": true
+  "facility": {
+    "code": "LT_F21",
+    "name": "NHT/Cesanek",
+    "tenant": "LT",
+    "timezone": "America/New_York"
   },
-  "customerHealth": { "coverageRule": "all_customers_visible_in_eligible_tickets", "rosterMode": "supplemental_only" },
-  "outlook": { "integration": "non_blocking", "useWhenAvailable": true },
-  "deduplication": { "enabled": true, "scope": "overlapping_ticket_email_threads" },
-  "dashboard": { "sections": ["counts", "priorityQueue", "actionBuckets", "customerHealth", "evidenceMetrics"], "refreshIntervalMinutes": 15 }
+  "ticketFilters": {
+    "includeStatuses": [
+      "New",
+      "Open",
+      "Pending"
+    ],
+    "excludeStatuses": [
+      "Reopen",
+      "Reopened",
+      "Closed",
+      "Resolved",
+      "Solved",
+      "Cancelled",
+      "Done"
+    ],
+    "excludeInvoiceItems": [
+      "billing",
+      "UF Billing",
+      "storage",
+      "handling",
+      "invoice"
+    ],
+    "ufnFilterEnabled": true,
+    "authoritativeGate": {
+      "displayStatusSystemStatus": 10,
+      "displayStatusNames": [
+        "New",
+        "Pending"
+      ],
+      "useCloseFlag": false
+    }
+  },
+  "customerHealth": {
+    "coverageRule": "all_customers_visible_in_eligible_tickets",
+    "rosterMode": "supplemental_only"
+  },
+  "outlook": {
+    "integration": "non_blocking",
+    "useWhenAvailable": true,
+    "status": "unavailable",
+    "lastObservedUtc": "2026-09-14T21:46:00Z",
+    "stale": true
+  },
+  "deduplication": {
+    "enabled": true,
+    "scope": "overlapping_ticket_email_threads",
+    "conversationIdOnly": true
+  },
+  "dashboard": {
+    "sections": [
+      "counts",
+      "priorityQueue",
+      "actionBuckets",
+      "customerHealth",
+      "evidenceMetrics"
+    ],
+    "refreshIntervalMinutes": 15
+  },
+  "snapshotMetrics": {
+    "refreshId": "refresh-2026-09-20T11:32:00-04:00-AUTHORITATIVE-v51",
+    "refreshedAt": "2026-09-20T11:32:00-04:00",
+    "totalRaw": 347,
+    "totalGateRows": 309,
+    "totalEligible": 289,
+    "excludedCount": 20,
+    "duplicatesRemoved": 0,
+    "invoiceItemsExcluded": 20,
+    "closeFlagTrueRetained": 24,
+    "arrivalsThisCycle": 13,
+    "departuresThisCycle": 0,
+    "outlookStatus": "unavailable",
+    "outlookThreadsMatched": 25,
+    "version": "v51"
+  }
 }

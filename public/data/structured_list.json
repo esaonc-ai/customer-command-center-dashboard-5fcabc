@@ -1,34 +1,199 @@
 {
- "dashboard": "Customer Command Center Dashboard",
- "facility": {
-  "code": "LT_F21",
-  "name": "NHT/Cesanek",
-  "tenant": "LT",
-  "timezone": "America/New_York"
- },
- "lastRefreshed": "2026-09-15T23:45:00-04:00",
- "dataSource": "TicketOps (authoritative)",
- "refreshType": "AUTHORITATIVE",
- "totalRaw": 368,
- "totalEligible": 291,
- "newCount": 217,
- "openCount": 0,
- "pendingCount": 74,
- "truncationNote": "closeFlag not a gate; Reopen (56) and billing/storage/handling (16) excluded; 5 overlapping duplicates dropped",
- "slaHealth": {
-  "breached": 247,
-  "onTrack": 44,
-  "unassigned": 238
- },
- "evidenceMetrics": {
-  "totalEligible": 291,
-  "slaBreached": 247,
-  "slaOnTrack": 44,
-  "unassigned": 238,
-  "oldestAgeDays": 195,
-  "outlookThreadsMatched": 60,
-  "outlookThreadsUniquePostDedup": 53,
-  "outlookDirectEligibleMatches": 7,
-  "activeEscalations": 3
- }
+  "dashboard": "Customer Command Center Dashboard",
+  "facility": {
+    "code": "LT_F21",
+    "name": "NHT/Cesanek",
+    "tenant": "LT",
+    "timezone": "America/New_York"
+  },
+  "lastRefreshed": "2026-09-20T11:32:00-04:00",
+  "dataSource": "Ticket Ops (authoritative); Outlook unavailable this cycle (last observed values stale)",
+  "refreshType": "AUTHORITATIVE",
+  "refreshId": "refresh-2026-09-20T11:32:00-04:00-AUTHORITATIVE-v51",
+  "version": "v51",
+  "totalRaw": 347,
+  "eligibleBeforeExclusions": 309,
+  "eligibleBeforeDeduplication": 289,
+  "totalEligible": 289,
+  "newCount": 225,
+  "openCount": 0,
+  "pendingCount": 64,
+  "exclusionSummary": {
+    "reopen": 38,
+    "billingFamily": 20,
+    "overlappingConversationsRemoved": 0
+  },
+  "closeFlagTrueRetained": 24,
+  "closeFlagTrueGate": 25,
+  "slaHealth": {
+    "breached": 243,
+    "onTrack": 46,
+    "unassigned": 235
+  },
+  "actionBuckets": {
+    "Immediate": 6,
+    "Short-Term": 34,
+    "Medium-Term": 33,
+    "Watch": 216
+  },
+  "evidenceMetrics": {
+    "totalEligible": 289,
+    "slaBreached": 243,
+    "slaOnTrack": 46,
+    "unassigned": 235,
+    "oldestAgeDays": 199,
+    "outlookStatus": "unavailable",
+    "outlookThreadsMatched": 25,
+    "outlookDistinctThreads": 9,
+    "outlookThreadsLinkedToEligibleTickets": 3,
+    "outlookStale": true,
+    "outlookLastObservedUtc": "2026-09-14T21:46:00Z",
+    "invoiceItemsExcluded": 20,
+    "duplicatesRemoved": 0,
+    "closeFlagTrueRetained": 24,
+    "arrivalsThisCycle": 13,
+    "departuresThisCycle": 0
+  },
+  "outlook": {
+    "status": "unavailable",
+    "stale": true,
+    "messagesRetrieved": 25,
+    "distinctThreads": 9,
+    "threadsLinkedToEligibleTickets": 3,
+    "lastObservedUtc": "2026-09-14T21:46:00Z"
+  },
+  "customers": {
+    "total": 49,
+    "tiers": {
+      "Critical": 45,
+      "Warning": 4,
+      "Healthy": 0
+    },
+    "labelKey": "organization",
+    "tierRule": "Critical if ticketsOlderThan7Days/tickets >= 0.5 OR ufnCount >= 3; Warning if share >= 0.25 OR ufnCount >= 1; otherwise Healthy. Every eligible ticket is UFN-tagged, so Healthy is structurally unreachable."
+  },
+  "priorityQueue": [
+    {
+      "ticketId": "UFN-33604",
+      "customer": "Turtle Beach",
+      "subject": "Pending/Overdue Tickets",
+      "ageDays": 199,
+      "ageHours": 4777,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-33722",
+      "customer": "ZEN BEVERAGE",
+      "subject": "12x9x12 Boxes Needed",
+      "ageDays": 198,
+      "ageHours": 4771,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-35588",
+      "customer": "ATERIAN INC",
+      "subject": "Appointment Request :: PO: DN-1467998 RN-23177 Flock Ref#: VY8-M2X5 ATERIAN, INC.",
+      "ageDays": 191,
+      "ageHours": 4602,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-35774",
+      "customer": "SMEG USA INC",
+      "subject": "Commit Block Order - DN-1467983",
+      "ageDays": 190,
+      "ageHours": 4583,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-37858",
+      "customer": "WYNK BEVERAGE - Reverse",
+      "subject": "welcome, spring 🌷🍋🪻🍓",
+      "ageDays": 183,
+      "ageHours": 4393,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-39065",
+      "customer": "Turtle Beach",
+      "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+      "ageDays": 179,
+      "ageHours": 4297,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-39403",
+      "customer": "SMEG USA INC",
+      "subject": "Reminder following up!",
+      "ageDays": 177,
+      "ageHours": 4270,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-39662",
+      "customer": "NIAGARA BOTTLING LLC",
+      "subject": "NIAGARA//JEFF-0327-SRICHAKRA//JEFFERSONVILLE IN",
+      "ageDays": 176,
+      "ageHours": 4246,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-40213",
+      "customer": "NIAGARA BOTTLING LLC",
+      "subject": "Re: QUANTIX SCHEDULE - 3/28 & 3/30",
+      "ageDays": 174,
+      "ageHours": 4178,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-40654",
+      "customer": "NIAGARA BOTTLING LLC",
+      "subject": "NIAGARA/PLAINFIELD/ DUYTAN/ 4.6- 4.12",
+      "ageDays": 172,
+      "ageHours": 4146,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-40670",
+      "customer": "RITUAL BEVERAGE COMPANY",
+      "subject": "March F26 Month End Close Reminder",
+      "ageDays": 172,
+      "ageHours": 4145,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-40860",
+      "customer": "Turtle Beach",
+      "subject": "Reminder: SEND VIVO DAMAGE REPORT ",
+      "ageDays": 172,
+      "ageHours": 4129,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-40969",
+      "customer": "SMEG USA INC",
+      "subject": "Schedule Appointment-Pickup(1) - BOL# 33604304",
+      "ageDays": 171,
+      "ageHours": 4125,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-41878",
+      "customer": "PRIME TIME PACKAGING LTD",
+      "subject": "Drayage Assignments",
+      "ageDays": 167,
+      "ageHours": 4022,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-42031",
+      "customer": "THE LUCKY OX LLC",
+      "subject": "FW: Santa LAST EOD 1/9 ",
+      "ageDays": 167,
+      "ageHours": 4008,
+      "slaStatus": "Breached"
+    }
+  ],
+  "arrivalsThisCycle": 13,
+  "departuresThisCycle": 0
 }
