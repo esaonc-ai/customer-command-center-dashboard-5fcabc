@@ -34,78 +34,122 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** – Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** – Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Sep 15 2026 23:45 ET – AUTHORITATIVE)
+## Current Dashboard State (Last Refresh: Sep 20 2026 18:47 ET - AUTHORITATIVE)
 
 | Metric | Value |
 |--------|-------|
-| Total Raw (systemStatus=open) | 368 = New 234 + Pending 78 + Reopen 56 |
-| Gate matched | 312 (New 234, Pending 78) |
-| Eligible | **291** (217 New, 0 Open, 74 Pending) |
-| UFN-Count | 291 |
-| Excluded | 16 billing/UF Billing/storage/handling + 5 overlapping-thread duplicates; Reopen 56 outside gate |
-| closeFlag | **NOT a gate** — 21 live `closeFlag=true` tickets retained |
-| Customers | **56** distinct orgs (all customers visible in eligible tickets; roster supplemental) |
-| SLA Risk | **HIGH** – 247 SLA-breached / 44 on-track; 238 unassigned |
-| Outlook Coverage | 7 direct eligible matches (~2.4%) from 60 matched threads / 53 unique post-dedup; 3 active escalations |
-| Last Refresh | 2026-09-15 23:45 ET (**AUTHORITATIVE** – fresh TicketOps pull, 312/312 rows enumerated) |
+| Total Raw (systemStatus=open) | 349 = New 241 + Pending 70 + Reopen 38 |
+| Gate matched | **311** (New 241, Pending 70) |
+| Eligible | **283** (223 New, 0 Open, 60 Pending) |
+| UFN-Count | 283 |
+| Excluded | 21 billing/UF Billing/storage/handling + 7 overlapping-thread duplicates; Reopen 38 outside gate |
+| closeFlag | **NOT a gate** - 22 live `closeFlag=true` tickets retained (auto-close artifacts) |
+| Customers | **50** distinct orgs (all customers visible in eligible tickets; roster supplemental) |
+| Customer Health tiers | Critical 28 / Warning 22 / Healthy 0 |
+| SLA Risk | **HIGH** - 279 SLA-breached / 4 on-track; 235 unassigned |
+| Oldest eligible | 199 days |
+| Aging 15d+ | 176 tickets |
+| Pending + breached | 56 |
+| Outlook Coverage | **Unavailable this cycle** (non-blocking) - contributed 0 threads, changed no counts; prior context carried forward and labelled stale |
+| Last Refresh | 2026-09-20 18:47 ET (**AUTHORITATIVE** - fresh TicketOps pull, 311/311 gate rows enumerated) |
 | Next Refresh | ~08:00 ET (daily summary email) |
 
-> **Premise correction (this refresh):** the instruction cited UFN-67030 as "live-Pending with closeFlag=true". Ticket Ops is authoritative and shows UFN-67030 = `displayStatusName=Solved`, `displayStatusSystemStatus=20`, `closeFlag=true`, staff-closed 2026-09-01. It is excluded **by status**, not by closeFlag. The rule stands: `closeFlag` is not an eligibility gate.
+> **Premise correction (carried forward):** the instruction cites UFN-67030 as "live-Pending with closeFlag=true". Ticket Ops is authoritative and shows UFN-67030 = `displayStatusName=Solved`, `displayStatusSystemStatus=20`, `closeFlag=true`, staff-closed 2026-09-01. It is excluded **by status**, not by closeFlag. The rule still stands: `closeFlag` is **not** an eligibility gate - the correct counter-evidence is the 22 eligible live `closeFlag=true` New/Pending rows retained in this refresh.
+
+### Status gate at a glance
+
+| Display status | displayStatusId | systemStatus | Rows | In scope |
+|----------------|-----------------|--------------|------|----------|
+| New | 11 | open (10) | 241 | Yes |
+| Pending | 6 | open (10) | 70 | Yes |
+| Open (renders as Reopen at this department) | 1 | open (10) | 38 | No - excluded by status name |
+| Closed / Resolved / Solved / Cancelled / Done | - | 20 / 30 / 40 | - | No |
 
 ### Action Buckets
 
-| Bucket | Count | Details |
-|--------|-------|---------|
-| **Immediate** | **2** | UFN-64607: Natural Rapport – RN-19411/RN-19412, SLA BREACHED, 10d old (~243h); UFN-64782: DAYDREAM NUTRITION – Transfer RN-19417, SLA BREACHED, 7d old (~182h), staff replied 08/10 |
-| **Short-Term** | **4** | UFN-65035: Niagara Bottling – Missed Pickup (19h); UFN-65043: COLAVITA USA/O Olive Oil – TO5020 Edison Transfer Urgent (18h); UFN-65779: COLAVITA USA – TO Status (15h); UFN-65876: Vita Coco DTC – URGENT DN-5002110 (9h) |
-| **Medium** | **3** | UFN-65877: UNIS Internal/Erin – Missed Pickups (9h); UFN-65857: Ritual Beverage – ABF BOL (10h); UFN-65895: Nourison – Devanned Containers (8h) |
-| **Watch** | **0** | All remaining tickets under 1-day age; no tickets older than 1d except SLA-breached |
+| Bucket | Count | Example tickets |
+|--------|-------|-----------------|
+| Automated report / notification series | 118 | UFN-33604, UFN-39065, UFN-40670, UFN-40860, UFN-41878, UFN-42645 |
+| Other customer service / ops | 85 | UFN-33719, UFN-33722, UFN-37858, UFN-39403, UFN-39662, UFN-40213 |
+| Appointment / carrier pickup requests | 21 | UFN-35588, UFN-40969, UFN-46639, UFN-47786, UFN-51184, UFN-54684 |
+| Order commit-blocked / failed & order-status exceptions | 21 | UFN-35774, UFN-57050, UFN-65951, UFN-67835, UFN-68017, UFN-68029 |
+| Claims / damage / returns & inventory discrepancies | 19 | UFN-46564, UFN-56957, UFN-59238, UFN-59296, UFN-59777, UFN-61390 |
+| Facility move-out / transfer | 19 | UFN-64739, UFN-67511, UFN-69148, UFN-70161, UFN-70246, UFN-70285 |
 
-### Customer Health Detail
+### Priority Queue (oldest eligible)
 
-| Customer | Tickets | Oldest | SLA | Health |
-|----------|---------|--------|-----|--------|
-| NATURAL RAPPORT | 1 | 10 days | BREACHED | At Risk |
-| DAYDREAM NUTRITION INC. | 1 | 7.5 days | BREACHED | At Risk |
-| COLAVITA USA | 1 | 15 hours | On Track | Healthy |
-| COLAVITA USA/O Olive Oil | 1 | 18 hours | On Track | Healthy |
-| Niagara Bottling | 1 | 19 hours | On Track | Healthy |
-| Vita Coco DTC | 1 | 9 hours | On Track | Healthy |
-| UNIS Internal (Erin Cambra) | 1 | 9 hours | On Track | Healthy |
-| Nourison | 1 | 8 hours | On Track | Healthy |
-| Ritual Beverage | 1 | 10 hours | On Track | Healthy |
+| # | Ticket | Customer | Age | SLA | Subject |
+|---|--------|----------|-----|-----|---------|
+| 1 | UFN-33604 | Turtle Beach | 199d | Breached | Pending/Overdue Tickets |
+| 2 | UFN-33719 | WATER PLUS LLC | 198d | Breached | INVOICE UPDATE REQUIRED / UFN-32193 RE: 19298289 - WATER PL... |
+| 3 | UFN-33722 | erin.cambra@unisco.com | 198d | Breached | 12x9x12 Boxes Needed |
+| 4 | UFN-35588 | ATERIAN INC | 191d | Breached | Appointment Request :: PO: DN-1467998 RN-23177 Flock Ref#: ... |
+| 5 | UFN-35774 | SMEG USA INC | 191d | Breached | Commit Block Order - DN-1467983 |
+| 6 | UFN-37858 | WYNK BEVERAGE - Reverse | 183d | Breached | welcome, spring |
+| 7 | UFN-39065 | Turtle Beach | 179d | Breached | Reminder: SEND VIVO DAMAGE REPORT |
+| 8 | UFN-39403 | SMEG USA INC | 178d | Breached | Reminder following up! |
+| 9 | UFN-39662 | NIAGARA BOTTLING LLC | 177d | Breached | NIAGARA//JEFF-0327-SRICHAKRA//JEFFERSONVILLE IN |
+| 10 | UFN-40213 | NIAGARA BOTTLING LLC | 174d | Breached | Re: QUANTIX SCHEDULE - 3/28 & 3/30 |
+| 11 | UFN-40654 | NIAGARA BOTTLING LLC | 172d | Breached | NIAGARA/PLAINFIELD/ DUYTAN/ 4.6- 4.12 |
+| 12 | UFN-40670 | RITUAL BEVERAGE COMPANY | 172d | Breached | March F26 Month End Close Reminder |
+| 13 | UFN-40860 | Turtle Beach | 172d | Breached | Reminder: SEND VIVO DAMAGE REPORT |
+| 14 | UFN-40969 | SMEG USA INC | 172d | Breached | Schedule Appointment-Pickup(1) - BOL# 33604304 |
+| 15 | UFN-41878 | PRIME TIME PACKAGING LTD | 167d | Breached | Drayage Assignments |
 
-*Note: UFN-65881 (Hint Inc.) verified RESOLVED in TicketOps this refresh. 9 unique customers across all 9 eligible tickets.*
+### Customer Health Detail (top 20 by volume)
+
+| Customer | Tickets | Breached | Oldest breached | Health |
+|----------|---------|----------|-----------------|--------|
+| LASSONDE PAPPAS AND COMPANY, INC. | 63 | 63 | 80d | Critical |
+| Turtle Beach | 23 | 23 | 199d | Critical |
+| Midea America Corp | 19 | 19 | 50d | Critical |
+| DAYDREAM NUTRITION INC. | 16 | 16 | 37d | Critical |
+| PRIME TIME PACKAGING LTD | 16 | 16 | 167d | Critical |
+| SMEG USA INC | 14 | 14 | 191d | Critical |
+| NIAGARA BOTTLING LLC | 13 | 13 | 177d | Critical |
+| CANVAS 340 LLC | 8 | 8 | 69d | Critical |
+| COLAVITA USA, LLC | 8 | 5 | 10d | Warning |
+| HINT INC. | 8 | 8 | 24d | Warning |
+| MODERN INFUSIONS LLC | 8 | 8 | 6d | Warning |
+| RITUAL BEVERAGE COMPANY | 8 | 8 | 172d | Critical |
+| ATERIAN GROUP, INC. | 6 | 6 | 9d | Warning |
+| MAIZLY INC. | 6 | 6 | 11d | Warning |
+| NIAGARA BOTTLING LLC - RESIN | 4 | 4 | 11d | Warning |
+| Natural Rapport (Q & C Products LLC) | 4 | 4 | 62d | Critical |
+| RECESS | 4 | 4 | 139d | Critical |
+| ZEN BEVERAGE LLC | 4 | 3 | 17d | Warning |
+| BOUNDLESS EC US LLC | 3 | 3 | 3d | Warning |
+| EMS MIND READER LLC | 3 | 3 | 37d | Critical |
+
+*50 customers total. Tier rule: Critical = >=1 breached ticket older than 30d; Warning = breached <=30d; Healthy = no breaches*
 
 ### Key Correction History
 
 | Refresh | Time (ET) | Key Change |
 |---------|-----------|------------|
-| refresh-2026-08-11T05:07ET-AUTHORITATIVE | 05:07 | **AUTHORITATIVE REFRESH** – Fresh TicketOps LIVE connection. 48 stale → **9 verified eligible** (81% reduction). 39 tickets resolved/closed during ~8h gap. UFN-65881 (Hint Inc.) resolved. UFN-64607: 243h/10d. UFN-64782: 182h/7d. All 9 Unassigned. 5/9 Outlook matches (56%). Watch bucket cleared to 0. All public/data synced. |
-| refresh-2026-08-11T05:03ET-FRESHNESS | 05:03 | FRESHNESS REFRESH – Ages recalculated (+1h43m since 03:20 ET). Data preserved from authoritative baseline. |
-| refresh-2026-08-11T03:20ET-AUTHORITATIVE | 03:20 | AUTHORITATIVE REFRESH – Fresh TicketOps LIVE connection. 48 stale → 9 verified. 39 resolved/closed. |
-| refresh-2026-08-11T03:15ET-FRESHNESS | 03:15 | FRESHNESS REFRESH – Ages recalculated. UFN-64607 crossed 10-day threshold. |
-| refresh-2026-08-10T23:20ET | 23:20 | LIVE FULL REFRESH – Reconnected to TicketOps API and Outlook. 5 → 48 tickets. |
-| refresh-2026-08-10T23:10ET | 23:10 | FULL LIVE REFRESH – Fresh TicketOps. 1 → 5 eligible. Discovered UFN-64607, UFN-65779. |
-| refresh-2026-08-09T21:30ET | 21:30 | ACTION BUCKET CORRECTION – All 3 tickets incorrectly Immediate. |
-| refresh-2026-08-09T20:43ET | 20:43 | SWEEP CORRECTION – UFN-65592 re-verified (closeFlag=false). |
-| refresh-2026-08-09T19:30ET | 19:30 | CORRECTED – UFN-64843/UFN-64544 excluded (closeFlag=true). |
-
-### Priority Queue
-
-| Rank | Ticket | Customer | Reason | Action |
-|------|--------|----------|--------|--------|
-| 1 | UFN-64607 | NATURAL RAPPORT | Oldest active (10 days, ~243h); SLA BREACHED; RN-19411 & RN-19412 – two open RNs; no visible activity. | Assign immediately; verify RN status in WISE; contact Jessi at Natural Rapport |
-| 2 | UFN-64782 | DAYDREAM NUTRITION INC. | SLA BREACHED (7.5 days, ~182h); Transfer RN-19417; staff replied 08/10 but unresolved. | Assign immediately; verify RN-19417 transfer; contact randy@yourdaydream.com |
-| 3 | UFN-65035 | Niagara Bottling | Missed pickup PIT-0811-DUYTAN + load cancellations. 19h old. DIRECT Outlook match. | Assign; review missed pickup schedule; coordinate ops |
-| 4 | UFN-65043 | COLAVITA USA/O Olive Oil | TO5020 Edison Transfer – Urgent. Paolo Colavita following up. No delivery date. 18h old. DIRECT Outlook match. HIGH escalation. | Assign immediately; escalate TO5020/TO5022 transfer |
-| 5 | UFN-65779 | COLAVITA USA | Active Outlook thread with Kyle Wittenbauer – TO Status inquiry. 15h old. DIRECT Outlook match. | Assign; respond leveraging active thread with Maria Mateo |
-| 6 | UFN-65857 | Ritual Beverage | ABF BOL Request. Nina Weiss (ABF) on thread. 10h old. DIRECT Outlook match. | Assign; process BOL request |
-| 7 | UFN-65876 | Vita Coco DTC | URGENT DN-5002110. 9h old. | Assign immediately; verify DN status |
-| 8 | UFN-65877 | UNIS Internal (Erin Cambra) | Erin EOD – Missed Pickups for PE/Niagara, Rise, Smeg. CKNAPP 3 DNs COMMIT FAILED. 9h old. | Review missed pickups; investigate CKNAPP commit failure |
-| 9 | UFN-65895 | Nourison | Containers Devanned TRKU4487366. Ready for pickup. 8h old. DIRECT Outlook match. | Assign; schedule pickup |
+| refresh-2026-09-20T18:47ET-AUTHORITATIVE | 18:47 | **AUTHORITATIVE REFRESH** - fresh TicketOps pull. Gate = 311 (New 241 / Pending 70). 311 - 21 billing/storage/handling - 7 overlapping-thread duplicates = **283 eligible**. Reopen 38 excluded by status name. 22 live `closeFlag=true` rows retained. Outlook unavailable (non-blocking). |
+| refresh-2026-09-15T23:45ET-AUTHORITATIVE | 23:45 | Gate = 312 (New 234 / Pending 78); 16 billing + 5 dedup = **291 eligible**. |
+| refresh-2026-08-11T05:07ET-AUTHORITATIVE | 05:07 | Fresh TicketOps pull; 48 stale -> 9 verified eligible. |
 
 ## 🚨 Data Freshness Notice
+
+**This refresh (Sep 20 2026 18:47 ET) is an AUTHORITATIVE refresh** with a fresh TicketOps pull.
+All 311 gate rows (New 241 + Pending 70) were enumerated directly from Ticket Ops department
+`UNIS Fulfillment - Northampton` (departmentId 323826714354839552) and re-verified in-session.
+
+**Eligibility gate applied:** `displayStatusSystemStatus = open` **AND** `displayStatusName ∈ {New, Pending}`.
+`closeFlag` is **not** an eligibility gate - auto-close artifacts cause false negatives, and
+22 eligible rows carry `closeFlag=true`.
+
+**Outlook was unavailable this cycle.** Email context is non-blocking; it contributed no threads and
+changed no ticket counts. The prior cycle's context is retained under `carriedForward` in
+`outlook-context.json` and is explicitly labelled stale.
+
+**Scope note:** the high eligible count is dominated by UFN ticket numbers, which is the intended
+`ufnFilterEnabled` scope. A large share of New rows are system-generated series (OMS Alert,
+Dropship/Dock Activity reports, VIVO reminders, meeting notices) rather than unique human
+conversations; they are retained because the rules define scope by status and UFN numbering, not by
+sender type.
 
 **This refresh (Aug 11 05:07 ET) is an AUTHORITATIVE refresh** with a fresh TicketOps LIVE connection. All statuses verified directly against TicketOps. 39 tickets that were previously assumed eligible (based on Aug 10 23:20 ET preserved state) were found to have moved to ineligible statuses (Closed/Resolved/Cancelled) in TicketOps.
 
