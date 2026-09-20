@@ -4,6 +4,8 @@
 
 Deployed at: [customer-command-center-dashboard-5fcabc.coolify.item.pub/dashboard](https://customer-command-center-dashboard-5fcabc.coolify.item.pub/dashboard)
 
+> **Latest authoritative refresh: Sep 20 9:45 AM ET (v51).** Live Ticket Ops read: 347 system-open rows = 239 New / 70 Pending / 38 Reopen -> New/Pending gate 309 -> **279 eligible conversations (218 New / 61 Pending)** after 24 billing-family exclusions and 6 overlapping CASE/DN duplicates. Change vs prior cycle: +3 arrivals (UFN-71230/71231/71232), 0 departures. closeFlag is evidence only and is never an eligibility gate (25 gate rows carry closeFlag=true; 24 are eligible). Outlook unavailable this cycle (non-blocking).
+
 ## Overview
 
 Real-time operational dashboard for monitoring ticket queues, customer health, and action priorities at the NHT/Cesanek facility.

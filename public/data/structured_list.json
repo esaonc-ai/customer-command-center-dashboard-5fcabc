@@ -1,34 +1,160 @@
 {
- "dashboard": "Customer Command Center Dashboard",
- "facility": {
-  "code": "LT_F21",
-  "name": "NHT/Cesanek",
-  "tenant": "LT",
-  "timezone": "America/New_York"
- },
- "lastRefreshed": "2026-09-15T23:45:00-04:00",
- "dataSource": "TicketOps (authoritative)",
- "refreshType": "AUTHORITATIVE",
- "totalRaw": 368,
- "totalEligible": 291,
- "newCount": 217,
- "openCount": 0,
- "pendingCount": 74,
- "truncationNote": "closeFlag not a gate; Reopen (56) and billing/storage/handling (16) excluded; 5 overlapping duplicates dropped",
- "slaHealth": {
-  "breached": 247,
-  "onTrack": 44,
-  "unassigned": 238
- },
- "evidenceMetrics": {
-  "totalEligible": 291,
-  "slaBreached": 247,
-  "slaOnTrack": 44,
-  "unassigned": 238,
-  "oldestAgeDays": 195,
-  "outlookThreadsMatched": 60,
-  "outlookThreadsUniquePostDedup": 53,
-  "outlookDirectEligibleMatches": 7,
-  "activeEscalations": 3
- }
+  "dashboard": "Customer Command Center Dashboard",
+  "facility": {
+    "code": "LT_F21",
+    "name": "NHT/Cesanek",
+    "tenant": "LT",
+    "timezone": "America/New_York"
+  },
+  "lastRefreshed": "2026-09-20T09:45:00-04:00",
+  "dataSource": "TicketOps (authoritative)",
+  "refreshType": "AUTHORITATIVE",
+  "totalRaw": 347,
+  "totalEligible": 279,
+  "newCount": 218,
+  "openCount": 0,
+  "pendingCount": 61,
+  "truncationNote": "closeFlag not a gate; Reopen (38) and billing/storage/handling (24) excluded; 6 overlapping CASE/DN duplicates dropped",
+  "slaHealth": {
+    "breached": 234,
+    "onTrack": 45,
+    "unassigned": 228
+  },
+  "evidenceMetrics": {
+    "totalEligible": 279,
+    "slaBreached": 234,
+    "slaOnTrack": 45,
+    "unassigned": 228,
+    "oldestAgeDays": 198,
+    "outlookThreadsMatched": 60,
+    "outlookThreadsUniquePostDedup": 53,
+    "outlookDirectEligibleMatches": 7,
+    "activeEscalations": 3,
+    "arrivalsThisCycle": 3,
+    "departuresThisCycle": 0,
+    "outlookAvailable": false,
+    "outlookCarriedForwardStale": true
+  },
+  "priorityQueue": [
+    {
+      "ticketId": "UFN-33604",
+      "customer": "Maria Aponte (maria.aponte@unisco.com)",
+      "subject": "Pending/Overdue Tickets",
+      "ageDays": 198,
+      "ageHours": 4775,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-33722",
+      "customer": "erin.cambra@unisco.com",
+      "subject": "12x9x12 Boxes Needed",
+      "ageDays": 198,
+      "ageHours": 4769,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-35588",
+      "customer": "aterian@flockfreight.com",
+      "subject": "Appointment Request :: PO: DN-1467998 RN-23177 Flock Ref#: VY8-M2X5 ATERIAN, INC.",
+      "ageDays": 191,
+      "ageHours": 4600,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-35774",
+      "customer": "logistics@smegusa.com",
+      "subject": "Commit Block Order - DN-1467983",
+      "ageDays": 190,
+      "ageHours": 4581,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-37858",
+      "customer": "Wynk",
+      "subject": "welcome, spring 🌷🍋🪻🍓",
+      "ageDays": 182,
+      "ageHours": 4391,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-39065",
+      "customer": "Maria Aponte (maria.aponte@unisco.com)",
+      "subject": "Reminder: SEND VIVO DAMAGE REPORT",
+      "ageDays": 178,
+      "ageHours": 4295,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-39403",
+      "customer": "zachary.short@smegusa.com",
+      "subject": "Reminder following up!",
+      "ageDays": 177,
+      "ageHours": 4268,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-39662",
+      "customer": "niagarabottling@quantixscs.com",
+      "subject": "NIAGARA//JEFF-0327-SRICHAKRA//JEFFERSONVILLE IN",
+      "ageDays": 176,
+      "ageHours": 4244,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-40213",
+      "customer": "niagarabottling@quantixscs.com",
+      "subject": "Re: QUANTIX SCHEDULE - 3/28 & 3/30",
+      "ageDays": 174,
+      "ageHours": 4176,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-40654",
+      "customer": "niagarabottling@quantixscs.com",
+      "subject": "NIAGARA/PLAINFIELD/ DUYTAN/ 4.6- 4.12",
+      "ageDays": 172,
+      "ageHours": 4145,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-40860",
+      "customer": "Maria Aponte (maria.aponte@unisco.com)",
+      "subject": "Reminder: SEND VIVO DAMAGE REPORT",
+      "ageDays": 171,
+      "ageHours": 4127,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-40969",
+      "customer": "homedepotimc@swifttrans.com",
+      "subject": "Schedule Appointment-Pickup(1) - BOL# 33604304",
+      "ageDays": 171,
+      "ageHours": 4123,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-41878",
+      "customer": "PTP Notifications",
+      "subject": "Drayage Assignments",
+      "ageDays": 167,
+      "ageHours": 4020,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-42031",
+      "customer": "Shailene Baez (shailene.baez@unisco.com)",
+      "subject": "FW: Santa LAST EOD 1/9",
+      "ageDays": 166,
+      "ageHours": 4006,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-42645",
+      "customer": "Maria Aponte (maria.aponte@unisco.com)",
+      "subject": "Reminder: SEND VIVO DAMAGE REPORT",
+      "ageDays": 164,
+      "ageHours": 3959,
+      "slaStatus": "Breached"
+    }
+  ]
 }
