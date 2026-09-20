@@ -6,16 +6,16 @@
     "tenant": "LT",
     "timezone": "America/New_York"
   },
-  "lastRefreshed": "2026-09-20T08:16:00-04:00",
+  "lastRefreshed": "2026-09-20T19:50:00-04:00",
   "dataSource": "Ticket Ops (authoritative); Outlook unavailable this cycle (last observed values stale)",
   "refreshType": "AUTHORITATIVE",
-  "refreshId": "refresh-2026-09-20T08:16:00-04:00-AUTHORITATIVE-v50",
-  "version": "v50",
-  "totalRaw": 344,
-  "eligibleBeforeExclusions": 306,
-  "eligibleBeforeDeduplication": 282,
-  "totalEligible": 276,
-  "newCount": 215,
+  "refreshId": "refresh-2026-09-20T19:50:00-04:00-AUTHORITATIVE-v51",
+  "version": "v51",
+  "totalRaw": 349,
+  "eligibleBeforeExclusions": 311,
+  "eligibleBeforeDeduplication": 287,
+  "totalEligible": 281,
+  "newCount": 220,
   "openCount": 0,
   "pendingCount": 61,
   "exclusionSummary": {
@@ -27,21 +27,21 @@
   "closeFlagTrueGate": 25,
   "slaHealth": {
     "breached": 234,
-    "onTrack": 42,
-    "unassigned": 225
+    "onTrack": 47,
+    "unassigned": 230
   },
   "actionBuckets": {
-    "Immediate": 6,
-    "Short-Term": 34,
-    "Medium-Term": 29,
+    "Immediate": 5,
+    "Short-Term": 24,
+    "Medium-Term": 45,
     "Watch": 207
   },
   "evidenceMetrics": {
-    "totalEligible": 276,
+    "totalEligible": 281,
     "slaBreached": 234,
-    "slaOnTrack": 42,
-    "unassigned": 225,
-    "oldestAgeDays": 198,
+    "slaOnTrack": 47,
+    "unassigned": 230,
+    "oldestAgeDays": 199,
     "outlookStatus": "unavailable",
     "outlookThreadsMatched": 25,
     "outlookDistinctThreads": 9,
@@ -51,7 +51,7 @@
     "invoiceItemsExcluded": 24,
     "duplicatesRemoved": 6,
     "closeFlagTrueRetained": 24,
-    "arrivalsThisCycle": 0,
+    "arrivalsThisCycle": 5,
     "departuresThisCycle": 0
   },
   "outlook": {
@@ -63,10 +63,10 @@
     "lastObservedUtc": "2026-09-14T21:46:00Z"
   },
   "customers": {
-    "total": 123,
+    "total": 124,
     "tiers": {
       "Critical": 89,
-      "Warning": 34,
+      "Warning": 35,
       "Healthy": 0
     },
     "tierRule": "Critical if ticketsOlderThan7Days/tickets >= 0.5 OR ufnCount >= 3; Warning if share >= 0.25 OR ufnCount >= 1; otherwise Healthy. Every eligible ticket is UFN-tagged, so Healthy is structurally unreachable."
@@ -74,20 +74,20 @@
   "excludedCount": 30,
   "duplicatesRemoved": 6,
   "invoiceItemsExcluded": 24,
-  "customerCount": 123,
+  "customerCount": 124,
   "customerHealthTiers": {
     "Critical": 89,
-    "Warning": 34,
+    "Warning": 35,
     "Healthy": 0
   },
   "slaBreached": 234,
-  "slaOnTrack": 42,
-  "unassigned": 225,
-  "oldestAgeDays": 198,
+  "slaOnTrack": 47,
+  "unassigned": 230,
+  "oldestAgeDays": 199,
   "outlookStatus": "unavailable",
   "outlookThreadsMatched": 25,
   "outlookThreadsLinkedToEligibleTickets": 3,
-  "arrivalsThisCycle": 0,
+  "arrivalsThisCycle": 5,
   "departuresThisCycle": 0,
   "outlookDistinctThreads": 9
 }

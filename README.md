@@ -36,24 +36,37 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** – Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** – Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Sep 20 8:16 AM ET - AUTHORITATIVE v50)
+## Current Dashboard State (Last Refresh: Sep 20 7:50 PM ET - AUTHORITATIVE v51)
 
 | Metric | Value |
 |--------|-------|
-| Total Raw (system-open UFN, department scope) | **344** = 236 New / 70 Pending / 38 Reopen; New+Pending gate **306** |
-| Eligible | **276** conversations (215 New, 0 Open, 61 Pending) - identical set to v49 (0 arrivals / 0 departures) |
+| Total Raw (system-open UFN, department scope) | **349** = 241 New / 70 Pending / 38 Reopen; New+Pending gate **311** |
+| Eligible | **281** conversations (220 New, 0 Open, 61 Pending) - +5 arrivals / 0 departures vs v50 | 
 | Excluded | 30 = 24 billing-family + 6 overlapping conversations; 38 Reopen rows outside the gate |
-| Eligible arrivals | **0** - the live gate is an exact set and order match to v49 |
+| Eligible arrivals | **5** - UFN-71230, UFN-71231, UFN-71232, UFN-71233, UFN-71236 |
 | Eligible departures | **0** |
 | closeFlag | **NOT a gate** - 24 live closeFlag=true tickets retained (25 gate-wide; UFN-65196 is billing-excluded) |
-| Customers | **123** distinct live customer labels (89 Critical / 34 Warning / 0 Healthy; every ticket-visible customer covered) |
-| Priority | 272 Medium / 4 unavailable |
-| SLA Risk | **ELEVATED** - 234 SLA-breached / 42 current; 225 unassigned |
-| Action Buckets | Immediate **6** / Short-Term **34** / Medium-Term **29** / Watch **207** |
+| Customers | **124** distinct live customer labels (89 Critical / 35 Warning / 0 Healthy; every ticket-visible customer covered) |
+| Priority | 277 Medium / 4 unavailable |
+| SLA Risk | **ELEVATED** - 234 SLA-breached / 47 current; 230 unassigned |
+| Action Buckets | Immediate **5** / Short-Term **24** / Medium-Term **45** / Watch **207** |
 | Outlook Coverage | **Unavailable this cycle** - last observed (v42): 25 UFN messages / 9 distinct threads, latest 2026-09-14T21:46:00Z; stale and supplemental only |
-| Last Refresh | 2026-09-20T08:16:00-04:00 (**AUTHORITATIVE v50**, department 323826714354839552) |
+| Last Refresh | 2026-09-20T19:50:00-04:00 (**AUTHORITATIVE v51**, department 323826714354839552) |
 
 ## Developer Reconciliation Note
+
+### v50 -> v51 (Sep 20 8:16 AM ET -> Sep 20 7:50 PM ET)
+
+- **Net movement: +5 eligible conversations.** The live Ticket Ops read returns 349 system-open rows (241 New / 70 Pending / 38 Reopen) and a 311-row New/Pending gate, up from 306 at v50. The eligible set moves 276 -> **281** (220 New / 61 Pending).
+- **Arrivals are exact and enumerated.** 5 tickets entered the gate and none departed: UFN-71230, UFN-71231, UFN-71232, UFN-71233, UFN-71236 - all created 2026-09-20 between 13:01 and 16:01 UTC, all displayStatusName "New", all due 2026-09-23. UFN-71230/71231 are "Dropship Order Daily Report - 2026-09-19"; UFN-71233/71236 are "OMS Alert ... Order Processing Exceptions Detected"; UFN-71232 is "RE: Missing Bill" (BOUNDLESS EC US LLC via Walmart).
+- **Movement is verified, not asserted.** The 311-row gate was captured to scripts/gate-live-2026-09-20-v51.txt and set-compared against the persisted v50 capture: exactly 5 arrivals, 0 departures. scripts/refresh-v51.mjs aborts if the computed diff does not equal the enumerated arrivals.
+- **The new "RE: Missing Bill" row is retained, not excluded.** UFN-71232 carries no billing/storage/handling/invoice line item - it is a document request - so it follows the same ruling that keeps UFN-71112 ("RE: bills") and UFN-60009 ("BOL Request - FW: Amazon Invoice #403019398") eligible.
+- **closeFlag is still not a gate.** 24 of the 25 gate-wide closeFlag=true rows are eligible (UFN-65196 is billing-excluded) and every one is a live Pending row on a system-OPEN ticket.
+- **UFN-67030 remains out on authoritative status, not on closeFlag.** It reads "Solved" / displayStatusSystemStatus 20, so it never enters the open bucket.
+- **Exclusions unchanged.** 24 billing-family rows and 6 overlap losers are all still present in the gate; no new billing-family or source-backed CASE/DN overlap arrived.
+- **Age-derived sections recomputed** at 2026-09-20T19:50:00-04:00: SLA 234 breached / 47 current; buckets Immediate 5 / Short-Term 24 / Medium-Term 45 / Watch 207; Customer Health 89 Critical / 35 Warning / 0 Healthy across 124 customer labels.
+- **Customer Health matches the rendered rule.** Every customer visible in the eligible live tickets is covered; roster/aliases remain supplemental, and Healthy stays structurally unreachable because every eligible ticket is UFN-tagged.
+- **Outlook was unavailable again this cycle** (delegated read returned no result). The v42 values are carried forward, labelled stale, and no operational metric depends on them.
 
 ### v49 -> v50 (Sep 20 6:15 AM ET -> Sep 20 8:16 AM ET)
 
