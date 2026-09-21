@@ -1,8 +1,8 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-21T00:06:00-04:00",
-  "lastRefreshed": "2026-09-21T00:06:00-04:00",
+  "generatedAt": "2026-09-21T14:00:00-04:00",
+  "lastRefreshed": "2026-09-21T14:00:00-04:00",
   "outlookAvailable": false,
   "delegatedMailboxAvailable": false,
   "integrationStatus": "unavailable",
@@ -11,7 +11,7 @@
   "dataSource": "Delegated CS mailbox nicole.weber@unisco.com; supplemental and non-blocking",
   "stale": true,
   "staleness": {
-    "reason": "No Outlook read was possible this cycle (the delegated-mailbox read returned no result); the last observed v42 values are retained for context only and were not re-verified.",
+    "reason": "No Outlook read was possible this cycle (delegated-mailbox read returned no result); last observed v42 values retained for context only.",
     "lastObservedUtc": "2026-09-14T21:46:00Z",
     "lastObservedCycle": "refresh-2026-09-15T06:34:05-04:00-AUTHORITATIVE-v42"
   },
@@ -26,10 +26,10 @@
   ],
   "eligibleEscalations": 3,
   "coverage": {
-    "eligibleTicketsTotal": 281,
+    "eligibleTicketsTotal": 267,
     "eligibleTicketsWithOutlookContext": 3,
-    "coveragePct": 1.07,
-    "note": "Stale context only. 3 of 9 last-observed threads link to an eligible Ticket Ops conversation; no Outlook read was performed this cycle."
+    "coveragePct": 1.12,
+    "note": "Stale context only; no Outlook read performed this cycle."
   },
   "ticketThreads": [
     {
@@ -79,6 +79,6 @@
     "eligibleUfnRefs": [],
     "ineligibleUfnRefs": [],
     "threadsLinkedToEligibleTickets": 0,
-    "note": "No Outlook read was possible this cycle. Values shown elsewhere are the last observed v42 context and are marked stale."
+    "note": "No Outlook read was possible this cycle."
   }
 }

@@ -36,24 +36,37 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** – Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** – Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Sep 21 12:06 AM ET - AUTHORITATIVE v54)
+## Current Dashboard State (Last Refresh: Sep 21 2:00 PM ET - AUTHORITATIVE v55)
 
 | Metric | Value |
 |--------|-------|
-| Total Raw (system-open UFN, department scope) | **349** = 241 New / 70 Pending / 38 Reopen; New+Pending gate **311** |
-| Eligible | **281** conversations (220 New, 0 Open, 61 Pending) - 0 arrivals / 0 departures vs v53 | 
-| Excluded | 30 = 24 billing-family + 6 overlapping conversations; 38 Reopen rows outside the gate |
-| Eligible arrivals | **0** |
-| Eligible departures | **0** |
-| closeFlag | **NOT a gate** - 24 live closeFlag=true tickets retained (25 gate-wide; UFN-65196 is billing-excluded) |
-| Customers | **124** distinct live customer labels (89 Critical / 35 Warning / 0 Healthy; every ticket-visible customer covered) |
-| Priority | 277 Medium / 4 unavailable |
-| SLA Risk | **ELEVATED** - 234 SLA-breached / 47 current; 230 unassigned |
-| Action Buckets | Immediate **5** / Short-Term **24** / Medium-Term **45** / Watch **207** |
+| Total Raw (system-open UFN, department scope) | **332** = 228 New / 66 Pending / 38 Reopen; New+Pending gate **294** (API total field over-reports by 1; distinct rows used) |
+| Eligible | **267** conversations (208 New, 0 Open, 59 Pending) - 16 arrivals / 30 departures vs v54 |
+| Excluded | 27 = 21 billing-family + 6 overlapping conversations; 38 Reopen rows outside the gate |
+| Eligible arrivals | **16** |
+| Eligible departures | **30** |
+| closeFlag | **NOT a gate** - 22 live closeFlag=true tickets retained (incl. new UFN-70399 / UFN-71276 / UFN-71291) |
+| Customers | **118** distinct live customer labels (86 Critical / 32 Warning / 0 Healthy; every ticket-visible customer covered) |
+| Priority | 263 Medium / 4 unavailable |
+| SLA Risk | **ELEVATED** - 225 SLA-breached / 42 current; 216 unassigned |
+| Action Buckets | Immediate **15** / Short-Term **4** / Medium-Term **40** / Watch **208** |
 | Outlook Coverage | **Unavailable this cycle** - last observed (v42): 25 UFN messages / 9 distinct threads, latest 2026-09-14T21:46:00Z; stale and supplemental only |
-| Last Refresh | 2026-09-21T00:06:00-04:00 (**AUTHORITATIVE v54**, department 323826714354839552) |
+| Last Refresh | 2026-09-21T14:00:00-04:00 (**AUTHORITATIVE v55**, department 323826714354839552) |
 
 ## Developer Reconciliation Note
+
+### v54 -> v55 (Sep 21 12:06 AM ET -> Sep 21 2:00 PM ET)
+
+- **Net movement: -14 eligible conversations (281 -> 267).** The live read returns 332 open-system rows (228 New / 66 Pending / 38 Reopen), down 17 from 349, and a 294-row gate, down 17 from 311. 16 arrivals vs 30 departures.
+- **Movement is verified, not asserted.** The 294-row gate is captured to scripts/gate-live-2026-09-21-v55.txt and set-compared against the persisted v54 capture; arrival/departure lists are computed.
+- **32 gate rows closed outright** (spot-verified on authoritative status: UFN-71236 Solved 12:24, UFN-71232 Solved 15:07, UFN-70948 Solved 12:43, UFN-71112 Solved 15:11). **UFN-71164 moved gate -> Reopen** and leaves the eligible set without closing.
+- **16 gate arrivals**, including 15 brand-new 09/21 tickets and UFN-70399 (a live Pending/system-open row carrying closeFlag=true, absent from every v54 capture).
+- **Billing exclusions fall to 21** (from 24) because UFN-65196, UFN-70948 and UFN-71039 closed and left the open population; all 21 remaining are re-verified in the gate.
+- **closeFlag is still not a gate.** 22 live closeFlag=true Pending rows are retained, three of them new this cycle.
+- **Status premise re-disclosed:** "UFN-67030 is live-Pending with closeFlag=true" remains unsupported - UFN-67030 is Solved / displayStatusSystemStatus 20 (CLOSED), closed 09/01, and is not in the [10] population. The rule the request asks for is already what the dashboard does; UFN-67030 stays out on authoritative status.
+- **Endpoint note:** POST /v1/iam/tickets/page reports total=333 while returning 332 distinct rows; its paging offset is (page-1)*size-1 (verified via page20/size10 -> offset 189 and page34/size10 -> true tail). Counts use distinct rows.
+- **Age-derived sections recomputed** at 2026-09-21T14:00:00-04:00: SLA 225 breached / 42 current; buckets 15/4/40/208; Customer Health 86 Critical / 32 Warning / 0 Healthy across 118 labels.
+- **Outlook unavailable again** (non-blocking, stale v42 values only).
 
 ### v53 -> v54 (Sep 20 10:30 PM ET -> Sep 21 12:06 AM ET)
 
