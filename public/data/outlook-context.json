@@ -1,8 +1,8 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-20T19:50:00-04:00",
-  "lastRefreshed": "2026-09-20T19:50:00-04:00",
+  "generatedAt": "2026-09-20T20:30:00-04:00",
+  "lastRefreshed": "2026-09-20T20:30:00-04:00",
   "outlookAvailable": false,
   "delegatedMailboxAvailable": false,
   "integrationStatus": "unavailable",
@@ -11,7 +11,7 @@
   "dataSource": "Delegated CS mailbox nicole.weber@unisco.com; supplemental and non-blocking",
   "stale": true,
   "staleness": {
-    "reason": "No Outlook read was possible this cycle (the delegated-mailbox read returned no result, third consecutive miss); the last observed v42 values are retained for context only and were not re-verified.",
+    "reason": "No Outlook read was possible this cycle (the delegated-mailbox read returned no result); the last observed v42 values are retained for context only and were not re-verified.",
     "lastObservedUtc": "2026-09-14T21:46:00Z",
     "lastObservedCycle": "refresh-2026-09-15T06:34:05-04:00-AUTHORITATIVE-v42"
   },
