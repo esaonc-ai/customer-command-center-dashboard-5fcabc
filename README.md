@@ -36,12 +36,12 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** – Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** – Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Sep 20 10:30 PM ET - AUTHORITATIVE v53)
+## Current Dashboard State (Last Refresh: Sep 21 12:06 AM ET - AUTHORITATIVE v54)
 
 | Metric | Value |
 |--------|-------|
 | Total Raw (system-open UFN, department scope) | **349** = 241 New / 70 Pending / 38 Reopen; New+Pending gate **311** |
-| Eligible | **281** conversations (220 New, 0 Open, 61 Pending) - 0 arrivals / 0 departures vs v52 | 
+| Eligible | **281** conversations (220 New, 0 Open, 61 Pending) - 0 arrivals / 0 departures vs v53 | 
 | Excluded | 30 = 24 billing-family + 6 overlapping conversations; 38 Reopen rows outside the gate |
 | Eligible arrivals | **0** |
 | Eligible departures | **0** |
@@ -51,9 +51,22 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 | SLA Risk | **ELEVATED** - 234 SLA-breached / 47 current; 230 unassigned |
 | Action Buckets | Immediate **5** / Short-Term **24** / Medium-Term **45** / Watch **207** |
 | Outlook Coverage | **Unavailable this cycle** - last observed (v42): 25 UFN messages / 9 distinct threads, latest 2026-09-14T21:46:00Z; stale and supplemental only |
-| Last Refresh | 2026-09-20T22:30:00-04:00 (**AUTHORITATIVE v53**, department 323826714354839552) |
+| Last Refresh | 2026-09-21T00:06:00-04:00 (**AUTHORITATIVE v54**, department 323826714354839552) |
 
 ## Developer Reconciliation Note
+
+### v53 -> v54 (Sep 20 10:30 PM ET -> Sep 21 12:06 AM ET)
+
+- **Net movement: 0 eligible conversations.** The live Ticket Ops read returns the same 349 system-open rows (241 New / 70 Pending / 38 Reopen) and the same 311-row New/Pending gate as v53. The eligible set is unchanged at **281** (220 New / 61 Pending). Nothing arrived and nothing departed.
+- **Movement is verified, not asserted.** The 311-row gate was captured to scripts/gate-live-2026-09-21-v54.txt and set-compared against the persisted v53 capture: exact set identity, 0 arrivals / 0 departures. scripts/refresh-v54.mjs aborts on any diff.
+- **The gate was independently corroborated.** The coordinator's own live page-1 read (200 newest system-open rows) matched the delegated read row for row: same newest ticket (UFN-71236), same ordering, and the same Reopen membership for all 20 page-1 Reopen rows (UFN-71130 ... UFN-66334).
+- **No new ticket entered the department.** The newest row in the live read is still UFN-71236 (created 2026-09-20 16:01 local), the same newest arrival as v53.
+- **closeFlag is still not a gate.** 24 of the 25 gate-wide closeFlag=true rows are eligible (UFN-65196 is billing-excluded) and every one is a live Pending row on a system-OPEN ticket.
+- **One status premise in the request did not hold, and is disclosed rather than applied.** The instruction that "UFN-67030 is live-Pending with closeFlag=true" is not supported by the authoritative read: UFN-67030 is "Solved" / displayStatusSystemStatus 20 (CLOSED) / closeFlag true, and is not returned by the displayStatusSystemStatus=[10] query. The rule the request asks for - authoritative gate on displayStatusSystemStatus=open + displayStatusName in {New, Pending}, with closeFlag never an eligibility gate - is already exactly what this dashboard implements, so no eligibility change was made and UFN-67030 stays out on authoritative status. The real closeFlag counter-evidence is the 24 eligible live closeFlag=true Pending rows.
+- **Exclusions unchanged.** 24 billing-family rows and 6 overlap losers are all still present in the gate; no new billing-family or source-backed CASE/DN overlap arrived.
+- **Age-derived sections recomputed** at 2026-09-21T00:06:00-04:00: SLA 234 breached / 47 current; buckets Immediate 5 / Short-Term 24 / Medium-Term 45 / Watch 207; Customer Health 89 Critical / 35 Warning / 0 Healthy across 124 customer labels.
+- **Customer Health matches the rendered rule.** Every customer visible in the eligible live tickets is covered; roster/aliases remain supplemental, and Healthy stays structurally unreachable because every eligible ticket is UFN-tagged.
+- **Outlook was unavailable again this cycle** (the delegated read returned no result). The last observed v42 values are carried forward, labelled stale, and no operational metric depends on them.
 
 ### v52 -> v53 (Sep 20 8:30 PM ET -> Sep 20 10:30 PM ET)
 

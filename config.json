@@ -64,8 +64,8 @@
     "refreshIntervalMinutes": 15
   },
   "snapshotMetrics": {
-    "refreshId": "refresh-2026-09-20T22:30:00-04:00-AUTHORITATIVE-v53",
-    "refreshedAt": "2026-09-20T22:30:00-04:00",
+    "refreshId": "refresh-2026-09-21T00:06:00-04:00-AUTHORITATIVE-v54",
+    "refreshedAt": "2026-09-21T00:06:00-04:00",
     "totalRaw": 349,
     "totalGateRows": 311,
     "totalEligible": 281,
@@ -77,6 +77,6 @@
     "departuresThisCycle": 0,
     "outlookStatus": "unavailable",
     "outlookThreadsMatched": 25,
-    "version": "v53"
+    "version": "v54"
   }
 }
