@@ -36,24 +36,37 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** – Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** – Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Sep 21 2:00 PM ET - AUTHORITATIVE v55)
+## Current Dashboard State (Last Refresh: Sep 21 3:37 PM ET - AUTHORITATIVE v56)
 
 | Metric | Value |
 |--------|-------|
-| Total Raw (system-open UFN, department scope) | **332** = 228 New / 66 Pending / 38 Reopen; New+Pending gate **294** (API total field over-reports by 1; distinct rows used) |
-| Eligible | **267** conversations (208 New, 0 Open, 59 Pending) - 16 arrivals / 30 departures vs v54 |
-| Excluded | 27 = 21 billing-family + 6 overlapping conversations; 38 Reopen rows outside the gate |
-| Eligible arrivals | **16** |
-| Eligible departures | **30** |
-| closeFlag | **NOT a gate** - 22 live closeFlag=true tickets retained (incl. new UFN-70399 / UFN-71276 / UFN-71291) |
-| Customers | **118** distinct live customer labels (86 Critical / 32 Warning / 0 Healthy; every ticket-visible customer covered) |
-| Priority | 263 Medium / 4 unavailable |
-| SLA Risk | **ELEVATED** - 225 SLA-breached / 42 current; 216 unassigned |
-| Action Buckets | Immediate **15** / Short-Term **4** / Medium-Term **40** / Watch **208** |
+| Total Raw (system-open UFN, department scope) | **329** = 228 New / 65 Pending / 36 Reopen; New+Pending gate **293** (distinct rows used) |
+| Eligible | **266** conversations (208 New, 0 Open, 58 Pending) - 6 arrivals / 7 departures vs v55 |
+| Excluded | 27 = 21 billing-family + 6 overlapping conversations; 36 Reopen rows outside the gate |
+| Eligible arrivals | **6** |
+| Eligible departures | **7** |
+| closeFlag | **NOT a gate** - 23 live closeFlag=true tickets retained (incl. re-entering UFN-70756) |
+| Customers | **116** distinct live customer labels (86 Critical / 30 Warning / 0 Healthy; every ticket-visible customer covered) |
+| Priority | 262 Medium / 4 unavailable |
+| SLA Risk | **ELEVATED** - 223 SLA-breached / 43 current; 215 unassigned |
+| Action Buckets | Immediate **16** / Short-Term **1** / Medium-Term **39** / Watch **210** |
 | Outlook Coverage | **Unavailable this cycle** - last observed (v42): 25 UFN messages / 9 distinct threads, latest 2026-09-14T21:46:00Z; stale and supplemental only |
-| Last Refresh | 2026-09-21T14:00:00-04:00 (**AUTHORITATIVE v55**, department 323826714354839552) |
+| Last Refresh | 2026-09-21T15:37:00-04:00 (**AUTHORITATIVE v56**, department 323826714354839552) |
 
 ## Developer Reconciliation Note
+
+### v55 -> v56 (Sep 21 2:00 PM ET -> Sep 21 3:37 PM ET)
+
+- **Net movement: -1 eligible conversation (267 -> 266).** The live read returns 329 open-system rows (228 New / 65 Pending / 36 Reopen), down 3 from 332, and a 293-row gate, down 1 from 294. 6 arrivals vs 7 departures.
+- **Movement is verified, not asserted.** The 293-row gate is captured to scripts/gate-live-2026-09-21T1937Z-v56.tsv and set-compared against the persisted v55 capture; arrival/departure lists are computed, and the script aborts if the computed departures differ from the enumerated set.
+- **All 7 departures were individually re-verified CLOSED** (displayStatusSystemStatus 20) rather than assumed: UFN-70596 Solved 18:35, UFN-71283 "No Action Needed" 18:43, UFN-71295 Solved 18:11, UFN-71298 Solved 18:11, UFN-70779 Solved 19:02, UFN-70731 Solved 19:03, UFN-71270 Solved 19:11. No transcription gap was mistaken for a departure.
+- **6 arrivals:** five brand-new 09/21 tickets (UFN-71304 Aviron-UNIS Somerset go-live, UFN-71306 + UFN-71308 TCL, UFN-71307 TO626 Central Transport, UFN-71312 Colavita transfers) plus **UFN-70756**, which left the gate at v55 and returned live as Pending / system-open / closeFlag=true (firstClosedTime 09/14) - a clean example of the auto-close artifact.
+- **Billing exclusions stay at 21** and all 21 were re-verified in the gate; the 6 CASE/DN overlap losers are unchanged.
+- **closeFlag is still not a gate.** 23 live closeFlag=true rows are retained; UFN-70756 is the new arrival among them.
+- **Status premise re-disclosed:** "UFN-67030 is live-Pending with closeFlag=true" remains unsupported - UFN-67030 is Solved / displayStatusSystemStatus 20 (CLOSED), closed 09/01, and is not in the [10] population. The rule the request asks for is already what the dashboard does; UFN-67030 stays out on authoritative status.
+- **Endpoint note:** this cycle's page read reported total=329 for 329 distinct rows, so the v55 off-by-one did not reproduce; distinct rows are used regardless.
+- **Age-derived sections recomputed** at 2026-09-21T15:37:00-04:00: SLA 223 breached / 43 current; buckets 16/1/39/210; Customer Health 86 Critical / 30 Warning / 0 Healthy across 116 labels.
+- **Outlook unavailable again** (non-blocking; two attempts returned no result, stale v42 values only).
 
 ### v54 -> v55 (Sep 21 12:06 AM ET -> Sep 21 2:00 PM ET)
 
