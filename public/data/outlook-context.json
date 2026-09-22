@@ -389,19 +389,15 @@
   "PRIME TIME PACKAGING LTD"
  ],
  "coverage": {
-  "eligibleTicketsTotal": 291,
-  "eligibleTicketsWithOutlookDirect": 7,
-  "coveragePct": 2.4,
-  "note": "Denominator filled at dashboard-refresh time from the authoritative eligible set. Direct matches = UFN refs on email threads that fall inside the eligible set."
+  "eligibleTicketsTotal": 268,
+  "eligibleTicketsWithOutlookDirect": 2,
+  "coveragePct": 0.7,
+  "staleEvidence": true,
+  "note": "Denominator recomputed at refresh time from the 2026-09-22 eligible set. Numerator is STALE - carried forward from the 2026-09-04->2026-09-15 pull, not a fresh match. Treat as last-known, not current."
  },
  "threadsWithRefsInEligibleSet": [
-  "UFN-68714",
-  "UFN-69462",
-  "UFN-70252",
   "UFN-70261",
-  "UFN-70399",
-  "UFN-70731",
-  "UFN-70893"
+  "UFN-70399"
  ],
  "threadRefsOutsideEligibleSet": [
   "UFN-67809",
@@ -452,7 +448,16 @@
   "UFN-70804"
  ],
  "dataSource": "Outlook (external app agent) - NON-BLOCKING enrichment; window 2026-09-04 -> 2026-09-15 (America/New_York); full UFN search paged (460 raw hits)",
- "generatedAt": "2026-09-15T23:45:00-04:00",
- "lastRefreshed": "2026-09-15T23:45:00-04:00",
- "refreshNote": "Non-blocking enrichment only; UFN-tagged email threads map 1:1 to tickets and are NOT double-counted; overlapping ticket/email threads deduped. Old threads surfaced only via message history were excluded rather than carried forward. Ticket Ops remains authoritative for ticket status. Counts are email-side derived and best-effort."
+ "generatedAt": "2026-09-22T04:17:00-04:00",
+ "lastRefreshed": "2026-09-22T04:17:00-04:00",
+ "refreshNote": "NO FRESH OUTLOOK PULL was available this cycle (Outlook agent unavailable - non-blocking per the refresh rules). The thread evidence below is carried forward from the last successful pull (window 2026-09-04 -> 2026-09-15, America/New_York) and has NOT been re-verified against the mailbox. Ticket Ops remains authoritative for ticket status; email-side dedupe/sentiment was NOT applied this cycle. Coverage denominator below was recomputed against the new 2026-09-22 eligible set.",
+ "carriedForward": true,
+ "freshPullThisCycle": false,
+ "threadsPreviouslyInSetNowOut": [
+  "UFN-68714",
+  "UFN-69462",
+  "UFN-70252",
+  "UFN-70731",
+  "UFN-70893"
+ ]
 }

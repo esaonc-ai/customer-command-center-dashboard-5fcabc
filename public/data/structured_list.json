@@ -6,29 +6,45 @@
   "tenant": "LT",
   "timezone": "America/New_York"
  },
- "lastRefreshed": "2026-09-15T23:45:00-04:00",
+ "lastRefreshed": "2026-09-22T04:17:00-04:00",
  "dataSource": "TicketOps (authoritative)",
  "refreshType": "AUTHORITATIVE",
- "totalRaw": 368,
- "totalEligible": 291,
- "newCount": 217,
+ "totalRaw": 333,
+ "totalRawNote": "open system-status rows = New 232 + Pending 65 + Reopen 36 (excluded)",
+ "gateMatched": 297,
+ "totalEligible": 268,
+ "newCount": 208,
  "openCount": 0,
- "pendingCount": 74,
- "truncationNote": "closeFlag not a gate; Reopen (56) and billing/storage/handling (16) excluded; 5 overlapping duplicates dropped",
+ "pendingCount": 60,
+ "truncationNote": "closeFlag not a gate; Reopen (36) and billing/storage/handling/invoice items (21) excluded; 8 overlapping same-issue duplicates dropped",
  "slaHealth": {
-  "breached": 247,
-  "onTrack": 44,
-  "unassigned": 238
+  "breached": 231,
+  "onTrack": 37,
+  "unassigned": 217
+ },
+ "customerHealth": {
+  "totalCustomers": 54,
+  "tiers": {
+   "Critical": 28,
+   "Warning": 14,
+   "Healthy": 12
+  },
+  "coverageRule": "all_customers_visible_in_eligible_tickets",
+  "rosterMode": "supplemental_only"
  },
  "evidenceMetrics": {
-  "totalEligible": 291,
-  "slaBreached": 247,
-  "slaOnTrack": 44,
-  "unassigned": 238,
-  "oldestAgeDays": 195,
-  "outlookThreadsMatched": 60,
-  "outlookThreadsUniquePostDedup": 53,
-  "outlookDirectEligibleMatches": 7,
-  "activeEscalations": 3
+  "totalEligible": 268,
+  "slaBreached": 231,
+  "slaOnTrack": 37,
+  "unassigned": 217,
+  "oldestAgeDays": 200,
+  "aging15Plus": 174,
+  "billingExcluded": 21,
+  "reopenExcluded": 36,
+  "dedupRemovals": 8,
+  "closeFlagTrueRetained": 23,
+  "outlookThreadsMatched": "stale (carried forward 2026-09-15)",
+  "outlookDirectEligibleMatches": 2,
+  "outlookStale": true
  }
 }
