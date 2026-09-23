@@ -10,7 +10,7 @@
  "dataSource": "TicketOps (authoritative)",
  "refreshType": "AUTHORITATIVE",
  "totalRaw": 331,
- "totalRawNote": "open system-status rows = 331 = New 211 + Pending 57 + Reopen 33 (excluded)",
+ "totalRawNote": "open system-status rows = 331 = New 237 + Pending 61 + Reopen 33 (excluded)",
  "gateMatched": 298,
  "totalEligible": 268,
  "newCount": 211,

@@ -4,7 +4,7 @@
   "timestamp": "2026-09-23T01:40:00-04:00",
   "type": "AUTHORITATIVE",
   "previousRefreshId": "refresh-2026-09-22T04:17ET-AUTHORITATIVE",
-  "keyChange": "Fresh TicketOps pull (2026-09-23 01:40 ET): gate (displayStatusSystemStatus=open AND displayStatusName in {New,Pending}) = 298 (New 211 / Pending 57). 298 - 22 billing/handling/storage/invoice items - 8 overlapping same-issue duplicates = 268 eligible. closeFlag NOT used as a gate: 18 live closeFlag=true rows retained. Reopen (33) excluded by status name. UFN-67030 is Solved (closed 2026-09-01) and correctly absent - excluded by status, not by closeFlag."
+  "keyChange": "Fresh TicketOps pull (2026-09-23 01:40 ET): gate (displayStatusSystemStatus=open AND displayStatusName in {New,Pending}) = 298 (New 237 / Pending 61). 298 - 22 billing/handling/storage/invoice items - 8 overlapping same-issue duplicates = 268 eligible. closeFlag NOT used as a gate: 18 live closeFlag=true rows retained. Reopen (33) excluded by status name. UFN-67030 is Solved (closed 2026-09-01) and correctly absent - excluded by status, not by closeFlag."
  },
  "rulesApplied": [
   "displayStatusSystemStatus == open (10) - authoritative gate",
@@ -29,7 +29,7 @@
  ],
  "dashboardState": {
   "totalRaw": null,
-  "totalRawNote": "open system-status rows = 331 = New 211 + Pending 57 + Reopen 33 (excluded)",
+  "totalRawNote": "open system-status rows = 331 = New 237 + Pending 61 + Reopen 33 (excluded)",
   "reopenExcluded": 33,
   "gateMatched": 298,
   "billingExcluded": 22,
