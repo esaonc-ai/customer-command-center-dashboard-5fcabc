@@ -393,7 +393,9 @@
   "eligibleTicketsWithOutlookDirect": 2,
   "coveragePct": 0.7,
   "staleEvidence": true,
-  "note": "Denominator recomputed at refresh time from the 2026-09-22 eligible set. Numerator is STALE - carried forward from the 2026-09-04->2026-09-15 pull, not a fresh match. Treat as last-known, not current."
+  "note": "Denominator recomputed at refresh time from the 2026-09-22 eligible set. Numerator is STALE - carried forward from the 2026-09-04->2026-09-15 pull, not a fresh match. Treat as last-known, not current.",
+  "stale": true,
+  "status": "STALE - carried forward from 2026-09-15 window"
  },
  "threadsWithRefsInEligibleSet": [
   "UFN-70261",
@@ -448,9 +450,9 @@
   "UFN-70804"
  ],
  "dataSource": "Outlook (external app agent) - NON-BLOCKING enrichment; window 2026-09-04 -> 2026-09-15 (America/New_York); full UFN search paged (460 raw hits)",
- "generatedAt": "2026-09-22T04:17:00-04:00",
- "lastRefreshed": "2026-09-22T04:17:00-04:00",
- "refreshNote": "NO FRESH OUTLOOK PULL was available this cycle (Outlook agent unavailable - non-blocking per the refresh rules). The thread evidence below is carried forward from the last successful pull (window 2026-09-04 -> 2026-09-15, America/New_York) and has NOT been re-verified against the mailbox. Ticket Ops remains authoritative for ticket status; email-side dedupe/sentiment was NOT applied this cycle. Coverage denominator below was recomputed against the new 2026-09-22 eligible set.",
+ "generatedAt": "2026-09-23T01:40:00-04:00",
+ "lastRefreshed": "2026-09-23T01:40:00-04:00",
+ "refreshNote": "NO FRESH OUTLOOK PULL was available this cycle (the Outlook integration returned no data - non-blocking per the refresh rules). The thread evidence below is carried forward from the last successful pull (window 2026-09-04 -> 2026-09-15). Treat as STALE.",
  "carriedForward": true,
  "freshPullThisCycle": false,
  "threadsPreviouslyInSetNowOut": [

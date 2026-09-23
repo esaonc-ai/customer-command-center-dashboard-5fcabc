@@ -6,45 +6,46 @@
   "tenant": "LT",
   "timezone": "America/New_York"
  },
- "lastRefreshed": "2026-09-22T04:17:00-04:00",
+ "lastRefreshed": "2026-09-23T01:40:00-04:00",
  "dataSource": "TicketOps (authoritative)",
  "refreshType": "AUTHORITATIVE",
- "totalRaw": 333,
- "totalRawNote": "open system-status rows = New 232 + Pending 65 + Reopen 36 (excluded)",
- "gateMatched": 297,
+ "totalRaw": 331,
+ "totalRawNote": "open system-status rows = 331 = New 211 + Pending 57 + Reopen 33 (excluded)",
+ "gateMatched": 298,
  "totalEligible": 268,
- "newCount": 208,
+ "newCount": 211,
  "openCount": 0,
- "pendingCount": 60,
- "truncationNote": "closeFlag not a gate; Reopen (36) and billing/storage/handling/invoice items (21) excluded; 8 overlapping same-issue duplicates dropped",
+ "pendingCount": 57,
+ "truncationNote": "closeFlag not a gate; Reopen (33) and billing/storage/handling/invoice items (22) excluded; 8 overlapping same-issue duplicates dropped",
  "slaHealth": {
-  "breached": 231,
-  "onTrack": 37,
-  "unassigned": 217
+  "breached": 236,
+  "onTrack": 32,
+  "unassigned": 218
  },
  "customerHealth": {
-  "totalCustomers": 54,
+  "totalCustomers": 50,
   "tiers": {
    "Critical": 28,
-   "Warning": 14,
-   "Healthy": 12
+   "Warning": 15,
+   "Healthy": 7
   },
   "coverageRule": "all_customers_visible_in_eligible_tickets",
   "rosterMode": "supplemental_only"
  },
  "evidenceMetrics": {
   "totalEligible": 268,
-  "slaBreached": 231,
-  "slaOnTrack": 37,
-  "unassigned": 217,
-  "oldestAgeDays": 200,
-  "aging15Plus": 174,
-  "billingExcluded": 21,
-  "reopenExcluded": 36,
+  "slaBreached": 236,
+  "slaOnTrack": 32,
+  "unassigned": 218,
+  "oldestAgeDays": 202,
+  "aging15Plus": 171,
+  "pendingSlaBreached": 50,
+  "billingExcluded": 22,
+  "reopenExcluded": 33,
   "dedupRemovals": 8,
-  "closeFlagTrueRetained": 23,
-  "outlookThreadsMatched": "stale (carried forward 2026-09-15)",
-  "outlookDirectEligibleMatches": 2,
+  "closeFlagTrueRetained": 18,
+  "outlookThreadsMatched": "stale (Outlook context unavailable this cycle)",
+  "outlookDirectEligibleMatches": 0,
   "outlookStale": true
  }
 }
