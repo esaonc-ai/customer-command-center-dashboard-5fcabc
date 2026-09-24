@@ -1,11 +1,11 @@
 {
   "refresh": {
-    "id": "refresh-2026-09-24T05:40:00-04:00-AUTHORITATIVE-v58",
-    "timestamp": "2026-09-24T05:40:00-04:00",
+    "id": "refresh-2026-09-24T06:25:00-04:00-AUTHORITATIVE-v59",
+    "timestamp": "2026-09-24T06:25:00-04:00",
     "type": "AUTHORITATIVE",
-    "previousRefreshId": "refresh-2026-09-23T01:00:00-04:00-AUTHORITATIVE-v57",
+    "previousRefreshId": "refresh-2026-09-24T05:40:00-04:00-AUTHORITATIVE-v58",
     "status": "complete",
-    "keyChange": "Live Ticket Ops read returns 328 system-open rows (296 gate rows) and a 296-row New+Pending gate; eligible 267 (215 New / 52 Pending) = 29 arrivals / 31 departures vs v57. Billing-family exclusions 23 -> 21. Duplicate conversations 6 -> 8. closeFlag still not a gate (14 retained). Outlook unavailable (non-blocking)."
+    "keyChange": "VERIFIED NO-MOVEMENT cycle. The live Ticket Ops read returns 328 system-open rows (238 New / 58 Pending / 32 Reopen) and the SAME 296-row New+Pending gate as v58 - exact set identity, 0 arrivals / 0 departures. Eligible stays 267 (215 New / 52 Pending). Billing-family exclusions 21, duplicate conversations 8, closeFlag still not a gate (14 retained). Outlook unavailable (non-blocking)."
   },
   "rulesApplied": [
     "displayStatusSystemStatus == 10 AND displayStatusName in {New, Pending} is the authoritative eligibility gate",
@@ -37,30 +37,29 @@
           ]
         }
       },
-      "rawCapture": "scripts/gate-live-2026-09-24-v58.psv (296 New/Pending gate rows with display status + closeFlag); scripts/arrivals-v58.psv (full live records for the 29 gate rows new to the eligible set); scripts/departure-verify-v58.psv (31 individual status reads)",
-      "note": "Authoritative read at 2026-09-24T09:30Z: 328 system-open rows = 231 New / Pending / 32 Reopen (see reconciliation). New+Pending gate 296. The Reopen bucket (32) sits outside the gate per the status rules."
+      "rawCapture": "scripts/gate-live-2026-09-24T1025Z-v59.psv (296 New/Pending gate rows with display status + closeFlag, transcribed from the delegated authoritative read); scripts/arrivals-v59.psv (empty - no gate row is new to the eligible set); scripts/departure-verify-v59.psv (empty - no gate row left the eligible set)",
+      "note": "Authoritative read at 2026-09-24T10:15Z: 328 system-open rows = 238 New / 58 Pending / 32 Reopen. New+Pending gate 296. The Reopen bucket (32) sits outside the gate per the status rules."
     },
     {
       "name": "Outlook",
-      "note": "Unavailable again this cycle (delegated-mailbox read not available); last observed v42 values (25 messages / 9 distinct threads) are carried forward as stale context only. Outlook remains non-blocking and was used in no ticket, queue, bucket, health or SLA metric."
+      "note": "Unavailable again this cycle (delegated-mailbox read returned no result); last observed v42 values (25 messages / 9 distinct threads) are carried forward as stale context only. Outlook remains non-blocking and was used in no ticket, queue, bucket, health or SLA metric."
     }
   ],
   "developerNotes": [
-    "v58 live read: 328 system-open rows = 238 New / 58 Pending / 32 Reopen; New+Pending gate 296. Gate membership is set-compared against the persisted v57 snapshot rather than asserted.",
-    "ARRIVALS to the eligible set (29): UFN-71154, UFN-71284, UFN-71402, UFN-71405, UFN-71411, UFN-71414, UFN-71415, UFN-71418, UFN-71424, UFN-71427, UFN-71430, UFN-71435, UFN-71436, UFN-71437, UFN-71439, UFN-71440, UFN-71441, UFN-71442, UFN-71445, UFN-71446, UFN-71447, UFN-71450, UFN-71456, UFN-71459, UFN-71467, UFN-71472, UFN-71473, UFN-71476, UFN-71487. Every arrival carries a full live record (createTime/updateTime/customer/email/subject/dueAt/SLA flags/staffName) from scripts/arrivals-v58.psv - no arrival depends on carried-forward field values.",
-    "DEPARTURES from the gate (31): UFN-65214, UFN-69405, UFN-69811, UFN-70098, UFN-70100, UFN-70255, UFN-70404, UFN-70863, UFN-70946, UFN-70984, UFN-70992, UFN-71007, UFN-71073, UFN-71085, UFN-71131, UFN-71134, UFN-71147, UFN-71152, UFN-71161, UFN-71162, UFN-71314, UFN-71331, UFN-71353, UFN-71355, UFN-71360, UFN-71366, UFN-71370, UFN-71378, UFN-71379, UFN-71390, UFN-71393. All 31 were read individually (scripts/departure-verify-v58.psv) rather than inferred from their absence: 28 carry displayStatusSystemStatus 20 (17 Solved + 11 \"No Action Needed\") and really closed, while UFN-71152, UFN-71360, UFN-71370 are STILL system-open as Reopen (displayStatusSystemStatus 10) and left the eligible set only because the New/Pending gate excludes Reopen. They are reported as reclassifications, not as closures.",
-    "Billing-family exclusions move 23 -> 21: 20 carried rows were re-verified present in the live gate, UFN-70947, UFN-71388, UFN-71313 left the open population (closed), and 1 new billing-family arrival was added: UFN-71485 \"Immediate Action Required: Open RN Items Impacting Billing as of September 23, 2026 (Cesanek, PA Facility)\". Eligible = 296 - 21 - 8 = 267.",
-    "JUDGEMENT CALL, disclosed: UFN-71485 was flagged by the ticket specialist as billing-adjacent rather than a charge line (it is a recurring RN-closure action list). The dashboard's exclusion vocabulary is \"billing / UF Billing / storage / handling / invoice\" and the title matches \"Billing\", so it is excluded here for consistency with the F26 Month End Close Reminder series. If the business rules that a billing-impact action list is operational, the eligible count becomes 268.",
-    "OVERLAP GROUPS RE-DERIVED: the six carried exclusions (UFN-69447, UFN-69450, UFN-69661, UFN-69663, UFN-70352, UFN-71127) are all still live in the gate and keep their basis - UFN-69447/69661/69663 are \"Thank you for submitting a new contact\" acknowledgements on the same CASE threads as kept rows UFN-69307 (CASE 21836552091) and UFN-69511 (CASE 21861000021); UFN-70352 duplicates UFN-70351 (DN-2107462); UFN-71127 (DN-2131002) has no live twin in the gate and is carried as an exclusion for continuity - FLAGGED for review.",
-    "NEW overlap exclusions this cycle (2): UFN-71468 and UFN-71469 share the DN-2131536//RN-130131 source identity (identical titles, 3 minutes apart, same sender) with UFN-71439 (DN-2131536), which is retained as the conversation representative; the two later rows are collapsed.",
-    "CANDIDATE OVERLAPS NOT COLLAPSED (disclosed, no silent dedupe): WSP-192927 \"ZURU-no order\" series (UFN-71302/71424/71440 plus UFN-71402 same issue, no token) and CLAIM#US02202602401 (UFN-71154/71445) share thread-like tokens but are not CASE/DN conversation identities, so per the documented rule (subject text alone is never a dedupe key) they remain separate rows. UFN-71456 (New, gate) and UFN-71457 (Reopen, excluded) share an identical title. Recurring automated series (Advanced Report - Dock Activity 60 rows; Reminder: SEND VIVO DAMAGE REPORT 19 rows) are deliberately NOT collapsed.",
-    "closeFlag=true is STILL not an eligibility gate. 14 live closeFlag=true rows are retained as eligible (UFN-71373, UFN-71291, UFN-71284, UFN-71276, UFN-71154, UFN-71077, UFN-70753, UFN-70572, UFN-70161, UFN-69148, UFN-68980, UFN-66934, UFN-59720, UFN-43887); UFN-71284 and UFN-71154 are new this cycle and UFN-71154 is the clearest artifact yet (firstClosedTime 09/18, no closedTime, live Pending = auto-closed then re-entered the gate).",
-    "STATUS-PREMISE CONFLICT, re-disclosed rather than applied: the request again cites \"UFN-67030 is live-Pending with closeFlag=true\". An independent authoritative lookup does not support it: UFN-67030 returns displayStatusName \"Solved\", displayStatusSystemStatus 20 (CLOSED), closed 09/01, closeFlag true, and is not returned by the system-open query at all. The eligibility RULE the request asks for (gate on displayStatusSystemStatus=open + displayStatusName in {New,Pending}; closeFlag never a gate) is already exactly what this dashboard implements, so no eligibility change was made and UFN-67030 stays outside the gate on AUTHORITATIVE STATUS. The correct closeFlag counter-evidence is the 14 retained live closeFlag=true rows above.",
-    "Status drift on carried rows is enumerated rather than silently overwritten (2 rows): UFN-71389 and UFN-71382 moved New -> Pending. closeFlag drift on carried rows: 0.",
-    "Priority and assignee fields were NOT re-derived for carried-over rows: priority is \"Medium\" on every returned row and the endpoint omits staffName rather than sending a literal \"Unassigned\", so live assignee cannot distinguish unassigned from not-returned. Stored per-ticket values are retained for carried rows; arrivals carry their observed values (empty staffName -> \"Unassigned\").",
-    "SLA/workload: carried-over rows keep their stored isSlaBreached flag (v5x methodology); arrivals carry live isOverdue/isSlaBreached. A dueDate-derived cross-check flags 226 rows as past due vs 206 on stored/live flags - disclosed, not silently substituted.",
-    "Customer Health covers all 119 customer labels visible on the 267 eligible records (83 Critical / 36 Warning / 0 Healthy); roster/aliases remain supplemental only, and Healthy stays structurally unreachable because every eligible ticket is UFN-tagged. The tier rule was re-validated against the v57 snapshot before use and reproduces v57's 85/35/0 exactly.",
-    "Age-derived sections recomputed at the v58 reference time (2026-09-24T05:40:00-04:00): action buckets, Customer Health tiers, priority queue and SLA counts shown in dashboardState. Ages are derived from createdAt against that single reference time."
+    "v59 live read: 328 system-open rows = 238 New / 58 Pending / 32 Reopen; New+Pending gate 296. The delegated authoritative read was set-compared against the persisted v58 snapshot: EXACT SET IDENTITY (0 arrivals / 0 departures). No ticket entered or left the eligible set this cycle.",
+    "ARRIVALS to the eligible set (0): none.",
+    "DEPARTURES from the gate (0): none. No individual departure verification was required because no carried row left the gate.",
+    "Billing-family exclusions unchanged at 21; all 21 were re-verified present in the live gate. No billing-family row closed and no new billing-family row arrived. Eligible = 296 - 21 - 8 = 267.",
+    "JUDGEMENT CALL, carried forward and disclosed: UFN-71485 (\"Open RN Items Impacting Billing as of September 23, 2026 (Cesanek, PA Facility)\") is a recurring RN-closure action list rather than a charge line, but its title matches the configured \"billing\" exclusion vocabulary, so it stays excluded for consistency with the F26 Month End Close Reminder series. If the business rules that a billing-impact action list is operational, the eligible count becomes 268.",
+    "OVERLAP EXCLUSIONS unchanged at 8: UFN-69447/69450/69661/69663 are acknowledgement messages on the same CASE threads as retained rows UFN-69307 (CASE 21836552091) and UFN-69511 (CASE 21861000021); UFN-70352 duplicates retained row UFN-70351 (DN-2107462); UFN-71468/71469 share the DN-2131536/RN-130131 identity with retained representative UFN-71439. UFN-71127 (DN-2131002) still has no live twin in the gate and is carried as an exclusion for continuity - FLAGGED for review.",
+    "CANDIDATE OVERLAPS NOT COLLAPSED (disclosed, no silent dedupe): WSP-192927 \"ZURU-no order\" series (UFN-71302/71424/71440 plus UFN-71402) and CLAIM#US02202602401 (UFN-71154/71445) share thread-like tokens but are not CASE/DN conversation identities, so per the documented rule (subject text alone is never a dedupe key) they remain separate rows. Recurring automated series (Advanced Report - Dock Activity 60 rows; Reminder: SEND VIVO DAMAGE REPORT 19 rows) are deliberately NOT collapsed.",
+    "closeFlag=true is STILL not an eligibility gate. 14 live closeFlag=true rows are retained as eligible (UFN-71373, UFN-71291, UFN-71284, UFN-71276, UFN-71154, UFN-71077, UFN-70753, UFN-70572, UFN-70161, UFN-69148, UFN-68980, UFN-66934, UFN-59720, UFN-43887). closeFlag drift on carried rows: 0.",
+    "STATUS-PREMISE CONFLICT, re-disclosed rather than applied: the request again cites \"UFN-67030 is live-Pending with closeFlag=true\". The independent authoritative lookup does not support it: UFN-67030 returns displayStatusName \"Solved\", displayStatusSystemStatus 20 (CLOSED), closed 09/01, closeFlag true, and is not returned by the system-open query at all. The eligibility RULE the request asks for (gate on displayStatusSystemStatus=open + displayStatusName in {New,Pending}; closeFlag never a gate) is already exactly what this dashboard implements, so no eligibility change was made and UFN-67030 stays outside the gate on AUTHORITATIVE STATUS - this is a genuine status exclusion, not a closeFlag artifact. The correct closeFlag counter-evidence is the 14 retained live closeFlag=true rows above.",
+    "Status drift on carried rows: 0 rows (none this cycle). Every carried row's display status was re-read from the live gate rather than assumed.",
+    "Priority and assignee fields were NOT re-derived for carried-over rows: priority is \"Medium\" on every returned row and the endpoint omits staffName rather than sending a literal \"Unassigned\", so live assignee cannot distinguish unassigned from not-returned. Stored per-ticket values are retained.",
+    "SLA/workload: carried-over rows keep their stored isSlaBreached flag (v5x methodology). A dueDate-derived cross-check flags 226 rows as past due vs 206 on stored flags - disclosed, not silently substituted.",
+    "Customer Health covers all 119 customer labels visible on the 267 eligible records (83 Critical / 36 Warning / 0 Healthy); roster/aliases remain supplemental only, and Healthy stays structurally unreachable because every eligible ticket is UFN-tagged. The tier rule is unchanged from v58 and was re-validated against the v58 snapshot before use (reproduces 83/36/0 exactly).",
+    "Age-derived sections recomputed at the v59 reference time (2026-09-24T06:25:00-04:00): action buckets, Customer Health tiers, priority queue and SLA counts shown in dashboardState. Ages are derived from createdAt against that single reference time."
   ],
   "exclusions": {
     "billingTicketIds": [
@@ -107,7 +106,7 @@
       "UFN-70950": "excluded after live title verification: LASSONDE PAPPAS l Cesanek - Final invoice",
       "UFN-70952": "excluded after live title verification: NAL CONFECTIONARY l Cesanek - Final invoice",
       "UFN-71356": "excluded after live title verification: DUPRAY LLC l Cesanek - Handling 9/13-9/19",
-      "UFN-71485": "new billing-family arrival this cycle: Open RN Items Impacting Billing as of September 23, 2026 (Cesanek, PA Facility) - see the disclosed judgement call in developerNotes"
+      "UFN-71485": "carried billing-family exclusion: Open RN Items Impacting Billing as of September 23, 2026 (Cesanek, PA Facility) - see the disclosed judgement call in developerNotes"
     },
     "duplicateConversations": [
       "UFN-69447",
@@ -164,12 +163,8 @@
         "note": "identical titles 2 minutes apart; UFN-71457 is Reopen and excluded on status"
       }
     ],
-    "candidateOverlapNote": "Only explicit CASE-/DN- conversation identities were collapsed. Recurring automated series and subject-only similarities (e.g. Return authorization notification for Order 112-4505161-2497057: UFN-59777 / UFN-59238; NIAGARA BOTTLIN_YMJAE490405029_015445: UFN-48670 / UFN-48777; CH Robinson Load #566229037: UFN-68980 / UFN-70824 / UFN-70889) remain separate rows, consistent with the no-subject-text-dedupe rule.",
-    "billingClosedSinceV57": [
-      "UFN-70947",
-      "UFN-71388",
-      "UFN-71313"
-    ]
+    "candidateOverlapNote": "Only explicit CASE-/DN- conversation identities were collapsed. Recurring automated series and subject-only similarities remain separate rows, consistent with the no-subject-text-dedupe rule.",
+    "billingClosedSinceV58": []
   },
   "dashboardState": {
     "totalRaw": 328,
@@ -177,11 +172,7 @@
     "eligibleBeforeExclusions": 296,
     "reopenExcluded": 32,
     "billingExcluded": 21,
-    "billingClosedSinceV57": [
-      "UFN-70947",
-      "UFN-71388",
-      "UFN-71313"
-    ],
+    "billingClosedSinceV58": [],
     "eligibleBeforeDeduplication": 275,
     "duplicatesRemoved": 8,
     "totalEligible": 267,
@@ -217,8 +208,8 @@
       "dueDerivedBreached": 226
     },
     "actionBuckets": {
-      "Immediate": 26,
-      "Short-Term": 20,
+      "Immediate": 25,
+      "Short-Term": 21,
       "Medium-Term": 16,
       "Watch": 205
     },
@@ -953,7 +944,7 @@
         "customer": "Maria Aponte (maria.aponte@unisco.com)",
         "subject": "Pending/Overdue Tickets",
         "ageDays": 202,
-        "ageHours": 4867,
+        "ageHours": 4868,
         "slaStatus": "Breached"
       },
       {
@@ -969,7 +960,7 @@
         "customer": "aterian@flockfreight.com",
         "subject": "Appointment Request :: PO: DN-1467998 RN-23177 Flock Ref#: VY8-M2X5 ATERIAN, INC.",
         "ageDays": 195,
-        "ageHours": 4692,
+        "ageHours": 4693,
         "slaStatus": "Breached"
       },
       {
@@ -977,7 +968,7 @@
         "customer": "logistics@smegusa.com",
         "subject": "Commit Block Order - DN-1467983",
         "ageDays": 194,
-        "ageHours": 4673,
+        "ageHours": 4674,
         "slaStatus": "Breached"
       },
       {
@@ -985,7 +976,7 @@
         "customer": "Wynk",
         "subject": "welcome, spring 🌷🍋🪻🍓",
         "ageDays": 186,
-        "ageHours": 4483,
+        "ageHours": 4484,
         "slaStatus": "Breached"
       },
       {
@@ -993,7 +984,7 @@
         "customer": "Maria Aponte (maria.aponte@unisco.com)",
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "ageDays": 182,
-        "ageHours": 4387,
+        "ageHours": 4388,
         "slaStatus": "Breached"
       },
       {
@@ -1001,7 +992,7 @@
         "customer": "zachary.short@smegusa.com",
         "subject": "Reminder following up!",
         "ageDays": 181,
-        "ageHours": 4360,
+        "ageHours": 4361,
         "slaStatus": "Breached"
       },
       {
@@ -1009,7 +1000,7 @@
         "customer": "niagarabottling@quantixscs.com",
         "subject": "NIAGARA//JEFF-0327-SRICHAKRA//JEFFERSONVILLE IN",
         "ageDays": 180,
-        "ageHours": 4336,
+        "ageHours": 4337,
         "slaStatus": "Breached"
       },
       {
@@ -1017,7 +1008,7 @@
         "customer": "niagarabottling@quantixscs.com",
         "subject": "Re: QUANTIX SCHEDULE - 3/28 & 3/30",
         "ageDays": 177,
-        "ageHours": 4268,
+        "ageHours": 4269,
         "slaStatus": "Breached"
       },
       {
@@ -1033,7 +1024,7 @@
         "customer": "Maria Aponte (maria.aponte@unisco.com)",
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "ageDays": 175,
-        "ageHours": 4219,
+        "ageHours": 4220,
         "slaStatus": "Breached"
       },
       {
@@ -1049,7 +1040,7 @@
         "customer": "PTP Notifications",
         "subject": "Drayage Assignments",
         "ageDays": 171,
-        "ageHours": 4112,
+        "ageHours": 4113,
         "slaStatus": "Breached"
       },
       {
@@ -1057,7 +1048,7 @@
         "customer": "Shailene Baez (shailene.baez@unisco.com)",
         "subject": "FW: Santa LAST EOD 1/9",
         "ageDays": 170,
-        "ageHours": 4098,
+        "ageHours": 4099,
         "slaStatus": "Breached"
       },
       {
@@ -1065,7 +1056,7 @@
         "customer": "Maria Aponte (maria.aponte@unisco.com)",
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
         "ageDays": 168,
-        "ageHours": 4051,
+        "ageHours": 4052,
         "slaStatus": "Breached"
       }
     ],
@@ -1084,8 +1075,8 @@
       "invoiceItemsExcluded": 21,
       "duplicatesRemoved": 8,
       "closeFlagTrueRetained": 14,
-      "arrivalsThisCycle": 29,
-      "departuresThisCycle": 31
+      "arrivalsThisCycle": 0,
+      "departuresThisCycle": 0
     }
   },
   "excludedThisCycle": {
@@ -1147,11 +1138,7 @@
       "UFN-71356",
       "UFN-71485"
     ],
-    "billingFamilyClosedSinceV57": [
-      "UFN-70947",
-      "UFN-71388",
-      "UFN-71313"
-    ],
+    "billingFamilyClosedSinceV58": [],
     "duplicateConversations": [
       "UFN-69447",
       "UFN-69450",
@@ -1162,105 +1149,10 @@
       "UFN-71468",
       "UFN-71469"
     ],
-    "eligibleDepartures": [
-      "UFN-65214",
-      "UFN-69405",
-      "UFN-69811",
-      "UFN-70098",
-      "UFN-70100",
-      "UFN-70255",
-      "UFN-70404",
-      "UFN-70863",
-      "UFN-70946",
-      "UFN-70984",
-      "UFN-70992",
-      "UFN-71007",
-      "UFN-71073",
-      "UFN-71085",
-      "UFN-71131",
-      "UFN-71134",
-      "UFN-71147",
-      "UFN-71152",
-      "UFN-71161",
-      "UFN-71162",
-      "UFN-71314",
-      "UFN-71331",
-      "UFN-71353",
-      "UFN-71355",
-      "UFN-71360",
-      "UFN-71366",
-      "UFN-71370",
-      "UFN-71378",
-      "UFN-71379",
-      "UFN-71390",
-      "UFN-71393"
-    ],
-    "closedByStatus": [
-      "UFN-65214",
-      "UFN-69405",
-      "UFN-69811",
-      "UFN-70098",
-      "UFN-70100",
-      "UFN-70255",
-      "UFN-70404",
-      "UFN-70863",
-      "UFN-70946",
-      "UFN-70984",
-      "UFN-70992",
-      "UFN-71007",
-      "UFN-71073",
-      "UFN-71085",
-      "UFN-71131",
-      "UFN-71134",
-      "UFN-71147",
-      "UFN-71161",
-      "UFN-71162",
-      "UFN-71314",
-      "UFN-71331",
-      "UFN-71353",
-      "UFN-71355",
-      "UFN-71366",
-      "UFN-71378",
-      "UFN-71379",
-      "UFN-71390",
-      "UFN-71393"
-    ],
-    "reclassifiedToReopen": [
-      "UFN-71152",
-      "UFN-71360",
-      "UFN-71370"
-    ],
-    "eligibleArrivals": [
-      "UFN-71154",
-      "UFN-71284",
-      "UFN-71402",
-      "UFN-71405",
-      "UFN-71411",
-      "UFN-71414",
-      "UFN-71415",
-      "UFN-71418",
-      "UFN-71424",
-      "UFN-71427",
-      "UFN-71430",
-      "UFN-71435",
-      "UFN-71436",
-      "UFN-71437",
-      "UFN-71439",
-      "UFN-71440",
-      "UFN-71441",
-      "UFN-71442",
-      "UFN-71445",
-      "UFN-71446",
-      "UFN-71447",
-      "UFN-71450",
-      "UFN-71456",
-      "UFN-71459",
-      "UFN-71467",
-      "UFN-71472",
-      "UFN-71473",
-      "UFN-71476",
-      "UFN-71487"
-    ]
+    "eligibleDepartures": [],
+    "closedByStatus": [],
+    "reclassifiedToReopen": [],
+    "eligibleArrivals": []
   },
   "reconciliation": {
     "gate": {
@@ -1277,16 +1169,16 @@
     "billingExcluded": 21,
     "duplicateConversationsExcluded": 8,
     "eligibleConversations": 267,
-    "carriedOverFromV57": 238,
-    "eligibleArrivals": 29,
-    "eligibleDepartures": 31,
+    "carriedOverFromV58": 267,
+    "eligibleArrivals": 0,
+    "eligibleDepartures": 0,
     "verifiedDepartureBreakdown": {
-      "solved": 17,
-      "noActionNeeded": 11,
-      "reclassifiedReopen": 3
+      "solved": 0,
+      "noActionNeeded": 0,
+      "reclassifiedReopen": 0
     },
-    "apiTotalFieldOverReport": "Not observed this cycle: the paged read returned distinct rows matching the department scope, and distinct rows are used regardless.",
-    "note": "Gate set-compared against the v57 snapshot: 29 eligible arrivals, 31 departures (28 closed by status, 3 reclassified to Reopen). Eligible = 296 - 21 billing - 8 overlap = 267."
+    "apiTotalFieldOverReport": "Not observed this cycle: the read returned distinct rows matching the department scope, and distinct rows are used regardless.",
+    "note": "Gate set-compared against the v58 snapshot: 0 eligible arrivals, 0 departures - exact set identity. Eligible = 296 - 21 billing - 8 overlap = 267."
   },
   "fieldAvailability": {
     "ticketNumber": "read",
@@ -1306,5 +1198,5 @@
     "organizationName": "returned by the live ticket page where an organization is linked; Customer Health still keys on the customer label and excludes no visible customer"
   },
   "nextScheduledRefresh": "2026-09-24T08:00:00-04:00",
-  "verifiedAgainst": "Live Ticket Ops read 2026-09-24T09:30Z (department 323826714354839552, displayStatusSystemStatus=[10], displayStatusIds=[11,6]), captured to scripts/gate-live-2026-09-24-v58.psv; set-compared against the v57 snapshot; the 31 gate departures were individually re-read into scripts/departure-verify-v58.psv."
+  "verifiedAgainst": "Live Ticket Ops authoritative read 2026-09-24T10:15Z (department 323826714354839552, displayStatusSystemStatus=[10], displayStatusIds=[11,6]), transcribed to scripts/gate-live-2026-09-24T1025Z-v59.psv; set-compared against the v58 snapshot - exact set identity (0 arrivals / 0 departures), so no departure re-read was required."
 }

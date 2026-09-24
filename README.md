@@ -36,24 +36,35 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** – Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** – Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Sep 24 5:40 AM ET - AUTHORITATIVE v58)
+## Current Dashboard State (Last Refresh: Sep 24 6:25 AM ET - AUTHORITATIVE v59)
 
 | Metric | Value |
 |--------|-------|
 | Total Raw (system-open UFN, department scope) | **328** = 238 New / 58 Pending / 32 Reopen; New+Pending gate **296** (distinct rows used) |
-| Eligible | **267** conversations (215 New, 0 Open, 52 Pending) - 29 arrivals / 31 departures vs v57 |
+| Eligible | **267** conversations (215 New, 0 Open, 52 Pending) - **0 arrivals / 0 departures vs v58 (verified no movement)** |
 | Excluded | 29 = 21 billing-family + 8 overlapping conversations; 32 Reopen rows outside the gate |
-| Eligible arrivals | **29** |
-| Eligible departures | **31** = 28 closed by status (17 Solved + 11 "No Action Needed") + 3 still system-open as Reopen |
+| Eligible arrivals | **0** |
+| Eligible departures | **0** |
 | closeFlag | **NOT a gate** - 14 live closeFlag=true tickets retained |
 | Customers | **119** distinct live customer labels (83 Critical / 36 Warning / 0 Healthy; every ticket-visible customer covered) |
 | Priority | 267 Medium / 0 unavailable |
 | SLA Risk | **ELEVATED** - 206 SLA-breached / 61 current; 225 unassigned |
-| Action Buckets | Immediate **26** / Short-Term **20** / Medium-Term **16** / Watch **205** |
+| Action Buckets | Immediate **25** / Short-Term **21** / Medium-Term **16** / Watch **205** (one row crossed the 24h boundary with the new reference time) |
 | Outlook Coverage | **Unavailable this cycle** - last observed (v42): 25 UFN messages / 9 distinct threads, latest 2026-09-14T21:46:00Z; stale and supplemental only |
-| Last Refresh | 2026-09-24T05:40:00-04:00 (**AUTHORITATIVE v58**, department 323826714354839552) |
+| Last Refresh | 2026-09-24T06:25:00-04:00 (**AUTHORITATIVE v59**, department 323826714354839552) |
 
 ## Developer Reconciliation Note
+
+### v58 -> v59 (Sep 24 5:40 AM ET -> Sep 24 6:25 AM ET)
+
+- **Net movement: 0 eligible conversations (267 -> 267).** The live read returns the same 328 system-open rows (238 New / 58 Pending / 32 Reopen) and the same 296-row New+Pending gate as v58.
+- **Movement (or its absence) is verified, not asserted.** The 296-row gate is transcribed to `scripts/gate-live-2026-09-24T1025Z-v59.psv` and set-compared against the persisted v58 snapshot: **exact set identity - 0 arrivals / 0 departures**, and 0 status drift and 0 closeFlag drift on carried rows. No departure re-read was required because nothing left the gate.
+- **Exclusions unchanged.** All 21 billing-family rows and all 8 CASE/DN overlap losers were re-verified present in the live gate. Eligible = 296 - 21 - 8 = 267.
+- **closeFlag is still not a gate.** 14 live closeFlag=true rows are retained as eligible (UFN-71373, 71291, 71284, 71276, 71154, 71077, 70753, 70572, 70161, 69148, 68980, 66934, 59720, 43887).
+- **Status premise re-disclosed, still unsupported:** "UFN-67030 is live-Pending with closeFlag=true" - UFN-67030 is **Solved / `displayStatusSystemStatus` 20 (CLOSED)**, closed 09/01, and is not in the system-open population. It is excluded on **authoritative status**, not because of closeFlag; the closeFlag rule the request asks for is already what this dashboard implements, so no eligibility change was made.
+- **Age-derived sections recomputed** at 2026-09-24T06:25:00-04:00: SLA 206 breached / 61 current; buckets 25/21/16/205 (one row crossed the 24-hour boundary as the reference time advanced); Customer Health 83 Critical / 36 Warning / 0 Healthy across 119 labels (tier rule unchanged and re-validated against v58: reproduces 83/36/0).
+- **Outlook unavailable again** (non-blocking; stale v42 values only, used in no count, queue, bucket, health or SLA metric).
+- **Delivery caveat, disclosed:** the repository snapshot (this file set) is current, but the public URL is served by an authenticated Next.js application that does not serve these `/data/*.json` paths (`/data/*.json` and `/config.json` return 404, `/api/tickets` requires a signed-in session). The refreshed numbers therefore could not be visually confirmed on the live page from an unauthenticated session.
 
 ### v57 -> v58 (Sep 23 1:00 AM ET -> Sep 24 5:40 AM ET)
 
