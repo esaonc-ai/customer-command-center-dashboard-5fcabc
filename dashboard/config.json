@@ -64,19 +64,20 @@
     "refreshIntervalMinutes": 15
   },
   "snapshotMetrics": {
-    "refreshId": "refresh-2026-09-25T00:33:00-04:00-AUTHORITATIVE-v60",
-    "refreshedAt": "2026-09-25T00:33:00-04:00",
-    "totalRaw": 340,
-    "totalGateRows": 313,
-    "totalEligible": 284,
-    "excludedCount": 29,
-    "duplicatesRemoved": 8,
+    "refreshId": "refresh-2026-09-26T02:52:00-04:00-AUTHORITATIVE-v61",
+    "refreshedAt": "2026-09-26T02:52:00-04:00",
+    "totalRaw": 324,
+    "totalGateRows": 299,
+    "totalEligible": 273,
+    "excludedCount": 26,
+    "duplicatesRemoved": 5,
     "invoiceItemsExcluded": 21,
-    "closeFlagTrueRetained": 12,
-    "arrivalsThisCycle": 31,
-    "departuresThisCycle": 14,
+    "closeFlagTrueRetained": 14,
+    "arrivalsThisCycle": 17,
+    "departuresThisCycle": 28,
+    "reopenExcluded": 25,
     "outlookStatus": "unavailable",
     "outlookThreadsMatched": 25,
-    "version": "v60"
+    "version": "v61"
   }
 }

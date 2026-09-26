@@ -6,35 +6,35 @@
     "tenant": "LT",
     "timezone": "America/New_York"
   },
-  "lastRefreshed": "2026-09-25T00:33:00-04:00",
+  "lastRefreshed": "2026-09-26T02:52:00-04:00",
   "dataSource": "Ticket Ops (authoritative); Outlook unavailable this cycle",
   "refreshType": "AUTHORITATIVE",
-  "refreshId": "refresh-2026-09-25T00:33:00-04:00-AUTHORITATIVE-v60",
-  "version": "v60",
-  "totalRaw": 340,
-  "eligibleBeforeExclusions": 313,
-  "eligibleBeforeDeduplication": 292,
-  "totalEligible": 284,
-  "newCount": 235,
+  "refreshId": "refresh-2026-09-26T02:52:00-04:00-AUTHORITATIVE-v61",
+  "version": "v61",
+  "totalRaw": 324,
+  "eligibleBeforeExclusions": 299,
+  "eligibleBeforeDeduplication": 278,
+  "totalEligible": 273,
+  "newCount": 223,
   "openCount": 0,
-  "pendingCount": 49,
+  "pendingCount": 50,
   "exclusionSummary": {
-    "reopen": 27,
+    "reopen": 25,
     "billingFamily": 21,
-    "overlappingConversations": 8
+    "overlappingConversations": 5
   },
-  "closeFlagTrueRetained": 12,
+  "closeFlagTrueRetained": 14,
   "closeFlagTrueGate": null,
   "slaHealth": {
-    "breached": 199,
-    "onTrack": 85,
-    "unassigned": 247
+    "breached": 195,
+    "onTrack": 78,
+    "dueDerivedPastDue": 226
   },
   "actionBuckets": {
-    "Immediate": 31,
-    "Short-Term": 27,
-    "Medium-Term": 18,
-    "Watch": 208
+    "Immediate": 14,
+    "Short-Term": 36,
+    "Medium-Term": 14,
+    "Watch": 209
   },
   "evidenceMetrics": {
     "totalEligible": 284,
@@ -173,12 +173,134 @@
     "UFN-71469"
   ],
   "customerHealth": {
-    "totalCustomers": 121,
+    "totalCustomers": 116,
     "tiers": {
-      "Critical": 80,
-      "Warning": 41,
+      "Critical": 88,
+      "Warning": 28,
       "Healthy": 0
     }
   },
-  "billingFamilyClosedSinceV59": []
+  "billingFamilyClosedSinceV59": [],
+  "priorityQueue": [
+    {
+      "ticketId": "UFN-71007",
+      "customer": "Zachariah Quiroz (zachariah.quiroz@tcl.com)",
+      "subject": "UNIS - (HVAC & AC) Shipping Notice 9-16-26",
+      "ageDays": 9,
+      "ageHours": 225,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-71127",
+      "customer": "James Devlin (jamesdevlin@zenwtr.com)",
+      "subject": "RE: DN-2131002",
+      "ageDays": 7,
+      "ageHours": 184,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-33604",
+      "customer": "Maria Aponte (maria.aponte@unisco.com)",
+      "subject": "Pending/Overdue Tickets",
+      "ageDays": 204,
+      "ageHours": 4912,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-33722",
+      "customer": "erin.cambra@unisco.com",
+      "subject": "12x9x12 Boxes Needed",
+      "ageDays": 204,
+      "ageHours": 4906,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-35588",
+      "customer": "aterian@flockfreight.com",
+      "subject": "Appointment Request :: PO: DN-1467998 RN-23177 Flock Ref#: VY8-M2X5 ATERIAN, INC.",
+      "ageDays": 197,
+      "ageHours": 4737,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-35774",
+      "customer": "logistics@smegusa.com",
+      "subject": "Commit Block Order - DN-1467983",
+      "ageDays": 196,
+      "ageHours": 4718,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-37858",
+      "customer": "Wynk",
+      "subject": "welcome, spring 🌷🍋🪻🍓",
+      "ageDays": 188,
+      "ageHours": 4528,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-39065",
+      "customer": "Maria Aponte (maria.aponte@unisco.com)",
+      "subject": "Reminder: SEND VIVO DAMAGE REPORT",
+      "ageDays": 184,
+      "ageHours": 4433,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-39403",
+      "customer": "zachary.short@smegusa.com",
+      "subject": "Reminder following up!",
+      "ageDays": 183,
+      "ageHours": 4405,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-39662",
+      "customer": "niagarabottling@quantixscs.com",
+      "subject": "NIAGARA//JEFF-0327-SRICHAKRA//JEFFERSONVILLE IN",
+      "ageDays": 182,
+      "ageHours": 4381,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-40213",
+      "customer": "niagarabottling@quantixscs.com",
+      "subject": "Re: QUANTIX SCHEDULE - 3/28 & 3/30",
+      "ageDays": 179,
+      "ageHours": 4313,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-40654",
+      "customer": "niagarabottling@quantixscs.com",
+      "subject": "NIAGARA/PLAINFIELD/ DUYTAN/ 4.6- 4.12",
+      "ageDays": 178,
+      "ageHours": 4282,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-40860",
+      "customer": "Maria Aponte (maria.aponte@unisco.com)",
+      "subject": "Reminder: SEND VIVO DAMAGE REPORT",
+      "ageDays": 177,
+      "ageHours": 4265,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-40969",
+      "customer": "homedepotimc@swifttrans.com",
+      "subject": "Schedule Appointment-Pickup(1) - BOL# 33604304",
+      "ageDays": 177,
+      "ageHours": 4260,
+      "slaStatus": "Breached"
+    },
+    {
+      "ticketId": "UFN-41878",
+      "customer": "PTP Notifications",
+      "subject": "Drayage Assignments",
+      "ageDays": 173,
+      "ageHours": 4157,
+      "slaStatus": "Breached"
+    }
+  ]
 }

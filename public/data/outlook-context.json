@@ -1,8 +1,8 @@
 {
   "facility": "NHT/Cesanek",
   "facilityCode": "LT_F21",
-  "generatedAt": "2026-09-25T00:33:00-04:00",
-  "lastRefreshed": "2026-09-25T00:33:00-04:00",
+  "generatedAt": "2026-09-26T02:52:00-04:00",
+  "lastRefreshed": "2026-09-26T02:52:00-04:00",
   "outlookAvailable": false,
   "delegatedMailboxAvailable": false,
   "integrationStatus": "unavailable",
@@ -11,74 +11,13 @@
   "dataSource": "Delegated CS mailbox nicole.weber@unisco.com; supplemental and non-blocking",
   "stale": true,
   "staleness": {
-    "reason": "No Outlook read was possible this cycle (two delegated-mailbox read attempts returned no result); last observed v42 values retained for context only.",
+    "reason": "No Outlook read was possible this cycle (delegated-mailbox/agent access not available); last observed v42 values retained for context only.",
     "lastObservedUtc": "2026-09-14T21:46:00Z",
     "lastObservedCycle": "refresh-2026-09-15T06:34:05-04:00-AUTHORITATIVE-v42"
   },
   "threadsMatched": 25,
   "threadsUniquePostDedup": 9,
   "threadsLinkedToEligibleTickets": 3,
-  "latestMessageUtc": "2026-09-14T21:46:00Z",
-  "activeEscalations": [
-    "UFN-70731",
-    "UFN-70404",
-    "UFN-70753"
-  ],
-  "eligibleEscalations": 3,
-  "coverage": {
-    "eligibleTicketsTotal": 284,
-    "eligibleTicketsWithOutlookContext": 3,
-    "coveragePct": 1.06,
-    "note": "Stale v42 context only; no Outlook read performed this cycle."
-  },
-  "ticketThreads": [
-    {
-      "ticketRef": "UFN-70731",
-      "linkedToEligibleTicket": true
-    },
-    {
-      "ticketRef": "UFN-70804",
-      "linkedToEligibleTicket": false
-    },
-    {
-      "ticketRef": "UFN-68616",
-      "linkedToEligibleTicket": false
-    },
-    {
-      "ticketRef": "UFN-70404",
-      "linkedToEligibleTicket": true
-    },
-    {
-      "ticketRef": "UFN-69618",
-      "linkedToEligibleTicket": false
-    },
-    {
-      "ticketRef": "UFN-70413",
-      "linkedToEligibleTicket": false
-    },
-    {
-      "ticketRef": "UFN-70553",
-      "linkedToEligibleTicket": false
-    },
-    {
-      "ticketRef": "UFN-70753",
-      "linkedToEligibleTicket": true
-    },
-    {
-      "ticketRef": "UFN-70761",
-      "linkedToEligibleTicket": false
-    }
-  ],
-  "mailboxScopeUsed": "nicole.weber@unisco.com",
-  "mailboxReadWindow": "not read this cycle",
-  "thisCycleRead": {
-    "messagesRetrieved": 0,
-    "distinctThreadsPostDedup": 0,
-    "threadsMappedToUfn": 0,
-    "ufnRefs": [],
-    "eligibleUfnRefs": [],
-    "ineligibleUfnRefs": [],
-    "threadsLinkedToEligibleTickets": 0,
-    "note": "No Outlook read was possible this cycle."
-  }
+  "overlappingThreadsRemoved": 5,
+  "note": "Outlook is supplemental and non-blocking. It changed no ticket count, queue entry, action bucket, Customer Health tier or SLA metric."
 }
