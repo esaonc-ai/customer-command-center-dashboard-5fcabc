@@ -1,0 +1,304 @@
+ticketNumber|displayStatusName|displayStatusSystemStatus|displayStatusId|closeFlag|priorityName|staffName|createTime|updateTime|estDueDate|customerName|customerEmail|isOverdue|isSlaBreached|isResponseOverdue
+UFN-71631|New|10|11|false|Medium|Unassigned|09/26/2026 16:02:00|09/26/2026 16:02:09|09/30/2026 18:00:00|mail.service@item.com|mail.service@item.com|false|false|false
+UFN-71628|New|10|11|false|Medium|Unassigned|09/26/2026 16:00:36|09/26/2026 16:00:37|09/30/2026 18:00:00|mail.service@item.com|mail.service@item.com|false|false|false
+UFN-71627|New|10|11|false|Medium|Unassigned|09/26/2026 13:00:45|09/26/2026 13:00:48|09/30/2026 18:00:00|mail.service@item.com|mail.service@item.com|false|false|false
+UFN-71626|New|10|11|false|Medium|Unassigned|09/26/2026 13:00:43|09/26/2026 13:00:49|09/30/2026 18:00:00|mail.service@item.com|mail.service@item.com|false|false|false
+UFN-71622|New|10|11|false|Medium|Unassigned|09/26/2026 05:59:17|09/26/2026 05:59:23|09/30/2026 18:00:00|no-reply-itemgpt|no-reply-itemgpt@item.com|false|false|false
+UFN-71621|New|10|11|false|Medium|Unassigned|09/26/2026 05:40:30|09/26/2026 05:40:37|09/30/2026 18:00:00|Tweetie Leigh Lamoste (tweetie.lamoste@unisco.com)|tweetie.lamoste@unisco.com|false|false|false
+UFN-71612|New|10|11|false|Medium|Unassigned|09/26/2026 00:46:52|09/26/2026 00:46:54|09/30/2026 18:00:00|Arthur Navarrete|arthur.navarrete@tcl.com|false|false|false
+UFN-71611|New|10|11|false|Medium|Unassigned|09/26/2026 00:08:28|09/26/2026 00:08:36|09/30/2026 18:00:00|Chloe Peng (zijia.peng@tcl.com)|zijia.peng@tcl.com|false|false|false
+UFN-71607|Pending|10|6|false|Medium|Unassigned|09/25/2026 22:00:37|09/26/2026 00:01:40|09/30/2026 18:00:00|Matthew Le|matthew.le@tcl.com|false|false|false
+UFN-71606|New|10|11|false|Medium|Unassigned|09/25/2026 21:17:47|09/25/2026 21:17:48|09/30/2026 18:00:00|daniel.benitez|daniel.benitez@medlog.com|false|false|false
+UFN-71581|New|10|11|false|Medium|Unassigned|09/25/2026 16:46:05|09/25/2026 20:15:34|09/30/2026 13:47:00|m.ali@chaivision.com|m.ali@chaivision.com|false|false|false
+UFN-71580|New|10|11|false|Medium|Unassigned|09/25/2026 16:02:13|09/25/2026 16:02:23|09/30/2026 13:03:00|mail.service@item.com|mail.service@item.com|false|false|false
+UFN-71577|New|10|11|false|Medium|Unassigned|09/25/2026 16:00:26|09/25/2026 16:00:35|09/30/2026 13:01:00|mail.service@item.com|mail.service@item.com|false|false|false
+UFN-71576|New|10|11|false|Medium|Jennifer Stanek|09/25/2026 16:00:21|09/25/2026 16:09:33|09/30/2026 13:01:00|Kelvin Johnson|kjohnson@globaltranz.com|false|false|false
+UFN-71574|New|10|11|false|Medium|Kent Claud Caballero|09/25/2026 15:09:16|09/25/2026 15:09:21|09/30/2026 12:10:00|Fred Arthur Capuno|fred.capuno@unisco.com|false|false|false
+UFN-71573|New|10|11|false|Medium|Unassigned|09/25/2026 15:03:44|09/25/2026 15:03:51|09/30/2026 12:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|false|false|false
+UFN-71567|New|10|11|false|Medium|Unassigned|09/25/2026 14:05:15|09/25/2026 15:01:39|09/29/2026 20:06:00|noreply@infornexus.com|noreply@infornexus.com|false|false|false
+UFN-71566|New|10|11|false|Medium|Timothy McHugh|09/25/2026 13:23:12|09/25/2026 18:58:58|09/29/2026 19:24:00|Zac Zalewski|zac.zalewski@tcl.com|false|false|false
+UFN-71562|New|10|11|false|Medium|Jennifer Stanek|09/25/2026 12:27:37|09/25/2026 12:27:38|09/29/2026 18:28:00|bdalder@drinkhint.com|bdalder@drinkhint.com|false|false|false
+UFN-71545|New|10|11|false|Medium|Unassigned|09/25/2026 00:00:27|09/25/2026 00:00:33|09/29/2026 18:00:00|Amazon Freight (no-reply@freight.amazon.com)|no-reply@freight.amazon.com|false|false|false
+UFN-71542|Pending|10|6|true|Medium|Unassigned|09/24/2026 23:11:53|09/25/2026 18:53:06|09/29/2026 18:00:00|Arthur Navarrete|arthur.navarrete@tcl.com|false|false|false
+UFN-71541|Pending|10|6|false|Medium|Youssef Zeitoon|09/24/2026 22:26:16|09/25/2026 21:48:32|09/29/2026 18:00:00|mark.qinpeng@tcl.com|mark.qinpeng@tcl.com|false|false|false
+UFN-71537|Pending|10|6|false|Medium|Unassigned|09/24/2026 21:04:26|09/25/2026 21:04:47|09/29/2026 18:00:00|Arthur Navarrete|arthur.navarrete@tcl.com|false|false|false
+UFN-71522|New|10|11|false|Medium|Unassigned|09/24/2026 17:59:51|09/25/2026 18:55:57|09/29/2026 15:00:00|kelly.feteira@colavita.com|kelly.feteira@colavita.com|false|false|false
+UFN-71519|New|10|11|false|Medium|Unassigned|09/24/2026 17:38:42|09/25/2026 15:12:20|09/29/2026 14:39:00|kryan@romarklogistics.com|kryan@romarklogistics.com|false|false|false
+UFN-71517|New|10|11|false|Medium|Unassigned|09/24/2026 17:02:39|09/25/2026 15:11:05|09/29/2026 14:03:00|milos.stokic@tmkgl.com|milos.stokic@tmkgl.com|false|false|false
+UFN-71515|New|10|11|false|Medium|Unassigned|09/24/2026 16:39:32|09/24/2026 16:39:34|09/29/2026 13:40:00|Kelvin Johnson|kjohnson@globaltranz.com|false|false|false
+UFN-71514|New|10|11|false|Medium|Unassigned|09/24/2026 16:16:00|09/25/2026 15:09:16|09/29/2026 13:16:00|m.ali@chaivision.com|m.ali@chaivision.com|false|false|false
+UFN-71510|New|10|11|false|Medium|Unassigned|09/24/2026 16:00:41|09/24/2026 16:00:47|09/29/2026 13:01:00|prince.gamuza@catalyze-x.com|prince.gamuza@catalyze-x.com|false|false|false
+UFN-71508|New|10|11|false|Medium|Unassigned|09/24/2026 15:45:41|09/25/2026 15:08:02|09/29/2026 12:46:00|kyle.wittenbauer@colavita.com|kyle.wittenbauer@colavita.com|false|false|false
+UFN-71507|New|10|11|false|Medium|Unassigned|09/24/2026 15:42:56|09/25/2026 15:07:28|09/29/2026 12:43:00|kyle.wittenbauer@colavita.com|kyle.wittenbauer@colavita.com|false|false|false
+UFN-71503|New|10|11|false|Medium|Unassigned|09/24/2026 15:26:00|09/25/2026 20:05:33|09/29/2026 12:27:00|Sai Sathvik Karla|sai.karla@item.com|false|false|false
+UFN-71502|New|10|11|false|Medium|Unassigned|09/24/2026 15:24:54|09/24/2026 15:24:56|09/29/2026 12:25:00|prince.gamuza@catalyze-x.com|prince.gamuza@catalyze-x.com|false|false|false
+UFN-71500|New|10|11|false|Medium|Unassigned|09/24/2026 15:03:54|09/24/2026 15:04:02|09/29/2026 12:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|false|false|false
+UFN-71498|New|10|11|false|Medium|Unassigned|09/24/2026 13:59:40|09/25/2026 19:38:16|09/28/2026 12:00:00|andy.king@cambridgesleepsciences.com|andy.king@cambridgesleepsciences.com|false|false|false
+UFN-71497|New|10|11|false|Medium|Youssef Zeitoon|09/24/2026 13:29:27|09/24/2026 15:12:30|09/28/2026 11:30:00|Kelvin Johnson|kjohnson@globaltranz.com|false|false|false
+UFN-71496|New|10|11|false|Medium|Unassigned|09/24/2026 13:10:11|09/24/2026 13:10:23|09/28/2026 11:11:00|Maura Davis|mdavis@sethmar.com|false|false|false
+UFN-71493|New|10|11|false|Medium|Unassigned|09/24/2026 13:02:49|09/24/2026 13:02:53|09/28/2026 11:03:00|mail.service@item.com|mail.service@item.com|false|false|false
+UFN-71492|New|10|11|false|Medium|Unassigned|09/24/2026 12:49:42|09/24/2026 12:49:42|09/28/2026 10:50:00|andy.king@cambridgesleepsciences.com|andy.king@cambridgesleepsciences.com|false|false|false
+UFN-71487|New|10|11|false|Medium|Unassigned|09/24/2026 09:01:35|09/24/2026 09:01:38|09/28/2026 10:00:00|Amazon Freight (no-reply@freight.amazon.com)|no-reply@freight.amazon.com|false|false|false
+UFN-71472|New|10|11|false|Medium|Unassigned|09/23/2026 22:48:34|09/23/2026 22:48:43|09/28/2026 10:00:00|julimiza@amazon.com|julimiza@amazon.com|true|true|false
+UFN-71468|Pending|10|6|false|Medium|Unassigned|09/23/2026 21:17:26|09/25/2026 19:34:51|09/28/2026 10:00:00|Joseline Rios|jrios@codaresources.com|true|true|false
+UFN-71459|Pending|10|6|false|Medium|Unassigned|09/23/2026 20:40:20|09/23/2026 20:52:52|09/28/2026 09:41:00|Zac Zalewski|zac.zalewski@tcl.com|true|true|false
+UFN-71450|New|10|11|false|Medium|Unassigned|09/23/2026 20:29:20|09/25/2026 15:05:41|09/28/2026 09:30:00|victoria.isturiz@kdpharmagroup.com|victoria.isturiz@kdpharmagroup.com|true|true|false
+UFN-71447|Pending|10|6|false|Medium|Unassigned|09/23/2026 19:41:20|09/25/2026 19:26:36|09/28/2026 08:42:00|songlai@tcl.com|songlai@tcl.com|true|true|false
+UFN-71446|Pending|10|6|false|Medium|Kacey Nicole Lebrun|09/23/2026 19:19:58|09/24/2026 16:22:29|09/28/2026 08:20:00|Timm Crosby|tcrosby@whbev.co|true|true|false
+UFN-71441|New|10|11|false|Medium|Unassigned|09/23/2026 18:51:29|09/23/2026 18:51:37|09/28/2026 07:52:00|joseph.johnson2@chrobinson.com|joseph.johnson2@chrobinson.com|true|true|false
+UFN-71440|New|10|11|false|Medium|Unassigned|09/23/2026 18:46:43|09/23/2026 22:39:07|09/28/2026 07:47:00|wise_support@unisco.com|wise_support@unisco.com|true|true|false
+UFN-71437|Pending|10|6|false|Medium|Kacey Nicole Lebrun|09/23/2026 17:31:19|09/25/2026 15:16:11|09/28/2026 06:32:00|Timm Crosby|tcrosby@whbev.co|true|true|false
+UFN-71436|New|10|11|false|Medium|Unassigned|09/23/2026 17:29:16|09/24/2026 19:50:59|09/28/2026 06:30:00|Chi Nguyen (chi.nguyen1@tcl.com)|chi.nguyen1@tcl.com|true|true|false
+UFN-71424|New|10|11|false|Medium|Unassigned|09/23/2026 15:50:42|09/24/2026 17:02:38|09/28/2026 04:51:00|wise_support@unisco.com|wise_support@unisco.com|true|true|false
+UFN-71418|New|10|11|false|Medium|Unassigned|09/23/2026 15:03:20|09/23/2026 15:03:28|09/28/2026 04:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-71415|New|10|11|false|Medium|Unassigned|09/23/2026 14:34:09|09/24/2026 00:44:45|09/25/2026 20:35:00|Chris Deleon (chrisdeleon@drinkrecover.com)|chrisdeleon@drinkrecover.com|true|true|false
+UFN-71414|New|10|11|false|Medium|Unassigned|09/23/2026 14:25:27|09/23/2026 21:09:08|09/25/2026 20:26:00|Timm Crosby|tcrosby@whbev.co|true|true|false
+UFN-71411|Pending|10|6|true|Medium|Deejay John Dumaguit|09/23/2026 14:08:46|09/25/2026 14:04:50|09/25/2026 20:09:00|Timm Crosby|tcrosby@whbev.co|true|true|false
+UFN-71402|New|10|11|false|Medium|Unassigned|09/23/2026 05:53:43|09/24/2026 00:06:58|09/25/2026 18:00:00|Yuki Ho|yuki.ho@unisco.com|true|true|false
+UFN-71389|Pending|10|6|false|Medium|Unassigned|09/22/2026 22:10:29|09/25/2026 22:02:09|09/25/2026 18:00:00|Krishnan Vettath|kvettath@hypermicro.com|true|true|false
+UFN-71382|Pending|10|6|false|Medium|Kacey Nicole Lebrun|09/22/2026 21:00:10|09/23/2026 20:22:05|09/25/2026 18:00:00|Jiselle Sosa (Jiselle.Sosa@kdpharmagroup.com)|Jiselle.Sosa@kdpharmagroup.com|true|true|false
+UFN-71373|Pending|10|6|true|Medium|Unassigned|09/22/2026 20:28:12|09/24/2026 21:25:59|09/25/2026 17:29:00|Zac Zalewski|zac.zalewski@tcl.com|true|true|false
+UFN-71357|New|10|11|false|Medium|Unassigned|09/22/2026 15:03:12|09/22/2026 15:03:19|09/25/2026 12:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-71356|New|10|11|false|Medium|Unassigned|09/22/2026 14:40:07|09/24/2026 15:45:48|09/24/2026 20:41:00|dupray.northampton@unisco.com|dupray.northampton@unisco.com|true|true|false
+UFN-71334|New|10|11|false|Medium|Unassigned|09/22/2026 00:11:12|09/24/2026 22:03:45|09/24/2026 18:00:00|Junel Baguio|junel.baguio@unisco.com|true|true|false
+UFN-71312|Pending|10|6|true|Medium|Unassigned|09/21/2026 19:22:26|09/24/2026 18:33:05|09/24/2026 16:23:00|kyle.wittenbauer@colavita.com|kyle.wittenbauer@colavita.com|true|true|false
+UFN-71308|Pending|10|6|false|Medium|Unassigned|09/21/2026 18:55:41|09/22/2026 22:43:46|09/24/2026 15:56:00|ting.d@tcl.com|ting.d@tcl.com|true|true|false
+UFN-71302|New|10|11|false|Medium|Unassigned|09/21/2026 17:28:57|09/21/2026 19:31:40|09/24/2026 14:29:00|wise_support@unisco.com|wise_support@unisco.com|true|true|false
+UFN-71291|Pending|10|6|true|Medium|Unassigned|09/21/2026 15:34:09|09/23/2026 12:34:24|09/24/2026 12:35:00|evan.jackson@colavita.com|evan.jackson@colavita.com|true|true|false
+UFN-71288|New|10|11|false|Medium|Unassigned|09/21/2026 15:08:31|09/21/2026 15:08:37|09/24/2026 12:09:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-71284|Pending|10|6|true|Medium|Unassigned|09/21/2026 14:42:35|09/25/2026 23:51:22|09/23/2026 20:43:00|bsantana@fusiontransport.com|bsantana@fusiontransport.com|true|true|false
+UFN-71281|New|10|11|false|Medium|Unassigned|09/21/2026 14:22:20|09/24/2026 16:43:10|09/23/2026 20:23:00|Mary Smothers|mary.smothers@unisco.com|true|true|false
+UFN-71271|New|10|11|false|Medium|Erin Cambra|09/21/2026 12:43:03|09/21/2026 15:20:29|09/23/2026 18:44:00|ETCC Reg4 Scheduling|etccreg4scheduling@walmart.com|true|true|false
+UFN-71163|New|10|11|false|Medium|Unassigned|09/18/2026 19:17:01|09/18/2026 19:17:01|09/23/2026 16:18:00|Jehnifur Morvai (jehnifur.morvai@unisco.com)|jehnifur.morvai@unisco.com|true|true|false
+UFN-71154|Pending|10|6|true|Medium|Unassigned|09/18/2026 17:53:01|09/23/2026 19:16:24|09/23/2026 14:54:00|Matthew Le|matthew.le@tcl.com|true|true|false
+UFN-71150|Pending|10|6|false|Medium|Tweetie Leigh Lamoste|09/18/2026 17:18:59|09/25/2026 21:06:41|09/22/2026 23:19:00|Kelvin Johnson|kjohnson@globaltranz.com|true|true|false
+UFN-71132|New|10|11|false|Medium|Unassigned|09/18/2026 15:04:42|09/18/2026 15:04:45|09/22/2026 21:05:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-71127|Pending|10|6|false|Medium|Unassigned|09/18/2026 14:43:31|09/22/2026 18:52:28|09/22/2026 21:00:00|James Devlin (jamesdevlin@zenwtr.com)|jamesdevlin@zenwtr.com|true|true|false
+UFN-71126|New|10|11|false|Medium|Unassigned|09/18/2026 14:22:18|09/18/2026 14:22:25|09/22/2026 21:00:00|ETCC Reg4 Scheduling|etccreg4scheduling@walmart.com|true|true|false
+UFN-71093|New|10|11|false|Medium|Unassigned|09/17/2026 21:12:57|09/23/2026 15:38:12|09/22/2026 18:13:00|Mary Smothers|mary.smothers@unisco.com|true|true|false
+UFN-71077|Pending|10|6|true|Medium|Unassigned|09/17/2026 19:22:11|09/23/2026 12:31:42|09/22/2026 16:23:00|Mirza Abdic|mirza@atnglobal.com|true|true|false
+UFN-71068|New|10|11|false|Medium|Unassigned|09/17/2026 18:05:36|09/17/2026 18:05:40|09/22/2026 15:06:00|Fay Foster|ex_fay.foster@partner.midea.com|true|true|false
+UFN-71065|New|10|11|false|Medium|Unassigned|09/17/2026 17:58:06|09/17/2026 17:58:14|09/21/2026 15:59:00|Cassie Rangel|ex_cassie.rangel@partner.midea.com|true|true|false
+UFN-71055|New|10|11|false|Medium|Unassigned|09/17/2026 16:00:15|09/17/2026 16:03:43|09/21/2026 14:01:00|Amber Rangel|amber.rangel@midea.com|true|true|false
+UFN-71054|New|10|11|false|Medium|Unassigned|09/17/2026 15:55:49|09/17/2026 16:03:40|09/21/2026 13:56:00|Kevin Duffy|ex_kevin.duffy@partner.midea.com|true|true|false
+UFN-71053|New|10|11|false|Medium|Unassigned|09/17/2026 15:47:01|09/17/2026 15:47:12|09/21/2026 13:48:00|shajayam@amazon.com|shajayam@amazon.com|true|true|false
+UFN-71040|New|10|11|false|Medium|Unassigned|09/17/2026 15:06:06|09/17/2026 15:06:19|09/21/2026 13:07:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-71032|New|10|11|false|Medium|Unassigned|09/17/2026 13:35:08|09/17/2026 13:35:25|09/21/2026 13:00:00|Vendor.Communication@target.com|vendor.communication@ps.target.com|true|true|false
+UFN-71026|New|10|11|false|Medium|Kacey Nicole Lebrun|09/17/2026 13:04:55|09/24/2026 16:43:10|09/21/2026 13:00:00|joseph.garvey@tmkgl.com|joseph.garvey@tmkgl.com|true|true|false
+UFN-71007|Pending|10|6|true|Medium|Unassigned|09/16/2026 21:41:05|09/25/2026 20:33:30|09/21/2026 10:42:00|Zachariah Quiroz (zachariah.quiroz@tcl.com)|zachariah.quiroz@tcl.com|true|true|false
+UFN-70987|Pending|10|6|false|Medium|Unassigned|09/16/2026 19:00:10|09/23/2026 17:21:32|09/21/2026 08:01:00|chodde@niagarawater.com|chodde@niagarawater.com|true|true|false
+UFN-70971|New|10|11|false|Medium|Unassigned|09/16/2026 16:07:04|09/16/2026 16:07:16|09/18/2026 22:08:00|julimiza@amazon.com|julimiza@amazon.com|true|true|false
+UFN-70955|New|10|11|false|Medium|Unassigned|09/16/2026 15:03:39|09/16/2026 15:03:39|09/18/2026 21:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-70952|New|10|11|false|Medium|Unassigned|09/16/2026 14:33:27|09/23/2026 21:08:38|09/18/2026 21:00:00|nalconfectionary.northampton@unisco.com|nalconfectionary.northampton@unisco.com|true|true|false
+UFN-70950|New|10|11|false|Medium|Unassigned|09/16/2026 14:20:32|09/17/2026 23:15:00|09/18/2026 21:00:00|Lassondepappas Northampton|lassondepappas.northampton@unisco.com|true|true|false
+UFN-70918|Pending|10|6|false|Medium|Youssef Zeitoon|09/15/2026 21:28:12|09/21/2026 15:08:32|09/18/2026 18:29:00|adam@maizly.com|adam@maizly.com|true|true|false
+UFN-70895|Pending|10|6|false|Medium|Jennifer Stanek|09/15/2026 17:17:49|09/17/2026 14:07:42|09/17/2026 23:18:00|Erica Stiles|erica.stiles@odfl.com|true|true|false
+UFN-70873|New|10|11|false|Medium|Unassigned|09/15/2026 15:04:29|09/15/2026 15:04:38|09/17/2026 21:05:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-70800|New|10|11|false|Medium|Unassigned|09/14/2026 19:18:33|09/14/2026 19:18:40|09/17/2026 16:19:00|Jehnifur Morvai (jehnifur.morvai@unisco.com)|jehnifur.morvai@unisco.com|true|true|false
+UFN-70789|Pending|10|6|false|Medium|JEHNIFUR MORVAI|09/14/2026 18:26:21|09/18/2026 17:14:44|09/17/2026 15:27:00|Jehnifur Morvai (jehnifur.morvai@unisco.com)|jehnifur.morvai@unisco.com|true|true|false
+UFN-70757|New|10|11|false|Medium|Unassigned|09/14/2026 15:04:07|09/14/2026 15:04:10|09/16/2026 21:05:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-70753|Pending|10|6|true|Medium|Shailene Baez|09/14/2026 14:46:50|09/21/2026 13:10:56|09/16/2026 21:00:00|Timm Crosby|tcrosby@whbev.co|true|true|false
+UFN-70611|New|10|11|false|Medium|Youssef Zeitoon|09/11/2026 21:13:00|09/16/2026 17:56:34|09/16/2026 18:14:00|Jehnifur Morvai (jehnifur.morvai@unisco.com)|jehnifur.morvai@unisco.com|true|true|false
+UFN-70550|New|10|11|false|Medium|Unassigned|09/11/2026 15:02:43|09/11/2026 15:02:47|09/15/2026 21:03:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-70491|New|10|11|false|Medium|Unassigned|09/10/2026 21:32:33|09/10/2026 21:32:44|09/15/2026 18:33:00|randy@yourdaydream.com|randy@yourdaydream.com|true|true|false
+UFN-70423|Pending|10|6|false|Medium|Kacey Nicole Lebrun|09/10/2026 15:27:16|09/21/2026 10:19:46|09/14/2026 13:28:00|Timm Crosby|tcrosby@whbev.co|true|true|false
+UFN-70416|New|10|11|false|Medium|Unassigned|09/10/2026 15:07:33|09/10/2026 15:07:43|09/14/2026 13:08:00|Cassie Rangel|ex_cassie.rangel@partner.midea.com|true|true|false
+UFN-70415|New|10|11|false|Medium|Unassigned|09/10/2026 15:02:36|09/10/2026 15:02:40|09/14/2026 13:03:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-70352|New|10|11|false|Medium|Unassigned|09/10/2026 01:15:47|09/10/2026 01:15:53|09/14/2026 13:00:00|randy@yourdaydream.com|randy@yourdaydream.com|true|true|false
+UFN-70351|New|10|11|false|Medium|Unassigned|09/10/2026 01:13:53|09/10/2026 01:14:03|09/14/2026 13:00:00|randy.kitchin|randy.kitchin@gmail.com|true|true|false
+UFN-70308|New|10|11|false|Medium|Unassigned|09/09/2026 19:05:17|09/09/2026 19:18:32|09/14/2026 08:06:00|Nicole Weber|nicole.weber@unisco.com|true|true|false
+UFN-70285|New|10|11|false|Medium|Unassigned|09/09/2026 16:26:55|09/24/2026 14:30:00|09/11/2026 22:27:00|Nicole Weber|nicole.weber@unisco.com|true|true|false
+UFN-70272|New|10|11|false|Medium|Unassigned|09/09/2026 15:42:54|09/09/2026 15:43:01|09/11/2026 21:43:00|kqgundla@amazon.com|kqgundla@amazon.com|true|true|false
+UFN-70268|New|10|11|false|Medium|Unassigned|09/09/2026 15:06:48|09/09/2026 15:07:06|09/11/2026 21:07:00|julimiza@amazon.com|julimiza@amazon.com|true|true|false
+UFN-70267|New|10|11|false|Medium|Unassigned|09/09/2026 15:04:35|09/09/2026 15:04:37|09/11/2026 21:05:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-70265|New|10|11|false|Medium|Unassigned|09/09/2026 14:51:27|09/09/2026 14:51:39|09/11/2026 21:00:00|randy@yourdaydream.com|randy@yourdaydream.com|true|true|false
+UFN-70261|Pending|10|6|false|Medium|Youssef Zeitoon|09/09/2026 14:19:14|09/21/2026 10:25:43|09/11/2026 21:00:00|bdalder@drinkhint.com|bdalder@drinkhint.com|true|true|false
+UFN-70246|Pending|10|6|true|Medium|Kent Claud Caballero|09/09/2026 13:05:15|09/25/2026 20:35:35|09/11/2026 21:00:00|Shailene Baez (shailene.baez@unisco.com)|shailene.baez@unisco.com|true|true|false
+UFN-70222|New|10|11|false|Medium|Unassigned|09/09/2026 11:13:15|09/09/2026 13:51:05|09/11/2026 21:00:00|randy@yourdaydream.com|randy@yourdaydream.com|true|true|false
+UFN-70161|Pending|10|6|true|Medium|Shailene Baez|09/08/2026 20:08:46|09/21/2026 17:01:12|09/11/2026 17:09:00|john.mills@goessor.com|john.mills@goessor.com|true|true|false
+UFN-70140|New|10|11|false|Medium|Unassigned|09/08/2026 17:58:24|09/14/2026 17:49:11|09/10/2026 23:59:00|Brianna Gillen|Brianna.Gillen@odfl.com|true|true|false
+UFN-70131|New|10|11|false|Medium|Unassigned|09/08/2026 16:35:47|09/08/2026 16:35:53|09/10/2026 22:36:00|randy@yourdaydream.com|randy@yourdaydream.com|true|true|false
+UFN-70114|New|10|11|false|Medium|Unassigned|09/08/2026 15:03:03|09/08/2026 15:03:08|09/10/2026 21:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-70003|New|10|11|false|Medium|Unassigned|09/07/2026 15:02:32|09/07/2026 15:02:33|09/10/2026 21:00:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-69810|New|10|11|false|Medium|Unassigned|09/04/2026 18:28:03|09/04/2026 20:48:41|09/10/2026 15:29:00|randy@yourdaydream.com|randy@yourdaydream.com|true|true|false
+UFN-69767|New|10|11|false|Medium|Unassigned|09/04/2026 15:03:02|09/04/2026 15:03:13|09/09/2026 21:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-69663|New|10|11|false|Medium|Unassigned|09/03/2026 20:47:58|09/03/2026 20:48:03|09/09/2026 17:48:00|Toc-Ib-Na-Missed-Pickup|toc-ib-na-missed-pickup@amazon.com|true|true|false
+UFN-69661|New|10|11|false|Medium|Unassigned|09/03/2026 20:42:22|09/03/2026 20:42:31|09/09/2026 17:43:00|Toc-Ib-Na-Missed-Pickup|toc-ib-na-missed-pickup@amazon.com|true|true|false
+UFN-69595|Pending|10|6|false|Medium|Unassigned|09/03/2026 15:22:05|09/03/2026 16:16:07|09/08/2026 13:23:00|James Devlin (jamesdevlin@zenwtr.com)|jamesdevlin@zenwtr.com|true|true|false
+UFN-69591|New|10|11|false|Medium|Unassigned|09/03/2026 15:04:27|09/03/2026 15:04:36|09/08/2026 13:05:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-69519|New|10|11|false|Medium|Unassigned|09/03/2026 01:08:22|09/03/2026 01:08:24|09/08/2026 13:00:00|randy@yourdaydream.com|randy@yourdaydream.com|true|true|false
+UFN-69511|New|10|11|false|Medium|Unassigned|09/02/2026 23:06:08|09/02/2026 23:06:13|09/08/2026 12:07:00|Toc-Ib-Na-Missed-Pickup|toc-ib-na-missed-pickup@amazon.com|true|true|false
+UFN-69450|New|10|11|false|Medium|Unassigned|09/02/2026 16:26:14|09/02/2026 16:26:20|09/04/2026 22:27:00|Toc-Ib-Na-Missed-Pickup|toc-ib-na-missed-pickup@amazon.com|true|true|false
+UFN-69447|New|10|11|false|Medium|Unassigned|09/02/2026 16:06:58|09/02/2026 16:07:02|09/04/2026 22:07:00|Toc-Ib-Na-Missed-Pickup|toc-ib-na-missed-pickup@amazon.com|true|true|false
+UFN-69426|New|10|11|false|Medium|Unassigned|09/02/2026 15:04:43|09/02/2026 15:04:49|09/04/2026 21:05:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-69397|New|10|11|false|Medium|Unassigned|09/02/2026 13:09:47|09/02/2026 13:10:03|09/04/2026 21:00:00|Vendor Training|vendor.training@ps.target.com|true|true|false
+UFN-69380|New|10|11|false|Medium|Unassigned|09/02/2026 11:54:43|09/02/2026 11:54:44|09/04/2026 21:00:00|randy@yourdaydream.com|randy@yourdaydream.com|true|true|false
+UFN-69337|New|10|11|false|Medium|Erin Cambra|09/01/2026 21:34:22|09/01/2026 21:34:31|09/04/2026 18:35:00|kevin@yourdaydream.com|kevin@yourdaydream.com|true|true|false
+UFN-69307|New|10|11|false|Medium|Unassigned|09/01/2026 19:23:11|09/01/2026 19:23:13|09/04/2026 16:24:00|Toc-Ib-Na-Missed-Pickup|toc-ib-na-missed-pickup@amazon.com|true|true|false
+UFN-69245|New|10|11|false|Medium|Unassigned|09/01/2026 15:04:34|09/01/2026 15:04:35|09/03/2026 21:05:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-69231|Pending|10|6|false|Medium|nicole weber|09/01/2026 14:14:32|09/09/2026 15:40:36|09/03/2026 21:00:00|Erica Stiles|erica.stiles@odfl.com|true|true|false
+UFN-69123|New|10|11|false|Medium|Unassigned|09/01/2026 00:49:34|09/01/2026 19:00:18|09/03/2026 21:00:00|Customerservices|customerservices@wmservicessupport.com|true|true|false
+UFN-69004|New|10|11|false|Medium|Unassigned|08/31/2026 15:04:55|08/31/2026 15:04:58|09/02/2026 21:05:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-68749|Pending|10|6|false|Medium|Erin Cambra|08/28/2026 15:48:08|09/21/2026 10:56:28|09/01/2026 21:49:00|Allanie Grace May Morata|allanie.morata@item.com|true|true|false
+UFN-68741|New|10|11|false|Medium|Timothy McHugh|08/28/2026 15:14:13|08/28/2026 19:54:31|09/01/2026 21:15:00|Jordan Levy|jordan@ptpbags.com|true|true|false
+UFN-68739|New|10|11|false|Medium|Unassigned|08/28/2026 15:03:15|08/28/2026 15:03:20|09/01/2026 21:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-68573|New|10|11|false|Medium|Timothy McHugh|08/27/2026 18:17:29|09/02/2026 12:59:32|09/01/2026 15:18:00|bsantana@fusiontransport.com|bsantana@fusiontransport.com|true|true|false
+UFN-68524|New|10|11|false|Medium|Unassigned|08/27/2026 15:04:02|08/27/2026 15:04:05|08/31/2026 13:05:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-68233|New|10|11|false|Medium|Unassigned|08/26/2026 16:47:56|08/26/2026 16:47:59|08/28/2026 22:48:00|julimiza@amazon.com|julimiza@amazon.com|true|true|false
+UFN-68191|New|10|11|false|Medium|Unassigned|08/26/2026 15:03:07|08/26/2026 15:03:13|08/28/2026 21:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-68029|New|10|11|false|Medium|Unassigned|08/25/2026 18:02:35|08/25/2026 18:02:39|08/28/2026 15:03:00|Amber Rangel|amber.rangel@midea.com|true|true|false
+UFN-68017|New|10|11|false|Medium|Unassigned|08/25/2026 17:20:39|08/25/2026 17:20:43|08/27/2026 23:21:00|bresomer@amazon.com|bresomer@amazon.com|true|true|false
+UFN-68011|Pending|10|6|false|Medium|Unassigned|08/25/2026 17:07:29|09/21/2026 11:13:57|08/27/2026 23:08:00|Dan Pedowitz|dan.pedowitz@sheerlogistics.com|true|true|false
+UFN-67983|New|10|11|false|Medium|Unassigned|08/25/2026 15:03:31|08/25/2026 15:03:36|08/27/2026 21:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-67835|New|10|11|false|Medium|Unassigned|08/24/2026 18:58:52|08/24/2026 18:58:53|08/27/2026 15:59:00|randy@yourdaydream.com|randy@yourdaydream.com|true|true|false
+UFN-67777|New|10|11|false|Medium|Unassigned|08/24/2026 15:04:00|08/24/2026 15:04:04|08/26/2026 21:05:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-67529|Pending|10|6|false|Medium|Unassigned|08/21/2026 17:22:14|09/21/2026 11:27:59|08/25/2026 23:23:00|PTP Warehouse|warehouse@primetimepackaging.com|true|true|false
+UFN-67511|New|10|11|false|Medium|Unassigned|08/21/2026 15:59:50|08/27/2026 13:51:16|08/25/2026 22:00:00|Tweetie Leigh Lamoste (tweetie.lamoste@unisco.com)|tweetie.lamoste@unisco.com|true|true|false
+UFN-67500|New|10|11|false|Medium|Unassigned|08/21/2026 15:03:21|08/21/2026 15:03:28|08/25/2026 21:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-67388|New|10|11|false|Medium|Unassigned|08/20/2026 19:38:07|08/20/2026 19:38:20|08/25/2026 16:39:00|Cara Sylvester|cara_sylvester@ps.target.com|true|true|false
+UFN-67322|New|10|11|false|Medium|Unassigned|08/20/2026 15:02:49|08/20/2026 15:02:53|08/24/2026 13:03:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-67291|Pending|10|6|false|Medium|Unassigned|08/20/2026 13:19:02|09/21/2026 11:33:42|08/24/2026 13:00:00|Client Management (clientmanagement@freightplus.io)|clientmanagement@freightplus.io|true|true|false
+UFN-67199|New|10|11|false|Medium|Unassigned|08/19/2026 16:48:47|08/19/2026 16:48:54|08/21/2026 22:49:00|julimiza@amazon.com|julimiza@amazon.com|true|true|false
+UFN-67171|New|10|11|false|Medium|Unassigned|08/19/2026 15:03:33|08/19/2026 15:03:33|08/21/2026 21:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-67142|New|10|11|false|Medium|Unassigned|08/19/2026 13:59:15|08/19/2026 13:59:26|08/21/2026 21:00:00|Vendor.Communication@target.com|vendor.communication@ps.target.com|true|true|false
+UFN-67031|New|10|11|false|Medium|Unassigned|08/18/2026 19:34:08|08/19/2026 14:11:31|08/21/2026 16:35:00|bruce.null@midea.com|bruce.null@midea.com|true|true|false
+UFN-67024|New|10|11|false|Medium|Unassigned|08/18/2026 18:49:49|08/18/2026 18:49:51|08/21/2026 15:50:00|julimiza@amazon.com|julimiza@amazon.com|true|true|false
+UFN-66966|New|10|11|false|Medium|Unassigned|08/18/2026 15:03:26|08/18/2026 15:03:37|08/20/2026 21:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-66766|New|10|11|false|Medium|Unassigned|08/17/2026 15:04:08|08/17/2026 15:04:11|08/19/2026 21:05:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-66759|New|10|11|false|Medium|Unassigned|08/17/2026 14:32:53|08/17/2026 14:33:04|08/19/2026 21:00:00|Jackson Kerr|jackson.kerr@unisco.com|true|true|false
+UFN-66548|New|10|11|false|Medium|Unassigned|08/14/2026 18:24:28|08/14/2026 18:24:36|08/19/2026 15:25:00|ups@upsemail.com|ups@upsemail.com|true|true|false
+UFN-66507|New|10|11|false|Medium|Unassigned|08/14/2026 15:03:01|08/14/2026 15:03:02|08/18/2026 21:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-66445|New|10|11|false|Medium|Unassigned|08/14/2026 00:49:24|08/14/2026 00:49:26|08/18/2026 21:00:00|jennifer.kuo@unisco.com|jennifer.kuo@unisco.com|true|true|false
+UFN-66375|New|10|11|false|Medium|Unassigned|08/13/2026 17:21:15|08/18/2026 21:37:51|08/17/2026 15:22:00|Mari Mendoza (mari.mendoza@unisco.com)|mari.mendoza@unisco.com|true|true|false
+UFN-66351|New|10|11|false|Medium|Unassigned|08/13/2026 15:04:55|08/13/2026 15:05:04|08/17/2026 13:05:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-66223|New|10|11|false|Medium|Unassigned|08/12/2026 19:30:01|08/12/2026 19:30:02|08/17/2026 08:31:00|julimiza@amazon.com|julimiza@amazon.com|true|true|false
+UFN-66170|New|10|11|false|Medium|Unassigned|08/12/2026 15:02:50|08/12/2026 15:02:52|08/14/2026 21:03:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-66004|New|10|11|false|Medium|Unassigned|08/11/2026 15:51:50|08/12/2026 14:36:03|08/13/2026 21:52:00|Mark Golding|mark.golding@unisco.com|true|true|false
+UFN-65984|New|10|11|false|Medium|Unassigned|08/11/2026 15:03:38|08/11/2026 15:03:53|08/13/2026 21:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-65951|Pending|10|6|false|Medium|nicole weber|08/11/2026 13:00:00|08/20/2026 15:27:11|08/13/2026 21:00:00|Nicole Weber|nicole.weber@unisco.com|true|true|false
+UFN-65850|New|10|11|false|Medium|Unassigned|08/10/2026 18:37:21|08/10/2026 18:37:23|08/13/2026 15:38:00|Nick Blake (nick.blake@unisco.com)|nick.blake@unisco.com|true|true|false
+UFN-65800|New|10|11|false|Medium|Unassigned|08/10/2026 15:03:32|08/10/2026 15:03:33|08/12/2026 21:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-65542|New|10|11|false|Medium|Unassigned|08/07/2026 15:02:49|08/07/2026 15:02:53|08/11/2026 21:03:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-65339|New|10|11|false|Medium|Unassigned|08/06/2026 15:06:58|08/06/2026 15:07:35|08/10/2026 13:07:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-65186|New|10|11|false|Medium|Unassigned|08/05/2026 15:02:20|08/05/2026 15:02:32|08/07/2026 21:03:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-64996|New|10|11|false|Medium|Unassigned|08/04/2026 15:05:13|08/04/2026 15:06:11|08/06/2026 21:06:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-64978|New|10|11|false|Medium|Unassigned|08/04/2026 14:02:29|08/04/2026 14:02:34|08/06/2026 21:00:00|Lowe's Merchandising Support|reply@internalcomm.lowes.com|true|true|false
+UFN-64779|New|10|11|false|Medium|Unassigned|08/03/2026 15:07:38|08/03/2026 15:07:42|08/05/2026 21:08:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-64739|Pending|10|6|false|Medium|Unassigned|08/03/2026 13:20:17|08/19/2026 19:56:23|08/05/2026 21:00:00|christopher.santo@midea.com|christopher.santo@midea.com|true|true|false
+UFN-64731|New|10|11|false|Medium|Unassigned|08/03/2026 13:08:29|08/03/2026 13:08:49|08/05/2026 21:00:00|Vendor Training|vendor.training@ps.target.com|true|true|false
+UFN-64607|New|10|11|false|Medium|Unassigned|08/01/2026 01:49:48|08/01/2026 01:49:50|08/05/2026 21:00:00|jessi@naturalpetinnovations.com|jessi@naturalpetinnovations.com|true|true|false
+UFN-64590|New|10|11|false|Medium|Unassigned|07/31/2026 20:47:33|07/31/2026 20:47:54|08/05/2026 17:48:00|christopher.santo@midea.com|christopher.santo@midea.com|true|true|false
+UFN-64524|New|10|11|false|Medium|Unassigned|07/31/2026 15:04:03|07/31/2026 15:04:14|08/04/2026 21:05:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-64363|New|10|11|false|Medium|Unassigned|07/30/2026 15:13:12|07/30/2026 15:13:19|08/03/2026 13:14:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-64134|New|10|11|false|Medium|Unassigned|07/29/2026 15:18:13|07/29/2026 15:18:20|07/31/2026 21:19:00|jessi@naturalpetinnovations.com|jessi@naturalpetinnovations.com|true|true|false
+UFN-64129|New|10|11|false|Medium|Unassigned|07/29/2026 15:07:38|07/29/2026 15:07:43|07/31/2026 21:08:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-64101|New|10|11|false|Medium|Unassigned|07/29/2026 13:45:28|07/30/2026 12:12:59|07/31/2026 21:00:00|Maria Aponte (maria.aponte@unisco.com)|maria.aponte@unisco.com|true|true|false
+UFN-64031|New|10|11|false|Medium|Unassigned|07/29/2026 03:28:03|07/29/2026 06:34:26|07/31/2026 21:00:00|Christine Zhang|christine.zhang@unisco.com|true|true|false
+UFN-63959|Pending|10|6|false|Medium|Erin Cambra|07/28/2026 17:51:16|07/29/2026 21:13:25|07/30/2026 23:52:00|Michelle Topete (michelle.topete@unisco.com)|michelle.topete@unisco.com|true|true|false
+UFN-63913|New|10|11|false|Medium|Unassigned|07/28/2026 15:06:34|07/28/2026 15:06:45|07/30/2026 21:07:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-63804|Pending|10|6|false|Medium|Austin Steigerwalt|07/27/2026 22:27:44|09/21/2026 13:20:07|07/30/2026 19:28:00|Chris Mendoza|cmendoza@whbev.co|true|true|false
+UFN-63762|Pending|10|6|false|Medium|Erin Cambra|07/27/2026 19:35:34|07/28/2026 18:35:55|07/30/2026 16:36:00|sona.street@smegusa.com|sona.street@smegusa.com|true|true|false
+UFN-63698|New|10|11|false|Medium|Unassigned|07/27/2026 15:05:11|07/27/2026 15:05:17|07/29/2026 21:06:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-63629|New|10|11|false|Medium|Unassigned|07/27/2026 12:23:00|07/27/2026 14:54:54|07/29/2026 21:00:00|Adrial Martin|adrial.martin@odfl.com|true|true|false
+UFN-63413|New|10|11|false|Medium|Unassigned|07/24/2026 15:03:59|07/24/2026 15:04:02|07/28/2026 21:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-63243|New|10|11|false|Medium|Unassigned|07/23/2026 16:04:55|07/23/2026 16:05:14|07/27/2026 14:05:00|Vendor.Communication@target.com|vendor.communication@ps.target.com|true|true|false
+UFN-63227|New|10|11|false|Medium|Unassigned|07/23/2026 15:04:35|07/23/2026 15:04:40|07/27/2026 13:05:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-63050|New|10|11|false|Medium|Unassigned|07/22/2026 15:03:39|07/22/2026 15:03:40|07/24/2026 21:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-63028|New|10|11|false|Medium|Unassigned|07/22/2026 13:45:34|07/22/2026 17:33:07|07/24/2026 21:00:00|Maria Aponte (maria.aponte@unisco.com)|maria.aponte@unisco.com|true|true|false
+UFN-62885|New|10|11|false|Medium|Unassigned|07/21/2026 15:04:57|07/21/2026 15:05:09|07/23/2026 21:05:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-62684|New|10|11|false|Medium|Unassigned|07/20/2026 16:44:01|07/20/2026 16:44:09|07/22/2026 22:45:00|graciela.orteaga@unisco.com|graciela.orteaga@unisco.com|true|true|false
+UFN-62682|New|10|11|false|Medium|nicole weber|07/20/2026 16:40:57|07/21/2026 13:05:11|07/22/2026 22:41:00|primetime.northampton@unisco.com|primetime.northampton@unisco.com|true|true|false
+UFN-62651|New|10|11|false|Medium|Unassigned|07/20/2026 15:03:31|07/20/2026 15:03:32|07/22/2026 21:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-62628|New|10|11|false|Medium|Unassigned|07/20/2026 13:54:22|07/20/2026 13:54:25|07/22/2026 21:00:00|jessi@naturalpetinnovations.com|jessi@naturalpetinnovations.com|true|true|false
+UFN-62355|New|10|11|false|Medium|Unassigned|07/17/2026 15:02:30|07/17/2026 15:02:31|07/21/2026 21:03:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-62150|New|10|11|false|Medium|Unassigned|07/16/2026 15:02:27|07/16/2026 15:02:31|07/20/2026 13:03:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-61922|New|10|11|false|Medium|Unassigned|07/15/2026 15:05:36|07/15/2026 15:05:47|07/17/2026 21:06:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-61885|New|10|11|false|Medium|Unassigned|07/15/2026 13:45:53|07/16/2026 15:56:34|07/17/2026 21:00:00|Maria Aponte (maria.aponte@unisco.com)|maria.aponte@unisco.com|true|true|false
+UFN-61666|New|10|11|false|Medium|Unassigned|07/14/2026 15:05:51|07/14/2026 15:05:58|07/16/2026 21:06:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-61467|Pending|10|6|false|Medium|Maria Aponte|07/13/2026 15:19:27|08/03/2026 15:02:00|07/15/2026 21:20:00|Mark Golding|mark.golding@unisco.com|true|true|false
+UFN-61462|New|10|11|false|Medium|Unassigned|07/13/2026 15:03:46|07/13/2026 15:03:51|07/15/2026 21:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-61451|New|10|11|false|Medium|nicole weber|07/13/2026 14:30:52|07/13/2026 17:37:33|07/15/2026 21:00:00|primetime.northampton@unisco.com|primetime.northampton@unisco.com|true|true|false
+UFN-61390|Pending|10|6|false|Medium|Unassigned|07/13/2026 05:12:16|09/21/2026 14:30:10|07/15/2026 21:00:00|nicole.yu@unisco.com|nicole.yu@unisco.com|true|true|false
+UFN-61190|New|10|11|false|Medium|Unassigned|07/10/2026 15:03:47|07/10/2026 15:03:53|07/14/2026 21:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-60986|New|10|11|false|Medium|Unassigned|07/09/2026 15:05:19|07/09/2026 15:05:24|07/13/2026 13:06:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-60865|New|10|11|false|Medium|Unassigned|07/08/2026 18:49:45|07/08/2026 18:49:46|07/13/2026 07:50:00|Sam Warheit|sam.warheit@unisco.com|true|true|false
+UFN-60786|New|10|11|false|Medium|Unassigned|07/08/2026 15:03:03|07/08/2026 15:03:12|07/10/2026 21:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-60760|New|10|11|false|Medium|Unassigned|07/08/2026 13:45:52|07/08/2026 20:18:35|07/10/2026 21:00:00|Maria Aponte (maria.aponte@unisco.com)|maria.aponte@unisco.com|true|true|false
+UFN-60751|New|10|11|false|Medium|Unassigned|07/08/2026 13:26:54|07/08/2026 13:26:58|07/10/2026 21:00:00|Timothy Nitka|timothy.nitka@unisco.com|true|true|false
+UFN-60595|New|10|11|false|Medium|Unassigned|07/07/2026 15:05:05|07/07/2026 15:05:09|07/09/2026 21:06:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-60573|New|10|11|false|Medium|nicole weber|07/07/2026 14:05:23|07/13/2026 13:50:10|07/09/2026 21:00:00|primetime.northampton@unisco.com|primetime.northampton@unisco.com|true|true|false
+UFN-60348|New|10|11|false|Medium|Unassigned|07/06/2026 15:03:11|07/06/2026 15:03:15|07/08/2026 21:04:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-60125|New|10|11|false|Medium|Unassigned|07/03/2026 15:06:14|07/03/2026 15:06:20|07/07/2026 21:07:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-60009|Pending|10|6|false|Medium|Erin Cambra|07/02/2026 19:41:21|09/21/2026 15:23:50|07/07/2026 16:42:00|smorales@beteshghc.com|smorales@beteshghc.com|true|true|false
+UFN-59971|New|10|11|false|Medium|Unassigned|07/02/2026 17:09:17|07/16/2026 14:28:22|07/06/2026 15:10:00|Lassondepappas Northampton|lassondepappas.northampton@unisco.com|true|true|false
+UFN-59915|New|10|11|false|Medium|Unassigned|07/02/2026 15:04:07|07/02/2026 15:04:18|07/06/2026 13:05:00|noreply@tms.blujaysolutions.net|noreply@tms.blujaysolutions.net|true|true|false
+UFN-59777|New|10|11|false|Medium|Unassigned|07/01/2026 19:54:00|07/02/2026 16:27:38|07/06/2026 08:55:00|Kim Crescencio|ckim@sunjoygroup.com|true|true|false
+UFN-59720|Pending|10|6|false|Medium|Kimberly Bautista|07/01/2026 16:17:43|09/24/2026 23:56:34|07/03/2026 22:18:00|Fouzan Kosar Bakhsh|fouzan@epicglobalinc.com|true|true|false
+UFN-59657|New|10|11|false|Medium|Unassigned|07/01/2026 13:45:36|07/03/2026 15:11:29|07/03/2026 21:00:00|Maria Aponte (maria.aponte@unisco.com)|maria.aponte@unisco.com|true|true|false
+UFN-59296|New|10|11|false|Medium|Erin Cambra|06/29/2026 19:37:17|07/23/2026 13:06:53|07/02/2026 16:38:00|erin.cambra@unisco.com|erin.cambra@unisco.com|true|true|false
+UFN-59238|New|10|11|false|Medium|Unassigned|06/29/2026 16:13:25|07/02/2026 16:27:59|07/01/2026 22:14:00|Kim Crescencio|ckim@sunjoygroup.com|true|true|false
+UFN-58476|New|10|11|false|Medium|Unassigned|06/24/2026 13:46:00|07/03/2026 15:11:26|06/26/2026 21:00:00|Maria Aponte (maria.aponte@unisco.com)|maria.aponte@unisco.com|true|true|false
+UFN-57198|New|10|11|false|Medium|Unassigned|06/17/2026 13:45:51|07/03/2026 15:11:19|06/19/2026 21:00:00|Maria Aponte (maria.aponte@unisco.com)|maria.aponte@unisco.com|true|true|false
+UFN-57050|New|10|11|false|Medium|Unassigned|06/16/2026 18:51:44|06/16/2026 19:45:31|06/19/2026 15:52:00|Meha Cannon|cannonmeha@tranzact.com|true|true|false
+UFN-56957|New|10|11|false|Medium|Unassigned|06/16/2026 12:54:17|06/16/2026 15:24:31|06/18/2026 21:00:00|lesean.torres@unisco.com|lesean.torres@unisco.com|true|true|false
+UFN-55946|New|10|11|false|Medium|Unassigned|06/10/2026 13:45:43|07/03/2026 15:11:16|06/12/2026 21:00:00|Maria Aponte (maria.aponte@unisco.com)|maria.aponte@unisco.com|true|true|false
+UFN-55641|New|10|11|false|Medium|Unassigned|06/09/2026 11:46:27|06/09/2026 13:57:07|06/11/2026 21:00:00|Brianna Gillen|Brianna.Gillen@odfl.com|true|true|false
+UFN-55198|New|10|11|false|Medium|Unassigned|06/05/2026 16:37:33|06/08/2026 12:06:16|06/09/2026 22:38:00|aileenc|aileenc@carmnet.com|true|true|false
+UFN-55002|New|10|11|false|Medium|Unassigned|06/04/2026 21:19:08|09/21/2026 18:08:52|06/09/2026 18:20:00|bescobar@niagarawater.com|bescobar@niagarawater.com|true|true|false
+UFN-54985|New|10|11|false|Medium|Unassigned|06/04/2026 20:44:13|06/04/2026 21:32:51|06/09/2026 17:45:00|hhuang@niagarawater.com|hhuang@niagarawater.com|true|true|false
+UFN-54721|New|10|11|false|Medium|Unassigned|06/03/2026 20:57:31|07/02/2026 16:30:42|06/08/2026 09:58:00|Lassondepappas Northampton|lassondepappas.northampton@unisco.com|true|true|false
+UFN-54684|New|10|11|false|Medium|Unassigned|06/03/2026 19:33:34|06/04/2026 15:53:33|06/08/2026 08:34:00|lesean.torres@unisco.com|lesean.torres@unisco.com|true|true|false
+UFN-54680|New|10|11|false|Medium|Unassigned|06/03/2026 19:25:29|07/02/2026 14:40:34|06/08/2026 08:26:00|silvian@primetimepackaging.com|silvian@primetimepackaging.com|true|true|false
+UFN-54576|New|10|11|false|Medium|Unassigned|06/03/2026 13:45:36|07/03/2026 15:11:09|06/05/2026 21:00:00|Maria Aponte (maria.aponte@unisco.com)|maria.aponte@unisco.com|true|true|false
+UFN-53491|New|10|11|false|Medium|nicole weber|05/29/2026 13:11:05|06/02/2026 15:47:36|06/02/2026 21:00:00|robert.golia@diageo.com|robert.golia@diageo.com|true|true|false
+UFN-52990|New|10|11|false|Medium|Unassigned|05/27/2026 13:45:32|05/28/2026 12:55:43|05/29/2026 21:00:00|Maria Aponte (maria.aponte@unisco.com)|maria.aponte@unisco.com|true|true|false
+UFN-51805|New|10|11|false|Medium|Unassigned|05/20/2026 20:25:46|05/21/2026 15:05:41|05/26/2026 09:26:00|silvian@primetimepackaging.com|silvian@primetimepackaging.com|true|true|false
+UFN-51749|New|10|11|false|Medium|Unassigned|05/20/2026 17:31:00|05/20/2026 18:01:56|05/22/2026 23:31:00|silvian@primetimepackaging.com|silvian@primetimepackaging.com|true|true|false
+UFN-51698|New|10|11|false|Medium|Unassigned|05/20/2026 13:45:19|05/20/2026 16:53:20|05/22/2026 21:00:00|Maria Aponte (maria.aponte@unisco.com)|maria.aponte@unisco.com|true|true|false
+UFN-51184|New|10|11|false|Medium|Unassigned|05/18/2026 13:04:42|05/18/2026 13:56:33|05/20/2026 21:00:00|lesean.torres@unisco.com|lesean.torres@unisco.com|true|true|false
+UFN-50365|New|10|11|false|Medium|Unassigned|05/13/2026 13:45:45|05/13/2026 20:05:33|05/15/2026 21:00:00|Maria Aponte (maria.aponte@unisco.com)|maria.aponte@unisco.com|true|true|false
+UFN-49723|New|10|11|false|Medium|Unassigned|05/11/2026 11:33:17|05/12/2026 14:55:27|05/13/2026 21:00:00|TRT International|jof@usatrt.com|true|true|false
+UFN-49524|New|10|11|false|Medium|Unassigned|05/09/2026 00:32:19|05/12/2026 14:38:12|05/13/2026 21:00:00|aileenc|aileenc@carmnet.com|true|true|false
+UFN-48832|New|10|11|false|Medium|Unassigned|05/06/2026 13:45:52|05/06/2026 14:48:55|05/08/2026 21:00:00|Maria Aponte (maria.aponte@unisco.com)|maria.aponte@unisco.com|true|true|false
+UFN-48781|New|10|11|false|Medium|Unassigned|05/06/2026 11:54:20|05/06/2026 14:52:50|05/08/2026 21:00:00|Jenelle Shimko|jenelle.shimko@smegusa.com|true|true|false
+UFN-48777|New|10|11|false|Medium|Unassigned|05/06/2026 11:35:53|05/06/2026 13:31:40|05/08/2026 21:00:00|TRT International|jof@usatrt.com|true|true|false
+UFN-48670|New|10|11|false|Medium|Unassigned|05/06/2026 02:05:42|06/26/2026 21:38:39|05/08/2026 21:00:00|aileenc|aileenc@carmnet.com|true|true|false
+UFN-48436|New|10|11|false|Medium|Unassigned|05/04/2026 22:13:30|05/14/2026 13:24:49|05/07/2026 19:14:00|shawn.mabale@unis.co|shawn.mabale@unis.co|true|true|false
+UFN-48225|New|10|11|false|Medium|Unassigned|05/04/2026 12:19:43|05/04/2026 12:28:28|05/06/2026 21:00:00|Shailene Baez (shailene.baez@unisco.com)|shailene.baez@unisco.com|true|true|false
+UFN-48152|New|10|11|false|Medium|Unassigned|05/04/2026 01:01:37|05/04/2026 12:37:59|05/06/2026 21:00:00|PTP Notifications|notifications@primetimepackaging.com|true|true|false
+UFN-47786|New|10|11|false|Medium|Unassigned|05/01/2026 14:47:34|05/04/2026 12:45:52|05/05/2026 21:00:00|bwitham@sealionshippingshipping.com|bwitham@sealionshippingltd.com|true|true|false
+UFN-47190|New|10|11|false|Medium|Unassigned|04/29/2026 13:47:06|04/30/2026 13:23:07|05/01/2026 21:00:00|Maria Aponte (maria.aponte@unisco.com)|maria.aponte@unisco.com|true|true|false
+UFN-46639|Pending|10|6|false|Medium|Unassigned|04/27/2026 17:50:28|09/21/2026 22:15:26|04/29/2026 23:51:00|Sandra Jimmerson|sandra.jimmerson@smegusainc.onmicrosoft.com|true|true|false
+UFN-46564|New|10|11|false|Medium|Wilmer Acedo|04/27/2026 15:05:09|04/30/2026 18:51:35|04/29/2026 21:06:00|wilmer.acedo@unisco.com|wilmer.acedo@unisco.com|true|true|false
+UFN-46492|New|10|11|false|Medium|Unassigned|04/27/2026 11:57:18|04/30/2026 18:04:24|04/29/2026 21:00:00|Jeanine Covello|Jeanine.Covello@odfl.com|true|true|false
+UFN-46256|Pending|10|6|false|Medium|Unassigned|04/24/2026 17:12:37|09/21/2026 22:22:28|04/28/2026 23:13:00|Caitlin Weiss|caitlin.weiss@odfl.com|true|true|false
+UFN-46185|Pending|10|6|false|Medium|Unassigned|04/24/2026 15:19:09|09/21/2026 22:24:44|04/28/2026 21:20:00|Briana Table|briana.table@fedexfreight.com|true|true|false
+UFN-45763|New|10|11|false|Medium|Unassigned|04/22/2026 13:45:22|04/22/2026 16:36:37|04/24/2026 21:00:00|Maria Aponte (maria.aponte@unisco.com)|maria.aponte@unisco.com|true|true|false
+UFN-45559|New|10|11|false|Medium|Unassigned|04/21/2026 16:56:29|04/21/2026 19:32:56|04/23/2026 22:57:00|primetime.northampton@unisco.com|primetime.northampton@unisco.com|true|true|false
+UFN-45316|New|10|11|false|Medium|Unassigned|04/20/2026 14:38:14|04/20/2026 15:05:57|04/22/2026 21:00:00|niagarabottling@quantixscs.com|niagarabottling@quantixscs.com|true|true|false
+UFN-45186|New|10|11|false|Medium|Unassigned|04/20/2026 01:02:09|04/20/2026 12:32:39|04/22/2026 21:00:00|PTP Notifications|notifications@primetimepackaging.com|true|true|false
+UFN-45048|New|10|11|false|Medium|Unassigned|04/17/2026 23:19:29|04/20/2026 15:07:40|04/22/2026 20:20:00|aileenc|aileenc@carmnet.com|true|true|false
+UFN-44321|New|10|11|false|Medium|Unassigned|04/15/2026 13:45:33|04/21/2026 11:37:10|04/17/2026 21:00:00|Maria Aponte (maria.aponte@unisco.com)|maria.aponte@unisco.com|true|true|false
+UFN-44139|Pending|10|6|false|Medium|Unassigned|04/14/2026 19:24:31|09/21/2026 23:20:27|04/17/2026 16:25:00|trenton.hayhoe@rndc-usa.com|trenton.hayhoe@rndc-usa.com|true|true|false
+UFN-43887|Pending|10|6|true|Medium|Unassigned|04/13/2026 20:32:50|09/27/2026 05:24:23|04/16/2026 17:33:00|Nick Poulson|nick.poulson@diageo.com|true|true|false
+UFN-43725|New|10|11|false|Medium|Unassigned|04/13/2026 14:30:46|04/14/2026 14:09:12|04/15/2026 21:00:00|primetime.northampton@unisco.com|primetime.northampton@unisco.com|true|true|false
+UFN-43591|New|10|11|false|Medium|Unassigned|04/13/2026 01:02:31|04/13/2026 12:37:42|04/15/2026 21:00:00|PTP Notifications|notifications@primetimepackaging.com|true|true|false
+UFN-42730|New|10|11|false|Medium|Unassigned|04/08/2026 17:45:05|04/09/2026 13:39:23|04/10/2026 23:46:00|chodde@niagarawater.com|chodde@niagarawater.com|true|true|false
+UFN-42645|New|10|11|false|Medium|Unassigned|04/08/2026 13:51:51|04/08/2026 13:53:12|04/10/2026 21:00:00|Maria Aponte (maria.aponte@unisco.com)|maria.aponte@unisco.com|true|true|false
+UFN-42031|New|10|11|false|Medium|Pedro Marte|04/06/2026 15:04:46|04/30/2026 15:44:13|04/08/2026 21:05:00|Shailene Baez (shailene.baez@unisco.com)|shailene.baez@unisco.com|true|true|false
+UFN-41878|New|10|11|false|Medium|Unassigned|04/06/2026 01:01:59|04/06/2026 12:20:06|04/08/2026 21:00:00|PTP Notifications|notifications@primetimepackaging.com|true|true|false
+UFN-41484|New|10|11|false|Medium|Unassigned|04/03/2026 15:55:17|04/08/2026 15:00:10|04/07/2026 21:56:00|erin.cambra@unisco.com|erin.cambra@unisco.com|true|true|false
+UFN-40969|New|10|11|false|Medium|Sittie Jhaila Sirad|04/01/2026 18:27:06|04/01/2026 19:31:14|04/06/2026 07:28:00|homedepotimc@swifttrans.com|homedepotimc@swifttrans.com|true|true|false
+UFN-40860|New|10|11|false|Medium|Unassigned|04/01/2026 13:45:24|04/01/2026 17:53:08|04/03/2026 21:00:00|Maria Aponte (maria.aponte@unisco.com)|maria.aponte@unisco.com|true|true|false
+UFN-40670|Pending|10|6|false|Medium|Unassigned|03/31/2026 21:32:57|09/22/2026 00:42:15|04/03/2026 18:33:00|robert.golia@diageo.com|robert.golia@diageo.com|true|true|false
+UFN-40654|New|10|11|false|Medium|Unassigned|03/31/2026 20:34:50|04/01/2026 16:20:49|04/03/2026 17:35:00|niagarabottling@quantixscs.com|niagarabottling@quantixscs.com|true|true|false
+UFN-40213|New|10|11|false|Medium|Unassigned|03/30/2026 13:17:01|03/30/2026 13:26:46|04/01/2026 21:00:00|niagarabottling@quantixscs.com|niagarabottling@quantixscs.com|true|true|false
+UFN-39662|New|10|11|false|Medium|Unassigned|03/27/2026 17:04:09|03/27/2026 19:56:58|03/31/2026 23:05:00|niagarabottling@quantixscs.com|niagarabottling@quantixscs.com|true|true|false
+UFN-39403|New|10|11|false|Medium|Unassigned|03/26/2026 16:53:54|03/27/2026 19:35:28|03/30/2026 14:54:00|zachary.short@smegusa.com|zachary.short@smegusa.com|true|true|false
+UFN-39065|New|10|11|false|Medium|Unassigned|03/25/2026 13:45:33|03/26/2026 17:00:23|03/27/2026 21:00:00|Maria Aponte (maria.aponte@unisco.com)|maria.aponte@unisco.com|true|true|false
+UFN-37858|New|10|11|false|Medium|Unassigned|03/21/2026 14:17:30|03/23/2026 13:28:24|03/25/2026 21:00:00|Wynk|hello@drinkwynk.com|true|true|false
+UFN-35774|New|10|11|false|Medium|Sittie Jhaila Sirad|03/13/2026 16:15:12|03/13/2026 16:15:21|03/17/2026 22:16:00|logistics@smegusa.com|logistics@smegusa.com|true|true|false
+UFN-35588|Pending|10|6|false|Medium|Unassigned|03/12/2026 20:57:57|09/22/2026 02:26:43|03/17/2026 17:57:00|aterian@flockfreight.com|aterian@flockfreight.com|true|true|false
+UFN-33722|Pending|10|6|false|Medium|Unassigned|03/05/2026 20:27:34|03/13/2026 10:40:40|03/10/2026 16:28:00|erin.cambra@unisco.com|erin.cambra@unisco.com|true|true|false
+UFN-33719|Pending|10|6|false|Medium|Unassigned|03/05/2026 20:13:41|09/22/2026 03:02:09|03/10/2026 16:14:00|erin.cambra@unisco.com|erin.cambra@unisco.com|true|true|false
+UFN-33604|New|10|11|false|Medium|Unassigned|03/05/2026 14:00:38|03/18/2026 13:51:55|03/09/2026 13:00:00|Maria Aponte (maria.aponte@unisco.com)|maria.aponte@unisco.com|true|true|false

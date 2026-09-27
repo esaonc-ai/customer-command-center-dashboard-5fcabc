@@ -36,24 +36,40 @@ Coverage rule: All customers visible in eligible NHT/Cesanek tickets. Configured
 4. **Customer Health** – Per-customer ticket counts, aging, UFN exposure, health ratings
 5. **Evidence & Metrics** – Outlook matches, dedup stats, invoice exclusions, SLA risk, freshness
 
-## Current Dashboard State (Last Refresh: Sep 26 2:52 AM ET - AUTHORITATIVE v61)
+## Current Dashboard State (Last Refresh: Sep 27 2:49 AM ET - AUTHORITATIVE v62)
 
 | Metric | Value |
 |--------|-------|
-| Total Raw (system-open UFN, department scope) | **324** = 244 New / 55 Pending / 25 Reopen; New+Pending gate **299** (distinct rows used) |
-| Eligible | **273** conversations (223 New, 0 Open, 50 Pending) - **-11 vs v60** |
-| Excluded | 26 = 21 billing-family + 5 overlapping conversations; 25 Reopen rows outside the gate |
-| Eligible arrivals | **17** (15 new to the gate + UFN-71468 / UFN-71127 now single-live-row threads) |
-| Eligible departures | **28** (set-difference departures; see reconciliation caveat) |
-| closeFlag | **NOT a gate** - 14 live closeFlag=true tickets retained |
-| Customers | **116** distinct live customer labels (88 Critical / 28 Warning / 0 Healthy; every ticket-visible customer covered) |
-| Priority | 273 Medium / 0 unavailable |
-| SLA Risk | **ELEVATED** - 195 SLA-breached / 78 current; 241 unassigned |
-| Action Buckets | Immediate **14** / Short-Term **36** / Medium-Term **14** / Watch **209** |
+| Total Raw (system-open UFN, department scope) | **328** = 248 New / 55 Pending / 25 Reopen; New+Pending gate **303** (distinct rows used) |
+| Eligible | **274** conversations (224 New, 0 Open, 50 Pending) - **+1 vs v61** |
+| Excluded | 29 = 24 billing-family + 5 overlapping conversations; 25 Reopen rows outside the gate |
+| Eligible arrivals | **4** (UFN-71631, UFN-71628, UFN-71627, UFN-71626) |
+| Eligible departures | **3** (UFN-71498, UFN-71492, UFN-71415 - newly classified billing-family, not closures) |
+| closeFlag | **NOT a gate** - 13 live closeFlag=true tickets retained |
+| Customers | **114** distinct live customer labels (90 Critical / 24 Warning / 0 Healthy; every ticket-visible customer covered) |
+| Priority | 271 Medium / 3 unavailable |
+| SLA Risk | **ELEVATED** - 237 SLA-breached / 37 current; 238 unassigned |
+| Action Buckets | Immediate **4** / Short-Term **33** / Medium-Term **28** / Watch **209** |
 | Outlook Coverage | **Unavailable this cycle** - last observed (v42): 25 UFN messages / 9 distinct threads, latest 2026-09-14T21:46:00Z; stale and supplemental only |
-| Last Refresh | 2026-09-26T02:52:00-04:00 (**AUTHORITATIVE v61**, department 323826714354839552) |
+| Last Refresh | 2026-09-27T02:49:00-04:00 (**AUTHORITATIVE v62**, department 323826714354839552) |
 
 ## Developer Reconciliation Note
+
+### v61 -> v62 (Sep 26 2:52 AM ET -> Sep 27 2:49 AM ET)
+
+- **Net movement: 273 -> 274 eligible conversations (+1).** The live read returns 328 system-open rows (248 New / 55 Pending / 25 Reopen) and a **303-row New+Pending gate**, up 4 from 299. 4 rows are new to the gate and 0 gate rows left it; the arithmetic closes: 299 + 4 - 0 = 303.
+- **Movement is verified, not asserted.** The 303-row gate is transcribed to `scripts/gate-live-2026-09-27T0649Z-v62.psv` and set-compared against the persisted v61 snapshot rather than asserted.
+- **Eligibility gate (authoritative status only):** `displayStatusSystemStatus == 10` (open) AND `displayStatusName` in {New, Pending}. There are no "Open"-named rows, so the New/Open/Pending rule resolves to New + Pending. Reopen/Reopened, Closed, Resolved, Solved, Cancelled and Done are excluded by display status name; the 25 Reopen rows stay outside the gate.
+- **closeFlag is still NOT a gate.** 13 live closeFlag=true rows are retained as eligible (UFN-71542, 71411, 71373, 71312, 71291, 71284, 71154, 71077, 71007, 70753, 70246, 70161, 43887) - every one is a New/Pending row on a system-OPEN ticket. Gating on closeFlag would produce 13 false negatives. UFN-59720's authoritative closeFlag is true (re-verified with the specialist against the ticket brief; the first delegated row payload mis-printed it as false); it also remains eligible. The 13-vs-14 delta against v61 is a re-derivation of the live flag set, not a gate change.
+- **Arrivals are 4 brand-new tickets:** UFN-71631 + UFN-71628 (OMS Alert - MODERN INFUSIONS LLC order-processing exceptions) and UFN-71627 + UFN-71626 (Dropship Order Daily Report 2026-09-25). Two pairs share identical stored titles but are four distinct tickets with no CASE-/DN- token, so none is a duplicate.
+- **Exclusions: 303 - 24 billing-family - 5 overlapping = 274.** All 21 carried billing rows were re-verified present in the live gate; UFN-71485 closed and left the gate. **Three rows are newly classified billing-family and are excluded: UFN-71498 / UFN-71492 (Cambridge Sleep Sciences "4TH FOLLOW UP" urgent payment request / outstanding balance) and UFN-71415 (Recovery Sports LLC payment request).** These three were eligible at v61; excluding them is a policy application under the configured billing rule using the domain specialist's classification - disclosed rather than silent, and reversible if payment chases should count as operational work. They account for all 3 eligible departures (no row left the gate).
+- **Overlap exclusions unchanged at 5:** UFN-69447/69450 (CASE 21836552091, kept UFN-69307), UFN-69661/69663 (CASE 21861000021, kept UFN-69511) and UFN-70352 (DN-2107462, kept UFN-70351). UFN-71468 (DN-2131536) and UFN-71127 (DN-2131002) remain single live rows with no live twin and stay RETAINED. The specialist confirmed thread relations are not readable with the session credentials, so overlap groups are inferred from explicit CASE-/DN- tokens in the title and disclosed.
+- **UFN-64750 re-disclosed:** it was transcribed in the v61 gate capture but v61 already carried it as a Reopen row, and it is authoritatively Reopen again this cycle. It sits outside the gate on authoritative status (a reclassification, not a closure); no status-driven gate departure occurred this cycle.
+- **Status premise re-disclosed, still unsupported:** "UFN-67030 is live-Pending with closeFlag=true". UFN-67030 is **Solved / `displayStatusSystemStatus` 20 (CLOSED)**, closeFlag true, and is not in the system-open population. It is excluded on **authoritative status**, not because of closeFlag; the closeFlag rule the request asks for is already exactly what this dashboard implements, so no eligibility change was made.
+- **Methodology refinement (disclosed):** carried-over rows now take the LIVE `staffName`, `isOverdue`/`isSlaBreached` flags and `updateTime` from this read; v61 kept the stored values for those fields. Fields the endpoint does not return (subject, topicTitle, sourceChannel, priority-source flags, conversationId) are carried over. Unassigned is 238 of 274 on current data rather than a carried figure.
+- **Age-derived sections recomputed** at 2026-09-27T02:49:00-04:00: SLA 237 breached / 37 current; buckets 4/33/28/209; Customer Health 90 Critical / 24 Warning / 0 Healthy across 114 labels. A dueDate-derived cross-check flags 225 rows past due vs 237 on live flags - disclosed, not silently substituted.
+- **Outlook unavailable again** (non-blocking; no delegated-mailbox read was possible this cycle, so the stale v42 values are carried forward and used in no count, queue, bucket, health or SLA metric).
+- **Delivery caveat, disclosed (unchanged):** the repository snapshot (this file set) is current, but the public URL is served by an authenticated Next.js application that does not serve these `/data/*.json` paths (`/config.json` and `/data/*.json` do not return these JSON files, and `/api/tickets` requires a signed-in session). The refreshed numbers were therefore verified against the repository's own served dashboard rather than visually on the public URL from an unauthenticated session.
 
 ### v60 -> v61 (Sep 25 12:33 AM ET -> Sep 26 2:52 AM ET)
 

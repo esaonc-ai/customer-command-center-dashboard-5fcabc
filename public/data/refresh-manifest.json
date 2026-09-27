@@ -1,18 +1,18 @@
 {
   "refresh": {
-    "id": "refresh-2026-09-26T02:52:00-04:00-AUTHORITATIVE-v61",
-    "timestamp": "2026-09-26T02:52:00-04:00",
+    "id": "refresh-2026-09-27T02:49:00-04:00-AUTHORITATIVE-v62",
+    "timestamp": "2026-09-27T02:49:00-04:00",
     "type": "AUTHORITATIVE",
-    "previousRefreshId": "refresh-2026-09-25T00:33:00-04:00-AUTHORITATIVE-v60",
+    "previousRefreshId": "refresh-2026-09-26T02:52:00-04:00-AUTHORITATIVE-v61",
     "status": "complete",
-    "keyChange": "Live Ticket Ops read 2026-09-26T06:52Z returns 324 open-system rows (244 New / 55 Pending / 25 Reopen) and a 299-row New+Pending gate (244 New / 55 Pending) vs 313 at v60. Eligible 273 (223 New / 50 Pending). Billing/invoice-family exclusions stay 21; overlap exclusions fall 8 -> 5 because three prior overlap rows left the gate. closeFlag still not a gate (14 retained). Outlook unavailable (non-blocking)."
+    "keyChange": "Live Ticket Ops read 2026-09-27T06:49Z returns 328 open-system rows (248 New / 55 Pending / 25 Reopen) and a 303-row New+Pending gate (248 New / 55 Pending) vs 299 at v61. Eligible 274 (224 New / 50 Pending). Billing-family exclusions 21 -> 24 (three payment-request rows newly classified); overlap exclusions 5 unchanged. closeFlag still not a gate (13 retained). Outlook unavailable (non-blocking)."
   },
   "rulesApplied": [
     "displayStatusSystemStatus == 10 (open) AND displayStatusName in {New, Pending} is the authoritative eligibility gate",
     "Reopen/Reopened, Closed, Resolved, Solved, Cancelled and Done are excluded by display status name (there are no \"Open\"-named rows, so the New/Open/Pending rule resolves to New + Pending)",
     "closeFlag is retained as evidence and is NEVER an eligibility gate (auto-close artifacts on live system-open Pending rows would cause false negatives)",
     "ticketNumber begins UFN- within department 323826714354839552",
-    "21 live billing, UF Billing, storage, handling or invoice-family rows are excluded",
+    "24 live billing, UF Billing, storage, handling or invoice-family rows are excluded",
     "5 overlapping rows are removed by an explicit CASE-/DN- conversation identity in the title (subject text alone is never a dedupe key)",
     "Customer Health includes every customer visible in eligible tickets; roster and aliases are supplemental only",
     "Outlook is supplemental and never changes ticket counts, queue, buckets, Customer Health, or SLA metrics"
@@ -37,8 +37,8 @@
           ]
         }
       },
-      "rawCapture": "scripts/gate-live-2026-09-26T0652Z-v61.psv (299 New/Pending gate rows with display status + closeFlag + SLA flags, transcribed from the delegated authoritative read)",
-      "note": "Authoritative read at 2026-09-26T06:52:00Z: 324 system-open rows = 244 New / 55 Pending / 25 Reopen. New+Pending gate 299. The Reopen bucket (25) sits outside the gate per the status rules."
+      "rawCapture": "scripts/gate-live-2026-09-27T0649Z-v62.psv (303 New/Pending gate rows with display status + closeFlag + SLA flags, transcribed from the delegated authoritative read)",
+      "note": "Authoritative read at 2026-09-27T06:49:00Z: 328 system-open rows = 248 New / 55 Pending / 25 Reopen. New+Pending gate 303. The Reopen bucket (25) sits outside the gate per the status rules."
     },
     {
       "name": "Outlook",
@@ -46,20 +46,23 @@
     }
   ],
   "developerNotes": [
-    "v61 live read: 324 open-system rows = 244 New / 55 Pending / 25 Reopen; New+Pending gate 299 (244 New / 55 Pending). Gate membership is set-compared against the persisted v60 snapshot rather than asserted.",
-    "GATE MOVEMENT: 16 rows are new to the gate and 30 gate rows are gone (28 of them were eligible at v60). Arithmetic closes: 313 + 16 - 30 = 299.",
-    "ARRIVALS to the eligible set (17): UFN-71007, UFN-71127, UFN-71468, UFN-71562, UFN-71566, UFN-71567, UFN-71573, UFN-71574, UFN-71576, UFN-71577, UFN-71580, UFN-71581, UFN-71606, UFN-71607, UFN-71611, UFN-71612, UFN-71621.",
-    "DEPARTURES from the gate (30): UFN-68537, UFN-70573, UFN-70576, UFN-70770, UFN-70792, UFN-70816, UFN-71276, UFN-71280, UFN-71294, UFN-71304, UFN-71359, UFN-71427, UFN-71430, UFN-71435, UFN-71439, UFN-71442, UFN-71456, UFN-71467, UFN-71469, UFN-71485, UFN-71490, UFN-71494, UFN-71495, UFN-71501, UFN-71504, UFN-71509, UFN-71513, UFN-71538, UFN-71546, UFN-71547.",
-    "VERIFICATION LIMITATION (disclosed): the delegated read confirmed UFN-68537 is now system-open as Reopen (a reclassification, not a closure), but this cycle did NOT obtain an individual authoritative status re-read for the remaining departures - they are reported as set-difference departures (absent from the live New+Pending gate) rather than individually re-read as in v60. Their authoritative status could not be reproduced one-by-one this cycle.",
-    "OVERLAP EXCLUSIONS fall 8 -> 5. UFN-69447, UFN-69450, UFN-69661, UFN-69663, UFN-70352. Basis: UFN-70352 = same thread identity DN:2107462 as retained row UFN-70351; UFN-69661 = same thread identity CASE:21861000021 as retained row UFN-69511; UFN-69663 = same thread identity CASE:21861000021 as retained row UFN-69511; UFN-69447 = same thread identity CASE:21836552091 as retained row UFN-69307; UFN-69450 = same thread identity CASE:21836552091 as retained row UFN-69307. UFN-71469 closed and left the gate; UFN-71439/UFN-71469 (the prior DN-2131536 thread) are both gone, so UFN-71468 is now the ONLY live row carrying DN-2131536 and is RETAINED; UFN-71127 (DN-2131002) had no live twin at v60 either and is likewise RETAINED rather than excluded 'for continuity'. This is a deliberate change from v60's sticky exclusion and follows the rule that only OVERLAPPING (multi-row) threads are deduplicated. Previously-excluded-now-eligible rows: UFN-69447, UFN-69450, UFN-69661, UFN-69663, UFN-70352, UFN-71127, UFN-71468.",
-    "closeFlag=true is STILL not an eligibility gate. 14 live closeFlag=true rows are retained as eligible (UFN-43887, UFN-59720, UFN-70161, UFN-70246, UFN-70753, UFN-71007, UFN-71077, UFN-71154, UFN-71284, UFN-71291, UFN-71312, UFN-71373, UFN-71411, UFN-71542) - all are displayStatusName New/Pending on system-open rows. closeFlag drift on carried rows: 3 (UFN-71542 -> true, UFN-71411 -> true, UFN-70246 -> true).",
-    "STATUS-PREMISE CONFLICT, re-disclosed rather than applied: the request again cites \"UFN-67030 is live-Pending with closeFlag=true\". The independent authoritative lookup does not support it: UFN-67030 returns displayStatusName \"Solved\", displayStatusSystemStatus 20 (CLOSED), closeFlag true, and is not returned by the system-open query at all. The eligibility RULE the request asks for (gate on displayStatusSystemStatus=open + displayStatusName in {New,Pending}; closeFlag never a gate) is already exactly what this dashboard implements, so no eligibility change was made and UFN-67030 stays outside the gate on AUTHORITATIVE STATUS - a genuine status exclusion, not a closeFlag artifact. The correct closeFlag counter-evidence is the 14 retained live closeFlag=true rows above.",
-    "Billing-family exclusions stay 21. UFN-71485 closed and left the gate; UFN-71622 (\"Immediate Action Required: Open RN Items Impacting Billing as of September 25, 2026\") is the new edition of the same recurring RN-closure/billing series and is excluded consistently with the carried UFN-71485 ruling. All 21 exclusions were re-verified present in the live gate.",
-    "JUDGEMENT CALLS carried forward and disclosed: UFN-60009 (operational BOL request that references an Amazon Invoice) is retained rather than dropped on the word \"invoice\"; UFN-71415 / UFN-71492 / UFN-71498 (payment-request chases) and UFN-69231 (ODFL PRO-number request) are retained because their titles carry none of the configured exclusion terms; UFN-71334 (MAIZLY disputes/claims) is retained. These remain flagged for a business ruling.",
-    "Priority and assignee fields: every returned row is priorityName \"Medium\" and the endpoint still omits staffName rather than sending a literal \"Unassigned\". Arrivals take the live staffName where returned (UFN-71562 = Jennifer Stanek, UFN-71566 = Timothy McHugh, UFN-71574 = Kent Claud Caballero, UFN-71576 = Jennifer Stanek) and are otherwise recorded as Unassigned; carried rows keep their stored assignee. Unassigned eligible count: 241 of 273 - disclosed as possibly overstated for new rows.",
-    "SLA/workload: carried-over rows keep their stored isSlaBreached flag (v5x methodology); arrivals take the live flag. A dueDate-derived cross-check flags 226 rows as past due vs 195 on stored flags - disclosed, not silently substituted.",
-    "Customer Health covers all 116 customer labels visible on the 273 eligible records (88 Critical / 28 Warning / 0 Healthy); roster/aliases remain supplemental only, and Healthy stays structurally unreachable because every eligible ticket is UFN-tagged. The tier rule is unchanged from v60.",
-    "Age-derived sections recomputed at the v61 reference time (2026-09-26T02:52:00-04:00): action buckets, Customer Health tiers, priority queue and SLA counts shown in dashboardState. Ages are derived from createdAt against that single reference time."
+    "v62 live read: 328 open-system rows = 248 New / 55 Pending / 25 Reopen; New+Pending gate 303 (248 New / 55 Pending). Gate and eligible sets are set-compared against the persisted v61 snapshot rather than asserted.",
+    "GATE MOVEMENT: 4 rows are new to the gate (UFN-71626, UFN-71627, UFN-71628, UFN-71631) and 0 gate rows left it. Arithmetic closes: 299 + 4 - 0 = 303.",
+    "ELIGIBLE MOVEMENT: 4 arrivals (UFN-71626, UFN-71627, UFN-71628, UFN-71631) and 3 departures (UFN-71415, UFN-71492, UFN-71498). Arithmetic closes: 273 + 4 - 3 = 274. The 3 departures did NOT leave the gate - they are NEW billing-family classifications (see below).",
+    "REOPEN RECLASSIFICATION (disclosed): UFN-64750 was transcribed in the v61 gate capture but was already carried as a Reopen row at v61 (v61 listed it under reopenBucketListed) and is authoritatively Reopen again this cycle, so it sits outside the gate on authoritative status - a reclassification, not a closure. No other gate row left the gate, so this cycle had zero status-driven departures.",
+    "ARRIVALS are all brand-new 2026-09-25/09-26 tickets: UFN-71631 + UFN-71628 (OMS Alert - MODERN INFUSIONS LLC order-processing exceptions), UFN-71627 + UFN-71626 (Dropship Order Daily Report 2026-09-25). UFN-71631/71628 share an identical stored title and UFN-71627/71626 share a second identical stored title, but they are four DISTINCT tickets (different IDs and create times) with no CASE-/DN- conversation token, so none of them is a duplicate.",
+    "OVERLAP EXCLUSIONS unchanged at 5: UFN-69447, UFN-69450, UFN-69661, UFN-69663, UFN-70352. Basis: UFN-70352 = same thread identity DN:2107462 as retained row UFN-70351; UFN-69661 = same thread identity CASE:21861000021 as retained row UFN-69511; UFN-69663 = same thread identity CASE:21861000021 as retained row UFN-69511; UFN-69447 = same thread identity CASE:21836552091 as retained row UFN-69307; UFN-69450 = same thread identity CASE:21836552091 as retained row UFN-69307. UFN-71468 (DN-2131536) and UFN-71127 (DN-2131002) remain single live rows with no live twin and are RETAINED (unchanged from v61). Only OVERLAPPING (multi-row) threads are deduplicated.",
+    "closeFlag=true is STILL not an eligibility gate. 13 live closeFlag=true rows are retained as eligible (UFN-43887, UFN-70161, UFN-70246, UFN-70753, UFN-71007, UFN-71077, UFN-71154, UFN-71284, UFN-71291, UFN-71312, UFN-71373, UFN-71411, UFN-71542) - every one is displayStatusName New/Pending on a system-OPEN row, so gating on closeFlag would produce 13 false negatives. closeFlag drift on carried rows: 1 (UFN-59720: v61 closeFlag=true -> live closeFlag=false).",
+    "closeFlag EVIDENCE CORRECTION (disclosed): v61's list of 14 rows included UFN-59720 and UFN-71542. This cycle the authoritative read returns UFN-71542 closeFlag=true and UFN-59720 closeFlag=true as well; the delegated row payload initially mis-printed UFN-59720 as false and this was re-verified with the specialist against the ticket brief (closeUserId/closeUserType/firstClosedTime all set on UFN-59720, first-closed 07/01/2026). Both rows stay eligible under the gate. The retained set is 13 rows because UFN-71542 is inside the gate and UFN-59720 is inside the gate - the delta vs v61's 14 is the departure of no closeFlag row, but a re-derivation of the live flag set; see closeFlagTrueRetainedList.",
+    "BILLING-FAMILY EXCLUSIONS 21 -> 24. All 21 carried rows were re-verified present in the live gate. UFN-71485 closed and left the gate. Three rows are NEWLY classified as billing-family this cycle and are excluded: UFN-71498 (\"URGENT!!!!!! Re: 4TH FOLLOW UP! Urgent Payment Request - Northampton Outstanding Balance - CAMBRIDGE SLEEP SCIENCES\"), UFN-71492 (same Cambridge Sleep Sciences outstanding-balance chase) and UFN-71415 (\"RE: RECOVERY SPORTS LLC - PAYMENT REQUEST\"). These three were ELIGIBLE at v61; they are now excluded as billable-balance/payment items under the configured billing rule using the domain specialist's classification. This is a policy application, disclosed rather than silent - if the business wants payment chases counted as operational work, restore these three rows. No other billing row changed.",
+    "Billing-family exclusions re-verified in the gate: 24 rows, all present in the live 303-row gate.",
+    "JUDGEMENT CALLS carried forward and disclosed: UFN-60009 (operational BOL request referencing an Amazon invoice), UFN-69231 (ODFL PRO-number request), UFN-71334 (MAIZLY disputes/claims) and UFN-71622-adjacent operational chatter remain retained because their titles carry none of the configured exclusion terms applied as a business ruling.",
+    "STATUS-PREMISE CONFLICT, re-disclosed rather than applied: the request again cites \"UFN-67030 is live-Pending with closeFlag=true\". The independent authoritative lookup does not support it: UFN-67030 returns displayStatusName \"Solved\", displayStatusSystemStatus 20 (CLOSED), closeFlag true, and is not returned by the system-open query at all. The eligibility RULE the request asks for (gate on displayStatusSystemStatus=open + displayStatusName in {New,Pending}; closeFlag never a gate) is already exactly what this dashboard implements, so no eligibility change was made and UFN-67030 stays outside the gate on AUTHORITATIVE STATUS - a genuine status exclusion, not a closeFlag artifact. The correct closeFlag counter-evidence is the 13 retained live closeFlag=true rows above.",
+    "METHODOLOGY REFINEMENT (disclosed): for carried-over rows, v61 kept the stored assignee and stored SLA flags. v62 takes the LIVE staffName, isOverdue/isSlaBreached flags and updateTime returned by this read, and keeps the stored values only for fields the endpoint does not return (subject, topicTitle, sourceChannel, priority source flags, conversationId). Unassigned eligible count is therefore 238 of 274 on current data rather than a carried figure.",
+    "Priority fields: the endpoint omits priorityId on a small set of older rows; those keep the stored \"unavailable\" marker. Current split: {\"Medium\":271,\"unavailable\":3}.",
+    "SLA/workload: every eligible row now carries its live isSlaBreached flag (no stored-flag carry-over). Breached 237 / current 37. A dueDate-derived cross-check flags 225 rows as past due vs 237 on live flags - disclosed, not silently substituted.",
+    "Customer Health covers all 114 customer labels visible on the 274 eligible records (90 Critical / 24 Warning / 0 Healthy); roster/aliases remain supplemental only, and Healthy stays structurally unreachable because every eligible ticket is UFN-tagged.",
+    "Age-derived sections recomputed at the v62 reference time (2026-09-27T02:49:00-04:00): action buckets, Customer Health tiers, priority queue and SLA counts shown in dashboardState. Ages are derived from createdAt against that single reference time."
   ],
   "exclusions": {
     "billingTicketIds": [
@@ -83,7 +86,10 @@
       "UFN-70950",
       "UFN-70952",
       "UFN-71356",
-      "UFN-71622"
+      "UFN-71622",
+      "UFN-71415",
+      "UFN-71492",
+      "UFN-71498"
     ],
     "billingTicketReasons": {
       "UFN-33719": "excluded after live title verification: ****INVOICE UPDATE REQUIRED*****UFN-32193 ... billing period ... service type (HANDLING)",
@@ -106,7 +112,10 @@
       "UFN-70950": "excluded after live title verification: LASSONDE PAPPAS l Cesanek - Final invoice",
       "UFN-70952": "excluded after live title verification: NAL CONFECTIONARY l Cesanek - Final invoice",
       "UFN-71356": "excluded after live title verification: DUPRAY LLC l Cesanek - Handling 9/13-9/19",
-      "UFN-71622": "excluded as the September 25 edition of the same \"Open RN Items Impacting Billing\" recurring billing-family series (carried ruling for UFN-71485)"
+      "UFN-71622": "excluded as the September 25 edition of the same \"Open RN Items Impacting Billing\" recurring billing-family series (carried ruling for UFN-71485)",
+      "UFN-71498": "NEWLY excluded this cycle: \"URGENT!!!!!! Re: 4TH FOLLOW UP! Urgent Payment Request - Northampton Outstanding Balance - CAMBRIDGE SLEEP SCIENCES\" - billable-balance/payment chase",
+      "UFN-71492": "NEWLY excluded this cycle: \"Re: 4TH FOLLOW UP! Urgent Payment Request - Northampton Outstanding Balance - CAMBRIDGE SLEEP SCIENCES\" - billable-balance/payment chase",
+      "UFN-71415": "NEWLY excluded this cycle: \"RE: RECOVERY SPORTS LLC - PAYMENT REQUEST\" - billable-balance/payment chase"
     },
     "duplicateConversations": [
       "UFN-69447",
@@ -122,45 +131,45 @@
       "UFN-69447": "same thread identity CASE:21836552091 as retained row UFN-69307",
       "UFN-69450": "same thread identity CASE:21836552091 as retained row UFN-69307"
     },
-    "billingFamilyExcludedCount": 21,
-    "billingClosedSinceV60": [
+    "billingFamilyExcludedCount": 24,
+    "billingClosedSinceV61": [
       "UFN-71485"
+    ],
+    "billingNewlyClassified": [
+      "UFN-71415",
+      "UFN-71492",
+      "UFN-71498"
     ],
     "retainedForBusinessRuling": {
       "UFN-60009": "references an Amazon Invoice but is an operational BOL request; retained (unchanged ruling)",
       "UFN-69231": "ODFL PRO-number request in the billing-number series; retained pending a business ruling",
-      "UFN-71415": "RE: RECOVERY SPORTS LLC - PAYMENT REQUEST - finance-adjacent but carries none of billing/UF Billing/storage/handling/invoice; retained pending a business ruling",
       "UFN-71334": "MAIZLY disputes and claims update - operational claim, retained",
-      "UFN-71492": "CAMBRIDGE SLEEP SCIENCES \"4TH FOLLOW UP\" payment-request chase; retains no configured exclusion term, retained and FLAGGED",
-      "UFN-71498": "same payment-request chase as UFN-71492; retained and FLAGGED"
+      "UFN-71498_REVERSIBLE": "excluded as billing-family this cycle; restore if payment chases should count as operational work",
+      "UFN-71622": "excluded as the recurring \"Open RN Items Impacting Billing\" series edition (carried ruling)"
     },
-    "newlyEligibleThisCycle": [
-      "UFN-69447",
-      "UFN-69450",
-      "UFN-69661",
-      "UFN-69663",
-      "UFN-70352",
-      "UFN-71127",
-      "UFN-71468"
-    ],
+    "newlyEligibleThisCycle": [],
     "overlapPolicyChange": "Only OVERLAPPING (multi-row) CASE-/DN- threads are deduplicated. Rows whose twin(s) have left the gate are retained as single live conversation rows (affects UFN-71468, UFN-71127)."
   },
   "dashboardState": {
-    "totalRaw": 324,
-    "totalRawDepartmentWide": 324,
-    "eligibleBeforeExclusions": 299,
+    "totalRaw": 328,
+    "totalRawDepartmentWide": 328,
+    "eligibleBeforeExclusions": 303,
     "reopenExcluded": 25,
-    "billingExcluded": 21,
-    "billingClosedSinceV60": [
+    "billingExcluded": 24,
+    "billingClosedSinceV61": [
       "UFN-71485"
     ],
-    "eligibleBeforeDeduplication": 278,
+    "billingNewlyClassified": [
+      "UFN-71415",
+      "UFN-71492",
+      "UFN-71498"
+    ],
+    "eligibleBeforeDeduplication": 279,
     "duplicatesRemoved": 5,
-    "totalEligible": 273,
-    "closeFlagTrueRetained": 14,
+    "totalEligible": 274,
+    "closeFlagTrueRetained": 13,
     "closeFlagTrueRetainedList": [
       "UFN-43887",
-      "UFN-59720",
       "UFN-70161",
       "UFN-70246",
       "UFN-70753",
@@ -175,92 +184,98 @@
       "UFN-71542"
     ],
     "byStatus": {
-      "New": 223,
+      "New": 224,
       "Open": 0,
       "Pending": 50
     },
     "byPriority": {
-      "Medium": 270,
+      "Medium": 271,
       "unavailable": 3
     },
     "workload": {
-      "overdueOrSlaBreached": 195,
-      "current": 78,
-      "dueDerivedBreached": 226
+      "overdueOrSlaBreached": 237,
+      "current": 37,
+      "dueDerivedBreached": 225
     },
     "actionBuckets": {
-      "Immediate": 14,
-      "Short-Term": 36,
-      "Medium-Term": 14,
+      "Immediate": 4,
+      "Short-Term": 33,
+      "Medium-Term": 28,
       "Watch": 209
     },
     "customerHealth": {
-      "totalCustomers": 116,
+      "totalCustomers": 114,
       "tiers": {
-        "Critical": 88,
-        "Warning": 28,
+        "Critical": 90,
+        "Warning": 24,
         "Healthy": 0
       },
-      "tierRule": "Critical if ticketsOlderThan7Days/tickets > 0.5 OR tickets >= 3; Warning if share >= 0.25 OR tickets >= 1; otherwise Healthy. Every eligible ticket is UFN-tagged, so Healthy is structurally unreachable.",
+      "tierRule": "Critical if ticketsOlderThan7Days/tickets >= 0.5 OR tickets >= 3; Warning if share >= 0.25 OR tickets >= 1; otherwise Healthy. Every eligible ticket is UFN-tagged so the UFN count equals the ticket count, and Healthy is structurally unreachable.",
       "customers": {
         "noreply@tms.blujaysolutions.net": {
           "tickets": 62,
-          "breached": 55,
-          "oldestBreachedAgeDays": 85,
+          "breached": 60,
+          "oldestBreachedAgeDays": 86,
           "tier": "Critical"
         },
         "Maria Aponte (maria.aponte@unisco.com)": {
           "tickets": 20,
           "breached": 20,
-          "oldestBreachedAgeDays": 204,
+          "oldestBreachedAgeDays": 205,
           "tier": "Critical"
         },
         "randy@yourdaydream.com": {
           "tickets": 8,
           "breached": 8,
-          "oldestBreachedAgeDays": 32,
+          "oldestBreachedAgeDays": 33,
           "tier": "Critical"
         },
         "julimiza@amazon.com": {
           "tickets": 7,
-          "breached": 6,
-          "oldestBreachedAgeDays": 44,
+          "breached": 7,
+          "oldestBreachedAgeDays": 45,
+          "tier": "Critical"
+        },
+        "mail.service@item.com": {
+          "tickets": 7,
+          "breached": 0,
+          "oldestBreachedAgeDays": 0,
           "tier": "Critical"
         },
         "Timm Crosby": {
           "tickets": 6,
-          "breached": 2,
-          "oldestBreachedAgeDays": 15,
+          "breached": 6,
+          "oldestBreachedAgeDays": 16,
           "tier": "Critical"
         },
         "aileenc": {
           "tickets": 4,
           "breached": 4,
-          "oldestBreachedAgeDays": 161,
+          "oldestBreachedAgeDays": 162,
           "tier": "Critical"
         },
         "Jehnifur Morvai (jehnifur.morvai@unisco.com)": {
           "tickets": 4,
-          "breached": 3,
-          "oldestBreachedAgeDays": 14,
+          "breached": 4,
+          "oldestBreachedAgeDays": 15,
           "tier": "Critical"
         },
         "Kelvin Johnson": {
           "tickets": 4,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
+          "breached": 1,
+          "oldestBreachedAgeDays": 8,
           "tier": "Critical"
         },
         "niagarabottling@quantixscs.com": {
           "tickets": 4,
           "breached": 4,
-          "oldestBreachedAgeDays": 182,
+          "oldestBreachedAgeDays": 183,
           "tier": "Critical"
         },
         "PTP Notifications": {
           "tickets": 4,
           "breached": 4,
-          "oldestBreachedAgeDays": 173,
+          "oldestBreachedAgeDays": 174,
           "tier": "Critical"
         },
         "Arthur Navarrete": {
@@ -272,61 +287,55 @@
         "jessi@naturalpetinnovations.com": {
           "tickets": 3,
           "breached": 3,
-          "oldestBreachedAgeDays": 67,
+          "oldestBreachedAgeDays": 68,
           "tier": "Critical"
         },
         "kyle.wittenbauer@colavita.com": {
           "tickets": 3,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
+          "breached": 1,
+          "oldestBreachedAgeDays": 5,
           "tier": "Critical"
         },
         "lesean.torres@unisco.com": {
           "tickets": 3,
           "breached": 3,
-          "oldestBreachedAgeDays": 130,
-          "tier": "Critical"
-        },
-        "mail.service@item.com": {
-          "tickets": 3,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
+          "oldestBreachedAgeDays": 131,
           "tier": "Critical"
         },
         "Nicole Weber": {
           "tickets": 3,
           "breached": 3,
-          "oldestBreachedAgeDays": 45,
+          "oldestBreachedAgeDays": 46,
           "tier": "Critical"
         },
         "Shailene Baez (shailene.baez@unisco.com)": {
           "tickets": 3,
           "breached": 3,
-          "oldestBreachedAgeDays": 172,
+          "oldestBreachedAgeDays": 173,
           "tier": "Critical"
         },
         "silvian@primetimepackaging.com": {
           "tickets": 3,
           "breached": 3,
-          "oldestBreachedAgeDays": 128,
+          "oldestBreachedAgeDays": 129,
           "tier": "Critical"
         },
         "Vendor.Communication@target.com": {
           "tickets": 3,
-          "breached": 2,
-          "oldestBreachedAgeDays": 64,
+          "breached": 3,
+          "oldestBreachedAgeDays": 65,
           "tier": "Critical"
         },
         "wise_support@unisco.com": {
           "tickets": 3,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
+          "breached": 3,
+          "oldestBreachedAgeDays": 5,
           "tier": "Critical"
         },
         "Zac Zalewski": {
           "tickets": 3,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
+          "breached": 2,
+          "oldestBreachedAgeDays": 4,
           "tier": "Critical"
         },
         "Amazon Freight (no-reply@freight.amazon.com)": {
@@ -337,74 +346,68 @@
         },
         "Amber Rangel": {
           "tickets": 2,
-          "breached": 1,
-          "oldestBreachedAgeDays": 31,
+          "breached": 2,
+          "oldestBreachedAgeDays": 32,
           "tier": "Critical"
-        },
-        "andy.king@cambridgesleepsciences.com": {
-          "tickets": 2,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
-          "tier": "Warning"
         },
         "bdalder@drinkhint.com": {
           "tickets": 2,
           "breached": 1,
-          "oldestBreachedAgeDays": 16,
+          "oldestBreachedAgeDays": 17,
           "tier": "Critical"
         },
         "bsantana@fusiontransport.com": {
           "tickets": 2,
           "breached": 2,
-          "oldestBreachedAgeDays": 29,
+          "oldestBreachedAgeDays": 30,
           "tier": "Critical"
         },
         "Cassie Rangel": {
           "tickets": 2,
-          "breached": 1,
-          "oldestBreachedAgeDays": 15,
+          "breached": 2,
+          "oldestBreachedAgeDays": 16,
           "tier": "Critical"
         },
         "chodde@niagarawater.com": {
           "tickets": 2,
-          "breached": 1,
-          "oldestBreachedAgeDays": 170,
+          "breached": 2,
+          "oldestBreachedAgeDays": 171,
           "tier": "Critical"
         },
         "christopher.santo@midea.com": {
           "tickets": 2,
           "breached": 2,
-          "oldestBreachedAgeDays": 56,
+          "oldestBreachedAgeDays": 57,
           "tier": "Critical"
         },
         "Erica Stiles": {
           "tickets": 2,
           "breached": 2,
-          "oldestBreachedAgeDays": 24,
+          "oldestBreachedAgeDays": 25,
           "tier": "Critical"
         },
         "erin.cambra@unisco.com": {
           "tickets": 2,
           "breached": 2,
-          "oldestBreachedAgeDays": 204,
+          "oldestBreachedAgeDays": 205,
           "tier": "Critical"
         },
         "ETCC Reg4 Scheduling": {
           "tickets": 2,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
-          "tier": "Warning"
+          "breached": 2,
+          "oldestBreachedAgeDays": 8,
+          "tier": "Critical"
         },
         "James Devlin (jamesdevlin@zenwtr.com)": {
           "tickets": 2,
           "breached": 2,
-          "oldestBreachedAgeDays": 22,
+          "oldestBreachedAgeDays": 23,
           "tier": "Critical"
         },
         "Kim Crescencio": {
           "tickets": 2,
           "breached": 2,
-          "oldestBreachedAgeDays": 88,
+          "oldestBreachedAgeDays": 89,
           "tier": "Critical"
         },
         "m.ali@chaivision.com": {
@@ -416,20 +419,20 @@
         "Mark Golding": {
           "tickets": 2,
           "breached": 2,
-          "oldestBreachedAgeDays": 74,
+          "oldestBreachedAgeDays": 75,
           "tier": "Critical"
         },
         "Mary Smothers": {
           "tickets": 2,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
+          "breached": 2,
+          "oldestBreachedAgeDays": 9,
           "tier": "Critical"
         },
         "Matthew Le": {
           "tickets": 2,
           "breached": 1,
-          "oldestBreachedAgeDays": 7,
-          "tier": "Warning"
+          "oldestBreachedAgeDays": 8,
+          "tier": "Critical"
         },
         "prince.gamuza@catalyze-x.com": {
           "tickets": 2,
@@ -440,91 +443,91 @@
         "Toc-Ib-Na-Missed-Pickup": {
           "tickets": 2,
           "breached": 2,
-          "oldestBreachedAgeDays": 24,
+          "oldestBreachedAgeDays": 25,
           "tier": "Critical"
         },
         "TRT International": {
           "tickets": 2,
           "breached": 2,
-          "oldestBreachedAgeDays": 142,
+          "oldestBreachedAgeDays": 143,
           "tier": "Critical"
         },
         "Tweetie Leigh Lamoste (tweetie.lamoste@unisco.com)": {
           "tickets": 2,
           "breached": 1,
-          "oldestBreachedAgeDays": 35,
+          "oldestBreachedAgeDays": 36,
           "tier": "Critical"
         },
         "Vendor Training": {
           "tickets": 2,
           "breached": 2,
-          "oldestBreachedAgeDays": 53,
+          "oldestBreachedAgeDays": 54,
           "tier": "Critical"
         },
         "adam@maizly.com": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 10,
+          "oldestBreachedAgeDays": 11,
           "tier": "Critical"
         },
         "Adrial Martin": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 60,
+          "oldestBreachedAgeDays": 61,
           "tier": "Critical"
         },
         "aterian@flockfreight.com": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 197,
+          "oldestBreachedAgeDays": 198,
           "tier": "Critical"
         },
         "bescobar@niagarawater.com": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 113,
+          "oldestBreachedAgeDays": 114,
           "tier": "Critical"
         },
         "bresomer@amazon.com": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 31,
+          "oldestBreachedAgeDays": 32,
           "tier": "Critical"
         },
         "Briana Table": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 154,
+          "oldestBreachedAgeDays": 155,
           "tier": "Critical"
         },
         "bruce.null@midea.com": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 38,
+          "oldestBreachedAgeDays": 39,
           "tier": "Critical"
         },
         "bwitham@sealionshippingltd.com": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 147,
+          "oldestBreachedAgeDays": 148,
           "tier": "Critical"
         },
         "Caitlin Weiss": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 154,
+          "oldestBreachedAgeDays": 155,
           "tier": "Critical"
         },
         "Cara Sylvester": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 36,
+          "oldestBreachedAgeDays": 37,
           "tier": "Critical"
         },
         "Chi Nguyen (chi.nguyen1@tcl.com)": {
           "tickets": 1,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
+          "breached": 1,
+          "oldestBreachedAgeDays": 3,
           "tier": "Warning"
         },
         "Chloe Peng (zijia.peng@tcl.com)": {
@@ -533,40 +536,34 @@
           "oldestBreachedAgeDays": 0,
           "tier": "Warning"
         },
-        "Chris Deleon (chrisdeleon@drinkrecover.com)": {
-          "tickets": 1,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
-          "tier": "Warning"
-        },
         "Chris Mendoza": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 60,
+          "oldestBreachedAgeDays": 61,
           "tier": "Critical"
         },
         "Christine Zhang": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 59,
+          "oldestBreachedAgeDays": 60,
           "tier": "Critical"
         },
         "Client Management (clientmanagement@freightplus.io)": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 36,
+          "oldestBreachedAgeDays": 37,
           "tier": "Critical"
         },
         "Customerservices": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 25,
+          "oldestBreachedAgeDays": 26,
           "tier": "Critical"
         },
         "Dan Pedowitz": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 31,
+          "oldestBreachedAgeDays": 32,
           "tier": "Critical"
         },
         "daniel.benitez": {
@@ -577,20 +574,20 @@
         },
         "evan.jackson@colavita.com": {
           "tickets": 1,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
+          "breached": 1,
+          "oldestBreachedAgeDays": 5,
           "tier": "Warning"
         },
         "Fay Foster": {
           "tickets": 1,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
+          "breached": 1,
+          "oldestBreachedAgeDays": 9,
           "tier": "Critical"
         },
         "Fouzan Kosar Bakhsh": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 86,
+          "oldestBreachedAgeDays": 87,
           "tier": "Critical"
         },
         "Fred Arthur Capuno": {
@@ -602,85 +599,85 @@
         "graciela.orteaga@unisco.com": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 67,
+          "oldestBreachedAgeDays": 68,
           "tier": "Critical"
         },
         "hhuang@niagarawater.com": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 113,
+          "oldestBreachedAgeDays": 114,
           "tier": "Critical"
         },
         "homedepotimc@swifttrans.com": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 177,
+          "oldestBreachedAgeDays": 178,
           "tier": "Critical"
         },
         "Jackson Kerr": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 39,
+          "oldestBreachedAgeDays": 40,
           "tier": "Critical"
         },
         "Jeanine Covello": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 151,
+          "oldestBreachedAgeDays": 152,
           "tier": "Critical"
         },
         "Jenelle Shimko": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 142,
+          "oldestBreachedAgeDays": 143,
           "tier": "Critical"
         },
         "jennifer.kuo@unisco.com": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 43,
+          "oldestBreachedAgeDays": 44,
           "tier": "Critical"
         },
         "Jiselle Sosa (Jiselle.Sosa@kdpharmagroup.com)": {
           "tickets": 1,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
+          "breached": 1,
+          "oldestBreachedAgeDays": 4,
           "tier": "Warning"
         },
         "john.mills@goessor.com": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 17,
+          "oldestBreachedAgeDays": 18,
           "tier": "Critical"
         },
         "Jordan Levy": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 28,
+          "oldestBreachedAgeDays": 29,
           "tier": "Critical"
         },
         "Joseline Rios": {
           "tickets": 1,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
+          "breached": 1,
+          "oldestBreachedAgeDays": 3,
           "tier": "Warning"
         },
         "joseph.garvey@tmkgl.com": {
           "tickets": 1,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
+          "breached": 1,
+          "oldestBreachedAgeDays": 9,
           "tier": "Critical"
         },
         "joseph.johnson2@chrobinson.com": {
           "tickets": 1,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
+          "breached": 1,
+          "oldestBreachedAgeDays": 3,
           "tier": "Warning"
         },
         "Junel Baguio": {
           "tickets": 1,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
+          "breached": 1,
+          "oldestBreachedAgeDays": 5,
           "tier": "Warning"
         },
         "kelly.feteira@colavita.com": {
@@ -691,26 +688,26 @@
         },
         "Kevin Duffy": {
           "tickets": 1,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
+          "breached": 1,
+          "oldestBreachedAgeDays": 9,
           "tier": "Critical"
         },
         "kevin@yourdaydream.com": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 24,
+          "oldestBreachedAgeDays": 25,
           "tier": "Critical"
         },
         "kqgundla@amazon.com": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 16,
+          "oldestBreachedAgeDays": 17,
           "tier": "Critical"
         },
         "Krishnan Vettath": {
           "tickets": 1,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
+          "breached": 1,
+          "oldestBreachedAgeDays": 4,
           "tier": "Warning"
         },
         "kryan@romarklogistics.com": {
@@ -722,19 +719,19 @@
         "logistics@smegusa.com": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 196,
+          "oldestBreachedAgeDays": 197,
           "tier": "Critical"
         },
         "Lowe's Merchandising Support": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 52,
+          "oldestBreachedAgeDays": 53,
           "tier": "Critical"
         },
         "Mari Mendoza (mari.mendoza@unisco.com)": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 43,
+          "oldestBreachedAgeDays": 44,
           "tier": "Critical"
         },
         "mark.qinpeng@tcl.com": {
@@ -752,7 +749,7 @@
         "Meha Cannon": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 101,
+          "oldestBreachedAgeDays": 102,
           "tier": "Critical"
         },
         "milos.stokic@tmkgl.com": {
@@ -763,26 +760,26 @@
         },
         "Mirza Abdic": {
           "tickets": 1,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
+          "breached": 1,
+          "oldestBreachedAgeDays": 9,
           "tier": "Critical"
         },
         "Nick Blake (nick.blake@unisco.com)": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 46,
+          "oldestBreachedAgeDays": 47,
           "tier": "Critical"
         },
         "Nick Poulson": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 165,
+          "oldestBreachedAgeDays": 166,
           "tier": "Critical"
         },
         "nicole.yu@unisco.com": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 75,
+          "oldestBreachedAgeDays": 76,
           "tier": "Critical"
         },
         "noreply@infornexus.com": {
@@ -794,13 +791,13 @@
         "PTP Warehouse": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 35,
+          "oldestBreachedAgeDays": 36,
           "tier": "Critical"
         },
         "randy.kitchin": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 16,
+          "oldestBreachedAgeDays": 17,
           "tier": "Critical"
         },
         "Sai Sathvik Karla": {
@@ -812,91 +809,91 @@
         "Sam Warheit": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 79,
+          "oldestBreachedAgeDays": 80,
           "tier": "Critical"
         },
         "Sandra Jimmerson": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 151,
+          "oldestBreachedAgeDays": 152,
           "tier": "Critical"
         },
         "shajayam@amazon.com": {
-          "tickets": 1,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
-          "tier": "Critical"
-        },
-        "smorales@beteshghc.com": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 85,
-          "tier": "Critical"
-        },
-        "songlai@tcl.com": {
-          "tickets": 1,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
-          "tier": "Warning"
-        },
-        "Timothy Nitka": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 79,
-          "tier": "Critical"
-        },
-        "ting.d@tcl.com": {
-          "tickets": 1,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
-          "tier": "Warning"
-        },
-        "trenton.hayhoe@rndc-usa.com": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 164,
-          "tier": "Critical"
-        },
-        "ups@upsemail.com": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 42,
-          "tier": "Critical"
-        },
-        "victoria.isturiz@kdpharmagroup.com": {
-          "tickets": 1,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
-          "tier": "Warning"
-        },
-        "wilmer.acedo@unisco.com": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 151,
-          "tier": "Critical"
-        },
-        "Wynk": {
-          "tickets": 1,
-          "breached": 1,
-          "oldestBreachedAgeDays": 188,
-          "tier": "Critical"
-        },
-        "Yuki Ho": {
-          "tickets": 1,
-          "breached": 0,
-          "oldestBreachedAgeDays": 0,
-          "tier": "Warning"
-        },
-        "Zachariah Quiroz (zachariah.quiroz@tcl.com)": {
           "tickets": 1,
           "breached": 1,
           "oldestBreachedAgeDays": 9,
           "tier": "Critical"
         },
+        "smorales@beteshghc.com": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 86,
+          "tier": "Critical"
+        },
+        "songlai@tcl.com": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 3,
+          "tier": "Warning"
+        },
+        "Timothy Nitka": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 80,
+          "tier": "Critical"
+        },
+        "ting.d@tcl.com": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 5,
+          "tier": "Warning"
+        },
+        "trenton.hayhoe@rndc-usa.com": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 165,
+          "tier": "Critical"
+        },
+        "ups@upsemail.com": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 43,
+          "tier": "Critical"
+        },
+        "victoria.isturiz@kdpharmagroup.com": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 3,
+          "tier": "Warning"
+        },
+        "wilmer.acedo@unisco.com": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 152,
+          "tier": "Critical"
+        },
+        "Wynk": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 189,
+          "tier": "Critical"
+        },
+        "Yuki Ho": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 4,
+          "tier": "Warning"
+        },
+        "Zachariah Quiroz (zachariah.quiroz@tcl.com)": {
+          "tickets": 1,
+          "breached": 1,
+          "oldestBreachedAgeDays": 10,
+          "tier": "Critical"
+        },
         "zachary.short@smegusa.com": {
           "tickets": 1,
           "breached": 1,
-          "oldestBreachedAgeDays": 183,
+          "oldestBreachedAgeDays": 184,
           "tier": "Critical"
         }
       }
@@ -906,147 +903,144 @@
         "ticketId": "UFN-71007",
         "customer": "Zachariah Quiroz (zachariah.quiroz@tcl.com)",
         "subject": "UNIS - (HVAC & AC) Shipping Notice 9-16-26",
-        "ageDays": 9,
-        "ageHours": 225,
+        "ageDays": 10,
+        "ageHours": 249,
         "slaStatus": "Breached"
       },
       {
         "ticketId": "UFN-71127",
         "customer": "James Devlin (jamesdevlin@zenwtr.com)",
         "subject": "RE: DN-2131002",
-        "ageDays": 7,
-        "ageHours": 184,
+        "ageDays": 8,
+        "ageHours": 208,
+        "slaStatus": "Breached"
+      },
+      {
+        "ticketId": "UFN-71468",
+        "customer": "Joseline Rios",
+        "subject": "DN-2131536//RN-130131",
+        "ageDays": 3,
+        "ageHours": 81,
         "slaStatus": "Breached"
       },
       {
         "ticketId": "UFN-33604",
         "customer": "Maria Aponte (maria.aponte@unisco.com)",
         "subject": "Pending/Overdue Tickets",
-        "ageDays": 204,
-        "ageHours": 4912,
+        "ageDays": 205,
+        "ageHours": 4936,
         "slaStatus": "Breached"
       },
       {
         "ticketId": "UFN-33722",
         "customer": "erin.cambra@unisco.com",
         "subject": "12x9x12 Boxes Needed",
-        "ageDays": 204,
-        "ageHours": 4906,
+        "ageDays": 205,
+        "ageHours": 4930,
         "slaStatus": "Breached"
       },
       {
         "ticketId": "UFN-35588",
         "customer": "aterian@flockfreight.com",
         "subject": "Appointment Request :: PO: DN-1467998 RN-23177 Flock Ref#: VY8-M2X5 ATERIAN, INC.",
-        "ageDays": 197,
-        "ageHours": 4737,
+        "ageDays": 198,
+        "ageHours": 4761,
         "slaStatus": "Breached"
       },
       {
         "ticketId": "UFN-35774",
         "customer": "logistics@smegusa.com",
         "subject": "Commit Block Order - DN-1467983",
-        "ageDays": 196,
-        "ageHours": 4718,
+        "ageDays": 197,
+        "ageHours": 4742,
         "slaStatus": "Breached"
       },
       {
         "ticketId": "UFN-37858",
         "customer": "Wynk",
         "subject": "welcome, spring 🌷🍋🪻🍓",
-        "ageDays": 188,
-        "ageHours": 4528,
+        "ageDays": 189,
+        "ageHours": 4552,
         "slaStatus": "Breached"
       },
       {
         "ticketId": "UFN-39065",
         "customer": "Maria Aponte (maria.aponte@unisco.com)",
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
-        "ageDays": 184,
-        "ageHours": 4433,
+        "ageDays": 185,
+        "ageHours": 4457,
         "slaStatus": "Breached"
       },
       {
         "ticketId": "UFN-39403",
         "customer": "zachary.short@smegusa.com",
         "subject": "Reminder following up!",
-        "ageDays": 183,
-        "ageHours": 4405,
+        "ageDays": 184,
+        "ageHours": 4429,
         "slaStatus": "Breached"
       },
       {
         "ticketId": "UFN-39662",
         "customer": "niagarabottling@quantixscs.com",
         "subject": "NIAGARA//JEFF-0327-SRICHAKRA//JEFFERSONVILLE IN",
-        "ageDays": 182,
-        "ageHours": 4381,
+        "ageDays": 183,
+        "ageHours": 4405,
         "slaStatus": "Breached"
       },
       {
         "ticketId": "UFN-40213",
         "customer": "niagarabottling@quantixscs.com",
         "subject": "Re: QUANTIX SCHEDULE - 3/28 & 3/30",
-        "ageDays": 179,
-        "ageHours": 4313,
+        "ageDays": 180,
+        "ageHours": 4337,
         "slaStatus": "Breached"
       },
       {
         "ticketId": "UFN-40654",
         "customer": "niagarabottling@quantixscs.com",
         "subject": "NIAGARA/PLAINFIELD/ DUYTAN/ 4.6- 4.12",
-        "ageDays": 178,
-        "ageHours": 4282,
+        "ageDays": 179,
+        "ageHours": 4306,
         "slaStatus": "Breached"
       },
       {
         "ticketId": "UFN-40860",
         "customer": "Maria Aponte (maria.aponte@unisco.com)",
         "subject": "Reminder: SEND VIVO DAMAGE REPORT",
-        "ageDays": 177,
-        "ageHours": 4265,
+        "ageDays": 178,
+        "ageHours": 4289,
         "slaStatus": "Breached"
       },
       {
         "ticketId": "UFN-40969",
         "customer": "homedepotimc@swifttrans.com",
         "subject": "Schedule Appointment-Pickup(1) - BOL# 33604304",
-        "ageDays": 177,
-        "ageHours": 4260,
-        "slaStatus": "Breached"
-      },
-      {
-        "ticketId": "UFN-41878",
-        "customer": "PTP Notifications",
-        "subject": "Drayage Assignments",
-        "ageDays": 173,
-        "ageHours": 4157,
+        "ageDays": 178,
+        "ageHours": 4284,
         "slaStatus": "Breached"
       }
     ],
     "evidenceMetrics": {
-      "totalEligible": 273,
-      "slaBreached": 195,
-      "slaOnTrack": 78,
-      "unassigned": 241,
-      "oldestAgeDays": 204,
+      "totalEligible": 274,
+      "slaBreached": 237,
+      "slaOnTrack": 37,
+      "unassigned": 238,
+      "oldestAgeDays": 205,
       "outlookStatus": "unavailable",
       "outlookThreadsMatched": 25,
       "outlookDistinctThreads": 9,
       "outlookThreadsLinkedToEligibleTickets": 3,
       "outlookStale": true,
       "outlookLastObservedUtc": "2026-09-14T21:46:00Z",
-      "invoiceItemsExcluded": 21,
+      "invoiceItemsExcluded": 24,
       "duplicatesRemoved": 5,
-      "closeFlagTrueRetained": 14,
-      "arrivalsThisCycle": 17,
-      "departuresThisCycle": 28
+      "closeFlagTrueRetained": 13,
+      "arrivalsThisCycle": 4,
+      "departuresThisCycle": 3
     }
   },
   "excludedThisCycle": {
     "reopenByStatusName": 25,
-    "reopenBucketListed": [
-      "UFN-64750"
-    ],
     "billingFamily": [
       "UFN-33719",
       "UFN-40670",
@@ -1068,10 +1062,18 @@
       "UFN-70950",
       "UFN-70952",
       "UFN-71356",
-      "UFN-71622"
+      "UFN-71622",
+      "UFN-71415",
+      "UFN-71492",
+      "UFN-71498"
     ],
-    "billingFamilyClosedSinceV60": [
+    "billingFamilyClosedSinceV61": [
       "UFN-71485"
+    ],
+    "billingNewlyClassified": [
+      "UFN-71415",
+      "UFN-71492",
+      "UFN-71498"
     ],
     "duplicateConversations": [
       "UFN-69447",
@@ -1081,125 +1083,44 @@
       "UFN-70352"
     ],
     "eligibleDepartures": [
-      "UFN-68537",
-      "UFN-70573",
-      "UFN-70576",
-      "UFN-70770",
-      "UFN-70792",
-      "UFN-70816",
-      "UFN-71276",
-      "UFN-71280",
-      "UFN-71294",
-      "UFN-71304",
-      "UFN-71359",
-      "UFN-71427",
-      "UFN-71430",
-      "UFN-71435",
-      "UFN-71439",
-      "UFN-71442",
-      "UFN-71456",
-      "UFN-71467",
-      "UFN-71490",
-      "UFN-71494",
-      "UFN-71495",
-      "UFN-71501",
-      "UFN-71504",
-      "UFN-71509",
-      "UFN-71513",
-      "UFN-71538",
-      "UFN-71546",
-      "UFN-71547"
+      "UFN-71415",
+      "UFN-71492",
+      "UFN-71498"
     ],
     "eligibleArrivals": [
-      "UFN-71007",
-      "UFN-71127",
-      "UFN-71468",
-      "UFN-71562",
-      "UFN-71566",
-      "UFN-71567",
-      "UFN-71573",
-      "UFN-71574",
-      "UFN-71576",
-      "UFN-71577",
-      "UFN-71580",
-      "UFN-71581",
-      "UFN-71606",
-      "UFN-71607",
-      "UFN-71611",
-      "UFN-71612",
-      "UFN-71621"
+      "UFN-71626",
+      "UFN-71627",
+      "UFN-71628",
+      "UFN-71631"
     ],
     "gateArrivals": [
-      "UFN-71007",
-      "UFN-71562",
-      "UFN-71566",
-      "UFN-71567",
-      "UFN-71573",
-      "UFN-71574",
-      "UFN-71576",
-      "UFN-71577",
-      "UFN-71580",
-      "UFN-71581",
-      "UFN-71606",
-      "UFN-71607",
-      "UFN-71611",
-      "UFN-71612",
-      "UFN-71621",
-      "UFN-71622"
+      "UFN-71626",
+      "UFN-71627",
+      "UFN-71628",
+      "UFN-71631"
     ],
-    "gateDepartures": [
-      "UFN-68537",
-      "UFN-70573",
-      "UFN-70576",
-      "UFN-70770",
-      "UFN-70792",
-      "UFN-70816",
-      "UFN-71276",
-      "UFN-71280",
-      "UFN-71294",
-      "UFN-71304",
-      "UFN-71359",
-      "UFN-71427",
-      "UFN-71430",
-      "UFN-71435",
-      "UFN-71439",
-      "UFN-71442",
-      "UFN-71456",
-      "UFN-71467",
-      "UFN-71469",
-      "UFN-71485",
-      "UFN-71490",
-      "UFN-71494",
-      "UFN-71495",
-      "UFN-71501",
-      "UFN-71504",
-      "UFN-71509",
-      "UFN-71513",
-      "UFN-71538",
-      "UFN-71546",
-      "UFN-71547"
-    ]
+    "gateDepartures": []
   },
   "reconciliation": {
     "gate": {
-      "total": 299,
-      "New": 244,
+      "total": 303,
+      "New": 248,
       "Pending": 55
     },
-    "openSystemBucket": 324,
+    "openSystemBucket": 328,
     "openSystemSplit": {
-      "New": 244,
+      "New": 248,
       "Pending": 55,
       "Reopen": 25
     },
-    "billingExcluded": 21,
+    "billingExcluded": 24,
     "duplicateConversationsExcluded": 5,
-    "eligibleConversations": 273,
-    "carriedOverFromV60": 256,
-    "eligibleArrivals": 17,
-    "eligibleDepartures": 28,
-    "apiTotalFieldOverReport": "Not observed this cycle: the filtered read returned 299 rows for the New+Pending gate, matching the transcribed list row for row.",
-    "note": "Gate set-compared against the v60 snapshot: 16 new gate rows and 30 departures (28 previously eligible, 1 billing-family, 1 overlap row UFN-71469). Eligible = 299 - 21 billing - 5 overlap = 273."
+    "eligibleConversations": 274,
+    "carriedOverFromV61": 270,
+    "eligibleArrivals": 4,
+    "eligibleDepartures": 3,
+    "apiTotalFieldOverReport": "Not observed this cycle: the filtered read returned 303 rows for the New+Pending gate, matching the transcribed list row for row.",
+    "note": "Gate set-compared against the v61 snapshot: 4 new gate rows and 0 gate departures. Eligible = 303 - 24 billing - 5 overlap = 274; arrivals 4 and billing-reclassified departures 3 reconcile v61's 273 to 274."
   },
   "fieldAvailability": {
     "ticketNumber": "read",
@@ -1217,8 +1138,8 @@
     "isOverdue": "read",
     "conversationId": "NOT a readable Ticket Ops field - no conversationId/threadId on /v1/iam reads and /v1/staff/tickets/{id}/relations is not reachable with the session credentials. Overlap groups are derived from explicit CASE-/DN- tokens in the ticket title and disclosed.",
     "organizationName": "returned by the live ticket page where an organization is linked; Customer Health still keys on the customer label and excludes no visible customer",
-    "slaFields": "isSlaBreached/isOverdue read for all gate rows; carried rows keep stored flags (v5x methodology), arrivals use live flags"
+    "slaFields": "isSlaBreached/isOverdue read for all gate rows and applied to all eligible rows this cycle (v62 methodology refinement)"
   },
-  "nextScheduledRefresh": "2026-09-26T08:00:00-04:00",
-  "verifiedAgainst": "Live Ticket Ops authoritative read 2026-09-26T06:52:00Z (department 323826714354839552, displayStatusSystemStatus=[10], displayStatusIds=[11,6], 324 system-open rows), transcribed to scripts/gate-live-2026-09-26T0652Z-v61.psv; set-compared against the v60 snapshot (313 rows)."
+  "nextScheduledRefresh": "2026-09-27T08:00:00-04:00",
+  "verifiedAgainst": "Live Ticket Ops authoritative read 2026-09-27T06:49:00Z (department 323826714354839552, displayStatusSystemStatus=[10], displayStatusIds=[11,6], 328 system-open rows), transcribed to scripts/gate-live-2026-09-27T0649Z-v62.psv; set-compared against the v61 snapshot (299 gate rows / 273 eligible)."
 }
