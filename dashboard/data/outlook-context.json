@@ -1,463 +1,273 @@
 {
  "refreshWindow": {
-  "from": "2026-09-04",
-  "to": "2026-09-15",
+  "from": "2026-09-14",
+  "to": "2026-10-07",
   "tz": "America/New_York"
  },
- "threadsMatched": 60,
- "threadsUniquePostDedup": 53,
+ "threadsMatched": 26,
+ "threadsUniquePostDedup": 26,
  "ticketThreads": [
   {
-   "customer": "AMI / ROAR BEVERAGES",
-   "subject": "Re: Re: AMI New Roar Order - DN-2127953 (Northampton PA)",
-   "direction": "inbound",
-   "ticketRef": "UFN-70893"
-  },
-  {
-   "customer": "AMI / ROAR BEVERAGES",
-   "subject": "AMI New Roar Order - SO1393032/ DN-2117711 (Northampton PA)",
-   "direction": "inbound",
-   "ticketRef": "UFN-68616"
-  },
-  {
-   "customer": "AMI / ROAR BEVERAGES",
-   "subject": "UNIS ROAR QVC POWDER MOVE From PA to CA DN-2123888",
-   "direction": "inbound",
-   "ticketRef": "UFN-68601"
-  },
-  {
-   "customer": "ROAR BEVERAGES / KeHE",
-   "subject": "RE: ROAR BEVERAGES Pick up",
-   "direction": "inbound",
-   "ticketRef": "UFN-69092"
-  },
-  {
-   "customer": "ROAR BEVERAGES",
-   "subject": "Re: DN-2126156",
-   "direction": "inbound",
-   "ticketRef": "UFN-69050"
-  },
-  {
-   "customer": "ROAR BEVERAGES / Hub Group",
-   "subject": "Pickup Appointment PO 3878155 - Northampton - Ellettsville",
-   "direction": "inbound",
-   "ticketRef": "UFN-70147"
-  },
-  {
-   "customer": "HINT INC.",
-   "subject": "UNIS - HINT BEVERAGE - NORTHAMPTON, PA - WEEK OF 9/14/26",
-   "direction": "inbound",
-   "ticketRef": "UFN-70804"
-  },
-  {
-   "customer": "HINT INC.",
-   "subject": "UNIS - HINT BEVERAGE - NORTHAMPTON, PA - WEEK OF 9/7/26",
-   "direction": "inbound",
-   "ticketRef": "UFN-69781"
-  },
-  {
-   "customer": "HINT INC.",
-   "subject": "HVP41-1612 Orders | 09/07- 09/11",
-   "direction": "inbound",
-   "ticketRef": "UFN-70261"
-  },
-  {
-   "customer": "HINT INC.",
-   "subject": "Hint Orders Week 09/08 - 09/11",
-   "direction": "inbound",
-   "ticketRef": "UFN-70118"
-  },
-  {
-   "customer": "BOUNDLESS EC US LLC",
-   "subject": "Ticket [3569318] was updated. - No Labels on Cases for BOUNDLESS EC US LLC Load# 45872185",
-   "direction": "inbound",
-   "ticketRef": "UFN-70795"
-  },
-  {
-   "customer": "BOUNDLESS EC US LLC",
-   "subject": "Ticket [3569318] was updated. - No Labels on Cases for BOUNDLESS EC US LLC Load# 45872185",
-   "direction": "inbound",
-   "ticketRef": "UFN-69618"
-  },
-  {
-   "customer": "BOUNDLESS EC US LLC / Walmart",
-   "subject": "Assistance Needed - Ticket #3569318 | Load 45872185",
-   "direction": "inbound",
-   "ticketRef": "UFN-69617"
-  },
-  {
-   "customer": "BOUNDLESS EC US LLC",
-   "subject": "Load #45872185 - No Labels on Cases for BOUNDLESS EC US LLC",
-   "direction": "outbound",
-   "ticketRef": "UFN-69771"
-  },
-  {
-   "customer": "WYNK / CANVAS 340 LLC",
-   "subject": "Update & Cancellation",
-   "direction": "inbound",
-   "ticketRef": "UFN-70753"
-  },
-  {
-   "customer": "WYNK / CANVAS 340 LLC",
-   "subject": "Cancel Order 229191",
-   "direction": "inbound",
-   "ticketRef": "UFN-70761"
-  },
-  {
-   "customer": "WYNK / CANVAS 340 LLC",
-   "subject": "Cancel Order - #229381",
-   "direction": "inbound",
-   "ticketRef": "UFN-70764"
-  },
-  {
-   "customer": "WYNK / CANVAS 340 LLC",
-   "subject": "Cancel Order - #228990",
-   "direction": "inbound",
-   "ticketRef": "UFN-70772"
-  },
-  {
-   "customer": "COLAVITA USA",
+   "customer": "Colavita USA (VWL / TransNow)",
    "subject": "Pickup appointments / COLAVITA / September 2026",
    "direction": "inbound",
    "ticketRef": "UFN-70252"
   },
   {
-   "customer": "COLAVITA USA",
+   "customer": "KD Nutra (Janel Group / SunteckTTS)",
+   "subject": "Delivery appointments \u2014 containers MAEU274833196",
+   "direction": "inbound",
+   "ticketRef": "UFN-70731"
+  },
+  {
+   "customer": "Hint (DrinkHint) via Fusion Transport",
+   "subject": "HINT BEVERAGE \u2014 NORTHAMPTON \u2014 week of 9/14",
+   "direction": "inbound",
+   "ticketRef": "UFN-70804"
+  },
+  {
+   "customer": "Roar Beverage / AMI (Athena Intl)",
+   "subject": "AMI New Roar Order \u2013 SO1393032 / DN-2117711",
+   "direction": "inbound",
+   "ticketRef": "UFN-68616"
+  },
+  {
+   "customer": "Colavita USA / Vitelli Foods",
    "subject": "SO124422 / PO 997609bis / DN-2128230",
    "direction": "inbound",
    "ticketRef": "UFN-70553"
   },
   {
-   "customer": "COLAVITA USA",
-   "subject": "Approval to short ship - TO5070",
+   "customer": "Colavita USA (Romark)",
+   "subject": "UNIS \u2192 Romark \u2014 week of 9/14",
    "direction": "inbound",
-   "ticketRef": "UFN-70068"
-  },
-  {
-   "customer": "COLAVITA USA",
-   "subject": "COLAVITA - WEEK OF 8/31/26-PENDING ORDERS",
-   "direction": "inbound",
-   "ticketRef": "UFN-69953"
-  },
-  {
-   "customer": "COLAVITA USA",
-   "subject": "COLAVITA WALMART - WEEK 8.31",
-   "direction": "inbound",
-   "ticketRef": "UFN-69017"
-  },
-  {
-   "customer": "LA FAMOSA / Vitelli Foods (COLAVITA)",
-   "subject": "Order for La Famosa Order #00017979 - pickup appointment request",
-   "direction": "inbound",
-   "ticketRef": "UFN-69116"
-  },
-  {
-   "customer": "VINWORLD / Romark",
-   "subject": "UNIS --> Romark - Week of 9/14",
-   "direction": "outbound",
    "ticketRef": "UFN-70413"
   },
   {
-   "customer": "VINWORLD / Romark",
-   "subject": "UNIS --> Edison - Week of 9/14",
-   "direction": "outbound",
-   "ticketRef": "UFN-70414"
-  },
-  {
-   "customer": "VINWORLD / Romark",
+   "customer": "Colavita USA (Vinworld)",
    "subject": "Transfer Orders",
    "direction": "inbound",
    "ticketRef": "UFN-70404"
   },
   {
-   "customer": "VINWORLD / Romark",
-   "subject": "UNIS --> Edison - Week of 9/7",
-   "direction": "outbound",
-   "ticketRef": "UFN-69596"
+   "customer": "W.H. Beverage / WYNK (Canvas 340)",
+   "subject": "Update & Cancellation",
+   "direction": "inbound",
+   "ticketRef": "UFN-70753"
   },
   {
-   "customer": "MAIZLY INC.",
+   "customer": "W.H. Beverage / WYNK",
+   "subject": "Cancel Order 229191",
+   "direction": "inbound",
+   "ticketRef": "UFN-70761"
+  },
+  {
+   "customer": "W.H. Beverage / WYNK",
+   "subject": "Cancel Order \u2013 #229381",
+   "direction": "inbound",
+   "ticketRef": "UFN-70764"
+  },
+  {
+   "customer": "W.H. Beverage / WYNK",
+   "subject": "Cancel Order \u2013 #228990",
+   "direction": "inbound",
+   "ticketRef": "UFN-70772"
+  },
+  {
+   "customer": "Maizly",
    "subject": "Unshipped Orders",
    "direction": "inbound",
    "ticketRef": "UFN-70399"
   },
   {
-   "customer": "MAIZLY INC.",
-   "subject": "DN-2129199 SampleTS1281 Loki Coffee",
-   "direction": "inbound",
-   "ticketRef": "UFN-70159"
-  },
-  {
-   "customer": "MAIZLY INC.",
+   "customer": "Maizly / KEHE",
    "subject": "DN-2121155 PO3878087 KEHE0034",
    "direction": "inbound",
    "ticketRef": "UFN-67809"
   },
   {
-   "customer": "KD NUTRA (Janel Group / Sunteck)",
-   "subject": "URGENT RE: Delivery appointments needed for containers MAEU274833196",
+   "customer": "Maizly",
+   "subject": "Order #1576 and #1577",
    "direction": "inbound",
-   "ticketRef": "UFN-70731"
+   "ticketRef": "UFN-70542"
   },
   {
-   "customer": "UNY BRANDS",
-   "subject": "MPW Internal WH Transfer - PA > CA",
+   "customer": "Hint (DrinkHint)",
+   "subject": "HVP41-1612 Orders | 09/07\u201309/11",
+   "direction": "inbound",
+   "ticketRef": "UFN-70261"
+  },
+  {
+   "customer": "UNY Brands",
+   "subject": "MPW Internal WH Transfer \u2013 PA > CA",
    "direction": "inbound",
    "ticketRef": "UFN-69129"
   },
   {
-   "customer": "SMEG USA",
-   "subject": "PRO 7126352801",
+   "customer": "Maizly / UNFI Manchester backhaul",
+   "subject": "Appt Request",
    "direction": "inbound",
-   "ticketRef": "UFN-70395"
+   "ticketRef": null
   },
   {
-   "customer": "SMEG USA",
-   "subject": "PRO 7126352827 BOL Request",
+   "customer": "W.H. Beverage / WYNK",
+   "subject": "Canvas340 Cesanek Northampton transition plan",
    "direction": "inbound",
-   "ticketRef": "UFN-70400"
+   "ticketRef": null
   },
   {
-   "customer": "SMEG USA",
-   "subject": "PRO 7126354054",
+   "customer": "Chaivision / LifePro",
+   "subject": "CHAIVISION / LIFEPRO building move \u2014 Northampton \u2192 Seabrook",
    "direction": "inbound",
-   "ticketRef": "UFN-70084"
+   "ticketRef": null
   },
   {
-   "customer": "MSC / Medlog",
-   "subject": "MSMU6875562",
+   "customer": "KD Nutra",
+   "subject": "KD Nutra Shipping Escalation",
    "direction": "inbound",
-   "ticketRef": "UFN-70448"
+   "ticketRef": null
   },
   {
-   "customer": "MSC / Medlog",
-   "subject": "MSDU7175119",
+   "customer": "Ritual Beverage / Diageo",
+   "subject": "MSMU6875562 / MSDU7175119",
    "direction": "inbound",
-   "ticketRef": "UFN-70447"
+   "ticketRef": null
   },
   {
-   "customer": "DIAGEO / Ritual Beverage",
-   "subject": "Diageo DNAB Automated Email Alert: UNIS Pick Up Alert Message",
+   "customer": "Splendor Water",
+   "subject": "Splendor Move to Summerville \u2014 customer escalation",
    "direction": "inbound",
-   "ticketRef": "UFN-69723"
+   "ticketRef": null
   },
   {
-   "customer": "DIAGEO / Baldor",
-   "subject": "PO101-0001466297 / delivery number 1057590884 - CONFIRM APT FOR COLLECTION",
+   "customer": "Colavita / Romark",
+   "subject": "UNIS \u2192 Romark \u2014 week of 9/7",
    "direction": "inbound",
-   "ticketRef": "UFN-70228"
+   "ticketRef": null
   },
   {
-   "customer": "DIAGEO / Ritual Beverage",
-   "subject": "PA RITUAL COMMIT FAILED ORDERS",
+   "customer": "Hint / Fusion / Walmart",
+   "subject": "UNIS \u2013 HINT BEVERAGE \u2013 NORTHAMPTON \u2013 WEEK OF 9/7/26",
    "direction": "inbound",
-   "ticketRef": "UFN-69821"
+   "ticketRef": null
   },
   {
-   "customer": "DIAGEO",
-   "subject": "Claim 18050 | Diageo Delivery# 1057383854",
+   "customer": "Natural Rapport (Q&C Products) / Natural Pet",
+   "subject": "Schedule to Remove Products from UNIS Warehouses \u2013 PA",
    "direction": "inbound",
-   "ticketRef": "UFN-69811"
+   "ticketRef": null
   },
   {
-   "customer": "ALLIED BEVERAGE / Ritual",
-   "subject": "P/U REQUEST PO# 309409",
+   "customer": "La Famosa (Colavita brand)",
+   "subject": "Order #00017979 pickup appointment request",
    "direction": "inbound",
-   "ticketRef": "UFN-68718"
-  },
-  {
-   "customer": "MARTIGNETTI / Ritual",
-   "subject": "PO 098087",
-   "direction": "inbound",
-   "ticketRef": "UFN-68513"
-  },
-  {
-   "customer": "KRASDALE FOODS",
-   "subject": "Pick up appointment (A14094-01)",
-   "direction": "inbound",
-   "ticketRef": "UFN-70145"
-  },
-  {
-   "customer": "PHARMAVITE / KD Pharma",
-   "subject": "Pharmavite PO 352169 (SO110492) - DN-2123596 (special instructions)",
-   "direction": "inbound",
-   "ticketRef": "UFN-68515"
-  },
-  {
-   "customer": "PHARMAVITE / KD Pharma",
-   "subject": "Pharmavite PO 352168 (SO110487) - DN-2123575 (special instructions)",
-   "direction": "inbound",
-   "ticketRef": "UFN-68506"
-  },
-  {
-   "customer": "NORDIC / KD Pharma",
-   "subject": "Nordic - PO4500005466 (SO109539A/B) - DN-2126240 & DN-2126248",
-   "direction": "inbound",
-   "ticketRef": "UFN-69103"
-  },
-  {
-   "customer": "NORDIC / KD Pharma",
-   "subject": "Nordic - PO4500006091 (SO110100A/B) - DN-2126292 & DN-2126300",
-   "direction": "inbound",
-   "ticketRef": "UFN-69120"
-  },
-  {
-   "customer": "PRIME TIME PACKAGING LTD",
-   "subject": "[SHIPPED][wise/v2][Cesanek][Outbound] - IF48840 - Shipment",
-   "direction": "outbound",
-   "ticketRef": "UFN-69252"
-  },
-  {
-   "customer": "PRIME TIME PACKAGING LTD",
-   "subject": "[SHIPPED][wise/v2][Cesanek][Outbound] - IF48815 - Shipment",
-   "direction": "outbound",
-   "ticketRef": "UFN-68714"
-  },
-  {
-   "customer": "PRIME TIME PACKAGING LTD",
-   "subject": "[SHIPPED][wise/v2][Cesanek][Outbound] - IF48851 - Shipment",
-   "direction": "outbound",
-   "ticketRef": "UFN-69462"
-  },
-  {
-   "customer": "PRIME TIME PACKAGING LTD",
-   "subject": "[SHIPPED][wise/v2][Cesanek][Outbound] - IF48852 - Shipment",
-   "direction": "outbound",
-   "ticketRef": "UFN-69571"
+   "ticketRef": null
   }
  ],
  "excludedTicketsWithOutlookContext": [],
  "operationalThreads": [
   {
-   "subject": "Customer Command Center - Daily Summary (Northampton / Cesanek) - Mon Sep 14, 2026",
+   "subject": "Customer Command Center - Daily Summary (Northampton / Cesanek)",
    "from": "no-reply-itemgpt@item.com"
-  },
-  {
-   "subject": "Customer Command Center - NHT/Cesanek Daily Summary - Fri 9/11/2026",
-   "from": "nicole.weber@unisco.com"
-  },
-  {
-   "subject": "Customer Command Center - NHT/Cesanek Daily Summary (Corrected) - Thu 09/10/2026",
-   "from": "nicole.weber@unisco.com"
-  },
-  {
-   "subject": "Customer Command Center - NHT/Cesanek Daily Summary - Thu 09/10/2026",
-   "from": "no-reply-itemgpt@item.com"
-  },
-  {
-   "subject": "Customer Command Center - NHT/Cesanek Daily Summary (Wed, Sep 9, 2026)",
-   "from": "nicole.weber@unisco.com"
   }
  ],
  "activeEscalations": [
   {
-   "customer": "AMI / ROAR BEVERAGES",
-   "note": "CasAmerica/Atherton repeatedly escalating pickup scheduling for DN-2117711 / DN-2127953; drivers turned away, PO/DN reference confusion unresolved.",
+   "customer": "Colavita USA (VWL / TransNow)",
+   "note": "Reschedule the cancelled pickup (final-inspection quality hold); carrier is awaiting a new time. (latest Outlook activity Sep 14.)",
    "status": "active"
   },
   {
-   "customer": "BOUNDLESS EC US LLC (via UNY Brands)",
-   "note": "Ricky Beri chasing 2 returned-from-Walmart pallets (Load 45872185 / Ticket #3569318); Central Transport pickups repeatedly slipping.",
+   "customer": "Roar Beverage / AMI (Athena Intl)",
+   "note": "Open ask: confirm DN-2117711 was picked up as scheduled. (latest Outlook activity Sep 14.)",
    "status": "active"
   },
   {
-   "customer": "KD PHARMA / PHARMAVITE",
-   "note": "Silvia Placido escalating missing Pharmavite labels and unshipped orders (DN-2123575 / DN-2123596 / DN-2122820) ahead of the Northampton facility move.",
+   "customer": "Colavita USA / Vitelli Foods",
+   "note": "Finish loading the carrier driver (2-hour wait); confirm the load is ready. (latest Outlook activity Sep 14.)",
+   "status": "active"
+  },
+  {
+   "customer": "W.H. Beverage / WYNK (Canvas 340)",
+   "note": "Open escalation: game plan for 300+ unfulfilled orders (commit blocked / failed). Management meeting scheduled. (latest Outlook activity Sep 14.)",
+   "status": "active"
+  },
+  {
+   "customer": "Hint (DrinkHint)",
+   "note": "Chase order status and remaining inventory. (latest Outlook activity Sep 11.)",
+   "status": "active"
+  },
+  {
+   "customer": "KD Nutra",
+   "note": "Confirm availability to close the shipping / appointment topic today. (latest Outlook activity Sep 14.) Ticket mapping unconfirmed \u2014 no UFN number appears inline.",
+   "status": "active"
+  },
+  {
+   "customer": "Splendor Water",
+   "note": "Customer concerns about the move; no transactions showing. (latest Outlook activity Sep 14.) Ticket mapping unconfirmed \u2014 no UFN number appears inline.",
+   "status": "active"
+  },
+  {
+   "customer": "Hint / Fusion / Walmart",
+   "note": "EDI tenders for picked load LD1709761; missing tenders. (latest Outlook activity Sep 11.) Ticket mapping unconfirmed \u2014 no UFN number appears inline.",
    "status": "active"
   }
  ],
  "outlookCustomersActive": [
-  "AMI / ROAR BEVERAGES",
-  "ROAR BEVERAGES",
-  "HINT INC.",
-  "BOUNDLESS EC US LLC",
-  "WYNK / CANVAS 340 LLC",
-  "COLAVITA USA",
-  "LA FAMOSA / Vitelli Foods",
-  "VINWORLD / Romark",
-  "MAIZLY INC.",
-  "KD NUTRA (Janel Group)",
-  "UNY BRANDS",
-  "SMEG USA",
-  "MSC / Medlog",
-  "DIAGEO / Ritual Beverage",
-  "ALLIED BEVERAGE",
-  "MARTIGNETTI",
-  "KRASDALE FOODS",
-  "PHARMAVITE / KD Pharma",
-  "NORDIC",
-  "PRIME TIME PACKAGING LTD"
+  "Chaivision / LifePro",
+  "Colavita / Romark",
+  "Colavita USA (Romark)",
+  "Colavita USA (VWL / TransNow)",
+  "Colavita USA (Vinworld)",
+  "Colavita USA / Vitelli Foods",
+  "Hint (DrinkHint)",
+  "Hint (DrinkHint) via Fusion Transport",
+  "Hint / Fusion / Walmart",
+  "KD Nutra",
+  "KD Nutra (Janel Group / SunteckTTS)",
+  "La Famosa (Colavita brand)",
+  "Maizly",
+  "Maizly / KEHE",
+  "Maizly / UNFI Manchester backhaul",
+  "Natural Rapport (Q&C Products) / Natural Pet",
+  "Ritual Beverage / Diageo",
+  "Roar Beverage / AMI (Athena Intl)",
+  "Splendor Water",
+  "UNY Brands",
+  "W.H. Beverage / WYNK",
+  "W.H. Beverage / WYNK (Canvas 340)"
  ],
  "coverage": {
-  "eligibleTicketsTotal": 268,
-  "eligibleTicketsWithOutlookDirect": 2,
-  "coveragePct": 0.7,
-  "staleEvidence": true,
-  "note": "Denominator recomputed at refresh time from the 2026-09-22 eligible set. Numerator is STALE - carried forward from the 2026-09-04->2026-09-15 pull, not a fresh match. Treat as last-known, not current."
+  "eligibleTicketsTotal": 318,
+  "eligibleTicketsWithOutlookDirect": 0,
+  "coveragePct": 0.0,
+  "staleEvidence": false,
+  "note": "Outlook context carried from the dashboard's current snapshot window (latest Outlook activity Sep 14); no mailbox sweep was performed this cycle. Non-blocking per the refresh rules; contributes 0 rows to any ticket count and no thread duplicates an eligible ticket."
  },
- "threadsWithRefsInEligibleSet": [
-  "UFN-70261",
-  "UFN-70399"
- ],
+ "threadsWithRefsInEligibleSet": [],
  "threadRefsOutsideEligibleSet": [
   "UFN-67809",
-  "UFN-68506",
-  "UFN-68513",
-  "UFN-68515",
-  "UFN-68601",
   "UFN-68616",
-  "UFN-68718",
-  "UFN-69017",
-  "UFN-69050",
-  "UFN-69092",
-  "UFN-69103",
-  "UFN-69116",
-  "UFN-69120",
   "UFN-69129",
-  "UFN-69252",
-  "UFN-69571",
-  "UFN-69596",
-  "UFN-69617",
-  "UFN-69618",
-  "UFN-69723",
-  "UFN-69771",
-  "UFN-69781",
-  "UFN-69811",
-  "UFN-69821",
-  "UFN-69953",
-  "UFN-70068",
-  "UFN-70084",
-  "UFN-70118",
-  "UFN-70145",
-  "UFN-70147",
-  "UFN-70159",
-  "UFN-70228",
-  "UFN-70395",
-  "UFN-70400",
+  "UFN-70252",
+  "UFN-70261",
+  "UFN-70399",
   "UFN-70404",
   "UFN-70413",
-  "UFN-70414",
-  "UFN-70447",
-  "UFN-70448",
+  "UFN-70542",
   "UFN-70553",
+  "UFN-70731",
   "UFN-70753",
   "UFN-70761",
   "UFN-70764",
   "UFN-70772",
-  "UFN-70795",
   "UFN-70804"
  ],
- "dataSource": "Outlook (external app agent) - NON-BLOCKING enrichment; window 2026-09-04 -> 2026-09-15 (America/New_York); full UFN search paged (460 raw hits)",
- "generatedAt": "2026-09-22T04:17:00-04:00",
- "lastRefreshed": "2026-09-22T04:17:00-04:00",
- "refreshNote": "NO FRESH OUTLOOK PULL was available this cycle (Outlook agent unavailable - non-blocking per the refresh rules). The thread evidence below is carried forward from the last successful pull (window 2026-09-04 -> 2026-09-15, America/New_York) and has NOT been re-verified against the mailbox. Ticket Ops remains authoritative for ticket status; email-side dedupe/sentiment was NOT applied this cycle. Coverage denominator below was recomputed against the new 2026-09-22 eligible set.",
+ "dataSource": "Outlook (external app agent) - NON-BLOCKING enrichment; carried from the 2026-09-14 window; no fresh mailbox sweep this cycle",
+ "generatedAt": "2026-10-07T09:18:00-04:00",
+ "lastRefreshed": "2026-10-07T09:18:00-04:00",
+ "refreshNote": "Outlook context is non-blocking. No fresh mailbox pull was available this cycle; the thread evidence below is carried forward and references eligible tickets only where noted.",
  "carriedForward": true,
  "freshPullThisCycle": false,
- "threadsPreviouslyInSetNowOut": [
-  "UFN-68714",
-  "UFN-69462",
-  "UFN-70252",
-  "UFN-70731",
-  "UFN-70893"
- ]
+ "threadsPreviouslyInSetNowOut": []
 }
